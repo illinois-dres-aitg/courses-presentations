@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Using HTML5 and Accessible Rich Internet Applications (ARIA) to Create Highly Accessible Web Resources</title>
+ <name>Jon Gunderson</name> 
+  <desc href="http://publish.illinois.edu/uofiwebcon/">University of Illinois Web Conference</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+ <desc href="../">Presentation Home Page</desc> 
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Web Content Accessibility Guidelines 2.0</li>
+        <li>ARIA landmarks</li>
+        <li>HTML5 Section elements and heading outlines</li>
+        <li>HTML5 video and audio elements and accessible media players</li>
+        <li>ARIA forms and links</li>
+        <li>HTML5 forms</li>
+        <li>AInspector Sidebar and AInspector Firebug</li>
+        <li>Web 2.0 accessibility issues and using ARIA to make dynamic content accessible</li>
+      </ul>
+      <p class="center" style="font-size: 200%; margin-top: 2.5em">Slides at:<br/> <a href="http://presentations.cita.illinois.edu/2013-04-15-web-conference/">http://presentations.cita.illinois.edu/2013-04-15-web-conference/</a></p>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0: Techniques</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/WAI/WCAG20/quickref/" target="_specification">Web Content Accessibility Guidelines 2.0: Techniques</a>
+      </p>
+      <iframe src="http://www.w3.org/WAI/WCAG20/quickref/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria/" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications 1.0: Implementation Guide for Developers</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria-implementation/" target="_specification">Accessible Rich Internet Applications 1.0: Implementation Guide for Developers</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria-implementation/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0: Technique Issues</title>
+    <contents>
+      <ul>
+        <li>Few techniques for dynamic content accessibility</li>
+        <li>Few techniques for HTML 5</li>
+        <li>Few techniques on ARIA</li>
+        <li><strong>NO</strong> techniques on how to use ARIA landmarks</li>
+        <li><strong>NO</strong> techniques on how to use ARIA to make form controls more accessible</li>
+        <li><strong>NO</strong> techniques on how to use ARIA to make accessible widgets</li>
+      </ul>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>ARIA Landmarks</title>
+    <contents>
+      <p class="center"><a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles" target="_specification">ARIA Landmark Role Specification</a></p>
+      <ul style="margin-left: 10%">
+        <li>application</li>
+        <li>banner</li>
+        <li>complementary</li>
+        <li>contentinfo</li>
+        <li>form</li>
+        <li>main</li>
+        <li>navigation</li>
+        <li>search</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Landmark Example: Disability Resources and Educational Services (DRES) Website</title>
+    <contents>
+      <p class="center"><a href="http://disability.illinois.edu" target="_example">Landmark Example: DRES Website</a></p>
+      <iframe src="http://disability.illinois.edu" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Pitfalls Observed in Intial Use of Landmarks</title>
+    <contents>
+      <ul>
+        <li>ARIA menu roles were used in flyout menus:
+          <ul>
+            <li>No keyboard support to manage focus</li>
+            <li>Menu roles overrided link role</li>
+          </ul>
+        </li>
+        <li>Nested Navigaton Landmarks, resulting in too many navigation landmarks</li>    
+        <li>Landmarks indicated programmatic/styling sections, not semantic sections</li>    
+        <li>Some content in landmarks some content not in landmarks</li>
+        <li><code>article</code> role was used as a landmark role</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide> 
+    <title>DRES Home Page Landmarks</title>
+    <contents>
+      <p class="center"><img width="98%" src="dres-landmarks-home-page.png" alt="screen shot of landmarks on dres home page"/></p>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>MAIN Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>Typically one <code>main</code> landmark per page</li>    
+        <li>Each <code>main</code> landmark has a <code>h1</code> element</li>    
+        <li>If more than one <code>h1</code> element and <code>main</code> landmarks use <code>aria-labelledby</code> for naming the <code>main</code> landmark</li>    
+      </ul>
+
+  <h2>One Main Landmark</h2>
+
+      <p class="code">
+        &lt;div <strong>role="main"&gt;</strong><br/><br/>
+        &#160;&#160;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+      </p> 
+      
+
+      <h2>Multiple Main Landmarks</h2>
+      
+      <p class="code">
+        &lt;div <strong>role="main"  aria-labelledby="<em>title1</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h1 <strong>id="<em>title1</em>"</strong>&gt;<em>title for main content 1</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+        ....
+        &lt;div <strong>role="main"  aria-labelledby="<em>title2</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h1 <strong>id="<em>title2</em>"</strong>&gt;<em>title for main content 2</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+      </p> 
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>NAVIGATION Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>Use <code>navigation</code> landmark on a element <em>containing</em> the list and <code>h2</code> element</li>    
+        <li>Each <code>navigation</code> landmark should have a <code>h2</code> element before the list of links</li>    
+        <li>If there is more than one <code>navigation</code> landmark use <code>aria-labelledby</code> for labeling the landmark with the <code>h2</code> element</li>    
+        <li>Use <code>ul</code> element and <code>li</code> elements for the list of links in the navigation bar</li>
+      </ul>
+      <h2>One <code>navigation</code> landmark</h2>
+      <p class="code">
+        &lt;div <strong>role="navigation"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;
+      </p> 
+      <h2>More than one <code>navigation</code> landmark</h2>
+      <p class="code">
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav1</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2 <strong>id="<em>nav1</em>"</strong>&gt;<em>title for navigation 1</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page11.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page12.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page13.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page14.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;<br/>
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav2</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2 <strong>id="<em>nav2</em>"</strong>&gt;<em>title for navigation 2</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page21.html"&gt;Page 10&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page22.html"&gt;Page 11&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page23.html"&gt;Page 12&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page24.html"&gt;Page 13&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;
+      </p> 
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>All content should be contained in a landmark:
+          <ul>
+            <li>banner</li>
+            <li>complementary</li>
+            <li>contentinfo</li>
+            <li>main</li>
+            <li>navigation</li>
+            <li>search</li>
+          </ul>
+        </li>    
+        <li><em>Should</em> use labels with all landmarks</li>    
+        <li><em>Must</em> use labels when a landmark of the same type is used more than once</li>    
+        <li><em>Should</em> not nest landmarks of the same type</li>    
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Use of Headings (H1-H6) in ARIA Landmarks</title>
+    <contents>
+      <ul>
+        <li><code>main</code> landmarks should contain <code>h1</code> element at the beginning of section:
+          <ul>
+            <li><code>h1</code> element content describes the content or the purpose of the page</li>
+            <li>Provides a redundent means for assistive technology users to navigate to main content</li>
+            <li>Use headers in a structural way or in combination with HTML5 section elements</li>
+            <li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark</li>
+          </ul>
+        </li>    
+        <li><code>navigation</code> and <code>complementary </code>landmarks should contain <code>h2</code> element at the beginning of section:
+          <ul>
+            <li><code>h2</code> element content describes the content or the purpose of the page</li>
+            <li>Provides a redundent means for assistive technology users to navigate to content</li>
+            <li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name for each landmark</li>
+          </ul>
+        </li>  
+        <li><code>contentinfo</code> landmark should contain <code>h3</code> element at the beginning of section:
+          <ul>
+            <li><code>h3</code> element identifies the section as footer information</li>
+            <li>Provides a redundent means for assistive technology users to navigate to content</li>
+          </ul>
+        </li>  
+      </ul>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Landmark Example: Campus Information Technology and Education Services (CITES) Website</title>
+    <contents>
+      <p class="center"><a href="http://www.cites.illinois.edu" target="_example">Landmark Example: Campus Information Technology and Education Services (CITES) Website</a></p>
+      <iframe src="http://www.cites.illinois.edu" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Landmark Example: International Business Machines (IBM)</title>
+    <contents>
+      <p class="center"><a href="http://www.ibm.com" target="_example">Landmark Example: International Business Machines (IBM)</a></p>
+      <iframe src="http://www.ibm.com" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>HTML5 Section Elements</title>
+    <style>
+      table {
+        margin-top: 2em;
+        border-collapse: collapse;
+        margin-left: 10%;
+        font-size: 110%;
+      }
+      
+      table caption {
+        text-align: center;
+        margin-bottom: 0.5em;
+      }
+      
+      table thead th {
+        border-bottom: solid thin white;
+      }
+
+      table tbody th {
+        text-align: left;
+        font-weight: normal;
+        padding-top: 0.25em;
+      }
+
+
+      table th,
+      table td {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+
+      table em {
+        font-size: 90%;
+        color: gray;
+      }
+
+      .question {
+        text-align: center;
+        font-size: 120%;
+        font-variant: italic;
+      }
+
+    </style>
+    <contents>
+      <p class="question"><a href="http://dev.w3.org/html5/spec/single-page.html#wai-aria" target="_specification">Proposed HTML5 section element mapping to ARIA roles</a></p>
+      <table summary="ARIA Landmark roles and HTML5 section element comparison and usage">
+        <caption>ARIA Landmark Roles and HTML5 Section Element Comparison</caption>
+        <thead>
+          <tr>
+            <th>ARIA Role</th>
+            <th>HTML4 Usage</th>
+            <th>HTML5 Element</th>
+            <th>HTML5 Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>application</th>           
+            <td><code>&lt;div role="application"&gt;</code></td>
+            <td><em>none</em></td>
+            <td><code>&lt;section role="application"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>banner</th>
+            <td><code>&lt;div role="banner"&gt;</code></td>
+            <td>header</td>
+            <td><code>&lt;header role="banner"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>complementary</th>
+            <td><code>&lt;div role="complementary"&gt;</code></td>
+            <td>aside</td>
+            <td><code>&lt;aside role="complementary"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>contentinfo</th>
+            <td><code>&lt;div role="contentinfo"&gt;</code></td>
+            <td>footer</td>
+            <td><code>&lt;footer role="contentinfo"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>main</th>
+            <td><code>&lt;div role="main"&gt;</code></td>
+            <td><em>none</em></td>
+            <td><code>&lt;section role="main"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>navigation</th>
+            <td><code>&lt;div role="navigation"&gt;</code></td>
+            <td>nav</td>
+            <td><code>&lt;nav role="navigation"&gt;</code></td>
+          </tr>    
+          <tr>
+            <th>search</th>
+            <td><code>&lt;div role="search"&gt;</code></td>
+            <td><em>none</em></td>
+            <td><code>&lt;section role="search"&gt;</code></td>
+          </tr>    
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>HTML5 to ARIA Mappings and Implementation Information</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#wai-aria"  target="_specification">Proposed HTML5 to ARIA Mappings</a></li>
+        <li><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Headings in HTML5 are Designed for Outlining Content</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#headings-and-sections"  target="_specification">HTML5 Outlining Algorithm</a></li>
+        <li>Relative heading levels in sections define the outline structure</li>
+        <li>Search engine optimization</li>
+        <li>Mobile technology outlines</li>
+        <li>Improved and rationale structure supports accessibility</li>
+        <li>Accessibility APIs will support heading outlining</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <style>
+      .outline {
+        margin-left: 10%;
+      }
+      
+      h2 {
+        padding-bottom: 0.5em;
+      }
+    </style>
+    <title>HTML5 Headings Outline Example</title>
+    <contents>
+      <p class="center">Example from HTML5 specification</p>
+      <div class="outline">
+        <h2>HTML5 Outline Algorithm</h2>
+        <ol>
+          <li>Apples (H1 in accessibility API)
+            <ol>
+              <li>Taste (H2 in accessibility API)
+                <ol>
+                  <li>Sweet (H3 in accessibility API)</li>
+                </ol>
+              </li>
+              <li>Color (H2 in accessibility API)</li>
+            </ol>
+          </li>
+        </ol>
+      </div>  
+      <pre class="code">
+&lt;body&gt;
+ &lt;h1&gt;Apples&lt;/h1&gt;
+ &lt;p&gt;Apples are fruit.&lt;/p&gt;
+ &lt;section&gt;
+  &lt;h1&gt;Taste&lt;/h1&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+   &lt;h1&gt;Sweet&lt;/h1&gt;
+   &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+  &lt;h1&gt;Color&lt;/h1&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+ &lt;/section&gt;
+&lt;/body&gt;
+      </pre>
+      <p class="center"><em>same as</em></p>
+      <pre class="code">
+&lt;body&gt;
+ &lt;h1&gt;Apples&lt;/h1&gt;
+ &lt;p&gt;Apples are fruit.&lt;/p&gt;
+ &lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+   &lt;h3&gt;Sweet&lt;/h3&gt;
+   &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+  &lt;h2&gt;Color&lt;/h2&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+ &lt;/section&gt;
+&lt;/body&gt;
+      </pre>
+      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Extensions for Viewing HTML5 Outlines</title>
+    <contents>
+      <ul>
+        <li><a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo"  target="_extension">HTML5 Outliner for Chrome</a></li>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/html5_outliner/?src=search" target="_extension">HTML5 Outliner for Firefox</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>What About the Article Role and the Article Element?</title>
+    <contents>
+      <ul>
+        <li><code>article</code> role (ARIA)
+          <ul>
+            <li>Is <strong>NOT</strong> a landmark element</li>
+            <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
+          </ul>
+        </li>
+        <li><code>article</code> element (HTML5)
+          <ul>
+            <li>HTML5 section element</li>
+            <li>Self-contained compositions (e.g. magazine or newspaper article)</li>
+            <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
+            <li>Interactive widget or gadget</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Video/Audio Issues</title>
+    <contents>
+      <div style="margin-left: 5em">
+        
+      <h2>Issues</h2>
+      <ul>
+        <li>Adding text caption tracks to video
+          <ol>
+            <li>Getting a text transcript</li>
+            <li>Adding timing information</li>
+            <li>Deciding on a timed text format (e.g. what is compatible with your media player)</li>
+            <li>Use a player that supports closed captioning</li>
+          </ol>
+        </li>
+        <li>Adding audio description tracks to video
+          <ol>
+            <li>Identifying pauses in speech or adding time to create pauses</li>
+            <li>Add synchronized audio tracks that describe the video content</li>
+            <li>Use a player that support audio tracks</li>
+          </ol>
+        </li>
+        <li>Players
+          <ul>
+            <li>Keyboard access to media player controls and track selection</li>
+            <li>User interface controls support assistive technologies</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h2>Accessible Audio/Video Links</h2>
+      <ul>
+        <li><a href="http://www.longtailvideo.com/addons/plugins/84/Captions" target="_specifications">Captioning Plug-in for JW Player</a></li>
+        <li><a href="http://www.w3.org/community/texttracks/" target="_specifications">W3C Web Media Text Tracks Community Group</a></li>
+        <li><a href="http://www.3playmedia.com/2011/12/22/html5-video-captioning-explain-it-to-me/" target="_specifications">3Play Media</a></li>
+        <li><a href="http://html5doctor.com/video-subtitling-and-webvtt/" target="_specifications">Video Subtitling and WebVTT</a></li>
+        <li><a href="http://support.google.com/youtube/bin/static.py?hl=en&amp;page=guide.cs&amp;guide=2734661" target="_specifications">YouTube: Getting started with captions and transcripts</a></li>
+      </ul>
+
+      <h2>Timed Text Formats</h2>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/webvtt/" target="_specifications">WebVTT</a></li>
+        <li><a href="http://www.w3.org/TR/ttaf1-dfxp/" target="_specifications">Timed Text Markup Language (TTML) 1.0</a></li>
+      </ul>
+      </div>
+    </contents>
+    
+  </slide>
+
+  <slide>
+    <title>HTML5 Video Element Accessibility: Example</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#the-video-element" target="_specification"><code>video</code> element</a> supports captioning through the <a href="http://dev.w3.org/html5/spec/single-page.html#the-track-element" target="_specification"><code>track</code> element</a></li>
+        <li><a href="http://dev.w3.org/html5/webvtt/"  target="_specification">WebVTT timed text format</a></li>
+        <li><a href="https://class.coursera.org/sustain-2012-001/wiki/view?page=Week2Overview" target="_example">Example of an accessible media player used in coursera.org lectures</a></li>
+        <li><a href="citesplayer/html5-video.html" target="_example">Example that uses HTML5 specifications, but not supported in browsers</a></li>
+      </ul>
+
+      <h2>Video Element Example</h2>
+      
+      <pre class="code">
+  &lt;video controls"&gt;
+    &lt;source src="media/sintel_trailer-480p.mp4" type="video/mp4"&gt;
+    &lt;source src="media/sintel_trailer-480p.ogv" type="video/ogg"/&gt;
+    &lt;track kind="subtitles" src="media/sintel_trailer-480p_en.vtt" srclang="en" label="English for the Hard of Hearing"&gt;
+  &lt;/video&gt;
+      </pre>
+      
+      <h2>VTT Time Text Format Example</h2>
+      
+      <pre class="code">
+WEBVTT
+
+00:00:00.00 --> 00:00:11.89
+eerie music
+
+00:00:11.90 --> 00:00:15.00
+What brings you to|the land of the gatekeepers?
+
+00:00:15.01 --> 00:00:18.39
+eerie music
+
+00:00:18.40 --> 00:00:20.00
+I'm searching for someone
+
+00:00:20.01 --> 00:00:36.54
+eerie music
+
+00:00:36.55 --> 00:00:39.00
+A dangerous quest for a lone hunter
+
+00:00:41.35 --> 00:00:44.00
+I've been alone for|as long as I can remember
+
+      </pre>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Web Video Example: Captions and Audio Descriptions</title>
+    <contents>
+      <p class="center"><a href="http://wac.osu.edu/examples/jwpc/" target="_example">Accessible Web Video Example: Captions and Audio Descriptions</a> (Ken Petri,Ohio State University)</p>
+      <iframe src="http://wac.osu.edu/examples/jwpc/" width="99%" height="600"/>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Web Video Example: Captions </title>
+    <contents>
+      <p class="center"><a href="citesplayer/index.html" target="_example">Accessible Web Video Example: Captions </a> (Keith Hayes, Ohio State University)</p>
+      <iframe src="citesplayer/index.html" width="99%" height="600"/>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Web Video Example: University of Illinois Public Engagement</title>
+    <contents>
+      <p class="center"><a href="http://www.youtube.com/user/uipublicengagement" target="_example">Accessible Web Video Example: Captions </a> (University of Illinois Public Affairs)</p>
+      <iframe src="http://www.youtube.com/user/uipublicengagement" width="99%" height="600"/>      
+    </contents>
+  </slide>  
+  
+  <slide>
+    <title>Free Captioning Tool for Web Videos</title>
+    <contents>
+      <p class="center"><a href="http://www.universalsubtitles.org/en/" target="_example">Amara: Crowd sourcing the captioning of web videos</a></p>
+      <iframe src="http://www.youtube.com/user/uipublicengagement" width="99%" height="600"/>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>ARIA for HTML form controls</title>
+    <contents>
+      <ul>
+        <li><code>aria-labelledby</code> for labeling form controls</li>
+        <li><code>aria-label</code> for labeling form controls</li>
+        <li><code>aria-required</code> for indicating a form control is required</li>
+        <li><code>aria-invalid</code> for indicating a form control has an invalid value or format</li>
+        <li><code>aria-describedby</code> for providing information on an error and how to fix the problem</li>
+      </ul>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Complex Labeling Example using <code>aria-labelledby</code></title>
+    <contents>
+      <p class="center"><a href="http://html.cita.illinois.edu/nav/form/aria/index.php?example=1"  target="_example">Form control labeling using <code>aria-labelledby</code></a></p>
+      <iframe src="http://html.cita.illinois.edu/nav/form/aria/index.php?example=1" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Complex Labeling Example using <code>aria-label</code></title>
+    <contents>
+      <p class="center"><a href="http://html.cita.illinois.edu/nav/form/aria/index.php?example=2"  target="_example">Form control labeling using <code>aria-label</code></a></p>
+      <iframe src="http://html.cita.illinois.edu/nav/form/aria/index.php?example=2" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>Using <code>aria-required</code>, <code>aria-invalid</code> and <code>aria-describedby</code> in Forms</title>
+    <contents>
+      <p class="center"><a href="http://html.cita.illinois.edu/nav/form/aria/index.php?example=3"  target="_example">Form control labeling using <code>aria-label</code></a></p>
+      <iframe src="http://html.cita.illinois.edu/nav/form/aria/index.php?example=3" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title><code>aria-describedby</code> to Provide Link Context</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" target="_specification">WCAG 2.0 Success Criterion 2.4.4 Link Purpose (In Context): The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)</a></li>
+        <li><code>aria-describedby</code> attribute can point to the appropriate context</li>
+        <li><a href="http://oaa-accessibility.org/examplep/wcag244/" target="_example">Examples of using <code>aria-describedby</code> to provide context for links</a></li>
+      </ul>      
+      
+      <h2>Example</h2>
+      
+      <pre class="code">
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href="tomb_raider.htm" id="a1"&gt;Tomb Raider: Legend&lt;/a&gt;
+    &lt;a href="tomb_raider_images.htm" aria-describedby="a1"&gt;See Images&lt;/a&gt;
+    &lt;a href="tomb_raider.mpeg" aria-describedby="a1"&gt;(Download Demo)&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="fear_extraction.htm" id="a2"&gt;F.E.A.R. Extraction Point&lt;/a&gt;
+    &lt;a href="fear_extraction_images.htm" aria-describedby="a2"&gt;See Images&lt;/a&gt;
+    &lt;a href="fear_extraction.mpeg" aria-describedby="a2"&gt;(Download Demo)&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="call_of_duty.htm" id="a3"&gt;Call of Duty 2&lt;/a&gt;
+    &lt;a href="call_of_duty_images.htm" aria-describedby="a3"&gt;See Images&lt;/a&gt;
+    &lt;a href="call_of_duty.mpeg" aria-describedby="a3"&gt;(Download Demo)&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="Warhammer_40K.htm" id="a4"&gt;Warhammer 40K&lt;/a&gt;
+    &lt;a href="warhammer_40k_images.htm"  aria-describedby="a4"&gt;See Images&lt;/a&gt;
+    &lt;a href="Warhammer_40k.mpeg"  aria-describedby="a4"&gt;(Download Demo)&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;           
+      </pre>
+        </contents>
+  </slide>
+  
+  
+  
+  <slide>
+    <title>HTML5 Form Accessibility</title>
+    <contents>      
+      <p class="center"><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></p>
+      <ul>
+        <li><code>required</code> for indicating a form control is required <em>(note: overides aria-required attribute)</em></li>
+        <li><code>placeholder</code> for labeling a text form control</li>
+      </ul>      
+    </contents>  
+  </slide>
+  
+  
+  <slide>
+    <title>Examples of Web 2.0 Applications and User Interface Libraries</title>
+    <contents>
+      <ul>
+        <li>
+          <a href="http://fluidproject.org/" target="_example">Fluid Projects</a>
+        </li>
+       <li>
+        <a href="http://hanshillen.github.com/jqtest/#goto_slider" target="_example">JQuery UI Library</a>
+       </li>
+       <li>
+        <a href="http://dojotoolkit.org/widgets" target="_example">Dojo Toolkit Library</a>
+       </li>
+       <li>
+        <a
+         href="http://jongund.tadalist.com/lists/all"  target="_example">To do list</a>
+       </li>
+       <li>
+        <a
+         href="http://gmail.com"  target="_example">Webmail</a>
+       </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Web 2.0 Accessibility</title>
+    <contents>
+      <ul>
+        <li>Keyboard support and model</li>
+        <li>Keyboard focus management</li>
+        <li>Orientation to widgets and groups of widgets</li>
+        <li>Orientation to generated content</li>
+        <li>Mapping accessibility information into existing accessibility APIs like MSAA</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) Basics</title>
+    <contents>
+      <ul>
+        <li><strong>TABINDEX: </strong> Used for identifying elements that can receive keyboard focus.</li>
+        <li><strong>focus():</strong> Method to move keyboard focus to a DOM node using javascript</li>
+        <li><strong>ROLE: </strong> Attribute to define the type of widget in the web resource.
+          <ul>
+            <li>
+              <a href="http://www.w3.org/TR/2007/WD-xhtml-role-20071004/" target="_specification">XHTML Role Attribute
+Module</a>
+            </li>
+            <li>
+                <a href="http://www.w3.org/TR/aria-role/" target="_specification">Roles for Accessible Rich Internet Applications (WAI-ARIA Roles)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Properties and States</strong>
+          <ul>
+            <li>
+              <a href="http://www.w3.org/TR/aria-state/"  target="_specification">States and Properties Module for
+Accessible Rich Internet Applications (WAI-ARIA States and Properties)</a>
+            </li>
+            <li>aria-checked</li>
+            <li>aria-labelledby</li>
+            <li>aria-describedby</li>
+            <li>aria-haspopup</li>
+            <li>aria-expanded</li>
+            <li>many others...</li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.0 Authoring Practices</a>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+    <slide>
+      <title>Tabindex and keyboard focus</title>
+      <contents>
+        <ul>
+          <li>
+            <code>
+              <a
+                href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex"  target="_specification">tabindex</a>
+            </code>attribute is part of the HTML 4 specification</li>
+            <li>Support in <strong>all</strong> modern major browsers</li>
+            <li>Values: <ul>
+              <li>-1: Support keyboard focus/blur events,
+but do not add to tab order</li>
+             <li>0: Support keyboard focus/blur events and add to tab
+order</li>
+             <li>&gt;0: Support keyboard focus/blur events and add to tab order and tab using
+the numerical order of the tabindex values</li>
+            </ul>
+          </li>
+         <li>The <code>tabindex</code>
+         is not currently valid for most elements</li>
+         <li>Style focus visually to make is easy to find what has focus (i.e. do NOT rely of browser focus styling of focus)</li>
+        </ul>
+      </contents>
+    </slide>
+
+ <slide>
+  <title>Example Widgets</title>
+  <contents>
+   <p class="center"><a href="http://www.oaa-accessibility.org/examples/" target="_example">ARIA Widget Examples</a></p>
+   <p class="center"><iframe height="600" width="97%" src="http://www.oaa-accessibility.org/examples/"></iframe></p>
+  </contents>
+ </slide>
+
+  <slide>
+    <title>Example Widget: Accessible Custom Checkbox Using ARIA</title>
+    <contents>
+      <p class="center"><a href="http://oaa-accessibility.org/example/5/" target="_example">Accessible Custom Checkbox Using ARIA</a></p>
+      <p class="center"><iframe height="600" width="97%" src="http://oaa-accessibility.org/example/5/"></iframe></p>
+    </contents>
+  </slide>
+  
+  <slide>
+   <title>First Step: Use ARIA Landmarks</title>
+   <contents>
+    <p><a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles" target="_specification">ARIA Landmark Role Specification</a></p>
+    <ul>
+     <li>application</li>
+     <li>banner</li>
+     <li>complementary</li>
+     <li>contentinfo</li>
+     <li>form</li>
+     <li>main</li>
+     <li>navigation</li>
+     <li>search</li>
+    </ul>
+   </contents>
+  </slide>
+
+  <slide>
+    <title>Second Step: Use HTML5 <code>video</code>, <code>audio</code> and <code>track</code> elements for media</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#media-elements" target="_specification"><code>video</code> and <code>audio</code> elements</a></li>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#the-track-element" target="_specification"><code>track</code> element</a></li>
+        <li><a href="http://dev.w3.org/html5/webvtt/" target="_specification">WEBVTT Timed Text Format</a></li>
+        <li>Provide an accessible media player:
+          <ul>
+            <li>Keyboard support for operation</li>
+            <li>Turn on/off captions and audio descriptions</li>
+            <li>Labeling buttons for assistive technologies</li>
+            <li><a href="http://terrillthompson.com/blog/32" traget="_example">Creating Your Own Accessible HTML5 Media Player (Terry Thompson)</a></li>
+            <li><a href="http://ghinda.net/acornmediaplayer/" traget="_example">Acorn Media Player</a></li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Third Step: Use ARIA to improve the accessibility of Forms and Links</title>
+    <contents>
+      <ul>
+        <li>Use <code>aria-required='true'</code> attribute on controls that are required</li>
+        <li>Use <code>aria-invalid='true'</code> attribute on controls with invalid content or formatting, 
+          and use <code>aria-describedby</code> to point to a message on the problem and how to fix it</li>
+        <li>When the HTML <code>label</code> element is insufficent for for labeling controls, use <code>aria-labelledby</code> and <code>aria-label</code> to label controls</li>
+        <li>Use <code>aria-describedby</code> to provide context to links with the same or similar link text</li>
+        <li>Use HTML5 <code>required</code> attribute instead of <code>aria-required</code> if you are supporting on HTML5 browers</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+   <title>Fourth Step: Use Accessible Widget User Interface Libraries</title>
+   <contents>
+     <p><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI ARIA Authoring Practices</a></p>
+     <ul>
+     <li><a href="http://hanshillen.github.com/jqtest/#goto_slider" target="_example"></a>Accessible JQuery-UI Widgets</li>
+     <li><a href="http://dojotoolkit.org/reference-guide/1.7/dijit/a11y/statement.html" target="_example"></a>Dojo Library Accessibility (Used by IBM)</li>
+       <li><a href="http://wiki.fluidproject.org/display/fluid/Fluid+accessibility" target="_example">FLuid Porject</a></li>
+       <li><a href="http://yuilibrary.com/" target="_example">YUI Javascript Library (not sure how much support)</a></li>
+    </ul>
+   </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Resources</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/TR/wai-aria/"  target="_specification">ARIA Specifications</a></li>    
+        <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">ARIA 1.0 Authoring Practices</a></li>
+        <li><a href="http://disability.illinois.edu" target="_example">Landmark Example: DRES Website</a></li>    
+        <li><a href="http://www.oaa-accessibility.org/examples" target="_example">Widget Examples</a></li>
+        <li><a href="http://dojotoolkit.org/reference-guide/dijit/a11y/statement.html"  target="_example">Dojo Toolkit Accessibility Support</a></li>
+        <li><a href="http://www.aegis-project.eu/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=33"  target="_example">JQuery UI widgets that are accessible using ARIA</a></li>
+        <li><a href="http://access.aol.com/aegis/#goto_slider"  target="_example">JQuery UI Accessible demos</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>OpenAjax Alliance Web Accessibility Evaluation Library</title>
+    <contents>
+      <p class="center"><a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Web Accessibility Evaluation Library</a></p>
+      <ul>
+        <li>Defining rules and rulesets</li>
+        <li>Evaluating web pages</li>
+        <li>Filtering evaluation results</li>
+        <li>Supporting views of evaluation results:
+          <ul>
+            <li>Rules that apply to an element</li>
+            <li>Elements that apply to a rule</li>
+            <li>Rule Summary (i.e. WCAG 2.0 Success Criteria)</li>
+          </ul>
+        </li>
+      </ul>
+      <iframe src="http://www.openajax.org/member/wiki/Accessibility" width="99%" height="600" title="OpenAjax Alliance Web Accessibility Evaluation Library"/>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>OAA Accessibility Cache Inspector for Firefox</title>
+    <contents>
+      <p class="center"><a href="http://code.google.com/p/oaa-accessibility-cache-inspector/downloads/list" target="_specification">OAA Accessibility Cache Inspector for Firefox</a></p>
+      <ul>
+        <li>Evaluate document in current window</li>
+        <li>Provide user interface to view evaluation results:
+          <ul>
+            <li>Rules that apply to an element</li>
+            <li>Elements that apply to a rule</li>
+            <li>Rule summary (i.e. WCAG 2.0)</li>
+          </ul>
+        </li>
+        <li>Preferences:
+          <ul>
+            <li>Choosing rulesets</li>
+            <li>Choosing WCAG 2.0 level</li>
+            <li>Assume table markup is for data tables</li>
+            <li>Assume table markup is for data tables</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>AInspector for Firebug</title>
+    <contents>
+      <p class="center"><a href="http://code.google.com/p/ainspector/downloads/list" target="_specification">AInspector for Firebug</a></p>          
+      <ul>
+        <li>Analyzing document currently being inspected by Firebug</li>
+        <li>Provides an element and summary view of evaluation results</li>
+        <li>Works as an extension (additional panel) in Firebug</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>OAA Accessibility Cache Inspector for Firefox: Demonstration</title>
+    <contents>
+      <ul>
+        <li>Choosing a ruleset and WCAG 2.0 level</li>
+        <li>Evaluating headers and landmarks: Element versus Rule views</li>
+        <li>Form control labeling: Element versus Rule views</li>
+        <li>Tables: Element versus Rule views</li>
+        <li>Summary views</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  
+  <slide> 
+    <title>OpenAjax Alliance Accessibility Evaluation Library: Rules</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.openajax.org/member/wiki/Accessibility_WCAG_2.0_Validation_Rules" target="_specification">OpenAjax Alliance Accessibility Evaluation Library: Rules</a>
+      </p>
+      <iframe src="http://www.openajax.org/member/wiki/Accessibility_WCAG_2.0_Validation_Rules" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Status of the Tools</title>
+    <contents>
+      <ul>
+        <li>95% of the infrasture for evaluation and filtering results in place</li>
+        <li>Transistional and Strict 1.0 rulesets 60% complete (available by January 2013)</li>
+        <li>One major issue is how to report and prioritize manual checks.
+          <ul>
+            <li>Page versus Element manual checks</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Plans for the Future</title>
+    <contents>
+      <ul>
+        <li>
+          Illinois Functional Accessibility Evaluator (FAE) 2.0
+          <ul>
+            <li>Replace analysis engine of <a href="http://fae.cita.illinois.edu"  target="_tool">FAE 1.1</a> with HTMLUnit and OpenAjax Accessibility Evaluation Library</li>
+            <li>Open Source so people can run their own version</li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://html.cita.illinois.edu" target="_specification">HTML Best Practices</a>
+          <ul>
+            <li>Update to "Coding" practices to correspond to OAA rules</li>
+            <li>Support WCAG 2.0 mapping of techniques and examples</li>
+            <li>Support ARIA and HTML dynamic accessibility techniques</li>
+          </ul>
+        </li>
+        <li>Build or support other people in building toolbars for other browsers
+          <ul>
+            <li>Chrome</li>
+            <li>Safari</li>
+            <li>Opera</li>
+            <li>Internet Explorer??</li>
+          </ul>  
+        </li> 
+        <li>Build specialized toolbars
+          <ul>
+            <li>Purchasing agents</li>
+            <li>Color contrast inspection</li>
+            <li>Accessibility enhancements to browsers</li>
+          </ul>  
+        </li> 
+        <li>Ruleset 3.0 Features
+          <ul>
+            <li>Analyzing multiple pages</li>
+            <li>Support rule development and customization</li>
+          </ul>  
+        </li> 
+      </ul>
+      <p style="margin-left: 5em; margin-right: 5em; font-size: 200%; text-align: center; font-weight: bold; border: double medium #1D4368; background-color: white; color: #1D4368; padding: 0.5em">Looking for Volunteers and Collaborators!</p>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Web Best Practices Working Group</title>
+    <ul>
+      <li>Working on new coding practices website and rule categories</li>
+      <li><a href="http://trac.web-accessibility-best-practices.org/wiki/design/conceptual-model">Conceptual model for accessible coding practices</a></li>
+    </ul>
+    <contents>
+      <p class="center">
+        <a href="http://collaborate.athenpro.org/group/web/" target="_specification">Web Best Practices Working Group</a>
+      </p>
+      <iframe src="http://collaborate.athenpro.org/group/web/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>OpenAjax Alliance Accessibility Task Force</title>
+    <ul>
+      <li>Working on new rule development</li>
+      <li>Support ARIA and HTML5</li>
+    </ul>
+    <contents>
+      <p class="center">
+        <a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Accessibility Task Force</a>
+      </p>
+      <iframe src="http://www.openajax.org/member/wiki/Accessibility" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  
+</slides> 
+
+

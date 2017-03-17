@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset=utf-8 />
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <title>CITES Player Demo: Durian Open Movie Project</title>
+   <style type="text/css">
+      div#jp_container_1 {
+         margin-left: auto;
+         margin-right: auto;
+      }
+      h1 {
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <h1>CITES Player Demo: Durian Open Movie Project</h1>
+   <div id="jp_container_1">
+      <link rel="stylesheet" type="text/css" href="http://itaccessibility.illinois.edu/citesplayer/skin/citesplayer.blue.monday/citesplayer.blue.monday.css"/>
+      <script type="text/javascript" src="http://itaccessibility.illinois.edu/citesplayer/jquery.js"></script>
+      <script type="text/javascript">jQuery.noConflict();</script>
+      <script type="text/javascript" src="http://itaccessibility.illinois.edu/citesplayer/jquery.jplayer.min.js"></script>
+      <script type="text/javascript" src="http://itaccessibility.illinois.edu/citesplayer/cites.jplayer.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+            var player1 = new citesplayer('jp_container_1', {
+               mp4: 'media/sintel_trailer-480p.mp4',
+               ogv: 'media/sintel_trailer-480p.ogv',
+               poster: 'media/sintel_trailer-480p.png',
+               captions: 'media/sintel_trailer-480p_en.xml',
+               title: 'Sintel Trailer'
+            });
+         });
+      </script>
+   </div>
+
+   <h2>About the CITES Player</h2>
+
+   <p>The CITES video player is a modification of the jPlayer HTML5 audio and video player created and released by <a href="http://www.happyworm.com">happyworm</a>. The CITES modification is a minor addition to include the ability to display captions. These modifications were made to jPlayer release 2.1.0.</p>
+   <p>The player has two limitations regarding captions:
+   <ol>
+      <li>Only xml formatted caption files are allowed.</li>
+      <li>An Access-Control-Allow-Origin HTTP response header must be added to allow the ajax get request to succeed for the subtitle file (see enable-cors.org for <a href="http://enable-cors.org">more information about cross-domain response headers</a>). This is not necessary if the video and caption files are stored on the webserver (i.e. same domain).
+   </ol>
+
+</body>
+</html>

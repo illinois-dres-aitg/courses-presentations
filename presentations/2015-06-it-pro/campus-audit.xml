@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>State of Web Accessibility at University of Illinois</title>
+  <name>Jon Gunderson and Nicholas Hoyt</name> 
+  <desc>Division of Disability Resources and Educational Services</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="https://www.itproforum.illinois.edu">Spring 2015 IT Professionals Forum</desc>
+  <desc href="../">Presentation Home Page</desc> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Why is web accessibility important?</li>
+        <li>W3C Standards for web accessibility</li>
+        <li>Measuring web accessibility</li>
+        <li>Implementing accessibility on campus</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Legal Basis for Web Accessibility in Higher Education</title>
+    <contents>
+      <ul>
+        <li><a href="http://www2.ed.gov/about/offices/list/ocr/docs/edlite-FAPE504.html">Section 504 of the Rehabilitation Act of 1974</a></li>
+        <li><a href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards">Section 508 Information Technology Accessibility Standard (2000)</a></li>
+        <li><a href="https://www.dhs.state.il.us/page.aspx?item=32765">Illinois Information Technology Accessibility Act of 2007</a></li>
+        <li><a href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/proposed-rule">Revisions to Section 508 Information Technology Accessibility Standard (2015)</a></li>
+      </ul>
+      
+      <h2 id="id2">Key Provisions in OCR Complaints</h2>
+
+      <table class="table table-striped table-hover" aria-labelledby="id2">
+        <thead>
+          <tr>
+            <th>Provision</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Civil Right</td>
+            <td>Discrimination of otherwise qualified individuals with disabilities</td>
+          </tr>
+          <tr>
+            <td>Inclusion</td>
+            <td>Must create inclusive environments, accommodating people out of education programs or activities should be the exception</td>
+          </tr>
+          <tr>
+            <td>Accessible formats</td>
+            <td>Electronic and print materials must be available in preferred accessible formats, ideally at the same time as everyone else</td>
+          </tr>
+          <tr>
+            <td>Proactive</td>
+            <td>Can't wait for a request, must have accessibility plan and standards</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Campus Strategic Goals</title>
+    <contents>
+      <h2>Goal II: Provide transformative learning experiences</h2>
+      <ul>
+        <li>Universal design supports a wide variety of learning styles, including people with disabilities.</li>
+        <li>Captions support second language understanings, <abbr title="Search Engine Optimization">SEO</abbr>, search and learning analytics.</li>
+        <li>Technology translates the knowledge of faculty and instructors to the learning styles of each student, including the learning styles of students with disabilities.</li>
+      </ul>
+      
+      <h2>Goal III: Make a significant and visible societal impact</h2>
+      <ul>
+        <li>Develop the next generation of IT professionals that understand universal design.</li>
+        <li>Develop the next generation of leaders with disabilities.</li>
+        <li>Provide a model of IT accessibility for higher education.</li>
+      </ul>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <img src="images/wcag20-title.png" width="100%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5">HTML 5 Specification</a>
+      </p>
+      <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML 5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element">HTML 5: main element</a>
+      </p>
+      <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+  
+  
+  <slide> 
+    <title>OpenAjax Accessibility Evaluation Library: Key Concepts</title>
+    <contents>
+      <p>
+        <a href="http://www.openajax.org/member/wiki/Accessibility">OpenAjax Alliance Accessibility Task Force</a>
+      </p>
+      <h2>Rulesets</h2> 
+          <ul>
+            <li>Ruleset 1: ARIA 1.0 and HTML5 techniques for meeting WCAG 2.0 requirements (A and AA)</li>
+            <li>Ruleset 2: HTML4 and ARIA optional for meeting WCAG 2.0 requirements (A and AA)</li>
+            <li>Map Rules: "required" or "recommended"</li>
+          </ul>
+      
+      <h2>Rules</h2>
+          <ul>
+            <li>WCAG 2.0 Success Criteria (e.g. primary and secondary)</li>
+            <li>Summary and definition</li>
+            <li>Purpose</li>
+            <li>Techniques</li>
+            <li>Manual checking proceedures</li>
+            <li>Scope: Website, Page or element</li>
+            <li>Related information</li>
+          </ul>
+      
+      <h2>Rule Categories</h2>
+      <ul>
+        <li>Landmarks</li>
+        <li>Headings</li>
+        <li>Styling/Content</li>
+        <li>Images</li>
+        <li>Links</li>
+        <li>Tables</li>
+        <li>Forms</li>
+        <li>Widgets/Scripting</li>
+        <li>Audio/Video</li>
+        <li>Keyboard Support</li>
+        <li>Timing</li>
+        <li>Site Navigation</li>
+      </ul>
+      
+      <h2>Rule Results</h2>
+      <ul>
+        <li>Violation: Fails a required rule</li>
+        <li>Warning:  Fails a reccomended rule</li>
+        <li>Manual Check: Human judgement is needed for verification of meeting an accessibility requirement</li>
+        <li>Passed: The accessibility requirement has been met</li>
+        <li>Not Applicable: No elements on the page applied to this rule</li>
+      </ul>
+      
+    </contents>
+  </slide>  
+  
+  
+  <slide> 
+    <title>OpenAjax Evaluation Library Rulesets</title>
+    <contents>
+      <h2>Rulesets</h2>
+      <ul>
+        <li><a href="http://fae20.cita.illinois.edu/rulesets/ARIA_STRICT/sc/">HTML5 and ARIA Ruleset</a></li>
+        <li><a href="http://fae20.cita.illinois.edu/rulesets/ARIA_TRANS/sc/">HTML4 Legacy Ruleset</a></li>
+        <li><a href="http://fae20.cita.illinois.edu/rulesets/sc/">Comparison of OpenAjax Rulesets</a></li>
+      </ul>
+      
+      <iframe src="http://fae20.cita.illinois.edu/rulesets/sc/" width="100%" height="600"></iframe>
+      
+    </contents>
+  </slide> 
+ 
+  <slide>
+    <title>FAE Auditor 1.0</title>
+    <contents>
+      <ul>
+        <li>Designed for:
+          <ul>
+            <li>IT Administrators</li>
+            <li>Web Accessibility Professionals</li>
+          </ul>
+        </li>
+        <li>Information on:
+          <ul>
+            <li>Overall campus implementation of web accessibility</li>
+            <li>What does the campus seem to being doing well</li>
+            <li>Where does the campus need to improve</li>
+            <li>Which units are doing well</li>
+            <li>Which units need to improve</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="center"><a href="http://fae-audit.cita.illinois.edu/audit/14de2c432204c843/rc/ws/all/">FAE Auditor 1.0 Results</a></p>          
+      <iframe src="http://fae-audit.cita.illinois.edu/audit/14de2c432204c843/rc/ws/all/" width="100%" height="600" title="FAE Auditor 1.0 Results"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Selected Pass/Fail Rule Results for Illinois</title>
+    <contents>
+      <ul>
+        <li>288 Websites</li>
+        <li>10,150 Pages</li>
+      </ul>
+      <table class="table table-striped table-hover" aria-label="Selected Rule Results for Illinois">
+        <thead>
+          <tr>
+            <th style="width: 6em">Rule ID</th>
+            <th>Rules Summary</th>
+            <th>Implementation<br/>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heading 5</td>
+            <td>Heading elements must be properly nested on the page.</td>
+            <td>89</td>
+          </tr>
+          <tr>
+            <td>Image 1</td>
+            <td>Images must have alternative text</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Control 1</td>
+            <td>Labels on form controls</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <td>Keyboard 1</td>
+            <td>Widget elements must have keyboard event handlers</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Landmark 2</td>
+            <td>Page structure must be defined by landmarks</td>
+            <td>38</td>
+          </tr>
+          <tr>
+            <td>Landmark 1</td>
+            <td>Each page must have at least one main landmark</td>
+            <td>34</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Selected Manual Check Rule Results for Illinois</title>
+    <contents>
+      <ul>
+        <li>288 Websites</li>
+        <li>10,150 Pages</li>
+      </ul>
+      <table class="table table-striped table-hover" aria-label="Selected Manual Check Rule Results for Illinois">
+        <thead>
+          <tr>
+            <th style="width: 6em">Rule ID</th>
+            <th>Rules Summary</th>
+            <th>Passed</th>
+            <th>Manual<br/>Checks</th>
+            <th>Violations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Focus 1</td>
+            <td>Keyboard focus order must be meaningful</td>
+            <td>1</td>
+            <td>281</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Focus 2</td>
+            <td>Keyboard focus must be visible</td>
+            <td>5</td>
+            <td>277</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Bypass 1</td>
+            <td>Bypass blocks of content</td>
+            <td>17</td>
+            <td>254</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Widget 11</td>
+            <td>Elements with keyboard, mouse and/or drag events must have widget roles or interactive elements (i.e. form controls or links)</td>
+            <td>0</td>
+            <td>100</td>
+            <td>119</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>"Whack-A-Mole" accessibility</title>
+    <contents>
+      <ul>
+        <li>Focus on Pass/Fail tests of automated testing tools</li>
+        <li>Regression development to get rid of as many failed items as possible</li>
+        <li>Mechanical view of accessibility</li>
+      </ul>
+      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessibility Thinking</title>
+    <contents>
+      <ul>
+        <li>"Accessibility Thinking" must become a part of "Design Thinking"</li>
+        <li>Understanding the manual check from tools like <a href="http://fae20.cita.illinois.edu">FAE 2.0</a> and <a href="http://ainspector.github.io">AInspector</a></li>
+        <li>User interaction view of accessibility</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Simple Example: Button Interaction</title>
+    <contents>
+      
+      <p><a href="http://www.w3.org/TR/wai-aria-practices/">W3C WAI-ARIA 1.0 Authoring Practices</a></p>
+      
+      <h2 style="margin-top: 2em;">Source Code</h2>
+      
+      <pre class="code">
+ &lt;a role="button"&gt;Cancel&lt;/a&gt;
+      </pre>
+      
+      <h2 style="margin-top: 2em;" id="id1">Accessibility Approaches and Interaction</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id1">
+        <thead>
+          <tr>
+            <th></th>
+            <th>"Whack-A-Mole"</th>
+            <th>"Accessibility Thinking"</th>
+            <th>Accessibility Issues</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Keyboard</th>
+            <td>Enter Key (default)</td>
+            <td>Space bar</td>
+            <td>Keyboard only users do not expect to press enter to activate a button</td>
+          </tr>
+          <tr>
+            <th>Mouse</th>
+            <td>Double Click</td>
+            <td>Single Click (default)</td>
+            <td>Mouse users do not expect to double click to activate a button</td>
+          </tr>
+        </tbody>
+      </table>  
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>State of Web Accessibility on Campus</title>
+    <contents>
+      <h2>Strengths</h2>
+      <ul>
+        <li>Data on campus web accessibility</li>
+        <li>Institutional support</li>
+        <li>Developer and development team support</li>
+        <li>Technical expertise</li>
+        <li>Examples of accessible design</li>
+        <li>CIC Information Technology Accessibility Group</li>
+      </ul>
+
+      <h2>Challenges</h2>
+      <ul>
+        <li>Administrative controls</li>
+        <li>Individuals understanding their responsibility and knowledge base</li>
+        <li>Development environments</li>
+        <li>Javascript libraries</li>
+        <li>Campus goals</li>
+      </ul>
+      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Working with you on accessibility</title>
+    <contents>
+      <ul>
+        <li>Meet the evaluation needs of the community of users</li>
+        <li>Develop a collective understanding web accessibility and "accessibility thinking"</li>
+        <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
+        <li>Tool group has one virtual meeting a month, typically the 1st Friday of the month</li>
+        <li>Javscript library accessibility group has a virtual meeting weekly, typically Tuesday's at 3:30pm</li>
+        <li>"Explore with Hadi" on 2nd Tuesday's at 11:00am</li>
+        <li>Institutional membership with <a href="http://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a></li>
+      </ul>
+      <h2 id="join">Join E-mail Lists</h2>
+      <ul>
+        <li>
+          <a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Accessibility Alliance Tools Discussion List</a>
+        </li>
+        <li>
+          <a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Accessibility Alliance Tools Announcements List</a>
+        </li>
+        <li>
+          <a href="https://lists.illinois.edu/lists/info/oaa-js-library-accessibility" aria-describedby="join">Javascript Library Accessibility Group</a>
+        </li>
+        <li>
+          <a href="https://lists.illinois.edu/lists/info/accessibility" aria-describedby="join">Web Accessibility Discussion List</a>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>Other Tools to Support Campus Web Accessibility</title>
+    <contents>
+      <table class="table table-striped table-hover" aria-label="Selected Rule Results for Illinois">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="http://fae20.cita.illinois.edu">Functional Accessibility Evaluator 2.0</a></td>
+            <td>
+              <ul>
+                <li>OpenAjax Evaluation Library</li>
+                <li>Spider the web pages of a website for accessibility information.</li>
+                <li>Website summary reports</li>
+                <li>Page summary reports</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="http://ainspector.github.io/">AInspector Sidebar for Firefox</a></td>
+            <td>
+              <ul>
+                <li>OpenAjax Evaluation Library</li>
+                <li>Analyzes the dynamically generated web content (DOM)</li>
+                <li>Page summary reports</li>
+                <li>Highlighting elements</li>
+                <li>DOM inspector</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="http://ainspector.org/bookmarklets/">Web Accessibility Bookmarklets</a></td>
+            <td>
+              <ul>
+                <li>Highlight elements and areas on screen associated with classes of elements (e.g. headings, landmarks and forms)</li>
+                <li>Provide basic information about an element (e.g. tag, accessible name, role...)</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  
+  <slide> 
+    <title>Acknowledgements</title>
+    <contents>
+    
+      <h2>Tool Development Sponsors</h2>
+      <ul>
+        <li>University of Illinois</li>
+        <li>CIOs of the Committee on Institutional Cooperation (CIC)</li>
+        <li>Employees of the Hollister Corporation</li>
+        <li>IBM Corporation (OAA Evaluation Library and AInspector for Firebug)</li>
+      </ul>
+    
+      <h2>Primary Developers</h2>
+      <dl>
+        <dt>Jon Gunderson, Illinois</dt>
+        <dd>Project coordinator</dd>
+        <dd>OAA evaluation library software development</dd>
+        <dd>Software developer for FAE 2.0 and FAE Auditor</dd>
+        
+        <dt>Nicholas Hoyt, Illinois</dt>
+        <dd>Conceptual model for accessibility evaluation</dd>
+        <dd>Interaction designer for AInspector, Bookmarklets, FAE 2.0 and FAE Auditor</dd>
+        <dd>Software developer for AInspector Sidebar and Bookmarklets</dd>
+      </dl>
+      
+      <h2>Other Contributing Developers</h2>
+
+      <dl>
+        <dt>Pramod Joshi, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+                
+        <dt>Jeff Heckel, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+        
+        <dt>Landi Lark, Pixo</dt>
+        <dd>Software development and design of Bookmarklets</dd>
+        
+        <dt>Garrett Smith (<em>emeritus</em>), Wisconsin</dt>
+        <dd>Software development for FAE 2.0</dd>
+        
+        <dt>Prasanna Bale (<em>emeritus</em>), CITES</dt>
+        <dd>Software developer for AInspector Firebug</dd>
+        
+      </dl>      
+      
+    </contents>
+  </slide>
+</slides> 
+
+

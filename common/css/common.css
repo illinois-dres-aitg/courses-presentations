@@ -1,0 +1,45 @@
+
+header {
+    border-bottom: orange solid thin;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+    min-height: 100px;
+    vertical-align: bottom;
+}
+
+header img {
+    padding-right: 0.5em;
+    float: left;
+}
+
+header h1 {
+    padding-top: 0.25em;
+}
+
+
+footer {
+    border-top: orange solid thin;
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-right: 1em;
+}
+
+main h2 {
+    border-bottom: #337AB7 solid thin;
+}
+
+main dt {
+    margin-top: 1em;
+}

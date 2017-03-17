@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>On the Road to Accessibility</title>
+ <name>Jon Gunderson</name> 
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="http://webaccess.its.uiowa.edu/accessapps/">at University of Iowa Application Developers Accessibility and Usability Seminar</desc>
+  <desc href="../">Presentation Home Page</desc> 
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>On the Road to Accessibility</title>
+    <contents>
+      <p style="font-size: 150%; font-style: italic">where we have been, where we are and where we need to go</p>
+      <p class="center" style="font-size: 200%; margin-top: 2.5em">Slides at:<br/> <a href="http://presentations.cita.illinois.edu/2013-10-02-uiowa/">http://presentations.cita.illinois.edu/2013-10-02-uiowa/</a></p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Why was the World Wide Web Invented?</title>
+    <contents>
+      <p class="center"><img src="images/First_Web_Server.jpg" alt="Picture of computer to develop first http server"></img></p>
+      <p class="center">Next computer used by <a href="http://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> to build first HTTP server</p>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Why was the World Wide Web Invented?</title>
+    <contents>
+      <ul>
+        <li>Sharing documents</li>
+        <li>Write once read everywhere</li>
+        <li>Referencing documents (hyper linking)</li>
+        <li>Browsers as Editors</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Mosaic Browser</title>
+    <contents>
+      <p class="center"><img src="images/ncsa-mosaic.jpg" alt="Screen shot of Mosaic"></img></p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Mosaic Browser</title>
+    <contents>
+      <ul>
+        <li>Integrated text and graphics</li>
+        <li>Minimal configuration</li>
+        <li>Windows and Unix</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Early Accessibility</title>
+    <contents>
+      <ul>
+        <li>NSF and Mosaic accessibility (1995)</li>
+        <li>Many organizations creating accessibility guidelines (1995-1999)</li>
+        <li><a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative (1997)</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>W3C Web Accessibility Initiative</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/WAI/" target="_specification">W3C Web Accessibility Initiative</a>
+      </p>
+      <iframe src="http://www.w3.org/WAI/" width="99%" height="600"/>    </contents>
+  </slide>
+
+  <slide>
+    <title>W3C Web Content Accessibility Guidelines 1.0 (1999)</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG10" target="_specification">Web Content Accessibility Guidelines 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG10" width="99%" height="600"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 508 Information Technology Accessibility Standards (2000)</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards" target="_specification">Section 508 Information Technology Accessibility Standards</a>
+      </p>
+      <iframe src="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards" width="99%" height="600"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 508 comparison with WCAG 1.0 Requirements</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.jimthatcher.com/sidebyside.htm" target="_specification">Section 508 comparison with WCAG 1.0 Requirements</a>
+      </p>
+      <iframe src="http://www.jimthatcher.com/sidebyside.htm" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>W3C User Agent Accessibility Guidelines 1.0 (2002)</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/UAAG/" target="_specification">W3C User Agent Accessibility Guidelines 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/UAAG/" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Bobby Approved</title>
+    <contents>
+      <p class="center"><img src="images/bobby-2.gif" alt="Screen shot of Bobby Report"></img></p>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessibility Policies</title>
+    <contents>
+      <ul>
+        <li>Universities started to set policies on web accessibility</li>
+        <li>CIC Tech Forum 2001 at Penn State</li>
+        <li>Educause Accessible Presentation: Real time captioning</li>
+        <li>Slide on web accessibility said that 95% of website accessible</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessibility Policies in Illinois</title>
+    <contents>
+      <ul>
+        <li>Illinois Board of Higher Education (IBHE) Disability Access Initiative</li>
+        <li>Required all campuses to survey for students with disabilities</li>
+        <li>Wanted to set a State Standard on Web Accessibility</li>
+        <li>Got a web accessibility reporting requirement as part of annual underrepresented minority student report</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Working with Developers at Illinois</title>
+    <contents>
+      <ul>
+        <li>More than <code>alt</code> text for images</li>
+        <li>Use of web standards, creating structure</li>
+        <li>Integrate into web design, rather than repair</li>
+        <li>Developed best practices</li>
+        <li>Usability and accessibility</li>
+      </ul>
+    </contents>
+  </slide>
+    
+  <slide>
+    <title>HTML Web Accessibility Best Practices</title>
+    <contents>
+      <p class="center">
+        <a href="http://html.cita.illinois.edu" target="_specification">HTML Web Accessibility Best Practices</a>
+      </p>
+      <iframe src="http://html.cita.illinois.edu" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>Illinois Functional Accessibility Evaluator 1.1</title>
+    <contents>
+      <p class="center">
+        <a href="http://fae.cita.illinois.edu/" target="_specification">Illinois Functional Accessibility Evaluator 1.1</a>
+      </p>
+      <iframe src="http://fae.cita.illinois.edu/" width="99%" height="600"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Web Accessibility Data in Higher Education</title>
+    <contents>
+      <p class="center">
+        <a href="http://webaccessibility.cita.illinois.edu/data/" target="_specification">Web Accessibility Data in Higher Education</a>
+      </p>
+      <iframe src="http://webaccessibility.cita.illinois.edu/data/" width="99%" height="600"/>
+    </contents>
+  </slide>  
+  
+  <slide>
+    <title>CIC IT Accessibility and Usability Advisory Group (2005)</title>
+    <contents>
+      <ul>
+        <li>2005 University of Illinois</li>
+        <li>2006 The Ohio State University</li>
+        <li>2007 University of Minnesota</li>
+        <li>2008 Michigan State University</li>
+        <li>2009 Indiana University</li>
+        <li>2010 Purdue University</li>
+        <li>2011 University of Wisconsin</li>
+        <li>Transformed to a chartered <a href="http://www.cic.net/groups/program-management">CIC Information Technology Accessibility Group</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  
+  <slide>
+    <title>Illinois Information Technology Accessibility Act (2007)</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.dhs.state.il.us/page.aspx?item=32765" target="_specification">Illinois Information Technology Accessibility Act (IITAA)</a>
+      </p>
+      <iframe src="https://www.dhs.state.il.us/page.aspx?item=32765" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>IITAA: Implementation Guidelines for Web-Based Information and Applications 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.dhs.state.il.us/IITAA/IITAAWebImplementationGuidelines.html" target="_specification">IITAA: Implementation Guidelines for Web-Based Information and Applications 1.0</a>
+      </p>
+      <iframe src="http://www.dhs.state.il.us/IITAA/IITAAWebImplementationGuidelines.html" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0 (2008)</title>
+    <contents>
+      <ul>
+        <li>Designed to be technology neutral</li>
+        <li>Avoids usability issues of accessibility</li>
+        <li>Mixture of policy requirements and disability needs</li>
+        <li>Non-normative techniques document to help people understand accessibility of a technology</li>
+        <li>Techniques document is incomplete and out of date with today's technology needs</li>
+      </ul>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG20" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG20" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0 (2008)</title>
+    <contents>
+      <ul>
+        <li>Designed to be technology neutral</li>
+        <li>Avoids usability issues of accessibility</li>
+        <li>Mixture of policy requirements and disability needs</li>
+        <li>Non-normative techniques document to help people understand accessibility of a technology</li>
+        <li>Techniques document is incomplete and out of date with today's technology needs</li>
+      </ul>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG20" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG20" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>What Makes Accessibility Hard?</title>
+    <contents>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Three Steps to Web Accessibility</title>
+    <contents>
+      <ul>
+        <li>Step 1: Knowing the needs of people with disabilities</li>
+        <il>Step 2: Understanding how markup can be used to meet accessibility needs</il>
+        <li>Step 3: How authoring tools and web development frameworks support creating the accessible markup</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Today's Accessibility Challenges</title>
+    <contents>
+      <ul>
+        <li>Dynamic web applications</li>
+        <li>Mobile computing</li>
+        <li>E-Book technology</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Google Docs</title>
+    <contents>
+      <p class="center">
+        <a href="http://docs.google.com/‎" target="_specification">Google Docs</a>
+      </p>
+      <iframe src="http://docs.google.com/" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Box.com</title>
+    <contents>
+      <p class="center">
+        <a href="https://app.box.com/‎" target="_specification">Box.com</a>
+      </p>
+      <iframe src="https://app.box.com/‎" width="99%" height="600"/>
+    </contents>
+  </slide>
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications (WAI-ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria/" target="_specification">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>WAI-ARIA 1.0 Authoring Practices</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.0 Authoring Practices</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria-practices/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Collaborating To Improve Accessibility</title>
+    <contents>
+      <p class="center">
+        <a href="http://collaborate.athenpro.org" target="_specification">Athen Pro Collaboration</a>
+      </p>
+      <iframe src="http://collaborate.athenpro.org" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>OpenAjax Accessibility Task Force</title>
+    <ul>
+      <li>Working on new rule development</li>
+      <li>Support ARIA and HTML5</li>
+    </ul>
+    <contents>
+      <p class="center">
+        <a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Accessibility Task Force</a>
+      </p>
+      <iframe src="http://www.openajax.org/member/wiki/Accessibility" width="99%" height="600"/>
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>AInspector Sidebar</title>
+    <contents>
+      <ul>
+        <li>Analyzing document current for accessibility features</li>
+        <li>Organizes rules by rule categories</li>
+        <li>Map rules to WCAG 2.0 Single A and AA requirements</li>
+      </ul>
+      <p class="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/" target="_specification">AInspector Siebar</a></p>          
+      <iframe src="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/" width="99%" height="600"/>
+    </contents>
+  </slide>  
+    
+  <slide>
+    <title>AInspector Firebug</title>
+    <contents>
+      <ul>
+        <li>Analyzing document currently being inspected by Firebug</li>
+        <li>Provides an element and summary view of evaluation results</li>
+        <li>Works as an extension (additional panel) in Firebug</li>
+      </ul>
+      <p class="center"><a href="http://code.google.com/p/ainspector/downloads/list" target="_specification">AInspector Firebug</a></p>          
+      <iframe src="http://code.google.com/p/ainspector/downloads/list" width="99%" height="600"/>
+    </contents>
+  </slide>  
+  
+  <slide> 
+    <title>Open Accessibility Alliance</title>
+    <contents>
+      <ul>
+        <li>Develop accessible solutions to accessible design problems</li>
+      </ul>
+      <p class="center"><a href="http://collaborate.athenpro.org/group/open-accessibility-alliance/">Open Accessibility Alliance</a></p>
+      <iframe src="http://collaborate.athenpro.org/group/open-accessibility-alliance/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Accessible Web Coding Practices</title>
+    <contents>
+      <p class="center"><a href="http://dev.oaa-accessibility.org">Accessible Web Coding Practices</a></p>
+      <iframe src="http://dev.oaa-accessibility.org" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Questions and Comments</title>
+    <contents>
+    </contents>
+  </slide> 
+  
+  
+</slides> 
+
+

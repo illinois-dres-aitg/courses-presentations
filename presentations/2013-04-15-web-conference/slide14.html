@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 14: Use of Headings (H1-H6) in ARIA Landmarks</title>
+<link rel="stylesheet" type="text/css" href="http://slides.cita.illinois.edu/xml-slides.css">
+<script type="text/javascript" src="http://slides.cita.illinois.edu/jquery.js"></script><script type="text/javascript" src="http://slides.cita.illinois.edu/xml-slides.js"></script>
+</head>
+<body>
+<div role="navigation" aria-describedby="slide_nav" id="index">
+<a name="nav" id="nav"></a>
+<h2 id="slide_nav" class="hidden">
+		   Slide Navigation
+		</h2>
+<ul class="slide_nav" title="Slide Navigation Menu">
+<li class="slide_num">Slide 14 of 54</li>
+<li>
+<a href="index.html">Index
+                  </a>
+</li>
+<li>
+<a href="slide1.html">First
+              </a>
+</li>
+<li>
+<a href="slide13.html">Previous
+                   </a>
+</li>
+<li>
+<a href="slide15.html">Next
+                  </a>
+</li>
+<li>
+<a href="slide54.html">Last
+                  </a>
+</li>
+</ul>
+</div>
+<div id="content" role="main" aria-labelledby="title">
+<a name="main" id="main"></a>
+<h1 id="title" class="title">Use of Headings (H1-H6) in ARIA Landmarks</h1>
+<ul>
+        
+<li>
+<code>main</code> landmarks should contain <code>h1</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h1</code> element content describes the content or the purpose of the page</li>
+            
+<li>Provides a redundent means for assistive technology users to navigate to main content</li>
+            
+<li>Use headers in a structural way or in combination with HTML5 section elements</li>
+            
+<li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark</li>
+          
+</ul>
+        
+</li>    
+        
+<li>
+<code>navigation</code> and <code>complementary </code>landmarks should contain <code>h2</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h2</code> element content describes the content or the purpose of the page</li>
+            
+<li>Provides a redundent means for assistive technology users to navigate to content</li>
+            
+<li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name for each landmark</li>
+          
+</ul>
+        
+</li>  
+        
+<li>
+<code>contentinfo</code> landmark should contain <code>h3</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h3</code> element identifies the section as footer information</li>
+            
+<li>Provides a redundent means for assistive technology users to navigate to content</li>
+          
+</ul>
+        
+</li>  
+      
+</ul>
+</div>
+<div id="copyright">
+	                  Copyright 2012 University of Illinois
+	                </div>
+</body>
+</html>

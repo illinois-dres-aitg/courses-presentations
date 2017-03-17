@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 13: NAVIGATION Landmark Design Patterns</title>
+<link rel="stylesheet" type="text/css" href="http://slides.cita.illinois.edu/xml-slides.css">
+<script type="text/javascript" src="http://slides.cita.illinois.edu/jquery.js"></script><script type="text/javascript" src="http://slides.cita.illinois.edu/xml-slides.js"></script>
+</head>
+<body>
+<div role="navigation" aria-describedby="slide_nav" id="index">
+<a name="nav" id="nav"></a>
+<h2 id="slide_nav" class="hidden">
+		   Slide Navigation
+		</h2>
+<ul class="slide_nav" title="Slide Navigation Menu">
+<li class="slide_num">Slide 13 of 53</li>
+<li>
+<a href="index.html">Index
+                  </a>
+</li>
+<li>
+<a href="slide1.html">First
+              </a>
+</li>
+<li>
+<a href="slide12.html">Previous
+                   </a>
+</li>
+<li>
+<a href="slide14.html">Next
+                  </a>
+</li>
+<li>
+<a href="slide53.html">Last
+                  </a>
+</li>
+</ul>
+</div>
+<div id="content" role="main" aria-labelledby="title">
+<a name="main" id="main"></a>
+<h1 id="title" class="title">NAVIGATION Landmark Design Patterns</h1>
+<ul>
+        
+<li>Use <code>navigation</code> landmark on a element <em>containing</em> the list and <code>h2</code> element</li>    
+        
+<li>Each <code>navigation</code> landmark should have a <code>h2</code> element before the list of links</li>    
+        
+<li>If there is more than one <code>navigation</code> landmark use <code>aria-labelledby</code> for labeling the landmark with the <code>h2</code> element</li>    
+        
+<li>Use <code>ul</code> element and <code>li</code> elements for the list of links in the navigation bar</li>
+      
+</ul>
+<h2>One <code>navigation</code> landmark</h2>
+<p class="code">
+        &lt;div <strong>role="navigation"</strong>&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.....<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &lt;/div&gt;
+      </p>
+<h2>More than one <code>navigation</code> landmark</h2>
+<p class="code">
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav1</em>"</strong>&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;h2 <strong>id="<em>nav1</em>"</strong>&gt;<em>title for navigation 1</em>&lt;h2&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page11.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page12.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page13.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page14.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.....<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav2</em>"</strong>&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;h2 <strong>id="<em>nav2</em>"</strong>&gt;<em>title for navigation 2</em>&lt;h2&gt;<br>
+<br>
+        &nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page21.html"&gt;Page 10&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page22.html"&gt;Page 11&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page23.html"&gt;Page 12&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page24.html"&gt;Page 13&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;.....<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &lt;/div&gt;
+      </p>
+</div>
+<div id="copyright">
+	                  Copyright 2013 University of Illinois
+	                </div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>“SkipTo.js” Page Navigation and Bootstrap.js Accessibility Plug-in</title>
+  <name>Jon Gunderson</name>
+  <desc>Division of Disability Resources and Educational Services</desc>
+  <desc>College of Applied Health Sciences</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="https://www.itproforum.illinois.edu/">2015 Illinois IT Professional Conference</desc>  
+  <desc href="../">Presentation Home Page</desc> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Tim Nugent Trubute</li>
+        <li>SkipTo.js</li>
+        <li>Bootstrap Accessibility Plug-in</li>
+      </ul>
+
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Tribute to Tim Nugent</title>
+    <contents>
+      
+        <p><a href="http://www.paralympic.org/news/tim-nugent-us-father-accessibility-dies-age-92">Tim Nugent, US ‘father of accessibility’ dies age 92</a></p>
+        <div>
+          <img src="tim-nugent.jpg" alt="Tim Nugent coaching the Gizz Kids in a 1950's basketball game"/>
+        </div>
+    </contents>
+  </slide>   
+  
+  <slide> 
+    <title>Traditional Skip to Main Content: University Illinois Home Page</title>
+    <contents>
+      
+      <p class="center">
+        <a href="http://illinois.edu">University Illinois Home Page</a>
+      </p>
+      <iframe src="http://illinois.edu" width="100%" height="600px" title="University Illinois Home Page"></iframe>
+      
+    </contents>
+  </slide>   
+
+  <slide> 
+    <title>Multiple Skip Links: University Illinois Home Page</title>
+    <contents>
+      
+      <p class="center">
+        <a href="http://www.umt.edu/">University of Montana</a>
+      </p>
+      <iframe src="http://www.umt.edu/" width="100%" height="600px" title="University of Montana"></iframe>
+      
+    </contents>
+  </slide>   
+  
+  
+  <slide> 
+    <title>SkipTo Plugin</title>
+    <contents>
+      <ul>
+        <li>Keyboard navigation to landmarks, headings and id refs</li>
+        <li>Developers can see an outline of their page structure</li>
+        <li>Popup menu (first tab stop)</li>
+        <li>Accesskeys:
+          <ul>
+            <li>Microsoft Internet Explorer: ALT+0</li>
+            <li>Mozilla Firefox: ALT+SHIFT+0 (Windows) and CONTROL+OPTION+0 (Mac OS)</li>
+            <li>Google Chrome: CONTROL+ALT+0 (Windows) and CONTROL+OPTION+0 (Mac OS)</li>
+            <li>Safari: CONTROL+OPTION+0</li>
+          </ul>
+        </li>
+        <li>Worpress qnd Drupal support</li>
+      </ul>
+      
+      <p class="center">
+        <a href="http://paypal.github.io/skipto/">SkipTo plugin by PayPal Accessibility Team</a>
+      </p>
+      <iframe src="http://paypal.github.io/skipto/" width="100%" height="600px" title="SkipTo plugin by PayPal Accessibility Team"></iframe>
+      
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>SkipTo.js Example: Admissions</title>
+    <contents>
+      
+      <p class="center">
+        <a href="http://admissions.illinois.edu">Admissions</a>
+      </p>
+      <iframe src="http://admissions.illinois.edu" width="100%" height="600px" title="Admissions Website"></iframe>
+      
+    </contents>
+  </slide>   
+  
+  <slide> 
+    <title>Wordpress SkipTo.js Example: Interlibrary Loan &amp; Document Delivery</title>
+    <contents>
+      
+      <p class="center">
+        <a href="https://wordpress.library.illinois.edu/interlibrary-loan/">Interlibrary Loan &amp; Document Delivery</a>
+      </p>
+      <iframe src="https://wordpress.library.illinois.edu/interlibrary-loan/" width="100%" height="600px" title="Interlibrary Loan &amp; Document Delivery"></iframe>
+      
+    </contents>
+  </slide>   
+  
+  <slide> 
+    <title>Other SkipTo.js Examples at Illinois</title>
+    <contents>
+      <h2>Implemented</h2>
+      <ul>
+        <li><a href="http://disability.illinois.edu">Disability Resources and Education Services</a></li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">Information Accessibility Design and Policy</a></li>
+        <li><a href="http://online.illinois.edu">Illinois Online</a></li>
+        <li><a href="http://fae20.cita.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
+      </ul>
+      
+      <h2>In Process of Implementaion</h2>
+      <ul>
+        <li><a href="http://illinois.edu">Illinois Home Page</a></li>
+        <li><a href="http://housing.illinois.edu/">Housing</a></li>
+        <li><a href="http://ahs.illinois.edu">College of Applied Helath Sciences</a></li>
+      </ul>
+    </contents>
+  </slide>   
+
+  <slide> 
+    <title>Configuring SkipTo.js</title>
+    <contents>
+      <pre class="code">
+        &lt;script>
+          var SkipToConfig = {
+            "settings": {
+              "skipTo": {
+              "headings"     : "h1, h2, h3, h4",
+              "main"         : "main, [role=main]",
+              "landmarks"    : "[role=navigation], [role=search]",
+              "sections"     : "nav",
+              "ids"          : "#SkipToA1, #SkipToA2",
+              "customClass"  : "MyClass",
+              "accesskey"    : "0",
+              "wrap"         : "true",
+              "visibility"   : "onfocus",
+              "attachElement": ".MyCustomClass" // or "attachElement": "#MyCustomId"
+              }
+            }
+          }
+          &lt;/script>
+      </pre>
+    </contents>
+  </slide>
+ 
+ 
+  <slide> 
+    <title>Customize Styling SkipTo.js</title>
+    <contents>
+      <pre class="code">
+        &lt;style>
+          .dropMenu .MyCustomClass {
+            background:  red;
+            left: 50px;
+            top: 50px;
+           }
+         &lt;/style>
+      </pre>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Next Steps with SkipTo.js</title>
+    <contents>
+      <ul>
+        <li>Configuration options: Merge section and landmark options to just landmarks</li>
+        <li>Z-index configuration</li>
+        <li>Button colors</li>
+        <li>Menu colors</li>
+      </ul>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Bootstrap Accessibility Plugin</title>
+    <contents>
+      <ul>
+        <li>Carousel Image Rotators</li>
+        <li>Modal Dialog</li>
+        <li>Dropdown Menus</li>
+        <li>Tablist Interfaces</li>
+        <li>Alert Dialog</li>
+        <li>Collapse/Expand </li>
+      </ul>
+      <p class="center"><a href="http://paypal.github.io/bootstrap-accessibility-plugin/demo.html">Bootstrap Accessibility Plugin Test Page</a></p>
+      <iframe src="http://paypal.github.io/bootstrap-accessibility-plugin/demo.html" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+   <slide>
+    <title>Accessibility Features of Carousel</title>
+    <contents>
+      <p>Improves the accessibility of some Bootstrap.js </p>
+      <p class="center"><a href="../examples/bootstrap-carousel/index.html">Bootstrap Carousel with PayPal Bootstrap Accessibility Plug-in</a></p>
+      <iframe src="../examples/bootstrap-carousel/index.html" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Carousel Example: Illinois Online</title>
+    <contents>
+      
+      <p class="center">
+        <a href="http://online.illinois.edu">Illinois Online (Reverse engineered bootstrap plug-in)</a>
+      </p>
+      <iframe src="http://online.illinois.edu" width="100%" height="600px" title="Illinois Online Website"></iframe>
+      
+    </contents>
+  </slide>   
+ 
+  <slide> 
+    <title>Accessible Carousel Examples at Illinois</title>
+    <contents>
+      <h2>Implemented</h2>
+      <ul>
+        <li><a href="http://online.illinois.edu">Illinois Online (Reverse engineered bootstrap plug-in)</a></li>
+      </ul>
+
+      <h2>In Process of Implementaion</h2>
+      <ul>
+        <li><a href="http://illinois.edu/webtools/">Office Public Affairs Web Tools as a plug-in (HTTPS only)</a></li>
+        <li><a href="http://housing.illinois.edu/">Housing</a></li>
+        <li><a href="http://ahs.illinois.edu">College of Applied Helath Sciences</a></li>
+        <li><a href="http://www.ece.illinois.edu">Electrical and Computer Engineering</a></li>
+      </ul>
+    </contents>
+  </slide>   
+  
+  <slide>
+    <title>WAI-ARIA 1.0 Authoring Practices</title>
+    <contents>
+      <p class="center"><a href=".http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a></p>
+      <iframe src="http://www.w3.org/TR/wai-aria-practices/" width="98%" height="600px" title="WAI ARIA Authoring Practices Web Page"></iframe>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>Assets Framework for Accessible Web Widgets</title>
+    <contents>
+      <p class="center"><a href="http://assets.cms.gov">Assets Framework for Accessible Web Widgets</a></p>
+    </contents>
+  </slide>
+
+
+
+  <slide> 
+    <title>Javascript Library Accessbility Group</title>
+    <contents>
+      <ul>
+        <li>Working on providing accessible web widgets for Illinois</li>
+        <li>Support campus developers in creating accessible widgets</li>
+        <li>Improve accessibility of common Javascript libraries (e.g. Bootstrap, JQuery-UI)</li>
+        <li>Next meeting is on Tuesday December 1st at 3:00pm (in person and online using Lync)</li>
+        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-js-library-accessibility">E-mail discussion list</a> 
+          or contact <a href="mailto:clblew@illinois.edu">Christy Blew</a> (Coordinator)</li>
+      </ul>
+    </contents>
+  </slide>   
+      
+  <slide> 
+    <title>Acknowledgements</title>
+    <contents>
+      <dl>
+        <dt>Nawaz Khan</dt>
+        <dd><em>PayPal</em>, Principle Software Developer</dd>
+        <dt>Cathy O'Connor</dt>
+        <dd><em>PayPal</em>, Accessibility Program Manager</dd>
+        <dt>Victor Trasan</dt>
+        <dd><em>Google (formally at PayPal)</em></dd>
+        <dt>Dennis Lembree</dt>
+        <dd><em>eBay (formally at PayPal)</em></dd>
+        <dt>Jon Gunderson</dt>
+        <dd><em>University of Illinois</em>, Project Management and Software Developer</dd>
+        <dt>Chrsity Blew</dt>
+        <dd><em>University of Illinois</em>, Coodinator of Javascript Library Accessibility Group</dd>
+        <dt>Participants in the Javascript Library Accessibility Group</dt>
+        <dd><a href="https://lists.illinois.edu/lists/info/oaa-js-library-accessibility">Javascript Library Accessibity Listserv</a></dd>
+      </dl>
+    </contents>
+  </slide> 
+</slides> 
+
+

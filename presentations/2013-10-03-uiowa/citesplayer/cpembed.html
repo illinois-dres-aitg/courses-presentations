@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Cites Video Player Embed Code Generator</title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+
+var g_playerbase = "https://ats-streaming.cites.illinois.edu/players/citesplayer";
+
+jQuery(document).ready(function() {
+
+   // Bind a validation handler
+   jQuery('button#generate').on('click', function() {
+      if (validate()) {
+         generateCode();
+      }
+      return false;
+   });
+
+   jQuery('button#reset').on('click', function() {
+      reset();
+      jQuery('div#error-msg').empty().parent().hide();
+      return false;
+   });
+
+   function reset() {
+      jQuery('input').val('');
+   }
+
+   function generateCode() {
+
+      var $vidId = jQuery('input#vid-id');
+      var $vidTitle = jQuery('input#vid-title');
+      var $vidMp4 = jQuery('input#vid-mp4');
+      var $vidWebm = jQuery('input#vid-webm');
+      var $vidOgv = jQuery('input#vid-ogv');
+      var $vidPoster = jQuery('input#vid-poster');
+      var $vidCaption = jQuery('input#vid-caption');
+
+      var code = '<div id="' + $vidId.val() + '">';
+      code += '<link rel="stylesheet" type="text/css" href="' + g_playerbase + '/skin/citesplayer.blue.monday/citesplayer.blue.monday.css"/>';
+      code += '<script type="text/javascript" src="' + g_playerbase + '/jquery.js"><\/script>';
+      code += '<script type="text/javascript">jQuery.noConflict();<\/script>';
+      code += '<script type="text/javascript" src="' + g_playerbase + '/jquery.jplayer.min.js"><\/script>'
+      code += '<script type="text/javascript" src="' + g_playerbase + '/cites.jplayer.js"><\/script>';
+      code += '<script type="text/javascript">';
+      code += 'jQuery(document).ready(function(){';
+      code += 'var player_' + $vidId.val() + ' = new citesplayer("' + $vidId.val() + '", {';
+
+      if ($vidTitle.val()) {
+           code += 'title: "' + $vidTitle.val() + '",';
+      }
+
+      if ($vidMp4.val()) {
+           code += 'mp4: "' + $vidMp4.val() + '",';
+      }
+
+      if ($vidWebm.val()) {
+           code += 'webm: "' + $vidWebm.val() + '",';
+      }
+
+      if ($vidOgv.val()) {
+           code += 'ogv: "' + $vidOgv.val() + '",';
+      }
+
+      if ($vidPoster.val()) {
+           code += 'poster: "' + $vidPoster.val() + '",';
+      }
+
+      if ($vidCaption.val()) {
+           code += 'captions: "' + $vidCaption.val() + '",';
+      }
+
+      code += '});});<\/script><\/div>';
+
+      jQuery('div#vid-embed').empty().text(code);
+   }
+
+   function validate() {
+
+      var errorMsg = '<ul>';
+      var bError = false;
+
+      jQuery('div#error-msg').empty().parent().hide();
+
+      if (!jQuery('input#vid-id').val()) {
+         errorMsg += "<li>You must specify a container id.</li>";
+         bError = true;
+      }
+      if (!jQuery('input#vid-mp4').val() && !jQuery('input#vid-ogv').val() && !jQuery('input#vid-webm').val()) {
+         errorMsg += "<li>You must specify at least one video format.</li>";
+         bError = true;
+      }
+
+      if (bError) {
+         errorMsg += '</ul>';
+         jQuery('div#error-msg').html(errorMsg).parent().show();
+         return false;
+      }
+
+      return true;
+   }
+
+});
+</script>
+ 
+<style type="text/css">
+   div#error-container {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      display: none;
+      border: 1px solid red;
+   }
+   div#controls {
+      padding: 20px;
+      width: 80%;
+      border: 1px solid #222;
+      border-radius: 10px;
+      background-color: #fff;
+   }
+   div#controls div {
+      margin-bottom: 5px;
+   }
+   legend {
+      font-weight: bold;
+   }
+   label {
+      display: inline-block;
+      width: 9em;
+      text-align: right;
+      padding: 2px 5px;
+   }
+   p.desc {
+      margin-top: 5px;
+      margin-left: 10em;
+      padding-left: 20px;
+      font-size: 90%;
+      color: #484;
+   }
+   div#controls button {
+      margin: 10px;
+      font-size: 110%;
+      border-radius: 7px;
+   }
+   div.embed-wrapper {
+      width: 80%;
+      padding: 20px;
+      background-color: #fff;
+   }
+   div#vid-embed {
+      padding: 2px 5px;
+      height: 12em;
+      border: 1px solid #222;
+      background-color: #eef;
+      overflow: auto;
+   }
+   div#vid-embed:hover,
+   div#vid-embed:focus {
+      border-color: #800;
+   }
+</style>
+</head>
+<body>
+<h1>Cites Video Player Embed Code Generator</h1>
+<div id="controls">
+   <div id="error-container" role="alert">
+      <h2>Error:</h2>
+      <div id="error-msg" role="alert">
+      </div>
+   </div>
+   <fieldset>
+      <legend>Video Container and Title</legend>
+      <p>Enter a container ID and title for the video.</p>
+      <div>
+         <label for="vid-id">Video Container ID:</label>
+         <input id="vid-id" aria-describedby="vid-id-desc" type="text" />
+         <p id="vid-id-desc" class="desc">The container ID must be unique for each video embedded in a page. For example: video1, video2, etc.</p>
+      </div>
+      <div>
+         <label for="vid-title">Video Title:</label>
+         <input id="vid-title" aria-describedby="vid-title" type="text"/>
+         <p id="vid-title" class="desc">Video Title should be a short descriptive title for the video</p>
+      </div>
+   </fieldset>
+   <fieldset>
+      <legend>Video Assets</legend>
+      <p>Enter the full path to the video, poster, and caption files. <strong>At least one video file of the supported formats must be provided</strong></p>
+      <div><label for="vid-mp4">Mp4:</label><input id="vid-mp4" type="text"/></div>
+      <div><label for="vid-ogv">Ogv:</label><input id="vid-ogv" type="text"/></div>
+      <div><label for="vid-webm">Webm:</label><input id="vid-webm" type="text"/></div>
+      <div><label for="vid-poster">Poster:</label><input id="vid-poster" type="text"/></div>
+      <div><label for="vid-caption">Caption:</label><input id="vid-caption" type="text"/></div>
+   </fieldset>
+   <button id="generate">Generate Embed Code</button>
+   <button id="reset">Reset Form</button>
+</div>
+
+<div class="embed-wrapper">
+   <h2 id="embed-label">Embed Code</h2>
+   <div id="vid-embed" aria-labelledby="embed-label"></div>
+</div>
+</body>
+</html>

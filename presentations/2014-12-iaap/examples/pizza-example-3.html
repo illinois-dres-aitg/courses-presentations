@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Form Control Accessibility: Example 3</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="js/submit-order.js" type="text/javascript"></script>
+  
+  <style type="text/css">
+   div {
+     border: solid medium transparent;  
+   }
+   
+   div.focus {
+     border-color: black;
+     background-color: #FFFFA0;
+   }
+
+   div.hover {
+     border-color: black;
+     background-color: #EEEEEE;
+   }
+
+
+   input[type="text"]:focus,
+   select:focus {
+     background-color: #FFFFA0;
+     outline: medium solid black;
+   }
+
+   input[type="text"]:hover,
+   select:hover {
+     background-color: #EEEEEE;
+     outline: medium solid black;
+   }
+   
+  </style>
+
+  <script type="text/javascript">
+  
+    // Focus styling code
+
+    $(document).ready( function() {
+    
+      $('input[type="radio"]').focus(function() {
+        $(this).parent().addClass('focus');
+      });
+
+      $('input[type="radio"]').blur(function() {
+        $(this).parent().removeClass('focus');
+      });
+
+      $('input[type="radio"]').parent().hover(function() {
+        $(this).addClass('hover');
+      }, 
+      function() {
+        $(this).removeClass('hover');
+      });
+
+
+      $('input[type="checkbox"]').focus(function() {
+        $(this).parent().addClass('focus');
+      });
+
+      $('input[type="checkbox"]').blur(function() {
+        $(this).parent().removeClass('focus');
+      });
+
+      $('input[type="checkbox"]').parent().hover(function() {
+        $(this).addClass('hover');
+      }, 
+      function() {
+        $(this).removeClass('hover');
+      });
+
+      
+    });
+  
+  </script>
+  
+  <script type="text/javascript">
+    //
+    // Scripting for submit button form validation
+  
+    function moveFocus(id) {
+      $('#'+id).focus();
+    }
+
+    function clearErrorFeedback() {
+      $('div#id-errors').empty();
+      $('div#id-errors').css('display', 'none');
+    }
+    
+    function exampleErrorFeedback(errors) {
+       var num_errors = errors.length;
+       
+       str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
+       
+       $('div#id-errors').css('display', 'block');
+
+       $('div#id-errors').append('<h2><a id="id-errors-start"></a>' + str + '</h2>');
+       
+       var messages = "<ol>\n";
+       
+       for (var i = 0; i < num_errors; i++) {
+         var e = errors[i];
+         messages += '<li><a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '</a></li>\n';
+       }
+       messages += "</ol>\n";       
+       $('div#id-errors').append(messages);
+       
+       moveFocus("id-errors-start");
+    }
+
+  </script>
+
+  
+  <script type="text/javascript">
+    //
+    // Scripting for inline form validation
+        
+    function checkItem(id, flag, message) {
+      var em = $('#' + id + '-error');
+      $(em).empty();
+      var ei = $('#' + id);
+      
+      if (flag) {
+        $(ei).attr('aria-invalid', 'true');
+        $(em).append(message);
+        $(em).removeClass('noerror');
+        $(em).addClass('error');
+      }
+      else {
+        $(ei).attr('aria-invalid', 'false');
+        $(em).addClass('noerror');
+        $(em).removeClass('error');
+      }
+    }
+    
+    function checkName() {
+      var ei = $('#id-name');
+      checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
+    }  
+
+    function checkAddress() {
+      var ei = $('#id-address');
+      checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
+    }  
+
+    function checkPhone() {
+      var ei = $('#id-phone');
+      var phone = $(ei).val();
+      if (phone.length === 0) {
+        checkItem('id-phone',true, "Phone cannot be empty!  Enter your phone number");
+      }
+      else {
+        p = "";
+        for (var i = 0; i < phone.length; i++) {
+          var c = phone[i];
+          if ((c >= "0") && (c <= "9")) { 
+            p += c;
+          }
+        } 
+        checkItem('id-phone', ((p.length !== 7) && (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
+      }
+    }  
+    
+    
+    
+  </script>
+  </script>
+
+  <style type="text/css">
+  
+    div#id-errors {
+      color: red;
+      display: none;
+      margin-left: 1em;
+      border: thin solid red;
+      width: 25em;
+    }
+    
+    div#id-errors a {
+      color: red;
+    }
+  </style>
+    
+  
+  <style type="text/css">
+    h2, h3 {
+      margin: 0;
+      padding: 0;
+      margin-top: 1em;
+    }
+    
+    div.text,
+    div.select,
+    div.group,
+    input[type="submit"] {
+      margin-top: 0.5em;
+    }
+    
+    div.group {
+      width: 20em;
+    }
+
+    div.group div.title {
+      font-weight: bold;
+    }    
+    
+    p.instructions {
+      margin: 0;
+      padding: 0.25em;
+      font-size: 100%;
+    }
+    
+    span.error {
+      color: red;
+      border: thin solid red;
+      padding: 0.25em;
+    }
+
+    span.noerror {
+      color: transparent;
+      border: thin solid transparent;
+      padding: 0.25em;
+    }
+    
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>Form Control Accessibility</h1>
+  </header>
+  
+  <nav role="navigation">
+    <ul>
+      <li><a href="pizza-example-1.html">Example 1</a></li>
+      <li><a href="pizza-example-2.html">Example 2</a></li>
+      <li><a href="pizza-example-3.html">Example 3</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <h1>Example 3</h1>
+    
+    <h2>Features</h2>
+      <ul>
+        <li>ARIA Accessibility Techniques</li>
+        <li><code>aria-label</code> and <code>aria-labelledby</code> attribute for labeling</li>
+        <li>Error feedback through pop messages</li>
+        <li><code>aria-describedby</code> used to reference error messages and instructions (e.g special)</li>
+        <li><code>aria-required</code> and <code>aria-invalid</code> attributes to mark required and invalid fields</li>
+        <li><code>focus</code> and <code>blur</code> events to improve focus highlighting of form controls</li>
+      </ul>
+
+    <div role="region" aria-label="Example">
+    
+      <div id="id-errors" role="region" aria-label="Error information">
+      
+      </div>
+    
+      <form>
+        <h2>Pizza Order Form</h2>
+
+        <div class="text">
+          <div>Name</div>
+          <input id="id-name" 
+                 aria-required="true" 
+                 aria-invalid="false" 
+                 type="text" 
+                 size="30" 
+                 aria-label="Name" 
+                 aria-describedby="id-name-error"
+                 onblur="checkName()"/>
+          <span id="id-name-error" class="noerror" role="alert"></span>
+        </div>
+        
+        <div class="text">
+          <div>Address</div>
+          <input id="id-address" 
+                 aria-required="true" 
+                 aria-invalid="false" 
+                 type="text" 
+                 size="40" 
+                 aria-label="Address"
+                 aria-describedby="id-address-error"
+                 onblur="checkAddress()"/>
+          <span id="id-address-error" class="noerror" role="alert"></span>
+        </div>
+        
+        <div class="text">
+          <div>Phone</div>
+          <input id="id-phone" 
+                aria-required="true" 
+                aria-invalid="false" 
+                type="text" 
+                size="14" 
+                aria-label="Phone"
+                aria-describedby="id-phone-error"
+                onblur="checkPhone()"/>
+          <span id="id-phone-error" class="noerror" role="alert"></span>
+        </div>
+
+        <div class="select">
+          <div>Delivery Method</div>
+          <select id="id-delivery" aria-label="Delivery Method">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <div id="id-crust" class="title">Crust</div>
+          <div class="button">
+            <input id="id-thin" name="crust" type="radio" value="Thin" aria-required="true" aria-labelledby="id-thin id-crust">Thin
+          </div>
+          <div class="button">
+            <input id="id-classic" name="crust" type="radio" value="Classic" aria-required="true" aria-labelledby="id-thin id-classic">Classic
+          </div>
+          <div class="button">
+            <input id="id-deep" name="crust" type="radio" value="Deep Dish" aria-required="true" aria-labelledby="id-thin id-deep">Deep Dish
+          </div>
+        </div>
+
+        <div class="group">
+          <div id="id-toppings" class="title">Toppings</div>
+          <p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
+          <div class="button">
+            <input id="id-sausage" 
+                  name="topping" 
+                  type="checkbox" 
+                  value="Sausage" 
+                  aria-labelledby="id-sausage id-toppings"
+                  aria-describedby="id-special">
+            Sausage
+          </div>
+          <div class="button">
+            <input id="id-pepperoni" 
+                  name="topping" 
+                  type="checkbox" 
+                  value="Pepperoni"
+                  aria-labelledby="id-pepperoni id-toppings">
+            Pepperoni
+          </div>
+          <div class="button">
+            <input id="id-mushrooms"
+                   name="topping" 
+                   type="checkbox" 
+                   value="Mushrooms"
+                  aria-labelledby="id-mushrooms id-toppings">
+            Mushrooms
+          </div>
+          <div class="button">
+            <input id="id-onions"
+                   name="topping" 
+                   type="checkbox" 
+                   value="Onions"
+                   aria-labelledby="id-onions id-toppings">
+              Onions
+          </div>
+          <div class="button">
+            <input id="id-green"
+                   name="topping" 
+                   type="checkbox" 
+                   value="Green Peppers"
+                   aria-labelledby="id-green id-toppings">
+              Green Peppers
+          </div>
+          <div class="button">
+            <input id="id-black" 
+                   name="topping" 
+                   type="checkbox" 
+                   value="Black Olives"
+                   aria-labelledby="id-black id-toppings">
+              Back Olives
+          </div>
+          <div class="button">
+            <input id="id-x-cheese"
+                   name="topping" 
+                   type="checkbox" 
+                   value="Extra Cheese"
+                   aria-labelledby="id-x-cheese id-toppings">
+              Extra cheese
+          </div>
+        </div>
+        
+        <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
+        
+      </form>
+      
+      <div id="order">
+      
+      </div>
+      
+    </div>
+  </main>
+  
+</body>
+</html>

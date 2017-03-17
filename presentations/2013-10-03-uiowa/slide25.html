@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 25: HTML5 Video Element Accessibility: Example</title>
+<link rel="stylesheet" type="text/css" href="http://slides.cita.illinois.edu/xml-slides.css">
+<script type="text/javascript" src="http://slides.cita.illinois.edu/jquery.js"></script><script type="text/javascript" src="http://slides.cita.illinois.edu/xml-slides.js"></script>
+</head>
+<body>
+<div role="navigation" aria-describedby="slide_nav" id="index">
+<a name="nav" id="nav"></a>
+<h2 id="slide_nav" class="hidden">
+		   Slide Navigation
+		</h2>
+<ul class="slide_nav" title="Slide Navigation Menu">
+<li class="slide_num">Slide 25 of 53</li>
+<li>
+<a href="index.html">Index
+                  </a>
+</li>
+<li>
+<a href="slide1.html">First
+              </a>
+</li>
+<li>
+<a href="slide24.html">Previous
+                   </a>
+</li>
+<li>
+<a href="slide26.html">Next
+                  </a>
+</li>
+<li>
+<a href="slide53.html">Last
+                  </a>
+</li>
+</ul>
+</div>
+<div id="content" role="main" aria-labelledby="title">
+<a name="main" id="main"></a>
+<h1 id="title" class="title">HTML5 Video Element Accessibility: Example</h1>
+<ul>
+        
+<li>
+<a href="http://dev.w3.org/html5/spec/single-page.html#the-video-element" target="_specification"><code>video</code> element</a> supports captioning through the <a href="http://dev.w3.org/html5/spec/single-page.html#the-track-element" target="_specification"><code>track</code> element</a>
+</li>
+        
+<li>
+<a href="http://dev.w3.org/html5/webvtt/" target="_specification">WebVTT timed text format</a>
+</li>
+        
+<li>
+<a href="https://class.coursera.org/sustain-2012-001/wiki/view?page=Week2Overview" target="_example">Example of an accessible media player used in coursera.org lectures</a>
+</li>
+        
+<li>
+<a href="citesplayer/html5-video.html" target="_example">Example that uses HTML5 specifications, but not supported in browsers</a>
+</li>
+      
+</ul>
+<h2>Video Element Example</h2>
+<pre class="code">
+  &lt;video controls"&gt;
+    &lt;source src="media/sintel_trailer-480p.mp4" type="video/mp4"&gt;
+    &lt;source src="media/sintel_trailer-480p.ogv" type="video/ogg"/&gt;
+    &lt;track kind="subtitles" src="media/sintel_trailer-480p_en.vtt" srclang="en" label="English for the Hard of Hearing"&gt;
+  &lt;/video&gt;
+      </pre>
+<h2>VTT Time Text Format Example</h2>
+<pre class="code">
+WEBVTT
+
+00:00:00.00 --&gt; 00:00:11.89
+eerie music
+
+00:00:11.90 --&gt; 00:00:15.00
+What brings you to|the land of the gatekeepers?
+
+00:00:15.01 --&gt; 00:00:18.39
+eerie music
+
+00:00:18.40 --&gt; 00:00:20.00
+I'm searching for someone
+
+00:00:20.01 --&gt; 00:00:36.54
+eerie music
+
+00:00:36.55 --&gt; 00:00:39.00
+A dangerous quest for a lone hunter
+
+00:00:41.35 --&gt; 00:00:44.00
+I've been alone for|as long as I can remember
+
+      </pre>
+</div>
+<div id="copyright">
+	                  Copyright 2013 University of Illinois
+	                </div>
+</body>
+</html>

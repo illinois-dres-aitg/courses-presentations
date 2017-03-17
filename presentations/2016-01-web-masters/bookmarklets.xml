@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Visualize Web Accessibility with Browser-Based Bookmarklets</title>
+  <name>Jon Gunderson, Ph.D.</name> 
+
+  <desc href="http://disability.illinois.edu/aitg/">Accessible Information Technology Group</desc>
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="../">Presentations</desc> 
+  <desc>January 20th</desc> 
+  <desc href="http://illinois.edu/calendar/detail/4835?eventId=33076378&amp;calMin=201601&amp;cal=20160120&amp;skinId=4897">Illinois Web Master Workshop</desc> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Designing Accessibility using Web Standards</li>
+        <li>Bookmarklets for Accessibility Visualization</li>
+        <li>Discussion of next Steps for Bookmarklets</li>
+        <li>Update on FAE 2.0 and AInspector Sidebar</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <img src="images/wcag20-title.png" width="100%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML 5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+
+ 
+
+  <slide>
+    <title>Bookmarklet Advantages</title>
+    <contents>
+      <dl>
+        <dt>Visibility of Accessibility Information</dt>
+        <dd>Bookmarklets make hidden accessibility information visible in the graphical rendering to web designers, developers and accessibility testers</dd>
+        <dt>Manual Checking</dt>
+        <dd>Support manual checking of WCAG 2.0 accessibility requirements, inconjunction with other testing tools and proceedures</dd>
+        <dt>Browser Compatibility</dt>
+        <dd>Can be used in any modern browser (e.g. Chrome, Firefox, Safari, IE 10+)</dd>
+        <dt>Administration</dt>
+        <dd>Fewer administrative issues than browser extensions/add-ons (e.g. do not need admin support to install in some managed environments)</dd>
+        <dt>Accessibility Categories</dt>
+        <dd>Bookmarklets break up accessibility issues into functional groupings</dd>
+        <dd>Rule categories in OpenAjax Rulesets of AInspector Sidebar and FAE 2.0</dd>
+      </dl>  
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Bookmarklet Features</title>
+    <contents>
+      <ul>
+        <li>Highlight regions and targeted groups of elements</li>
+        <li>Tag name</li>
+        <li>Role</li>
+        <li>Accessible name (<a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>)</li>
+        <li>Accessible description</li>
+        <li>Grouping label</li>
+        <li>Important properties</li>
+      </ul>  
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Bookmarklet Installation and Demonstration</title>
+    <contents>
+      <ul>
+        <li><a href="http://accessibility-bookmarklets.org/install.html">Installing Bookmarklets</a></li>
+        <li>Landmarks (<code>main, navigation, banner...</code>)</li>
+        <li>Headings (<code>h1-h6</code>)</li>
+        <li>Images (<code>img</code>)</li>
+        <li>Lists (<code>ul, ol and dl</code>)</li>
+        <li>Form controls (<code>button, input, select and textarea</code>)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Test Pages</title>
+    <contents>
+      <h2>Pages for Testing Bookmarklets</h2>
+      <ul>
+        <li>Landmarks
+          <ul>
+            <li><a href="http://will.illinois.edu/">WILL</a></li>
+            <li><a href="http://aces.illinois.edu/">ACES (no main landmark)</a></li>
+            <li><a href="http://www.civilrightsusa.gov/">Civil Rights USA.GOV (no landmarks)</a></li>
+          </ul>
+        </li>
+        <li>Headings
+          <ul>
+            <li><a href="http://engineering.illinois.edu/academics/undergraduate/">Undergraduate Academics</a></li>
+            <li><a href="http://www.las.illinois.edu/">LAS (Hidden headings)</a></li>
+            <li><a href="https://www.volunteer.gov/">Volunteer USA (no headings)</a></li>
+          </ul>
+        </li>
+        <li>Images
+          <ul>
+            <li><a href="http://www.las.illinois.edu/">LAS</a></li>
+            <li><a href="http://www.cnn.com/">CNN</a></li>
+            <li><a href="http://merage.uci.edu/">UC Irvine: School of Business (off screen images and empty alt text)</a></li>
+          </ul>
+        </li>
+        <li>Lists
+          <ul>
+            <li><a href="http://academics.aces.illinois.edu/career-services/job-search/interviews">ACES Interviews and Offers</a></li>
+            <li><a href="http://www.relegant.com/">Relegant (accessibe name for lists)</a></li>
+            <li><a href="http://research.illinois.edu/research-illinois/research-centers-and-programs">Research Centers (not using list markup)</a></li>
+          </ul>
+        </li>
+        <li>Form Controls
+          <ul>
+            <li><a href="http://disability.illinois.edu/node/add/application-for-dres-services">DRES Application</a></li>
+            <li><a href="https://www.conferenceabstracts.com/cfp2/login/LoginAccountCreation.asp">Educause Conference Proposal Submissions (no labels)</a></li>
+          </ul>
+        </li> 
+      </ul>
+      
+      <h2>Quality Assurance Test Pages</h2>
+      <ul>
+        <li><a href="https://rawgit.com/oaa-tools/a11y-examples/master/build/input-text.html">Input Elements</a></li>
+        <li><a href="https://rawgit.com/oaa-tools/a11y-examples/master/build/select.html">Select Elements</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Submit an Issue or Idea</title>
+    <contents>
+      <ul>
+        <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
+      </ul>
+    </contents>
+  </slide>   
+  
+  <slide> 
+    <title>Acknowledgements</title>
+    <contents>
+      <h2>Primary Developers</h2>
+      <dl>
+        <dt>Nicholas Hoyt, Illinois</dt>
+        <dd>Software development and interaction design</dd>
+        <dt>Landi Lark, Pixo</dt>
+        <dd>Software development and design of Bookmarklets</dd>
+        <dd>Webmaster for bookmarklets website</dd>
+      </dl>
+
+      <h2>Other Contributors</h2>
+      <dl>
+        <dt>Brandon Bowersox-Johnson, Pixo</dt>
+        <dd>Project coordinator</dd>
+        <dt>Jon Gunderson, Illinois</dt>
+        <dd>Project coordinator</dd>
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Possible next steps in bookmarklet development and discussion</title>
+    <contents>
+      <ul>
+        <li>Information provided by bookmarklets
+          <ul>
+            <li>Ignore hidden information</li>
+            <li>Evaluation information</li>
+          </ul>
+        </li>
+        <li>Tables</li>
+        <li>Color and color contrast</li>
+        <li>Links</li>
+        <li>Keyboard support (e.g. tabindex, widget roles)</li>
+        <li>Accessibility report (e.g. similar to AInspector Sidebar)</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Tools User Group</title>
+    <contents>
+      <h2>Purpose</h2>
+      <ul>
+        <li>Meet the evaluation needs of the community of users</li>
+        <li>Provide standards based accessibility information (e.g. computed role and accessible name)</li>
+        <li>Develop a collective understanding web accessibility</li>
+        <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
+        <li>Teleconference one Friday morning a month (typically 1st or 3rd)</li>
+      </ul>
+      
+      <h2 id="join">Join E-mail Lists</h2>
+      <ul>
+        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Accessibility Alliance Tools Discussion List</a></li>
+        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Accessibility Alliance Tools Announcements List</a></li>
+      </ul>
+      
+    </contents>  
+  </slide>
+  
+  <slide>
+    <title>Other Accessibility Resources</title>
+    <contents>
+      
+      <h2><a href="https://addons.mozilla.org/en-us/firefox/addon/ainspector-sidebar/">AInspector Sidebar</a></h2>
+      <p>AInspector Sidebar for the Firefox browser supports the evaluation of web pages for the accessibility features required by the W3C Web Content Accessibility Guidelines 2.0 Level A and AA Success Criteria. The tool provides both summary information and detailed information on the accessibility requirements that apply to a web page (e.g. WCAG 2.0 requirement filtering).  Users can highlight and inspect element information on the page associated for each requirement. Each result has information on the requirement, techniques that can be used to implement the requirement and links to more information. AInspector Sidebar uses the open source OpenAjax Evaluation Library, Rules and Rulesets.</p>
+      
+      <h2><a href="http://fae20.cita.illinois.edu/">Functional Accessibility Evaluator</a></h2>
+      <p>The Functional Accessibility Evaluator (FAE) 2.0 provides accessibility information on an entire website for WCAG 2.0 Level A and AA Success Criteria. FAE 2.0 provides both website summary and page level detail on the accessibility requirements that applied to the pages with in a website. FAE 2.0 uses the same open source OpenAjax Evaluation Library, Rules and Rulesets as AInspector Sidebar. FAE 2.0 and AInspector Sidebar are designed to complement themselves. FAE 2.0 provide a overview of accessibility of a website that can be used in design, planning and quality assurance for project management and AInspector Sidebar provides detailed information and inspection capability of a particular page.</p>
+      
+      <h2><a href="http://paypal.github.io/skipto/">SkipTo.js</a></h2> 
+      <p>SkipTo.js is a replacement for your old classic “Skip To Main” link. The SkipTo.js script creates a drop-down menu consisting of the links to the important places on a given web page. </p>
+      
+      <h2><a href="https://github.com/paypal/bootstrap-accessibility-plugin">Bootstrap.js Accessibility Plug-in</a></h2>
+      <p>This plugin adds accessibility features to Bootstrap 3.x to support keyboard only and screen reader users. The plugin does not affect the visual layout or performance of your website.</p>
+      
+      <h2><a href="http://ableplayer.github.io/ableplayer">AblePlayer Media Player</a></h2>
+      <p>Able Player is a fully accessible cross-browser media player. It uses the HTML5 &lt;audio> or &lt;video> element for browsers that support them, and (optionally) the JW Player as a fallback for those that don’t.</p>
+      
+    </contents>
+  </slide>
+</slides> 
+
+

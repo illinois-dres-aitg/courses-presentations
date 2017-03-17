@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>HTML5 & ARIA for Meeting WCAG 2.0 Success Criteria</title>
+ <name>Jon Gunderson</name> 
+  <desc>Division of Disability Resources and Educational Services</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="http://www.accessibilityassociation.org/content.asp?contentid=161">IAAP Webinar</desc>
+  <desc href="../">Presentation Home Page</desc> 
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>W3C Standards for web accessibility</li>
+        <li>ARIA Landmarks Design Patterns</li>
+        <li>Programmatic link identification and context using ARIA</li>
+        <li>ARIA for accessible Forms</li>
+        <li>What is an ARIA Widget?</li>
+        <li>Open source tools for evaluating web accessibility</li>
+      </ul>
+      <p class="center" style="font-size: 200%; margin-top: 2.5em">Slides at:<br/> 
+        <a href="http://presentations.cita.illinois.edu/2014-11-ahg-aria-html5/">
+          http://presentations.cita.illinois.edu/2014-11-ahg-aria-html5/
+        </a>
+      </p>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <img src="images/wcag20-title.png" width="99%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <img src="images/wai-aria-title.png" width="99%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <img src="images/html5-title.png" width="99%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <img src="images/html5-main.png" width="99%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+
+  <!-- 
+    ===================================================================
+                                    Landmarks
+    ===================================================================
+-->
+  
+
+  <slide>
+    <title>Landmarks, HTML5 Section Elements and Headings</title>
+    <contents>
+      <ul style="margin-left: 10%">
+        <li>ARIA Roles</li>
+        <li>HTML 5 Section Elements</li>
+        <li>Headings (H1-H6)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>ARIA Landmarks</title>
+    <contents>
+      <p class="center"><a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles" target="_specification">ARIA Landmark Role Specification</a></p>
+      <ul style="margin-left: 10%">
+        <li>application</li>
+        <li>banner</li>
+        <li>complementary</li>
+        <li>contentinfo</li>
+        <li>form</li>
+        <li>main</li>
+        <li>navigation</li>
+        <li>region (sub sections)</li>
+        <li>search</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Landmark Example: Disability Resources and Educational Services (DRES) Website</title>
+    <contents>
+      <p class="center"><a href="http://disability.illinois.edu" target="_example">Landmark Example: DRES Website</a></p>
+      <img src="images/disability-home.png" width="99%" alt="Graphical browser rendering of University of Illinois Disability Services Home Page"/>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Pitfalls Observed in Initial Use of Landmarks</title>
+    <contents>
+      <ul>
+        <li>ARIA menu roles were used in flyout menus:
+          <ul>
+            <li>No keyboard support to manage focus</li>
+            <li>Menu roles override link role</li>
+          </ul>
+        </li>
+        <li>Nested Navigation Landmarks, resulting in too many navigation landmarks</li>    
+        <li>Landmarks indicated programmatic/styling sections, not semantic sections</li>    
+        <li>Some content in landmarks some content not in landmarks</li>
+        <li><code>article</code> role was used as a landmark role</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide> 
+    <title>DRES Home Page Landmarks</title>
+    <contents>
+      <p class="center"><img width="98%" src="images/dres-landmarks-home-page.png" alt="screen shot highlighting landmarks on dres home page"/></p>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <slide> 
+      <title>DRES Informational Page</title>
+      <contents>
+        <p class="center"><img width="98%" src="images/dres-landmarks-general-page.png" alt="screen shot highlighting landmarks on a dres informational page"/></p>
+      </contents>
+    </slide> 
+    
+    <title>MAIN Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>Typically one <code>main</code> landmark per page</li>    
+        <li>Each <code>main</code> landmark has a <code>h1</code> element</li>    
+        <li>If more than one <code>h1</code> element and <code>main</code> landmarks use <code>aria-labelledby</code> for naming the <code>main</code> landmark</li>    
+      </ul>
+
+  <h2>One Main Landmark</h2>
+
+      <p class="code">
+        &lt;div <strong>role="main"&gt;</strong><br/><br/>
+        &#160;&#160;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+      </p> 
+      
+
+      <h2>Multiple Main Landmarks</h2>
+      
+      <p class="code">
+        &lt;div <strong>role="main"  aria-labelledby="<em>title1</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h1 <strong>id="<em>title1</em>"</strong>&gt;<em>title for main content 1</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+        ....
+        &lt;div <strong>role="main"  aria-labelledby="<em>title2</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h1 <strong>id="<em>title2</em>"</strong>&gt;<em>title for main content 2</em>&lt;h1&gt;<br/><br/>
+        &#160;&#160;.... <em>main content</em>....   <br/><br/>
+        &lt;/div&gt;
+      </p> 
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>NAVIGATION Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>Use <code>navigation</code> landmark on a element <em>containing</em> the list and <code>h2</code> element</li>    
+        <li>Each <code>navigation</code> landmark should have a <code>h2</code> element before the list of links</li>    
+        <li>If there is more than one <code>navigation</code> landmark use <code>aria-labelledby</code> for labeling the landmark with the <code>h2</code> element</li>    
+        <li>Use <code>ul</code> element and <code>li</code> elements for the list of links in the navigation bar</li>
+      </ul>
+      <h2>One <code>navigation</code> landmark</h2>
+      <p class="code">
+        &lt;div <strong>role="navigation"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;
+      </p> 
+      <h2>More than one <code>navigation</code> landmark</h2>
+      <p class="code">
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav1</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2 <strong>id="<em>nav1</em>"</strong>&gt;<em>title for navigation 1</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page11.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page12.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page13.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page14.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;<br/>
+        &lt;div <strong>role="navigation"  aria-labelledby="<em>nav2</em>"</strong>&gt;<br/><br/>
+        &#160;&#160;&lt;h2 <strong>id="<em>nav2</em>"</strong>&gt;<em>title for navigation 2</em>&lt;h2&gt;<br/><br/>
+        &#160;&#160;&lt;ul><br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page21.html"&gt;Page 10&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page22.html"&gt;Page 11&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page23.html"&gt;Page 12&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;&lt;li&gt;&lt;a href="page24.html"&gt;Page 13&lt;/a&gt;&lt;/li&gt;<br/>
+        &#160;&#160;&#160;&#160;.....<br/>
+        &#160;&#160;&lt;/ul><br/>
+        &lt;/div&gt;
+      </p> 
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Landmark Design Patterns</title>
+    <contents>
+      <ul>
+        <li>All content should be contained in a landmark:
+          <ul>
+            <li>banner (top level)</li>
+            <li>complementary</li>
+            <li>contentinfo  (top level)</li>
+            <li>main (top level)</li>
+            <li>navigation</li>
+            <li>search</li>
+          </ul>
+        </li>    
+        <li><em>Must</em> use labels when a landmark of the same type is used more than once</li>    
+        <li><em>Should</em> not nest landmarks of the same type</li>    
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Use of Headings (H1-H6) in ARIA Landmarks</title>
+    <contents>
+      <ul>
+        <li><code>main</code> landmarks should contain <code>h1</code> element at the beginning of section:
+          <ul>
+            <li><code>h1</code> element content describes the content or the purpose of the page</li>
+            <li>Provides a redundant means for assistive technology users to navigate to main content</li>
+            <li>Use headers in a structural way or in combination with HTML5 section elements</li>
+            <li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark</li>
+          </ul>
+        </li>    
+        <li><code>navigation</code> and <code>complementary </code>landmarks should contain <code>h2</code> element at the beginning of section:
+          <ul>
+            <li><code>h2</code> element content describes the content or the purpose of the page</li>
+            <li>Provides a redundant means for assistive technology users to navigate to content</li>
+            <li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name for each landmark</li>
+          </ul>
+        </li>  
+        <li><code>contentinfo</code> landmark should contain <code>h2</code> element at the beginning of section:
+          <ul>
+            <li><code>h2</code> element identifies the section as footer information</li>
+            <li>Provides a redundant means for assistive technology users to navigate to content</li>
+          </ul>
+        </li>  
+        <li><code>banner</code> landmark may contain <code>h1</code> element at the beginning of section:
+          <ul>
+            <li><code>h1</code> element identifies the website information</li>
+            <li>Provides a redundent means for assistive technology users to orient to the website</li>
+          </ul>
+        </li>  
+      </ul>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Landmark Example: Campus Information Technology and Education Services (CITES) Website</title>
+    <contents>
+      <p class="center"><a href="http://www.cites.illinois.edu" target="_example">Landmark Example: Campus Information Technology and Education Services (CITES) Website</a></p>
+      <img src="images/cites-home.png" width="99%" alt="Graphical browser rendering of CITES home page"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Landmark Example: International Business Machines (IBM)</title>
+    <contents>
+      <p class="center"><a href="http://www.ibm.com" target="_example">Landmark Example: International Business Machines (IBM)</a></p>
+      <img src="images/ibm-home.png" width="99%" alt="Graphical browser rendering of IBM home page"/>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>HTML5 Section Elements</title>
+    <style>
+      table {
+        margin-top: 2em;
+        border-collapse: collapse;
+        margin-left: 10%;
+        font-size: 110%;
+      }
+      
+      table caption {
+        text-align: center;
+        margin-bottom: 0.5em;
+      }
+      
+      table thead th {
+        border-bottom: solid thin black;
+        vertical-align: bottom;
+      }
+
+      table th,
+      table td {
+        font-weight: normal;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        vertical-align: top;
+        text-align: left;
+      }
+
+
+      table em {
+        font-size: 90%;
+        color: gray;
+      }
+
+      .question {
+        text-align: center;
+        font-size: 120%;
+        font-variant: italic;
+      }
+      
+      table tr {
+        background-color: white;
+        color: black;
+        font-size: 110%;
+      }
+      
+      table tbody tr.odd {
+        background-color: #EEEEEE;
+      }
+
+    </style>
+    
+    <contents>
+      <p class="question"><a href="http://dev.w3.org/html5/spec/single-page.html#wai-aria" target="_specification">Proposed HTML5 section element mapping to ARIA roles</a></p>
+      
+      <table summary="HTML5 Section Elements and allowed roles">
+        <caption>HTML5 section elements and allowed ARIA roles</caption>
+        <thead>
+          <tr>
+            <th>Section Element</th>
+            <th>Allowed ARIA Roles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <th><code>address</code></th>           
+            <td><code>contentinfo | region <em>(proposed)</em> | presentation</code></td>
+          </tr>    
+          <tr>
+            <th><code>article</code></th>           
+            <td><code>article | main | document | application | region <em>(proposed)</em> | presentation</code></td>
+          </tr>    
+          <tr class="odd">
+            <th><code>aside</code></th>
+            <td><code>complementary | note | search | region <em>(proposed)</em> | presentation</code></td>
+          </tr>    
+          <tr>
+            <th><code>footer</code></th>
+            <td><code>contentinfo | presentation</code></td>
+          </tr>    
+          <tr class="odd">
+            <th><code>header</code></th>
+            <td><code>banner | presentation</code></td>
+          </tr>    
+          <tr>
+            <th><code>main</code></th>
+            <td><code>main | presentation</code></td>
+          </tr>    
+          <tr class="odd">
+            <th><code>nav</code></th>
+            <td><code>navigation | region | presentation</code></td>
+          </tr>    
+          <tr>
+            <th><code>section</code></th>
+            <td><code> region | alert | alertdialog | application | contentinfo | dialog | document | log | main | marquee | presentation | search | status | presentation</code></td>
+          </tr>    
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>HTML5 to ARIA Mappings and Implementation Information</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#wai-aria"  target="_specification">Proposed HTML5 to ARIA Mappings</a></li>
+        <li><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Headings in HTML5 are Designed for Outlining Content</title>
+    <contents>
+      <ul>
+        <li><a href="http://dev.w3.org/html5/spec/single-page.html#headings-and-sections"  target="_specification">HTML5 Outlining Algorithm</a></li>
+        <li>Relative heading levels in sections define the outline structure</li>
+        <li>Search engine optimization</li>
+        <li>Mobile technology outlines</li>
+        <li>Improved and rationale structure supports accessibility</li>
+        <li>Accessibility APIs will support heading outlining</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <style>
+      .outline {
+        margin-left: 10%;
+      }
+      
+      h2 {
+        padding-bottom: 0.5em;
+      }
+    </style>
+    <title>HTML5 Headings Outline Example</title>
+    <contents>
+      <p class="center">Example from HTML5 specification</p>
+      <div class="outline">
+        <h2>HTML5 Outline Algorithm</h2>
+        <ol>
+          <li>Apples (H1 in accessibility API)
+            <ol>
+              <li>Taste (H2 in accessibility API)
+                <ol>
+                  <li>Sweet (H3 in accessibility API)</li>
+                </ol>
+              </li>
+              <li>Color (H2 in accessibility API)</li>
+            </ol>
+          </li>
+        </ol>
+      </div>  
+      <pre class="code">
+&lt;body&gt;
+ &lt;h1&gt;Apples&lt;/h1&gt;
+ &lt;p&gt;Apples are fruit.&lt;/p&gt;
+ &lt;section&gt;
+  &lt;h1&gt;Taste&lt;/h1&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+   &lt;h1&gt;Sweet&lt;/h1&gt;
+   &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+  &lt;h1&gt;Color&lt;/h1&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+ &lt;/section&gt;
+&lt;/body&gt;
+      </pre>
+      <p class="center"><em>same as</em></p>
+      <pre class="code">
+&lt;body&gt;
+ &lt;h1&gt;Apples&lt;/h1&gt;
+ &lt;p&gt;Apples are fruit.&lt;/p&gt;
+ &lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+   &lt;h3&gt;Sweet&lt;/h3&gt;
+   &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+  &lt;h2&gt;Color&lt;/h2&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+ &lt;/section&gt;
+&lt;/body&gt;
+      </pre>
+      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Extensions for Viewing HTML5 Outlines</title>
+    <contents>
+      <ul>
+        <li><a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo"  target="_extension">HTML5 Outliner for Chrome</a></li>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/html5_outliner/?src=search" target="_extension">HTML5 Outliner for Firefox</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>What About the Article Role and the Article Element?</title>
+    <contents>
+      <ul>
+        <li><code>article</code> role (ARIA)
+          <ul>
+            <li>Is <strong>NOT</strong> a landmark element</li>
+            <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
+          </ul>
+        </li>
+        <li><code>article</code> element (HTML5)
+          <ul>
+            <li>HTML5 section element</li>
+            <li>Self-contained compositions (e.g. magazine or newspaper article)</li>
+            <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
+            <li>Interactive widget or gadget</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+    
+  <slide>
+    <style>
+      h3 {
+        font-size: 100%;
+        font-weight: normal;
+      }
+    </style>
+    <title>Screen Reader Support</title>
+    <contents>
+      <h2>Jaws 15 with Firefox/IE`on MS Windows</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/jawscommands">Penn State: JAWS commands for web</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/jaws">WebAIM: JAWS commands for web</a></li>
+        <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm">Freedom Scientific: JAWS commands for web</a></li>
+      </ul>
+      
+      <h3>JAWS 15 Landmark Keyboard Information</h3>
+      <ul>
+        <li>Region List	INSERT+CTRL+R</li>
+        <li>Q: Next Region</li>
+        <li>R: Main Region</li> 
+      </ul>
+      
+      <h2>NVDA with Firefox`on MS Windows</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/nvda">Penn State: NVDA Keyboard Commands</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/nvda">Webaim: NVDA Keyboard Commands</a></li>
+        <li><a href="http://community.nvda-project.org/documentation/userGuide.html#toc40">NVDA: Web Browse Keyboard Commands</a></li>
+      </ul>
+    
+      <h3>NVDA Landmark Keyboard Information</h3>
+      <ul>
+        <li>d: next landmark</li>
+        <li>shift+d: previous landmark</li>
+        <li>NVDA+f7: List of elements including landmarks</li>
+      </ul>
+      
+      <h2>Voice over for Safari on OS X</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/voiceover">Penn State: Voice Over for OS X</a></li>
+        <li><a href="http://www.apple.com/voiceover/info/guide/_1131.html">Apple Voice Over Commands</a></li>
+      </ul>
+
+       <h3>Apple Support for Landmarks</h3>
+       <ul>
+         <li>Voice Over does not support <code>region</code> roles as landmarks</li>
+       </ul>
+       
+    </contents>
+  </slide>
+  
+<!--
+    ===================================================================
+                                    Links
+    ===================================================================
+-->
+
+  <slide>
+    <title>Link Usability 101</title>
+    <contents>
+      <ul>
+        <li>What makes a good link?</li>
+        <li>Why does someone follow a link?</li>
+      </ul>  
+    </contents>
+  </slide>
+  
+  <slide>
+    <style>
+      dt { font-weight: bold; padding-top: 1em;}
+    </style>
+    <title>WCAG 2.0 Link Requirements</title>
+    <contents>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" target="_specification">2.4.4 Link Purpose (In Context)</a></dt>
+        <dd>WCAG 2.0 Level A requirement</dd>
+        <dd>The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.</dd>
+        
+        <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link" target="_specification">2.4.9 Link Purpose (Link Only)</a></dt>
+        <dd>WCAG 2.0 Level AAA requirement</dd>
+        <dd>A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.</dd>
+      </dl>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>WCAG 2.0 Technique Examples</title>
+    <contents>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraph</li>
+        <li>Table cell</li>
+        <li>List item</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Name Calculation</title>
+    <contents>
+      <ul>
+        <li>Child text nodes of <code>a</code> element</li>
+        <li><code>aria-label</code> attribute</li>
+        <li><code>aria-labelledby</code> attribute</li>
+        <li><code>title</code> attribute (rare)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Defining Link Context Information</title>
+    <contents>
+      <ul>
+        <li><code>aria-describedby</code> attribute</li>
+        <li><code>title</code> attribute (tooltip)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    
+    <title>WCAG Heading Context Example</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H80.html" target="_specification">Links with Heading Context</a>
+      </p>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3><a href="royal_palm_hotel.html">Royal Palm Hotel</a></h3>
+        <ul class="horizontal">
+          <li><a href="royal_palm_hotel_map.html">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html">Book now</a></li>
+        </ul>
+        
+        <h3><a href="hotel_three_rivers.html">Hotel Three Rivers</a></h3>
+        <ul class="horizontal">
+          <li><a href="hotel_three_rivers_map.html">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3&gt;&lt;a href="royal_palm_hotel.html"&gt;Royal Palm Hotel&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;&lt;a href="hotel_three_rivers.html"&gt;Hotel Three Rivers&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+  
+  <slide>
+    
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    
+    <title>Using aria-describedby to define context</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3><a id="ref1" href="royal_palm_hotel.html">Royal Palm Hotel</a></h3>
+        <ul class="horizontal">
+          <li><a href="royal_palm_hotel_map.html" aria-describedby="ref1">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html" aria-describedby="ref1">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html" aria-describedby="ref1">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html" aria-describedby="ref1">Book now</a></li>
+        </ul>
+        
+        <h3><a id="ref2" href="hotel_three_rivers.html">Hotel Three Rivers</a></h3>
+        <ul class="horizontal">
+          <li><a href="hotel_three_rivers_map.html" aria-describedby="ref2">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html" aria-describedby="ref2">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html" aria-describedby="ref2">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html" aria-describedby="ref2">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html" aria-describedby="ref2">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3&gt;&lt;a id="ref1" href="royal_palm_hotel.html"&gt;Royal Palm Hotel&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-describedby="ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-describedby="ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-describedby="ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-describedby="ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;&lt;a id="ref2" href="hotel_three_rivers.html"&gt;Hotel Three Rivers&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-describedby="ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-describedby="ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-describedby="ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-describedby="ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-describedby="ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+  
+  <slide>
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    <title>Using aria-labelledby to define accessible name</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3><a id="ref1" href="royal_palm_hotel.html">Royal Palm Hotel</a></h3>
+        <ul class="horizontal">
+          <li><a id="ref11" href="royal_palm_hotel_map.html" aria-labelledby="ref11 ref1">Map</a></li>
+          <li><a id="ref12" href="royal_palm_hotel_photos.html" aria-labelledby="ref12 ref1">Photos</a></li>
+          <li><a id="ref13" href="hroyal_palm_hotel_directions.html" aria-labelledby="ref13 ref1">Directions</a></li>
+          <li><a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1">Guest reviews</a></li>
+          <li><a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1">Book now</a></li>
+        </ul>
+        
+        <h3><a id="ref2" href="hotel_three_rivers.html">Hotel Three Rivers</a></h3>
+        <ul class="horizontal">
+          <li><a id="ref21" href="hotel_three_rivers_map.html" aria-labelledby="ref21 ref2">Map</a></li>
+          <li><a id="ref22" href="hotel_three_rivers_photos.html" aria-labelledby="ref22 ref2">Photos</a></li>
+          <li><a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2">Directions</a></li>
+          <li><a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2">Guest reviews</a></li>
+          <li><a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3&gt;&lt;a id="ref1" href="royal_palm_hotel.html"&gt;Royal Palm Hotel&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a id="ref11" href="royal_palm_hotel_map.html" aria-labelledby="ref11 ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref12" href="royal_palm_hotel_photos.html" aria-labelledby="ref12 ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref13" href="hroyal_palm_hotel_directions.html" aria-labelledby="ref13 ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;&lt;a id="ref2" href="hotel_three_rivers.html"&gt;Hotel Three Rivers&lt;/a&gt;&lt;/h2&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a id="ref21" href="hotel_three_rivers_map.html" aria-labelledby="ref21 ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref22" href="hotel_three_rivers_photos.html" aria-labelledby="ref22 ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>Link Keyboard Focus Styling</title>
+    <contents>
+      <ul>
+        <li>Use CSS Pseudo selectors :focus and :active to style link with focus</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <!-- 
+    ===================================================================
+                                  Forms
+    ===================================================================
+-->
+  <slide>
+    <title>WCAG 2.0 Requirements for Forms and Form Controls (Level A and AA)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"        target="_spec">2.4.6 Headings and Labels (AA)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"        target="_spec">3.2.1 On Focus (A)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change" target="_spec">3.2.2 On Input (A)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"                target="_spec">3.3.1 Error Identification (A)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"                      target="_spec">3.3.2 Labels or Instructions (A)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"               target="_spec">3.3.3 Error Suggestion (AA)</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses"                     target="_spec">4.4.1 Parsing (A)</a></li>
+      </ul>
+      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>ARIA and HTML5 form controls</title>
+    <contents>
+      <h2>Labeling form controls</h2>
+      <ul>
+        <li><code>label</code> element (HTML 4.01)</li>
+        <li><code>title</code> attribute (HTML 4.01)</li>
+        <li><code>fieldset/legend</code> elements (HTML 4.01)</li>
+        <li><code>aria-labelledby</code> attribute (ARIA 1.0)</li>
+        <li><code>aria-label</code> attribute (ARIA 1.0)</li>
+      </ul>
+      
+      <h2>Instructions</h2>
+      <ul>
+        <li><code>tabindex="0"</code> attribute to add instructions to tab order (convention)</li>
+        <li><code>aria-describedby</code> attribute (ARIA 1.0)</li>
+      </ul>  
+      
+      <h2>Identifying Required and Invalid Form Controls</h2>
+      <ul>
+        <li>Image with ALT Text</li>
+        <li>Text content (hidden or visible)</li>
+        <li><code>aria-required</code> attribute (ARIA 1.0)</li>
+        <li><code>aria-invalid</code> attribute (ARIA 1.0)</li>
+        <li><code>required</code> attribute (HTML 5)</li>
+        <li><code>alert</code> role for announcing errors</li>
+      </ul>
+      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Form Techniques: Example 1</title>
+    <contents>
+      <p class="center"><a href="examples/pizza-example-1.html">Example 1</a></p>
+      <iframe src="examples/pizza-example-1.html" width="99%" height="600px"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Form Techniques: Example 2</title>
+    <contents>
+      <p class="center"><a href="examples/pizza-example-2.html">Example 2</a></p>
+      <iframe src="examples/pizza-example-2.html" width="99%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <slide>
+    <title>Form Techniques: Example 3</title>
+    <contents>
+      <p class="center"><a href="examples/pizza-example-3.html">Example 3</a></p>
+      <iframe src="examples/pizza-example-3.html" width="99%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <!-- 
+    ===================================================================
+                              Widget Basics
+    ===================================================================
+-->
+  
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) Basics</title>
+    <contents>
+      <ul>
+        <li><strong>TABINDEX: </strong> Used for identifying elements that can receive keyboard focus.</li>
+        <li><strong>focus():</strong> Method to move keyboard focus to a DOM node using javascript</li>
+        <li><strong>ROLE: </strong> Attribute to define the type of widget in the web resource.
+          <ul>
+            <li>
+              <a href="http://www.w3.org/TR/2007/WD-xhtml-role-20071004/" target="_specification">XHTML Role Attribute
+                Module</a>
+            </li>
+            <li>
+              <a href="http://www.w3.org/TR/aria-role/" target="_specification">Roles for Accessible Rich Internet Applications (WAI-ARIA Roles)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Properties and States</strong>
+          <ul>
+            <li>
+              <a href="http://www.w3.org/TR/aria-state/"  target="_specification">States and Properties Module for
+                Accessible Rich Internet Applications (WAI-ARIA States and Properties)</a>
+            </li>
+            <li>aria-checked</li>
+            <li>aria-labelledby</li>
+            <li>aria-describedby</li>
+            <li>aria-haspopup</li>
+            <li>aria-expanded</li>
+            <li>many others...</li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.0 Authoring Practices</a>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Tabindex and keyboard focus</title>
+    <contents>
+      <ul>
+        <li>
+          <code>
+            <a
+              href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex"  target="_specification">tabindex</a>
+          </code>attribute is part of the HTML 4 specification</li>
+        <li>Support in <strong>all</strong> modern major browsers</li>
+        <li>Values: <ul>
+          <li>-1: Support keyboard focus/blur events, but do not add to tab order</li>
+          <li>0: Support keyboard focus/blur events and add to tab order</li>
+          <li>&gt;0: Support keyboard focus/blur events and add to tab order and tab using
+            the numerical order of the tabindex values</li>
+        </ul>
+        </li>
+        <li>The <code>tabindex</code>
+          is not currently valid for most elements</li>
+        <li>Style focus visually to make is easy to find what has focus (i.e. do NOT rely of browser focus styling of focus)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Example Widget: ARIA Checkbox</title>
+    <contents>
+      <p class="center"><a href="checkbox/checkbox.html" target="_example">ARIA checkbox examples</a></p>
+      <h2>Features</h2>
+      <ul>
+        <li>Responds to mouse events using <code>onClick</code> event</li>
+        <li>Responds to keyboard events using <code>onKeyDown</code> event</li>
+        <li><code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page</li>
+        <li><code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox"</li>
+        <li><code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked"</li>
+        <li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element</li>
+        <li>CSS attribute selectors are used to keep the visual indication of checked in sync with accessibility API</li>
+      </ul>
+      <p class="center"><iframe height="600" width="97%" src="checkbox/checkbox.html"></iframe></p>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Example Widget: ARIA Checkbox with Focus Styling</title>
+    <contents>
+      <p class="center"><a href="checkbox/checkbox.html" target="_example">ARIA checkbox examples with focus styling</a></p>
+      <h2>Additional Features</h2>
+      <ul>
+        <li>Use <code>:focus</code> pseudo element focusing only focuses the checkbox and not the label</li>
+        <li>Use <code>onFocus</code> and <code>onBlur</code> events to add and remove class for identifying focus</li>
+        <li>Use <code>:hover</code> pseudo class to style checkboxes for mouse overs</li>
+        <li>Standard checkbox 3 doesn't have label so you have to click directly on the checkbox image to change state</li>
+      </ul>
+      <p class="center"><iframe height="600" width="97%" src="checkbox/checkbox-focus.html"></iframe></p>      
+    </contents>
+  </slide>
+  
+  
+  <!-- 
+    ===================================================================
+                              Open Source Tools
+    ===================================================================
+-->
+  
+  
+  <slide> 
+    <title>OpenAjax Accessibility Task Force</title>
+    <contents>
+      <ul>
+        <li>Working on new rule development</li>
+        <li>Support ARIA and HTML5</li>
+      </ul>
+      <p class="center">
+        <a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Accessibility Task Force</a>
+      </p>
+      <p class="center"><img width="98%" src="images/openajax-home.png" alt="screen shot OpenAjax Accessibility Task Force home page"/></p>
+    </contents>
+  </slide>  
+  
+
+  <slide> 
+    <title>OpenAjax Evaluation Library Rulesets</title>
+    <contents>
+      <p class="center">
+        <a href="http://fae20.cita.illinois.edu/ruleset-rc/ARIA_STRICT/" target="_specification">OAA Ruleset: WCAG + HTML5 + ARIA by Rule Category</a>
+      </p>
+      <p class="center"><img width="98%" src="images/fae20-rulesets.png" alt="screen shot of FAE 2.0 Ruleset information page"/></p>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>AInspector Sidebar for Firefox</title>
+    <contents>
+      <ul>
+        <li>Designed for UX designers, developers and quality assurance testers to understand the accessibility of a specific page</li>
+        <li><a href="https://openaccessibilityalliance.svn.cloudforge.com/ainspectorsidebar">Open source</a></li>
+        <li>Update your version of Firefox to the latest version to ensure compatibility</li>
+        <li>Analyzing current web page DOM for accessibility features</li>
+        <li>Organizes rules by Rule Categories and WCAG Guidelines</li>
+        <li>Map rules to WCAG 2.0 Single A and AA requirements</li>
+        <li>Highlighting element information</li>
+      </ul>
+      <p class="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar" target="_specification">AInspector Sidebar form Mozilla Add-ons Website</a></p>          
+      <p class="center"><img width="98%" src="images/ainspector-sidebar-home.png" alt="screen shot of AInspector Sidebar home page"/></p>
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Functional Accessibility Evaluator (FAE) 2.0</title>
+    <contents>
+      <ul>
+        <li>Designed for project managers, UX designers, developers and quality assurance testers to understand the level of accessibility of a web site they are developing or have administration responsibility</li>
+        <li><a href="https://openaccessibilityalliance.svn.cloudforge.com/fae20">Open source</a></li>
+        <li>Analyzing multiple pages for accessibility features</li>
+        <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
+        <li>Website summary feature and implementation status</li>
+        <li>Map rules to WCAG 2.0 Single A and AA requirements</li>
+      </ul>
+      <p class="center"><a href="http://fae20.cita.illinois.edu" target="_specification">FAE 2.0 Test Prototype</a></p>          
+      <p class="center"><img width="98%" src="images/fae20-home.png" alt="screen shot of FAE 2.0 run a report page"/></p>
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Functional Accessibility Evaluator: Auditor</title>
+    <contents>
+      <ul>
+        <li>Designed for administrators to get a high level view of campus accessibility</li>
+        <li><a href="https://app.cloudforge.com/services/307436">Open source</a></li>
+        <li>Analyzing multiple <em>websites</em> for accessibility features</li>
+        <li>Organizational summary feature and implementation status</li>
+      </ul>
+      <p class="center"><a href="http://fae-audit-dev.cita.illinois.edu/audit/14894251f3741112/rc/" target="_specification">Illinois Audit From September 20th</a></p>          
+    </contents>
+  </slide>  
+  
+  <slide>
+    <style>
+      table.summary {
+        border-collapse: collapse;
+      }
+      table.summary th,
+      table.summary td {
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-align: left;
+      }
+      table.summary tr.odd {
+        background-color: #EEEEEE;
+        color:  black;
+      }
+      table.summary tr.even {
+      background-color: #FFFFFF;
+      color:  black;
+      }
+    </style>
+    <title>Summary of FAE Auditor Results for Illinois</title>
+    <contents>
+      <p>Total websites: 467</p>
+      <p>Total pages: 25,932</p>
+      <table class="summary">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Percent Websites</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+          <th>Landmarks</th>
+          <td>>90%</td>
+          <td>Websites not using landmarks</td>
+        </tr>
+        <tr class="even">
+          <th>Headings</th>
+          <td>~50%</td>
+          <td>Websites using hidden and/or empty headings (e.g. not in an accessible way), maybe being used to satisfy FAE 1.1 without understanding access</td>
+        </tr>
+        <tr class="odd">
+          <th>Styling/Content</th>
+          <td>~50%</td>
+          <td>Websites having some color contrast issues</td>
+        </tr>
+        <tr class="even">
+          <th>Images</th>
+          <td>>50%</td>
+          <td>Websites are missing ALT attribute on images</td>
+        </tr>
+        <tr class="odd">
+          <th>Links</th>
+          <td>>98%</td>
+          <td>Websites have no accessible name for some links (probably Facebook and other social media links)</td>
+        </tr>
+        <tr class="even">
+          <th>Tables</th>
+          <td>~70%</td>
+          <td>Websites with tables not being identified for layout or data; and most data tables have problems</td>
+        </tr>
+        <tr class="odd">
+          <th>Forms</th>
+          <td>~50%</td>
+          <td>Websites with missing labels for form controls</td>
+        </tr>
+        <tr class="even">
+          <th>Widgets/Scripting</th>
+          <td>~50%</td>
+          <td>Websites with onClick and mouse events on non-interactive elements (e.g. div or span element) and have no widget ROLE describing their behavior or keyboard support</td>
+        </tr>
+        <tr class="odd">
+          <th>Audio/Video</th>
+          <td>~25%</td>
+          <td>Websites that may have some type of media content</td>
+        </tr>
+        <tr class="even">
+          <th>Keyboard Support</th>
+          <td>~%50</td>
+          <td>Websites with widget roles that do not have keyboard event handlers</td>
+        </tr>
+        </tbody>  
+      </table>
+    </contents>
+  </slide>  
+  
+  <slide> 
+    <title>First Steps</title>
+    <contents>
+      <ul>
+        <li>Working with specific web developers on campus to bring their web resources into WCAG 2.0 compliance:
+           <ul>
+             <li>Disability Services</li>
+             <li>IT Accessibility</li>
+             <li>College of Applied Health Studies</li>
+             <li>Library</li>
+             <li>Office of Public Affairs</li>
+           </ul>
+        </li>
+        <li>Verifying the accessibility features of common web development libraries (e.g. bootstrap.js and jquery-ui) and adding supplemental scripts to improve accessibility</li>
+        <li>Testing and validating the OpenAjax rules (<a href="http://sourceforge.net/p/openajaxallianc/bugs/milestone/A11y%20Evaluation%20Library%202.0/">Issue Tracker</a>)</li>
+        <li>Testing the and improving the utility and usability of the open source tools</li> 
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Next Steps</title>
+    <contents>
+      <ul>
+        <li>What does the campus need to move toward WCAG 2.0 compliance?</li>
+        <li>What are the roles and knowledge needed by the following types of people in insuring WCAG 2.0 complaince?
+          <ul>
+            <li>Administrators</li>
+            <li>Purchasing personel</li>
+            <li>Service managers</li>
+            <li>Project managers</li>
+            <li>User interface designers</li>
+            <li>Web developers</li>
+            <li>Quality assurance testers</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>  
+  </slide>
+
+  <slide> 
+    <title>Acknowledgements</title>
+    <contents>
+    
+      <h2>Sponsors</h2>
+      <ul>
+        <li>University of Illinois</li>
+        <li>CIOs of the Committee on Institutional Cooperation (CIC)</li>
+        <li>Employees of the Hollister Corporation</li>
+        <li>IBM Corporation (OAA Evaluation Library and AInspector for Firebug)</li>
+      </ul>
+    
+      <h2>Primary Developers</h2>
+      <dl>
+        <dt>Jon Gunderson, Illinois</dt>
+        <dd>Project coordinator</dd>
+        <dd>OAA evaluation library software development</dd>
+        <dd>Software developer for FAE 2.0</dd>
+        
+        <dt>Nicholas Hoyt, Illinois</dt>
+        <dd>Conceptual model for accessibility evaluation</dd>
+        <dd>Interaction designer for AInspector and FAE 2.0</dd>
+        <dd>software developer for AInspector Sidebar</dd>
+
+        <dt>Garrett Smith, Wisconsin</dt>
+        <dd> Software development for FAE 2.0</dd>
+      </dl>
+      
+      <h2>Major Contributing Developers</h2>
+
+      <dl>
+        <dt>Prasanna Bale, CITES</dt>
+        <dd>Software developer for AInspector Firebug</dd>
+
+        <dt>Pramod Joshi, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+                
+        <dt>Jeff Heckel, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+      </dl>      
+      
+    </contents>
+  </slide> 
+</slides> 
+
+

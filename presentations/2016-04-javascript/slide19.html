@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 19: Using grouping label to define the context of the link</title>
+<link rel="stylesheet" type="text/css" href="../slides2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../slides2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../slides2/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../slides2/css/xml-slides2.css">
+<script type="text/javascript" src="../slides2/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../slides2/js/bootstrap.min.js"></script><script type="text/javascript" src="../slides2/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../slides2/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide18.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide20.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide26.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 19 of 26</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Using grouping label to define the context of the link</h1>
+<h2>Link Context Example</h2>
+<div class="example">
+        
+        
+<h3 id="id1">Royal Palm Hotel</h3>
+        
+<ul class="horizontal" aria-labelledby="id1">
+          
+<li>
+<a href="royal_palm_hotel_more_info.html">More Info</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_map.html">Map</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_photos.html">Photos</a>
+</li>
+          
+<li>
+<a href="hroyal_palm_hotel_directions.html">Directions</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_reviews.html">Guest reviews</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_book.html">Book now</a>
+</li>
+        
+</ul>
+        
+        
+<h3 id="id2">Hotel Three Rivers</h3>
+        
+<ul class="horizontal" aria-labelledby="id2">
+          
+<li>
+<a href="hotel_three_rivers_more_info.html">More Info</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_map.html">Map</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_photos.html">Photos</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_directions.html">Directions</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_reviews.html">Guest reviews</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_book.html">Book now</a>
+</li>
+        
+</ul>   
+      
+</div>
+<h2>Source Code</h2>
+<pre class="code">
+  &lt;h3 id="id1"&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"  aria-labelledby="id1"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id="id2"&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"  aria-labelledby="id2"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

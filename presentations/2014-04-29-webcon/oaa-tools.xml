@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>New Generation of Web Accessibility Evaluation and Inspection Tools</title>
+ <name>Jon Gunderson and Nicholas Hoyt</name> 
+  <desc>Division of Disability Resources and Educational Services</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="mailto:nhoyt@illinois.edu">nhoyt@illinois.edu</desc> 
+  <desc href="http://webcon.illinois.edu">University of Illinois Web Conference - 2014</desc>
+  <desc href="../">Presentation Home Page</desc> 
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>W3C Standards for Web Accessibility</li>
+        <li>OAA Rulesets</li>
+        <li>Getting Started</li>
+        <li>AInspector Sidebar</li>
+        <li>FAE 2.0 Testing Server</li>
+        <li>Next Steps</li>
+      </ul>
+      <p class="center" style="font-size: 200%; margin-top: 2.5em">Slides at:<br/> <a href="http://presentations.cita.illinois.edu/2014-04-29-webcon/">http://presentations.cita.illinois.edu/2014-04-29-webcon/</a></p>
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>OpenAjax Evaluation Library Rulesets</title>
+    <contents>
+      <p class="center">
+        <a href="http://fae20.cita.illinois.edu/ruleset-rc/ARIA_STRICT/" target="_specification">OAA Ruleset: WCAG + HTML5 + ARIA by Rule Category</a>
+      </p>
+      <iframe src="http://fae20.cita.illinois.edu/ruleset-rc/ARIA_STRICT/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+
+
+  <slide> 
+    <title>Getting Started: Conceptual Foundation</title>
+    <contents>
+      <p class="center">
+        <a href="https://trac.ainspector.org/design/wiki/interaction-design/getting-started" target="_specification">Getting Started: Conceptual Foundation</a>
+      </p>
+      <iframe src="https://trac.ainspector.org/design/wiki/interaction-design/getting-started" width="99%" height="600"/>
+    </contents>
+  </slide>  
+
+  <slide> 
+    <title>Basic Concepts - Objects</title>
+    <contents>
+      <p class="center"><img src="images/basic-concepts-objects.png" alt="Conceptual Model Basic Concepts: Objects" aria-describedby="id_desc"/></p>
+      <div id="desc"></div>
+    </contents>
+  </slide>  
+
+  <slide> 
+    <title>Basic Concepts - Actions</title>
+    <contents>
+      <p class="center"><img src="images/basic-concepts-actions.png" alt="Conceptual Model Basic Concepts: Actions" aria-describedby="id_desc"/></p>
+      <div id="desc"></div>
+    </contents>
+  </slide>  
+  
+  
+  
+  <slide>
+    <title>Demonstration: AInspector Sidebar for Firefox</title>
+    <contents>
+      <ul>
+        <li>Update your version of Firefox to the latest version to ensure compatibility</li>
+        <li>Analyzing current web page DOM for accessibility features</li>
+        <li>Organizes rules by Rule Categories and WCAG Guidelines</li>
+        <li>Map rules to WCAG 2.0 Single A and AA requirements</li>
+        <li>Highlighting element information</li>
+      </ul>
+      <p class="center"><a href="http://itaccessibility.illinois.edu/web-evaluation/tools" target="_specification">Get latest version of AInspector Sidebar from IT Access Website</a></p>          
+      <iframe src="http://itaccessibility.illinois.edu/web-evaluation/tools" width="99%" height="600"/>
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Demonstration: FAE 2.0 Test Prototype</title>
+    <contents>
+      <ul>
+        <li>Analyzing multiple pages for accessibility features</li>
+        <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
+        <li>Website summary feature and implementation status</li>
+        <li>Map rules to WCAG 2.0 Single A and AA requirements</li>
+      </ul>
+      <p class="center"><a href="http://fae20.cita.illinois.edu" target="_specification">FAE 2.0 Test Prototype</a></p>          
+      <iframe src="http://fae20.cita.illinois.edu" width="99%" height="600"/>
+    </contents>
+  </slide>  
+
+
+  <slide> 
+    <title>OpenAjax Accessibility Task Force</title>
+    <contents>
+      <ul>
+        <li>Working on new rule development</li>
+        <li>Support ARIA and HTML5</li>
+      </ul>
+      <p class="center">
+        <a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Accessibility Task Force</a>
+      </p>
+      <iframe src="http://www.openajax.org/member/wiki/Accessibility" width="99%" height="600"/>
+    </contents>
+  </slide>  
+    
+  <slide> 
+    <title>Open Accessibility Alliance</title>
+    <contents>
+      <ul>
+        <li>Develop accessible solutions to accessible design problems</li>
+      </ul>
+      <p class="center"><a href="http://collaborate.athenpro.org/group/open-accessibility-alliance/" target="_specification">Open Accessibility Alliance</a></p>
+      <iframe src="http://collaborate.athenpro.org/group/open-accessibility-alliance/" width="99%" height="600"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Web Coding Practices</title>
+    <contents>
+      <p class="center"><a href="http://dev.oaa-accessibility.org" target="_specification">Accessible Web Coding Practices</a></p>
+      <iframe src="http://dev.oaa-accessibility.org" width="99%" height="600"/>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>ARIA Resources</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/TR/wai-aria/"  target="_specification">ARIA Specifications</a></li>    
+        <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">ARIA 1.0 Authoring Practices</a></li>
+        <li><a href="http://disability.illinois.edu" target="_example">Landmark Example: DRES Website</a></li>    
+        <li><a href="http://www.oaa-accessibility.org/examples" target="_example">Widget Examples</a></li>
+        <li><a href="http://dojotoolkit.org/reference-guide/dijit/a11y/statement.html"  target="_example">Dojo Toolkit Accessibility Support</a></li>
+        <li><a href="http://www.aegis-project.eu/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=33"  target="_example">JQuery UI widgets that are accessible using ARIA</a></li>
+        <li><a href="http://access.aol.com/aegis/#goto_slider"  target="_example">JQuery UI Accessible demos</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide> 
+    <title>Next Steps</title>
+    <contents>
+      <ul>
+        <li>Finish rules for WCAG 2.0 evaluation (10-12 more rules)</li>
+        <li>Testing validity of rules</li>
+        <li>Improving the rule messaging and references</li> 
+        <li>User testing</li>
+        <li>Coding Practices: Design principles, resources and examples for each rule</li>
+        <li>FAE Auditor (new tool): Campus wide evaluation of web resources</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Feature Prioritization</title>
+    <contents>
+      <h2>AInspector Sidebar Features</h2>
+      <ul>
+        <li>HTML Reports of evaluation results</li>
+        <li>Delayed, timed or event triggered re-evaluations of web page</li>
+        <li>Provide Manual Checking views</li>
+        <li>Additional accessibility information in highlighted elements</li>
+      </ul>
+      
+      <h2>FAE 2.0 Features</h2>
+      <ul>
+        <li>Shibboleth authentication support</li>
+        <li>Rule rating and commenting within FAE 2.0</li>
+        <li>Analyzing password protected websites</li>
+        <li>Report annotation</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Acknowledgements</title>
+    <contents>
+    
+      <h2>Sponsors</h2>
+      <ul>
+        <li>University of Illinois</li>
+        <li>CIOs of the Committee on Institutional Cooperation (CIC)</li>
+        <li>IBM Corporation (OAA Evaluation Library and AInspector for Firebug)</li>
+      </ul>
+    
+      <h2>Primary Developers</h2>
+      <dl>
+        <dt>Jon Gunderson, Illinois</dt>
+        <dd>Project coordinator</dd>
+        <dd>OAA evaluation library software development</dd>
+        <dd>Software developer for FAE 2.0</dd>
+        
+        <dt>Nicholas Hoyt, Illinois</dt>
+        <dd>Conceptual model for accessibility evaluation</dd>
+        <dd>Interaction designer for AInspector and FAE 2.0</dd>
+        <dd>software developer for AInspector Sidebar</dd>
+
+        <dt>Garrett Smith, Wisconsin</dt>
+        <dd> Software development for FAE 2.0</dd>
+      </dl>
+      
+      <h2>Major Contributing Developers</h2>
+
+      <dl>
+      
+        <dt>Prasanna Bale, CITES</dt>
+        <dd>Software developer for AInspector Firebug</dd>
+
+        <dt>Pramod Joshi, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+                
+        <dt>Jeff Heckel, AITS</dt>
+        <dd>Software developer for fae-util</dd>
+
+      </dl>      
+      
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>You Can Help</title>
+    <contents>
+      <p>Open source and community development to meet the accessibility needs of developers and designers</p>
+      
+      <ul>
+        <li>Providing feedback on rules</li>
+        <li>Editing rule messaging</li>
+        <li>Identifying useful support resources that you use</li>
+        <li>Developing supporting documentation and tutorials</li>
+        <li>Developing coding practice examples</li>
+        <li>Contributing to coding of tools</li>
+      </ul>
+    </contents>
+  </slide> 
+    
+  <slide> 
+    <title>Questions and Comments</title>
+    <contents>
+    </contents>
+  </slide> 
+  
+</slides> 
+
+

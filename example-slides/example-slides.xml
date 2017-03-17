@@ -1,0 +1,63 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+    <lang>en</lang>
+    <title>Example Slides</title>
+    <name>Jon Gunderson</name>
+    <desc>University of Illinois</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+    <desc href="../">Presentation Home Page</desc>
+    <stylesheet media="screen">http://slides.cita.illinois.edu/xml-slides.css</stylesheet>
+    <script>http://slides.cita.illinois.edu/jquery.js</script>
+    <script>http://slides.cita.illinois.edu/xml-slides.js</script>
+    <slide>
+        <title>Example Bulletted List</title>
+        <contents>
+            <ul>
+                <li><a href="http://getfirebug.com/">Firebug Developer Tool</a></li>
+                <li><a href="http://www.w3.org/TR/wai-aria">Accessible Rich Internet Application (ARIA)</a></li>
+                <li><a href="http://www.w3.org/TR/html5">HTML 5</a></li>
+                <li><a href="http://www.openajax.org/member/wiki/Accessibility">OpenAjax Accessibility Working Group</a></li>
+                <li><a href="http://collaborate.athenpro.org/group/web/">Web Accessibility Best Practices Working Group</a></li>
+            </ul>
+        </contents>
+    </slide>
+    
+    <slide>
+        <title>Inline frame</title>
+        <contents>
+            <p class="center"><a href="http://html.cita.illinois.edu">HTML Web Accessibility Best Practices</a></p>
+            <iframe src="http://html.cita.illinois.edu" width="99%" height="600"/>
+        </contents>
+    </slide>
+    
+    <slide>
+        <title>Source Code Display</title>
+        <contents>
+            
+            <div id="source">
+                <ul>
+                    <li>Item #1</li>
+                    <li>Item #2</li>
+                    <li>Item #3</li>
+                </ul>
+            </div>
+            
+            <div id="dest">
+                
+            </div>
+            
+            <script>
+                sourceCode.add( 'dest', 'source' );
+                sourceCode.make();
+            </script>
+            
+            
+            
+        </contents>
+    </slide>
+    
+    
+</slides>
+
