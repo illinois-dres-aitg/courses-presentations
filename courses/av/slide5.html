@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 5: HTML5 Video Element Accessibility: Example</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
+<link rel="stylesheet" type="text/css" href="ableplayer/styles/ableplayer-transcript.css">
+<link rel="stylesheet" type="text/css" href="ableplayer/styles/ableplayer.css">
+<script type="text/javascript" src="./ableplayer/thirdparty/modernizr.custom.js"></script><script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="./ableplayer/thirdparty/jquery.cookie.js"></script><script type="text/javascript" src="./ableplayer/build/ableplayer.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide4.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide6.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide13.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 5 of 13</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">HTML5 Video Element Accessibility: Example</h1>
+<ul>
+        
+<li>
+<a href="http://dev.w3.org/html5/spec/single-page.html#the-video-element" target="_specification"><code>video</code> element</a> supports captioning through the <a href="http://dev.w3.org/html5/spec/single-page.html#the-track-element" target="_specification"><code>track</code> element</a>
+</li>
+        
+<li>
+<a href="http://dev.w3.org/html5/webvtt/" target="_specification">WebVTT timed text format</a>
+</li>
+      
+</ul>
+<h2>Video Element Example</h2>
+<pre class="code">
+  &lt;video controls"&gt;
+    &lt;source src="media/gb-imovie-mobile.mp4" type="video/mp4"&gt;
+    &lt;source src="media/gb-imovie-mobile.webm" type="video/ogg"&gt;
+    &lt;track  kind="captions" 
+            src="media/groundbreaking.vtt" 
+            srclang="en" 
+            label="English Captioning"&gt;
+  &lt;/video&gt;
+      </pre>
+<h2>VTT Time Text Format Example</h2>
+<pre class="code">
+WEBVTT
+
+00:00:00.000 --&gt; 00:00:00.500
+
+
+00:00:07.140 --&gt; 00:00:26.860
+[music]
+
+00:00:26.860 --&gt; 00:00:29.696
+Recognizing our members of the armed forces
+
+00:00:29.696 --&gt; 00:00:33.266
+who have fallen, and supporting those who have served,
+
+00:00:33.266 --&gt; 00:00:35.869
+and returned home is a strong,
+
+      </pre>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

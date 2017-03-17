@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 3: Layout Table Design issues</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+          div.example {
+        margin: 1em;
+        padding: 1em;
+        background-color: #EEEEEE;
+        color: black;
+        border: medium white solid;
+      }
+      td {
+        padding: 0.5em;
+      }
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide2.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide4.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide12.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 3 of 12</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Layout Table Design issues</h1>
+<ul>
+	    
+<li>Use <code>role="presentation"</code> on just the <code>table</code>elements</li>
+	    
+<li>Use only <code>tr</code> and <code>td</code> elements in table</li>
+	    
+<li>Make sure content is still understandable with table layout is disabled</li>
+      
+</ul>
+<h2>Layout Table Example</h2>
+<div class="example">
+      
+         
+<table role="presenation" id="id_lt">
+         
+<tr>
+           
+<td colspan="3">
+           
+<h1>Page Title</h1>
+           
+</td>
+         
+</tr>
+         
+<tr>
+           
+<td>
+             
+<h2>Column 1</h2>
+             
+<p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           
+</td>
+           <td>
+             
+<h2>Column 2</h2>
+             
+<p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           
+</td>
+           <td>
+             
+<h2>Column 3</h2>
+             
+<p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           
+</td>
+         
+</tr>
+         
+<tr>
+           
+<td colspan="3">footer information</td>
+         
+</tr>
+         
+         
+</table>
+      
+      
+</div>
+<h2>Source Code</h2>
+<div id="id_sc1">
+        
+      
+</div>
+<script type="text/javascript">
+        sourceCode.add('id_sc1', 'id_lt');
+        sourceCode.make();
+      </script>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

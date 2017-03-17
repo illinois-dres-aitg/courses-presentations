@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 17: Pizza Order Form: aria-labelledby</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      div.label,
+      div.label,
+      div.group  div.title {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: left;
+        margin-top: 1.25em;
+      }
+      
+      div.group div.item {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: -0.5em;
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+        border: 2px solid transparent;
+        width: 9em;
+      }
+      
+      input[type="submit"] {
+        margin-top: 2em;
+      }
+      input[type=submit]:focus {
+        outline: 2px solid black;
+      }
+      
+      input[type="text"]:hover,
+      div.group div.item:hover {
+        background-color: #ADDFFF; 
+      }
+      
+      input[type="text"]:focus {
+        outline: 2px solid black; 
+        background-color: #EEEEEE; 
+      }
+      
+      select:focus {
+        outline: 2px solid black;
+        background-color: #EEEEEE;
+      }
+      
+      div.group div.focus { 
+        background-color: #EEEEEE; 
+        border-color: black; 
+      }      
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide16.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide18.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide29.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 17 of 29</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Pizza Order Form: aria-labelledby</h1>
+<form id="form">
+        
+<h2>Pizza Form</h2>
+
+        
+<div id="lb1" class="label">Name</div>
+        
+<input id="id-name" type="text" size="30" aria-labelledby="lb1">
+        
+        
+<div id="lb2" class="label">Address</div>
+        
+<input id="id-address" type="text" size="40" aria-labelledby="lb2">
+        
+        
+<div id="lb3" class="label">Phone</div>
+        
+<input id="id-phone" type="text" size="14" aria-labelledby="lb3">
+        
+        
+<div id="lb4" class="label">Delivery Method</div>
+        
+<select id="id-delivery" aria-labelledby="lb4">
+          <option>Eat in store</option>
+          <option>Pickup</option>
+          <option>Home delivery</option>
+        </select>
+        
+        
+<div class="group">
+          
+<div id="lb5" class="title">Crust</div>
+          
+          
+<div class="item">
+            
+<input id="id-crust" name="crust" type="radio" value="Thin" aria-labelledby="lb5-1 lb5">
+            <span id="lb5-1">Thin</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Classic" aria-labelledby="lb5-2 lb5">
+            <span id="lb5-2">Classic</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Deep Dish" aria-labelledby="lb5-3 lb5">
+            <span id="lb5-3">Deep Dish</span>
+          
+</div>
+
+        
+</div>
+        
+        
+<div class="group">
+          
+<div id="lb6" class="title">Toppings</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Sausage" aria-labelledby="lb6-1 lb6">
+            <span id="lb6-1">Sausage</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Pepperoni" aria-labelledby="lb6-2 lb6">
+            <span id="lb6-2">Pepperoni</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Mushrooms" aria-labelledby="lb6-3 lb6">
+            <span id="lb6-3">Mushrooms</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Onions" aria-labelledby="lb6-4 lb6">
+            <span id="lb6-4">Onions</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Green Peppers" aria-labelledby="lb6-5 lb6">
+            <span id="lb6-5">Green Peppers</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Black Olives" aria-labelledby="lb6-6 lb6">
+            <span id="lb6-6">Back Olives</span>
+          
+</div>
+
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Extra Cheese" aria-labelledby="lb6-7 lb6">
+            <span id="lb6-7">Extra cheese</span>
+          
+</div>
+
+        
+</div>
+        
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
+        
+      
+</form>
+<h2>HTML Source Code</h2>
+<div id="sc1">
+        
+      
+</div>
+<h2>CSS Source Code</h2>
+<pre id="sc2">
+        
+      
+</pre>
+<script type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus"); 
+        }
+        
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        }
+        
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('div.group input');
+        
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+        
+        
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.make();
+      </script>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

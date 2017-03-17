@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ARIA Checkbox Example with Focus Styling</title>
+  
+  <link href="nav.css" rel="stylesheet"></link>
+  
+	<style type="text/css">
+	
+	   div[role="checkbox"] {
+	     margin-top: 0.5em;
+	     padding: 0.25em;
+	     padding-left: 1.5em;
+	     width: 10em;
+	     background-image: url('checkbox-unchecked-black.png');
+	     background-repeat: no-repeat;
+	     background-position: 0.25em center;
+	   }
+
+	   div[role="checkbox"][aria-checked="true"] {
+	     background-image: url('checkbox-checked-black.png');
+ 	   }
+ 	   
+ 	   label,
+ 	   div[id] {
+ 	     display: block;
+ 	     padding: 0.25em;
+ 	     width: 30em;
+ 	   }
+ 	   
+ 	   div[role="checkbox"].focus,
+ 	   div[role="checkbox"]:hover,
+ 	   div[id].focus,
+ 	   div[id]:hover,
+ 	   label.focus,
+ 	   label:hover,
+ 	   input.pseudo:focus {
+ 	      outline: black solid 2px;
+ 	      background-color: #EEEEEE;
+ 	   }
+ 	   
+
+ 	   
+	</style>
+
+    <script type="text/javascript">
+    
+      function toggleARIACheckbox(event) {
+      
+        var node = event.currentTarget;
+        
+        if (node.getAttribute("aria-checked") === 'false') {
+          node.setAttribute("aria-checked", "true");
+        }
+        else {
+          node.setAttribute("aria-checked", "false");
+        } 
+
+        event.stopPropagation();
+        event.preventDefault();
+        
+      }
+
+      function keyDownARIACheckbox(event) {
+      
+        if (event.keyCode === 32) {
+           toggleARIACheckbox(event);
+        }
+        
+      }
+
+      function focusARIACheckbox(event) {
+      
+        var node = event.currentTarget;
+        node.className = "focus";
+        
+      }
+
+      function blurARIACheckbox(event) {
+      
+        var node = event.currentTarget;
+        node.className = "";
+        
+      }
+
+      function focusCheckbox(event) {
+      
+        var node = event.currentTarget;
+        node.parentNode.className = "focus";
+        
+      }
+
+      function blurCheckbox(event) {
+      
+        var node = event.currentTarget;
+        node.parentNode.className = "";
+        
+      }
+      
+      
+    </script>
+    	
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="checkbox.html"       title="Checkboxes with no focus styling">Example 1</a></li>
+      <li><a href="checkbox-focus.html" title="Checkboxes with focus styling">Example 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Example 2: ARIA Checkbox Example with Focus Styling</h1>
+
+    <label>
+      <input class="pseudo" type="checkbox">
+      Standard checkbox 1 (input:focus pseudo element for focus styling) 
+    </label>
+    
+    <label>      
+      <input 
+         type="checkbox"
+         onfocus="focusCheckbox(event)" 
+         onblur="blurCheckbox(event)">
+      Standard checkbox 2 (focus and blur event label styling)
+    </label>
+
+    <div id="cb3">      
+      <input 
+         type="checkbox"
+         onfocus="focusCheckbox(event)" 
+         onblur="blurCheckbox(event)">
+      Standard checkbox 3 (no label)
+    </div>
+
+
+    <div tabindex="0"
+         role="checkbox" 
+         aria-checked="false" 
+         onClick="toggleARIACheckbox(event)" 
+         onKeyDown="keyDownARIACheckbox(event)" 
+         onfocus="focusARIACheckbox(event)" 
+         onblur="blurARIACheckbox(event)">
+         ARIA Checkbox 1
+    </div>
+
+    <div tabindex="0"
+         role="checkbox" 
+         aria-checked="false" 
+         onClick="toggleARIACheckbox(event)" 
+         onKeyDown="keyDownARIACheckbox(event)" 
+         onfocus="focusARIACheckbox(event)" 
+         onblur="blurARIACheckbox(event)">
+         ARIA Checkbox 2
+    </div>
+  
+  
+  </main>
+  
+</body>
+</html>

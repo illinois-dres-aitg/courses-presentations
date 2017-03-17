@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Able Player Test #5</title>
+<!-- Dependencies --> 
+
+<!-- Able Player CSS -->  
+<link rel="stylesheet" href="styles/ableplayer.css" type="text/css"/>
+
+<!-- CSS for interactive transcript --> 
+<link rel="stylesheet" href="styles/ableplayer-transcript.css" type="text/css"/>
+
+<script src="thirdparty/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="thirdparty/jquery.cookie.js"></script>
+
+
+<!-- Able Player JavaScript -->
+<script src="build/ableplayer.js"></script>
+
+</head>
+
+<body>
+
+<!-- use the following markup for each media element -->
+<video id="video1" width="480" height="360" data-able-player="" data-translation-path="./translations/">
+        <source src="../media/gb-imovie-mobile.mp4" type="video/mp4"></source>
+        <source src="../media/gb-imovie-mobile.webm" type="video/webm"></source>
+        <track  kind="captions" 
+          src="../media/groundbreaking.vtt" 
+          srclang="en" 
+          label="English Captioning"></track>
+
+</video>
+
+</body>
+</html>

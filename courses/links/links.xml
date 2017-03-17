@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Links: Accessible Name, Context and Focus Styling</title>
+  <name>Jon Gunderson, Ph.D.</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Links Overview</title>
+    <contents>
+      <ul>
+        <li>Link usability</li>
+        <li>Accessible name</li>
+        <li>Accessible description</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Link Usability 101</title>
+    <contents>
+      <details>
+        <summary>What makes a good link?</summary>
+        <ul>
+          <li>Link text describes the content in the target web page.</li>
+          <li>Link text is suscinct.</li>
+          <li>Content of the link can provide meaning to a link.</li>
+        </ul>  
+      </details>
+      <details>
+        <summary>Why does someone follow a link?</summary>
+        <ul>
+          <li>Link text identifies a topic of interest.</li>
+        </ul>  
+      </details>
+    </contents>
+  </slide>
+  
+  <slide>
+    <style>
+      dt { font-weight: bold; padding-top: 1em;}
+    </style>
+    <title>WCAG 2.0 Link Requirements</title>
+    <contents>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" target="_specification">2.4.4 Link Purpose (In Context)</a></dt>
+        <dd>The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general (Level A).</dd>
+        
+        <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link" target="_specification">2.4.9 Link Purpose (Link Only)</a></dt>
+        <dd>A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general (Level AAA).</dd>
+      </dl>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>WCAG 2.0 Technique Examples</title>
+    <contents>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraph</li>
+        <li>Table cell</li>
+        <li>List item</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Name Calculation</title>
+    <contents>
+      <ul>
+        <li>Child text nodes of <code>a</code> element</li>
+        <li><code>aria-label</code> attribute</li>
+        <li><code>aria-labelledby</code> attribute</li>
+        <li><code>title</code> attribute (rare)</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Description Calculation</title>
+    <contents>
+      <ul>
+        <li><code>aria-describedby</code> attribute</li>
+        <li><code>title</code> attribute (tooltip), if not used for accessible name</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+
+
+      <title>Basic Screen Reader Commands related to Links</title>
+      <contents>
+        <table class="table table-striped table-hover" aria-labelledby="id1">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>JAWS (Windows)</th>
+              <th>NVDA (Windows)</th>
+              <th>Voice Over (OS X)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Next link</td>
+              <td>Tab</td>
+              <td>Tab</td>
+              <td>Tab</td>
+            </tr>
+            <tr>
+              <td>Previous link</td>
+              <td>Shift+Tab</td>
+              <td>Shift+Tab</td>
+              <td>Shift+Tab</td>
+            </tr>
+            <tr>
+              <td>Re-read current link</td>
+              <td>Insert+Numpad 5</td>
+              <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
+              <td>Command+Option+Space</td>
+            </tr>
+            <tr>
+              <td>More information on link</td>
+              <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
+              <td>NVDA+D</td>
+              <td>Control+Option+F4</td>
+            </tr>
+            <tr>
+              <td>List of Links</td>
+              <td>Insert+F7</td>
+              <td>NVDA+F7</td>
+              <td>Command+Option+U, then left/right arrow to forms</td>
+            </tr>
+            <tr>
+              <td>Detailed Keyboard Information</td>
+              <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
+              <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
+              <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
+            </tr>
+          </tbody>
+        </table>  
+      </contents>
+    </slide>
+    
+  <slide>
+    <title>WCAG Heading Context Example</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H80.html" target="_specification">Links with Heading Context</a>
+      </p>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3>Royal Palm Hotel</h3>
+        <ul class="horizontal">
+          <li><a href="royal_palm_hotel_more_info.html">More Info</a></li>
+          <li><a href="royal_palm_hotel_map.html">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html">Book now</a></li>
+        </ul>
+        
+        <h3>Hotel Three Rivers</h3>
+        <ul class="horizontal">
+          <li><a href="hotel_three_rivers_more_info.html">More Info</a></li>
+          <li><a href="hotel_three_rivers_map.html">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>NVDA showing List of Links with No Context Markup</title>
+    <contents>
+      <p class="center"><img width="98%" src="images/links-list-no-aria.png" alt="screen shot NVDA list of links when there is no link context"/></p>
+    </contents>
+  </slide> 
+  
+  
+  <slide>
+    
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    
+    <title>Using aria-describedby to define context of a link</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3 id="ref1">Royal Palm Hotel</h3>
+        <ul class="horizontal">
+          <li><a href="royal_palm_hotel_more_info.html" aria-describedby="ref1">More Info</a></li>
+          <li><a href="royal_palm_hotel_map.html" aria-describedby="ref1">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html" aria-describedby="ref1">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html" aria-describedby="ref1">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html" aria-describedby="ref1">Book now</a></li>
+        </ul>
+        
+        <h3 id="ref2">Hotel Three Rivers</h3>
+        <ul class="horizontal">
+          <li><a href="hotel_three_rivers_more_info.html" aria-describedby="ref2">More Info</a></li>
+          <li><a href="hotel_three_rivers_map.html" aria-describedby="ref2">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html" aria-describedby="ref2">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html" aria-describedby="ref2">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html" aria-describedby="ref2">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html" aria-describedby="ref2">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3 id="ref1"&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html" aria-describedby="ref1"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-describedby="ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-describedby="ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-describedby="ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-describedby="ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id="ref2"&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html" aria-describedby="ref2"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-describedby="ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-describedby="ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-describedby="ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-describedby="ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-describedby="ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>NVDA showing List of Links with ARIA-DESCRIBEDBY identifying context</title>
+    <contents>
+      <p class="center"><img width="98%" src="images/links-list-aria-describedby.png" alt="screen shot NVDA list of links when aria-describedby identifies context"/></p>
+    </contents>
+  </slide> 
+  
+  
+  <slide>
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    <title>Using aria-labelledby to define the context of the link</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3 id="ref1">Royal Palm Hotel</h3>
+        <ul class="horizontal">
+          <li><a id="ref10" href="royal_palm_hotel_more_info.html" aria-labelledby="ref10 ref1">More Info</a></li>
+          <li><a id="ref11" href="royal_palm_hotel_map.html" aria-labelledby="ref11 ref1">Map</a></li>
+          <li><a id="ref12" href="royal_palm_hotel_photos.html" aria-labelledby="ref12 ref1">Photos</a></li>
+          <li><a id="ref13" href="hroyal_palm_hotel_directions.html" aria-labelledby="ref13 ref1">Directions</a></li>
+          <li><a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1">Guest reviews</a></li>
+          <li><a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1">Book now</a></li>
+        </ul>
+        
+        <h3 id="ref2">Hotel Three Rivers</h3>
+        <ul class="horizontal">
+          <li><a id="ref20" href="hotel_three_rivers_more_info.html" aria-labelledby="ref20 ref2">More Info</a></li>
+          <li><a id="ref21" href="hotel_three_rivers_map.html" aria-labelledby="ref21 ref2">Map</a></li>
+          <li><a id="ref22" href="hotel_three_rivers_photos.html" aria-labelledby="ref22 ref2">Photos</a></li>
+          <li><a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2">Directions</a></li>
+          <li><a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2">Guest reviews</a></li>
+          <li><a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3 id="ref1"&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a id="ref10" href="royal_palm_hotel_more_info.html" aria-labelledby="ref10 ref1"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref11" href="royal_palm_hotel_map.html" aria-labelledby="ref11 ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref12" href="royal_palm_hotel_photos.html" aria-labelledby="ref12 ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref13" href="royal_palm_hotel_directions.html" aria-labelledby="ref13 ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id="ref2"&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a id="ref20" href="hotel_three_rivers_more_info.html" aria-labelledby="ref20 ref2"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref21" href="hotel_three_rivers_map.html" aria-labelledby="ref21 ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref22" href="hotel_three_rivers_photos.html" aria-labelledby="ref22 ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+ 
+  <slide> 
+    <title>NVDA showing List of Links with ARIA-LABELLEDBY identifying context</title>
+    <contents>
+      <p class="center"><img width="98%" src="images/links-list-aria-labelledby.png" alt="screen shot NVDA list of links when aria-labelledby identifies context"/></p>
+    </contents>
+  </slide> 
+  
+
+  <slide>
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    <title>Using aria-label to define the context of the link</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3>Royal Palm Hotel</h3>
+        <ul class="horizontal">
+          <li><a href="royal_palm_hotel_more_info.html" aria-label="More Info Royal Palm Hotel">More Info</a></li>
+          <li><a href="royal_palm_hotel_map.html" aria-label="Map Royal Palm Hotel">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html" aria-label="Photos Royal Palm Hotel">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html" aria-label="Directions Royal Palm Hotel">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html" aria-label="Guest Royal Palm Hotel">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html" aria-label="Book now Royal Palm Hotel">Book now</a></li>
+        </ul>
+        
+        <h3>Hotel Three Rivers</h3>
+        <ul class="horizontal">
+          <li><a href="hotel_three_rivers_more_info.html" aria-label="More info Hotel Three Rivers">More Info</a></li>
+          <li><a href="hotel_three_rivers_map.html" aria-label="Map Hotel Three Rivers">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html" aria-label="Photos Hotel Three Rivers">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html" aria-label="Directions Hotel Three Rivers">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html" aria-label="Guest reviews Hotel Three Rivers">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html" aria-label="Book now Hotel Three Rivers">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html" aria-label="More Info Royal Palm Hotel"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-label="Map Royal Palm Hotel"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-label="Photos Royal Palm Hotel"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html" aria-label="Directions Royal Palm Hotel"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-label="Guest Royal Palm Hotel"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-label="Book now Royal Palm Hotel"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html" aria-label="More info Hotel Three Rivers"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-label="Map Hotel Three Rivers"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-label="Photos Hotel Three Rivers"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-label="Directions Hotel Three Rivers"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-label="Guest reviews Hotel Three Rivers"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-label="Book now Hotel Three Rivers"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+
+  <slide>
+    
+    <style>
+      ul.horizontal li {
+      display: inline;
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+    
+    <title>WCAG Heading Context Example using Grouping Label</title>
+    <contents>
+      
+      <h2>Link Context Example</h2>
+      <div class="example">
+        
+        <h3 id="id1">Royal Palm Hotel</h3>
+        <ul class="horizontal" aria-labelledby="id1">
+          <li><a href="royal_palm_hotel_more_info.html">More Info</a></li>
+          <li><a href="royal_palm_hotel_map.html">Map</a></li>
+          <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
+          <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+          <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
+          <li><a href="royal_palm_hotel_book.html">Book now</a></li>
+        </ul>
+        
+        <h3 id="id2">Hotel Three Rivers</h3>
+        <ul class="horizontal" aria-labelledby="id2">
+          <li><a href="hotel_three_rivers_more_info.html">More Info</a></li>
+          <li><a href="hotel_three_rivers_map.html">Map</a></li>
+          <li><a href="hotel_three_rivers_photos.html">Photos</a></li>
+          <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
+          <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
+          <li><a href="hotel_three_rivers_book.html">Book now</a></li>
+        </ul>   
+      </div>
+      
+      <h2>Source Code</h2>
+      <pre class="code">
+  &lt;h3 id="id1"&gt;Royal Palm Hotel&lt;/h3&gt;
+  &lt;ul class="horizontal"  aria-labelledby="id1"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id="id2"&gt;Hotel Three Rivers&lt;/h3&gt;
+  &lt;ul class="horizontal"  aria-labelledby="id2"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;     
+    </pre>
+      
+    </contents>
+  </slide> 
+  
+ 
+  <slide>
+    <title>Identifying Links and Link Keyboard Focus Styling</title>
+    <contents>
+      <ul>
+        <li>Underlining links is important for people with low vision to identify the link</li>
+        <li>Use CSS Pseudo selectors :focus and :active to style link with focus</li>
+        <li>Changes needs to be more than just color (e.g. color blindess and other visual impairments)</li>
+        <li>Typically border, outline or underline</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Link Menu Focus Styling Example</title>
+    <style>
+      #id_nav {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      
+      #id_nav h2 {
+        position: absolute;
+        top: -30em;
+        left: -300em;
+       }
+       
+       #id_nav ul li {
+         list-style: none;
+         float: left;
+         margin-right: .5em;
+       }
+       
+       #id_nav ul li a {
+         display: block;
+         text-decoration: none;
+         padding-left: 0.25em;
+         padding-right: 0.25em;
+         border: thin transparent solid;
+        }
+       
+       #id_nav ul li a:hover,
+       #id_nav ul li a:focus {
+         text-decoration: none;
+         border-color: black;
+       }
+       
+    </style>
+    
+    <contents>
+      
+      <nav aria-labelledby="id_ds" id="id_nav">
+        <h2 id="id_ds">Disability Resources</h2>
+        <ul>
+          <li><a href="http://disability.illinois.edu/academic-support">Academic Support</a></li>
+          <li><a href="http://disability.illinois.edu/living-accommodations">Living Accommodations</a></li>
+          <li><a href="http://disability.illinois.edu/getting-around">Getting Around</a></li>
+          <li><a href="http://disability.illinois.edu/health">Health</a></li>
+          <li><a href="http://disability.illinois.edu/campus-life">Campus Life</a></li>
+        </ul>
+        
+      </nav>
+      
+      <div style="clear: both;"></div>
+      
+      <h2>HTML Code</h2>
+      <div id="id_c1">
+        
+      </div>
+
+      <h2>CSS Code</h2>
+      <pre class="code">
+       #id_nav {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      
+      #id_nav h2 {
+        position: absolute;
+        top: -30em;
+        left: -300em;
+       }
+       
+       #id_nav ul li {
+         list-style: none;
+         float: left;
+         margin-right: .5em;
+       }
+       
+       #id_nav ul li a {
+         display: block;
+         text-decoration: none;
+         padding-left: 0.25em;
+         padding-right: 0.25em;
+         border: thin transparent solid;
+        }
+       
+       #id_nav ul li a:hover,
+       #id_nav ul li a:focus {
+         text-decoration: none;
+         border-color: black;
+       }
+       
+         
+      </pre>
+      
+      <script type="text/javascript">
+        sourceCode.add('id_c1', 'id_nav')
+        sourceCode.make()
+      </script>
+      
+    </contents>
+  </slide>
+  
+</slides> 
+
+

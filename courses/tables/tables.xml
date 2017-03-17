@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Data Table Accessibility</title>
+ <name>Jon Gunderson</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Tables Overview</title>
+    <contents>
+      <ul>
+        <li>Identifying labels for layout or data</li>
+        <li>Data cell headers</li>
+        <li>Caption (e.g. accessible name)</li>
+        <li>Summary (e.g. lober description of tabe contents)</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>HTML Table Markup</title>
+    <contents>
+      <ul>
+	    <li>Layout tables</li>
+	    <li>Tabular data tables</li>
+      </ul>
+      
+      <h2>HTML 5 Changes to <code>table</code> element</h2>
+      <ul>
+        <li><code>summary</code> attribute has been deprecated</li>
+      </ul>
+
+      <h2>ARIA 1.1</h2>
+      <ul>
+        <li>Will probably add roles <code>table</code> and <code>cell</code> for use in markup languages like SVG</li>
+      </ul>
+      
+    </contents>
+  </slide> 
+
+  <slide>
+    <style>
+          div.example {
+        margin: 1em;
+        padding: 1em;
+        background-color: #EEEEEE;
+        color: black;
+        border: medium white solid;
+      }
+      td {
+        padding: 0.5em;
+      }
+    </style>
+    <title>Layout Table Design issues</title>
+    <contents>
+      <ul>
+	    <li>Use <code>role="presentation"</code> on just the <code>table</code>elements</li>
+	    <li>Use only <code>tr</code> and <code>td</code> elements in table</li>
+	    <li>Make sure content is still understandable with table layout is disabled</li>
+      </ul>
+      
+      <h2>Layout Table Example</h2>
+      
+      <div class="example">
+      
+         <table role="presenation" id="id_lt">
+         <tr >
+           <td colspan="3">
+           <h1>Page Title</h1>
+           </td>
+         </tr>
+         <tr>
+           <td>
+             <h2>Column 1</h2>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+           <td>
+             <h2>Column 2</h2>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+           <td>
+             <h2>Column 3</h2>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+         </tr>
+         <tr>
+           <td colspan="3">footer information</td>
+         </tr>
+         
+         </table>
+      
+      </div>
+      
+      <h2>Source Code</h2>
+      
+      <div id="id_sc1">
+        
+      </div>
+      
+      <script type="text/javascript">
+        sourceCode.add('id_sc1', 'id_lt');
+        sourceCode.make();
+      </script>
+      
+    </contents>
+  </slide> 
+  
+  <slide>
+    <style>
+          div.example {
+        margin: 1em;
+        padding: 1em;
+        background-color: #EEEEEE;
+        color: black;
+        border: medium white solid;
+      }
+      td {
+        padding: 0.5em;
+      }
+    </style>
+    <title>Inaccessible Layout Table</title>
+    <contents>
+      <ul>
+	    <li>This layout table does not make sense when table markup is removed</li>
+      </ul>
+      
+      <h2>Layout Table Example</h2>
+      
+      <div class="example">
+      
+         <table role="presenation" id="id_lt">
+         <tr>
+           <td colspan="3">
+           <h1>Page Title</h1>
+           </td>
+         </tr>
+         
+         <tr>
+           <td>
+             <h2>Column 1</h2>
+           </td>
+           <td>
+             <h2>Column 2</h2>
+           </td>
+           <td>
+             <h2>Column 3</h2>
+           </td>
+         </tr>
+         
+         <tr>
+           <td>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+           <td>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+           <td>
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sollicitudin lacus blandit auctor. Mauris tempus tincidunt semper. Ut in fringilla tellus. Vestibulum dapibus, mi in viverra mollis, ipsum nisl tincidunt libero, convallis placerat justo elit a ligula. Vivamus sed nibh ac est tempus iaculis. Etiam feugiat lobortis mauris ut varius. Integer sollicitudin lacinia adipiscing. Aenean ut purus ac quam tincidunt volutpat non vitae augue. Suspendisse sed libero at mauris gravida vehicula volutpat vel magna.
+             </p>
+           </td>
+         </tr>
+         
+         <tr>
+           <td colspan="3" >footer information</td>
+         </tr>
+         
+         </table>
+      
+      </div>  
+
+      <h2>Source Code</h2>
+      
+      <div id="id_sc1">
+        
+      </div>
+      
+      <script type="text/javascript">
+        sourceCode.add('id_sc1', 'id_lt');
+        sourceCode.make();
+      </script>
+      
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Data Table Design issues</title>
+    <contents>
+      <ul>
+	    <li>Accessible name</li>
+	    <li>Summary information</li>
+	    <li>Identifying headers for data cells</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Accessible Name</title>
+    <contents>
+      <ul>
+	    <li><code>summary</code> (deprecated in HTML5)</li>
+	    <li><code>caption</code></li>
+	    <li><code>aria-label</code></li>
+	    <li><code>aria-labelledby</code></li>
+	    <li><code>title</code> (Tooltip)</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Accessible Description</title>
+    <contents>
+      <ul>
+	    <li><code>summary</code></li>
+	    <li><code>aria-describedby</code></li>
+	    <li><code>title</code> (Tooltip)</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>Identify Header Cells for a Data Cell</title>
+    <contents>
+      <ul>
+	    <li><code>th</code> element</li>
+	    <li><code>headers</code> attribute</li>
+	    <li><code>scope</code> attribute</li>
+      </ul>
+    </contents>
+  </slide> 
+
+  
+  <slide> 
+    <title>Data Table: Caption and Summary</title>
+    <contents> 
+
+      <div class="example">
+
+        <table class="table table-striped" summary="70% of Instructors use Microsoft Office to create instructional web materials" id="id_dd">
+          <caption> Use of Microsoft Office to Create Web Materials</caption>     
+
+          <thead>
+            <tr>
+              <th></th>
+              <th>Power Point</th>
+              <th>Word</th>
+              <th>Excel</th>
+            </tr>
+          </thead>  
+
+          <tbody>
+            <tr>
+              <th>Instructors</th>
+              <td>71%</td>
+              <td>87.9%</td>
+              <td>51.4%</td>
+            </tr>
+    
+            <tr>
+              <th>Web Developers</th>
+              <td>43.7%</td>
+              <td>84,9%</td>
+              <td>43.7%</td>
+            </tr>
+    
+            <tr>
+              <th>Disability Support</th>
+              <td>57.7%</td>
+              <td>73.1%</td>
+              <td>46.2%</td>
+            </tr>
+    
+            <tr>
+              <th>Others</th>
+              <td>42.9%</td>
+              <td>78.6%</td>
+              <td>40.5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2>Source Code</h2>
+      <div id="id_sc1">
+        
+      </div>
+      
+      <script type="text/javascript">
+        sourceCode.add('id_sc1', 'id_dd');
+        sourceCode.make();
+      </script>
+      
+    </contents>
+  </slide>
+
+
+  <slide> 
+   
+    <title>Data Table: aria-labeledby and aria-describedby</title>
+    <contents> 
+
+      <h2>Example</h2>
+      <div class="example" id="id_ex">
+      
+        <h3 id="name"> Use of Microsoft Office to Create Web Materials</h3> 
+
+        <table  class="table table-striped" aria-labelledby="name" aria-describedby="desc">
+        
+          <thead>
+            <tr>
+              <th></th>
+              <th>Power Point</th>
+              <th>Word</th>
+              <th>Excel</th>
+            </tr>
+          </thead>  
+
+          <tbody>
+            <tr>
+              <th>Instructors</th>
+              <td>71%</td>
+              <td>87.9%</td>
+              <td>51.4%</td>
+            </tr>
+    
+            <tr>
+              <th>Web Developers</th>
+              <td>43.7%</td>
+              <td>84,9%</td>
+              <td>43.7%</td>
+            </tr>
+    
+            <tr>
+              <th>Disability Support</th>
+              <td>57.7%</td>
+              <td>73.1%</td>
+              <td>46.2%</td>
+            </tr>
+    
+            <tr>
+              <th>Others</th>
+              <td>42.9%</td>
+              <td>78.6%</td>
+              <td>40.5%</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p id="desc">70% of Instructors use Microsoft Office to create instructional web materials</p>
+      </div>
+      
+      <h2>Source Code</h2>
+      <div id="id_sc1">
+        
+      </div>
+      
+      <script type="text/javascript">
+        sourceCode.add('id_sc1', 'id_ex');
+        sourceCode.make();
+      </script>
+      
+    </contents>
+  </slide>
+
+
+
+
+<slide>
+  <title>Complex Data Table: aria-label</title>
+  <contents> 
+
+  <div class="example" id="id_ex">
+    
+    <table class="table table-striped" aria-label="Travel Expense Report">
+      <thead>
+        <tr>
+          <th id="header1">Date</th>
+          <th id="header2" axis="expenses">Meals</th>
+          <th id="header3" axis="expenses">Hotels</th>
+          <th id="header4" axis="expenses">Transport</th>
+          <th id="header5" axis="sub totals">Subtotals</th>
+        </tr>
+      </thead>  
+      <tbody>  
+        <tr>
+          <th id="header6" axis="location">San Jose</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header7" headers="header1" axis="date">25-Aug-97</th>
+          <td headers="header6 header7 header2">37.74</td>
+          <td headers="header6 header7 header3">112.00</td>
+          <td headers="header6 header7 header4">45.00</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header8" headers="header1" axis="date">26-Aug-97</th>
+          <td headers="header6 header8 header2">27.28</td>
+          <td headers="header6 header8 header3">112.00</td>
+          <td headers="header6 header8 header4">45.00</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header20">subtotals</th>
+          <td headers="header6 header20 header2">65.02</td>
+          <td headers="header6 header20 header3">224.00</td>
+          <td headers="header6 header20 header4">90.00</td>
+          <td headers="header6 header5">379.02</td>
+        </tr>
+        <tr>
+          <th id="header10" axis="location">Seattle</th>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header11" headers="header1" axis="date">27-Aug-97</th>
+          <td headers="header10 header11 header2">96.25</td>
+          <td headers="header10 header11 header3">109.00</td>
+          <td headers="header10 header11 header4">36.00</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header12" headers="header1" axis="date">28-Aug-97</th>
+          <td headers="header10 header12 header2">35.00</td>
+          <td headers="header10 header12 header3">109.00</td>
+          <td headers="header10 header12 header4">36.00</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <th id="header21">subtotals</th>
+          <td headers="header10 header21 header2">131.25</td>
+          <td headers="header10 header21 header3">218.00</td>
+          <td headers="header10 header21 header4">72.00</td>
+          <td headers="header10 header5">421.25</td>
+        </tr>
+        <tr>
+          <th id="header30">Totals</th>
+          <td headers="header30 header2">196.27</td>
+          <td headers="header30 header3">442.00</td>
+          <td headers="header30 header4">162.00</td>
+          <td headers="header30 header4">800.27</td>
+        </tr>
+      </tbody>  
+    </table>
+  </div>  
+
+    <h2>Source Code</h2>
+    <div id="id_sc1">
+      
+    </div>
+    
+    <script type="text/javascript">
+      sourceCode.add('id_sc1', 'id_ex');
+      sourceCode.make();
+    </script>
+  </contents>
+  </slide> 
+
+  <slide>
+    <title>Coding Practices for Tables</title>
+    <contents>
+      <ul>
+	    <li>If more than one data table, each table must have an accessible name</li>
+	    <li>Summary is very context sensitive and therefore a manual check, very important for complex data</li>
+	    <li>Complex data tables require the use of the <code>headers</code> attribute</li>
+      </ul>
+    </contents>
+  </slide> 
+
+
+</slides> 

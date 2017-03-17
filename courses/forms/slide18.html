@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 18: Pizza Order Form: aria-label</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      div.label,
+      div.label,
+      div.group  div.title {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: left;
+        margin-top: 1.25em;
+      }
+      
+      div.group div.item {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: -0.5em;
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+        border: 2px solid transparent;
+        width: 9em;
+      }
+      
+      select {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.25em;
+        background-color: #FFFEFF;
+        font-size: 1em;
+      }
+      
+      input[type="submit"] {
+        margin-top: 2em;
+      }
+      
+      input[type=submit]:focus {
+        outline: 2px solid black;
+      }
+      
+      input[type="text"]:hover,
+        div.group div.item:hover {
+        background-color: #ADDFFF; 
+      }
+      
+      input[type="text"]:focus {
+        outline: 2px solid black; 
+        background-color: #EEEEEE; 
+      }
+      
+      select:focus {
+        outline: 2px solid black;
+        background-color: #EEEEEE;
+      }
+      
+      div.group div.focus { 
+        background-color: #EEEEEE; 
+        border-color: black; 
+      }      
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide17.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide19.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide29.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 18 of 29</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Pizza Order Form: aria-label</h1>
+<form id="form">
+        
+<h2>Pizza Form</h2>
+        
+          
+<div class="label">Name</div>
+          
+<input id="id-name" type="text" size="30" aria-label="Name">
+        
+          
+<div class="label">Address</div>
+          
+<input id="id-address" type="text" size="40" aria-label="Address">
+        
+          
+<div class="label">Phone</div>
+          
+<input id="id-phone" type="text" size="14" aria-label="Phone">
+        
+          
+<div class="label">Delivery Method</div>
+          
+<select id="id-delivery" aria-label="Delivery method">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
+          </select>
+        
+        
+<div class="group">
+          
+<div class="title">Crust</div>
+          
+<div class="item">
+            
+<input id="id-crust" name="crust" type="radio" value="Thin" aria-label="Thin crust">
+            Thin
+          </div>
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Classic" aria-label="Classic crust">
+            Classic
+          </div>
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Deep Dish" aria-label="Deep dish crust">
+            Deep Dish
+          </div>
+        
+</div>
+        
+        
+<div class="group">
+          
+<div class="title">Toppings</div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Sausage" aria-label="Sausage topping">
+            Sausage
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Pepperoni" aria-label="Pepperoni topping">
+            Pepperoni
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Mushrooms" aria-label="Mushroom topping">
+            Mushrooms
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Onions" aria-label="Onion topping">
+            Onions
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Green Peppers" aria-label="Green pepper topping">
+            Green Peppers
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Black Olives" aria-label="Black olive topping">
+            Back Olives
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Extra Cheese" aria-label="Extra cheese topping">
+            Extra cheese
+          </div>
+        
+</div>
+        
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
+        
+      
+</form>
+<h2>HTML Source Code</h2>
+<div id="sc1">
+        
+      
+</div>
+<h2>CSS Source Code</h2>
+<pre id="sc2">
+        
+      
+</pre>
+<script type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus"); 
+        }
+        
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        }
+        
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('div.group input');
+        
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+        
+
+
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.make();
+      </script>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

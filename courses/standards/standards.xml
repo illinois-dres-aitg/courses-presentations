@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Standards, Advancement and Professional Practice</title>
+  <name>Jon Gunderson, Ph.D.</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>W3C Standards for web accessibility</li>
+        <li>W3C Web Accessibility Initiative (WAI)</li>
+        <li>International Association of Accessibility Professionals</li>
+      </ul>
+
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+
+    </contents>
+  </slide>
+
+  <slide> 
+    <title>World Wide Web Consortium (W3C)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org" target="_specification">World Wide Web Consortium (W3C)</a></li>
+        <li>Interoperability: write once use everywhere</li>
+        <li>Open standards: anyone can use to share and access information</li>
+        <li>Validation: support semantics and interoperability</li>
+      </ul>
+      <img src="images/w3c-home.png" width="99%" alt="Graphical browser rendering of W3C Home page"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>W3C Web Accessibility Initiative (WAI)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/WAI" target="_specification">W3C Web Accessibility Initiative (WAI)</a></li>
+        <li>International standards</li>
+        <li>Promotion of accessibility of web based content</li>
+        <li>Collaboration of commerical, educational and consumer groups</li>
+        <li>Integration of accessibility into specfications</li>
+      </ul>
+      <img src="images/w3c-wai.png" width="99%" alt="Graphical browser rendering of W3C Home page"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+
+      <p>
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+
+      <details>
+        <summary>Disability Access Requirements</summary>
+        <ul>
+          <li>Technology agnostic</li>
+          <li><a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
+          <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
+          <li>Understanding requires knowledge of features of specific technogies</li>
+          <li><a href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</a></li>
+          <li>Techniques are <strong>not</strong> normative or comprehensive</li>
+        </ul>
+      </details>
+
+      <img src="images/wcag20-title.png" width="99%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+
+      <p>
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      
+      <details>
+        <summary>Standardized Support Accessibility APIs</summary>
+        <ul>
+          <li><code>role</code> semantics</li>
+          <li>Accessible name</li>
+          <li>Accessible description</li>
+          <li>States and properties</li>
+          <li><a href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a></li>
+          <li><a href="http://www.w3.org/WAI/PF/aria-implementation/">WAI-ARIA 1.0 User Agent Implementation Guide</a></li>
+          <li><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></li>
+        </ul>
+      </details>
+      
+      <img src="images/wai-aria-title.png" width="99%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5.x</title>
+    <contents>
+      <p>
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      
+      <details>
+        <summary>Standardized Support Accessibility APIs</summary>
+        <ul>
+          <li>Default <code>role</code> semantics</li>
+          <li><code>role</code> semantics restrictions</li>
+          <li><a href="http://www.w3.org/TR/aria-in-html/">W3C Notes on Using ARIA in HTML</a></li>
+          <li><a href="https://specs.webplatform.org/html-aria/webspecs/master/">ARIA in HTML</a></li>
+          <li><a href="http://www.w3.org/TR/html-aapi/">W3C HTML to Platform Accessibility APIs Implementation Guide</a></li>
+        </ul>
+      </details>
+      
+
+      <img src="images/html5-title.png" width="99%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>HTML 5: main element</title>
+    <contents>
+      <p>
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+
+      <details>
+        <summary>Meets an important accessibility requirement</summary>
+        <ul>
+          <li>Default <code>role</code> semantics</li>
+          <li><code>role</code> semantics restrictions</li>
+          <li>Standardize accessibility API mappings</li>
+        </ul>
+      </details>
+      
+      <img src="images/html5-main.png" width="99%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>W3C Membership</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/Consortium/Member/List" target="_specification">W3C Members List</a></li>
+        <li>Set priorities for standards work</li>
+        <li>Participate in the development of standards, including digital publishing</li>
+        <li>Support and participate in web accessibiity work to create a more accessibe web</li>
+      </ul>
+      <img src="images/w3c-members.png" width="99%" alt="Graphical browser rendering of W3C membership page"/>
+    </contents>
+  </slide> 
+  
+  
+  <slide> 
+    <title>International Association of Accessibility Professionals (IAAP)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.accessibilityassociation.org" target="_specification">W3C Web Accessibility Initiative (WAI)</a></li>
+        <li>Managers, designers, developers and content editors</li>
+        <li>Indentifying knowledge base</li>
+        <li>Sharing knowledge</li>
+        <li>Raising awareness</li>
+        <li>Certification</li>
+      </ul>
+      <img src="images/iaap-home.png" width="99%" alt="Graphical browser rendering of W3C Home page"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>IAAP: Founding Members</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.accessibilityassociation.org/content.asp?contentid=146" target="_specification">IAAP Founding Members</a></li>
+        <li>Professionalization of IT accessibility</li>
+        <li>Career development</li>
+        <li>Industry leadership</li>
+      </ul>
+      <div class="row">
+        <img src="images/iaap-ibm.png" alt="IBM logo"/>
+        <img src="images/iaap-microsoft.png" alt="Microsoft logo"/>
+      </div>
+      <div class="row">
+        <img src="images/iaap-hp.png" alt="Hewlette-Packard logo"/>
+        <img src="images/iaap-att.png" alt="AT&amp;T logo"/>
+      </div>
+      <div class="row">
+        <img src="images/iaap-wells-fargo.png" alt="Wells Fargo logo"/>
+        <img src="images/iaap-barclay.png" alt="Barclays logo"/>
+      </div>
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Assistive Technology in Higher Education Network (ATHEN)</title>
+    <contents>
+      <ul>
+        <li>Higher Education</li>
+        <li>Primarily people in disability services</li>
+        <li>Affliated with <a href="#">AHEAD</a></li>
+        <li>Sharing information</li>
+        <li>Annual Conference: <a href="#">Accessing Higher Ground Conference</a></li>
+      </ul>
+    </contents>
+  </slide> 
+  
+  
+  <slide>
+    <title>Summary</title>
+    <contents>
+      <ul>
+        <li>Accessibility must be intergated into main stream development and authoring</li>
+        <li>More people must understand accessibility</li>
+        <li>Need technologies that support accessible design</li>
+        <li>Authoring environments support accessibility by default, instead of by exception</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  
+
+</slides> 
+
+

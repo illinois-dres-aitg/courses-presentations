@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Graphis Accessibility</title>
+ <name>Jon Gunderson</name> 
+  <desc>Division of Disability Resources and Educational Services</desc>
+  <desc>University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="../">WCAG 2.0 Using HTLM5 and ARIA 1.0 Techniques</desc> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Graphics Overview</title>
+    <contents>
+      <ul>
+        <li>Descriptions</li>
+        <li>Extended descriptions</li>
+        <li>Graphics technologies</li>
+        <li>Zoom</li>
+        <li>Animations</li>
+      </ul>
+      <p class="center" style="font-size: 200%; margin-top: 2.5em">Slides at:<br/> 
+        <script type="text/javascript">
+          var link = window.location.href
+          var link = link.substr(0,link.lastIndexOf('/'))
+          document.write('<a href="' + link + '">' + link + '</a>')
+        </script>
+      </p>
+    </contents>
+  </slide>
+  
+  <slide>
+    <style>
+      dt { font-weight: bold; padding-top: 1em;}
+    </style>
+    <title>WCAG 2.0 Image Requirements</title>
+    <contents>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/WCAG20/#text-equiv-all" target="_specification">1.1.1 Non-Text Content</a></dt>
+        <dd>WCAG 2.0 Level A requirement</dd>
+        <dd>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.</dd>
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA 1.0 HTML 5 Image Elements</title>
+    <contents>
+    
+      <h2>ARIA 1.0</h2>
+      
+      <ul>
+        <li><a href="http://www.w3.org/TR/wai-aria/roles#presentation"><code>role="presentation"</code></a> is the same at <code>alt=""</code></li>
+        <li><a href="http://www.w3.org/TR/wai-aria/roles#img"><code>role="img"</code></a> can make any image look like an <code>img</code> element</li>
+      </ul>
+
+      <h2>HTML5 Graphics Options</h2>
+      
+      <ul>
+        <li><a href="http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element"><code>img</code> element</a></li>
+        <li><a href="http://www.w3.org/TR/html5/grouping-content.html#the-figure-element">figure</a> and <code><a href="http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">figurecaption</a></code> elements</li>
+        <li><a href="http://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>canvas</code> element</a></li>
+        <li><a href="http://www.w3.org/TR/svg">svg specification</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>SVG Accessibility</title>
+    <contents>
+      
+      <ul>
+        <li><a href="http://www.w3.org/TR/SVG/access.html">Appendix H: Accessibility Support</a></li>
+        <li><a href="http://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API Mappings</a></li>
+        <li><a href="http://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Application 1.1 Specfication</a></li>
+      </ul>
+      
+    </contents>
+  </slide>
+  
+</slides> 
+
+

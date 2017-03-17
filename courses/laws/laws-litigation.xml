@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Laws and Litigation</title>
+ <name>Jon Gunderson</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Laws and Litigation Overview</title>
+    <contents>
+      <ul>
+        <li>Rehabition Act of 1973</li>
+        <li>American with Disabilities Act (ADA)</li>
+        <li>Section 508: Information Technology Accessibility </li>
+        <li>Office of Civil Rights (OCR) complaints</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Rehabition Act of 1973</title>
+    <contents>
+     <div class="quote">
+       No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.
+     </div> 
+     <ul>
+       <li><a href="http://www2.ed.gov/policy/speced/reg/narrative.html">Rehabition Act of 1973</a></li>
+       <li>Civil right (cannot discriminate)</li>
+       <li>Organizations receiving federal money (e.g. states, universities..)</li>
+       <li>Accessible programs and services</li>
+       <li>Preferred accessible format</li>
+       <li>At the same time</li>
+       <li>Established the <a href="http://www.access-board.gov/">Access Board</a> to develop standards for implementation</li>
+     </ul>
+      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>American with Disabilities Act (1992)</title>
+    <contents>
+      <ul>
+        <li>Extended coverage to public accomodations (e.g. businesses, non-profits, private education)</li>
+        <li>Published standards for:
+          <ul>
+            <li>Buildings</li>
+            <li>Transportation sytems</li>
+            <li>Telecommunications</li>
+          </ul>
+        </li>
+        <li>No standards for computing and network technologies</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 508 Standards for Electronic and Information Technology (2000)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards">Section 508 Standards for Electronic and Information Technology (2000)</a></li>
+        <li>Only for Federal agencies and states receiving Tech Act grants</li>
+        <li>Based on W3c Web Content Accessibility Guidelines (WCAG) 1.0 Level A requirements</li>
+        <li>Estabished US federal accessibility standard for the Internet</li>
+        <li>Compliance could be monitored and enforced</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>Proposed Information and Communication Technology (ICT) Standards and Guidelines (2005)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/proposed-rule">Proposed Information and Communication Technology (ICT) Standards and Guidelines (2015)</a></li>
+        <li>W3C <a href="http://www.w3.org/TR/WCAG20">Web Content Accessibility Guideliens 2.0</a> Level A and AA requirements</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>International Web Accessibility Laws</title>
+    <contents>
+      <ul>
+        <li><a href="http://webaim.org/articles/laws/world/">WebAIM: World Laws</a></li>
+        <li>Canada</li>
+        <li>Europe</li>
+        <li>United Kingdom</li>
+        <li>Asia</li>
+        <li>All have adopted some form of W3C Web Content Accessibility Guidelines 2.0</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Office of Civil Right (OCR) Complaints in Higher Education</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.d.umn.edu/~lcarlson/atteam/lawsuits.html">Higher Education Accessibility Lawsuits Complaints, and Settlements</a></li>
+        <li><a href="http://ati.calstate.edu/index.php?page=61">California State University System (2009)</a></li>
+        <li><a href="http://www.readingrights.org/464">Electronic E-Books: Kindle pilot project (2009)</a></li>
+        <li><a href="http://accessibility.psu.edu/nfbpsusettlement/">Penn State University (2010)</a></li>
+        <li><a href="http://www.justice.gov/crt/about/edu/documents/montanaagree.pdf">University of Montana (2012)</a></li>
+        <li><a href="http://www.ed.gov/news/press-releases/us-education-department-reaches-agreement-youngstown-state-university-ensure-equal-access-its-websites-individuals-disabilities">Youngstown State (2014)</a></li>
+        <li><a href="http://www.nytimes.com/2015/02/13/education/harvard-and-mit-sued-over-failing-to-caption-online-courses.html?_r=0">Harvard/MIT captioning of MOOC videos (2015)</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Summary</title>
+    <contents>
+      <ul>
+        <li>Establish a standard</li>
+        <li>Publicize the standard</li>
+        <li>Implementation plan</li>
+        <li>Accessibility must be managed</li>
+        <li>Procurement</li>
+      </ul>
+    </contents>
+  </slide>
+  
+</slides> 
+
+

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Screen Readers</title>
+  <name>Jon Gunderson</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Screen Reader Overview</title>
+    <contents>
+      <ul>
+        <li>NVDA for Windows</li>
+        <li>VoiceOver for OSX and iOS</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Non-Visual Desktop Access (NDVA)</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.nvaccess.org">NVDA (NonVisual Desktop Access) Screen Reader (please donate)</a></li>
+        <li><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html?#toc27">User Guide</a></li>
+        <li><a href="http://webaim.org/articles/nvda/">WebAIM: NVDA Tutorial</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Non-Visual Desktop Access (NDVA): Keyboard Shortcuts</title>
+    <contents>
+      
+      <h2 id="id_wa">Windows Desktop/Applications</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_wa">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Control+ESCape</td>
+            <td>Start menu</td>
+          </tr>
+          <tr>
+            <td>Alt+Tab</td>
+            <td>Move between windows</td>
+          </tr>
+          <tr>
+            <td>Alt+F4</td>
+            <td>Close window</td>
+          </tr>
+          <tr>
+            <td>F10</td>
+            <td>Main menu</td>
+          </tr>
+        </tbody>
+      </table>
+ 
+      <h2 id="id_ff">Firefox Keyboard Keyboard Shortcuts</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_ff">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Control+L</td>
+            <td>URL address bar</td>
+          </tr>
+          <tr>
+            <td>F6</td>
+            <td>Move focus between web content and sidebar</td>
+          </tr>
+          <tr>
+            <td>Control+T</td>
+            <td>Open new tab</td>
+          </tr>
+          <tr>
+            <td>Control+Tab</td>
+            <td>Move to next tab</td>
+          </tr>
+          <tr>
+            <td>Control+F4</td>
+            <td>Close tab</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="id_nvda_basic">Basic NVDA Keyboard Shortcuts</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_nvda_basic">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NVDA</td>
+            <td>Typically insert key or the caps lock key</td>
+          </tr>
+          <tr>
+            <td>NVDA+Q</td>
+            <td>Exit NVDA</td>
+          </tr>
+          <tr>
+            <td>NVDA+control+G</td>
+            <td>Open NVDA Preferences</td>
+          </tr>
+        </tbody>
+      </table>
+ 
+      <h2 id="id_nvda_web">NVDA Keyboard Shortcuts for Web Browsing</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_nvda_web">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NVDA+F7</td>
+            <td>Elements list</td>
+          </tr>
+          
+          <tr>
+            <td>NVDA+space</td>
+            <td>Toggles between focus mode and browse mode
+              <p>Browse mode keyboard shortcuts:</p>
+              <ul>
+                <li>h: heading</li>
+                <li>l: list</li>
+                <li>i: list item</li>
+                <li>t: table</li>
+                <li>k: link</li>
+                <li>n: nonLinked text</li>
+                <li>f: form field</li>
+                <li>u: unvisited </li>link
+                <li>v: visited link</li>
+                <li>e: edit field</li>
+                <li>b: button</li>
+                <li>x: checkbox</li>
+                <li>c: combo box</li>
+                <li>r: radio button</li>
+                <li>q: block quote</li>
+                <li>s: separator</li>
+                <li>m: frame</li>
+                <li>g: graphic</li>
+                <li>d: landmark</li>
+                <li>o: embedded object</li>
+                <li>1 to 6: headings at levels 1 to 6 respectively</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>ESCape</td>
+            <td>switches back to browse mode if focus mode was previously switched to automatically</td>
+          </tr>
+          <tr>
+            <td>Shift+Comma</td>
+            <td>Moves to the start of the container (list, table, etc.) where the caret is positioned</td>
+          </tr>
+          <tr>
+            <td>Comma</td>
+            <td>Moves past the end of the container (list, table, etc.) where the caret is positioned</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h2 id="id_nvda_web">NVDA Keyboard Shortcuts for Searching Text Content</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_nvda_web">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td>NVDA+Control+F</td>
+            <td>Pops up a dialog in which you can type some text to find in the current document</td>
+          </tr>
+          <tr>
+            <td>NVDA+F3</td>
+            <td>Finds the next occurrence of the text in the document that you previously searched for</td>
+          </tr>
+          <tr>
+            <td>NVDA+Shift+F3</td>
+            <td>Finds the previous occurrence of the text in the document you previously searched for</td>
+          </tr>
+          <tr>
+            <td>NVDA+D</td>
+            <td>Opens a new window containing a long description for the element you are on if it has one</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+    </contents>
+  </slide>
+  <slide>
+    <title>VoiceOver for OSX</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.apple.com/voiceover/info/guide/">VoiceOver Guide</a></li>
+        <li><a href="http://webaim.org/articles/voiceover/">WebAIM: VoiceOver Tutorial</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>VoiceOver for OSX: Keyboard Shortcuts</title>
+    <contents>
+      
+      <h2 id="id_wa">OS X Desktop/Applications</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_wa">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Control+F2</td>
+            <td>Main menu</td>
+          </tr>
+          <tr>
+            <td>Command+Tab</td>
+            <td>Move between windows</td>
+          </tr>
+          <tr>
+            <td>Command+Q</td>
+            <td>Close application</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h2 id="id_ff">Safari Keyboard Shortcuts</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_ff">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Command+L</td>
+            <td>URL address bar</td>
+          </tr>
+          <tr>
+            <td>Command+T</td>
+            <td>Open new tab</td>
+          </tr>
+          <tr>
+            <td>Ccommand+Shift+Left Arrow/Right Arrow</td>
+            <td>Move to next tab</td>
+          </tr>
+          <tr>
+            <td>Command+W</td>
+            <td>Close tab</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h2 id="id_nvda_basic">Basic VoiceOver Keyboard Shortcuts</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_nvda_basic">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VO</td>
+            <td>Typically control+option keys to support VoiceOver commands</td>
+          </tr>
+          <tr>
+            <td>Command+F5</td>
+            <td>Exit VoiceOver</td>
+          </tr>
+          <tr>
+            <td>VO+M</td>
+            <td>Menubar</td>
+          </tr>
+          <tr>
+            <td>VO+A</td>
+            <td>Start reading</td>
+          </tr>
+          <tr>
+            <td>Control</td>
+            <td>Stop reading</td>
+          </tr>
+          <tr>
+            <td>VO+Right Arrow</td>
+            <td>Next item</td>
+          </tr>
+          <tr>
+            <td>VO+Left Arrow</td>
+            <td>Previous item</td>
+          </tr>
+          <tr>
+            <td>VO+P</td>
+            <td>Read paragraph</td>
+          </tr>
+          <tr>
+            <td>VO+S</td>
+            <td>Read Sentence</td>
+          </tr>
+          <tr>
+            <td>VO+B</td>
+            <td>Read from top to cursor</td>
+          </tr>
+          <tr>
+            <td>VO+W</td>
+            <td>Read Word</td>
+          </tr>
+          <tr>
+            <td>VO+Home</td>
+            <td>Jump to beginning of page</td>
+          </tr>
+          <tr>
+            <td>VO+End</td>
+            <td>Jump to end of page</td>
+          </tr>
+          <tr>
+            <td>VO+command+Left or Right Arrow</td>
+            <td>Select speech setting option (speaking rate, voice, pitch, etc.)</td>
+          </tr>
+          <tr>
+            <td>VO+command+Up or Down Arrow</td>
+            <td>Modify the selected speech setting</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      
+      <h2 id="id_nvda_web">VoiceOver Shortcuts for Web Browsing</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id_nvda_web">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VO+Command+L</td>
+            <td>Next link</td>
+          </tr>
+          <tr>
+            <td>VO+Space</td>
+            <td>Activate link</td>
+          </tr>
+          <tr>
+            <td>VO+Command+H</td>
+            <td>Next heading</td>
+          </tr>
+          <tr>
+            <td>VO+Command+J</td>
+            <td>Next form control</td>
+          </tr>
+          <tr>
+            <td>VO+Command+T</td>
+            <td>Next table</td>
+          </tr>
+          <tr>
+            <td>VO+Command+X</td>
+            <td>Next list</td>
+          </tr>
+          <tr>
+            <td>VO+Command+G</td>
+            <td>Next Graphic</td>
+          </tr>
+          <tr>
+            <td>VO+Command+U</td>
+            <td>Web Rotor:
+              <ul>
+                <li>Form controls</li>
+                <li>Headings</li>
+                <li>Landmarks</li>
+                <li>Links</li>
+                <li>Web spots</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>VO+Shift+F</td>
+            <td>Find menu</td>
+          </tr>
+          <tr>
+            <td>VO+Shift+I</td>
+            <td>Web page information</td>
+          </tr>
+          <tr>
+            <td>VO+Shift+?</td>
+            <td>Online help</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+    
+</slides> 
+
+

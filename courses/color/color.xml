@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Color Accessibility</title>
+ <name>Jon Gunderson</name> 
+  <desc>University of Illinois</desc>
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Color Overview</title>
+    <contents>
+      <ul>
+        <li>Visual Impairments</li>
+        <li>Color Contrast</li>
+        <li>Use of Color</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Color Blindness</title>
+    <contents>
+      <h2>Deuteranopia – Red-Green Color Blindness (~6% of male population)</h2>
+      <p><img src="color_blind_12.jpg" alt="Traffic stop lights showing the effert of Deuteranopia color blindness"/></p>
+      <p><img src="deuteranopia-color-spectrum.jpg" alt="Deuteranopia color perception compared to normal vision"/></p>
+      <h2>More Resources</h2>
+      <ul>
+        <li><a href="https://msdn.microsoft.com/en-us/library/bb263953.aspx">Microsoft: Can Color-Blind Users See Your Site?</a></li>
+        <li><a href="http://www.colourblindawareness.org/colour-blindness/causes-of-colour-blindness/">Colour Blind Awareness</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Common Visual Impairments</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.inclusivedesigntoolkit.com/betterdesign2/simsoftware/simsoftware.html">Inclusive Design Toolkit: Impairment simulator software</a></li>
+        <li><a href="http://www.lighthouse.org/about-low-vision-blindness/vision-disorders/">Lighthouse International: Vision Disorders</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <style>
+      dt { font-weight: bold; padding-top: 1em;}
+    </style>
+    <title>WCAG 2.0 Navigation and Layout Requirements</title>
+    <contents>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding" target="_specification">1.3.3 Sensory Characteristics</a></dt>
+        <dd>Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound. (Level A)</dd>
+        
+        <dt><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color" target="_specification">1.4.1 Use of Color</a></dt>
+        <dd>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</dd>
+        
+        <dt><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" target="_specification">1.4.3 Contrast (Minimum):</a></dt>
+        <dd>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: (Level AA)
+          <ul>
+            <li>Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1</li>
+            <li>Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+            <li>Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.</li>
+          </ul>
+        </dd>        
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Color Contrast Analysis Design Tools</title>
+    <contents>
+      <ul>
+        <li><a target="_tool" href="http://ainspector.github.io/">AInspector Sidebar</a></li>
+        <li><a target="_tool" href="http://webaim.org/resources/contrastchecker/">WebAIM Color contrast checker</a></li>
+        <li><a target="_tool" href="https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker">WCAG Contrast Checker for Firefox</a></li>
+        <li><a target="_tool" href="https://chrome.google.com/webstore/search/color%20contrast%20analyzer">Color Contrast Analyzer for Chrome</a></li>
+        <li><a target="_tool" href="http://www.paciellogroup.com/resources/contrastAnalyser">TPC: Colour Contrast Analyser</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Use of Color: Availability Status</title>
+    <style>
+      table.status {
+        background-color: white;
+        color: black;
+        border-collapse: collapse;
+      }
+
+      table.status th {
+        border-bottom: thin solid black;
+      }
+
+      table.status th, 
+      table.status td {
+        text-align: left;
+        padding-left: 0.5em;
+        padding-right: 1em;
+      }
+
+      table.status tr > th:first-child, 
+      table.status tr > td:first-child {
+         text-align: right;
+      } 
+
+      table.status tr.odd {
+        background-color: #E0E0E0;
+        color: black;
+      }
+    </style>
+    <contents>
+      <table class="status">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Person</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td><img src="circle_red_24_ns.png" title="Busy" height="16px"/></td>
+            <td> Elida Locicero </td>
+          </tr>
+          <tr>
+            <td class="status"><img src="circle_yellow_24_ns.png" title="Away" height="16px"/></td>
+            <td> Gabriella Okane </td>
+          </tr>
+          <tr class="odd">
+            <td><img src="circle_green.png" title="Available" height="16px"/></td>
+            <td> Shizuko Enloe </td>
+          </tr>
+          <tr>
+            <td><img src="circle_black_24_ns.png" title="Unknown" height="16px"/></td>
+            <td> Val Rainwater </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Use of Color: Availability Status</title>
+    <style>
+      table.status {
+        background-color: white;
+        color: black;
+        border-collapse: collapse;
+      }
+
+      table.status th {
+        border-bottom: thin solid black;
+      }
+
+      table.status th, 
+      table.status td {
+        text-align: left;
+        padding-left: 0.5em;
+        padding-right: 1em;
+      }
+
+      table.status tr > th:first-child, 
+      table.status tr > td:first-child {
+         text-align: right;
+      } 
+
+      table.status tr.odd {
+        background-color: #E0E0E0;
+        color: black;
+      }
+    </style>
+    <contents>
+      <table class="status">
+        <thead>
+          <tr>
+            <th>Icon</th>
+            <th>Status</th>
+            <th>Person</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td><img src="circle_red_24_ns.png" title="Busy" height="16px"/></td>
+            <td> Busy</td>
+            <td> Elida Locicero </td>
+          </tr>
+          <tr>
+            <td class="status"><img src="circle_yellow_24_ns.png" title="Away" height="16px"/></td>
+            <td> Away</td>
+            <td> Gabriella Okane </td>
+          </tr>
+          <tr class="odd">
+            <td><img src="circle_green.png" title="Available" height="16px"/></td>
+            <td> Available</td>
+            <td> Shizuko Enloe </td>
+          </tr>
+          <tr>
+            <td><img src="circle_black_24_ns.png" title="Unknown" height="16px"/></td>
+            <td> Unknown</td>
+            <td> Val Rainwater </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+    
+</slides> 
+
+

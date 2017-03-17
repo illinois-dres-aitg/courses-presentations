@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 19: Billing/Shipping Form: No group identification</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      label {
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-size: 100%;
+      font-weight: normal;
+      color: black;
+      }
+      
+      
+      select {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1.25em;
+      background-color: #FFFEFF;
+      font-size: 1em;
+      }
+      
+      
+      div.group div.title {
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-weight: bold;
+      font-size: 120%;
+      border-bottom: solid thin gray;
+      }
+      
+      
+      input[type=submit] {
+      margin-top: 2em;
+      }
+      
+      input[type=submit]:focus {
+      outline: 2px solid black;
+      }
+      
+      input[type="text"]:hover {
+      background-color: #ADDFFF; 
+      }
+      
+      input[type="text"]:focus {
+      outline: 2px solid black; 
+      background-color: #EEEEEE; 
+      }
+      
+      select:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
+      }
+      
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide18.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide20.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide29.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 19 of 29</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Billing/Shipping Form: No group identification</h1>
+<h2>Features</h2>
+<ul>
+        
+<li>
+<code>fieldset/legend</code> is used to provide unique labels to the billing and shipping address information.</li>
+      
+</ul>
+<form id="form">
+        
+<h2>Order Form</h2>
+        
+        
+<div class="group">
+          
+<div class="title">Billing Information</div>
+
+          
+<label for="billing-name">Name</label>
+          <input id="billing-name" type="text" size="30">
+          
+          <label for="billing-address">Address</label>
+          <input id="billing-address" type="text" size="40">
+          
+          <label for="billing-state">State</label>
+          <select id="billing-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+          
+          <label for="billing-zip">Zip Code</label>
+          <input id="billing-zip" type="text" size="12">
+          
+        
+</div>
+        
+        
+<div class="group">
+          
+<div class="title">Shipping Information</div>
+          
+<label for="shipping-name">Name</label>
+          <input id="shipping-name" type="text" size="30">
+          
+          <label for="shipping-address">Address</label>
+          <input id="shipping-address" type="text" size="40">
+          
+          <label for="shipping-state">State</label>
+          <select id="shipping-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+          
+          <label for="shipping-zip">Zip Code</label>
+          <input id="shipping-zip" type="text" size="12">
+          
+        
+</div>
+        
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
+        
+      
+</form>
+<h2>HTML Source Code</h2>
+<div id="sc1">
+        
+      
+</div>
+<h2>CSS Source Code</h2>
+<pre id="sc2">
+        
+      
+</pre>
+<h2>Javascript Source Code</h2>
+<pre id="sc3">
+        
+      
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+      </script>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright 2016 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+nav li {
+   display: inline;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+}
+
+nav li a {
+   text-decoration: none;
+   color: black;
+   border-bottom: solid 1px transparent;
+}
+
+nav li a:visited {
+   color: black;
+}
+
+nav li a:active,
+nav li a:focus,
+nav li a:hover {
+   border-color: black;
+}

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>ARIA Basics</title>
+ <name>Jon Gunderson</name> 
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email> 
+  <home>../index.html</home> 
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+  
+  <slide>
+    <title>Javascript User Interface Libraries</title>
+    <contents>
+      <ul>
+        <li><a href="http://assets.cms.gov" target="_example">Assets Framework</a></li>
+        <li>
+          <a href="http://getbootstrap.com/"  target="_example">Bootstrap.js</a>
+          (<a href="http://paypal.github.io/bootstrap-accessibility-plugin/"  target="_example">PayPal Bootstrap Accessibility Plug-in</a>)
+        </li>
+        <li><a href="http://paypal.github.io/skipto/">SkipTo.js</a> (Adds keyboard navigation support to accessible web pages)</li>
+        <li><a href="http://ableplayer.github.io/ableplayer/">AblePlayer (Accessible Media Player)</a></li>
+        <li><a href="http://dojotoolkit.org/widgets" target="_example">Dojo Toolkit Library</a></li>
+        <li><a href="http://fluidproject.org/" target="_example">Fluid Project</a></li>
+        <li><a href="https://jqueryui.com/">JQuery-UI</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Web 2.0 Accessibility</title>
+    <contents>
+      <ul>
+        <li>Keyboard model</li>
+        <li>Keyboard focus management</li>
+        <li>Orientation to widgets and groups of widgets</li>
+        <li>Orientation to generated content</li>
+        <li>Mapping accessibility information into existing accessibility APIs:
+          <ul>
+            <li>Windows MSAA</li>
+            <li>Windows UI Automation</li>
+            <li>OS X Accessibility API</li>
+            <li>iOS Accessibility API</li>
+            <li>Android Accessibility API</li>
+            <li>GNOME Accessibility API</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) Basics</title>
+    <contents>
+
+      <table class="table table-striped table-hover" aria-labelledby="id1">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tabindex</td>
+            <td>
+              <ul>
+                <li>Used for identifying elements that can receive keyboard focus.</li>
+                <li><code>tabindex=-1</code>: Element can receive keyboard focus, but not in tab order of page.</li>
+                <li><code>tabindex=0</code>: Element can receive keyboard focus, is included in tab order of page.</li>
+                <li><code>tabindex&gt;0</code>: Element can receive keyboard focus, but changes tab order of page <br/>(<strong>NOTE:</strong> <code>tabindex&gt;0</code> is rarely if ever used, has many browser compatibility issues).</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>focus()</td>
+            <td>
+              <ul>
+                <li>Method to move keyboard focus to a DOM node using javascript.</li>
+                <li>Visually styling keyboard focus:
+                  <ul>
+                    <li>Mimic the mouse hover styling to match look and feel or website, to make it feel an integral part of the website design.</li>
+                    <li>Include a strong visual CSS <code>border</code> or <code>outline</code> to make the focus standout as users tab through the page.</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>role</td>
+            <td>
+              <ul>
+                <li>Attribute to define the type of widget in the web resource.</li>
+                <li>
+                  <a href="http://www.w3.org/TR/2007/WD-xhtml-role-20071004/" target="_specification">XHTML Role Attribute Module</a>
+                </li>
+                <li>
+                  <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles" target="_specification">Widget Roles</a>
+                </li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td>Accessible Name</td>
+            <td>
+              <ul>
+                <li><code>aria-labelledby</code> attribute: List of IDREFs to elements with text content on the page.</li>
+                <li><code>aria-label</code> attribute: String defining the accessible name.</li>
+                <li>Text content of the element with widget role (e.g. text of menu item).</li>
+                <li><code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
+                <li><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible name algorithm</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Properties and States</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="http://www.w3.org/TR/aria-state/"  target="_specification">States and Properties Module for
+                    Accessible Rich Internet Applications (WAI-ARIA States and Properties)</a>
+                </li>
+                <li>aria-checked</li>
+                <li>aria-describedby</li>
+                <li>aria-haspopup</li>
+                <li>aria-expanded</li>
+                <li>many others...</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>W3C Authoring Resources</td>
+            <td>
+              <ul>
+                <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
+                <li><a href="http://www.w3.org/TR/aria-in-html/" target="_specification">Using ARIA in HTML</a></li>
+                <li><a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+  
+    <slide>
+      <title>Tabindex and keyboard focus</title>
+      <contents>
+        <ul>
+          <li>
+            <code>
+              <a
+                href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex"  target="_specification">tabindex</a>
+            </code>attribute is part of the HTML 4 specification</li>
+            <li>Support in <strong>all</strong> modern major browsers</li>
+            <li>Values: <ul>
+              <li>-1: Support keyboard focus/blur events, but do not add to tab order</li>
+             <li>0: Support keyboard focus/blur events and add to tab order</li>
+             <li>&gt;0: Support keyboard focus/blur events and add to tab order and tab using
+the numerical order of the tabindex values</li>
+            </ul>
+          </li>
+         <li>The <code>tabindex</code>
+         is not currently valid for most elements</li>
+         <li>Style focus visually to make is easy to find what has focus (i.e. do NOT rely of browser focus styling of focus)</li>
+        </ul>
+      </contents>
+    </slide>
+
+  <slide>
+    <title>Example Widget: ARIA Checkbox</title>
+    <contents>
+      <p class="center"><a href="checkbox/checkbox.zip" target="_example">ZIP file of Checkbox Examples</a></p>
+      <p class="center"><a href="checkbox/checkbox.html" target="_example">ARIA checkbox examples</a></p>
+   <h2>Features</h2>
+   <ul>
+     <li>Responds to mouse events using <code>onClick</code> event</li>
+     <li>Responds to keyboard events using <code>onKeyDown</code> event</li>
+     <li><code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page</li>
+     <li><code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox"</li>
+     <li><code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked"</li>
+     <li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element</li>
+     <li>CSS attribute selectors are used to keep the visual indication of checked in sync with accessibility API</li>
+   </ul>
+   <p class="center"><iframe height="600" width="97%" src="checkbox/checkbox.html"></iframe></p>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Example Widget: ARIA Checkbox with Focus Styling</title>
+    <contents>
+      <p class="center"><a href="checkbox/checkbox.zip" target="_example">ZIP file of Checkbox Examples</a></p>
+      <p class="center"><a href="checkbox/checkbox-focus.html" target="_example">ARIA checkbox examples with focus styling</a></p>
+      <h2>Additional Features</h2>
+      <ul>
+        <li>Use <code>:focus</code> pseudo element focusing only focuses the checkbox and not the label</li>
+        <li>Use <code>onFocus</code> and <code>onBlur</code> events to add and remove class for identifying focus</li>
+        <li>Use <code>:hover</code> pseudo class to style checkboxes for mouse overs</li>
+        <li>Standard checkbox 3 doesn't have label so you have to click directly on the checkbox image to change state</li>
+      </ul>
+      <p class="center"><iframe height="600" width="97%" src="checkbox/checkbox-focus.html"></iframe></p>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Example Widget: Hide/Show</title>
+    <contents>
+      
+      <p class="center"><a href="hide-show/hide-show.zip" target="_example">ZIP file of Hide/Show Example</a></p>
+      <p class="center"><a href="hide-show/hide-show.html" target="_example">Hide/Show Content Example</a></p>
+      
+      <h2>ARIA Features</h2>
+      <ul>
+        <li>Use <code>button</code> element, <code>input[type=button]</code> element or <code>role="button"</code> for identifying type of control to showing or hiding</li>
+        <li>Use <code>aria-expanded</code> to indicate whether content is displayed or not</li>
+        <li>Use <code>aria-controls</code> to identify the content the is shown or hidden</li>
+      </ul>
+      
+      <p class="center"><iframe height="600" width="97%" src="hide-show/hide-show.html"></iframe></p>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Example Widget: Slider</title>
+    <contents>
+      <p class="center"><a href="slider/slider.zip" target="_example">ZIP file of Slider Example</a></p>
+      <p class="center"><a href="slider/slider.html" target="_example">ARIA Slider Example</a></p>
+      <h2>ARIA Features</h2>
+      <ul>
+        <li>Use <code>role=slider</code> to identify the widget is selecting a range of values</li>
+        <li>Use <code>aria-valuemin</code> to identify the minimum value</li>
+        <li>Use <code>aria-valuemax</code> to identify the maximum value</li>
+        <li>Use <code>aria-valuenow</code> to identify the current value</li>
+        <li>Use <code>aria-labelledby</code> to label the slider purpose</li>
+      </ul>
+      <p class="center"><iframe height="600" width="97%" src="slider/slider.html"></iframe></p>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Example Widget: Carousel</title>
+    <contents>
+      <p class="center"><a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Bootstrap.js Carousel</a></p>
+      <h2>Questions</h2>
+      <ul>
+        <li>How to you decide what to call this widget?</li>
+        <li>What is the keyboard interaction?</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Notes on Using ARIA in HTML</title>
+    <contents>
+      <p><a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a></p>
+      <ul>
+        <li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
+        <li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
+        <li>Don't define the native semantics of an eleemnt (e.g main[role=main]).</li>
+        <li>All interactive ARIA controls must be usable with the keyboard.</li>
+        <li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
+        <li>All interactive elements must have an accessible name.</li>
+        <li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>When to use ARIA role=application?</title>
+    <contents>
+      <p><a href="http://www.w3.org/TR/aria-in-html/#using-aria-role-application">Notes on Using ARIA in HTML: Using ARIA role application</a></p>
+    </contents>
+  </slide>
+
+<slide>
+  <title>ARIA/HTML5 Design References</title>
+  <contents>
+    <dl>
+      <dt><a href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a></dt>
+      <dd>Keyboard support</dd>
+      <dd>Coding patterns for roles. properties and states</dd>
+      <dd>References to examples</dd>
+      <dt><a href="http://www.w3.org/TR/aria-in-html/">W3C Notes on Using ARIA in HTML</a></dt>
+      <dd>Practical advise on using ARIA in web pages</dd>
+      <dt><a href="https://specs.webplatform.org/html-aria/webspecs/master/">ARIA in HTML</a></dt>
+      <dd>Default semantics of HTML5 elements</dd>
+      <dd>Semantics restrictions on HTML5 elements</dd>
+    </dl>
+  </contents>
+  
+</slide>
+
+  <slide>
+  <title>More Example ARIA Widgets</title>
+  <contents>
+   <p class="center"><a href="http://www.oaa-accessibility.org/examples/" target="_example">ARIA Widget Examples</a></p>
+   <p class="center"><iframe height="600" width="97%" src="http://www.oaa-accessibility.org/examples/"></iframe></p>
+  </contents>
+ </slide>
+  
+</slides> 
+
+

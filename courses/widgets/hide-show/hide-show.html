@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>ARIA Example: Hide/Show Content</title>
+        
+        <style type="text/css">
+            .info {
+              display: none;
+              border: thin solid black;
+              padding: 0.25em;
+              margin-bottom: 2em;
+            }
+            
+            div[aria-expanded] {
+              margin-top: 1em;
+              background-repeat: no-repeat;
+              background-position: center right;
+              width: 4em;
+            }
+
+            footer {
+              margin-top: 2em;
+            }
+
+            .sr {
+              position: absolute;
+              top: -30em;
+            }
+            
+        </style>
+        
+        <script type="text/javascript">
+            
+            function toggleContent(button, id) {
+              var content = document.getElementById(id)
+              
+              if (content && button) {
+                if (content.style.display === 'block') {
+                  content.style.display = 'none';
+                  button.setAttribute('aria-expanded', 'false');
+                  
+                  if (button.tagName.toLowerCase() === 'img') {
+                    button.alt = 'Show';
+                    button.src = 'show.svg';
+                  } 
+                  else {
+                    button.getElementsByTagName("span")[0].innerHTML = "Show"
+                  }
+                }
+                else {
+                  content.style.display = 'block';
+                  button.setAttribute('aria-expanded', 'true');
+                  
+                  if (button.tagName.toLowerCase() === 'img') {
+                    button.src  = 'hide.svg';
+                    button.alt = 'Hide';
+                  }  
+                  else {
+                    button.getElementsByTagName("span")[0].innerHTML = "Hide"
+                  }
+                }  
+              }
+            }
+            
+            function clickToggleContent(event, id) {
+              var button = event.currentTarget;
+              toggleContent(button , id)
+            }
+            
+            function keyPressToggleContent(event, id) {
+              var button = event.currentTarget;
+              if (event.keyCode === 32) toggleContent(button, id)
+            }
+            
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>ARIA Example</h1>
+        </header>
+        <main>
+            <h1>ARIA to identify Content that can be Hidden or Shown by User Action</h1>
+            
+            <div class="topic" id="t1">Topic 1 
+                <img id="b1" 
+                     tabindex="0" 
+                     role="button" 
+                     aria-expanded="false"
+                     aria-controls="c1"
+                     src="show.svg" 
+                     onkeydown="keyPressToggleContent(event, 'c1')" 
+                     onclick="clickToggleContent(event, 'c1')" 
+                     alt="show" 
+                     aria-labelledby="b1 t1">
+            </div>
+            
+             <div class="info" id="c1" role="region" aria-labelledby="t1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, 
+                libero et commodo ultrices, sapien ex tincidunt sapien, id blandit neque 
+                massa et justo. Proin iaculis, odio ac rutrum blandit, mi ex consequat magna,
+                non ornare sem lacus a massa. Etiam vitae mi pulvinar, hendrerit urna in, 
+                sodales quam. Maecenas in gravida nisi. Pellentesque a eleifend dui. 
+                Donec magna mi, tristique sed augue a, bibendum mollis tortor. Pellentesque 
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                Phasellus non eros luctus lacus hendrerit consectetur. Vivamus id nunc est. 
+                Donec eu condimentum leo. Vivamus vitae nisl quam. Etiam sit amet nisi convallis,
+                malesuada est eu, aliquet eros. 
+            </div>
+
+            <div id="t2" 
+                 tabindex="0" 
+                 role="button" 
+                 aria-expanded="false"
+                 aria-controls="c2"
+                 onkeydown="keyPressToggleContent(event, 'c2')" 
+                 onclick="clickToggleContent(event, 'c2')">
+              Topic 2 <img src="show.svg"/> 
+            </div>
+            
+            <div class="info" id="c2" role="region" aria-labelledby="t2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis, 
+                libero et commodo ultrices, sapien ex tincidunt sapien, id blandit neque 
+                massa et justo. Proin iaculis, odio ac rutrum blandit, mi ex consequat magna,
+                non ornare sem lacus a massa. Etiam vitae mi pulvinar, hendrerit urna in, 
+                sodales quam. Maecenas in gravida nisi. Pellentesque a eleifend dui. 
+                Donec magna mi, tristique sed augue a, bibendum mollis tortor. Pellentesque 
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                Phasellus non eros luctus lacus hendrerit consectetur. Vivamus id nunc est. 
+                Donec eu condimentum leo. Vivamus vitae nisl quam. Etiam sit amet nisi convallis,
+                malesuada est eu, aliquet eros. 
+            </div>
+            
+        </main>
+        <footer>
+            Copyright 2015
+        </footer>
+    </body>
+</html>
