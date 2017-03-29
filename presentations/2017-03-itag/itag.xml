@@ -25,6 +25,7 @@
     <contents>
       <ul>
         <li>History</li>
+        <li>Introductions</li>
         <li>Panel Session</li>  
         <li>Collaboration, Tracking and Sharing Tool</li>
         <li>Accessibility 101</li>
@@ -57,10 +58,20 @@
   </slide> 
 
   <slide> 
-    <title></title>
+    <title>Introductions</title>
+    <contents>
+    </contents>
+  </slide> 
+  <slide> 
+    <title>Panel: Institutional IT Accessibility Policies and Implementation Plans</title>
     <contents>
       <ul>
-        <li></li>
+        <li>Peter Bossley, Ohio State (online)</li>
+        <li>Nathan Evans, MSU</li>
+        <li>Hadi Rangin, University of Washington</li>
+        <li>Sean Reynolds, CIO, Northwestern</li>
+        <li>Christian Vinten-Johansen, PSU (online)</li>
+        <li>Bill Welsh, Rutgers</li>
         <li></li>
       </ul>
     </contents>
