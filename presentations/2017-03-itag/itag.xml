@@ -70,9 +70,9 @@
         <li>Peter Bossley, Ohio State (online)</li>
         <li>Nathan Evans, MSU</li>
         <li>Hadi Rangin, University of Washington</li>
-        <li>Sean Reynolds, CIO, Northwestern</li>
         <li>Christian Vinten-Johansen, Penn State (online)</li>
         <li>Bill Welsh, Rutgers</li>
+        <li>Sean Reynolds, CIO, Northwestern</li>
       </ul>
     </contents>
   </slide> 
@@ -87,9 +87,26 @@
     <title>Nate Evans, Michigan State</title>
     <contents>
       <ol>
-        <li>Stakeholder alignment</li>
-        <li>Earning and maintaining buy-in</li>
-        <li>"Building the plane while it is flying.” – Building a team and balancing incoming priorities with processes/workflow development</li>
+        <li>Stakeholder alignment
+            <ul>
+                <li>ADA Coodinator</li>
+                <li>Legal counsel</li>
+            </ul>
+        </li>
+        <li>Earning and maintaining buy-in
+          <ul>
+            <li>Each units need different teams</li> 
+            <li>42 MAUs on campus</li>
+          </ul>
+        </li>
+        <li>"Building the plane while it is flying.” – Building a team and balancing incoming priorities with processes/workflow development
+          <ol>
+            <li>Meeting individual needs</li>
+            <li>Stragetic initiatives</li>
+            <li>Making tough choices of limted resources</li>
+          </ol>
+        </li>
+        <li>Integrating universal design into teaching and learning</li>
       </ol>
     </contents>
   </slide> 
@@ -100,7 +117,15 @@
       <ol>
         <li>Accessibility as a criteria in procurement</li>
         <li>Ownership/accountability of accessibility for IT products</li>
-        <li>Collaboration with third-party vendors: short-term and long-term goals</li>
+        <li>Collaboration with third-party vendors: short-term and long-term goals
+          <ul>
+            <li>Have contract with vendors</li>
+            <li>Deployment blockers, high priority issues</li>
+            <li>Most companies are not against accessibility, they just don't know about</li>
+            <li>Educate companies on accessibility, develop trust with their representatives</li>
+            <li>Help company develop a culture of accessibility, different for each comapny</li>
+          </ul>
+        </li>
       </ol>
     </contents>
   </slide> 
@@ -108,20 +133,30 @@
   <slide> 
     <title>Christian Vinten-Johansen, Penn State</title>
     <contents>
-    </contents>
-  </slide> 
-
-  <slide> 
-    <title>Sean Reynolds, Northwestern</title>
-    <contents>
+      <ol>
+        <li></li>
+      </ol>
     </contents>
   </slide> 
 
   <slide> 
     <title>Bill Welsh, Rutgers</title>
     <contents>
+      <ol>
+        <li></li>
+      </ol>
     </contents>
   </slide> 
+
+  <slide> 
+    <title>Sean Reynolds, Northwestern</title>
+    <contents>
+      <ol>
+        <li></li>
+      </ol>
+    </contents>
+  </slide> 
+
     
 </slides> 
 
