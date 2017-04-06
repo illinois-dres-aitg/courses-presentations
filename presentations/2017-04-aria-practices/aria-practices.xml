@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Using the W3C ARIA Authoring Practices Guide 1.1 to Build Accessible Web Resources</title>
+  <name>Jon Gunderson</name> 
+
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="../">Presentations</desc> 
+  <desc>April 7, 2017</desc>
+  <desc href="http://webcon.illinois.edu">2017 llinois WebCon</desc>
+  
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Brief History of ARIA </li>
+        <li>Section 2: Design Patterns and Widgets</li>
+        <li>Section 3: Landmark Regions</li>
+        <li>Section 4: Developing a Keyboard Interface</li>
+        <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Brief History of ARIA: Problem</title>
+    <contents>
+      <h2>Problem</h2>
+      <ul>
+        <li>Starting in 2000 people started using HTML+CSS+Javascript to create <em>custom widgets</em> (e.g. interactive controls) for web pages.</li>
+        <li>There was no standard and interoperable way to make these <em>custom widgets</em> accessible.</li>
+      </ul>
+      
+      <h2>Issues</h2>
+      <ul>
+        <li>Keyboard support.</li>
+        <li>Describing the widget behavior (e.g. role).</li>
+        <li>Labeling the features of the widget (e.g. accessible name).</li>
+        <li>Identifying properties and states. (e.g. checked, exapnded)</li>
+        <li>Communicating information through platform specific accessibility APIs.</li>
+        <li>Interoperability between browser and accessibility APIs.</li>
+      </ul>
+    </contents>
+  </slide>  
+  
+  <slide>
+    <title>Brief History of ARIA: Purpose</title>
+    <contents>
+       <ul>
+         <li>Provide an interoperable way to describe the features of <em>custom widgets</em>:
+           <ul>
+             <li><strong>Role:</strong> Describes the types of widget, which implies the <em>keyboard interaction</em> patterns.</li>
+             <li><strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
+             <li><strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
+             <li><strong>Labeling:</strong> How to label the features of the widget and its components (e.g. accessible name).</li>
+           </ul>
+        </li>
+        <li>Define markup mappings to accessibility APIs:
+          <ul>
+            <li>ATK/AT-SPI (Linux/Unix)</li>
+            <li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
+            <li>Microsoft UI Automate</li>
+            <li>MacOS Accessibility API</li>
+          </ul>
+          </li>
+      </ul>
+    </contents>
+  </slide>
+  
+
+  <slide>
+    <title>Brief History of ARIA: Contracts with browsers and assistive technologies</title>
+    <contents>
+      <h2>Browsers</h2>
+      <ul>
+        <li>Addition ARIA markup does not affect browser behavior or rendering.</li>
+        <li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+      </ul>
+      
+      <h2>Asssitive Technologies</h2>
+      <ul>
+        <li>Do not specify what assistive technologies do with the information.</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Brief History of ARIA: Authoring Practices</title>
+    <contents>
+      <ul>
+        <li>ARIA is often confusing to developers and designers.</li>
+        <li>Improperly used ARIA markup can make web resources less accessible and break interoperability.</li>
+        <li>ARIA examples and usage in actual websites are incomplete or incorrectly use ARIA markup adding to confusion.</li>
+        <li>Lack of awareness of keyboard interaction support needed to make ARIA work properly.</li>
+      </ul>
+      
+    </contents>
+  </slide>
+  
+  
+ 
+ <slide>
+   <title>Section 3: Landmark Regions</title>
+   <contents>
+     <ul style="margin-bottom: 2em">
+       <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_landmark">ARIA Authoring Practices: Landmark Regions</a>.</li>
+       <li>How to think about landmarks.</li>
+       <li>Types of landmarks and their uses.</li>
+       <li>HTML5 elements that define landmarks.</li>
+     </ul>
+     <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_landmark" width="98%" height="600px"></iframe>
+   </contents>
+ </slide>
+
+  <slide>
+    <title>Landmarks Example</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/">ARIA Authoring Practices Landmark Example</a></li>
+        <li>Uses landmark in design.</li>
+        <li>Landmark visualization feature.</li>
+        <li>Links to related resources.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 2: Design Patterns and Widgets</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex">ARIA Authoring Practices: Design Patterns and Widgets</a></li>
+        <li>Desciption of widget.</li>
+        <li>Keyboard interaction requirements and options.</li>
+        <li>Uses of ARIA roles, properties and states.</li>
+        <li>Examples</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Section 2.15: Menu Button</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton">ARIA Authoring Practices: Menu Button</a></li>
+        <li>Desciption of example.</li>
+        <li>Links to related examples.</li>
+        <li>Working example.</li>
+        <li>Keyboard interaction.</li>
+        <li>Use of roles properties and states.</li>
+        <li>Source code.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Menu Button Example</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-1/menu-button-1.html">Menu Button Example</a></li>
+        <li>Desciption of example.</li>
+        <li>Links to related examples.</li>
+        <li>Working example.</li>
+        <li>Keyboard interaction.</li>
+        <li>Use of roles properties and states.</li>
+        <li>Source code.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-1/menu-button-1.html" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 4: Developing a Keyboard Inteface</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard">ARIA Authoring Practices: Developing a Keyboard Interface</a></li>
+        <li>This is often the least understood part of using ARIA technology.</li>
+        <li>What is the keyboard interaciotn model and which ARIA widget roles are compatible with that model.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 4.1: Fundamental Keyboard Navigation Conventions</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav">ARIA Authoring Practices: Fundamental Keyboard Navigation Conventions</a></li>
+        <li>Keyboard interaction model for each widget role.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 4.2: Discernable and Predictable Keyboard Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable">ARIA Authoring Practices: Discernable and Predictable Keyboard Focus</a></li>
+        <li>Many users with disabilities can see the display, but need to idenfity the elements with keyboard focus and/or selections.</li>
+        <li>Keyboard interaction is often difficult or impossible if users cannot identify what element has keyboard focus.</li>
+        <li>Need more than just color, so the use of borders, underline or visual icons is important.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 4.3: Focus vs. Selection and the Perception of Dual Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection">ARIA Authoring Practices: Focus vs. Selection and the Perception of Dual Focus</a></li>
+        <li>Making the styling of keyboard focus and selection different is important.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 4.4: Deciding When to Make Selection Automatically Follow Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus">ARIA Authoring Practices: Deciding When to Make Selection Automatically Follow Focus</a></li>
+        <li>When content is loaded basd on user interaction there can sometimes be delays in content being available, make sure the affects of these delays are minimized for keyboard users.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>Section 4.5: Keyboard Navigation Between Components (The Tab Sequence)</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between">ARIA Authoring Practices: Keyboard Navigation Between Components (The Tab Sequence)</a></li>
+        <li>The use of <code>tabindex=-1</code> and <code>tabindex=0</code> to define interactive elements and tab order of content of the page.</li>
+        <li><code>tabindex</code> values > 0 are discouraged, and should only be used cautiously.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  
+  <slide>
+    <title>Section 4.6: Keyboard Navigation Inside Components</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within">ARIA Authoring Practices: Keyboard Navigation Inside Components</a></li>
+        <li>Roving <code>tabindex</code> versus <code>aria-activedescendant</code> technique for identifying element with current focus.</li>
+        <li>Call <code>focus()</code> on elements with focus.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 4.7: Focusability of disabled controls</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls">ARIA Authoring Practices: Focusability of disabled controls</a></li>
+        <li>When to keep or remove keyboard interaction to disabled controls.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 4.8: Keyboard Shortcuts</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts">ARIA Authoring Practices: Keyboard Shortcuts</a></li>
+        <li>Understanding how keyboard shortcuts augment a keyboard interface and whether to make a particular shortcut move focus, perform a function, or both.</li>
+        <li>Making key assignments and avoiding assignment conflicts with assistive technologies, browsers, and operating systems.</li>
+        <li>Exposing and documenting key assignments.</li>
+      </ul>  
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Section 6: Intentionally Hiding Semantics with the presentation Role</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role">Section 6: Intentionally Hiding Semantics with the presentation Role </a></p>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 7. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational">Section 7. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</a></p>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational" width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+    
+  <slide>
+    <title>Accessible Name and Description: Computation and API Mappings 1.1</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and API Mappings 1.1</a></p>
+      <iframe src="https://www.w3.org/TR/accname-aam-1.1/ " width="98%" height="600px"></iframe>      
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Next Steps for ARIA Authoring Practices Guide</title>
+    <contents>
+      <ul>
+        <li>Additional widget descriptions and examples</li>
+        <li>Grid and Table Examples</li>
+        <li>Accessible visual state and sychronization with ARIA states techniques</li>
+        <li>Form error feedback</li>
+        <li>Index of examples</li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Open Source Tools Supporting the Requirements of the ARIA Authoring Practices</title>
+    <contents>
+      <ul>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a></li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor 2.0</a></li>
+      </ul>
+    </contents>
+  </slide>
+  
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+    </contents>
+  </slide>  
+  
+</slides> 
+
+
