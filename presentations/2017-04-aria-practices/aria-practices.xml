@@ -37,7 +37,7 @@
   </slide>
 
   <slide>
-    <title>Brief History of ARIA: Problem</title>
+    <title>The Problem of Custom Wigets</title>
     <contents>
       <h2>Problem</h2>
       <ul>
@@ -50,7 +50,7 @@
         <li>Keyboard support.</li>
         <li>Describing the widget behavior (e.g. role).</li>
         <li>Labeling the features of the widget (e.g. accessible name).</li>
-        <li>Identifying properties and states. (e.g. checked, exapnded)</li>
+        <li>Identifying properties and states. (e.g. checked, exapnded, has popup)</li>
         <li>Communicating information through platform specific accessibility APIs.</li>
         <li>Interoperability between browser and accessibility APIs.</li>
       </ul>
@@ -58,15 +58,17 @@
   </slide>  
   
   <slide>
-    <title>Brief History of ARIA: Purpose</title>
+    <title>Purpose of ARIA to Describe Behavior and Features</title>
     <contents>
        <ul>
          <li>Provide an interoperable way to describe the features of <em>custom widgets</em>:
            <ul>
-             <li><strong>Role:</strong> Describes the types of widget, which implies the <em>keyboard interaction</em> patterns.</li>
+             <li><strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
              <li><strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
              <li><strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
              <li><strong>Labeling:</strong> How to label the features of the widget and its components (e.g. accessible name).</li>
+             <li><strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
+             <li><strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
            </ul>
         </li>
         <li>Define markup mappings to accessibility APIs:
@@ -76,30 +78,29 @@
             <li>Microsoft UI Automate</li>
             <li>MacOS Accessibility API</li>
           </ul>
-          </li>
+         </li>
       </ul>
     </contents>
   </slide>
-  
 
   <slide>
-    <title>Brief History of ARIA: Contracts with browsers and assistive technologies</title>
+    <title>ARIA Contract with Browsers and Assistive Technologies</title>
     <contents>
       <h2>Browsers</h2>
       <ul>
-        <li>Addition ARIA markup does not affect browser behavior or rendering.</li>
+        <li>The use of ARIA markup does not affect browser behavior or rendering.</li>
         <li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
       </ul>
       
       <h2>Asssitive Technologies</h2>
       <ul>
-        <li>Do not specify what assistive technologies do with the information.</li>
+        <li>Do not specify what assistive technologies will do with the information.</li>
       </ul>
     </contents>
   </slide>
   
   <slide>
-    <title>Brief History of ARIA: Authoring Practices</title>
+    <title>The Need for ARIA Authoring Practices</title>
     <contents>
       <ul>
         <li>ARIA is often confusing to developers and designers.</li>
@@ -272,7 +273,7 @@
   </slide>
   
   <slide>
-    <title>Section 4.7: Focusability of disabled controls</title>
+    <title>Section 4.7: Focusability of Disabled Controls</title>
     <contents>
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls">ARIA Authoring Practices: Focusability of disabled controls</a></li>
@@ -295,8 +296,8 @@
     </contents>
   </slide>
   
-  <slide>
-    <title>Section 6: Intentionally Hiding Semantics with the presentation Role</title>
+  <slide>p
+    <title>Section 6: Intentionally Hiding Semantics with the Presentation Role</title>
     <contents>
       <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role">Section 6: Intentionally Hiding Semantics with the presentation Role </a></p>
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role" width="98%" height="600px"></iframe>      
@@ -325,7 +326,7 @@
       <ul>
         <li>Additional widget descriptions and examples</li>
         <li>Grid and Table Examples</li>
-        <li>Accessible visual state and sychronization with ARIA states techniques</li>
+        <li>Accessible visual state and synchronization with ARIA states techniques</li>
         <li>Form error feedback</li>
         <li>Index of examples</li>
       </ul>
@@ -333,11 +334,12 @@
   </slide>
   
   <slide>
-    <title>Open Source Tools Supporting the Requirements of the ARIA Authoring Practices</title>
+    <title>Open Source Tools and Training</title>
     <contents>
       <ul>
         <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a></li>
-        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor 2.0</a></li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
+        <li><a href="http://go.illinois.edu/a11y-badges">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
