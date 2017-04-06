@@ -33,6 +33,9 @@
         <li>Section 4: Developing a Keyboard Interface</li>
         <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
       </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
     </contents>
   </slide>
 
