@@ -1,8 +1,5 @@
 
 header {
-    border-bottom: orange solid thin;
-    margin-bottom: 0.25em;
-    padding-bottom: 0.25em;
     min-height: 100px;
     vertical-align: bottom;
 }
@@ -10,17 +7,23 @@ header {
 header img {
     padding-right: 0.5em;
     float: left;
+    height: 6em;
 }
 
 header h1 {
-    padding-top: 0.25em;
+    padding-top: 0.5em;
 }
 
+h1 {
+    font-size: 250%;
+}
 
-footer {
-    border-top: orange solid thin;
-    margin-top: 0.25em;
-    padding-top: 0.25em;
+h2 {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 120%;
 }
 
 nav ul {
@@ -36,6 +39,10 @@ nav ul li {
     padding-right: 1em;
 }
 
+div.container.well-sm {
+    margin-top: 4em;
+}
+
 nav.slide-nav .navbar-nav>li>a:focus, 
 nav.slide_nav .navbar-nav>li>a:hover {
     text-decoration: underline;
@@ -49,3 +56,6 @@ main dt {
     margin-top: 1em;
 }
 
+main table.table em {
+    color: #880000;
+}
