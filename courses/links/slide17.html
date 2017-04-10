@@ -54,7 +54,7 @@
 <style id="ex2">
       #id_nav {
         margin-top: 2em;
-        margin-bottom: 2em;
+        margin-bottom: 5em;
       }
       
       #id_nav h2 {
@@ -62,14 +62,25 @@
         top: -30em;
         left: -300em;
        }
-       
+
+       #id_nav ul {
+        margin: 0;
+        padding: 0.5em;
+      }
+
        #id_nav ul li {
+         margin: 0;
+         padding: 0;
          list-style: none;
          float: left;
-         margin-right: .5em;
+         padding-right: .5em;
+        border-top: solid 2px #819BD5;
+        border-bottom: solid 2px #819BD5;
        }
 
        #id_nav ul li a {
+         margin: 0;
+         padding: 0;
          display: block;
          text-decoration: none;
          padding-left: 0.25em;
@@ -80,10 +91,11 @@
        
        #id_nav ul li a:focus {
          border-color: #B3C3E5;
+         background-color: #CCD7EE;
+         text-decoration: underline;
        }
 
-       #id_nav ul li a:hover,
-       #id_nav ul li a:focus {
+       #id_nav ul li a:hover {
          background-color: #E5EBF6;
          text-decoration: underline;
        }
