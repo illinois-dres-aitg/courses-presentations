@@ -44,108 +44,167 @@ $(window).resize(
 
 )
 
-//
-// Source code generators
-// 
+/**
+ * @constructor SourceCode
+ *
+ * @desc  Creates source code of an example
+ *
+ * @property  location      Array  -  Object containing the keyCodes used by the slider widget
+ * @property  code          Array  -  JQuery node object
+ */
 
-function SourceCode() {
+SourceCode = function () {
   this.location = new Array();
   this.code = new Array();
-}
+};
 
 /**
- * @member sourcCode
- * @return none
+ * @method add
+ *
+ * @desc  Adds source code
  */
 
-SourceCode.prototype.add = function( location_id, code_id ) {
-  this.location.push(location_id);
-  this.code.push(code_id);
-}
+SourceCode.prototype.add = function (locationId, codeId) {
+  this.location[this.location.length] = locationId;
+  this.code[this.code.length] = codeId;
+};
 
 /**
- * @member sourcCode
- * @return none
+ * @method make
+ *
+ * @desc  Generates HTML content for source code
  */
 
-SourceCode.prototype.make = function() {
+SourceCode.prototype.make = function () {
 
-   var node_code;
-   var node_location;
+  var nodeCode;
+  var nodeLocation;
 
-   for(var i = 0; i < this.location.length; i++ ) {
-     
-     node_location = document.getElementById( this.location[i] );
-     node_code     = document.getElementById( this.code[i] );
-     
-     node_location.className = "code";
-     this.createCode( node_location, "", node_code );
-     
-   } // endfor
-     
-}
+  for (var i = 0; i < this.location.length; i++) {
 
-SourceCode.prototype.createCode = function( location, spaces, node ) {
+    nodeLocation = document.getElementById(this.location[i]);
+    nodeCode = document.getElementById(this.code[i]);
 
-  var i;
+    nodeLocation.className = 'sourcecode';
+    this.createCode(nodeLocation, '', nodeCode, true);
 
-  var node_name = node.nodeName.toLowerCase();
+  } // endfor
 
-  location.innerHTML = location.innerHTML + "<br/>" + spaces  + "&lt;" + node_name;
-  
-  for(i=0; i < node.attributes.length; i++ ) {
-  
-    location.innerHTML = location.innerHTML + "&nbsp;" + node.attributes[i].nodeName + "=\"";
-    location.innerHTML = location.innerHTML + node.attributes[i].nodeValue + "\"";
-     
-    if ( ((i + 1) != node.attributes.length) && (node.attributes.length > 2 ) ) {
+};
 
-      location.innerHTML = location.innerHTML + "<br/>" + spaces;
-        
-      for(var j=0; j <= node_name.length; j++ ) {
-        location.innerHTML = location.innerHTML + "&nbsp;";   
-      }  // endfor
-    } // endif
-  }  // endfor
-  
-  location.innerHTML = location.innerHTML + "&gt;";
+/**
+ * @method createCode
+ *
+ * @desc  Specify the source code and the location of the source code
+ *
+ * @param  location   String   - id of element to put the source code
+ * @param  spaces     String   - Any spaces to precede the source code
+ * @param  node       Object   - DOM Element node to use to generate the source code
+ */
 
+SourceCode.prototype.createCode = function (location, spaces, node, first) {
+
+  function hasText (s) {
+    if (typeof s !== 'string') {return false;}
+
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      if (c !== ' ' && c !== '\n' && c !== '\r') {return true;}
+    }
+    return false;
+  }
+
+  function cleanText (s) {
+    if (typeof s !== 'string') {return '';}
+
+    s1 = '';
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+
+      if (c === '<') {
+        c = '&lt;';
+      }
+
+      if (c === '>') {
+        c = '&gt;';
+      }
+
+      s1 += c;
+    }
+    return s1;
+  }
+
+  var i, s;
   var count = 0;
 
-  for(i=0; i < node.childNodes.length; i++ ) {
-  
-    switch( node.childNodes[i].nodeType ) {
-    
-      case Node.ELEMENT_NODE:
+  if (typeof first !== 'boolean') {
+    first = false;
+  }
 
-         this.createCode( location, spaces + "&nbsp;&nbsp;", node.childNodes[i]);
-           count++;
-         break;
+  if (!first) {
+    var nodeNameStr = node.nodeName.toLowerCase();
+
+    location.innerHTML = location.innerHTML + '<br/>' + spaces + '&lt;' + nodeNameStr;
+
+    for (i = 0; i < node.attributes.length; i++) {
+
+      location.innerHTML = location.innerHTML + '&nbsp;' + node.attributes[i].nodeName + '="';
+      location.innerHTML = location.innerHTML + node.attributes[i].value + '"';
+
+      if (((i + 1) != node.attributes.length) && (node.attributes.length > 2)) {
+
+        location.innerHTML = location.innerHTML + '<br/>' + spaces;
+
+        for (var j = 2; j <= nodeNameStr.length; j++) {
+          location.innerHTML = location.innerHTML + '&nbsp;';
+        }
+
+      } // endif
+
+    } // endfor
+
+    location.innerHTML = location.innerHTML + '&gt;';
+  }
+
+  for (i = 0; i < node.childNodes.length; i++) {
+
+    var n = node.childNodes[i];
+
+    switch (n.nodeType) {
+
+      case Node.ELEMENT_NODE:
+        this.createCode(location, spaces + '&nbsp;&nbsp;', n);
+        count++;
+        break;
 
       case Node.TEXT_NODE:
-      
-         var text = trim(node.childNodes[i].nodeValue);
-         
-         if (text.length) location.innerHTML = location.innerHTML + "<br/>" + spaces + "&nbsp;&nbsp;" + text;
-           count++;
-         break;
-    }  // end switch
-  
+        if (hasText(n.nodeValue)) {
+          s = cleanText(n.nodeValue);
+          location.innerHTML = location.innerHTML + '<br/>' + spaces + '&nbsp;&nbsp;' + s;
+        }
+        count++;
+        break;
+
+      case Node.COMMENT_NODE:
+
+        if (hasText(n.nodeValue)) {
+          location.innerHTML = location.innerHTML  + '<br/>' + spaces + '&nbsp;&nbsp;' + '&lt;--&nbsp;&nbsp;' + n.nodeValue + '--&gt;';
+        }
+        count++;
+        break;
+
+    } // end switch
 
   } // end for
 
-  if( count > 0 ) { 
-    location.innerHTML = location.innerHTML + "<br/>" + spaces + "&lt;/" + node.nodeName.toLowerCase() + "&gt;";
-  } // end if
+  if (!first) {
+    if (count > 0) {
+      location.innerHTML = location.innerHTML + '<br/>' + spaces + '&lt;/' + node.nodeName.toLowerCase();
+      location.innerHTML = location.innerHTML + '&gt;';
+    } // end if
+  }
 
-}
-
-function trim(s) {
-	s = s.replace(/(^\s*)|(\s*$)/gi,"");
-	s = s.replace(/[ ]{2,}/gi," ");
-	s = s.replace(/\n /,"\n");
-	return s;
-}
+};
 
 var sourceCode = new SourceCode();
 
@@ -154,3 +213,5 @@ function slideShowURL() {
   link = link.substr(0,link.lastIndexOf('/'))
   document.write('<p class="slide-show-url">Slides at:<br/><a href="' + link + '">' + link + '</a></p>')
 }
+
+

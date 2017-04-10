@@ -36,9 +36,18 @@ nav ul li {
     padding-right: 1em;
 }
 
-nav.slide-nav .navbar-nav>li>a:focus, 
-nav.slide_nav .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus {
+    outline: solid thin #AAAAAA;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    outline: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
     text-decoration: underline;
+    background-color: #EEEEEE;
 }
 
 main h2 {

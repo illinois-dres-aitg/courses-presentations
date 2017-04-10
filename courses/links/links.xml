@@ -14,10 +14,12 @@
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
-  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+  <stylesheet media="screen">../../common/css/highlight.css</stylesheet>
   <script>../../common/js/jquery-2.1.1.min.js</script>
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/highlight.pack.js</script>
   <script>../../common/js/xml-slides.js</script>
 
   <slide>
@@ -185,13 +187,61 @@
     
   <slide>
     <title>WCAG Heading Context Example</title>
+
+    <style>
+      ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.horizontal li {
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
+
     <contents>
       <p class="center">
         <a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H80.html" target="_specification">Links with Heading Context</a>
       </p>
       
       <h2>Link Context Example</h2>
-      <div class="example">
+      <div id="ex1" class="example">
         
         <h3>Royal Palm Hotel</h3>
         <ul class="horizontal">
@@ -215,28 +265,14 @@
       </div>
       
       <h2>Source Code</h2>
-      <pre class="code">
-  &lt;h3&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+      <pre><code id="sc1"></code></pre>
       
+      <script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
     </contents>
   </slide> 
 
@@ -251,8 +287,32 @@
   <slide>
     
     <style>
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
       ul.horizontal li {
-      display: inline;
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
       }
       
       div.example {
@@ -277,7 +337,7 @@
     <contents>
       
       <h2>Link Context Example</h2>
-      <div class="example">
+      <div id="ex1" class="example">
         
         <h3 id="ref1">Royal Palm Hotel</h3>
         <ul class="horizontal">
@@ -301,28 +361,13 @@
       </div>
       
       <h2>Source Code</h2>
-      <pre class="code">
-  &lt;h3 id="ref1"&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html" aria-describedby="ref1"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-describedby="ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-describedby="ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-describedby="ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-describedby="ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3 id="ref2"&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html" aria-describedby="ref2"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-describedby="ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-describedby="ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-describedby="ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-describedby="ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-describedby="ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+      <pre><code id="sc1"></code></pre>
       
+      <script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>      
     </contents>
   </slide> 
 
@@ -336,8 +381,32 @@
   
   <slide>
     <style>
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
       ul.horizontal li {
-      display: inline;
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
       }
       
       div.example {
@@ -361,7 +430,7 @@
     <contents>
       
       <h2>Link Context Example</h2>
-      <div class="example">
+      <div id="ex1" class="example">
         
         <h3 id="ref1">Royal Palm Hotel</h3>
         <ul class="horizontal">
@@ -385,28 +454,13 @@
       </div>
       
       <h2>Source Code</h2>
-      <pre class="code">
-  &lt;h3 id="ref1"&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a id="ref10" href="royal_palm_hotel_more_info.html" aria-labelledby="ref10 ref1"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref11" href="royal_palm_hotel_map.html" aria-labelledby="ref11 ref1"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref12" href="royal_palm_hotel_photos.html" aria-labelledby="ref12 ref1"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref13" href="royal_palm_hotel_directions.html" aria-labelledby="ref13 ref1"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3 id="ref2"&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a id="ref20" href="hotel_three_rivers_more_info.html" aria-labelledby="ref20 ref2"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref21" href="hotel_three_rivers_map.html" aria-labelledby="ref21 ref2"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref22" href="hotel_three_rivers_photos.html" aria-labelledby="ref22 ref2"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+      <pre><code id="sc1"></code></pre>
       
+      <script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>      
     </contents>
   </slide> 
  
@@ -420,8 +474,32 @@
 
   <slide>
     <style>
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
       ul.horizontal li {
-      display: inline;
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
       }
       
       div.example {
@@ -469,36 +547,45 @@
       </div>
       
       <h2>Source Code</h2>
-      <pre class="code">
-  &lt;h3&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html" aria-label="More Info Royal Palm Hotel"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-label="Map Royal Palm Hotel"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-label="Photos Royal Palm Hotel"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html" aria-label="Directions Royal Palm Hotel"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-label="Guest Royal Palm Hotel"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-label="Book now Royal Palm Hotel"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html" aria-label="More info Hotel Three Rivers"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-label="Map Hotel Three Rivers"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-label="Photos Hotel Three Rivers"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-label="Directions Hotel Three Rivers"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-label="Guest reviews Hotel Three Rivers"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-label="Book now Hotel Three Rivers"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+      <pre><code id="sc1"></code></pre>
       
+      <script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>        
     </contents>
   </slide> 
 
   <slide>
     
     <style>
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
       ul.horizontal li {
-      display: inline;
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
       }
       
       div.example {
@@ -515,8 +602,7 @@
       
       div#content div.example a:visited {
       color: black;
-      }      
-      
+      }           
     </style>
     
     <title>WCAG Heading Context Example using Grouping Label</title>
@@ -547,27 +633,13 @@
       </div>
       
       <h2>Source Code</h2>
-      <pre class="code">
-  &lt;h3 id="id1"&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"  aria-labelledby="id1"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3 id="id2"&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"  aria-labelledby="id2"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+      <pre><code id="sc1"></code></pre>
+      
+      <script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>  
       
     </contents>
   </slide> 
@@ -587,7 +659,7 @@
   
   <slide>
     <title>Link Menu Focus Styling Example</title>
-    <style>
+    <style id="ex1">
       #id_nav {
         margin-top: 2em;
         margin-bottom: 2em;
@@ -604,19 +676,24 @@
          float: left;
          margin-right: .5em;
        }
-       
+
        #id_nav ul li a {
          display: block;
          text-decoration: none;
          padding-left: 0.25em;
          padding-right: 0.25em;
-         border: thin transparent solid;
+         border: 1px transparent solid;
+         outline: none;
         }
        
+       #id_nav ul li a:focus {
+         border-color: #B3C3E5;
+       }
+
        #id_nav ul li a:hover,
        #id_nav ul li a:focus {
-         text-decoration: none;
-         border-color: black;
+         background-color: #E5EBF6;
+         text-decoration: underline;
        }
        
     </style>
@@ -624,6 +701,7 @@
     <contents>
       
       <nav aria-labelledby="id_ds" id="id_nav">
+
         <h2 id="id_ds">Disability Resources</h2>
         <ul>
           <li><a href="http://disability.illinois.edu/academic-support">Academic Support</a></li>

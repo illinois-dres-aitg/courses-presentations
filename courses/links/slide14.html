@@ -6,11 +6,36 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
       ul.horizontal li {
-      display: inline;
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
       }
       
       div.example {
@@ -136,31 +161,18 @@
       
 </div>
 <h2>Source Code</h2>
-<pre class="code">
-  &lt;h3&gt;Royal Palm Hotel&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_more_info.html" aria-label="More Info Royal Palm Hotel"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html" aria-label="Map Royal Palm Hotel"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html" aria-label="Photos Royal Palm Hotel"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_directions.html" aria-label="Directions Royal Palm Hotel"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html" aria-label="Guest Royal Palm Hotel"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html" aria-label="Book now Royal Palm Hotel"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h3&gt;Hotel Three Rivers&lt;/h3&gt;
-  &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_more_info.html" aria-label="More info Hotel Three Rivers"&gt;More Info&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html" aria-label="Map Hotel Three Rivers"&gt;Map&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html" aria-label="Photos Hotel Three Rivers"&gt;Photos&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html" aria-label="Directions Hotel Three Rivers"&gt;Directions&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html" aria-label="Guest reviews Hotel Three Rivers"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html" aria-label="Book now Hotel Three Rivers"&gt;Book now&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;     
-    </pre>
+<pre>
+<code id="sc1"></code>
+</pre>
+<script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright 2016 University of Illinois
+        Copyright &copy; 2017 University of Illinois
       </div>
 </footer>
 </body>
