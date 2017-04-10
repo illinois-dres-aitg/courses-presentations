@@ -71,3 +71,14 @@ main dt {
     margin-top: 1em;
 }
 
+main .desc {
+    margin: 0;
+    padding: 0;
+}
+
+main .name {
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+    margin-top: 1em;
+}
