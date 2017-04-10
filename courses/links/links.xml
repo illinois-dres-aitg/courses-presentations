@@ -9,7 +9,6 @@
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   <email>jongund@illinois.edu</email> 
-  <home>../index.html</home> 
   
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
