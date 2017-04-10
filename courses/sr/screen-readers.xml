@@ -229,6 +229,7 @@
     <title>VoiceOver for OSX</title>
     <contents>
       <ul>
+        <li>Safari most compatible, but some support for Firefox and Chrome</li>
         <li><a href="https://www.apple.com/voiceover/info/guide/">VoiceOver Guide</a></li>
         <li><a href="http://webaim.org/articles/voiceover/">WebAIM: VoiceOver Tutorial</a></li>
       </ul>
