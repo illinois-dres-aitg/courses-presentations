@@ -19,10 +19,10 @@
         background-color: #FFFFA0;
       }
       
-        input[type="text"]:focus,
-        input[type="text"]:hover,
-        select:focus,
-        select:hover {
+      input[type="text"]:focus,
+      input[type="text"]:hover,
+      select:focus,
+      select:hover {
         background-color: #FFFFA0;
         outline: medium solid black;
       }
@@ -48,6 +48,10 @@
         width: 20em;
       }
       
+      label span {
+      padding-left: 0.25em;
+      }
+
       p.instructions {
         margin: 0;
         padding: 0.25em;
@@ -167,13 +171,13 @@
             
 <legend>Crust (required)</legend>
             <label>
-              <input id="id-crust" name="crust" type="radio" value="Thin">Thin
+              <input id="id-crust" name="crust" type="radio" value="Thin"><span>Thin</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Classic">Classic
+              <input name="crust" type="radio" value="Classic"><span>Classic</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Deep Dish">Deep Dish
+              <input name="crust" type="radio" value="Deep Dish"><span>Deep Dish</span>
             </label>
           
 </fieldset>
@@ -186,25 +190,25 @@
 <p class="instructions">Special: Buy two toppings and get the third one free</p>
             
 <label>
-              <input name="topping" type="checkbox" value="Sausage">Sausage
+              <input name="topping" type="checkbox" value="Sausage"><span>Sausage</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Pepperoni">Pepperoni
+              <input name="topping" type="checkbox" value="Pepperoni"><span>Pepperoni</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Mushrooms">Mushrooms
+              <input name="topping" type="checkbox" value="Mushrooms"><span>Mushrooms</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Onions">Onions
+              <input name="topping" type="checkbox" value="Onions"><span>Onions</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Green Peppers">Green Peppers
+              <input name="topping" type="checkbox" value="Green Peppers"><span>Green Peppers</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Black Olives">Back Olives
+              <input name="topping" type="checkbox" value="Black Olives"><span>Back Olives</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Extra Cheese">Extra cheese
+              <input name="topping" type="checkbox" value="Extra Cheese"><span>Extra cheese</span>
             </label>
           
 </fieldset>
@@ -298,26 +302,24 @@
           
       </script>
 <h2>HTML Source Code</h2>
-<div id="sc1">
-          
-        
-</div>
+<pre>
+<code id="sc1"></code>
+</pre>
 <h2>CSS Source Code</h2>
-<pre id="sc2">
-        
-      
+<pre>
+<code id="sc2"></code>
 </pre>
 <h2>Javascript Source Code</h2>
-<pre id="sc3">
-        
-      
+<pre>
+<code id="sc3"></code>
 </pre>
 <script type="text/javascript">
-          sourceCode.add('sc1', 'form');
-          sourceCode.add('sc2', 'style', 'text');
-          sourceCode.add('sc3', 'script', 'text');
-          sourceCode.make();
-        </script>
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

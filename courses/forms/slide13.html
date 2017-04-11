@@ -171,7 +171,11 @@
         
         <label for="id-delivery">Delivery Method</label>
         
-<div id="ex1a" tabindex="0" class="instructions">Free home delivery on Monday's and Tuesday nights.</div>
+<div id="ex1a">
+           
+<div tabindex="0" class="instructions">Free home delivery on Monday's and Tuesday nights.</div>
+        
+</div>
         
 <select id="id-delivery">
           <option>Eat in store</option>
@@ -208,8 +212,12 @@
 <legend>Toppings</legend>
           
           
-<div id="ex1b" tabindex="0" class="instructions">First topping is free and $1.00 extra for each additional topping.</div>
+<div id="ex1b">
+            
+<div tabindex="0" class="instructions">First topping is free and $1.00 extra for each additional topping.</div>
           
+</div>
+
           
 <label>
             <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
@@ -255,18 +263,17 @@
       
 </form>
 <h2>HTML Source Code</h2>
-<div id="sc1a">
-        
-      
-</div>
-<div id="sc1b">
-        
-      
-</div>
+<pre>
+<code id="sc1"></code>
+</pre>
+<pre>
+<code id="sc2"></code>
+</pre>
 <script type="text/javascript">
-        sourceCode.add('sc1a', 'ex1a');
-        sourceCode.add('sc1b', 'ex1b');
+        sourceCode.add('sc1', 'ex1a');
+        sourceCode.add('sc2', 'ex1b');
         sourceCode.make();
+        hljs.initHighlightingOnLoad();
       </script>
 </main>
 <footer class="container">

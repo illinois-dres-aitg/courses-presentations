@@ -222,16 +222,18 @@
       
 </form>
 <h2>HTML Source Code</h2>
-<div id="sc1">
-        
-      
-</div>
-<h2>CSS Source Code</h2>
-<pre id="sc2">
-        
-      
+<pre>
+<code id="sc1"></code>
 </pre>
-<script type="text/javascript">
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script id="script" type="text/javascript">
 
         function itemFocus(event) {
           if( event.target ) event.target.parentNode.classList.add("focus"); 
@@ -251,11 +253,12 @@
           }
         }, false);
         
-
-
+      </script><script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
+        hljs.initHighlightingOnLoad();
       </script>
 </main>
 <footer class="container">

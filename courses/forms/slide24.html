@@ -201,8 +201,9 @@
       
 </div>
 <script src="examples/js/submit-order.js" type="text/javascript"></script><script id="script">
-        
+
         function clearErrorFeedback() {
+          // dummy function for error computation
         }
         
         function exampleErrorFeedback(errors) {
@@ -219,25 +220,23 @@
         
       </script>
 <h2>HTML Source Code</h2>
-<div id="sc1">
-        
-      
-</div>
+<pre>
+<code id="sc1"></code>
+</pre>
 <h2>CSS Source Code</h2>
-<pre id="sc2">
-        
-      
+<pre>
+<code id="sc2"></code>
 </pre>
 <h2>Javascript Source Code</h2>
-<pre id="sc3">
-        
-      
+<pre>
+<code id="sc3"></code>
 </pre>
 <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style', 'text');
         sourceCode.add('sc3', 'script', 'text');
         sourceCode.make();
+        hljs.initHighlightingOnLoad();
       </script>
 </main>
 <footer class="container">
