@@ -2956,19 +2956,6 @@
         <input type="submit" value="Submit Survey"/>
         
       </form>
-      
-      <h2>HTML Source Code</h2>
-      
-      <pre><code id="sc1"></code></pre>
-      
-      <h2>CSS Source Code</h2>
-      
-      <pre><code id="sc2"></code></pre>
-     
-      <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre>
-     
 
       <script id="script" type="text/javascript">
         
@@ -2991,7 +2978,19 @@
         }, false);
       
       </script>  
-        
+  
+      <h2>HTML Source Code</h2>
+      
+      <pre><code id="sc1"></code></pre>
+      
+      <h2>CSS Source Code</h2>
+      
+      <pre><code id="sc2"></code></pre>
+     
+      <h2>Javascript Source Code</h2>
+      
+      <pre><code id="sc3"></code></pre> 
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -3477,7 +3476,7 @@
     
     <script src="js/submit-order.js" type="text/javascript"></script>
     
-    <style type="text/css">
+    <style id="style" type="text/css">
       div {
         border: solid medium transparent;  
       }
@@ -3855,7 +3854,27 @@
         }  
         
       </script>
+
+      <h2>HTML Source Code</h2>
       
+      <pre><code id="sc1"></code></pre>
+      
+      <h2>CSS Source Code</h2>
+      
+      <pre><code id="sc2"></code></pre>
+     
+      <h2>Javascript Source Code</h2>
+      
+      <pre><code id="sc3"></code></pre> 
+           
+      <script type="text/javascript">
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
     </contents>
   </slide> 
 
@@ -3936,14 +3955,7 @@
       input[type="submit"] {
       margin-top: 0.5em;
       }
-      
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
-      }
-      
-      
+            
       label.error,
       lanel.noerror {
       display: inline;
@@ -4044,7 +4056,6 @@
           
           <fieldset>
             <legend>Toppings</legend>
-            <p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
             <div class="button">
               <label>
                 <input id="id-sausage" 
@@ -4244,31 +4255,27 @@
         }  
         
       </script>
+
       <h2>HTML Source Code</h2>
       
-      <div id="sc1">
-        
-      </div>
+      <pre><code id="sc1"></code></pre>
       
       <h2>CSS Source Code</h2>
       
-      <pre id="sc2">
-        
-      </pre>
-      
+      <pre><code id="sc2"></code></pre>
+     
       <h2>Javascript Source Code</h2>
       
-      <pre id="sc3">
-        
-      </pre>
-      
-      
+      <pre><code id="sc3"></code></pre> 
+           
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style', 'text');
-        sourceCode.add('sc3', 'script', 'text');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
-      </script>  
+        hljs.initHighlightingOnLoad();
+      </script>
+
     </contents>
   </slide> 
 
@@ -4338,12 +4345,6 @@
       div.group div.title {
       font-weight: bold;
       }    
-      
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
-      }
       
       span.error {
       color: red;
@@ -4442,7 +4443,6 @@
           
           <div class="group">
             <div id="id-toppings" class="title">Toppings</div>
-            <p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
             <div class="button">
               <input id="id-sausage" 
                 name="topping" 
@@ -4635,31 +4635,27 @@
         }  
         
       </script>
+
       <h2>HTML Source Code</h2>
       
-      <div id="sc1">
-        
-      </div>
+      <pre><code id="sc1"></code></pre>
       
       <h2>CSS Source Code</h2>
       
-      <pre id="sc2">
-        
-      </pre>
-      
+      <pre><code id="sc2"></code></pre>
+     
       <h2>Javascript Source Code</h2>
       
-      <pre id="sc3">
-        
-      </pre>
-      
-      
+      <pre><code id="sc3"></code></pre> 
+           
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style', 'text');
-        sourceCode.add('sc3', 'script', 'text');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
-      </script>  
+        hljs.initHighlightingOnLoad();
+      </script>
+
     </contents>
   </slide> 
 
@@ -4739,12 +4735,6 @@
       div.select,
       input[type="submit"] {
       margin-top: 0.5em;
-      }
-      
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
       }
       
       
@@ -4844,7 +4834,6 @@
           
           <fieldset>
             <legend>Toppings</legend>
-            <p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
             <div class="button">
               <label>
                 <input id="id-sausage" 
@@ -5046,31 +5035,26 @@
         }  
         
       </script>
+
       <h2>HTML Source Code</h2>
       
-      <div id="sc1">
-        
-      </div>
+      <pre><code id="sc1"></code></pre>
       
       <h2>CSS Source Code</h2>
       
-      <pre id="sc2">
-        
-      </pre>
-      
+      <pre><code id="sc2"></code></pre>
+     
       <h2>Javascript Source Code</h2>
       
-      <pre id="sc3">
-        
-      </pre>
-      
-      
+      <pre><code id="sc3"></code></pre> 
+           
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style', 'text');
-        sourceCode.add('sc3', 'script', 'text');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
-      </script>  
+        hljs.initHighlightingOnLoad();
+      </script>
     </contents>
   </slide> 
 

@@ -81,14 +81,7 @@
       input[type="submit"] {
       margin-top: 0.5em;
       }
-      
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
-      }
-      
-      
+            
       label.error,
       lanel.noerror {
       display: inline;
@@ -245,8 +238,6 @@
 <fieldset>
             
 <legend>Toppings</legend>
-            
-<p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
             
 <div class="button">
               
@@ -451,25 +442,23 @@
         
       </script>
 <h2>HTML Source Code</h2>
-<div id="sc1">
-        
-      
-</div>
+<pre>
+<code id="sc1"></code>
+</pre>
 <h2>CSS Source Code</h2>
-<pre id="sc2">
-        
-      
+<pre>
+<code id="sc2"></code>
 </pre>
 <h2>Javascript Source Code</h2>
-<pre id="sc3">
-        
-      
+<pre>
+<code id="sc3"></code>
 </pre>
 <script type="text/javascript">
         sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style', 'text');
-        sourceCode.add('sc3', 'script', 'text');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
+        hljs.initHighlightingOnLoad();
       </script>
 </main>
 <footer class="container">
