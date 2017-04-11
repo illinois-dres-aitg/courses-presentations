@@ -47,15 +47,18 @@
       fieldset {
         width: 20em;
       }
+
+      fieldset legend {
+        margin: 0;
+        padding: 0;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 110%;
+      }
       
       label span {
-      padding-left: 0.25em;
-      }
-
-      p.instructions {
-        margin: 0;
-        padding: 0.25em;
-        font-size: 100%;
+        padding-left: 0.25em;
+        font-weight: normal;
       }
 
     </style>
@@ -186,10 +189,7 @@
 <fieldset>
             
 <legend>Toppings</legend>
-            
-<p class="instructions">Special: Buy two toppings and get the third one free</p>
-            
-<label>
+            <label>
               <input name="topping" type="checkbox" value="Sausage"><span>Sausage</span>
             </label>
             <label>

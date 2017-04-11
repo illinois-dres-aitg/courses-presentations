@@ -28,14 +28,22 @@
       }
       
       fieldset {
-      width: 20em;
+      width: 25em;
       }
       
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
+      label span {
+        margin-left: 0.25em;
+        font-weight: normal;
       }
+
+      fieldset legend {
+        margin: 0;
+        padding: 0;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 110%;
+      }
+
       
     </style>
 </head>
@@ -144,13 +152,14 @@
             
 <legend>Crust <img src="images/required.png" alt="required"></legend>
             <label>
-              <input id="id-crust" name="crust" type="radio" value="Thin">Thin
+              <input id="id-crust" name="crust" type="radio" value="Thin">
+                <span>Thin</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Classic">Classic
+              <input name="crust" type="radio" value="Classic"><span>Classic</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Deep Dish">Deep Dish
+              <input name="crust" type="radio" value="Deep Dish"><span>Deep Dish</span>
             </label>
           
 </fieldset>
@@ -159,29 +168,26 @@
 <fieldset>
             
 <legend>Toppings</legend>
-            
-<p class="instructions">Special: Buy two toppings and get the third one free</p>
-            
-<label>
-              <input name="topping" type="checkbox" value="Sausage">Sausage
+            <label>
+              <input name="topping" type="checkbox" value="Sausage"><span>Sausage</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Pepperoni">Pepperoni
+              <input name="topping" type="checkbox" value="Pepperoni"><span>Pepperoni</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Mushrooms">Mushrooms
+              <input name="topping" type="checkbox" value="Mushrooms"><span>Mushrooms</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Onions">Onions
+              <input name="topping" type="checkbox" value="Onions"><span>Onions</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Green Peppers">Green Peppers
+              <input name="topping" type="checkbox" value="Green Peppers"><span>Green Peppers</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Black Olives">Back Olives
+              <input name="topping" type="checkbox" value="Black Olives"><span>Back Olives</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Extra Cheese">Extra cheese
+              <input name="topping" type="checkbox" value="Extra Cheese"><span>Extra cheese</span>
             </label>
           
 </fieldset>

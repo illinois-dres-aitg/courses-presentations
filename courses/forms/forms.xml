@@ -3067,14 +3067,22 @@
       }
       
       fieldset {
-      width: 20em;
+      width: 25em;
       }
       
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
+      label span {
+        margin-left: 0.25em;
+        font-weight: normal;
       }
+
+      fieldset legend {
+        margin: 0;
+        padding: 0;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 110%;
+      }
+
       
     </style>
     
@@ -3121,39 +3129,39 @@
           <fieldset>
             <legend>Crust <img src="images/required.png" alt="required"/></legend>
             <label>
-              <input id="id-crust" name="crust" type="radio" value="Thin"/>Thin
+              <input id="id-crust" name="crust" type="radio" value="Thin"/>
+                <span>Thin</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Classic"/>Classic
+              <input name="crust" type="radio" value="Classic"/><span>Classic</span>
             </label>
             <label>
-              <input name="crust" type="radio" value="Deep Dish"/>Deep Dish
+              <input name="crust" type="radio" value="Deep Dish"/><span>Deep Dish</span>
             </label>
           </fieldset>
           
           <fieldset>
             <legend>Toppings</legend>
-            <p class="instructions">Special: Buy two toppings and get the third one free</p>
             <label>
-              <input name="topping" type="checkbox" value="Sausage"/>Sausage
+              <input name="topping" type="checkbox" value="Sausage"/><span>Sausage</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Pepperoni"/>Pepperoni
+              <input name="topping" type="checkbox" value="Pepperoni"/><span>Pepperoni</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Mushrooms"/>Mushrooms
+              <input name="topping" type="checkbox" value="Mushrooms"/><span>Mushrooms</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Onions"/>Onions
+              <input name="topping" type="checkbox" value="Onions"/><span>Onions</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Green Peppers"/>Green Peppers
+              <input name="topping" type="checkbox" value="Green Peppers"/><span>Green Peppers</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Black Olives"/>Back Olives
+              <input name="topping" type="checkbox" value="Black Olives"/><span>Back Olives</span>
             </label>
             <label>
-              <input name="topping" type="checkbox" value="Extra Cheese"/>Extra cheese
+              <input name="topping" type="checkbox" value="Extra Cheese"/><span>Extra cheese</span>
             </label>
           </fieldset>
           
@@ -3254,15 +3262,18 @@
       fieldset {
         width: 20em;
       }
+
+      fieldset legend {
+        margin: 0;
+        padding: 0;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 110%;
+      }
       
       label span {
-      padding-left: 0.25em;
-      }
-
-      p.instructions {
-        margin: 0;
-        padding: 0.25em;
-        font-size: 100%;
+        padding-left: 0.25em;
+        font-weight: normal;
       }
 
     </style>
@@ -3327,7 +3338,6 @@
           
           <fieldset>
             <legend>Toppings</legend>
-            <p class="instructions">Special: Buy two toppings and get the third one free</p>
             <label>
               <input name="topping" type="checkbox" value="Sausage"/><span>Sausage</span>
             </label>
@@ -3469,37 +3479,37 @@
     
     <style type="text/css">
       div {
-      border: solid medium transparent;  
+        border: solid medium transparent;  
       }
       
       div.focus {
-      border-color: black;
-      background-color: #EEEEEE;
+        border-color: black;
+        background-color: #EEEEEE;
       }
       
       div.hover {
-      border-color: black;
-      background-color: #EEEEEE;
+        border-color: black;
+        background-color: #EEEEEE;
       }
       
       label.focus,
       input[type="text"]:focus,
       select:focus {
-      background-color: #EEEEEE;
-      outline: medium solid black;
+        background-color: #EEEEEE;
+        outline: medium solid black;
       }
       
       label.hover,
       input[type="text"]:hover,
       select:hover {
-      background-color: #EEEEEE;
-      outline: medium solid black;
+        background-color: #EEEEEE;
+        outline: medium solid black;
       }
       
       div.button {
-      position: relative;
-      left: -0.25em;
-      width: 9em;
+        position: relative;
+        left: -0.25em;
+        width: 9em;
       }
       
       label input[type="radio"],
@@ -3509,71 +3519,64 @@
       
       
       div#id-errors {
-      color: red;
-      display: none;
-      margin-left: 1em;
-      border: thin solid red;
-      width: 25em;
+        color: red;
+        display: none;
+        margin-left: 1em;
+        border: thin solid red;
+        width: 25em;
       }
       
       div#id-errors a {
-      color: red;
+        color: red;
       }
       
       h2, h3 {
-      margin: 0;
-      padding: 0;
-      margin-top: 1em;
+        margin: 0;
+        padding: 0;
+        margin-top: 1em;
       }
       
       label {
       display: block;
-      margin: 0;
-      padding: 0;
-      font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
       }
       
       fieldset,
       legend {
-      padding: 0;
-      margin: 0;
-      margin-top: 1em;
+        padding: 0;
+        margin: 0;
+        margin-top: 1em;
       }
       
       legend {
-      margin-top: 1em;
-      font-weight: bold;
-      font-size: 110%;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 110%;
       }
       
       div.text,
       div.select,
       input[type="submit"] {
-      margin-top: 0.5em;
+        margin-top: 0.5em;
       }
-      
-      p.instructions {
-      margin: 0;
-      padding: 0.25em;
-      font-size: 100%;
-      }
-      
-      
+            
       span.error,
-      span.noerror {
-      display: inline;
+        span.noerror {
+        display: inline;
       }
 
       span.error {
-      color: red;
-      border: thin solid red;
-      padding: 0.25em;
+        color: red;
+        border: thin solid red;
+        padding: 0.25em;
       }
       
       span.noerror {
-      color: transparent;
-      border: thin solid transparent;
-      padding: 0.25em;
+        color: transparent;
+        border: thin solid transparent;
+        padding: 0.25em;
       }
       
     </style>
@@ -3653,7 +3656,6 @@
           
           <fieldset>
             <legend>Toppings</legend>
-            <p class="instructions" id="id-special">Special: Buy two toppings and get the third one free</p>
             <div class="button">
               <label>
                 <input id="id-sausage" 
