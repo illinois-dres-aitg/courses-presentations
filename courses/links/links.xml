@@ -695,7 +695,7 @@
       }           
     </style>
     
-    <title>WCAG Heading Context Example using Grouping Label</title>
+    <title>WCAG heading context example using grouping label</title>
     <contents>
       
       <h2>Link Context Example</h2>
@@ -736,7 +736,7 @@
   
  
   <slide>
-    <title>Identifying Links and Link Keyboard Focus Styling</title>
+    <title>Identifying links and link keyboard focus styling</title>
     <contents>
       <ul>
         <li>Underlining links is important for people with low vision to identify the link</li>
@@ -748,7 +748,7 @@
   </slide>
 
   <slide>
-    <title>Keyboard Focus and Mouse Hover Styling Strategy</title>
+    <title>A keyboard focus and mouse hover styling strategy</title>
     <contents>
       <ul>
         <li>Actively style keyboard focus, do not rely on browser defaults for keyboard focus styling.</li>
@@ -766,7 +766,7 @@
   </slide>  
   
   <slide>
-    <title>Link Menu Focus Styling Example</title>
+    <title>Link menu focus and hover styling example</title>
 
     
     <contents>
