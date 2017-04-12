@@ -763,7 +763,20 @@
         <li>Make sure all styling options meet WCAG 2.0 Level AA color contrast requirements.</li>
       </ul>
     </contents>
-  </slide>  
+  </slide> 
+
+  <slide>
+    <title>Keyboard focus should always be visible</title>
+    <contents>
+      <ul>
+        <li>As people <kbd>tab</kbd> through the page the keyboard focus disappears and then magically reappears.</li>
+        <li>Disorienting to users when keyboard focus disappears and then reappears.</li>
+        <li>Disappearing focus is usally caused by links or form controls that are rendered off screen using CSS <code>position="absolute"</code>, <code>top</code> and <code>left</code> properties.</li>
+        <li>If links or form controls are not visible they should be hidden using CSS <code>display: none</code> or using the HTML5 <code>hidden</code> attribute, so they are not part of the tab order of the page.</li>
+        <li>In general if you can't see a link or form control visually, the screen reader or keyboard only user should not be able to interact with link or form control.</li> 
+      </ul>
+    </contents>
+  </slide> 
   
   <slide>
     <title>Link menu focus and hover styling example</title>
