@@ -1657,10 +1657,7 @@
       margin-top: 2em;
       }
       
-      input[type=submit]:focus {
-      outline: 2px solid black;
-      }
-      
+
       input[type="text"]:hover {
       background-color: #ADDFFF; 
       }
@@ -1681,7 +1678,7 @@
       
       fieldset label.focus { 
       border-color: black; 
-      background-color: #ADDFFF;
+      background-color: #EEEEEE;
       }
       
       .instructions {
