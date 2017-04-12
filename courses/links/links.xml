@@ -197,7 +197,7 @@
       </div>  
 
 
-      <h2>Accessible Link</h2>
+      <h2>Accessible Link using <code>title</code> attribute</h2>
       <div id="ex2" class="image">
         <a href="#" title="More information on some topic" >
           <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
