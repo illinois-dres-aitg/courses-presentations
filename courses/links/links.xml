@@ -189,18 +189,29 @@
 
     <contents>
 
-      <div id="example" class="image">
+      <h2>Inaccessible Link</h2>
+      <div id="ex1" class="image">
+        <a href="#">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>      
+      </div>  
+
+
+      <h2>Accessible Link</h2>
+      <div id="ex2" class="image">
         <a href="#" title="More information on some topic" >
           <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
         </a>      
       </div>  
 
 
-     <h2>Source Code</h2>
+     <h2>HTML Source Code</h2>
       <pre><code id="sc1"></code></pre>
+      <pre><code id="sc2"></code></pre>
       
       <script>
-        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.add('sc2', 'ex2');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
