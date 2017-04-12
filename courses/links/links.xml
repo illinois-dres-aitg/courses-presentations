@@ -190,7 +190,8 @@
     <contents>
 
       <div id="example" class="image">
-        <h2>Payment Options</h2><a href="infolink.html" title="More information on payment options" style="float: right">
+        <h2 style="float: right">Payment Options</h2>
+        <a href="infolink.html" title="More information on payment options" >
           <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
         </a>      
       </div>  
