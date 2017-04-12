@@ -746,6 +746,24 @@
       </ul>
     </contents>
   </slide>
+
+  <slide>
+    <title>Keyboard Focus and Mouse Hover Styling Strategy</title>
+    <contents>
+      <ul>
+        <li>Actively style keyboard focus, do not rely on browser defaults for keyboard focus styling.</li>
+        <li>Change background color for both mouse hover and keyboard focus styling for links and form controls.</li>
+        <li>Use border styling for keyboard focus:
+          <ul>
+            <li>Define a transparent CSS <code>border</code> and then give it a color when a link or form control receives focus.</li>
+            <li>Use CSS <code>outline</code> with an outline color and solid outline when a link or form control receives focus.</li>
+          </ul>
+        </li>
+        <li>For links in the main content and complementary areas of a web page make sure they are underline for both focus and hover, but recommend they allways have underline.</li>
+        <li>Make sure all styling options meet WCAG 2.0 Level AA color contrast requirements.</li>
+      </ul>
+    </contents>
+  </slide>  
   
   <slide>
     <title>Link Menu Focus Styling Example</title>
