@@ -24,7 +24,7 @@
   <script>../../common/js/xml-slides.js</script>
 
   <slide>
-    <title>Links Overview</title>
+    <title>Links overview</title>
     <contents>
       <ul>
         <li>Link usability</li>
@@ -38,7 +38,7 @@
   </slide>
 
   <slide>
-    <title>Link Usability 101</title>
+    <title>Link usability 101</title>
     <contents>
       <details>
         <summary>What makes a good link?</summary>
@@ -74,7 +74,7 @@
   </slide>
   
   <slide>
-    <title>WCAG 2.0 Technique Examples</title>
+    <title>WCAG 2.0 technique examples</title>
     <contents>
       <ul>
         <li>Headings</li>
@@ -86,7 +86,7 @@
   </slide>
   
   <slide>
-    <title>Accessible Name Calculation</title>
+    <title>Accessible name calculation</title>
     <contents>
       <ul>
         <li>Child text nodes of <code>a</code> element</li>
@@ -99,7 +99,7 @@
   </slide>
   
   <slide>
-    <title>Accessible Description Calculation</title>
+    <title>Accessible description calculation</title>
     <contents>
       <ul>
         <li><code>aria-describedby</code> attribute</li>
@@ -110,7 +110,7 @@
 
   
   <slide>
-    <title>Good Practices for Accessible Names for Links</title>
+    <title>Good practices for defining accessible names for links</title>
 
     <contents>
 
@@ -178,7 +178,7 @@
 
 
   <slide>
-    <title>Using the ALT attribute for images</title>
+    <title>Using the TITLE attribute for Glyphicons</title>
 
     <style type="text/css">
       #example {
@@ -222,7 +222,7 @@
 
   <slide>
 
-      <title>Basic Screen Reader Commands related to Links</title>
+      <title>Basic screen reader commands related to links</title>
       <contents>
         <table class="table table-striped table-hover" aria-labelledby="id1">
           <thead>
@@ -276,7 +276,7 @@
     </slide>
 
   <slide>
-    <title>WCAG Heading Context Example</title>
+    <title>WCAG 2.0 heading context example</title>
 
     <style>
       ul.horizontal {
@@ -367,7 +367,7 @@
   </slide> 
 
   <slide> 
-    <title>NVDA showing List of Links with No Context Markup</title>
+    <title>NVDA showing list of links with no context markup</title>
     <contents>
       <p class="center"><img width="98%" src="images/links-list-no-aria.png" alt="screen shot NVDA list of links when there is no link context"/></p>
     </contents>
