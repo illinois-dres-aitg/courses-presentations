@@ -176,6 +176,39 @@
 
   </slide>
 
+
+  <slide>
+    <title>Using the ALT attribute for images</title>
+
+    <style type="text/css">
+      #example {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      }
+    </style>  
+
+    <contents>
+
+      <div id="example" class="image">
+        <a href="infolink.html">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </a>      
+      </div>  
+
+
+     <h2>Source Code</h2>
+      <pre><code id="sc1"></code></pre>
+      
+      <script>
+        sourceCode.add('sc1', 'example');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
+   </contents>
+
+  </slide>  
+
   <slide>
 
       <title>Basic Screen Reader Commands related to Links</title>

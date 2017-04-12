@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: NVDA showing List of Links with ARIA-DESCRIBEDBY identifying context</title>
+<title>Slide 13: Using aria-describedby to define context of a link</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.horizontal li {
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }      
+      
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -38,19 +83,92 @@
                       </a>
 </li>
 <li>
-<a href="slide19.html">Last
+<a href="slide20.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 19</div>
+<div class="navbar-text pull-right">Slide 13 of 20</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">NVDA showing List of Links with ARIA-DESCRIBEDBY identifying context</h1>
-<p class="center">
-<img width="98%" src="images/links-list-aria-describedby.png" alt="screen shot NVDA list of links when aria-describedby identifies context"></p>
+<h1 id="h1_title" class="title">Using aria-describedby to define context of a link</h1>
+<h2>Link Context Example</h2>
+<div id="ex1" class="example">
+        
+        
+<h3 id="ref1">Royal Palm Hotel</h3>
+        
+<ul class="horizontal">
+          
+<li>
+<a href="royal_palm_hotel_more_info.html" aria-describedby="ref1">More Info</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_map.html" aria-describedby="ref1">Map</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_photos.html" aria-describedby="ref1">Photos</a>
+</li>
+          
+<li>
+<a href="hroyal_palm_hotel_directions.html" aria-describedby="ref1">Directions</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_reviews.html" aria-describedby="ref1">Guest reviews</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_book.html" aria-describedby="ref1">Book now</a>
+</li>
+        
+</ul>
+        
+        
+<h3 id="ref2">Hotel Three Rivers</h3>
+        
+<ul class="horizontal">
+          
+<li>
+<a href="hotel_three_rivers_more_info.html" aria-describedby="ref2">More Info</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_map.html" aria-describedby="ref2">Map</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_photos.html" aria-describedby="ref2">Photos</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_directions.html" aria-describedby="ref2">Directions</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_reviews.html" aria-describedby="ref2">Guest reviews</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_book.html" aria-describedby="ref2">Book now</a>
+</li>
+        
+</ul>   
+      
+</div>
+<h2>Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<script>
+        sourceCode.add('sc1', 'ex1');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
