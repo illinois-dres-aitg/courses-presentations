@@ -2,14 +2,58 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: Link Menu Focus Styling Example</title>
+<title>Slide 17: WCAG Heading Context Example using Grouping Label</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+     ul.horizontal {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.horizontal li {
+        padding: 0;
+        display: inline;
+      }
+
+      ul.horizontal li:first-child a {
+        padding-left: 0;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+      }
+
+      ul.horizontal li:after {
+      content: '|';
+      }
+
+      ul.horizontal li:last-child:after {
+      content: '';
+      }
+      
+      div.example {
+      margin: 1em;
+      padding: 1em;
+      background-color: #EEEEEE;
+      color: black;
+      border: medium white solid;
+      }
+      
+      div#content div.example a {
+      color: black;
+      }      
+      
+      div#content div.example a:visited {
+      color: black;
+      }           
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -33,121 +77,94 @@
 <a href="slide16.html">Previous
                       </a>
 </li>
-<li class="disabled">
-<a href="#">
-                        Next
+<li>
+<a href="slide18.html">Next
                       </a>
 </li>
-<li class="disabled">
-<a href="#">
-                        Last
+<li>
+<a href="slide19.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 17 of 17</div>
+<div class="navbar-text pull-right">Slide 17 of 19</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Link Menu Focus Styling Example</h1>
-<style id="ex2">
-      #id_nav {
-        margin-top: 2em;
-        margin-bottom: 5em;
-      }
-      
-      #id_nav h2 {
-        position: absolute;
-        top: -30em;
-        left: -300em;
-       }
-
-       #id_nav ul {
-        margin: 0;
-        padding: 0.5em;
-      }
-
-       #id_nav ul li {
-         margin: 0;
-         padding: 0;
-         list-style: none;
-         float: left;
-         padding-right: .5em;
-        border-top: solid 2px #819BD5;
-        border-bottom: solid 2px #819BD5;
-       }
-
-       #id_nav ul li a {
-         margin: 0;
-         padding: 0;
-         display: block;
-         text-decoration: none;
-         padding-left: 0.25em;
-         padding-right: 0.25em;
-         border: 1px transparent solid;
-         outline: none;
-        }
-       
-       #id_nav ul li a:focus {
-         border-color: #B3C3E5;
-         background-color: #CCD7EE;
-         text-decoration: underline;
-       }
-
-       #id_nav ul li a:hover {
-         background-color: #E5EBF6;
-         text-decoration: underline;
-       }
-       
-    </style>
-<div id="ex1">
+<h1 id="h1_title" class="title">WCAG Heading Context Example using Grouping Label</h1>
+<h2>Link Context Example</h2>
+<div id="ex1" class="example">
         
-<nav aria-labelledby="id_ds" id="id_nav">
-
+        
+<h3 id="id1">Royal Palm Hotel</h3>
+        
+<ul class="horizontal" aria-labelledby="id1">
           
-<h2>Disability Resources</h2>
-          
-<ul>
-            
 <li>
-<a href="http://disability.illinois.edu/academic-support">Academic Support</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/living-accommodations">Living Accommodations</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/getting-around">Getting Around</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/health">Health</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/campus-life">Campus Life</a>
+<a href="royal_palm_hotel_more_info.html">More Info</a>
 </li>
           
+<li>
+<a href="royal_palm_hotel_map.html">Map</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_photos.html">Photos</a>
+</li>
+          
+<li>
+<a href="hroyal_palm_hotel_directions.html">Directions</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_reviews.html">Guest reviews</a>
+</li>
+          
+<li>
+<a href="royal_palm_hotel_book.html">Book now</a>
+</li>
+        
 </ul>
-          
         
-</nav>
+        
+<h3 id="id2">Hotel Three Rivers</h3>
+        
+<ul class="horizontal" aria-labelledby="id2">
+          
+<li>
+<a href="hotel_three_rivers_more_info.html">More Info</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_map.html">Map</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_photos.html">Photos</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_directions.html">Directions</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_reviews.html">Guest reviews</a>
+</li>
+          
+<li>
+<a href="hotel_three_rivers_book.html">Book now</a>
+</li>
+        
+</ul>   
       
 </div>
-<div style="clear: both;"></div>
-<h2>HTML Code</h2>
+<h2>Source Code</h2>
 <pre>
 <code id="sc1"></code>
 </pre>
-<h2>CSS Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
 <script>
         sourceCode.add('sc1', 'ex1');
-        sourceCode.add('sc2', 'ex2');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

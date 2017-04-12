@@ -93,6 +93,7 @@
         <li><code>aria-label</code> attribute</li>
         <li><code>aria-labelledby</code> attribute</li>
         <li><code>title</code> attribute (rare)</li>
+        <li><code>alt</code> attribute for <code>img</code> elements</li>
       </ul>
     </contents>
   </slide>
@@ -107,31 +108,75 @@
     </contents>
   </slide>
 
+  
   <slide>
-    
-    <style>
-      ul.horizontal li {
-      display: inline;
-      }
-      
-      div.example {
-      margin: 1em;
-      padding: 1em;
-      background-color: #EEEEEE;
-      color: black;
-      border: medium white solid;
-      }
-      
-      div#content div.example a {
-      color: black;
-      }      
-      
-      div#content div.example a:visited {
-      color: black;
-      }      
-      
-    </style>
+    <title>Good Practices for Accessible Names for Links</title>
 
+    <contents>
+
+      <h2>Poor Accessible Names (link text)</h2>
+
+      <ul>
+        <li>Click here</li>
+        <li>More</li>
+        <li>Here</li>
+        <li>URLs</li>
+      </ul>
+
+      <h2>Good Accessible Name Practices</h2>
+
+      <ul>
+        <li>Describes the "target" of the link.</li>
+        <li>Links to different URLs are unique.</li>
+        <li>Links to the same URL have the same name.</li>
+        <li>Link text should not be too long.</li>
+      </ul>
+
+
+      <h2>Other Resources</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/linktext/">PSU: Links on a Screenreader</a></li>
+        <li><a href="https://www.nngroup.com/articles/writing-links/">Writing Hyperlinks: Salient, Descriptive, Start with Keyword</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html">H30: Providing link text that describes the purpose of a link for anchor elements</a></li>
+      </ul>
+
+    </contents>
+
+  </slide>
+
+  <slide>
+    <title>Using the ALT attribute for images</title>
+
+    <style type="text/css">
+      #example {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      }
+    </style>  
+
+    <contents>
+
+      <div id="example" class="image">
+        <a href="http://150.illinois.edu/index.html">
+          <img src="images\il150_logo_dark.png" alt="Univerisity of Illinois Sesquicentennial"/>
+        </a>      
+      </div>  
+
+
+     <h2>Source Code</h2>
+      <pre><code id="sc1"></code></pre>
+      
+      <script>
+        sourceCode.add('sc1', 'example');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
+   </contents>
+
+  </slide>
+
+  <slide>
 
       <title>Basic Screen Reader Commands related to Links</title>
       <contents>
@@ -185,7 +230,7 @@
         </table>  
       </contents>
     </slide>
-    
+
   <slide>
     <title>WCAG Heading Context Example</title>
 
