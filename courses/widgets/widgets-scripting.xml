@@ -191,6 +191,16 @@
             </td>
           </tr>
           <tr>
+            <td>Accessible Description</td>
+            <td>
+              <ul>
+                <li><code>aria-describedby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
+                <li><code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
+                <li><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible description algorithm</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
             <td>W3C Authoring Resources</td>
             <td>
               <ul>
@@ -336,7 +346,7 @@
     <contents>
         <ul>
           <li><a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a></li>
-          <li>Accessible description information provides more informaiton about a form control, link or aria enable widget.</li>
+          <li>Accessible description information provides more informaiton about a form control, link or aria enabled widget.</li>
           <li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
         </ul>
         <h2 id="heading_ant">Accessible Description Techniques</h2>
@@ -745,7 +755,7 @@
   </slide>
 
   <slide>
-    <title>Part 2: Adding role and checked state</title>
+    <title>Part 2: Adding role, checked state and accessible name</title>
     <style id="style">
       fieldset {
         border-color: #EEE; 
@@ -1023,22 +1033,145 @@
     </contents>
   </slide>
 
+ <slide>
+    <title>Part 4: Synchronization of aria and visual states</title>
+    <style id="style">
+      fieldset {
+        border-color: #EEE; 
+        width: 10em;
+      }
 
-  <slide>
-    <title>Example Widget: ARIA Checkbox with Focus Styling</title>
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      label input {
+        margin-right: 0.5em;
+      }
+
+      div[role="checkbox"] {
+        margin-bottom: 0.25em;
+        margin-left: 0.25em;      
+      }
+
+      div[role="checkbox"] span {
+        margin-right: 0.25em;
+      }
+    </style>
     <contents>
-      <p class="center"><a href="checkbox/checkbox.zip" target="_example">ZIP file of Checkbox Examples</a></p>
-      <p class="center"><a href="checkbox/checkbox-focus.html" target="_example">ARIA checkbox examples with focus styling</a></p>
-      <h2>Additional Features</h2>
       <ul>
-        <li>Use <code>:focus</code> pseudo element focusing only focuses the checkbox and not the label</li>
-        <li>Use <code>onFocus</code> and <code>onBlur</code> events to add and remove class for identifying focus</li>
-        <li>Use <code>:hover</code> pseudo class to style checkboxes for mouse overs</li>
-        <li>Standard checkbox 3 doesn't have label so you have to click directly on the checkbox image to change state</li>
+        <li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
+        <li>Adding <code>aria-checked</code> attribute.</li>
+        <li>Accessible name from text content.</li>
+        <li>Removing state character from accessible name using <code>aria-hidden</code>.</li>
       </ul>
-      <p class="center"><iframe height="600" width="97%" src="checkbox/checkbox-focus.html"></iframe></p>      
+
+      <script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          var n = node.firstElementChild;
+          if (n.innerHTML.indexOf('✗') &gt;= 0) {
+            n.innerHTML = '✓';
+            n.style.color = 'green';
+            n.style.paddingRight = '0px';
+            n.setAttribute('aria-checked', 'true');
+          }
+          else {
+            n.innerHTML = '✗';
+            n.style.color = 'red';
+            n.style.paddingRight = '0.22em';
+            n.setAttribute('aria-checked', 'false');
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.keyCode === 32) {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+      </script>
+
+     <h2>Example</h2>
+
+     <p><a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 2 on jsfiddle</a></p>
+
+     <div id="example">
+      <fieldset>
+        <legend>
+        Pizza Toppings
+        </legend>
+        
+        <label>
+          <input type="checkbox"/>
+
+          Green pepper
+        </label>
+        
+        <label>
+          <input type="checkbox"/>
+          Onion
+        </label>
+
+        <div role="checkbox" 
+             tabindex="0" 
+             aria-checked="false" 
+             onkeydown="keydownCheckbox(event)" 
+             onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Mushrooms
+        </div>
+
+      <div role="checkbox" 
+           tabindex="0" 
+           aria-checked="false"
+           onkeydown="keydownCheckbox(event)" 
+           onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Spinach
+        </div>
+
+      </fieldset>
+     </div>
+
+      <h2>HTML Source Code</h2>
+      
+      <pre><code id="sc1"></code></pre>
+
+      <h2>CSS Source Code</h2>
+      
+      <pre><code id="sc2"></code></pre>
+
+      <h2>Javascript Source Code</h2>
+      
+      <pre><code id="sc3"></code></pre>
+              
+      <script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
     </contents>
   </slide>
+
 
   <slide>
     <title>Notes on Using ARIA in HTML</title>
@@ -1059,35 +1192,103 @@
   <slide>
     <title>Disclosure (Hide/Show)</title>
     <contents>
-      
-      <p class="center"><a href="hide-show/hide-show.zip" target="_example">ZIP file of Hide/Show Example</a></p>
-      <p class="center"><a href="hide-show/hide-show.html" target="_example">Hide/Show Content Example</a></p>
-      
-      <h2>ARIA Features</h2>
-      <ul>
-        <li>Use <code>button</code> element, <code>input[type=button]</code> element or <code>role="button"</code> for identifying type of control to showing or hiding</li>
-        <li>Use <code>aria-expanded</code> to indicate whether content is displayed or not</li>
-        <li>Use <code>aria-controls</code> to identify the content the is shown or hidden</li>
-      </ul>
-      
-      <p class="center"><iframe height="600" width="97%" src="hide-show/hide-show.html"></iframe></p>      
+
+    <ul>
+      <li><a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Design Pattern: Disclosure (Show/Hide)</a></li>
+      <li><a href="http://w3c.github.io/aria-practices/examples/disclosure/disclosure-img-long-description.html">Example 1: Image Description</a></li>
+      <li><a href="http://w3c.github.io/aria-practices/examples/disclosure/disclosure-faq.html">Example 2: Answers to Frequently Asked Questions</a></li>
+    </ul>
+
+    <iframe src="http://w3c.github.io/aria-practices/#disclosure" 
+            title="ARIA Disclosure Example"     
+            width="98%"
+            height="600px"/> 
+    
     </contents>
   </slide>
   
   <slide>
-    <title>Example Widget: Slider</title>
+    <title>Example Widget: Menu Button</title>
     <contents>
-      <p class="center"><a href="slider/slider.zip" target="_example">ZIP file of Slider Example</a></p>
-      <p class="center"><a href="slider/slider.html" target="_example">ARIA Slider Example</a></p>
-      <h2>ARIA Features</h2>
-      <ul>
-        <li>Use <code>role=slider</code> to identify the widget is selecting a range of values</li>
-        <li>Use <code>aria-valuemin</code> to identify the minimum value</li>
-        <li>Use <code>aria-valuemax</code> to identify the maximum value</li>
-        <li>Use <code>aria-valuenow</code> to identify the current value</li>
-        <li>Use <code>aria-labelledby</code> to label the slider purpose</li>
-      </ul>
-      <p class="center"><iframe height="600" width="97%" src="slider/slider.html"></iframe></p>      
+    <ul>
+      <li><a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a></li>
+      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button/menu-button-actions.html">Example 1: Action Menu</a></li>
+      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a></li>
+      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a></li>
+    </ul>
+    <iframe src="http://w3c.github.io/aria-practices/#menubutton" 
+            title="ARIA Menubutton Example"     
+            width="98%"
+            height="600px"/> 
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Navigation Menu Design Options</title>
+    <contents>
+       <table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
+          <thead>
+            <tr>
+              <th>Technique</th>
+              <th>Keyboard Interaction</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Keyboard Enhancement</th>
+              <td>
+                <ul>
+                  <li><kbd>tab</kbd></li>
+                  <li><kbd>left arrow</kbd></li>
+                  <li><kbd>right arrow</kbd></li>
+                  <li><kbd>up arrow</kbd></li>
+                  <li><kbd>down arrow</kbd></li>
+                </ul>  
+              </td>
+              <td>
+                <ul>
+                  <li></li>
+                  <li>Example: <a href="">Illinois Department of Human Services</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                </ul>  
+              </td>
+              <td>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <ul>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                  <li><kbd></kbd></li>
+                </ul>  
+              </td>
+              <td>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
     </contents>
   </slide>
 
@@ -1100,11 +1301,27 @@
         <li>How to you decide what to call this widget?</li>
         <li>What is the keyboard interaction?</li>
       </ul>
-    </contents>
+      <iframe src="http://jongund.github.io/aria-examples/bootstrap-carousel/" 
+              title="ARIA Carousel Example"     
+              width="98%"
+              height="600px"/> 
+      </contents>
   </slide>
 
   <slide>
-    <title>ARIA Authoring Resources</title>
+    <title>The Need for ARIA Authoring Practices</title>
+    <contents>
+      <ul>
+        <li>ARIA is often confusing to developers and designers.</li>
+        <li>Improperly used ARIA markup can make web resources less accessible and break interoperability.</li>
+        <li>ARIA examples and usage in actual websites are incomplete or incorrectly use ARIA markup adding to confusion.</li>
+        <li>Lack of awareness of keyboard interaction support needed to make ARIA work properly.</li>
+      </ul>      
+    </contents>
+  </slide>
+
+   <slide>
+    <title>ARIA Authoring Practices</title>
     <contents>
       <ul>
         <li>Section 2: Design Patterns and Widgets</li>
@@ -1118,20 +1335,6 @@
     </contents>
   </slide>  
 
- <slide>
-    <title>The Need for ARIA Authoring Practices</title>
-    <contents>
-      <ul>
-        <li>ARIA is often confusing to developers and designers.</li>
-        <li>Improperly used ARIA markup can make web resources less accessible and break interoperability.</li>
-        <li>ARIA examples and usage in actual websites are incomplete or incorrectly use ARIA markup adding to confusion.</li>
-        <li>Lack of awareness of keyboard interaction support needed to make ARIA work properly.</li>
-      </ul>      
-    </contents>
-  </slide>
-  
-  
- 
 
   
   <slide>
