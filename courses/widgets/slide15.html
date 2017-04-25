@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Example Widget: Carousel</title>
+<title>Slide 15: Notes on Using ARIA in HTML</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,26 +38,35 @@
                       </a>
 </li>
 <li>
-<a href="slide39.html">Last
+<a href="slide42.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 15 of 39</div>
+<div class="navbar-text pull-right">Slide 15 of 42</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Example Widget: Carousel</h1>
-<p class="center">
-<a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Bootstrap.js Carousel</a>
+<h1 id="h1_title" class="title">Notes on Using ARIA in HTML</h1>
+<p>
+<a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a>
 </p>
-<h2>Questions</h2>
 <ul>
         
-<li>How to you decide what to call this widget?</li>
+<li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
         
-<li>What is the keyboard interaction?</li>
+<li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
+        
+<li>Don't define the native semantics of an eleemnt (e.g main[role=main]).</li>
+        
+<li>All interactive ARIA controls must be usable with the keyboard.</li>
+        
+<li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
+        
+<li>All interactive elements must have an accessible name.</li>
+        
+<li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
       
 </ul>
 </main>

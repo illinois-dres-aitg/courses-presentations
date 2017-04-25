@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: The Need for ARIA Authoring Practices</title>
+<title>Slide 17: Example Widget: Slider</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,28 +38,40 @@
                       </a>
 </li>
 <li>
-<a href="slide39.html">Last
+<a href="slide42.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 17 of 39</div>
+<div class="navbar-text pull-right">Slide 17 of 42</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">The Need for ARIA Authoring Practices</h1>
+<h1 id="h1_title" class="title">Example Widget: Slider</h1>
+<p class="center">
+<a href="slider/slider.zip" target="_example">ZIP file of Slider Example</a>
+</p>
+<p class="center">
+<a href="slider/slider.html" target="_example">ARIA Slider Example</a>
+</p>
+<h2>ARIA Features</h2>
 <ul>
         
-<li>ARIA is often confusing to developers and designers.</li>
+<li>Use <code>role=slider</code> to identify the widget is selecting a range of values</li>
         
-<li>Improperly used ARIA markup can make web resources less accessible and break interoperability.</li>
+<li>Use <code>aria-valuemin</code> to identify the minimum value</li>
         
-<li>ARIA examples and usage in actual websites are incomplete or incorrectly use ARIA markup adding to confusion.</li>
+<li>Use <code>aria-valuemax</code> to identify the maximum value</li>
         
-<li>Lack of awareness of keyboard interaction support needed to make ARIA work properly.</li>
+<li>Use <code>aria-valuenow</code> to identify the current value</li>
+        
+<li>Use <code>aria-labelledby</code> to label the slider purpose</li>
       
 </ul>
+<p class="center">
+<iframe height="600" width="97%" src="slider/slider.html"></iframe>
+</p>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
