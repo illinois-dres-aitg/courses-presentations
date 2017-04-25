@@ -177,7 +177,8 @@
          <li>Visual focus styling should be actively defined to make is easy to find what has focus (e.g. do NOT rely of browser focus styling of focus)</li>
         </ul>
 
-        <table class="table table-striped table-hover" aria-label="Tabindex values">
+        <h2 id="tabindex_values">Tabindex Values</h2>
+        <table class="table table-striped table-hover" aria-label="tabindex_values">
           <thead>
             <tr>
               <th>Value</th>
@@ -340,7 +341,7 @@ label:hover,
 
      <p><a href="https://jsfiddle.net/jongund/ksq3tqdz/" target="_jsfiddle">Checkbox example on jsfiddle</a></p>
 
-     <div id="example" style="margin-top: 0.5em; padding: 0.5em; background-color: #f9f2f4">
+     <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
@@ -405,6 +406,277 @@ label:hover,
    </contents>
   </slide>
 
+  <slide>
+    <title>Part 1 Responding to the keyboard</title>
+    <style id="style">
+      fieldset {
+        border-color: #EEE; 
+        width: 10em;
+      }
+
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      label input {
+        margin-right: 0.5em;
+      }
+
+      div[role="checkbox"] {
+        margin-bottom: 0.25em;
+        margin-left: 0.25em;      
+      }
+
+      div[role="checkbox"] span {
+        margin-right: 0.25em;
+      }
+    </style>
+    <contents>
+      <ul>
+        <li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
+        <li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
+      </ul>
+
+      <script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          var n = node.firstElementChild;
+          if (n.innerHTML.indexOf('✗') &gt;= 0) {
+            n.innerHTML = '✓';
+            n.style.color = 'green';
+            n.style.paddingRight = '0px';
+          }
+          else {
+            n.innerHTML = '✗';
+            n.style.color = 'red';
+            n.style.paddingRight = '0.22em';
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.keyCode === 32) {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+      </script>
+
+     <h2>Example</h2>
+
+     <p><a href="https://jsfiddle.net/jongund/6tk720rt/" target="_jsfiddle">Part 1 on jsfiddle</a></p>
+
+     <div id="example">
+      <fieldset>
+        <legend>
+        Pizza Toppings
+        </legend>
+        
+        <label>
+          <input type="checkbox"/>
+
+          Green pepper
+        </label>
+        
+        <label>
+          <input type="checkbox"/>
+          Onion
+        </label>
+
+        <div role="checkbox" 
+             tabindex="0" 
+             aria-checked="false" 
+             onkeydown="keydownCheckbox(event)" 
+             onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Mushrooms
+        </div>
+
+      <div role="checkbox" 
+           tabindex="0" 
+           aria-checked="false"
+           onkeydown="keydownCheckbox(event)" 
+           onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Spinach
+        </div>
+
+      </fieldset>
+     </div>
+
+      <h2>HTML Source Code</h2>
+      
+      <pre><code id="sc1"></code></pre>
+
+      <h2>CSS Source Code</h2>
+      
+      <pre><code id="sc2"></code></pre>
+
+      <h2>Javascript Source Code</h2>
+      
+      <pre><code id="sc3"></code></pre>
+              
+      <script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Part 2 Adding role and checked state</title>
+    <style id="style">
+      fieldset {
+        border-color: #EEE; 
+        width: 10em;
+      }
+
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      label input {
+        margin-right: 0.5em;
+      }
+
+      div[role="checkbox"] {
+        margin-bottom: 0.25em;
+        margin-left: 0.25em;      
+      }
+
+      div[role="checkbox"] span {
+        margin-right: 0.25em;
+      }
+    </style>
+    <contents>
+      <ul>
+        <li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
+        <li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
+      </ul>
+
+      <script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          var n = node.firstElementChild;
+          if (n.innerHTML.indexOf('✗') &gt;= 0) {
+            n.innerHTML = '✓';
+            n.style.color = 'green';
+            n.style.paddingRight = '0px';
+          }
+          else {
+            n.innerHTML = '✗';
+            n.style.color = 'red';
+            n.style.paddingRight = '0.22em';
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.keyCode === 32) {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+      </script>
+
+     <h2>Example</h2>
+
+     <p><a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 2 on jsfiddle</a></p>
+
+     <div id="example">
+      <fieldset>
+        <legend>
+        Pizza Toppings
+        </legend>
+        
+        <label>
+          <input type="checkbox"/>
+
+          Green pepper
+        </label>
+        
+        <label>
+          <input type="checkbox"/>
+          Onion
+        </label>
+
+        <div role="checkbox" 
+             tabindex="0" 
+             aria-checked="false" 
+             onkeydown="keydownCheckbox(event)" 
+             onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Mushrooms
+        </div>
+
+      <div role="checkbox" 
+           tabindex="0" 
+           aria-checked="false"
+           onkeydown="keydownCheckbox(event)" 
+           onclick="clickCheckbox(event)">
+          <span style="color: red; padding-right: 0.22em;">✗</span>
+          Spinach
+        </div>
+
+      </fieldset>
+     </div>
+
+      <h2>HTML Source Code</h2>
+      
+      <pre><code id="sc1"></code></pre>
+
+      <h2>CSS Source Code</h2>
+      
+      <pre><code id="sc2"></code></pre>
+
+      <h2>Javascript Source Code</h2>
+      
+      <pre><code id="sc3"></code></pre>
+              
+      <script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    </contents>
+  </slide>
   <slide>
     <title>Example Widget: ARIA Checkbox with Focus Styling</title>
     <contents>
