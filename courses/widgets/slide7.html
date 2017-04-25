@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Part 2 Adding role and checked state</title>
+<title>Slide 7: Example Widget: ARIA Checkbox</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -36,6 +36,39 @@
       div[role="checkbox"] span {
         margin-right: 0.25em;
       }
+
+      div[role="checkbox"][aria-checked="true"] span {
+        margin-right: 0.135em;
+      }
+
+      div[role="checkbox"] span:before {
+        content: '✗';
+        color: red;
+      }
+
+      div[role="checkbox"][aria-checked="true"] span:before {
+        content: '✓';
+        color: green;
+        font-size: 90%;
+      }
+
+      label,
+      [role="checkbox"] {
+        border: thin solid transparent;
+        width: 10em;
+      }
+
+
+      label.focus,
+      [role="checkbox"]:focus {
+        border-color: #999;
+        background-color: #DDE;
+      }
+
+      label:hover,
+      [role="checkbox"]:hover {
+        background-color: #CCD; 
+      }
     </style>
 </head>
 <body>
@@ -65,36 +98,24 @@
                       </a>
 </li>
 <li>
-<a href="slide15.html">Last
+<a href="slide36.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 15</div>
+<div class="navbar-text pull-right">Slide 7 of 36</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Part 2 Adding role and checked state</h1>
-<ul>
-        
-<li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
-        
-<li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
-      
-</ul>
+<h1 id="h1_title" class="title">Example Widget: ARIA Checkbox</h1>
 <script id="script" type="text/javascript">
         function toggleCheckbox(node) {
-          var n = node.firstElementChild;
-          if (n.innerHTML.indexOf('✗') >= 0) {
-            n.innerHTML = '✓';
-            n.style.color = 'green';
-            n.style.paddingRight = '0px';
+          if (node.getAttribute('aria-checked') === 'true') {
+            node.setAttribute('aria-checked', 'false');
           }
           else {
-            n.innerHTML = '✗';
-            n.style.color = 'red';
-            n.style.paddingRight = '0.22em';
+            node.setAttribute('aria-checked', 'true');
           }
         }
 
@@ -111,15 +132,48 @@
         function clickCheckbox(event) {
           var cb = event.currentTarget;
           toggleCheckbox(cb);
-
           event.stopPropagation();
           event.preventDefault();
         }
 
+        function checkboxFocus(event) {
+          event.currentTarget.parentNode.classList.add('focus');
+        }
+
+        function checkboxBlur(event) {
+          event.currentTarget.parentNode.classList.remove('focus');
+        }
       </script>
+<h2>Features</h2>
+<ul>
+       
+<li>Responds to mouse events using <code>onClick</code> event.</li>
+       
+<li>Responds to <kbd>space</kbd> keyboard event using <code>onKeyDown</code> event.</li>
+       
+<li>
+<code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page.</li>
+       
+<li>
+<code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox".</li>
+       
+<li>
+<code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked".</li>
+       
+<li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element.</li>
+       
+<li>
+<code>aria-hidden</code> attribute hides the characters used for indicating state (i.e. <span style="color: red">✗</span> and <span style="color: green">✓</span>) from being included in the accessible name calculation.</li>
+       
+<li>CSS attribute selectors are used to keep the visual indication of checked state snychronized with accessibility API.</li>
+       
+<li>
+<code>onFocus</code> and <code>onBlur</code> event handlers are used on standard checkboxes to provide visual indication of keyboard focus.</li>
+     
+</ul>
 <h2>Example</h2>
 <p>
-<a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 2 on jsfiddle</a>
+<a href="https://jsfiddle.net/jongund/ksq3tqdz/" target="_jsfiddle">Checkbox example on jsfiddle</a>
 </p>
 <div id="example">
       
@@ -130,27 +184,27 @@
         </legend>
         
         <label>
-          <input type="checkbox">
+          <input type="checkbox" onfocus="checkboxFocus(event)" onBlur="checkboxBlur(event)">
 
           Green pepper
         </label>
         
         <label>
-          <input type="checkbox">
+          <input type="checkbox" onfocus="checkboxFocus(event)" onBlur="checkboxBlur(event)">
           Onion
         </label>
 
         
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span style="color: red; padding-right: 0.22em;">✗</span>
+<span aria-hidden="true"></span>
           Mushrooms
         </div>
 
       
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span style="color: red; padding-right: 0.22em;">✗</span>
+<span aria-hidden="true"></span>
           Spinach
         </div>
 

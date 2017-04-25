@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 4: Tabindex and keyboard focus</title>
+<title>Slide 4: ARIA Contract with Browsers and Assistive Technologies</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,113 +38,31 @@
                       </a>
 </li>
 <li>
-<a href="slide15.html">Last
+<a href="slide36.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 4 of 15</div>
+<div class="navbar-text pull-right">Slide 4 of 36</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Tabindex and keyboard focus</h1>
+<h1 id="h1_title" class="title">ARIA Contract with Browsers and Assistive Technologies</h1>
+<h2>Browsers</h2>
 <ul>
-          
-<li>
-              
-<a href="https://www.w3.org/TR/html4/interact/forms.html#adef-tabindex" target="_specification">
-                HTM4 tabindex requirements
-              </a>
-          
-</li>
-          
-<li>
-              
-<a href="https://www.w3.org/TR/html5/editing.html#focus" target="_specification">
-                HTM5 focus and tabindex requirements
-              </a>
-          
-</li>
-          
-<li>Support in <strong>all</strong> modern major browsers</li>
-         
-<li>Visual focus styling should be actively defined to make is easy to find what has focus (e.g. do NOT rely of browser focus styling of focus)</li>
         
-</ul>
-<h2 id="tabindex_values">Tabindex Values</h2>
-<table class="table table-striped table-hover" aria-label="tabindex_values">
-          
-<thead>
-            
-<tr>
-              
-<th>Value</th>
-              <th>Description</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-            
-<tr>
-              
-<td>1</td>
-              <td>
-                
-<ul>
-                  
-<li>Support keyboard focus/blur events.</li>
-                  
-<li>Not included in the tab order of the page.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>0</td>
-              <td>
-                
-<ul>
-                  
-<li>Support keyboard focus/blur events.</li>
-                  
-<li>Included in the tab order of the page.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>&gt; 0</td>
-              <td>
-                
-<ul>
-                  
-<li>Support keyboard focus/blur events.</li>
-                  
-<li>Defines the tab order of the page.</li>
-                  
-<li>
-<strong>Note:</strong> This technique is not recommended due to browser incompatibilities and unpredicatable focus behaviors.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-          
-</tbody>
+<li>The use of ARIA markup does not affect browser behavior or rendering.</li>
         
-</table>
+<li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+      
+</ul>
+<h2>Asssitive Technologies</h2>
+<ul>
+        
+<li>Do not specify what assistive technologies will do with the information.</li>
+      
+</ul>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

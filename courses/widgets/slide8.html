@@ -2,14 +2,41 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Example Widget: ARIA Checkbox with Focus Styling</title>
+<title>Slide 8: Part 1 Responding to the keyboard</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+      fieldset {
+        border-color: #EEE; 
+        width: 10em;
+      }
+
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      label input {
+        margin-right: 0.5em;
+      }
+
+      div[role="checkbox"] {
+        margin-bottom: 0.25em;
+        margin-left: 0.25em;      
+      }
+
+      div[role="checkbox"] span {
+        margin-right: 0.25em;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -38,38 +65,118 @@
                       </a>
 </li>
 <li>
-<a href="slide15.html">Last
+<a href="slide36.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 15</div>
+<div class="navbar-text pull-right">Slide 8 of 36</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Example Widget: ARIA Checkbox with Focus Styling</h1>
-<p class="center">
-<a href="checkbox/checkbox.zip" target="_example">ZIP file of Checkbox Examples</a>
-</p>
-<p class="center">
-<a href="checkbox/checkbox-focus.html" target="_example">ARIA checkbox examples with focus styling</a>
-</p>
-<h2>Additional Features</h2>
+<h1 id="h1_title" class="title">Part 1 Responding to the keyboard</h1>
 <ul>
         
-<li>Use <code>:focus</code> pseudo element focusing only focuses the checkbox and not the label</li>
+<li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
         
-<li>Use <code>onFocus</code> and <code>onBlur</code> events to add and remove class for identifying focus</li>
-        
-<li>Use <code>:hover</code> pseudo class to style checkboxes for mouse overs</li>
-        
-<li>Standard checkbox 3 doesn't have label so you have to click directly on the checkbox image to change state</li>
+<li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
       
 </ul>
-<p class="center">
-<iframe height="600" width="97%" src="checkbox/checkbox-focus.html"></iframe>
+<script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          var n = node.firstElementChild;
+          if (n.innerHTML.indexOf('✗') >= 0) {
+            n.innerHTML = '✓';
+            n.style.color = 'green';
+            n.style.paddingRight = '0px';
+          }
+          else {
+            n.innerHTML = '✗';
+            n.style.color = 'red';
+            n.style.paddingRight = '0.22em';
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.keyCode === 32) {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+      </script>
+<h2>Example</h2>
+<p>
+<a href="https://jsfiddle.net/jongund/6tk720rt/" target="_jsfiddle">Part 1 on jsfiddle</a>
 </p>
+<div id="example">
+      
+<fieldset>
+        
+<legend>
+        Pizza Toppings
+        </legend>
+        
+        <label>
+          <input type="checkbox">
+
+          Green pepper
+        </label>
+        
+        <label>
+          <input type="checkbox">
+          Onion
+        </label>
+
+        
+<div tabindex="0" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+          
+<span style="color: red; padding-right: 0.22em;">✗</span>
+          Mushrooms
+        </div>
+
+      
+<div tabindex="0" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+          
+<span style="color: red; padding-right: 0.22em;">✗</span>
+          Spinach
+        </div>
+
+      
+</fieldset>
+     
+</div>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
