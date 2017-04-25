@@ -49,23 +49,60 @@
 <main id="content" class="container">
 <a name="main" id="main"></a>
 <h1 id="h1_title" class="title">Accessible name calculation</h1>
-<ul>
+<p>
+<a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>
+</p>
+<table class="table table-striped table-hover" aria-label="Accessible name calculation summary">
+          
+<thead>
+            
+<tr>
+              
+<th>Priority</th>
+              <th>Technique</th>
+              <th>Description</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<td>1</td>
+              <td><code>aria-labelledby</code> attribute</td>
+              <td></td>
+            
+</tr>
+            
+<tr>
+              
+<td>2</td>
+              <td><code>aria-label</code> attribute</td>
+              <td></td>
+            
+</tr>
+            
+<tr>
+              
+<td>3</td>
+              <td>child text content</td>
+              <td></td>
+            
+</tr>
+            
+<tr>
+              
+<td>4</td>
+              <td><code>title</code> attribute</td>
+              <td></td>
+            
+</tr>
+          
+</tbody>
         
-<li>Child text nodes of <code>a</code> element</li>
-        
-<li>
-<code>aria-label</code> attribute</li>
-        
-<li>
-<code>aria-labelledby</code> attribute</li>
-        
-<li>
-<code>title</code> attribute (rare)</li>
-        
-<li>
-<code>alt</code> attribute for <code>img</code> elements</li>
-      
-</ul>
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
