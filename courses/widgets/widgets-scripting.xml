@@ -1190,7 +1190,7 @@
   </slide>
 
   <slide>
-    <title>Disclosure (Hide/Show)</title>
+    <title>Design Pattern: Disclosure (Hide/Show)</title>
     <contents>
 
     <ul>
@@ -1208,7 +1208,7 @@
   </slide>
   
   <slide>
-    <title>Example Widget: Menu Button</title>
+    <title>Design Pattern: Menu Button</title>
     <contents>
     <ul>
       <li><a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a></li>
@@ -1224,7 +1224,7 @@
   </slide>
 
   <slide>
-    <title>Navigation Menu Design Options</title>
+    <title>Design Pattern: Navigation Menu Options</title>
     <contents>
        <table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
           <thead>
