@@ -881,6 +881,21 @@
   </slide>
 
   <slide>
+    <title>Notes on Using ARIA in HTML</title>
+    <contents>
+      <p><a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a></p>
+      <ul>
+        <li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
+        <li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
+        <li>Don't define the native semantics of an eleemnt (e.g main[role=main]).</li>
+        <li>All interactive ARIA controls must be usable with the keyboard.</li>
+        <li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
+        <li>All interactive elements must have an accessible name.</li>
+        <li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
+      </ul>
+    </contents>
+  </slide>
+  <slide>
     <title>Disclosure (Hide/Show)</title>
     <contents>
       
@@ -1175,21 +1190,7 @@
     </contents>
   </slide>
     
-  <slide>
-    <title>Notes on Using ARIA in HTML</title>
-    <contents>
-      <p><a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a></p>
-      <ul>
-        <li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
-        <li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
-        <li>Don't define the native semantics of an eleemnt (e.g main[role=main]).</li>
-        <li>All interactive ARIA controls must be usable with the keyboard.</li>
-        <li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
-        <li>All interactive elements must have an accessible name.</li>
-        <li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
-      </ul>
-    </contents>
-  </slide>
+
 
   <slide>
     <title>Open Source Tools and Training</title>

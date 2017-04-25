@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 14: Example Widget: Carousel</title>
+<title>Slide 14: Example Widget: Slider</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -48,18 +48,30 @@
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Example Widget: Carousel</h1>
+<h1 id="h1_title" class="title">Example Widget: Slider</h1>
 <p class="center">
-<a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Bootstrap.js Carousel</a>
+<a href="slider/slider.zip" target="_example">ZIP file of Slider Example</a>
 </p>
-<h2>Questions</h2>
+<p class="center">
+<a href="slider/slider.html" target="_example">ARIA Slider Example</a>
+</p>
+<h2>ARIA Features</h2>
 <ul>
         
-<li>How to you decide what to call this widget?</li>
+<li>Use <code>role=slider</code> to identify the widget is selecting a range of values</li>
         
-<li>What is the keyboard interaction?</li>
+<li>Use <code>aria-valuemin</code> to identify the minimum value</li>
+        
+<li>Use <code>aria-valuemax</code> to identify the maximum value</li>
+        
+<li>Use <code>aria-valuenow</code> to identify the current value</li>
+        
+<li>Use <code>aria-labelledby</code> to label the slider purpose</li>
       
 </ul>
+<p class="center">
+<iframe height="600" width="97%" src="slider/slider.html"></iframe>
+</p>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
