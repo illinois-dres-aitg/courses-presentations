@@ -1297,10 +1297,7 @@
               <td>
                 <ul>
                   <li><kbd>tab</kbd></li>
-                  <li><kbd>left arrow</kbd></li>
-                  <li><kbd>right arrow</kbd></li>
-                  <li><kbd>up arrow</kbd></li>
-                  <li><kbd>down arrow</kbd></li>
+                  <li><kbd>space/enter</kbd></li>
                 </ul>  
               </td>
               <td>
@@ -1325,7 +1322,10 @@
               <td>
                 <ul>
                   <li><kbd>tab</kbd></li>
-                  <li><kbd>space/enter</kbd></li>
+                  <li><kbd>left arrow</kbd></li>
+                  <li><kbd>right arrow</kbd></li>
+                  <li><kbd>up arrow</kbd></li>
+                  <li><kbd>down arrow</kbd></li>
                 </ul>  
               </td>
               <td>
@@ -1334,7 +1334,7 @@
               <td>
                 <ul>
                   <li><kbd>tab</kbd> moves into and out of each disclosure button.</li>
-                  <li>Cursor keybs move between pull down menus and menuitems.dri</li>
+                  <li>Cursor keys move between pull down menus and menuitems.dri</li>
                   <li>Examples: 
                     <ul>
                       <li><a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html">ARIA Authoring Practices Example</a></li>
