@@ -937,7 +937,10 @@
              aria-checked="false" 
              onkeydown="keydownCheckbox(event)" 
              onclick="clickCheckbox(event)">
-          <span style="color: red; padding-right: 0.22em;">✗</span>
+          <span aria-hidden="true" 
+                style="color: red; padding-right: 0.22em;">
+            ✗
+          </span>
           Mushrooms
         </div>
 
@@ -946,7 +949,10 @@
            aria-checked="false"
            onkeydown="keydownCheckbox(event)" 
            onclick="clickCheckbox(event)">
-          <span style="color: red; padding-right: 0.22em;">✗</span>
+          <span aria-hidden="true"  
+                style="color: red; padding-right: 0.22em;">
+            ✗
+          </span>
           Spinach
         </div>
 
@@ -1106,7 +1112,7 @@
              aria-checked="false" 
              onkeydown="keydownCheckbox(event)" 
              onclick="clickCheckbox(event)">
-          <span style="color: red; padding-right: 0.22em;">✗</span>
+          <span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Mushrooms
         </div>
 
@@ -1115,7 +1121,7 @@
            aria-checked="false"
            onkeydown="keydownCheckbox(event)" 
            onclick="clickCheckbox(event)">
-          <span style="color: red; padding-right: 0.22em;">✗</span>
+          <span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Spinach
         </div>
 
