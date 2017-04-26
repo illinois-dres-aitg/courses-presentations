@@ -1248,7 +1248,7 @@
                 </ul>  
               </td>
               <td>
-                <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation"><code>navigation</code> landmark</a>
+                <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation" target="_specification"><code>navigation</code> landmark</a>
               </td>
               <td>
                 <ul>
@@ -1258,9 +1258,9 @@
                   <li>Uses ARIA <code>navigation</code> landmarks.</li>
                   <li>Examples: 
                     <ul>
-                      <li><a href="http://www.dhs.state.il.us">Illinois Department of Human Services</a></li>
-                      <li><a href="http://illinois.edu/">University of Illinois Home Page</a></li>
-                      <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/">Adobe Mega Menu</a></li>
+                      <li><a href="http://www.dhs.state.il.us" target="_example">Illinois Department of Human Services</a></li>
+                      <li><a href="http://illinois.edu/" target="_example">University of Illinois Home Page</a></li>
+                      <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/" target="_example">Adobe Mega Menu</a></li>
                     </ul>  
                   </li>  
                 </ul>
@@ -1276,7 +1276,7 @@
                 </ul>  
               </td>
               <td>
-                <a href="http://w3c.github.io/aria-practices/#menubutton">Menu Button Design Pattern</a>
+                <a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
               </td>
               <td>
                 <ul>
@@ -1285,8 +1285,8 @@
                   <li>Uses <code>button</code>, <code>menu</code> and <code>menuitem</code>  widget roles.</li>
                   <li>Examples: 
                     <ul>
-                      <li><a href="http://fae.disability.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
-                      <li><a href="http://citl.illinois.edu/">Illinois Center for Innovation in Teaching &amp; Learning</a></li>
+                      <li><a href="http://fae.disability.illinois.edu" target="_example">Functional Accessibility Evaluator 2.0</a></li>
+                      <li><a href="http://citl.illinois.edu/" target="_example">Illinois Center for Innovation in Teaching &amp; Learning</a></li>
                     </ul>  
                   </li>  
                 </ul>
@@ -1310,8 +1310,8 @@
                   <li><kbd>tab</kbd> and cursor keys move focus between disclosed links.</li>
                   <li>Examples: 
                     <ul>
-                      <li><a href="http://admissions.illinois.edu">Illinois Admissions</a></li>
-                      <li><a href="http://education.illinois.edu/">Illinois College of Education</a></li>
+                      <li><a href="http://admissions.illinois.edu" target="_example">Illinois Admissions</a></li>
+                      <li><a href="http://education.illinois.edu/" target="_example">Illinois College of Education</a></li>
                     </ul>  
                   </li>  
                 </ul>
@@ -1337,7 +1337,7 @@
                   <li>Cursor keys move between pull down menus and menuitems.dri</li>
                   <li>Examples: 
                     <ul>
-                      <li><a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html">ARIA Authoring Practices Example</a></li>
+                      <li><a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html" target="_example">ARIA Authoring Practices Example</a></li>
                     </ul>  
                   </li>  
                 </ul>
