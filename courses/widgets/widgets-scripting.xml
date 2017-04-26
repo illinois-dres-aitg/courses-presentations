@@ -1293,7 +1293,7 @@
   </slide>
 
   <slide>
-    <title>Example Widget: Carousel</title>
+    <title>Design Pattern: Image Carousel</title>
     <contents>
       <p class="center"><a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Bootstrap.js Carousel</a></p>
       <h2>Questions</h2>
@@ -1348,38 +1348,6 @@
         <li>Examples</li>
       </ul>
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex" width="98%" height="600px"></iframe>      
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Section 2.15: Menu Button</title>
-    <contents>
-      <ul style="margin-bottom: 2em">
-        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton">ARIA Authoring Practices: Menu Button</a></li>
-        <li>Desciption of example.</li>
-        <li>Links to related examples.</li>
-        <li>Working example.</li>
-        <li>Keyboard interaction.</li>
-        <li>Use of roles properties and states.</li>
-        <li>Source code.</li>
-      </ul>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton" width="98%" height="600px"></iframe>      
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Menu Button Example</title>
-    <contents>
-      <ul style="margin-bottom: 2em">
-        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-1/menu-button-1.html">Menu Button Example</a></li>
-        <li>Desciption of example.</li>
-        <li>Links to related examples.</li>
-        <li>Working example.</li>
-        <li>Keyboard interaction.</li>
-        <li>Use of roles properties and states.</li>
-        <li>Source code.</li>
-      </ul>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-1/menu-button-1.html" width="98%" height="600px"></iframe>      
     </contents>
   </slide>
 
@@ -1532,14 +1500,6 @@
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational" width="98%" height="600px"></iframe>      
     </contents>
   </slide>
-    
-  <slide>
-    <title>Accessible Name and Description: Computation and API Mappings 1.1</title>
-    <contents>
-      <p><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and API Mappings 1.1</a></p>
-      <iframe src="https://www.w3.org/TR/accname-aam-1.1/ " width="98%" height="600px"></iframe>      
-    </contents>
-  </slide>
   
   <slide>
     <title>Next Steps for ARIA Authoring Practices Guide</title>
@@ -1555,16 +1515,16 @@
   </slide>
     
   <slide>
-    <title>Open Source Tools and Training</title>
+    <title>Open Source Tools</title>
     <contents>
       <ul>
         <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a></li>
         <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
         <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
-        <li><a href="http://go.illinois.edu/a11y-badges">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
+
   <slide>
     <title>Functional Accessibility Evaluator (FAE) 2.0</title>
     <contents>
@@ -1588,8 +1548,7 @@
         <li>Page rule result summaries</li>
         <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
         <li>Archive and share reports</li>
-      </ul>
-      
+      </ul>      
     </contents>
   </slide>   
 
@@ -1635,6 +1594,12 @@
           </ul>
         </li>
       </ul>  
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
     </contents>
   </slide>  
 
