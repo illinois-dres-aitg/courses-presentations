@@ -36,6 +36,39 @@
       div[role="checkbox"] span {
         margin-right: 0.25em;
       }
+
+      div[role="checkbox"][aria-checked="true"] span {
+        margin-right: 0.135em;
+      }
+
+      div[role="checkbox"] span:before {
+        content: '✗';
+        color: red;
+      }
+
+      div[role="checkbox"][aria-checked="true"] span:before {
+        content: '✓';
+        color: green;
+        font-size: 90%;
+      }
+
+      label,
+      [role="checkbox"] {
+        border: thin solid transparent;
+        width: 10em;
+      }
+
+
+      label.focus,
+      [role="checkbox"]:focus {
+        border-color: #999;
+        background-color: #DDE;
+      }
+
+      label:hover,
+      [role="checkbox"]:hover {
+        background-color: #CCD; 
+      }
     </style>
 </head>
 <body>
@@ -89,17 +122,10 @@
 </ul>
 <script id="script" type="text/javascript">
         function toggleCheckbox(node) {
-          var n = node.firstElementChild;
           if (n.innerHTML.indexOf('✗') >= 0) {
-            n.innerHTML = '✓';
-            n.style.color = 'green';
-            n.style.paddingRight = '0px';
             n.setAttribute('aria-checked', 'true');
           }
           else {
-            n.innerHTML = '✗';
-            n.style.color = 'red';
-            n.style.paddingRight = '0.22em';
             n.setAttribute('aria-checked', 'false');
           }
         }
@@ -149,14 +175,14 @@
         
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span style="color: red; padding-right: 0.22em;">✗</span>
+<span></span>
           Mushrooms
         </div>
 
       
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span style="color: red; padding-right: 0.22em;">✗</span>
+<span></span>
           Spinach
         </div>
 
