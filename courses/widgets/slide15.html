@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Accessible Description Calculation</title>
+<title>Slide 15: Accessible Name Calculation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,29 +38,27 @@
                       </a>
 </li>
 <li>
-<a href="slide48.html">Last
+<a href="slide49.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 15 of 48</div>
+<div class="navbar-text pull-right">Slide 15 of 49</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Accessible Description Calculation</h1>
+<h1 id="h1_title" class="title">Accessible Name Calculation</h1>
 <ul>
           
 <li>
 <a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>
 </li>
           
-<li>Accessible description information provides more informaiton about a form control, link or aria enabled widget.</li>
-          
-<li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
+<li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
         
 </ul>
-<h2 id="heading_ant">Accessible Description Techniques</h2>
+<h2 id="heading_ant">Accessible Name Techniques</h2>
 <table class="table table-striped table-hover" aria-labelledby="heading_ant">
           
 <thead>
@@ -80,14 +78,14 @@
 <tr>
               
 <td>1</td>
-              <td><code>aria-describedby</code></td>
+              <td><code>aria-labelledby</code></td>
               <td>
                 
 <ul>
                   
-<li>The <code>aria-describedby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
+<li>The <code>aria-labelledby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
                   
-<li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
+<li>Text content of referenced elements are concatenated to compute the accessible name.</li>
                   
 <li>Typically references identify visible text on the screen.</li>
                 
@@ -100,12 +98,48 @@
 <tr>
               
 <td>2</td>
+              <td><code>aria-label</code></td>
+              <td>
+                
+<ul>
+                  
+<li>The <code>aria-label</code> text content defines the accessible name.</li>
+                
+</ul>  
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>3</td>
+              <td>text content</td>
+              <td>
+                
+<ul>
+                  
+<li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
+                  
+<li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
+                  
+<li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
+                
+</ul>  
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>4</td>
               <td><code>title</code></td>
               <td>
                 
 <ul>
                   
-<li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
+<li>If no other source of an accessible name is found and the element has a <code>title</code> attribute, the content of the <code>title</code> attribute will used to define the accessible name.</li>
                 
 </ul>
               

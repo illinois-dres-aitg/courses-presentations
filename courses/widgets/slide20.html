@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 20: Part 3: Focus and hover styling</title>
+<title>Slide 20: Part 2: Adding role, checked state and accessible name</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -36,24 +36,6 @@
       div[role="checkbox"] span {
         margin-right: 0.25em;
       }
-
-      label,
-      [role="checkbox"] {
-        border: thin solid transparent;
-        width: 10em;
-      }
-
-
-      label.focus,
-      [role="checkbox"]:focus {
-        border-color: #999;
-        background-color: #DDE;
-      }
-
-      label:hover,
-      [role="checkbox"]:hover {
-        background-color: #CCD; 
-      }
     </style>
 </head>
 <body>
@@ -83,30 +65,26 @@
                       </a>
 </li>
 <li>
-<a href="slide48.html">Last
+<a href="slide49.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 20 of 48</div>
+<div class="navbar-text pull-right">Slide 20 of 49</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Part 3: Focus and hover styling</h1>
+<h1 id="h1_title" class="title">Part 2: Adding role, checked state and accessible name</h1>
 <ul>
         
-<li>
-<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
+<li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
         
-<li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
+<li>Adding <code>aria-checked</code> attribute.</li>
         
-<li>
-<code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
+<li>Accessible name from text content.</li>
         
-<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
-        
-<li>Styling background color also makes the change in focus much easier to detect visually.</li>       
+<li>Removing state character from accessible name using <code>aria-hidden</code>.</li>
       
 </ul>
 <script id="script" type="text/javascript">
@@ -144,17 +122,10 @@
           event.preventDefault();
         }
 
-        function checkboxFocus(event) {
-          event.currentTarget.parentNode.classList.add('focus');
-        }
-
-        function checkboxBlur(event) {
-          event.currentTarget.parentNode.classList.remove('focus');
-        }
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://jsfiddle.net/jongund/nwgvkznr/" target="_jsfiddle">Part 3 on jsfiddle</a>
+<a href="https://jsfiddle.net/jongund/qvtv0swc/" target="_jsfiddle">Part 2 on jsfiddle</a>
 </p>
 <div id="example">
       
@@ -165,12 +136,13 @@
         </legend>
         
         <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+          <input type="checkbox">
+
           Green pepper
         </label>
         
         <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+          <input type="checkbox">
           Onion
         </label>
 
