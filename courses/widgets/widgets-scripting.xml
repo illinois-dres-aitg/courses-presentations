@@ -895,7 +895,7 @@
   </slide>
 
  <slide>
-    <title>Part 3: CSS attribute selectors and focus styling</title>
+    <title>Part 3: Focus and hover styling</title>
     <style id="style">
       fieldset {
         border-color: #EEE; 
@@ -923,13 +923,32 @@
       div[role="checkbox"] span {
         margin-right: 0.25em;
       }
+
+      label,
+      [role="checkbox"] {
+        border: thin solid transparent;
+        width: 10em;
+      }
+
+
+      label.focus,
+      [role="checkbox"]:focus {
+        border-color: #999;
+        background-color: #DDE;
+      }
+
+      label:hover,
+      [role="checkbox"]:hover {
+        background-color: #CCD; 
+      }
     </style>
     <contents>
       <ul>
-        <li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
-        <li>Adding <code>aria-checked</code> attribute.</li>
-        <li>Accessible name from text content.</li>
-        <li>Removing state character from accessible name using <code>aria-hidden</code>.</li>
+        <li><code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
+        <li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
+        <li><code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
+        <li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
+        <li>Styling background color also makes the change in focus much easier to detect visually.</li>       
       </ul>
 
       <script id="script" type="text/javascript">
@@ -967,6 +986,13 @@
           event.preventDefault();
         }
 
+        function checkboxFocus(event) {
+          event.currentTarget.parentNode.classList.add('focus');
+        }
+
+        function checkboxBlur(event) {
+          event.currentTarget.parentNode.classList.remove('focus');
+        }
       </script>
 
      <h2>Example</h2>
