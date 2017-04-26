@@ -1127,11 +1127,8 @@
     </style>
     <contents>
       <ul>
-        <li><code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
-        <li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
-        <li><code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
-        <li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
-        <li>Styling background color also makes the change in focus much easier to detect visually.</li>       
+        <li>Using CSS attribute selectors and CSS <code>content</code> property to synchronize visual and aria states.</li>
+        <li>Use of CSS <code>content</code> property supports high contrast browser settings, unike the use of CSS <code>background-image</code>.</li>
       </ul>
 
       <script id="script" type="text/javascript">
