@@ -871,7 +871,7 @@
         <li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
         <li>Adding <code>aria-checked</code> attribute.</li>
         <li>Accessible name from text content.</li>
-        <li>Removing state character from accessible name using <code>aria-hidden</code>.</li>
+        <li>Removing state character (e.g. <span style="color: red">✗</span>) from accessible name using <code>aria-hidden</code>.</li>
       </ul>
 
       <script id="script" type="text/javascript">
