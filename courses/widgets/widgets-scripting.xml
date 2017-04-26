@@ -1503,7 +1503,11 @@
   <slide>
     <title>Design Pattern: Image Carousel</title>
     <contents>
-      <p class="center"><a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Bootstrap.js Carousel</a></p>
+      <ul>
+        <li><a href="http://will.illinois.edu">Will Radio and TV: Carousel Image Rotator</a></li>
+        <li><a href="http://citl.illinois.edu">Center for Innovate Teaching and Learning: Carousel Image Rotator</a></li>
+        <li><a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Carousel Issues and Bootstrap.js Solution</a></li>
+      </ul>
       <h2>Questions</h2>
       <ul>
         <li>How to you decide what to call this widget?</li>
