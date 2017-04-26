@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 25: Section 4: Developing a Keyboard Inteface</title>
+<title>Slide 25: Design Pattern: Navigation Menu Options</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,29 +38,279 @@
                       </a>
 </li>
 <li>
-<a href="slide41.html">Last
+<a href="slide48.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 25 of 41</div>
+<div class="navbar-text pull-right">Slide 25 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Section 4: Developing a Keyboard Inteface</h1>
-<ul style="margin-bottom: 2em">
-        
+<h1 id="h1_title" class="title">Design Pattern: Navigation Menu Options</h1>
+<table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
+          
+<thead>
+            
+<tr>
+              
+<th>Technique</th>
+              <th>Keyboard Interaction</th>
+              <th>ARIA</th>
+              <th>Description</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<th>Keyboard Enhancement</th>
+              <td>
+                
+<ul>
+                  
 <li>
-<a href="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard">ARIA Authoring Practices: Developing a Keyboard Interface</a>
+<kbd>tab</kbd>
 </li>
-        
-<li>This is often the least understood part of using ARIA technology.</li>
-        
-<li>What is the keyboard interaciotn model and which ARIA widget roles are compatible with that model.</li>
-      
+                  
+<li>
+<kbd>left arrow</kbd>
+</li>
+                  
+<li>
+<kbd>right arrow</kbd>
+</li>
+                  
+<li>
+<kbd>up arrow</kbd>
+</li>
+                  
+<li>
+<kbd>down arrow</kbd>
+</li>
+                
+</ul>  
+              
+</td>
+              <td>
+                <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation" target="_specification"><code>navigation</code> landmark</a>
+              </td>
+              <td>
+                
+<ul>
+                  
+<li>Primarily <kbd>tab</kbd> key navigation.</li>
+                  
+<li>Cursor keys provide enhanced navigation.</li>
+                  
+<li>Uses hierarchical lists of links.</li>
+                  
+<li>Uses ARIA <code>navigation</code> landmarks.</li>
+                  
+<li>Examples: 
+                    <ul>
+                      
+<li>
+<a href="http://www.dhs.state.il.us" target="_example">Illinois Department of Human Services</a>
+</li>
+                      
+<li>
+<a href="http://illinois.edu/" target="_example">University of Illinois Home Page</a>
+</li>
+                      
+<li>
+<a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/" target="_example">Adobe Mega Menu</a>
+</li>
+                    
+</ul>  
+                  
+</li>  
+                
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard" width="98%" height="600px"></iframe>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Menu Button</th>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd>
+</li>
+                  
+<li>
+<kbd>up arrow</kbd>
+</li>
+                  
+<li>
+<kbd>down arrow</kbd>
+</li>
+                
+</ul>  
+              
+</td>
+              <td>
+                <a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
+              </td>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd> moves into and out of each menu button.</li>
+                  
+<li>
+<kbd>up arrow</kbd> and <kbd>down arrow</kbd> move between pull down menu items.</li>
+                  
+<li>Uses <code>button</code>, <code>menu</code> and <code>menuitem</code>  widget roles.</li>
+                  
+<li>Examples: 
+                    <ul>
+                      
+<li>
+<a href="http://fae.disability.illinois.edu" target="_example">Functional Accessibility Evaluator 2.0</a>
+</li>
+                      
+<li>
+<a href="http://citl.illinois.edu/" target="_example">Illinois Center for Innovation in Teaching &amp; Learning</a>
+</li>
+                    
+</ul>  
+                  
+</li>  
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Disclosure</th>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd>
+</li>
+                  
+<li>
+<kbd>space/enter</kbd>
+</li>
+                
+</ul>  
+              
+</td>
+              <td>
+                <a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Disclosure Design Pattern</a>                
+              </td>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd> moves into and out menubar.</li>
+                  
+<li>
+<kbd>space</kbd> or <kbd>return</kbd> opens panel of links.</li>
+                  
+<li>
+<kbd>tab</kbd> and cursor keys move focus between disclosed links.</li>
+                  
+<li>Examples: 
+                    <ul>
+                      
+<li>
+<a href="http://admissions.illinois.edu" target="_example">Illinois Admissions</a>
+</li>
+                      
+<li>
+<a href="http://education.illinois.edu/" target="_example">Illinois College of Education</a>
+</li>
+                    
+</ul>  
+                  
+</li>  
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Menubar</th>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd>
+</li>
+                  
+<li>
+<kbd>left arrow</kbd>
+</li>
+                  
+<li>
+<kbd>right arrow</kbd>
+</li>
+                  
+<li>
+<kbd>up arrow</kbd>
+</li>
+                  
+<li>
+<kbd>down arrow</kbd>
+</li>
+                
+</ul>  
+              
+</td>
+              <td>
+                <a href="http://w3c.github.io/aria-practices/#menubar" target="_specification">Menubar Design Pattern</a>                
+              </td>
+              <td>
+                
+<ul>
+                  
+<li>
+<kbd>tab</kbd> moves into and out of each disclosure button.</li>
+                  
+<li>Cursor keys move between pull down menus and menuitems.dri</li>
+                  
+<li>Examples: 
+                    <ul>
+                      
+<li>
+<a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html" target="_example">ARIA Authoring Practices Example</a>
+</li>
+                    
+</ul>  
+                  
+</li>  
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

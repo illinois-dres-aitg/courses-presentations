@@ -28,7 +28,7 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Brief History of ARIA </li>
+        <li>Brief History of WCAG 2.0, ARIA and HTML5</li>
         <li>ARIA basics</li>
         <li>Checkbox Example</li>
         <li>ARIA Design Patterns
@@ -48,6 +48,78 @@
       </script>
     </contents>
   </slide>
+
+  <slide> 
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria/" title="WCAG 2.0 specfication" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/wai-aria/" title="ARIA 1.0 specfication" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/html5/" title="HTML5 specfication" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>HTML5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML5 MAIN element specfication" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+
+
+  <slide> 
+    <title>HTML5: role restrictions</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-li-element" target="_specification">HTML 5: role restrctions</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-li-element" title="HTML5 LI element specfication" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  <slide> 
+    <title>Accessible Rich Internet Application API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings for ARIA 1.1</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/core-aam-1.1/" title="Core Accessibility API Mappings for ARIA 1.1" width="90%" height="600px"/>
+    </contents>
+  </slide> 
+  
+  
+  <slide> 
+    <title>HTML API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://w3c.github.io/html-aam/" target="_specification">HTML5 Accessibility API Mappings 1.0</a>
+      </p>
+      <iframe src="https://w3c.github.io/html-aam/" title="HTML5 Accessibility API Mappings 1.0" width="90%" height="600px"/>
+    </contents>
+  </slide> 
 
   <slide>
     <title>The Problem of Custom Wigets</title>

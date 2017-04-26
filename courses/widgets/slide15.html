@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Notes on Using ARIA in HTML</title>
+<title>Slide 15: Accessible Description Calculation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,37 +38,84 @@
                       </a>
 </li>
 <li>
-<a href="slide41.html">Last
+<a href="slide48.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 15 of 41</div>
+<div class="navbar-text pull-right">Slide 15 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Notes on Using ARIA in HTML</h1>
-<p>
-<a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a>
-</p>
+<h1 id="h1_title" class="title">Accessible Description Calculation</h1>
 <ul>
+          
+<li>
+<a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>
+</li>
+          
+<li>Accessible description information provides more informaiton about a form control, link or aria enabled widget.</li>
+          
+<li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
         
-<li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
-        
-<li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
-        
-<li>Don't define the native semantics of an eleemnt (e.g main[role=main]).</li>
-        
-<li>All interactive ARIA controls must be usable with the keyboard.</li>
-        
-<li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
-        
-<li>All interactive elements must have an accessible name.</li>
-        
-<li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
-      
 </ul>
+<h2 id="heading_ant">Accessible Description Techniques</h2>
+<table class="table table-striped table-hover" aria-labelledby="heading_ant">
+          
+<thead>
+            
+<tr>
+              
+<th>Priority</th>
+              <th>Technique</th>
+              <th>Description</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<td>1</td>
+              <td><code>aria-describedby</code></td>
+              <td>
+                
+<ul>
+                  
+<li>The <code>aria-describedby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
+                  
+<li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
+                  
+<li>Typically references identify visible text on the screen.</li>
+                
+</ul> 
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>2</td>
+              <td><code>title</code></td>
+              <td>
+                
+<ul>
+                  
+<li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

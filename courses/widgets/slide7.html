@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Accessible Name Calculation</title>
+<title>Slide 7: Accessible Rich Internet Application API Mappings</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,118 +38,23 @@
                       </a>
 </li>
 <li>
-<a href="slide41.html">Last
+<a href="slide48.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 41</div>
+<div class="navbar-text pull-right">Slide 7 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Accessible Name Calculation</h1>
-<ul>
-          
-<li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>
-</li>
-          
-<li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
+<h1 id="h1_title" class="title">Accessible Rich Internet Application API Mappings</h1>
+<p class="center">
         
-</ul>
-<h2 id="heading_ant">Accessible Name Techniques</h2>
-<table class="table table-striped table-hover" aria-labelledby="heading_ant">
-          
-<thead>
-            
-<tr>
-              
-<th>Priority</th>
-              <th>Technique</th>
-              <th>Description</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-            
-<tr>
-              
-<td>1</td>
-              <td><code>aria-labelledby</code></td>
-              <td>
-                
-<ul>
-                  
-<li>The <code>aria-labelledby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
-                  
-<li>Text content of referenced elements are concatenated to compute the accessible name.</li>
-                  
-<li>Typically references identify visible text on the screen.</li>
-                
-</ul> 
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>2</td>
-              <td><code>aria-label</code></td>
-              <td>
-                
-<ul>
-                  
-<li>The <code>aria-label</code> text content defines the accessible name.</li>
-                
-</ul>  
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>3</td>
-              <td>text content</td>
-              <td>
-                
-<ul>
-                  
-<li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
-                  
-<li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
-                  
-<li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
-                
-</ul>  
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>4</td>
-              <td><code>title</code></td>
-              <td>
-                
-<ul>
-                  
-<li>If no other source of an accessible name is found and the element has a <code>title</code> attribute, the content of the <code>title</code> attribute will used to define the accessible name.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-          
-</tbody>
-        
-</table>
+<a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings for ARIA 1.1</a>
+      
+</p>
+<iframe src="https://www.w3.org/TR/core-aam-1.1/" title="Core Accessibility API Mappings for ARIA 1.1" width="90%" height="600px"></iframe>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

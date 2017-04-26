@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Accessible Rich Internet Applications (ARIA) Basics</title>
+<title>Slide 5: HTML5: main element</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,217 +38,23 @@
                       </a>
 </li>
 <li>
-<a href="slide41.html">Last
+<a href="slide48.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 5 of 41</div>
+<div class="navbar-text pull-right">Slide 5 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Accessible Rich Internet Applications (ARIA) Basics</h1>
-<table class="table table-striped table-hover" aria-labelledby="id1">
+<h1 id="h1_title" class="title">HTML5: main element</h1>
+<p class="center">
         
-<thead>
-          
-<tr>
-            
-<th>Feature</th>
-            <th>Description</th>
-          
-</tr>
-        
-</thead>
-        
-<tbody>
-          
-<tr>
-            
-<td>tabindex</td>
-            <td>
-              
-<ul>
-                
-<li>Used for identifying elements that can receive keyboard focus.</li>
-                
-<li>
-<code>tabindex=-1</code>: Element can receive keyboard focus, but not in tab order of page.</li>
-                
-<li>
-<code>tabindex=0</code>: Element can receive keyboard focus, is included in tab order of page.</li>
-                
-<li>
-<code>tabindex&gt;0</code>: Element can receive keyboard focus, but changes tab order of page <br>(<strong>NOTE:</strong> <code>tabindex&gt;0</code> is rarely if ever used, has many browser compatibility issues).</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Keyboard focus</td>
-            <td>
-              
-<ul>
-                
-<li>Javascript <code>focus()</code> method to move keyboard focus to a DOM node using javascript.</li>
-                
-<li>Visually styling keyboard focus:
-                  <ul>
-                    
-<li>Mimic the mouse hover styling to match look and feel or website, to make it feel an integral part of the website design.</li>
-                    
-<li>Include a strong visual CSS <code>border</code> or <code>outline</code> to make the focus standout as users tab through the page.</li>
-                  
-</ul>
-                
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>role</td>
-            <td>
-              
-<ul>
-                
-<li>Attribute to define the type of widget in the web resource.</li>
-                
-<li>
-                  Based on the <a href="http://www.w3.org/TR/2007/WD-xhtml-role-20071004/" target="_specification">XHTML Role Attribute Module</a>.
-                </li>
-                
-<li>
-                  ARIA roles defined in the <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles" target="_specification">Accessible Rich Internet Application</a> specification.
-                </li>
-              
-</ul>
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Accessible Name</td>
-            <td>
-              
-<ul>
-                
-<li>
-<code>aria-labelledby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
-                
-<li>
-<code>aria-label</code> attribute: String defining the accessible name.</li>
-                
-<li>Text content of the element with widget role (e.g. text of menu item).</li>
-                
-<li>
-<code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
-                
-<li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible name algorithm</a>
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Properties and States</td>
-            <td>
-              
-<ul>
-                
-<li>
-                  
-<a href="http://www.w3.org/TR/aria-state/" target="_specification">States and Properties Module</a> for
-                    Accessible Rich Internet Applications (WAI-ARIA States and Properties).
-                </li>
-                
-<li>aria-checked</li>
-                
-<li>aria-describedby</li>
-                
-<li>aria-haspopup</li>
-                
-<li>aria-expanded</li>
-                
-<li>many others...</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Accessible Description</td>
-            <td>
-              
-<ul>
-                
-<li>
-<code>aria-describedby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
-                
-<li>
-<code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
-                
-<li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible description algorithm</a>
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>W3C Authoring Resources</td>
-            <td>
-              
-<ul>
-                
-<li>
-<a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a>
-</li>
-                
-<li>
-<a href="http://www.w3.org/TR/aria-in-html/" target="_specification">Using ARIA in HTML</a>
-</li>
-                
-<li>
-<a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1
-                </a>
-</li>
-                
-<li>
-<a href="https://www.w3.org/TR/html-aam-1.0/" target="_specification">HTML Accessibility API Mappings 1.0</a>
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-        
-</tbody>
+<a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
       
-</table>
+</p>
+<iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML5 MAIN element specfication" width="90%" height="600px"></iframe>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
