@@ -1106,11 +1106,11 @@
 
       <script id="script" type="text/javascript">
         function toggleCheckbox(node) {
-          if (n.innerHTML.indexOf('✗') &gt;= 0) {
-            n.setAttribute('aria-checked', 'true');
+          if (node.getAttribute('aria-checked') !== 'true') {
+            node.setAttribute('aria-checked', 'true');
           }
           else {
-            n.setAttribute('aria-checked', 'false');
+            node.setAttribute('aria-checked', 'false');
           }
         }
 
@@ -1132,11 +1132,19 @@
           event.preventDefault();
         }
 
+        function checkboxFocus(event) {
+          event.currentTarget.parentNode.classList.add('focus');
+        }
+
+        function checkboxBlur(event) {
+          event.currentTarget.parentNode.classList.remove('focus');
+        }
+
       </script>
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 2 on jsfiddle</a></p>
+     <p><a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 4 on jsfiddle</a></p>
 
      <div id="example">
       <fieldset>
@@ -1145,13 +1153,16 @@
         </legend>
         
         <label>
-          <input type="checkbox"/>
-
+          <input type="checkbox"
+             onfocus="checkboxFocus(event)" 
+             onblur="checkboxBlur(event)"/>
           Green pepper
         </label>
         
         <label>
-          <input type="checkbox"/>
+          <input type="checkbox"
+             onfocus="checkboxFocus(event)" 
+             onblur="checkboxBlur(event)"/>
           Onion
         </label>
 
