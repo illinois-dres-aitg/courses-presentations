@@ -1231,6 +1231,7 @@
             <tr>
               <th>Technique</th>
               <th>Keyboard Interaction</th>
+              <th>ARIA</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -1247,21 +1248,34 @@
                 </ul>  
               </td>
               <td>
+                <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation"><code>navigation</code> landmark</a>
+              </td>
+              <td>
                 <ul>
-                  <li></li>
-                  <li>Example: <a href="">Illinois Department of Human Services</a></li>
+                  <li>Primarily <kbd>tab</kbd> key navigation.</li>
+                  <li>Cursor keys provide enhanced navigation.</li>
+                  <li>Uses hierarchical lists of links.</li>
+                  <li>Only ARIA <code>navigation</code> landmarks.</li>
+                  <li>Examples: 
+                    <ul>
+                      <li><a href="http://www.dhs.state.il.us">Illinois Department of Human Services</a></li>
+                      <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/">Adobe Mega Menu</a></li>
+                    </ul>  
+                  </li>  
                 </ul>
               </td>
             </tr>
             <tr>
-              <th></th>
+              <th><a href="">Menu Button Design Pattern</a></th>
               <td>
                 <ul>
-                  <li><kbd></kbd></li>
-                  <li><kbd></kbd></li>
-                  <li><kbd></kbd></li>
-                  <li><kbd></kbd></li>
+                  <li><kbd>tab</kbd></li>
+                  <li><kbd>up arrow</kbd></li>
+                  <li><kbd>down arrow</kbd></li>
                 </ul>  
+              </td>
+              <td>
+
               </td>
               <td>
                 <ul>
@@ -1600,6 +1614,12 @@
   <slide>
     <title>Questions and Discussion</title>
     <contents>
+      <h2>Discussion Lists</h2>
+      <ul>
+        <li><a href="https://www.educause.edu/discuss/it-accessibility-constituent-group">Educause IT Accessibility Constituent Group</a></li>
+        <li><a href="https://www.w3.org/WAI/IG/">W3C Web Accessibility Initiative (WAI) Interest Group</a></li>
+        <li><a href="http://webaim.org">WebAIM</a></li>
+      </ul>
     </contents>
   </slide>  
 
