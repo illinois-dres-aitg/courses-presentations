@@ -1320,9 +1320,9 @@
 
 
   <slide>
-    <title>Notes on Using ARIA in HTML</title>
+    <title>Best Practices on Using ARIA in HTML</title>
     <contents>
-      <p><a href="https://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a></p>
+      <p><a href="https://w3c.github.io/aria-in-html/">Best Practices on Using ARIA in HTML</a></p>
       <ul>
         <li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
         <li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
@@ -1797,6 +1797,11 @@
   <slide>
     <title>Questions and Discussion</title>
     <contents>
+      <h2>Badge Requirements</h2>
+      <ul>
+        <li>Passing quiz with 90% correct (available tomorrow through Blackboard)</li>
+        <li>Completing and submitting the checkbox example</li>
+      </ul>
       <h2>Discussion Lists</h2>
       <ul>
         <li><a href="https://www.educause.edu/discuss/it-accessibility-constituent-group">Educause IT Accessibility Constituent Group</a></li>
