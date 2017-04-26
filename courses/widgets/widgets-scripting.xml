@@ -1301,7 +1301,7 @@
                 </ul>  
               </td>
               <td>
-                <a href="http://w3c.github.io/aria-practices/#disclosure">Disclosure Design Pattern</a>                
+                <a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Disclosure Design Pattern</a>                
               </td>
               <td>
                 <ul>
@@ -1329,7 +1329,7 @@
                 </ul>  
               </td>
               <td>
-                <a href="http://w3c.github.io/aria-practices/#menubar">Menubar Design Pattern</a>                
+                <a href="http://w3c.github.io/aria-practices/#menubar" target="_specification">Menubar Design Pattern</a>                
               </td>
               <td>
                 <ul>
@@ -1385,9 +1385,6 @@
         <li>Section 4: Developing a Keyboard Interface</li>
         <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
       </ul>
-      <script type="text/javascript">
-        slideShowURL()
-      </script>
     </contents>
   </slide>  
 
