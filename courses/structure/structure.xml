@@ -1276,7 +1276,120 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>Simple Skip to Main Content</title>
+    <contents>
+    </contents>
+  </slide>
 
+  <slide>
+    <title>Coding Skip To Main Content: Simple Link</title>
+    <contents>
+        <p><a href="https://jsfiddle.net/jongund/z8phn0yn/"></a></p>
+
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Skip To Main Content: Simple Link"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+
+        </dl>
+
+        <iframe src="https://jsfiddle.net/jongund/z8phn0yn/" width="99%" height="600px" title="jsfiddle for skip to main using simple link"></iframe>
+
+    </contents>
+  </slide> 
+
+  <slide>
+    <title>SkipTo.js for Page Navigation</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Coding Skip To Main Content: SkipTo.js</title>
+    <contents>
+        <p><a href="https://jsfiddle.net/jongund/z8phn0yn/"></a></p>
+
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Skip To Main Content: SkipTo.js"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+
+        </dl>
+
+        <iframe src="https://jsfiddle.net/jongund/z8phn0yn/" width="99%" height="600px" title="jsfiddle for skip to main using skipto.js"></iframe>
+
+    </contents>
+  </slide> 
+
+
+  <slide>
+    <title>WCAG 2.0 WebSite Navigation Requirements</title>
+    <contents>
+    </contents>
+  </slide>
+
+
+
+  <slide>
+    <title>AInspector Sidebar for Firefox</title>
+    <contents>
+      <p><a href="http://ainspector.github.io">AInspector Sidebar for Firefox Documentation</a></p>
+
+      <iframe src="http://ainspector.github.io" width="99%" height="600px" title="AInspector Sidebar for Firefox Documentation"></iframe>
+      
+    </contents>
+  </slide>  
+
+    <slide>
+    <title>Functional Accessibility Evaluator (FAE) 2.0</title>
+    <contents>
+      <p>Two versions of Functional Accessibility Evaluator 2.0</p>
+      <ul>
+        <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
+        <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
+      </ul>
+
+      <iframe src="https://fae.disability.illinois.edu" width="99%" height="600px" title="Functional Accessibility Evaluator 2.0"></iframe>
+      
+    </contents>
+  </slide>   
+
+  <slide>
+    <title>Bookmarklets for Visualizing Accessibility Features</title>
+    <contents>
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
+        <li>Features:
+          <ul>
+            <li>Highlight Regions and Elements on page</li>
+            <li>Element information</li>
+            <li>Default or defined <code>role</code></li>
+            <li>Accessible name</li>
+            <li>Accessible description</li>
+            <li>Important prorperties (e.g the number of items in a list)</li>
+          </ul>
+        </li>
+      </ul>  
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+      
+    </contents>
+  </slide>  
 </slides> 
 
 
