@@ -1088,17 +1088,7 @@
     </contents>
   </slide> 
   
-  <slide>
-    <title>HTML5/ARIA Resources</title>
-    <contents>
-      <ul>
-        <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
-        <li><a href="https://specs.webplatform.org/html-aria/webspecs/master/" target="_specification">ARIA in HTML</a></li>
-        <li><a href="http://www.w3.org/TR/aria-in-html/"  target="_specification">Using ARIA in HTML</a></li>
-        <li><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></li>
-      </ul>
-    </contents>
-  </slide>
+
     
   <slide>
     <title>What About the Article Role and the Article Element?</title>
@@ -1122,7 +1112,16 @@
     </contents>
   </slide>
     
-
+  <slide>
+    <title>Additional HTML5/ARIA Resources</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
+        <li><a href="http://www.w3.org/TR/aria-in-html/"  target="_specification">Using ARIA in HTML</a></li>
+        <li><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></li>
+      </ul>
+    </contents>
+  </slide>
 
   <slide>
     <title>Use of Headings (H1-H6) in ARIA Landmarks</title>
