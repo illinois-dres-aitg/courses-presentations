@@ -1359,7 +1359,12 @@
         <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
       </ul>
 
-      <iframe src="https://fae.disability.illinois.edu" width="99%" height="600px" title="Functional Accessibility Evaluator 2.0"></iframe>
+      <h2>Features</h2>
+      <ul>
+        <li>Spiders an entire website for accessibiliy information.</li>
+        <li>Provides information on consistancy and accessible coding practices.</li>
+        <li>Identify individual pages that need remidiation.</li>
+      </ul>
       
     </contents>
   </slide>   
@@ -1367,19 +1372,16 @@
   <slide>
     <title>Bookmarklets for Visualizing Accessibility Features</title>
     <contents>
+      <p><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></p>
+      <h2>Features</h2>
       <ul>
-        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
-        <li>Features:
-          <ul>
-            <li>Highlight Regions and Elements on page</li>
-            <li>Element information</li>
-            <li>Default or defined <code>role</code></li>
-            <li>Accessible name</li>
-            <li>Accessible description</li>
-            <li>Important prorperties (e.g the number of items in a list)</li>
-          </ul>
-        </li>
-      </ul>  
+        <li>Highlight Regions and Elements on page</li>
+        <li>Element information</li>
+        <li>Default or defined <code>role</code></li>
+        <li>Accessible name</li>
+        <li>Accessible description</li>
+        <li>Important prorperties (e.g the number of items in a list)</li>
+      </ul>
     </contents>
   </slide>  
 
