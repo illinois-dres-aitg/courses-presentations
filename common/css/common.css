@@ -59,3 +59,7 @@ main dt {
 main table.table em {
     color: #880000;
 }
+
+table.table td ul {
+    padding-left: 1em;
+}
