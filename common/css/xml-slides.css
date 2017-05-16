@@ -58,13 +58,14 @@ main h1 {
 }
 
 main h2 {
-    margin-top: 2em;
-    font-size: 120%;
+    margin-top: 1.5em;
+    font-size: 125%;
     margin-bottom: 0.125em;
 }
 
 main h3 {
-    font-size: 115%;
+    margin-top: 1.5em;
+    font-size: 100%;
 }
 
 main dt {
@@ -96,4 +97,16 @@ main .slide-show-url {
 
 main iframe {
     margin-top: 1em;
+}
+
+main table.table ul {
+    padding-left: 1em;
+}
+
+main .code {
+    font-family: monospace;
+    background-color: #EEE;
+    border: thin solid #DDD;
+    padding: 0.25em;
+    border-radius: 6px;
 }

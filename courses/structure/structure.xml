@@ -322,6 +322,52 @@
     </contents>
   </slide> 
   
+  <slide>
+    <title>General Principles of Landmark Design</title>
+    <contents>
+
+      <p>
+        Including <strong>all content</strong> on a page in one of its landmark regions and giving each landmark region a semantically meaningful role is one of the most effective ways of ensuring assistive technology users will not overlook information that is relevant to their needs.
+      </p>
+
+      <p><strong>Step 1: Identify the logical structure</strong></p>
+
+      <ul>
+        <li>Break the page into perceivable areas of content which designers typically indicate visually using alignment and spacing.</li>
+
+        <li>Areas can be further defined into logical sub-areas as needed.</li>
+
+        <li>An example of a sub-area is a portlet in a portal application.</li>
+      </ul>
+
+      <p><strong>Step 2: Assign landmark roles to each area</strong></p>
+
+      <ul>
+        <li>Assign landmark roles based on the type of content in the area.</li>
+
+        <li><code>banner</code>, <code>main</code>, <code>complementary</code> and <code>contentinfo</code> landmarks should be top level landmarks.</li>
+
+        <li>Landmark roles can be nested to identify parent/child relationships of the information being presented.</li>
+      </ul>
+
+      <p><strong>Step 3: Label areas</strong></p>
+
+      <ul>
+        <li>If a specific landmark role is used more than once on a web page, it should have a unique label.</li>
+
+        <li>If a landmark is only used once on the page it may not require a label. See Landmark Roles section below. </li>
+
+        <li>If an area begins with a heading element (e.g. <code>h1-h6</code>) it can be used as the label for the area using the <code>aria-labelledby</code> attribute.</li>
+
+        <li>If an area requires a label and does not have a heading element, provide a label using the <code>aria-label</code> attribute.</li>
+
+        <li>
+          Do not use the landmark role as part of the label. For example, a navigation landmark with a label "Site Navigation" will be announced by a screen reader as "Site Navigation Navigation". The label should simply be "Site".
+        </li>
+      </ul>
+      <p><em><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#general-principles-of-landmark-design">Taken from ARIA Authoring Practices Guide</a></em></p> 
+    </contents>
+  </slide>
   
   <slide>
     <title>MAIN Landmark</title>
@@ -898,31 +944,9 @@
           <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
         </dl>
 
-        <p><a href="https://jsfiddle.net/jongund/2ug6t3v4/" target="_jsfidddle">Coding Landmarks: Role Attributes</a></p>
+        <p><a href="https://jsfiddle.net/jongund/2ug6t3v4/" target="_jsfidddle">jsfiddle coding landmarks: role attributes</a></p>
 
         <iframe src="https://jsfiddle.net/jongund/2ug6t3v4/" width="99%" height="600px" title="jsfiddle for adding landmarks using role attributes"></iframe>
-
-    </contents>
-  </slide>  
-
-  <slide>
-    <title>Coding Landmarks: HTML5 Elements</title>
-    <contents>
-        <h2>jsfiddle Configuration</h2>
-        <dl>
-          <dt>Example Title</dt>
-          <dd>Add title "Coding Landmarks: Role Attributes"</dd>
-          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
-        </dl>
-
-        <p><a href="https://jsfiddle.net/jongund/wme1Lw8m/" target="_jsfidddle"></a></p>
-
-        <iframe src="https://jsfiddle.net/jongund/wme1Lw8m/" width="99%" height="600px" title="jsfiddle for adding landmark using HTML5 elements"></iframe>
 
     </contents>
   </slide>  
@@ -977,7 +1001,53 @@
        </ul>
        
     </contents>
-  </slide>
+  </slide>  
+
+  <slide>
+    <title>Coding Landmarks: HTML5 Elements</title>
+    <contents>
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Landmarks: HTML5 Elements"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+
+        </dl>
+
+        <p><a href="https://jsfiddle.net/jongund/wme1Lw8m/" target="_jsfidddle">jsfiddle coding landmarks: HTML5 elements</a></p>
+
+        <iframe src="https://jsfiddle.net/jongund/wme1Lw8m/" width="99%" height="600px" title="jsfiddle for adding landmark using HTML5 elements"></iframe>
+
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Coding Landmarks: Adding Labels</title>
+    <contents>
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Landmarks: Adding Labels"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+
+        </dl>
+
+        <p><a href="https://jsfiddle.net/jongund/sx9urq4j/" target="_jsfidddle">jsfiddle coding landmarks: adding labels</a></p>
+
+        <iframe src="https://jsfiddle.net/jongund/sx9urq4j/" width="99%" height="600px" title="jsfiddle for adding landmark using HTML5 elements"></iframe>
+
+    </contents>
+  </slide>  
+
+
 
   <slide> 
     <title>Landmark and Heading Visualization Tools</title>

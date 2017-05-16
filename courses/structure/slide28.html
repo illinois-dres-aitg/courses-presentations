@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: HTML5/ARIA Resources</title>
+<title>Slide 28: Landmark Coding Patterns</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,34 +38,45 @@
                       </a>
 </li>
 <li>
-<a href="slide33.html">Last
+<a href="slide35.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 33</div>
+<div class="navbar-text pull-right">Slide 28 of 35</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">HTML5/ARIA Resources</h1>
+<h1 id="h1_title" class="title">Landmark Coding Patterns</h1>
 <ul>
         
-<li>
-<a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a>
-</li>
+<li>All content should be contained in a landmark:
+          <ul>
+            
+<li>banner (top level)</li>
+            
+<li>complementary</li>
+            
+<li>contentinfo  (top level)</li>
+            
+<li>main (top level)</li>
+            
+<li>navigation</li>
+            
+<li>region (sub sections and unique content)</li>
+            
+<li>search</li>
+          
+</ul>
+        
+</li>    
         
 <li>
-<a href="https://specs.webplatform.org/html-aria/webspecs/master/" target="_specification">ARIA in HTML</a>
-</li>
+<em>Must</em> use labels when a landmark of the same type is used more than once</li>    
         
 <li>
-<a href="http://www.w3.org/TR/aria-in-html/" target="_specification">Using ARIA in HTML</a>
-</li>
-        
-<li>
-<a href="http://html5accessibility.com" target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a>
-</li>
+<em>Should</em> not nest landmarks of the same type</li>    
       
 </ul>
 </main>

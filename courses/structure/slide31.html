@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 31: Hiding Headings (H1-H6) and Other Content</title>
+<title>Slide 31: What About the Article Role and the Article Element?</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,107 +38,48 @@
                       </a>
 </li>
 <li>
-<a href="slide33.html">Last
+<a href="slide35.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 31 of 33</div>
+<div class="navbar-text pull-right">Slide 31 of 35</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Hiding Headings (H1-H6) and Other Content</h1>
-<h2 id="id_aria">Hiding Content Visually or From Assistive Technology</h2>
-<table class="table table-striped" aria-labelledby="id_aria">
+<h1 id="h1_title" class="title">What About the Article Role and the Article Element?</h1>
+<ul>
         
-<thead>
-          
-<tr>
+<li>
+<code>article</code> role (ARIA)
+          <ul>
             
-<th>Technology</th>
-            <th>Technique</th>
-            <th>Assistive Technology</th>
-            <th>Graphical Rendering</th>
+<li>Is <strong>NOT</strong> a landmark element</li>
+            
+<li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
           
-</tr>
+</ul>
         
-</thead>
+</li>
         
-<tbody>
-          
-<tr>
+<li>
+<code>article</code> element (HTML5)
+          <ul>
             
-<td>CSS</td>
-            <td><code>display: none</code></td>
-            <td>hidden</td>
-            <td>hidden</td>
-          
-</tr>
-          
-<tr>
+<li>HTML5 section element</li>
             
-<td>CSS</td>
-            <td><code>visibility: hidden</code></td>
-            <td>hidden</td>
-            <td>hidden</td>
-          
-</tr>
-          
-<tr>
+<li>Self-contained compositions (e.g. magazine or newspaper article)</li>
             
-<td>CSS</td>
-            <td><code>position: absolute</code>
-<br>
-              
-<code>top: -30em</code>
-<br>
-              
-<code>left: -300em</code>
-<br>
+<li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
             
-</td>
-            <td><strong>Visible</strong></td>
-            <td>hidden</td>
+<li>Interactive widget or gadget</li>
           
-</tr>
-          
-<tr>
-            
-<td>CSS</td>
-            <td><code>font-size: 1px</code>
-<br>
-              
-<code>line-height: 1px</code>
-<br>
-            
-</td>
-            <td><strong>Visible</strong></td>
-            <td>hidden (almost)</td>
-          
-</tr>
-          
-<tr>
-            
-<td>HTML5</td>
-            <td><code>hidden</code> attribute</td>
-            <td>hidden</td>
-            <td>hidden</td>
-          
-</tr>
-          
-<tr>
-            
-<td>ARIA 1.0</td>
-            <td><code>aria-hidden=true</code> attribute</td>
-            <td>hidden</td>
-            <td><strong>Visible</strong></td>
-          
-</tr>
+</ul>
         
-</tbody>
+</li>
       
-</table>
+</ul>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
