@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 14: CONTENTINFO Landmark</title>
+<title>Slide 14: DRES Informational Page</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,226 +38,19 @@
                       </a>
 </li>
 <li>
-<a href="slide24.html">Last
+<a href="slide31.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 14 of 24</div>
+<div class="navbar-text pull-right">Slide 14 of 31</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">CONTENTINFO Landmark</h1>
-<table class="table table-striped table-hover" aria-labelledby="id1">
-        
-<tbody>
-          
-<tr>
-            
-<th>Definition</th>
-            <td>
-              A <code>contentinfo</code> landmark is a way to identify common information at the bottom of each page within a website, typically called the "footer" of the page, including information such as copyrights and links to privacy and accessibility statements.
-            </td>
-          
-</tr>
-          
-<tr>
-            
-<th>ARIA 1.1 Specification</th>
-            <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#contentinfo"><code>contentinfo</code> landmark</a>
-            </td>
-          
-</tr>
-          
-<tr>
-            
-<th>Design Patterns</th>
-            <td>
-              
-<ul>
-                
-<li>Each page may have one <code>contentinfo</code> landmark.</li>
-                
-<li>The <code>contentinfo</code> landmark should be a top-level landmark.</li>
-                
-<li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements), 
-                  each <code>document</code> or <code>application</code> role may have one <code>contentinfo</code> landmark.</li>
-                
-<li>If a page includes more than one <code>contentinfo</code> landmark, each should have a unique label (see Step 3 above).</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Techniques</th>
-            <td>
-              
-<ul>
-                
-<li>The HTML5 <code>footer</code> element defines a <code>contentinfo</code> landmark when its context is the <code>body</code> element.</li>
-                
-<li>The HTML5 <code>footer</code> element is not considered a <code>contentinfo</code> landmark when it is descendant of any of following elements:
-                  <ul>
-                    
-<li>
-<code>address</code>
-</li>
-                    
-<li>
-<code>article</code>
-</li>
-                    
-<li>
-<code>aside</code>
-</li>
-                    
-<li>
-<code>blockquote</code>
-</li>
-                    
-<li>
-<code>details</code>
-</li>
-                    
-<li>
-<code>fieldset</code>
-</li>
-                    
-<li>
-<code>figure</code>
-</li>
-                    
-<li>
-<code>main</code>
-</li>
-                    
-<li>
-<code>nav</code>
-</li>
-                    
-<li>
-<code>section</code>
-</li>
-                    
-<li>
-<code>table</code>
-</li>
-                  
-</ul>  
-                
-</li>
-                
-<li>If the HTML5 <code>footer</code> element technique is not being used, a <code>role="contentinfo"</code> attribute should be used to define a <code>contentinfo</code> landmark.</li>
-              
-</ul>  
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Headings</th>
-            <td>
-              
-<ul>
-                
-<li>Each contentinfo landmark may have an <code>h2</code> element describing the content of the footer.</li>
-              
-</ul>  
-            
-</td>
-          
-</tr>
-        
-</tbody>
-      
-</table>
-<h2>Example of HTML5 <code>footer</code> element technique</h2>
-<div class="code">
-        &lt;body&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;header&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>website information</em>&lt;h1&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>banner content</em>....   <br>
-        &nbsp;&nbsp;&lt;/header&gt;<br>
-<br>
-        &nbsp;&nbsp;&lt;nav&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-        &nbsp;&nbsp;&lt;/nav&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;main&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>main content</em>....   <br>
-        &nbsp;&nbsp;&lt;/main&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;<strong>&lt;footer&gt;</strong>
-<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>Contact, Policies and Legal</em>&lt;h2&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>contentinfo content</em>....   <br>
-        &nbsp;&nbsp;<strong>&lt;/footer&gt;</strong>
-<br>
-        
-        &lt;/body&gt;<br>
-<br>
-        
-      
-</div>
-<h2>Example of <code>[role="contentinfo"]</code> element technique</h2>
-<div class="code">
-        &lt;body&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;divrole="banner"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;website information&lt;h1&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>banner content</em>....   <br>
-        &nbsp;&nbsp;&lt;/div&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;div role="navigation"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="page4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-        &nbsp;&nbsp;&lt;/div&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;div role="main"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>main content</em>....   <br>
-        &nbsp;&nbsp;&lt;/div&gt;<br>
-<br>
-        
-        &nbsp;&nbsp;&lt;div <strong>role="contentinfo"</strong>&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>Contact, Policies and Legal</em>&lt;h2&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.... <em>contentinfo content</em>....   <br>
-        &nbsp;&nbsp;&lt;/div&gt;<br>
-        
-        &lt;/body&gt;<br>
-<br>
-        
-      
-</div>
+<h1 id="h1_title" class="title">DRES Informational Page</h1>
+<p class="center">
+<img width="98%" src="images/dres-landmarks-general-page.png" alt="screen shot highlighting landmarks on a dres informational page"></p>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 29: Extensions for Viewing HTML5 Outlines</title>
+<title>Slide 29: Use of Headings (H1-H6) in ARIA Landmarks</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css"></style>
 </head>
 <body>
@@ -47,22 +48,85 @@
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Extensions for Viewing HTML5 Outlines</h1>
+<h1 id="h1_title" class="title">Use of Headings (H1-H6) in ARIA Landmarks</h1>
 <ul>
         
 <li>
-<a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo" target="_extension">HTML5 Outliner for Chrome</a>
-</li>
+<code>main</code> landmarks should contain <code>h1</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h1</code> element content describes the content or the purpose of the page</li>
+            
+<li>Provides a redundant means for assistive technology users to navigate to main content</li>
+            
+<li>Use headers in a structural way or in combination with HTML5 section elements</li>
+            
+<li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark</li>
+          
+</ul>
+        
+</li>    
         
 <li>
-<a href="https://addons.mozilla.org/en-US/firefox/addon/html5_outliner/?src=search" target="_extension">HTML5 Outliner for Firefox</a>
-</li>
+<code>navigation</code> and <code>complementary </code>landmarks should contain <code>h2</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h2</code> element content describes the content or the purpose of the page</li>
+            
+<li>Provides a redundant means for assistive technology users to navigate to content</li>
+            
+<li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name for each landmark</li>
+          
+</ul>
+        
+</li>  
+        
+<li>
+<code>contentinfo</code> landmark may contain <code>h2</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h2</code> element identifies the section as footer information</li>
+            
+<li>Provides a redundant means for assistive technology users to navigate to content</li>
+          
+</ul>
+        
+</li>  
+        
+<li>
+<code>banner</code> landmark may contain <code>h1</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h1</code> element identifies the website information</li>
+            
+<li>Provides a redundent means for assistive technology users to orient to the website</li>
+          
+</ul>
+        
+</li>  
+        
+<li>
+<code>region</code> landmark should contain an <code>h2-h6</code> element at the beginning of section:
+          <ul>
+            
+<li>
+<code>h2-h6</code> element identifies the section information</li>
+            
+<li>Provides a redundent means for assistive technology users to orient to the website</li>
+          
+</ul>
+        
+</li>  
       
 </ul>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright 2016 University of Illinois
+        Copyright &copy; 2017 University of Illinois
       </div>
 </footer>
 </body>
