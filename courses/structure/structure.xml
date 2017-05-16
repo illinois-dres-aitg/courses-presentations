@@ -884,13 +884,34 @@
   </slide>
 
   <slide>
-    <title>Coding Example: Role Attributes</title>
+    <title>Coding Landmarks: Role Attributes</title>
     <contents>
-        <p><a href="https://jsfiddle.net/jongund/2ug6t3v4/"></a></p>
 
         <h2>jsfiddle Configuration</h2>
         <dl>
           <dt>Example Title</dt>
+          <dd>Add title "Coding Landmarks: Role Attributes"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+        </dl>
+
+        <p><a href="https://jsfiddle.net/jongund/2ug6t3v4/" target="_jsfidddle">Coding Landmarks: Role Attributes</a></p>
+
+        <iframe src="https://jsfiddle.net/jongund/2ug6t3v4/" width="99%" height="600px" title="jsfiddle for adding landmarks using role attributes"></iframe>
+
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>Coding Landmarks: HTML5 Elements</title>
+    <contents>
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Landmarks: Role Attributes"</dd>
           <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
 
           <dt>Bootstrap References</dt>
@@ -899,7 +920,9 @@
 
         </dl>
 
-        <iframe src="https://jsfiddle.net/jongund/2ug6t3v4/" width="99%" height="600px" title="jsfiddle for adding landmark role attributes"></iframe>
+        <p><a href="https://jsfiddle.net/jongund/wme1Lw8m/" target="_jsfidddle"></a></p>
+
+        <iframe src="https://jsfiddle.net/jongund/wme1Lw8m/" width="99%" height="600px" title="jsfiddle for adding landmark using HTML5 elements"></iframe>
 
     </contents>
   </slide>  
@@ -1134,6 +1157,29 @@
     </contents>
   </slide>
   
+
+    <slide>
+    <title>Coding Headings: H1-H6 Elements</title>
+    <contents>
+        <p><a href="https://jsfiddle.net/jongund/z8phn0yn/"></a></p>
+
+        <h2>jsfiddle Configuration</h2>
+        <dl>
+          <dt>Example Title</dt>
+          <dd>Add title "Coding Landmarks: Role Attributes"</dd>
+          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+
+          <dt>Bootstrap References</dt>
+          <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
+          <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
+
+        </dl>
+
+        <iframe src="https://jsfiddle.net/jongund/z8phn0yn/" width="99%" height="600px" title="jsfiddle for updating and adding heading elements"></iframe>
+
+    </contents>
+  </slide>  
+
   <slide>
     <title>Titling a Web Resource</title>
     <contents>
