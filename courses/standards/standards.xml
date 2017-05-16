@@ -184,27 +184,16 @@
     </contents>
   </slide> 
   
-  <slide> 
-    <title>IAAP: Founding Members</title>
+    <slide> 
+    <title>Educause IT Accessibility Interest Group</title>
     <contents>
       <ul>
-        <li><a href="http://www.accessibilityassociation.org/content.asp?contentid=146" target="_specification">IAAP Founding Members</a></li>
-        <li>Professionalization of IT accessibility</li>
-        <li>Career development</li>
-        <li>Industry leadership</li>
+        <li>Higher Education</li>
+        <li>Primarily people in technology in Higher Education</li>
+        <li>Affliated with <a href="https://www.ahead.org/">AHEAD</a></li>
+        <li>Sharing information</li>
+        <li>Annual Conference: <a href="#">Accessing Higher Ground Conference</a></li>
       </ul>
-      <div class="row">
-        <img src="images/iaap-ibm.png" alt="IBM logo"/>
-        <img src="images/iaap-microsoft.png" alt="Microsoft logo"/>
-      </div>
-      <div class="row">
-        <img src="images/iaap-hp.png" alt="Hewlette-Packard logo"/>
-        <img src="images/iaap-att.png" alt="AT&amp;T logo"/>
-      </div>
-      <div class="row">
-        <img src="images/iaap-wells-fargo.png" alt="Wells Fargo logo"/>
-        <img src="images/iaap-barclay.png" alt="Barclays logo"/>
-      </div>
     </contents>
   </slide> 
 
@@ -214,7 +203,7 @@
       <ul>
         <li>Higher Education</li>
         <li>Primarily people in disability services</li>
-        <li>Affliated with <a href="#">AHEAD</a></li>
+        <li>Affliated with <a href="https://www.ahead.org/">AHEAD</a></li>
         <li>Sharing information</li>
         <li>Annual Conference: <a href="#">Accessing Higher Ground Conference</a></li>
       </ul>

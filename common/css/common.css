@@ -63,3 +63,7 @@ main table.table em {
 table.table td ul {
     padding-left: 1em;
 }
+
+main details {
+    padding-bottom: 2em;
+}
