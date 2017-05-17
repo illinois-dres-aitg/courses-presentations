@@ -1128,7 +1128,7 @@
         <li>Headings (H1-H6)</li>
         <li><code>role="heading"</code> with <code>aria-level</code> property</li>
       </ul>
-      
+
       <h2>Related WCAG 2.0 Success Criteria</h2>
       <ul>
         <li><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic">1.3.1 Info and Relationships</a></li>
@@ -1352,6 +1352,25 @@
   <slide>
     <title>WCAG 2.0 WebSite Navigation Requirements</title>
     <contents>
+      <ul>
+        <li>Headings (<code>H1-H6</code>)</li>
+        <li>Landmarks
+          <ul>
+            <li><code>banner</code></li>
+            <li><code>navigation</code></li>
+            <li><code>main</code></li>
+            <li><code>complementary</code></li>
+            <li><code>contentinfo</code></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Related WCAG 2.0 Success Criteria</h2>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG20#navigation-mechanisms-mult-loc">2.4.5 Multiple Ways</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-locations">3.2.3 Consistent Navigation</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-functionality">3.2.4 Consistent Identification</a></li>
+      </ul>      
     </contents>
   </slide>
 
