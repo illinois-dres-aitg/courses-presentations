@@ -1027,12 +1027,17 @@
     <contents>
 
         <h2>Labeling Techniques</h2>
-        <p>Describes the purpose of this specific landmark and there are three ways to add a label to a landmark:</p>   
         <ul>
-          <li><code>aria-label</code> attribute</li>
-          <li><code>aria-labelledby</code> attribute</li>
-          <li><code>title</code> attribute</li>
-        </ul>
+          <li>If a page contains more than one of the same landmark, those landmarks need a label.</li>
+          <li>Labels should uniquely identify the landmark from other landmarks of the same type on the page.</li>
+          <li>There are three ways to add a label to a landmark: 
+            <ul>
+              <li><code>aria-label</code> attribute</li>
+              <li><code>aria-labelledby</code> attribute</li>
+              <li><code>title</code> attribute</li>
+            </ul>
+          </li>
+        </ul>  
 
         <h2>jsfiddle Configuration</h2>
         <dl>
