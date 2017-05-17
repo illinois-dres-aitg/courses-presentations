@@ -89,10 +89,10 @@
         <summary>Disability Access Requirements</summary>
         <ul>
           <li>Technology agnostic</li>
-          <li><a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
-          <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
+          <li><a href="http://www.w3.org/WAI/WCAG20/quickref/" target="_specification">How to Meet WCAG 2.0</a></li>
+          <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" target="_specification">Understanding WCAG 2.0</a></li>
           <li>Understanding requires knowledge of features of specific technogies</li>
-          <li><a href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</a></li>
+          <li><a href="http://www.w3.org/TR/WCAG20-TECHS/" target="_specification">Techniques for WCAG 2.0</a></li>
           <li>Techniques are <strong>not</strong> normative or comprehensive</li>
         </ul>
       </details>
@@ -116,9 +116,9 @@
           <li>Accessible name</li>
           <li>Accessible description</li>
           <li>States and properties</li>
-          <li><a href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a></li>
-          <li><a href="http://www.w3.org/WAI/PF/aria-implementation/">WAI-ARIA 1.0 User Agent Implementation Guide</a></li>
-          <li><a href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></li>
+          <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.0 Authoring Practices</a></li>
+          <li><a href="http://www.w3.org/WAI/PF/aria-implementation/" target="_specification">WAI-ARIA 1.0 User Agent Implementation Guide</a></li>
+          <li><a href="http://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1</a></li>
         </ul>
       </details>
       
@@ -138,9 +138,9 @@
         <ul>
           <li>Default <code>role</code> semantics</li>
           <li><code>role</code> semantics restrictions</li>
-          <li><a href="http://www.w3.org/TR/aria-in-html/">W3C Notes on Using ARIA in HTML</a></li>
-          <li><a href="https://specs.webplatform.org/html-aria/webspecs/master/">ARIA in HTML</a></li>
-          <li><a href="http://www.w3.org/TR/html-aapi/">W3C HTML to Platform Accessibility APIs Implementation Guide</a></li>
+          <li><a href="http://www.w3.org/TR/aria-in-html/" target="_specification">W3C Notes on Using ARIA in HTML</a></li>
+          <li><a href="https://specs.webplatform.org/html-aria/webspecs/master/" target="_specification">ARIA in HTML</a></li>
+          <li><a href="http://www.w3.org/TR/html-aapi/" target="_specification">W3C HTML to Platform Accessibility APIs Implementation Guide</a></li>
         </ul>
       </details>
       
@@ -187,9 +187,9 @@
       </ul>
       <h2>Related WCAG 2.0 Success Criteria</h2>
       <ul>
-        <li><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic">1.3.1 Info and Relationships</a></li>
-        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip">2.4.1 Bypass Blocks</a></li>
-        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive">2.4.6 Headings and Labels</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_specification">1.3.1 Info and Relationships</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" target="_specification">2.4.1 Bypass Blocks</a></li>
+        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
       </ul>
     </contents>
   </slide>
@@ -380,7 +380,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#main"><code>main</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#main" target="_specification"><code>main</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -465,7 +465,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#navigation"><code>navigation</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#navigation" target="_specification"><code>navigation</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -566,7 +566,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#banner"><code>banner</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#banner" target="_specification"><code>banner</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -702,7 +702,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#contentinfo"><code>contentinfo</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#contentinfo" target="_specification"><code>contentinfo</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -838,7 +838,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#complementary"><code>complementary</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#complementary" target="_specification"><code>complementary</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -890,7 +890,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#region"><code>region</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#region" target="_specification"><code>region</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -959,9 +959,9 @@
     <contents>
       <h2>Jaws Command Resources</h2>
       <ul>
-        <li><a href="http://accessibility.psu.edu/jawscommands">Penn State: JAWS commands for web</a></li>
-        <li><a href="http://webaim.org/resources/shortcuts/jaws">WebAIM: JAWS commands for web</a></li>
-        <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm">Freedom Scientific: JAWS commands for web</a></li>
+        <li><a href="http://accessibility.psu.edu/jawscommands" target="_specification">Penn State: JAWS commands for web</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/jaws" target="_specification">WebAIM: JAWS commands for web</a></li>
+        <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm" target="_specification">Freedom Scientific: JAWS commands for web</a></li>
       </ul>
       
       <h3>JAWS  Landmark Keyboard Information</h3>
@@ -973,9 +973,9 @@
       
       <h2>NVDA Command Resources</h2>
       <ul>
-        <li><a href="http://accessibility.psu.edu/nvda">Penn State: NVDA Keyboard Commands</a></li>
-        <li><a href="http://webaim.org/resources/shortcuts/nvda">Webaim: NVDA Keyboard Commands</a></li>
-        <li><a href="http://community.nvda-project.org/documentation/userGuide.html#toc40">NVDA: Web Browse Keyboard Commands</a></li>
+        <li><a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a></li>
+        <li><a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a></li>
       </ul>
     
       <h3>NVDA Landmark Keyboard Information</h3>
@@ -987,8 +987,8 @@
       
       <h2>Voice over for Safari on OS X</h2>
       <ul>
-        <li><a href="http://accessibility.psu.edu/voiceover">Penn State: Voice Over for OS X</a></li>
-        <li><a href="http://www.apple.com/voiceover/info/guide/_1131.html">Apple Voice Over Commands</a></li>
+        <li><a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a></li>
+        <li><a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a></li>
       </ul>
 
        <h3>Apple Support for Landmarks</h3>
@@ -1426,9 +1426,9 @@
 
       <h2>Related WCAG 2.0 Success Criteria</h2>
       <ul>
-        <li><a href="https://www.w3.org/TR/WCAG20#navigation-mechanisms-mult-loc">2.4.5 Multiple Ways</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-locations">3.2.3 Consistent Navigation</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-functionality">3.2.4 Consistent Identification</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20#navigation-mechanisms-mult-loc" target="_specification" >2.4.5 Multiple Ways</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-locations" target="_specification">3.2.3 Consistent Navigation</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20#consistent-behavior-consistent-functionality" target="_specification">3.2.4 Consistent Identification</a></li>
       </ul>      
     </contents>
   </slide>
@@ -1436,31 +1436,20 @@
 
 
   <slide>
-    <title>OpenAjax Evaluation Library: Landmark Rules</title>
+    <title>OpenAjax Evaluation Library: Landmark and Heading Rules</title>
     <contents>
-      <p><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc5">Landmark Rules</a></p>
-
-      <iframe src="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc5" width="99%" height="600px" title="Landmark rules"></iframe>
-      
+      <ul>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc5" target="_tools">Landmark Rules</a></li>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc6" target="_tools">Heading Rules</a></li>
+      </ul>  
     </contents>
   </slide>  
-
-  <slide>
-    <title>OpenAjax Evaluation Library: Heading Rules</title>
-    <contents>
-      <p><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc6">Heading Rules</a></p>
-
-      <iframe src="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc6" width="99%" height="600px" title="Heading rules"></iframe>
-      
-    </contents>
-  </slide>  
-
 
 
   <slide>
     <title>AInspector Sidebar for Firefox</title>
     <contents>
-      <p><a href="http://ainspector.github.io">AInspector Sidebar for Firefox Documentation</a></p>
+      <p><a href="http://ainspector.github.io" target="_tools">AInspector Sidebar for Firefox Documentation</a></p>
 
       <iframe src="http://ainspector.github.io" width="99%" height="600px" title="AInspector Sidebar for Firefox Documentation"></iframe>
       
@@ -1472,8 +1461,8 @@
     <contents>
       <p>Two versions of Functional Accessibility Evaluator 2.0</p>
       <ul>
-        <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
-        <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
+        <li><a href="https://fae.disability.illinois.edu" target="_tools">FAE 2.0 Indidvidual License Version</a></li>
+        <li><a href="https://fae.illinois.edu" target="_tools">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
       </ul>
 
       <h2>Features</h2>
@@ -1489,7 +1478,7 @@
   <slide>
     <title>Bookmarklets for Visualizing Accessibility Features</title>
     <contents>
-      <p><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></p>
+      <p><a href="https://accessibility-bookmarklets.org/" target="_tools">Public Bookmarklets Website</a></p>
       <h2>Features</h2>
       <ul>
         <li>Highlight Regions and Elements on page</li>
