@@ -1026,7 +1026,7 @@
     <title>Coding Landmarks: Adding Labels</title>
     <contents>
 
-        <h2>Labeling Technigues</h2>
+        <h2>Labeling Techniques</h2>
         <p>Describes the purpose of this specific landmark and there are three ways to add a label to a landmark:</p>   
         <ul>
           <li><code>aria-label</code> attribute</li>
