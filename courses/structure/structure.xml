@@ -1323,7 +1323,6 @@
   <slide>
     <title>Coding Skip To Main Content: Simple Link</title>
     <contents>
-        <p><a href="https://jsfiddle.net/jongund/sgwv4twn/"></a></p>
 
         <h2>jsfiddle Configuration</h2>
         <dl>
@@ -1336,6 +1335,8 @@
           <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
 
         </dl>
+
+        <p><a href="https://jsfiddle.net/jongund/sgwv4twn/">Coding Skip To Main Content: Simple Link</a></p>
 
         <iframe src="https://jsfiddle.net/jongund/sgwv4twn/" width="99%" height="600px" title="jsfiddle for skip to main using simple link"></iframe>
 
@@ -1353,7 +1354,6 @@
   <slide>
     <title>Coding Skip To Main Content: SkipTo.js</title>
     <contents>
-        <p><a href="https://jsfiddle.net/jongund/8d3bbzgm/"></a></p>
 
         <h2>jsfiddle Configuration</h2>
         <dl>
@@ -1366,6 +1366,8 @@
           <dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
 
         </dl>
+
+        <p><a href="https://jsfiddle.net/jongund/8d3bbzgm/">Coding Skip To Main Content: SkipTo.js</a></p>
 
         <iframe src="https://jsfiddle.net/jongund/8d3bbzgm/" width="99%" height="600px" title="jsfiddle for skip to main using skipto.js"></iframe>
 
