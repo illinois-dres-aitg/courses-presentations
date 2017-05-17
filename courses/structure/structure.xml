@@ -1157,41 +1157,45 @@
   <slide>
     <title>Use of Headings (H1-H6) in ARIA Landmarks</title>
     <contents>
-      <ul>
-        <li><code>main</code> landmarks should contain <code>h1</code> element at the beginning of section:
-          <ul>
-            <li><code>h1</code> element content describes the content or the purpose of the page</li>
-            <li>Provides a redundant means for assistive technology users to navigate to main content</li>
-            <li>Use headers in a structural way or in combination with HTML5 section elements</li>
-            <li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark</li>
-          </ul>
-        </li>    
-        <li><code>navigation</code> and <code>complementary </code>landmarks should contain <code>h2</code> element at the beginning of section:
-          <ul>
-            <li><code>h2</code> element content describes the content or the purpose of the page</li>
-            <li>Provides a redundant means for assistive technology users to navigate to content</li>
-            <li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name for each landmark</li>
-          </ul>
-        </li>  
-        <li><code>contentinfo</code> landmark may contain <code>h2</code> element at the beginning of section:
-          <ul>
-            <li><code>h2</code> element identifies the section as footer information</li>
-            <li>Provides a redundant means for assistive technology users to navigate to content</li>
-          </ul>
-        </li>  
-        <li><code>banner</code> landmark may contain <code>h1</code> element at the beginning of section:
-          <ul>
-            <li><code>h1</code> element identifies the website information</li>
-            <li>Provides a redundent means for assistive technology users to orient to the website</li>
-          </ul>
-        </li>  
-        <li><code>region</code> landmark should contain an <code>h2-h6</code> element at the beginning of section:
-          <ul>
-            <li><code>h2-h6</code> element identifies the section information</li>
-            <li>Provides a redundent means for assistive technology users to orient to the website</li>
-          </ul>
-        </li>  
-      </ul>
+        <h2><code>main</code> landmarks</h2> 
+        <ul>
+          <li>Should contain <code>h1</code> element at the beginning of section.</li>
+          <li><code>h1</code> element content describes the content or the purpose of the page.</li>
+          <li>Provides a redundant means for assistive technology users to navigate to main content.</li>
+          <li>Use headers in a structural way or in combination with HTML5 section elements.</li>
+          <li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark.</li>
+        </ul>
+
+        <h2><code>navigation</code> and <code>complementary </code>landmarks</h2>
+        <ul>
+          <li>Should contain <code>h2</code> element at the beginning of section.</li>
+          <li><code>h2</code> element content describes the content or the purpose of the page.</li>
+          <li>Provides a redundant means for assistive technology users to navigate to content.</li>
+          <li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use label the landmark.</li>
+        </ul>
+
+        <h2><code>contentinfo</code> landmarks</h2> 
+        <ul>
+          <li>May contain <code>h2</code> element at the beginning of section.</li>
+          <li><code>h2</code> element identifies the section as footer information.</li>
+          <li>Provides a redundant means for assistive technology users to navigate to content.</li>
+        </ul>
+
+        <h2><code>banner</code> landmark</h2>
+        <ul>
+          <li>May contain <code>h1</code> element at the beginning of section.</li>
+          <li><code>h1</code> element identifies the website information.</li>
+          <li>Provides a redundent means for assistive technology users to orient to the website.</li>
+        </ul>
+
+        <h2><code>region</code> landmarks</h2>
+        <ul>
+          <li>Should contain an <code>h2-h6</code> element at the beginning of section, which has appropriate level.</li>
+          <li><code>h2-h6</code> element identifies the section information.</li>
+          <li>The heading element should be used as the label for the <code>region</code> using <code>aria-labelledby</code>.</li>
+          <li>Provides a redundent means for assistive technology users to orient to the website.</li>
+        </ul>
+
     </contents>
   </slide>
 
