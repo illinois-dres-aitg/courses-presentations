@@ -1027,7 +1027,7 @@
     <contents>
 
         <h2>Labeling Techniques</h2>
-        <ul>
+        <ul style="padding-left: 1em">
           <li>If a page contains more than one of the same landmark, those landmarks need a label.</li>
           <li>Labels should uniquely identify the landmark from other landmarks of the same type on the page.</li>
           <li>There are three ways to add a label to a landmark: 
