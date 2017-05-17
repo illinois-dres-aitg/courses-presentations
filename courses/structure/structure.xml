@@ -1153,6 +1153,21 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>Heading Accessibility</title>
+    <contents>
+      <ul>
+        <li>Screen readers provide header navigation commands and list of header views of a document.</li>
+        <li>Headings shoudl be used to identify the sections and sub-sections of a web page.</li>
+        <li>Headings should be nested properly to accurately convey the section and sub-sections of a web page.</li>
+        <li><code>h1</code> element should be reserved to mark the beginning of the main content of a web page.</li>
+        <li>Headings can and should be used to label associated landmarks using <code>aria-labelledby</code> attribute.</li>
+        <li>Headings can be hidden visually, but still provide navigaional markers for screen readers.</li>
+      </ul>
+
+
+    </contents>
+  </slide>
 
   <slide>
     <title>Use of Headings (H1-H6) in ARIA Landmarks</title>

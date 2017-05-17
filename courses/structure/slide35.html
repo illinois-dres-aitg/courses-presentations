@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 35: Coding Headings: h1-h6 Elements</title>
+<title>Slide 35: Hiding Headings (H1-H6) and Other Content</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,41 +38,107 @@
                       </a>
 </li>
 <li>
-<a href="slide45.html">Last
+<a href="slide46.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 35 of 45</div>
+<div class="navbar-text pull-right">Slide 35 of 46</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Coding Headings: h1-h6 Elements</h1>
-<h2>jsfiddle Configuration</h2>
-<dl>
-          
-<dt>Example Title</dt>
-          
-<dd>Add title "Coding Landmarks: <code>h1-h6</code> elements"</dd>
-          
-<dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
-
-          
-<dt>Bootstrap References</dt>
-          
-<dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a>
-</dd>
-          
-<dd>Add Bootstap Javascript URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a>
-</dd>
-
+<h1 id="h1_title" class="title">Hiding Headings (H1-H6) and Other Content</h1>
+<h2 id="id_aria">Hiding Content Visually or From Assistive Technology</h2>
+<table class="table table-striped" aria-labelledby="id_aria">
         
-</dl>
-<p>
-<a href="https://jsfiddle.net/jongund/z8phn0yn/" target="_jsfiddle">Coding Landmarks: <code>h1-h6</code> elements</a>
-</p>
-<iframe src="https://jsfiddle.net/jongund/z8phn0yn/" width="99%" height="600px" title="jsfiddle for updating and adding heading elements"></iframe>
+<thead>
+          
+<tr>
+            
+<th>Technology</th>
+            <th>Technique</th>
+            <th>Assistive Technology</th>
+            <th>Graphical Rendering</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>display: none</code></td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>visibility: hidden</code></td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>position: absolute</code>
+<br>
+              
+<code>top: -30em</code>
+<br>
+              
+<code>left: -300em</code>
+<br>
+            
+</td>
+            <td><strong>Visible</strong></td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>font-size: 1px</code>
+<br>
+              
+<code>line-height: 1px</code>
+<br>
+            
+</td>
+            <td><strong>Visible</strong></td>
+            <td>hidden (almost)</td>
+          
+</tr>
+          
+<tr>
+            
+<td>HTML5</td>
+            <td><code>hidden</code> attribute</td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>ARIA 1.0</td>
+            <td><code>aria-hidden=true</code> attribute</td>
+            <td>hidden</td>
+            <td><strong>Visible</strong></td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

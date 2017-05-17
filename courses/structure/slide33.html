@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 33: Use of Headings (H1-H6) in ARIA Landmarks</title>
+<title>Slide 33: Heading Accessibility</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,84 +38,32 @@
                       </a>
 </li>
 <li>
-<a href="slide45.html">Last
+<a href="slide46.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 33 of 45</div>
+<div class="navbar-text pull-right">Slide 33 of 46</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Use of Headings (H1-H6) in ARIA Landmarks</h1>
-<h2>
-<code>main</code> landmarks</h2>
+<h1 id="h1_title" class="title">Heading Accessibility</h1>
 <ul>
-          
-<li>Should contain <code>h1</code> element at the beginning of section.</li>
-          
-<li>
-<code>h1</code> element content describes the content or the purpose of the page.</li>
-          
-<li>Provides a redundant means for assistive technology users to navigate to main content.</li>
-          
-<li>Use headers in a structural way or in combination with HTML5 section elements.</li>
-          
-<li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark.</li>
         
-</ul>
-<h2>
-<code>navigation</code> and <code>complementary </code>landmarks</h2>
-<ul>
-          
-<li>Should contain <code>h2</code> element at the beginning of section.</li>
-          
-<li>
-<code>h2</code> element content describes the content or the purpose of the page.</li>
-          
-<li>Provides a redundant means for assistive technology users to navigate to content.</li>
-          
-<li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use label the landmark.</li>
+<li>Screen readers provide header navigation commands and list of header views of a document.</li>
         
-</ul>
-<h2>
-<code>contentinfo</code> landmarks</h2>
-<ul>
-          
-<li>May contain <code>h2</code> element at the beginning of section.</li>
-          
-<li>
-<code>h2</code> element identifies the section as footer information.</li>
-          
-<li>Provides a redundant means for assistive technology users to navigate to content.</li>
+<li>Headings shoudl be used to identify the sections and sub-sections of a web page.</li>
         
-</ul>
-<h2>
-<code>banner</code> landmark</h2>
-<ul>
-          
-<li>May contain <code>h1</code> element at the beginning of section.</li>
-          
-<li>
-<code>h1</code> element identifies the website information.</li>
-          
-<li>Provides a redundent means for assistive technology users to orient to the website.</li>
+<li>Headings should be nested properly to accurately convey the section and sub-sections of a web page.</li>
         
-</ul>
-<h2>
-<code>region</code> landmarks</h2>
-<ul>
-          
-<li>Should contain an <code>h2-h6</code> element at the beginning of section, which has appropriate level.</li>
-          
 <li>
-<code>h2-h6</code> element identifies the section information.</li>
-          
-<li>The heading element should be used as the label for the <code>region</code> using <code>aria-labelledby</code>.</li>
-          
-<li>Provides a redundent means for assistive technology users to orient to the website.</li>
+<code>h1</code> element should be reserved to mark the beginning of the main content of a web page.</li>
         
+<li>Headings can and should be used to label associated landmarks using <code>aria-labelledby</code> attribute.</li>
+        
+<li>Headings can be hidden visually, but still provide navigaional markers for screen readers.</li>
+      
 </ul>
 </main>
 <footer class="container">
