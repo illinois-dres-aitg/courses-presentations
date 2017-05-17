@@ -1436,6 +1436,28 @@
 
 
   <slide>
+    <title>OpenAjax Evaluation Library: Landmark Rules</title>
+    <contents>
+      <p><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc5">Landmark Rules</a></p>
+
+      <iframe src="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc5" width="99%" height="600px" title="Landmark rules"></iframe>
+      
+    </contents>
+  </slide>  
+
+  <slide>
+    <title>OpenAjax Evaluation Library: Heading Rules</title>
+    <contents>
+      <p><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc6">Heading Rules</a></p>
+
+      <iframe src="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc6" width="99%" height="600px" title="Heading rules"></iframe>
+      
+    </contents>
+  </slide>  
+
+
+
+  <slide>
     <title>AInspector Sidebar for Firefox</title>
     <contents>
       <p><a href="http://ainspector.github.io">AInspector Sidebar for Firefox Documentation</a></p>
