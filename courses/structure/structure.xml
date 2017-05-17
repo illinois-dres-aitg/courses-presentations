@@ -1295,6 +1295,28 @@
   <slide>
     <title>Simple Skip to Main Content</title>
     <contents>
+      <ul>
+        <li>Keyboard only users.</li>
+        <li>Screen readers users.</li>
+      </ul>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Link (e.g. <code>a</code>) at the beginning of the page.</li>
+        <li>Visible when link receives keyboard focus:
+          <ul>
+            <li>Use CSS psuedo <code>:focus</code> and <code>:active</code>.</li>
+          </ul>
+        </li>
+        <li>Place <code>id</code> on heading or <code>main</code> landmark identifying the start of the main content.</li>
+      </ul>
+
+      <h2>Related Resources</h2>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G1.html">WCAG Technnique G1: Adding a link at the top of each page that goes directly to the main content area</a></li>
+        <li><a href="http://webaim.org/techniques/skipnav/">WebAIM "Skip Navigation" Links</a></li>
+        <li><a href="http://terrillthompson.com/blog/161">Back to Basics: Skip to Main Content Links</a></li>
+      </ul>
     </contents>
   </slide>
 
@@ -1323,6 +1345,8 @@
   <slide>
     <title>SkipTo.js for Page Navigation</title>
     <contents>
+      <p><a href="http://paypal.github.io/skipto/">SkipTo plugin by PayPal</a></p>
+      <iframe src="http://paypal.github.io/skipto/" width="99%" height="600px" title=""></iframe>
     </contents>
   </slide>
 
