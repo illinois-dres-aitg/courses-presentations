@@ -63,11 +63,218 @@
     </contents>
   </slide>
   
-  <slide> 
-    <title>Main Landmark</title>
+    <slide> 
+    <title>Rule: Color Contrast</title>
     <contents>
 
-<div id="container" style="width:100%; height:400px;"></div>
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [30, 48]
+        }, {
+            name: '2017',
+            data: [21, 47]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>98</td>
+             <td>42</td>
+             <td>30%</td>
+             <td>48</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>219</td>
+             <td>55</td>
+             <td>21%</td>
+             <td>47</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+    <slide> 
+    <title>Rule: Heading Level 1</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'The page must contain at least one h1 element identifying and describing the main content of the page.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [51, 87]
+        }, {
+            name: '2017',
+            data: [50, 91]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  The page must contain at least one h1 element identifying and describing the main content of the page.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>70</td>
+             <td>74</td>
+             <td>51%</td>
+             <td>87</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>138</td>
+             <td>139</td>
+             <td>50%</td>
+             <td>91</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+    <slide> 
+    <title>Rule: Heading Properly Nested</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Heading elements must be properly nested on the page.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [31, 89]
+        }, {
+            name: '2017',
+            data: [24, 89]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  eading elements must be properly nested on the page.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>96</td>
+             <td>44</td>
+             <td>31%</td>
+             <td>89</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>210</td>
+             <td>67</td>
+             <td>24%</td>
+             <td>89</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Rule: Include Main Landmark</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
 
       <script>
       $(function () { 
@@ -92,7 +299,7 @@
         },
         series: [{
             name: '2016',
-            data: [7, 39]
+            data: [27, 39]
         }, {
             name: '2017',
             data: [40, 46]
@@ -114,10 +321,10 @@
         <tbody>
            <tr>
              <th>February 2016</th>
-             <td>132</td>
-             <td>10</td>
-             <td>7%</td>
-             <td>44</td>
+             <td>105</td>
+             <td>39</td>
+             <td>27%</td>
+             <td>39</td>
            </tr>
            <tr>
              <th>January 2017</th>
@@ -125,6 +332,283 @@
              <td>79</td>
              <td>40%</td>
              <td>46</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Rule: Rendered Content in Landmarks</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [7, 44]
+        }, {
+            name: '2017',
+            data: [8, 53]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>132</td>
+             <td>10</td>
+             <td>7%</td>
+             <td>44</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>254</td>
+             <td>23</td>
+             <td>8%</td>
+             <td>53</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Rule: Form Control Labels</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [30, 57]
+        }, {
+            name: '2017',
+            data: [31, 70]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Each input, select, textarea, progress, meter and output element must have an accessible label.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>81</td>
+             <td>35</td>
+             <td>30%</td>
+             <td>57</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>172</td>
+             <td>78</td>
+             <td>31%</td>
+             <td>70</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+
+  <slide> 
+    <title>Rule: Grouping Label for Radio Buttons</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'A related group of radio buttons must have a grouping label.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [27, 45]
+        }, {
+            name: '2017',
+            data: [25, 41]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for A related group of radio buttons must have a grouping label.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>22</td>
+             <td>8</td>
+             <td>27%</td>
+             <td>45</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>40</td>
+             <td>13</td>
+             <td>25%</td>
+             <td>41</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
+  <slide> 
+    <title>Rule: Keyboard Event Handlers</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Widget elements must have keyboard event handlers.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [48, 57]
+        }, {
+            name: '2017',
+            data: [6, 27]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Widget elements must have keyboard event handlers.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>21</td>
+             <td>10</td>
+             <td>48%</td>
+             <td>57</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>135</td>
+             <td>9</td>
+             <td>6%</td>
+             <td>27</td>
            </tr>
         </tbody>  
       </table>
