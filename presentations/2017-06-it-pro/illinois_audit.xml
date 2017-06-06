@@ -45,21 +45,10 @@
         <li><a href="http://www.dhs.state.il.us/IITAA/IITAAWebImplementationGuidelines.html">Illinois Information Technology Accessibility Act</a> (2007)</li>
         <li><a href="http://www.w3.org/tr/wcag/">W3C Web Content Accessibility Guidelines 2.0</a> (2008)</li>
         <li><a href="http://www.w3.org/tr/wai-aria/">W3C Accessible Rich Internet Application (ARIA) 1.0</a> (2014)</li>
+        <li><a href="http://w3c.github.io/aria-practices/">W3C ARIA AUthoring Practices Guide</a> (2017)</li>
         <li><a href="http://www.w3.org/tr/html5/">W3C HMTL 5.0</a> (2014)</li>
       </ul>
       
-      <h2>Website Information</h2>
-      <ul>
-        <li>277 Websites selected from the <a href="http://illinois.edu/ds/azList">Illinois Directory</a></li>
-        <li>Used beta version of FAE Auditor to collect data:
-          <ul>
-            <li>OpenAjax Evaluation Library 1.0 (Same as used in FAE 2.0 and AInspector Sidebar)</li>
-            <li>HTML5 and ARIA Ruleset</li>
-            <li>Second level pages</li>
-          </ul>
-        </li>
-        <li>Over 11,000 pages evaluated</li>
-      </ul>
     </contents>
   </slide>
   
