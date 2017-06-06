@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Settlement Summary</title>
+<title>Slide 8: Rule: Form Control Labels</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,68 +37,90 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide21.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 14</div>
+<div class="navbar-text pull-right">Slide 8 of 21</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Settlement Summary</h1>
-<ul>
+<h1 id="h1_title" class="title">Rule: Form Control Labels</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [30, 57]
+        }, {
+            name: '2017',
+            data: [31, 70]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Each input, select, textarea, progress, meter and output element must have an accessible label.">
         
-<li>People with specific responsibilities for monitoring, reporting and implementing IT accessibility policies and requirements, examples within the BigTen include:
-          <ul>
-            
-<li>Christian Vinten-Johansen, <a href="http://accessibility.psu.edu/testing/fae/">IT accessibility at Penn State University</a>
-</li>
-            
-<li>Nathan Evans, <a href="https://tech.msu.edu/technology/accessibility/">IT accessibility at Michigan State University</a>
-</li>
-            
-<li>Todd Weisenberger, <a href="https://itaccessibility.uiowa.edu">IT accessibility at University of Iowa</a>
-</li>
-            
-<li>Peter Bossley, <a href="https://www.osu.edu/resources/web/accessibility">IT accessibility at The Ohio State University</a>
-</li>
-            
-<li>Scott Willaims, <a href="http://webaccess.hr.umich.edu/">IT accessibility at University of Michigan</a>
-</li>
-            
-<li>Greg Hanek, <a href="https://accessibility.iu.edu/">IT accessibility at Indiana University</a>
-</li>
+<thead>
           
-</ul>
-        
-</li>
-        
-<li>University wide IT accessibility policy and implementation plan.</li>
-        
-<li>Auditing of current IT resources for compliance.</li>
-        
-<li>IT Accessibility Training:
-          <ul>
+<tr>
             
-<li>Administrators</li>
-            
-<li>Instructors</li>
-            
-<li>Staff</li>
-            
-<li>Designers</li>
-            
-<li>Marketing</li>
-            
-<li>Developers</li>
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
           
-</ul>
+</tr>
         
-</li>
+</thead>
+        
+<tbody>
+           
+<tr>
+             
+<th>February 2016</th>
+             <td>81</td>
+             <td>35</td>
+             <td>30%</td>
+             <td>57</td>
+           
+</tr>
+           
+<tr>
+             
+<th>January 2017</th>
+             <td>172</td>
+             <td>78</td>
+             <td>31%</td>
+             <td>70</td>
+           
+</tr>
+        
+</tbody>  
       
-</ul>
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

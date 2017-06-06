@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Recent Office of Civil Rights (OCR) Case Settlements in Higher Education</title>
+<title>Slide 7: Rule: Rendered Content in Landmarks</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,136 +37,85 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide21.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 14</div>
+<div class="navbar-text pull-right">Slide 7 of 21</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Recent Office of Civil Rights (OCR) Case Settlements in Higher Education</h1>
-<table aria-labelledby="h1_title" class="table table-striped">
+<h1 id="h1_title" class="title">Rule: Rendered Content in Landmarks</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [7, 44]
+        }, {
+            name: '2017',
+            data: [8, 53]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
         
 <thead>
           
 <tr>
             
-<th>Date</th>
-            <th>Institution</th>
-            <th>Resolution Summary</th>
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
           
 </tr>
-          
         
 </thead>
         
 <tbody>
-          
+           
 <tr>
-            
-<td>2015</td>
-            <td><a href="https://www2.ed.gov/about/offices/list/ocr/docs/investigations/more/08152040-b.pdf">University of Phoenix</a></td>
-            <td>
-              
-<ul>
-                
-<li>Designate two IT Disability Coordinators</li>
-                
-<li>Provide effective Disability Technology Help Desk Support for students</li>
-                
-<li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                
-<li>Provide new accessible online content and functionality</li>
-                
-<li>Audit of existing inaccessible content and functionality</li>
-              
-</ul>
-            
-</td>
-          
+             
+<th>February 2016</th>
+             <td>132</td>
+             <td>10</td>
+             <td>7%</td>
+             <td>44</td>
+           
 </tr>
-          
+           
 <tr>
-            
-<td>2014</td>
-            <td>
-              <a href="https://www.ed.gov/news/press-releases/university-cincinnati-us-education-department-reach-agreement-ensure-equal-acces">
-                University of Cincinnati
-              </a>
-            </td>
-            <td>
-              
-<ul>
-                
-<li>Designate Section 504/Title II Coordinators</li>
-                
-<li>Implement Web accessibility policy</li>
-                
-<li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                
-<li>Ensure website and LMS mechanisms in place for accessibility</li>
-                
-<li>Third party certification to meet IT standards by the institution</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>2014</td>
-            <td>
-              <a href="https://athenpro.org/sites/default/files/Univ_Montana_Missoula_FinalAgreement10_2014.pdf">
-                University of Montana
-              </a>
-            </td>
-            <td>
-              
-<ul>
-                
-<li>Designate EIT Coordinator</li>
-                
-<li>Implement EIT accessibility policy and procedures</li>
-                
-<li>Develop/institute procurement procedures</li>
-                
-<li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                
-<li>Complete EIT accessibility audit</li>
-                
-<li>Ensure websites, LMS, library services, etc. mechanisms in place for accessibility</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>2012</td>
-            <td><a href="http://accessibility.psu.edu/nfbpsusettlement/">Penn State University</a></td>
-            <td>
-              
-<ul>
-                
-<li>Develop EIT accessibility policy statement</li>
-                
-<li>Develop/implement EIT accessibility policy and procedures</li>
-                
-<li>Develop and institute procurements</li>
-                
-<li>Ensure websites, LMS, etc. mechanisms in place for accessibility</li>
-              
-</ul>
-            
-</td>
-          
+             
+<th>January 2017</th>
+             <td>254</td>
+             <td>23</td>
+             <td>8%</td>
+             <td>53</td>
+           
 </tr>
         
 </tbody>  

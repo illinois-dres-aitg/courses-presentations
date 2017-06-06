@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 4: Top Ten Websites at Illinois by Implementation Score</title>
+<title>Slide 4: Rule: Heading Level 1</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,107 +37,85 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide21.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 4 of 14</div>
+<div class="navbar-text pull-right">Slide 4 of 21</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Top Ten Websites at Illinois by Implementation Score</h1>
-<p>
-<a href="http://fae-audit.cita.illinois.edu/audit/159c1f63adc2fb6a/rc/ws/all/">Evaluation Results by Website</a>
-</p>
-<table aria-labelledby="h1_title" class="table table-striped">
+<h1 id="h1_title" class="title">Rule: Heading Level 1</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'The page must contain at least one h1 element identifying and describing the main content of the page.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [51, 87]
+        }, {
+            name: '2017',
+            data: [50, 91]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  The page must contain at least one h1 element identifying and describing the main content of the page.">
         
 <thead>
           
 <tr>
             
-<th>Website</th>
-            <th>Pages</th>
-            <th>Implementation Score</th>
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
           
 </tr>
-          
         
 </thead>
         
 <tbody>
-          
+           
 <tr>
-            
-<th><a href="http://woundedvetcenter.ahs.illinois.edu/">Center for Wounded Veterans</a></th>
-            <td>19</td>
-            <td>97</td>
-          
+             
+<th>February 2016</th>
+             <td>70</td>
+             <td>74</td>
+             <td>51%</td>
+             <td>87</td>
+           
 </tr>
-          
+           
 <tr>
-            
-<th><a href="http://ihealth.illinois.edu/">I-HEALTH</a></th>
-            <td>20</td>
-            <td>96</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://research.illinois.edu/regulatory-compliance-safety/aacup">Agricultural Animal Care and Use Program (AACUP) | Office of the Vice Chancellor for Research</a></th>
-            <td>1</td>
-            <td>96</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://kch.illinois.edu/">Welcome to Kinesiology &amp; Community Health | Kinesiology &amp; Community Health</a></th>
-            <td>36</td>
-            <td>95</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://chad.illinois.edu">chad.illinois.edu</a></th>
-            <td>28</td>
-            <td>94</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="https://research.illinois.edu/regulatory-compliance-safety/dar">Division of Animal Resources (DAR) | Office of the Vice Chancellor for Research</a></th>
-            <td>43</td>
-            <td>94</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://admissions.illinois.edu/">University of Illinois Admissions</a></th>
-            <td>12</td>
-            <td>94</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://rst.illinois.edu/               ">Recreation, Sport &amp; Tourism</a></th>
-            <td>32</td>
-            <td>93</td>
-          
-</tr>
-          
-<tr>
-            
-<th><a href="http://research.illinois.edu/stf">Scholars' Travel | Office of the Vice Chancellor for Research</a></th>
-            <td>37</td>
-            <td>93</td>
-          
+             
+<th>January 2017</th>
+             <td>138</td>
+             <td>139</td>
+             <td>50%</td>
+             <td>91</td>
+           
 </tr>
         
 </tbody>  

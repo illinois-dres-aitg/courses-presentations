@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 6: Limitations of Automated Checks and Implementation Scores</title>
+<title>Slide 6: Rule: Include Main Landmark</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,47 +37,90 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide21.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 14</div>
+<div class="navbar-text pull-right">Slide 6 of 21</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Limitations of Automated Checks and Implementation Scores</h1>
-<ul>
+<h1 id="h1_title" class="title">Rule: Include Main Landmark</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Each page must have at least one main landmark, used to identify the main content.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [27, 39]
+        }, {
+            name: '2017',
+            data: [40, 46]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for each page must have at least one main landmark, used to identify the main content.">
         
-<li>At best maybe 30-40% of accessibility features can be tested automaically.</li>
-        
-<li>Developers are really good at figuring out how to pass automated tests without really addressing accessibility issues related to the test.</li>
-        
-<li>Accessibility design requires knowledge in the design and implementation stages, for example:
-          <ul>
-            
-<li>Landmark usage and organization.</li>
-            
-<li>Structural use of headings (H1-H6).</li>
-            
-<li>Use of color and color contrast of text content.</li>
-            
-<li>Keyboard navigation.</li>
-            
-<li>Keyboard focus styling.</li>
-            
-<li>How to model custom interactive web widgets with ARIA markup and keyboard event handlers.</li>
+<thead>
           
-</ul>
+<tr>
+            
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          
+</tr>
         
-</li>
+</thead>
         
-<li>Without knowledge and experience manual testing is difficult or impossible to evaluate.</li>
+<tbody>
+           
+<tr>
+             
+<th>February 2016</th>
+             <td>105</td>
+             <td>39</td>
+             <td>27%</td>
+             <td>39</td>
+           
+</tr>
+           
+<tr>
+             
+<th>January 2017</th>
+             <td>198</td>
+             <td>79</td>
+             <td>40%</td>
+             <td>46</td>
+           
+</tr>
         
-<li>Many important accessibility features require manual checking.</li>
+</tbody>  
       
-</ul>
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

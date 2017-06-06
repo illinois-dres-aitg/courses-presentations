@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 3: Main Landmark</title>
+<title>Slide 3: Rule: Color Contrast</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,17 +37,17 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide21.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 3 of 14</div>
+<div class="navbar-text pull-right">Slide 3 of 21</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Main Landmark</h1>
+<h1 id="h1_title" class="title">Rule: Color Contrast</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () { 
@@ -56,7 +56,7 @@
             type: 'column'
         },
         title: {
-            text: 'Each page must have at least one main landmark, used to identify the main content.'
+            text: 'Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text.'
         },
         xAxis: {
             categories: ['Percent Pass', 'Implementation Score']
@@ -72,15 +72,15 @@
         },
         series: [{
             name: '2016',
-            data: [7, 39]
+            data: [30, 48]
         }, {
             name: '2017',
-            data: [40, 46]
+            data: [21, 47]
         }]
       });
     });
   </script>
-<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for each page must have at least one main landmark, used to identify the main content.">
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text">
         
 <thead>
           
@@ -88,8 +88,8 @@
             
 <th>Year</th>
             <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
             <th title="Implementation Score">Implementation Score</th>
           
 </tr>
@@ -101,20 +101,20 @@
 <tr>
              
 <th>February 2016</th>
-             <td>132</td>
-             <td>10</td>
-             <td>7%</td>
-             <td>44</td>
+             <td>98</td>
+             <td>42</td>
+             <td>30%</td>
+             <td>48</td>
            
 </tr>
            
 <tr>
              
 <th>January 2017</th>
-             <td>198</td>
-             <td>79</td>
-             <td>40%</td>
-             <td>46</td>
+             <td>219</td>
+             <td>55</td>
+             <td>21%</td>
+             <td>47</td>
            
 </tr>
         
