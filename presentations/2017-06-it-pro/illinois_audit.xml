@@ -26,7 +26,7 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Audit Results for January 2017 (277 Websites, 11,118 web pages)</li>
+        <li>Audit Results for February 2016 and January 2017 (277 Websites, 11,118 web pages)</li>
         <li>Recent OCR settlements in higher education</li>
         <li>AInspector Sidebar, FAE 2.0 and Accessibility Bookmarks updates</li>
         <li>Training</li>
@@ -48,6 +48,17 @@
         <li><a href="http://w3c.github.io/aria-practices/">W3C ARIA AUthoring Practices Guide</a> (2017)</li>
         <li><a href="http://www.w3.org/tr/html5/">W3C HMTL 5.0</a> (2014)</li>
       </ul>
+
+      <h2>Audit Information</h2>
+      <dl>
+        <dt>February 2016</dt>
+        <dd>144 websites</dd>
+        <dd>5,222 web pages</dd>
+
+        <dt>January 2017</dt>
+        <dd>277 websites</dd>
+        <dd>11,118 web pages</dd>
+      </dl>
       
     </contents>
   </slide>
