@@ -50,15 +50,28 @@
       </ul>
 
       <h2>Audit Information</h2>
-      <dl>
-        <dt>February 2016</dt>
-        <dd>144 websites</dd>
-        <dd>5,222 web pages</dd>
 
-        <dt>January 2017</dt>
-        <dd>277 websites</dd>
-        <dd>11,118 web pages</dd>
-      </dl>
+      <table aria-labelledby="h1_title" class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="num">February 2016</th>
+            <th class="num">January 2017</th>
+          </tr>          
+        </thead>
+        <tbody>
+          <tr>
+            <th>Websites</th>
+            <td>144</td>
+            <td>277</td>
+          </tr>
+          <tr>
+            <th>Pages</th>
+            <td>5,222</td>
+            <td>11,118</td>
+          </tr>
+        </tbody>
+      </table>  
       
     </contents>
   </slide>
