@@ -20,8 +20,11 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
+
   <script>https://code.highcharts.com/highcharts.src.js</script>
-  
+  <script>http://code.highcharts.com/modules/exporting.js</script>
+  <script>http://code.highcharts.com/modules/offline-exporting.js</script>
+
   <slide>
     <title>Overview</title>
     <contents>
@@ -75,6 +78,76 @@
       
     </contents>
   </slide>
+
+      <slide> 
+    <title>Rule: ALT Attribute for Images</title>
+    <contents>
+
+      <div id="container" style="width:100%; height:400px;"></div>
+
+      <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [30, 48]
+        }, {
+            name: '2017',
+            data: [21, 47]
+        }]
+      });
+    });
+  </script>
+
+      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <th>February 2016</th>
+             <td>82</td>
+             <td>59</td>
+             <td>42%</td>
+             <td>87</td>
+           </tr>
+           <tr>
+             <th>January 2017</th>
+             <td>171</td>
+             <td>104</td>
+             <td>38%</td>
+             <td>90</td>
+           </tr>
+        </tbody>  
+      </table>
+
+    </contents>
+  </slide> 
+
   
     <slide> 
     <title>Rule: Color Contrast</title>

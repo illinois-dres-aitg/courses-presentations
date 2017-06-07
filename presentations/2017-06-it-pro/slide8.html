@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Rule: Form Control Labels</title>
+<title>Slide 8: Rule: Rendered Content in Landmarks</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides2.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script><script type="text/javascript" src="https://code.highcharts.com/highcharts.src.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script><script type="text/javascript" src="https://code.highcharts.com/highcharts.src.js"></script><script type="text/javascript" src="http://code.highcharts.com/modules/exporting.js"></script><script type="text/javascript" src="http://code.highcharts.com/modules/offline-exporting.js"></script>
 <style id="style" type="text/css"></style>
 </head>
 <body>
@@ -37,17 +37,17 @@
                       </a>
 </li>
 <li>
-<a href="slide22.html">Last
+<a href="slide23.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 22</div>
+<div class="navbar-text pull-right">Slide 8 of 23</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Form Control Labels</h1>
+<h1 id="h1_title" class="title">Rule: Rendered Content in Landmarks</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () { 
@@ -56,7 +56,7 @@
             type: 'column'
         },
         title: {
-            text: 'Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.'
+            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
         },
         xAxis: {
             categories: ['Percent Pass', 'Implementation Score']
@@ -72,15 +72,15 @@
         },
         series: [{
             name: '2016',
-            data: [30, 57]
+            data: [7, 44]
         }, {
             name: '2017',
-            data: [31, 70]
+            data: [8, 53]
         }]
       });
     });
   </script>
-<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Each input, select, textarea, progress, meter and output element must have an accessible label.">
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
         
 <thead>
           
@@ -101,20 +101,20 @@
 <tr>
              
 <th>February 2016</th>
-             <td>81</td>
-             <td>35</td>
-             <td>30%</td>
-             <td>57</td>
+             <td>132</td>
+             <td>10</td>
+             <td>7%</td>
+             <td>44</td>
            
 </tr>
            
 <tr>
              
 <th>January 2017</th>
-             <td>172</td>
-             <td>78</td>
-             <td>31%</td>
-             <td>70</td>
+             <td>254</td>
+             <td>23</td>
+             <td>8%</td>
+             <td>53</td>
            
 </tr>
         
