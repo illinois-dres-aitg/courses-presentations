@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 3: Rule: ALT Attribute for Images</title>
+<title>Slide 3: Definitions</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,91 +37,40 @@
                       </a>
 </li>
 <li>
-<a href="slide23.html">Last
+<a href="slide24.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 3 of 23</div>
+<div class="navbar-text pull-right">Slide 3 of 24</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: ALT Attribute for Images</h1>
-<div id="container" style="width:100%; height:400px;"></div>
-<script>
-      $(function () { 
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [30, 48]
-        }, {
-            name: '2017',
-            data: [21, 47]
-        }]
-      });
-    });
-  </script>
-<h2 style="font-size: 130%">Website Data</h2>
-<table class="table table-striped" aria-label="Rule results for Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.">
+<h1 id="h1_title" class="title">Definitions</h1>
+<dl>
         
-<thead>
-          
-<tr>
-            
-<th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          
-</tr>
+<dt>Website Fail</dt>
         
-</thead>
+<dd>Number of websites that have at least one failure on any page in the website.</dd>
         
-<tbody>
-           
-<tr>
-             
-<th>February 2016</th>
-             <td>82</td>
-             <td>59</td>
-             <td>42%</td>
-             <td>87</td>
-           
-</tr>
-           
-<tr>
-             
-<th>January 2017</th>
-             <td>171</td>
-             <td>104</td>
-             <td>38%</td>
-             <td>90</td>
-           
-</tr>
+<dt>Website Pass</dt>
         
-</tbody>  
+<dd>Number of websites that all of the pages pass the rule.</dd>
+        
+<dt>Percent Pass</dt>
+        
+<dd>The number of websites that pass divided by the total number of websites the rule applied to.</dd>
+        
+<dt>Implementation Score</dt>
+        
+<dd>An indicator of how pervasive the implementation of a rule requirement.</dd>
+        
+<dd>For element level rules, this indicates the number of elements that passed the rule divided by the number ot total elements the rule applied to.</dd>
+        
+<dd>For page level rules the number of pages that passed in a website versus the toal number of pages the rule applied to.</dd>
       
-</table>
+</dl>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

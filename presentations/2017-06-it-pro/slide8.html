@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Rule: Rendered Content in Landmarks</title>
+<title>Slide 8: Rule: Include Main Landmark</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,17 +37,17 @@
                       </a>
 </li>
 <li>
-<a href="slide23.html">Last
+<a href="slide24.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 23</div>
+<div class="navbar-text pull-right">Slide 8 of 24</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Rendered Content in Landmarks</h1>
+<h1 id="h1_title" class="title">Rule: Include Main Landmark</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () { 
@@ -56,7 +56,7 @@
             type: 'column'
         },
         title: {
-            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
+            text: 'Each page must have at least one main landmark, used to identify the main content.'
         },
         xAxis: {
             categories: ['Percent Pass', 'Implementation Score']
@@ -72,16 +72,16 @@
         },
         series: [{
             name: '2016',
-            data: [7, 44]
+            data: [27, 39]
         }, {
             name: '2017',
-            data: [8, 53]
+            data: [40, 46]
         }]
       });
     });
   </script>
 <h2 style="font-size: 130%">Website Data</h2>
-<table class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
+<table class="table table-striped" aria-label="Rule results for each page must have at least one main landmark, used to identify the main content.">
         
 <thead>
           
@@ -102,20 +102,20 @@
 <tr>
              
 <th>February 2016</th>
-             <td>132</td>
-             <td>10</td>
-             <td>7%</td>
-             <td>44</td>
+             <td>105</td>
+             <td>39</td>
+             <td>27%</td>
+             <td>39</td>
            
 </tr>
            
 <tr>
              
 <th>January 2017</th>
-             <td>254</td>
-             <td>23</td>
-             <td>8%</td>
-             <td>53</td>
+             <td>198</td>
+             <td>79</td>
+             <td>40%</td>
+             <td>46</td>
            
 </tr>
         
