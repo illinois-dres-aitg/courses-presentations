@@ -210,8 +210,8 @@
       <ul>
         <li>Two versions of Functional Accessibility Evaluator 2.0
           <ul>
-            <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
-            <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
+            <li><a href="https://fae.disability.illinois.edu" target="_reference">FAE 2.0 Indidvidual License Version</a></li>
+            <li><a href="https://fae.illinois.edu" target="_reference">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
           </ul>
         </li>
         <li>Website rule result summaries and implementation status</li>
@@ -228,7 +228,7 @@
     <title>AInspector Sidebar for Firefox</title>
     <contents>
       <ul>
-        <li><a href="https://ainspector.github.io">http://ainspector.github.io</a></li>
+        <li><a href="https://ainspector.github.io" target="_reference">http://ainspector.github.io</a></li>
         <li>Page summary rule results</li>
         <li>Analyzes the browser DOM content</li>
         <li>Highlighting elements</li>
@@ -246,7 +246,7 @@
     <contents>
       <ul>
         <li>Accessible authoring versus accessibility remeditation</li>
-        <li><a href="https://a11yfirst.library.illinois.edu/">Demo of A11yFirst for CKEditor</a></li>
+        <li><a href="https://a11yfirst.library.illinois.edu/" target="_reference">Demo of A11yFirst for CKEditor</a></li>
         <li>Currently four plugins:
           <ul>
             <li>Headings</li>
@@ -266,7 +266,7 @@
   <slide>
     <title>Illinois Web Accessibility Badging Training Program</title>
     <contents>
-      <p><a href="http://go.illinois.edu/a11y-badges">DRES IT Accessibility Badging Program </a></p>
+      <p><a href="http://go.illinois.edu/a11y-badges" target="_reference">DRES IT Accessibility Badging Program </a></p>
 
     </contents>
   </slide>
@@ -279,7 +279,7 @@
         <dt>Tools Advisory group</dt>
         <dd>Guide the development of the tool features.</dd>
         <dd>Meets first Thursday of each Month at 2:00pm Central Time (Chicago Local Time) using Skype for Business.</dd>
-        <dd>Meeting information made available tnrough <a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></dd>
+        <dd>Meeting information made available tnrough <a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions">Open Source Tools Discussion List</a></dd>
 
         <dt>User Group</dt>
         <dd>Open forum with no agenda, just respoding to uses</dd>
@@ -290,9 +290,9 @@
 
       <h2>Issues and Ideas</h2>
       <ul>
-        <li><a href="https://github.com/opena11y/oaa-rules/issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
-        <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
-        <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
+        <li><a href="https://github.com/opena11y/oaa-rules/issues" target="_reference">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
+        <li><a href="https://github.com/opena11y/fae-ainspector" target="_reference">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
+        <li><a href="https://github.com/oaa-tools/bookmarklets/issues" target="_reference">Issues or ideas on the Bookmarklets</a></li>
       </ul>
 
     </contents>
