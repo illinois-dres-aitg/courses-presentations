@@ -1036,11 +1036,10 @@
           </li>
         </ul>
 
-        <h2>jsfiddle Configuration</h2>
+        <h2>WebEdit Configuration</h2>
         <dl>
-          <dt>Example Title</dt>
+          <dt>Copy template</dt>
           <dd>Add title "Coding Landmarks: Adding Labels"</dd>
-          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
 
           <dt>Bootstrap References</dt>
           <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
@@ -1124,8 +1123,8 @@
     <title>Additional HTML5/ARIA Resources</title>
     <contents>
       <ul>
-        <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
-        <li><a href="http://www.w3.org/TR/aria-in-html/"  target="_specification">Using ARIA in HTML</a></li>
+        <li><a href="https://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
+        <li><a href="https://www.w3.org/TR/aria-in-html/"  target="_specification">Using ARIA in HTML</a></li>
         <li><a href="http://html5accessibility.com"  target="_specification">HTML 5 Accessibility Mapping Implementation (Steve Faulkner, Pacilleo Group)</a></li>
       </ul>
     </contents>
@@ -1142,10 +1141,10 @@
 
       <h2>Related WCAG 2.0 Success Criteria</h2>
       <ul>
-        <li><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_specification">1.3.1 Info and Relationships</a></li>
-        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" target="_specification">2.4.1 Bypass Blocks</a></li>
-        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title" target="_specification">2.4.2 Page Titled</a></li>
-        <li><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_specification">1.3.1 Info and Relationships</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" target="_specification">2.4.1 Bypass Blocks</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-title" target="_specification">2.4.2 Page Titled</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
       </ul>
     </contents>
   </slide>
@@ -1277,9 +1276,9 @@
     <slide>
     <title>Coding Headings: h1-h6 Elements</title>
     <contents>
-        <h2>jsfiddle Configuration</h2>
+        <h2>WebEdit Configuration</h2>
         <dl>
-          <dt>Example Title</dt>
+          <dt>Copy Example</dt>
           <dd>Add title "Coding Landmarks: <code>h1-h6</code> elements"</dd>
           <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
 
@@ -1289,9 +1288,9 @@
 
         </dl>
 
-        <p><a href="https://jsfiddle.net/jongund/z8phn0yn/" target="_jsfiddle">Coding Landmarks: <code>h1-h6</code> elements</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-3/" target="_jsfiddle">Webedit example template for adding and updating headings</a></p>
 
-        <iframe src="https://jsfiddle.net/jongund/z8phn0yn/" width="99%" height="600px" title="jsfiddle for updating and adding heading elements"></iframe>
+        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-3/" width="99%" height="600px" title="Webedit example template for adding and updating headings"></iframe>
 
     </contents>
   </slide>
@@ -1354,11 +1353,10 @@
     <title>Coding Skip To Main Content: Simple Link</title>
     <contents>
 
-        <h2>jsfiddle Configuration</h2>
+        <h2>WebEdit Configuration</h2>
         <dl>
-          <dt>Example Title</dt>
+          <dt>Copy Template</dt>
           <dd>Add title "Coding Skip To Main Content: Simple Link"</dd>
-          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
 
           <dt>Bootstrap References</dt>
           <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
@@ -1366,9 +1364,9 @@
 
         </dl>
 
-        <p><a href="https://jsfiddle.net/jongund/sgwv4twn/" target="_jsfiddle">Coding Skip To Main Content: Simple Link</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" target="_jsfiddle">Webedit example template for adding skip-to-main content</a></p>
 
-        <iframe src="https://jsfiddle.net/jongund/sgwv4twn/" width="99%" height="600px" title="jsfiddle for skip to main using simple link"></iframe>
+        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" width="99%" height="600px" title="Webedit example template for adding skip-to-main content"></iframe>
 
     </contents>
   </slide>
@@ -1385,11 +1383,10 @@
     <title>Coding Skip To Main Content: SkipTo.js</title>
     <contents>
 
-        <h2>jsfiddle Configuration</h2>
+        <h2>WebEdit Configuration</h2>
         <dl>
-          <dt>Example Title</dt>
-          <dd>Add title "Coding Skip To Main Content: SkipTo.js"</dd>
-          <dd>Use the "Fiddle Meta" tab on left hand side navigation bar</dd>
+          <dt>Copy Template</dt>
+          <dd>Add title "Coding Skip To Main Content: Simple Link"</dd>
 
           <dt>Bootstrap References</dt>
           <dd>Add Bootstap CSS URL as an "External Resource": <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
@@ -1397,9 +1394,9 @@
 
         </dl>
 
-        <p><a href="https://jsfiddle.net/jongund/8d3bbzgm/" target="_jsfiddle">Coding Skip To Main Content: SkipTo.js</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" target="_jsfiddle">Webedit example template for adding skip-to-main content</a></p>
 
-        <iframe src="https://jsfiddle.net/jongund/8d3bbzgm/" width="99%" height="600px" title="jsfiddle for skip to main using skipto.js"></iframe>
+        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" width="99%" height="600px" title="Webedit example template for adding skip-to-main content"></iframe>
 
     </contents>
   </slide>
@@ -1446,9 +1443,9 @@
   <slide>
     <title>AInspector Sidebar for Firefox</title>
     <contents>
-      <p><a href="http://ainspector.github.io" target="_tools">AInspector Sidebar for Firefox Documentation</a></p>
+      <p><a href="https://ainspector.github.io" target="_tools">AInspector Sidebar for Firefox Documentation</a></p>
 
-      <iframe src="http://ainspector.github.io" width="99%" height="600px" title="AInspector Sidebar for Firefox Documentation"></iframe>
+      <iframe src="https://ainspector.github.io" width="99%" height="600px" title="AInspector Sidebar for Firefox Documentation"></iframe>
 
     </contents>
   </slide>
