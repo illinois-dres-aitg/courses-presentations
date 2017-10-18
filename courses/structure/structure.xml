@@ -1331,7 +1331,7 @@
       <h2>Features</h2>
       <ul>
         <li>Place link (e.g. <code>&lt;a href="#main"&gt;Skip to main content&lt;/a&gt;</code>) at the beginning of the page.</li>
-        <li>Visible when link receives keyboard focus:
+        <li>By default use CSS to place link off screeen and then move the link back on screen when the link receives keyboard focus:
           <ul>
             <li>Use CSS psuedo <code>:focus</code> and <code>:active</code><br/><em>or</em></li>
             <li>Use <code>focus</code> and <code>blur</code> events to show and hide the element.</li>
