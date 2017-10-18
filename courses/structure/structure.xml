@@ -1330,7 +1330,7 @@
 
       <h2>Features</h2>
       <ul>
-        <li>Link (e.g. <code>a</code>) at the beginning of the page.</li>
+        <li>Place link (e.g. <code>&lt;a href="#main"&gt;Skip to main content&lt;/a&gt;</code>) at the beginning of the page.</li>
         <li>Visible when link receives keyboard focus:
           <ul>
             <li>Use CSS psuedo <code>:focus</code> and <code>:active</code><br/><em>or</em></li>
@@ -1374,8 +1374,8 @@
   <slide>
     <title>SkipTo.js for Page Navigation</title>
     <contents>
-      <p><a href="http://paypal.github.io/skipto/">SkipTo plugin by PayPal</a></p>
-      <iframe src="http://paypal.github.io/skipto/" width="99%" height="600px" title=""></iframe>
+      <p><a href="https://paypal.github.io/skipto/">SkipTo plugin by PayPal</a></p>
+      <iframe src="https://paypal.github.io/skipto/" width="99%" height="600px" title=""></iframe>
     </contents>
   </slide>
 
