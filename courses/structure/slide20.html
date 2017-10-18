@@ -82,7 +82,7 @@
                 
 <li>The <code>contentinfo</code> landmark should be a top-level landmark.</li>
                 
-<li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements), 
+<li>When a page contains nested <code>document</code> and/or <code>application</code> roles (e.g. typically through the use of <code>iframe</code> and <code>frame</code> elements),
                   each <code>document</code> or <code>application</code> role may have one <code>contentinfo</code> landmark.</li>
                 
 <li>If a page includes more than one <code>contentinfo</code> landmark, each should have a unique label (see Step 3 above).</li>
@@ -149,13 +149,13 @@
 <code>table</code>
 </li>
                   
-</ul>  
+</ul>
                 
 </li>
                 
 <li>If the HTML5 <code>footer</code> element technique is not being used, a <code>role="contentinfo"</code> attribute should be used to define a <code>contentinfo</code> landmark.</li>
               
-</ul>  
+</ul>
             
 </td>
           
@@ -170,7 +170,7 @@
                 
 <li>Each contentinfo landmark may have an <code>h2</code> element describing the content of the footer.</li>
               
-</ul>  
+</ul>
             
 </td>
           
@@ -183,7 +183,7 @@
 <div class="code">
         &lt;body&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;header&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>website information</em>&lt;h1&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>banner content</em>....   <br>
@@ -200,36 +200,36 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
         &nbsp;&nbsp;&lt;/nav&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;main&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>main content</em>....   <br>
         &nbsp;&nbsp;&lt;/main&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;<strong>&lt;footer&gt;</strong>
 <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>Contact, Policies and Legal</em>&lt;h2&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>contentinfo content</em>....   <br>
         &nbsp;&nbsp;<strong>&lt;/footer&gt;</strong>
 <br>
-        
+
         &lt;/body&gt;<br>
 <br>
-        
+
       
 </div>
 <h2>Example of <code>[role="contentinfo"]</code> element technique</h2>
 <div class="code">
         &lt;body&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;divrole="banner"&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;website information&lt;h1&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>banner content</em>....   <br>
         &nbsp;&nbsp;&lt;/div&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;div role="navigation"&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>title for navigation</em>&lt;h2&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
@@ -241,21 +241,21 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
         &nbsp;&nbsp;&lt;/div&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;div role="main"&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<em>title for main content</em>&lt;h1&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>main content</em>....   <br>
         &nbsp;&nbsp;&lt;/div&gt;<br>
 <br>
-        
+
         &nbsp;&nbsp;&lt;div <strong>role="contentinfo"</strong>&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<em>Contact, Policies and Legal</em>&lt;h2&gt;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;.... <em>contentinfo content</em>....   <br>
         &nbsp;&nbsp;&lt;/div&gt;<br>
-        
+
         &lt;/body&gt;<br>
 <br>
-        
+
       
 </div>
 </main>
