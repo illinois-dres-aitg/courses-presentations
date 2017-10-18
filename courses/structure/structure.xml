@@ -1333,7 +1333,7 @@
         <li>Link (e.g. <code>a</code>) at the beginning of the page.</li>
         <li>Visible when link receives keyboard focus:
           <ul>
-            <li>Use CSS psuedo <code>:focus</code> and <code>:active</code> <em>or</em>,</li>
+            <li>Use CSS psuedo <code>:focus</code> and <code>:active</code><br/><em>or</em></li>
             <li>Use <code>focus</code> and <code>blur</code> events to show and hide the element.</li>
           </ul>
         </li>
