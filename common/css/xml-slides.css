@@ -43,18 +43,18 @@ nav ul li {
     outline: none;
 }
 
-.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     text-decoration: underline;
     background-color: #EEEEEE;
 }
 
 main {
-    font-size: 125%;    
+    font-size: 125%;
 }
 
 main h1 {
-    font-size: 180%;    
+    font-size: 180%;
 }
 
 main h2 {
@@ -90,8 +90,8 @@ main .slide-show-url {
 }
 
 #example {
-    margin-top: 0.5em; 
-    padding: 0.5em; 
+    margin-top: 0.5em;
+    padding: 0.5em;
     background-color: #f9f2f4;
 }
 
@@ -109,4 +109,13 @@ main .code {
     border: thin solid #DDD;
     padding: 0.25em;
     border-radius: 6px;
+}
+
+main summary {
+    display:list-item;
+}
+
+main details {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

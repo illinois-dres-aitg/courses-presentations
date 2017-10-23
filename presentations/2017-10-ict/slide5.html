@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 5: Rule: Heading Level 1</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script><script type="text/javascript" src="../../common/highcharts/code/highcharts.src.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/exporting.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/offline-exporting.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/accessibility.js"></script>
+<style id="style" type="text/css"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide4.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide6.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide23.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 5 of 23</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Rule: Heading Level 1</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () {
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'The page must contain at least one h1 element identifying and describing the main content of the page.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [51, 87]
+        }, {
+            name: '2017',
+            data: [50, 91]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  The page must contain at least one h1 element identifying and describing the main content of the page.">
+        
+<thead>
+          
+<tr>
+            
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass/MC</th>
+            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
+            <th title="Implementation Score">Implementation Score</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+           
+<tr>
+             
+<th>February 2016</th>
+             <td>70</td>
+             <td>74</td>
+             <td>51%</td>
+             <td>87</td>
+           
+</tr>
+           
+<tr>
+             
+<th>January 2017</th>
+             <td>138</td>
+             <td>139</td>
+             <td>50%</td>
+             <td>91</td>
+           
+</tr>
+        
+</tbody>
+      
+</table>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright &copy; 2017 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

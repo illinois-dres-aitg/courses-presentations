@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 8: Rule: Rendered Content in Landmarks</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script><script type="text/javascript" src="../../common/highcharts/code/highcharts.src.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/exporting.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/offline-exporting.js"></script><script type="text/javascript" src="../../common/highcharts/code/modules/accessibility.js"></script>
+<style id="style" type="text/css"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide7.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide9.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide23.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 8 of 23</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Rule: Rendered Content in Landmarks</h1>
+<div id="container" style="width:100%; height:400px;"></div>
+<script>
+      $(function () {
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
+        },
+        xAxis: {
+            categories: ['Percent Pass', 'Implementation Score']
+        },
+        yAxis: {
+            title: {
+                text: 'Score'
+            },
+            max: 100,
+            min: 0,
+            tickAmount: 11
+
+        },
+        series: [{
+            name: '2016',
+            data: [7, 44]
+        }, {
+            name: '2017',
+            data: [8, 53]
+        }]
+      });
+    });
+  </script>
+<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
+        
+<thead>
+          
+<tr>
+            
+<th>Year</th>
+            <th title="Websites that Failed">Website Fail</th>
+            <th title="Websites that Passed">Website Pass</th>
+            <th title="Percentage of Websites that Passed">Percent Pass</th>
+            <th title="Implementation Score">Implementation Score</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+           
+<tr>
+             
+<th>February 2016</th>
+             <td>132</td>
+             <td>10</td>
+             <td>7%</td>
+             <td>44</td>
+           
+</tr>
+           
+<tr>
+             
+<th>January 2017</th>
+             <td>254</td>
+             <td>23</td>
+             <td>8%</td>
+             <td>53</td>
+           
+</tr>
+        
+</tbody>
+      
+</table>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright &copy; 2017 University of Illinois
+      </div>
+</footer>
+</body>
+</html>
