@@ -473,18 +473,8 @@
   <slide>
     <title>FAE Auditor</title>
     <contents>
-      <ul>
-        <li><a href="http://fae-audit.cita.illinois.edu">FAE Auditor Prototype</a></li>
-        <li>Designed for:
-          <ul>
-            <li>Administrators</li>
-            <li>Managers</li>
-            <li>IT Auditors</li>
-          </ul>
-        </li>
-        <li>Idenitfy strengths and weaknesses of accessibility implementation</li>
+        <li>Idenitify strengths and weaknesses of accessibility implementation</li>
         <li>Compare websites and groups of websites</li>
-        <li>Peer pressure to improve accessibility</li>
         <li>Support creating accessibility dashboard</li>
       </ul>
     </contents>
