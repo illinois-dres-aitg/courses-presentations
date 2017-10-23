@@ -103,6 +103,14 @@ main table.table ul {
     padding-left: 1em;
 }
 
+main table .num {
+    text-align: right;
+}
+
+main table .text {
+    text-align: left;
+}
+
 main .code {
     font-family: monospace;
     background-color: #EEE;
