@@ -80,7 +80,74 @@
     </contents>
   </slide>
 
-      <slide>
+  <slide>
+    <title>Overall Implementation Scores for Websites in 2015 and 2017</title>
+    <contents>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <img class="chart" src="images/implementation-2015-2017.png" alt="Overall Implementation Scores for Websites in 2015 and 2017 for federal websites, description follows the data"/>
+
+
+          <details>
+            <summary>Description of Graph Features</summary>
+            <ul>
+              <li>The Figure shows two sets of data points, one set for 2015 and the other for 2017.</li>
+              <li>Between 2015 and 2017, the figure shows a slight improvement of in overall implementation scores of about 2.2%.</li>
+              <li>The figure has two strong features.
+                <ol>
+                  <li>The first 100 websites generally follow a linear progression from an implementation score of 20 to 60.</li>
+                  <li>The next 500 websites show an approximately linear progression of implementation score from 60 to 90.</li>
+                  <li>There are a few implementations scores near 100 (which would be considered an ideal score).</li>
+                </ol>
+              </li>
+            </ul>
+          </details>
+
+        </div>
+
+        <div class="col-md-1"></div>
+      </div>
+
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Difference in Implementation Scores Between 2015 and 2017</title>
+    <contents>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <img class="chart" src="images/implementation-diffs.png" alt="Difference in Implementation Scores Between 2015 and 2017 for federal websites, description follows the data"/>
+
+          <details>
+            <summary>Description of Graph Features</summary>
+            <ul>
+              <li>The data in the figure ranges from about -20 to 20 for changes in implementation scores.</li>
+              <li>About 60% of websites had minimal change implementation scores, about 30% of websites improving and 16% of websites getting worse.</li>
+              <li>About 54% of website had no significant changes in implementation score.</li>
+              <li>Figure has three prominent features:
+                <ol>
+                  <li>The first 20 websites show a steep line of difference scores from -80 to -20 and then over the next 80 websites there is a curve from -20 to 0.</li>
+                  <li>The next 300 websites show an implementation score of about 0 or slightly above 0.</li>
+                  <li>The last 230 websites show an inverse curve of difference scores from about 2 to 58.</li>
+                </ol>
+              </li>
+            </ul>
+          </details>
+
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+    </contents>
+  </slide>
+
+  <slide>
     <title>Rule: ALT Attribute for Images</title>
     <contents>
 
@@ -109,22 +176,84 @@
         },
         series: [{
             name: '2015',
-            data: [71.8, 70.6, 6.2]
+            data: [71.8, 21.0, 7.2]
         }, {
             name: '2017',
-            data: [21, 20.7, 8.7]
+            data: [70.6, 20.7, 8.7]
         }]
       });
     });
   </script>
 
       <details>
-        <summary>Rule Description</summary>
-        Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.
+        <summary><h2>Rule Description</h2></summary>
+        <table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Images must have alt text">
+          <tbody>
+            <tr>
+              <th>Definition</th>
+              <td>Each <code>img</code> element must specify an <code>alt</code> attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.</td>
+            </tr>
+            <tr>
+              <th>Purpose</th>
+              <td>
+                <ul>
+                  <li>A text alternative for an image, usually specified with an <code>alt</code> attribute, provides a summary of the purpose of the image for people with visual impairments, enabling them to understand the content or purpose of the image on the page.</li>
+                  <li>An image with a text alternative that is an empty string or that has <code>role="presentation"</code> is ignored by assistive technologies. Such markup indicates that the image is being used for decoration, spacing or other stylistic purposes rather than meaningful content.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Mappings</th>
+              <td>
+                <ul>
+                  <li>HTML4 Legacy Techniques (Required)</li>
+                  <li>HTML5 and ARIA Techniques (Required)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>WCAG 2.0 Success Criteria</th>
+              <td>
+                <p class="primary"><a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_requirement_ref">1.1.1 Non-text Content (Level A, <em>Primary Success Criterion</em>)</a></p>
+                <p class="related">Other Related Success Criterion:</p>
+              </td>
+            </tr>
+            <tr>
+              <th>Rule Category</th>
+              <td>Images</td>
+            </tr>
+            <tr>
+              <th>Scope</th>
+              <td>Element</td>
+            </tr>
+            <tr>
+              <th>Target Resources</th>
+              <td><code>img</code> and [role="img"]
+                <ul>
+                  <li><code>area</code></li>
+                  <li><code>img</code></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Techniques</th>
+              <td>
+                <ul>
+                  <li>A text alternative should summarize the purpose of an image as succinctly as possible (preferably with no more than 100 characters).</li>
+                  <li>The <code>alt</code> attribute is the preferred and most commonly used way to provide a text alternative for <code>img</code> and <code>area</code> elements.</li>
+                  <li>The <code>aria-labelledby</code> attribute can be used to provide a text alternative when an image can be described using text already associated with the image, or for elements with <code>role="img"</code>.</li>
+                  <li>The <code>aria-label</code> attribute should only be used to provide a text alternative in the special case when an element has a <code>role="img"</code> attribute. Use the <code>alt</code> attribute for <code>img</code> and <code>area</code> elements.</li>
+                  <li>The <code>title</code> attribute will be used by assistive technologies to provide a text alternative if no other specification technique is found.</li>
+                  <li>Use the attributes <code>alt=""</code>, <code>role="presentation"</code> or include the image as a CSS <code>background-image</code> to identify it as being used purely for stylistic or decorative purposes and one that should be ignored by people using assistive technologies.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </details>
 
       <details>
-        <summary id="data1">Data for ALT Attribute for Images Result</summary>
+        <summary id="data1"><h2>Data for ALT Attribute for Images Result</h2></summary>
         <table aria-labelledby="data1" class="table table-striped" aria-label="Rule results for Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.">
           <thead>
             <tr>
@@ -154,8 +283,8 @@
   </slide>
 
 
-    <slide>
-    <title>Rule: Color Contrast</title>
+  <slide>
+    <title>Rule: Labels for Form Controls</title>
     <contents>
 
       <div id="container" style="width:100%; height:400px;"></div>
@@ -167,10 +296,10 @@
             type: 'column'
         },
         title: {
-            text: 'Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text.'
+            text: 'ALT Attribute for Images'
         },
         xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
+            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br/>Not Applicable']
         },
         yAxis: {
             title: {
@@ -182,49 +311,117 @@
 
         },
         series: [{
-            name: '2016',
-            data: [30, 48]
+            name: '2015',
+            data: [40, 36.4, 23.6]
         }, {
             name: '2017',
-            data: [21, 47]
+            data: [39.2, 35.8, 25.0]
         }]
       });
     });
   </script>
 
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Text content must exceed Color Contrast Ratio (CCR) of 4.5 for any size text or 3.1 for large and/or bolded text">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>98</td>
-             <td>42</td>
-             <td>30%</td>
-             <td>48</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>219</td>
-             <td>55</td>
-             <td>21%</td>
-             <td>47</td>
-           </tr>
-        </tbody>
-      </table>
+      <details>
+        <summary><h2>Rule Description</h2></summary>
+        <table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Form controls must have labels">
+          <tbody>
+            <tr>
+              <th>Definition</th>
+              <td>Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.</td>
+            </tr>
+            <tr>
+              <th>Purpose</th>
+              <td>
+                <ul>
+                  <li>A label associated with a form control ensures that information about the form control is spoken by screen readers when it receives focus.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Mappings</th>
+              <td>
+                <ul>
+                  <li>HTML4 Legacy Techniques (Required)</li>
+                  <li>HTML5 and ARIA Techniques (Required)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>WCAG 2.0 Success Criteria</th>
+              <td>
+                <p class="primary"><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" target="_requirement_ref">3.3.2 Labels or Instructions (Level A, <em>Primary Success Criterion</em>)</a></p>
+                <p class="related">Other Related Success Criterion:</p>
+                <ul class="related">
+                  <li class="related"><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_requirement_ref">1.3.1 Info and Relationships (Level A)</a></li>
+                  <li class="related"><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">2.4.6 Headings and Labels (Level AA)</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Rule Category</th>
+              <td>Forms</td>
+            </tr>
+            <tr>
+              <th>Scope</th>
+              <td>Element</td>
+            </tr>
+            <tr>
+              <th>Target Resources</th>
+              <td><code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> elements
+                <ul>
+                  <li><code>select</code></li>
+                  <li><code>textarea</code></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Techniques</th>
+              <td>
+                <ul>
+                  <li>The preferred technique for labeling form controls is by reference: First, include an <code>id</code> attribute on the form control to be labeled; then use the <code>label</code> element with a <code>for</code> attribute value that references the <code>id</code> value of the control.</li>
+                  <li>An alternative technique is to use the <code>label</code> element to encapsulate the form control element.</li>
+                  <li>In special cases, the <code>aria-labelledby</code> attribute can be used on the form control element to reference the id(s) of the elements on the page that describe its purpose.</li>
+                  <li>In special cases, the <code>aria-label</code> attribute can be used on the form control element to provide an explicit text description of its purpose.</li>
+                  <li>In special cases, the <code>title</code> attribute on the form control element can be used to provide an explicit text description of its purpose.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
 
+      <details>
+        <summary id="data1"><h2>Data for Labels for Form Controls</h2></summary>
+        <table aria-labelledby="data1" class="table table-striped" aria-label="">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
+              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
+              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr>
+               <th>September 2015</th>
+               <td class="num">40.0%</td>
+               <td class="num">36.4%</td>
+               <td class="num">23.6%</td>
+             </tr>
+             <tr>
+               <th>February 2017</th>
+               <td class="num">39.2%</td>
+               <td class="num">35.8%</td>
+               <td class="num">25.0%</td>
+             </tr>
+          </tbody>
+        </table>
+      </details>
     </contents>
   </slide>
 
-    <slide>
-    <title>Rule: Heading Level 1</title>
+  <slide>
+    <title>Rule: Main Landmark</title>
     <contents>
 
       <div id="container" style="width:100%; height:400px;"></div>
@@ -236,10 +433,10 @@
             type: 'column'
         },
         title: {
-            text: 'The page must contain at least one h1 element identifying and describing the main content of the page.'
+            text: 'ALT Attribute for Images'
         },
         xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
+            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br/>Not Applicable']
         },
         yAxis: {
             title: {
@@ -251,931 +448,48 @@
 
         },
         series: [{
-            name: '2016',
-            data: [51, 87]
+            name: '2015',
+            data: [14.6, 85.4, 0.0]
         }, {
             name: '2017',
-            data: [50, 91]
+            data: [22.9, 77.1, 0.0]
         }]
       });
     });
   </script>
 
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  The page must contain at least one h1 element identifying and describing the main content of the page.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>70</td>
-             <td>74</td>
-             <td>51%</td>
-             <td>87</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>138</td>
-             <td>139</td>
-             <td>50%</td>
-             <td>91</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-    <slide>
-    <title>Rule: Heading Properly Nested</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Heading elements must be properly nested on the page.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [31, 89]
-        }, {
-            name: '2017',
-            data: [24, 89]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  eading elements must be properly nested on the page.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>96</td>
-             <td>44</td>
-             <td>31%</td>
-             <td>89</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>210</td>
-             <td>67</td>
-             <td>24%</td>
-             <td>89</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Rule: Include Main Landmark</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Each page must have at least one main landmark, used to identify the main content.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [27, 39]
-        }, {
-            name: '2017',
-            data: [40, 46]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for each page must have at least one main landmark, used to identify the main content.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>105</td>
-             <td>39</td>
-             <td>27%</td>
-             <td>39</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>198</td>
-             <td>79</td>
-             <td>40%</td>
-             <td>46</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Rule: Rendered Content in Landmarks</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'All rendered content must be placed inside of container elements with appropriate ARIA landmark roles.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [7, 44]
-        }, {
-            name: '2017',
-            data: [8, 53]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for all rendered content must be placed inside of container elements with appropriate ARIA landmark roles.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>132</td>
-             <td>10</td>
-             <td>7%</td>
-             <td>44</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>254</td>
-             <td>23</td>
-             <td>8%</td>
-             <td>53</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Rule: Form Control Labels</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [30, 57]
-        }, {
-            name: '2017',
-            data: [31, 70]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Each input, select, textarea, progress, meter and output element must have an accessible label.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>81</td>
-             <td>35</td>
-             <td>30%</td>
-             <td>57</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>172</td>
-             <td>78</td>
-             <td>31%</td>
-             <td>70</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Rule: Grouping Label for Radio Buttons</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'A related group of radio buttons must have a grouping label.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [27, 45]
-        }, {
-            name: '2017',
-            data: [25, 41]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for A related group of radio buttons must have a grouping label.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>22</td>
-             <td>8</td>
-             <td>27%</td>
-             <td>45</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>40</td>
-             <td>13</td>
-             <td>25%</td>
-             <td>41</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Rule: Keyboard Event Handlers</title>
-    <contents>
-
-      <div id="container" style="width:100%; height:400px;"></div>
-
-      <script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Widget elements must have keyboard event handlers.'
-        },
-        xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2016',
-            data: [48, 57]
-        }, {
-            name: '2017',
-            data: [6, 27]
-        }]
-      });
-    });
-  </script>
-
-      <table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for Widget elements must have keyboard event handlers.">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-             <th>February 2016</th>
-             <td>21</td>
-             <td>10</td>
-             <td>48%</td>
-             <td>57</td>
-           </tr>
-           <tr>
-             <th>January 2017</th>
-             <td>135</td>
-             <td>9</td>
-             <td>6%</td>
-             <td>27</td>
-           </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Top Ten Websites at Illinois by Implementation Score</title>
-    <contents>
-      <p><a href="http://fae-audit.cita.illinois.edu/audit/159c1f63adc2fb6a/rc/ws/all/">Evaluation Results by Website</a></p>
-
-      <table aria-labelledby="h1_title" class="table table-striped">
-        <thead>
-          <tr>
-            <th>Website</th>
-            <th>Pages</th>
-            <th>Implementation Score</th>
-          </tr>
-
-        </thead>
-        <tbody>
-          <tr>
-            <th><a href="http://woundedvetcenter.ahs.illinois.edu/">Center for Wounded Veterans</a></th>
-            <td>19</td>
-            <td>97</td>
-          </tr>
-          <tr>
-            <th><a href="http://ihealth.illinois.edu/">I-HEALTH</a></th>
-            <td>20</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th><a href="http://research.illinois.edu/regulatory-compliance-safety/aacup">Agricultural Animal Care and Use Program (AACUP) | Office of the Vice Chancellor for Research</a></th>
-            <td>1</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th><a href="http://kch.illinois.edu/">Welcome to Kinesiology &amp; Community Health | Kinesiology &amp; Community Health</a></th>
-            <td>36</td>
-            <td>95</td>
-          </tr>
-          <tr>
-            <th><a href="http://chad.illinois.edu">chad.illinois.edu</a></th>
-            <td>28</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <th><a href="https://research.illinois.edu/regulatory-compliance-safety/dar">Division of Animal Resources (DAR) | Office of the Vice Chancellor for Research</a></th>
-            <td>43</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <th><a href="http://admissions.illinois.edu/">University of Illinois Admissions</a></th>
-            <td>12</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <th><a href="http://rst.illinois.edu/
-              ">Recreation, Sport &amp; Tourism</a></th>
-            <td>32</td>
-            <td>93</td>
-          </tr>
-          <tr>
-            <th><a href="http://research.illinois.edu/stf">Scholars&#039; Travel | Office of the Vice Chancellor for Research</a></th>
-            <td>37</td>
-            <td>93</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-
-
-  <slide>
-    <title>Illinois Compared to Universities</title>
-    <style>
-      td.num, th.num { text-align: right;}
-
-      tr.illinois td, tr.illinois th { font-size: 200%; font-weight: bold; color: darkblue;}
-    </style>
-    <contents>
-
-      <ul>
-        <li><a href="http://fae-audit.cita.illinois.edu/audit/157b5c95965e05b5/univ/rc/wsg/all/">Data from 2016</a></li>
-        <li>141 Univerisities (total of over 35,000 pages evaluated)</li>
-        <li>Includes university home page, major colleges, disability services and admissions and records.</li>
-        <li>Typically about 200-300 pages per university.</li>
-      </ul>
-
-      <table aria-labelledby="h1_title" class="table table-striped">
-        <thead>
-          <tr>
-            <th>University</th>
-            <th class="num">Rank 2015</th>
-            <th class="num">Rank 2016</th>
-          </tr>
-
-        </thead>
-        <tbody>
-          <tr>
-            <th>Southern Illinois University</th>
-            <td class="num">1</td>
-            <td class="num">2</td>
-          </tr>
-          <tr>
-            <th>Stanford</th>
-            <td class="num">2</td>
-            <td class="num">3</td>
-          </tr>
-          <tr>
-            <th>Univeristy of Oregon</th>
-            <td class="num">3</td>
-            <td class="num">69</td>
-          </tr>
-          <tr>
-            <th>Univeristy of California - Irvine</th>
-            <td class="num">4</td>
-            <td class="num">50</td>
-          </tr>
-          <tr>
-            <th>Univeristy of Chicago</th>
-            <td class="num">5</td>
-            <td class="num">47</td>
-          </tr>
-          <tr class="illinois">
-            <th>Illinois</th>
-            <td class="num">6</td>
-            <td class="num">42</td>
-          </tr>
-          <tr>
-            <th>Iowa</th>
-            <td class="num">7</td>
-            <td class="num">1</td>
-          </tr>
-          <tr>
-            <th>Arkansas</th>
-            <td class="num">8</td>
-            <td class="num">6</td>
-          </tr>
-          <tr>
-            <th>Virginia Commonwealth Univeristy</th>
-            <td class="num">9</td>
-            <td class="num">28</td>
-          </tr>
-          <tr>
-            <th>Rutgers</th>
-            <td class="num">10</td>
-            <td class="num">45</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Limitations of Automated Checks and Implementation Scores</title>
-    <contents>
-      <ul>
-        <li>At best maybe 30-40% of accessibility features can be tested automaically.</li>
-        <li>Developers are really good at figuring out how to pass automated tests without really addressing accessibility issues related to the test.</li>
-        <li>Accessibility design requires knowledge in the design and implementation stages, for example:
-          <ul>
-            <li>Landmark usage and organization.</li>
-            <li>Structural use of headings (H1-H6).</li>
-            <li>Use of color and color contrast of text content.</li>
-            <li>Keyboard navigation.</li>
-            <li>Keyboard focus styling.</li>
-            <li>How to model custom interactive web widgets with ARIA markup and keyboard event handlers.</li>
-          </ul>
-        </li>
-        <li>Without knowledge and experience manual testing is difficult or impossible to evaluate.</li>
-        <li>Many important accessibility features require manual checking.</li>
-      </ul>
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Recent Office of Civil Rights (OCR) Case Settlements in Higher Education</title>
-    <contents>
-
-      <table aria-labelledby="h1_title" class="table table-striped">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Institution</th>
-            <th>Resolution Summary</th>
-          </tr>
-
-        </thead>
-        <tbody>
-          <tr>
-            <td>2015</td>
-            <td><a href="https://www2.ed.gov/about/offices/list/ocr/docs/investigations/more/08152040-b.pdf">University of Phoenix</a></td>
-            <td>
-              <ul>
-                <li>Designate two IT Disability Coordinators</li>
-                <li>Provide effective Disability Technology Help Desk Support for students</li>
-                <li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                <li>Provide new accessible online content and functionality</li>
-                <li>Audit of existing inaccessible content and functionality</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>2014</td>
-            <td>
-              <a href="https://www.ed.gov/news/press-releases/university-cincinnati-us-education-department-reach-agreement-ensure-equal-acces">
-                University of Cincinnati
-              </a>
-            </td>
-            <td>
-              <ul>
-                <li>Designate Section 504/Title II Coordinators</li>
-                <li>Implement Web accessibility policy</li>
-                <li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                <li>Ensure website and LMS mechanisms in place for accessibility</li>
-                <li>Third party certification to meet IT standards by the institution</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>2014</td>
-            <td>
-              <a href="https://athenpro.org/sites/default/files/Univ_Montana_Missoula_FinalAgreement10_2014.pdf">
-                University of Montana
-              </a>
-            </td>
-            <td>
-              <ul>
-                <li>Designate EIT Coordinator</li>
-                <li>Implement EIT accessibility policy and procedures</li>
-                <li>Develop/institute procurement procedures</li>
-                <li>Provide accessibility training to all personnel (from administrators to developers)</li>
-                <li>Complete EIT accessibility audit</li>
-                <li>Ensure websites, LMS, library services, etc. mechanisms in place for accessibility</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td><a href="http://accessibility.psu.edu/nfbpsusettlement/">Penn State University</a></td>
-            <td>
-              <ul>
-                <li>Develop EIT accessibility policy statement</li>
-                <li>Develop/implement EIT accessibility policy and procedures</li>
-                <li>Develop and institute procurements</li>
-                <li>Ensure websites, LMS, etc. mechanisms in place for accessibility</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Settlement Summary</title>
-    <contents>
-      <ul>
-        <li>People with specific responsibilities for monitoring, reporting and implementing IT accessibility policies and requirements, examples within the BigTen include:
-          <ul>
-            <li>Christian Vinten-Johansen, <a href="http://accessibility.psu.edu/testing/fae/">IT accessibility at Penn State University</a></li>
-            <li>Nathan Evans, <a href="https://tech.msu.edu/technology/accessibility/">IT accessibility at Michigan State University</a></li>
-            <li>Todd Weisenberger, <a href="https://itaccessibility.uiowa.edu">IT accessibility at University of Iowa</a></li>
-            <li>Peter Bossley, <a href="https://www.osu.edu/resources/web/accessibility">IT accessibility at The Ohio State University</a></li>
-            <li>Scott Willaims, <a href="http://webaccess.hr.umich.edu/">IT accessibility at University of Michigan</a></li>
-            <li>Greg Hanek, <a href="https://accessibility.iu.edu/">IT accessibility at Indiana University</a></li>
-          </ul>
-        </li>
-        <li>University wide IT accessibility policy and implementation plan.</li>
-        <li>Auditing of current IT resources for compliance.</li>
-        <li>IT Accessibility Training:
-          <ul>
-            <li>Administrators</li>
-            <li>Instructors</li>
-            <li>Staff</li>
-            <li>Designers</li>
-            <li>Marketing</li>
-            <li>Developers</li>
-          </ul>
-        </li>
-      </ul>
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Major Issues</title>
-    <contents>
-      <ul>
-        <li>Human resources</li>
-        <li>Administrative support</li>
-        <li>Policy and Plan
-          <ul>
-            <li>Settlements cite compliance with <a href="http://www.w3.org/tr/wcag/">W3C Web Content Accessibility Guidelines (WCAG) 2.0</a>  Level A and AA requirements.</li>
-            <li>For University of Illinois the minimum policy would need to include the requirements of the <a href="http://www.dhs.state.il.us/page.aspx?item=32765">Illinois Information technology Act</a> (IITAA).</li>
-            <li>With <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh">changes announced for Federal Section 508 requirements</a> to include most WCAG 2.0 Level A and AA requirements will also require updating IITAA.
-              Contact <a href="mailto:Mike.Scott@Illinois.gov">Mike Scott</a> of the Illinois Department of Human Services if you are interesting in participating in this process.</li>
-          </ul>
-        </li>
-        <li>Authoring and development tools</li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Web Accessibility Resources and Tools</title>
-    <contents>
-      <ul>
-        <li><a href="https://addons.mozilla.org/en-us/firefox/addon/ainspector-sidebar/">AInspector Sidebar 1.1</a> (over 1,900 daily users)</li>
-        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a> (5,700 unique visitors in the past year)</li>
-        <li>Two versions of Functional Accessibility Evaluator 2.0:
-          <ul>
-            <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a> (over 1,500 registered users)</li>
-            <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a> (20 Universities)</li>
-          </ul>
-        </li>
-        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/">W3C ARIA Authoring Practices</a></li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Tools User Groups</title>
-    <contents>
-      <h2>Purpose</h2>
-      <ul>
-        <li>Support users in understanding and using the tools.</li>
-        <li>Meet the evaluation needs of the community of users.</li>
-        <li>Develop a collective understanding web accessibility.</li>
-        <li>Guide the development of the tools.</li>
-      </ul>
-
-      <h2 id="join">Teleconferences</h2>
-      <ul>
-        <li>Developer Group: First Thursday of the Month at 2:00pm (Focus of tool features and resleases)</li>
-        <li>User Group: Second Thursday of the Month at 2:00pm (Open questions for users, no agenda)</li>
-        <li>OpenAjax Evaluation Library Working Group: Third Thursday of the Month at 2:00pm (Library and rule development)</li>
-      </ul>
-
-      <h2 id="join">Join E-mail Lists</h2>
-      <ul>
-        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></li>
-      </ul>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Submit an Issue or Idea</title>
-    <contents>
-      <ul>
-        <li><a href="https://github.com/opena11y/oaa-rules/issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
-        <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
-        <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
-      </ul>
-
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>DRES Badging Training</title>
-    <contents>
-
-      <h2>Accessibility Badging</h2>
-      <ul>
-        <li>Courses offered through CITL</li>
-        <li>4-8 hours of synchronous online training per badge</li>
-        <li>Compentency based testing of skills</li>
-        <li>Support learning HTML5 and ARIA techniques to meet WCAG 2.0 Level A and AA requirements</li>
-        <li>Current Badges:
-          <ul>
-            <li>Web Accessibility Evaluation (Lori Lane)</li>
-            <li>Navigation and Structure (Jon Gunderson)</li>
-            <li>Links, Forms and Accessible Error Feeback (Jon Gunderson)</li>
-            <li>ARIA 101 (Jon Gunderson)</li>
-            <li>Graphics Accessibilty </li>
-          </ul>
-        </li>
-        <li>Future Badges:
-          <ul>
-            <li>Accessibility 101 (Christy Blew)</li>
-            <li>Graphics Accessibilty (Lori Lane)</li>
-            <li>Tables and Grids (Jon Gunderson)</li>
-            <li>Advanced ARIA (Jon Gunderson)</li>
-            <li>Color and Color Contrast (TBA)</li>
-          </ul>
-        </li>
-      </ul>
-    </contents>
-  </slide>
-
-
-
-  <slide>
-    <title>AHS Information accessibility Design and Policy (IADP) Certificate</title>
-    <contents>
-
-      <p><a href="http://online.ahs.illinois.edu/iadp/">More information accessibility Design and Policy (IADP) Certificate</a></p>
-
-      <ul>
-        <li>3 online courses:
-          <ul>
-            <li>Course 1: Understanding Disability and Assistive Technology</li>
-            <li>Course 2: Creating and Procuring Accessible Electronic Materials</li>
-            <li>Course 3: Designing Universally Accessible Web Resources</li>
-          </ul>
-        </li>
-        <li>Each course is 8 weeks long</li>
-        <li>Weekly homework and assignments</li>
-        <li>Starts in fall</li>
-      </ul>
-
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Acknowledgements</title>
-    <contents>
-
-      <h2>Sponsors</h2>
-      <ul>
-        <li>University of Illinois</li>
-        <li>Employees of the Hollister Corporation (University of Illinois Foundation)</li>
-        <li>IBM Corporation (OAA Evaluation Library)</li>
-      </ul>
-
-      <h2>Primary Developers</h2>
-      <dl>
-        <dt>Jon Gunderson, Illinois</dt>
-        <dd>Project coordinator</dd>
-        <dd>OAA evaluation library software development</dd>
-        <dd>Software developer for FAE 2.0</dd>
-
-        <dt>Nicholas Hoyt, Illinois</dt>
-        <dd>Conceptual model for accessibility evaluation</dd>
-        <dd>Interaction designer for AInspector, Bookmarklets and FAE 2.0</dd>
-        <dd>Software developer for AInspector Sidebar and Bookmarklets</dd>
-      </dl>
-
-      <h2>Other Contributors</h2>
-
-      <dl>
-        <dt>Pramod Joshi, AITS</dt>
-        <dd>Software developer for fae-util</dd>
-
-        <dt>Jeff Heckel, AITS</dt>
-        <dd>Software developer for fae-util</dd>
-
-        <dt>Landi Lark, Pixo</dt>
-        <dd>Software development and design of Bookmarklets</dd>
-
-        <dt>Christy Blew, Illinois</dt>
-        <dd>Software testing</dd>
-
-        <dt>Lori Lane, Illinois</dt>
-        <dd>Software testing</dd>
-
-      </dl>
-
-      <h2>Previous Contributors</h2>
-      <dl>
-        <dt>Prasanna Bale, Illinois Technology Services</dt>
-        <dd>Software development of FAE 1.1 and AInspector for Firebug</dd>
-
-        <dt>Garrett Smith, Wisconsin DO-IT</dt>
-        <dd>Software development for FAE 2.0</dd>
-      </dl>
+      <details>
+        <summary><h2>Rule Description</h2></summary>
+
+      </details>
+
+      <details>
+        <summary id="data1"><h2>Data for Main Landmark</h2></summary>
+        <table aria-labelledby="data1" class="table table-striped" aria-label="Main Landmark rule results">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
+              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
+              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr>
+               <th>September 2015</th>
+               <td class="num">14.6</td>
+               <td class="num">85.4</td>
+               <td class="num">0.0</td>
+             </tr>
+             <tr>
+               <th>February 2017</th>
+               <td class="num">22.9</td>
+               <td class="num">77.1</td>
+               <td class="num">0.0</td>
+             </tr>
+          </tbody>
+        </table>
+      </details>
     </contents>
   </slide>
 

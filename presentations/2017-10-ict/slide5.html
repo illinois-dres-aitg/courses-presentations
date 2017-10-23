@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Rule: Heading Level 1</title>
+<title>Slide 5: Rule: ALT Attribute for Images</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,17 +37,17 @@
                       </a>
 </li>
 <li>
-<a href="slide23.html">Last
+<a href="slide7.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 5 of 23</div>
+<div class="navbar-text pull-right">Slide 5 of 7</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Heading Level 1</h1>
+<h1 id="h1_title" class="title">Rule: ALT Attribute for Images</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () {
@@ -56,10 +56,10 @@
             type: 'column'
         },
         title: {
-            text: 'The page must contain at least one h1 element identifying and describing the main content of the page.'
+            text: 'ALT Attribute for Images'
         },
         xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
+            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
         },
         yAxis: {
             title: {
@@ -71,56 +71,191 @@
 
         },
         series: [{
-            name: '2016',
-            data: [51, 87]
+            name: '2015',
+            data: [71.8, 21.0, 7.2]
         }, {
             name: '2017',
-            data: [50, 91]
+            data: [70.6, 20.7, 8.7]
         }]
       });
     });
   </script>
-<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  The page must contain at least one h1 element identifying and describing the main content of the page.">
+<details>
         
-<thead>
+<summary>
+<h2>Rule Description</h2>
+</summary>
+        
+<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Images must have alt text">
           
-<tr>
-            
-<th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          
-</tr>
-        
-</thead>
-        
 <tbody>
-           
+            
 <tr>
-             
-<th>February 2016</th>
-             <td>70</td>
-             <td>74</td>
-             <td>51%</td>
-             <td>87</td>
-           
+              
+<th>Definition</th>
+              <td>Each <code>img</code> element must specify an <code>alt</code> attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.</td>
+            
 </tr>
-           
+            
 <tr>
-             
-<th>January 2017</th>
-             <td>138</td>
-             <td>139</td>
-             <td>50%</td>
-             <td>91</td>
-           
+              
+<th>Purpose</th>
+              <td>
+                
+<ul>
+                  
+<li>A text alternative for an image, usually specified with an <code>alt</code> attribute, provides a summary of the purpose of the image for people with visual impairments, enabling them to understand the content or purpose of the image on the page.</li>
+                  
+<li>An image with a text alternative that is an empty string or that has <code>role="presentation"</code> is ignored by assistive technologies. Such markup indicates that the image is being used for decoration, spacing or other stylistic purposes rather than meaningful content.</li>
+                
+</ul>
+              
+</td>
+            
 </tr>
-        
+            
+<tr>
+              
+<th>Mappings</th>
+              <td>
+                
+<ul>
+                  
+<li>HTML4 Legacy Techniques (Required)</li>
+                  
+<li>HTML5 and ARIA Techniques (Required)</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>WCAG 2.0 Success Criteria</th>
+              <td>
+                
+<p class="primary">
+<a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_requirement_ref">1.1.1 Non-text Content (Level A, <em>Primary Success Criterion</em>)</a>
+</p>
+                
+<p class="related">Other Related Success Criterion:</p>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Rule Category</th>
+              <td>Images</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Scope</th>
+              <td>Element</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Target Resources</th>
+              <td><code>img</code> and [role="img"]
+                <ul>
+                  
+<li>
+<code>area</code>
+</li>
+                  
+<li>
+<code>img</code>
+</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Techniques</th>
+              <td>
+                
+<ul>
+                  
+<li>A text alternative should summarize the purpose of an image as succinctly as possible (preferably with no more than 100 characters).</li>
+                  
+<li>The <code>alt</code> attribute is the preferred and most commonly used way to provide a text alternative for <code>img</code> and <code>area</code> elements.</li>
+                  
+<li>The <code>aria-labelledby</code> attribute can be used to provide a text alternative when an image can be described using text already associated with the image, or for elements with <code>role="img"</code>.</li>
+                  
+<li>The <code>aria-label</code> attribute should only be used to provide a text alternative in the special case when an element has a <code>role="img"</code> attribute. Use the <code>alt</code> attribute for <code>img</code> and <code>area</code> elements.</li>
+                  
+<li>The <code>title</code> attribute will be used by assistive technologies to provide a text alternative if no other specification technique is found.</li>
+                  
+<li>Use the attributes <code>alt=""</code>, <code>role="presentation"</code> or include the image as a CSS <code>background-image</code> to identify it as being used purely for stylistic or decorative purposes and one that should be ignored by people using assistive technologies.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
 </tbody>
-      
+        
 </table>
+      
+</details>
+<details>
+        
+<summary id="data1">
+<h2>Data for ALT Attribute for Images Result</h2>
+</summary>
+        
+<table aria-labelledby="data1" class="table table-striped" aria-label="Rule results for Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.">
+          
+<thead>
+            
+<tr>
+              
+<th>Year</th>
+              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
+              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
+              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+             
+<tr>
+               
+<th>September 2015</th>
+               <td class="num">71.8%</td>
+               <td class="num">70.6%</td>
+               <td class="num">6.5%</td>
+             
+</tr>
+             
+<tr>
+               
+<th>February 2017</th>
+               <td class="num">21.0%</td>
+               <td class="num">20.7%</td>
+               <td class="num">8.7%</td>
+             
+</tr>
+          
+</tbody>
+        
+</table>
+      
+</details>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

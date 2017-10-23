@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 6: Rule: Heading Properly Nested</title>
+<title>Slide 6: Rule: Labels for Form Controls</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,17 +37,17 @@
                       </a>
 </li>
 <li>
-<a href="slide23.html">Last
+<a href="slide7.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 23</div>
+<div class="navbar-text pull-right">Slide 6 of 7</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Heading Properly Nested</h1>
+<h1 id="h1_title" class="title">Rule: Labels for Form Controls</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () {
@@ -56,10 +56,10 @@
             type: 'column'
         },
         title: {
-            text: 'Heading elements must be properly nested on the page.'
+            text: 'ALT Attribute for Images'
         },
         xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
+            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
         },
         yAxis: {
             title: {
@@ -71,56 +71,199 @@
 
         },
         series: [{
-            name: '2016',
-            data: [31, 89]
+            name: '2015',
+            data: [40, 36.4, 23.6]
         }, {
             name: '2017',
-            data: [24, 89]
+            data: [39.2, 35.8, 25.0]
         }]
       });
     });
   </script>
-<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for  eading elements must be properly nested on the page.">
+<details>
         
-<thead>
+<summary>
+<h2>Rule Description</h2>
+</summary>
+        
+<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Form controls must have labels">
           
-<tr>
-            
-<th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass/MC</th>
-            <th title="Percentage of Websites that Passed">Percent Pass/MC</th>
-            <th title="Implementation Score">Implementation Score</th>
-          
-</tr>
-        
-</thead>
-        
 <tbody>
-           
+            
 <tr>
-             
-<th>February 2016</th>
-             <td>96</td>
-             <td>44</td>
-             <td>31%</td>
-             <td>89</td>
-           
+              
+<th>Definition</th>
+              <td>Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.</td>
+            
 </tr>
-           
+            
 <tr>
-             
-<th>January 2017</th>
-             <td>210</td>
-             <td>67</td>
-             <td>24%</td>
-             <td>89</td>
-           
+              
+<th>Purpose</th>
+              <td>
+                
+<ul>
+                  
+<li>A label associated with a form control ensures that information about the form control is spoken by screen readers when it receives focus.</li>
+                
+</ul>
+              
+</td>
+            
 </tr>
-        
+            
+<tr>
+              
+<th>Mappings</th>
+              <td>
+                
+<ul>
+                  
+<li>HTML4 Legacy Techniques (Required)</li>
+                  
+<li>HTML5 and ARIA Techniques (Required)</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>WCAG 2.0 Success Criteria</th>
+              <td>
+                
+<p class="primary">
+<a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" target="_requirement_ref">3.3.2 Labels or Instructions (Level A, <em>Primary Success Criterion</em>)</a>
+</p>
+                
+<p class="related">Other Related Success Criterion:</p>
+                
+<ul class="related">
+                  
+<li class="related">
+<a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_requirement_ref">1.3.1 Info and Relationships (Level A)</a>
+</li>
+                  
+<li class="related">
+<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">2.4.6 Headings and Labels (Level AA)</a>
+</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Rule Category</th>
+              <td>Forms</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Scope</th>
+              <td>Element</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Target Resources</th>
+              <td><code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> elements
+                <ul>
+                  
+<li>
+<code>select</code>
+</li>
+                  
+<li>
+<code>textarea</code>
+</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<th>Techniques</th>
+              <td>
+                
+<ul>
+                  
+<li>The preferred technique for labeling form controls is by reference: First, include an <code>id</code> attribute on the form control to be labeled; then use the <code>label</code> element with a <code>for</code> attribute value that references the <code>id</code> value of the control.</li>
+                  
+<li>An alternative technique is to use the <code>label</code> element to encapsulate the form control element.</li>
+                  
+<li>In special cases, the <code>aria-labelledby</code> attribute can be used on the form control element to reference the id(s) of the elements on the page that describe its purpose.</li>
+                  
+<li>In special cases, the <code>aria-label</code> attribute can be used on the form control element to provide an explicit text description of its purpose.</li>
+                  
+<li>In special cases, the <code>title</code> attribute on the form control element can be used to provide an explicit text description of its purpose.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
 </tbody>
-      
+        
 </table>
+      
+</details>
+<details>
+        
+<summary id="data1">
+<h2>Data for Labels for Form Controls</h2>
+</summary>
+        
+<table aria-labelledby="data1" class="table table-striped" aria-label="">
+          
+<thead>
+            
+<tr>
+              
+<th>Year</th>
+              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
+              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
+              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+             
+<tr>
+               
+<th>September 2015</th>
+               <td class="num">40.0%</td>
+               <td class="num">36.4%</td>
+               <td class="num">23.6%</td>
+             
+</tr>
+             
+<tr>
+               
+<th>February 2017</th>
+               <td class="num">39.2%</td>
+               <td class="num">35.8%</td>
+               <td class="num">25.0%</td>
+             
+</tr>
+          
+</tbody>
+        
+</table>
+      
+</details>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

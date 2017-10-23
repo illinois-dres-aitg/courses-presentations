@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Rule: Include Main Landmark</title>
+<title>Slide 7: Rule: Main Landmark</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -32,22 +32,24 @@
 <a href="slide6.html">Previous
                       </a>
 </li>
-<li>
-<a href="slide8.html">Next
+<li class="disabled">
+<a href="#">
+                        Next
                       </a>
 </li>
-<li>
-<a href="slide23.html">Last
+<li class="disabled">
+<a href="#">
+                        Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 23</div>
+<div class="navbar-text pull-right">Slide 7 of 7</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Include Main Landmark</h1>
+<h1 id="h1_title" class="title">Rule: Main Landmark</h1>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () {
@@ -56,10 +58,10 @@
             type: 'column'
         },
         title: {
-            text: 'Each page must have at least one main landmark, used to identify the main content.'
+            text: 'ALT Attribute for Images'
         },
         xAxis: {
-            categories: ['Percent Pass', 'Implementation Score']
+            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
         },
         yAxis: {
             title: {
@@ -71,56 +73,69 @@
 
         },
         series: [{
-            name: '2016',
-            data: [27, 39]
+            name: '2015',
+            data: [14.6, 85.4, 0.0]
         }, {
             name: '2017',
-            data: [40, 46]
+            data: [22.9, 77.1, 0.0]
         }]
       });
     });
   </script>
-<table aria-labelledby="h1_title" class="table table-striped" aria-label="Rule results for each page must have at least one main landmark, used to identify the main content.">
+<details>
         
-<thead>
-          
-<tr>
-            
-<th>Year</th>
-            <th title="Websites that Failed">Website Fail</th>
-            <th title="Websites that Passed">Website Pass</th>
-            <th title="Percentage of Websites that Passed">Percent Pass</th>
-            <th title="Implementation Score">Implementation Score</th>
-          
-</tr>
-        
-</thead>
-        
-<tbody>
-           
-<tr>
-             
-<th>February 2016</th>
-             <td>105</td>
-             <td>39</td>
-             <td>27%</td>
-             <td>39</td>
-           
-</tr>
-           
-<tr>
-             
-<th>January 2017</th>
-             <td>198</td>
-             <td>79</td>
-             <td>40%</td>
-             <td>46</td>
-           
-</tr>
-        
-</tbody>
+<summary>
+<h2>Rule Description</h2>
+</summary>
+
       
+</details>
+<details>
+        
+<summary id="data1">
+<h2>Data for Main Landmark</h2>
+</summary>
+        
+<table aria-labelledby="data1" class="table table-striped" aria-label="Main Landmark rule results">
+          
+<thead>
+            
+<tr>
+              
+<th>Year</th>
+              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
+              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
+              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+             
+<tr>
+               
+<th>September 2015</th>
+               <td class="num">14.6</td>
+               <td class="num">85.4</td>
+               <td class="num">0.0</td>
+             
+</tr>
+             
+<tr>
+               
+<th>February 2017</th>
+               <td class="num">22.9</td>
+               <td class="num">77.1</td>
+               <td class="num">0.0</td>
+             
+</tr>
+          
+</tbody>
+        
 </table>
+      
+</details>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
