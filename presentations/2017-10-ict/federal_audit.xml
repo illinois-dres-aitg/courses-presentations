@@ -219,14 +219,6 @@
               </td>
             </tr>
             <tr>
-              <th>Rule Category</th>
-              <td>Images</td>
-            </tr>
-            <tr>
-              <th>Scope</th>
-              <td>Element</td>
-            </tr>
-            <tr>
               <th>Target Resources</th>
               <td><code>img</code> and [role="img"]
                 <ul>
@@ -338,15 +330,6 @@
               </td>
             </tr>
             <tr>
-              <th>Mappings</th>
-              <td>
-                <ul>
-                  <li>HTML4 Legacy Techniques (Required)</li>
-                  <li>HTML5 and ARIA Techniques (Required)</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
               <th>WCAG 2.0 Success Criteria</th>
               <td>
                 <p class="primary"><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" target="_requirement_ref">3.3.2 Labels or Instructions (Level A, <em>Primary Success Criterion</em>)</a></p>
@@ -356,14 +339,6 @@
                   <li class="related"><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">2.4.6 Headings and Labels (Level AA)</a></li>
                 </ul>
               </td>
-            </tr>
-            <tr>
-              <th>Rule Category</th>
-              <td>Forms</td>
-            </tr>
-            <tr>
-              <th>Scope</th>
-              <td>Element</td>
             </tr>
             <tr>
               <th>Target Resources</th>
