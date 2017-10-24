@@ -32,8 +32,12 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Audit Results for September 2015 and January 2017</li>
-        <li></li>
+        <li>Section 508 refresh to use WCAG 2.0 Level A and AA requirements.</li>
+        <li>Use of web standards to meet WCAG 2.0 requirements.</li>
+        <li>Audit Results for September 2015 and January 2017.</li>
+        <li>Website Implementation Scores for all rules.</li>
+        <li>Implementation of selected rules.</li>
+        <li>Next steps and discussion of auditing needs.</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -42,18 +46,37 @@
   </slide>
 
   <slide>
-    <title>Audit Features</title>
+    <title>Section 508 Refresh</title>
     <contents>
-      <h2>Accesibility Specifications</h2>
       <ul>
-        <li><a href="http://www.dhs.state.il.us/IITAA/IITAAWebImplementationGuidelines.html">Illinois Information Technology Accessibility Act</a> (2007)</li>
-        <li><a href="http://www.w3.org/tr/wcag/">W3C Web Content Accessibility Guidelines 2.0</a> (2008)</li>
-        <li><a href="http://www.w3.org/tr/wai-aria/">W3C Accessible Rich Internet Application (ARIA) 1.0</a> (2014)</li>
-        <li><a href="http://w3c.github.io/aria-practices/">W3C ARIA AUthoring Practices Guide</a> (2017)</li>
-        <li><a href="http://www.w3.org/tr/html5/">W3C HMTL 5.0</a> (2014)</li>
+        <li><a href="https://www.section508.gov/content/learn/laws-and-policies">Section 508 of the Rehabilitation Act</a></li>
+        <li><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh"></a>Information and Communication Technology (ICT) Refresh</li>
       </ul>
 
-      <h2>Audit Information</h2>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>W3C Accessibility Standards and Resources for Web Accessibility</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/tr/wcag/">W3C Web Content Accessibility Guidelines 2.0</a> (2008)
+        <ul>
+          <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
+          <li><a href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</a></li>
+        </ul>
+        </li>
+        <li><a href="http://www.w3.org/tr/wai-aria/">W3C Accessible Rich Internet Application (ARIA) 1.0</a> (2014)</li>
+        <li><a href="http://w3c.github.io/aria-practices/">W3C ARIA AUthoring Practices Guide</a> (2017)</li>
+        <li><a href="http://www.w3.org/tr/html5/">W3C HMTL 5.1</a> (2015)</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Audito Information</title>
+    <contents>
 
       <table aria-labelledby="h1_title" class="table table-striped">
         <thead>
@@ -4513,6 +4536,25 @@
       </details>
     </contents>
   </slide>
+
+  <slides>
+    <title>Next Steps and Discussion</title>
+    <contents>
+    </contents>
+  </slides>
+
+  <slides>
+    <title>Other Illinois Resources</title>
+    <contents>
+      <ul>
+        <li><a href="https://go.illinois.edu/a11y-badges" target="_reference">DRES IT Accessibility Badging Program </a></li>
+        <li><a href="https://go.illinois.edu/a11y-tools">Open Source Web Accessibility Evaluation and Inspection Tools</a></li>
+        <li><a href="https://a11yfirst.library.illinois.edu/">A11yFirst Project for CKEditor</a></li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">AHS Information Accessibility Design and Policy (IADP) Certificate</a></li>
+      </ul>
+
+    </contents>
+  </slides>
 
 </slides>
 

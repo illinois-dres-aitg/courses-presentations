@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Rule: Labels for Form Controls</title>
+<title>Slide 7: Difference in Implementation Scores Between 2015 and 2017</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,202 +37,60 @@
                       </a>
 </li>
 <li>
-<a href="slide8.html">Last
+<a href="slide10.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 8</div>
+<div class="navbar-text pull-right">Slide 7 of 10</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: Labels for Form Controls</h1>
-<div id="container" style="width:100%; height:400px;"></div>
-<script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'ALT Attribute for Images'
-        },
-        xAxis: {
-            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
+<h1 id="h1_title" class="title">Difference in Implementation Scores Between 2015 and 2017</h1>
+<div class="row">
+        
+<div class="col-md-1"></div>
+        
+<div class="col-md-10">
+          
+<img class="chart" src="images/implementation-diffs.png" alt="Difference in Implementation Scores Between 2015 and 2017 for federal websites, description follows the data">
 
-        },
-        series: [{
-            name: '2015',
-            data: [40, 36.4, 23.6]
-        }, {
-            name: '2017',
-            data: [39.2, 35.8, 25.0]
-        }]
-      });
-    });
-  </script>
-<details>
-        
-<summary>
-<h2>Rule Description</h2>
-</summary>
-        
-<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Form controls must have labels">
-          
-<tbody>
+          <details>
             
-<tr>
-              
-<th>Definition</th>
-              <td>Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.</td>
+<summary>Description of Graph Features</summary>
             
-</tr>
-            
-<tr>
-              
-<th>Purpose</th>
-              <td>
-                
 <ul>
-                  
-<li>A label associated with a form control ensures that information about the form control is spoken by screen readers when it receives focus.</li>
-                
-</ul>
               
-</td>
-            
-</tr>
-            
-<tr>
+<li>The data in the figure ranges from about -20 to 20 for changes in implementation scores.</li>
               
-<th>WCAG 2.0 Success Criteria</th>
-              <td>
-                
-<p class="primary">
-<a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" target="_requirement_ref">3.3.2 Labels or Instructions (Level A, <em>Primary Success Criterion</em>)</a>
-</p>
-                
-<p class="related">Other Related Success Criterion:</p>
-                
-<ul class="related">
+<li>About 60% of websites had minimal change implementation scores, about 30% of websites improving and 16% of websites getting worse.</li>
+              
+<li>About 54% of website had no significant changes in implementation score.</li>
+              
+<li>Figure has three prominent features:
+                <ol>
                   
-<li class="related">
-<a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_requirement_ref">1.3.1 Info and Relationships (Level A)</a>
+<li>The first 20 websites show a steep line of difference scores from -80 to -20 and then over the next 80 websites there is a curve from -20 to 0.</li>
+                  
+<li>The next 300 websites show an implementation score of about 0 or slightly above 0.</li>
+                  
+<li>The last 230 websites show an inverse curve of difference scores from about 2 to 58.</li>
+                
+</ol>
+              
 </li>
-                  
-<li class="related">
-<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">2.4.6 Headings and Labels (Level AA)</a>
-</li>
-                
+            
 </ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>Target Resources</th>
-              <td><code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> elements
-                <ul>
-                  
-<li>
-<code>select</code>
-</li>
-                  
-<li>
-<code>textarea</code>
-</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>Techniques</th>
-              <td>
-                
-<ul>
-                  
-<li>The preferred technique for labeling form controls is by reference: First, include an <code>id</code> attribute on the form control to be labeled; then use the <code>label</code> element with a <code>for</code> attribute value that references the <code>id</code> value of the control.</li>
-                  
-<li>An alternative technique is to use the <code>label</code> element to encapsulate the form control element.</li>
-                  
-<li>In special cases, the <code>aria-labelledby</code> attribute can be used on the form control element to reference the id(s) of the elements on the page that describe its purpose.</li>
-                  
-<li>In special cases, the <code>aria-label</code> attribute can be used on the form control element to provide an explicit text description of its purpose.</li>
-                  
-<li>In special cases, the <code>title</code> attribute on the form control element can be used to provide an explicit text description of its purpose.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
           
-</tbody>
-        
-</table>
-      
 </details>
-<details>
+
         
-<summary id="data1">
-<h2>Data for Labels for Form Controls</h2>
-</summary>
+</div>
         
-<table aria-labelledby="data1" class="table table-striped" aria-label="">
-          
-<thead>
-            
-<tr>
-              
-<th>Year</th>
-              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
-              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
-              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-             
-<tr>
-               
-<th>September 2015</th>
-               <td class="num">40.0%</td>
-               <td class="num">36.4%</td>
-               <td class="num">23.6%</td>
-             
-</tr>
-             
-<tr>
-               
-<th>February 2017</th>
-               <td class="num">39.2%</td>
-               <td class="num">35.8%</td>
-               <td class="num">25.0%</td>
-             
-</tr>
-          
-</tbody>
-        
-</table>
+<div class="col-md-1"></div>
       
-</details>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
