@@ -2,7 +2,7 @@
 
 USAGE="slides filename.xml"
 
-SLIDE_PATH=/Library/Server/Web/Data/Sites/Default/citaweb/presentations/common/xslt
+SLIDE_PATH=/Library/Server/Web/Data/Sites/Default/Github/courses-presentations/common/xslt
 
 CLASS_PATH=$SLIDE_PATH/xalan/serializer.jar
 CLASS_PATH=$CLASS_PATH:$SLIDE_PATH/xalan/serializer.jar
@@ -14,7 +14,7 @@ CLASS_PATH=$CLASS_PATH:$SLIDE_PATH/
 
 # Check if arg is null
 if [ -n "$1" ]; then
- 
+
     java -classpath $CLASS_PATH  xslt $1 $SLIDE_PATH/slides2.xsl index.html
 
 else

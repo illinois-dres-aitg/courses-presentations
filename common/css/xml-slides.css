@@ -77,11 +77,15 @@ main .desc {
     padding: 0;
 }
 
+main .person,
+main .conference {
+    margin-top: 1em;
+}
+
 main .name {
     margin: 0;
     padding: 0;
     font-size: 110%;
-    margin-top: 1em;
 }
 
 main .slide-show-url {
