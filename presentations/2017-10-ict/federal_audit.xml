@@ -4212,7 +4212,7 @@
             type: 'column'
         },
         title: {
-            text: 'ALT Attribute for Images'
+            text: 'Labels for Form Controls'
         },
         xAxis: {
             categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br/>Not Applicable']
@@ -4320,7 +4320,7 @@
   </slide>
 
   <slide>
-    <title>Rule: Main Landmark</title>
+    <title>Rule: At Least One Main Landmark</title>
     <contents>
 
       <div id="container" style="width:100%; height:400px;"></div>
@@ -4332,7 +4332,7 @@
             type: 'column'
         },
         title: {
-            text: 'ALT Attribute for Images'
+            text: 'At least One Main Landmark'
         },
         xAxis: {
             categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br/>Not Applicable']
@@ -4601,11 +4601,11 @@
         <dd>High implementation, as expected for such a well know rule.</dd>
         <dd>Not much change in implementation between 2015 and 2017.</dd>
 
-        <dt>RULE: label for form controls</dt>
+        <dt>RULE: Label for form controls</dt>
         <dd>Lower than expected implementation for such as easy rule to automatically test.</dd>
         <dd>Not much change in implementation between 2015 and 2017.</dd>
 
-        <dt>RULE: One <code>main</code> landmark</dt>
+        <dt>RULE: At laset one <code>main</code> landmark</dt>
         <dd>Rule shows implementation of latest standards.</dd>
         <dd>Currently low usage, but increasing faster than other features.</dd>
         <dd>70% increase from 2015 ro 2017.</dd>
