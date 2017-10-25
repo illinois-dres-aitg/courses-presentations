@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: ARIA Contract with Browsers and Assistive Technologies</title>
+<title>Slide 40: Section 4.5: Keyboard Navigation Between Components (The Tab Sequence)</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -29,11 +29,11 @@
                       </a>
 </li>
 <li>
-<a href="slide27.html">Previous
+<a href="slide39.html">Previous
                       </a>
 </li>
 <li>
-<a href="slide29.html">Next
+<a href="slide41.html">Next
                       </a>
 </li>
 <li>
@@ -41,27 +41,26 @@
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 48</div>
+<div class="navbar-text pull-right">Slide 40 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">ARIA Contract with Browsers and Assistive Technologies</h1>
-<h2>Browsers</h2>
-<ul>
+<h1 id="h1_title" class="title">Section 4.5: Keyboard Navigation Between Components (The Tab Sequence)</h1>
+<ul style="margin-bottom: 2em">
         
-<li>The use of ARIA markup does not affect browser behavior or rendering.</li>
+<li>
+<a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between">ARIA Authoring Practices: Keyboard Navigation Between Components (The Tab Sequence)</a>
+</li>
         
-<li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+<li>The use of <code>tabindex=-1</code> and <code>tabindex=0</code> to define interactive elements and tab order of content of the page.</li>
+        
+<li>
+<code>tabindex</code> values &gt; 0 are discouraged, and should only be used cautiously.</li>
       
 </ul>
-<h2>Asssitive Technologies</h2>
-<ul>
-        
-<li>Do not specify what assistive technologies will do with the information.</li>
-      
-</ul>
+<iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between" width="98%" height="600px"></iframe>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

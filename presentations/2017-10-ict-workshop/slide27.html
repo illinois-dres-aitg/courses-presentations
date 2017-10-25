@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 27: OpenAjax Accessibility Task Force</title>
+<title>Slide 27: Purpose of ARIA to Describe Behavior and Features</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,54 +37,57 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide48.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 27 of 29</div>
+<div class="navbar-text pull-right">Slide 27 of 48</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">OpenAjax Accessibility Task Force</h1>
-<h2>Purpose</h2>
+<h1 id="h1_title" class="title">Purpose of ARIA to Describe Behavior and Features</h1>
 <ul>
-        
-<li>Update and develop new rules:
-          <ul>
-            
-<li>Changes in accessibility HTML5 and ARIA techniques</li>
-            
-<li>Changes in browser and AT implementation</li>
-            
-<li>Support new technologies like Scalable Vector Graphics (SVG)</li>
-            
-<li>Improved messaging for summary, definition or purpose</li>
-          
-</ul>
-        
-</li>
-        
-<li>Define rulesets:
-          <ul>
-            
-<li>Custom rulesets</li>
-            
-<li>Required rules</li>
-            
-<li>Recommended rules</li>
-          
-</ul>
-        
-</li>
-        
-<li>Typically meets third Thursday of each month at 2:00pm Central Time</li>
-        
-<li>Contact <a href="mailto:jongund@illinois.edu">Jon Gunderson</a> to join the group</li>
-        
+         
+<li>Provide an interoperable way to describe the features of <em>custom widgets</em>:
+           <ul>
+             
 <li>
-<a href="http://www.openajax.org/member/wiki/Accessibility">More information on OpenAjax Accessibility Task Force</a>
+<strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
+             
+<li>
+<strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
+             
+<li>
+<strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
+             
+<li>
+<strong>Labeling:</strong> How to label the features of the widget and its components (e.g. accessible name).</li>
+             
+<li>
+<strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
+             
+<li>
+<strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
+           
+</ul>
+        
+</li>
+        
+<li>Define markup mappings to accessibility APIs:
+          <ul>
+            
+<li>ATK/AT-SPI (Linux/Unix)</li>
+            
+<li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
+            
+<li>Microsoft UI Automate</li>
+            
+<li>MacOS Accessibility API</li>
+          
+</ul>
+         
 </li>
       
 </ul>
