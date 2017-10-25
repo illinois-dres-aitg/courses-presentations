@@ -91,9 +91,15 @@
             </td>
           </tr>
           <tr>
-            <th>Trusted Tester</th>
+            <th>Widgets</th>
             <td>
-              Work with Trusted Tester Program to modify current tools and create new tools that support current (e.g. Section 508) and future requirements (e.g WCAG 2.0).
+              <a href="https://www.w3.org/TR/wai-aria-practices-1.1/">ARIA Authoring Practices</a> is a reference on how to make custom interactive widgets accessible using web standards.
+            </td>
+          </tr>
+          <tr>
+            <th>Accessible Authoring</th>
+            <td>
+              <a href="https://a11yfirst.library.illinois.edu/">A11yFirst for CKEditor</a> provides a way to support accessible authoring.
             </td>
           </tr>
         </tbody>
@@ -123,6 +129,13 @@
       </ul>
     </contents>
   </slide>
+
+  <slide>
+    <title>PART 1: Open Source Tools</title>
+    <contents>
+    </contents>
+  </slide>
+
 
   <slide>
     <title>Why Open Source?</title>
@@ -541,6 +554,12 @@
   </slide>
 
   <slide>
+    <title>PART 2: ARIA and ARIA Authoring Practices</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
     <title>The Problem of Custom Wigets</title>
     <contents>
       <h2>Problem</h2>
@@ -824,7 +843,33 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>PART 3: Accessible Authoring</title>
+    <contents>
+    </contents>
+  </slide>
 
+  <slide>
+    <title>A11yFirst for CKEditor: Accessible Authoring</title>
+    <contents>
+      <ul>
+        <li>Accessible authoring versus accessibility remeditation</li>
+        <li><a href="https://a11yfirst.library.illinois.edu/" target="_reference">Demo of A11yFirst for CKEditor</a></li>
+        <li>Currently four plugins:
+          <ul>
+            <li>Headings</li>
+            <li>Block Format</li>
+            <li>Inline Style</li>
+            <li>A11yFirst Help</li>
+          </ul>
+        </li>
+        <li>Support requirements of CKEditor A11yChecker</li>
+      </ul>
+
+      <iframe src="https://a11yfirst.library.illinois.edu/" height="600" width="98%" title="A11yFirst for CKEditor home page"></iframe>
+
+    </contents>
+  </slide>
 
   <slide>
     <title>Training Resources</title>

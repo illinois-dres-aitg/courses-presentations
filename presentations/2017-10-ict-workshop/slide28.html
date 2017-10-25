@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: ARIA Contract with Browsers and Assistive Technologies</title>
+<title>Slide 28: The Problem of Custom Wigets</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,29 +37,39 @@
                       </a>
 </li>
 <li>
-<a href="slide48.html">Last
+<a href="slide52.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 48</div>
+<div class="navbar-text pull-right">Slide 28 of 52</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">ARIA Contract with Browsers and Assistive Technologies</h1>
-<h2>Browsers</h2>
+<h1 id="h1_title" class="title">The Problem of Custom Wigets</h1>
+<h2>Problem</h2>
 <ul>
         
-<li>The use of ARIA markup does not affect browser behavior or rendering.</li>
+<li>Starting in 2000 people started using HTML+CSS+Javascript to create <em>custom widgets</em> (e.g. interactive controls) for web pages.</li>
         
-<li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+<li>There was no standard and interoperable way to make these <em>custom widgets</em> accessible.</li>
       
 </ul>
-<h2>Asssitive Technologies</h2>
+<h2>Issues</h2>
 <ul>
         
-<li>Do not specify what assistive technologies will do with the information.</li>
+<li>Keyboard support.</li>
+        
+<li>Describing the widget behavior (e.g. role).</li>
+        
+<li>Labeling the features of the widget (e.g. accessible name).</li>
+        
+<li>Identifying properties and states. (e.g. checked, exapnded, has popup)</li>
+        
+<li>Communicating information through platform specific accessibility APIs.</li>
+        
+<li>Interoperability between browser and accessibility APIs.</li>
       
 </ul>
 </main>
