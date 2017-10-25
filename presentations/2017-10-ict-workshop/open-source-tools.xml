@@ -143,8 +143,7 @@
       <ul>
         <li><a href="http://disability.illinois.edu/history-firsts">History of University of Illinois in Disability Services</a>.</li>
         <li>Raise awareness of accessibility issues.</li>
-        <li>Allow anyone to use the tools.</li>
-        <li>Help people learn about accessibility.</li>
+        <li>Help people learn about accessibility through the use of web standards.</li>
         <li>Develop a collective understanding of accessibility.</li>
         <li>Use scarce resources for human resource development.</li>
       </ul>
@@ -534,21 +533,18 @@
   </slide>
 
   <slide>
-    <title>Tools User Group</title>
+    <title>Open Source Tools User Group</title>
     <contents>
       <h2>Purpose</h2>
       <ul>
         <li>Meet the evaluation needs of the community of users</li>
         <li>Develop a collective understanding web accessibility</li>
         <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
-        <li>Typically meets the first Thursday of each month at 2:00pm Central Time</li>
+        <li>Typically meets the second Thursday of each month at 2:00pm Central Time</li>
       </ul>
 
-      <h2 id="join">Join E-mail Lists</h2>
-       <ul>
-         <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></li>
-         <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Source Tools Announcements List</a></li>
-       </ul>
+      <h2 id="join">Joining</h2>
+      <p>Create an account on <a href="">Functional Accessibility Evaluator 2.0</a>.</p>
 
     </contents>
   </slide>
