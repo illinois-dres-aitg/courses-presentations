@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 10: Rule: At Least One Main Landmark</title>
+<title>Slide 10: Summary and Conclusions</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,372 +37,51 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide13.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 10 of 14</div>
+<div class="navbar-text pull-right">Slide 10 of 13</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: At Least One Main Landmark</h1>
-<div id="container" style="width:100%; height:400px;"></div>
-<script>
-      $(function () {
-    var myChart = Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'At least One Main Landmark'
-        },
-        xAxis: {
-            categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
-        },
-        yAxis: {
-            title: {
-                text: 'Score'
-            },
-            max: 100,
-            min: 0,
-            tickAmount: 11
-
-        },
-        series: [{
-            name: '2015',
-            data: [14.6, 85.4, 0.0]
-        }, {
-            name: '2017',
-            data: [22.9, 77.1, 0.0]
-        }]
-      });
-    });
-  </script>
-<details>
+<h1 id="h1_title" class="title">Summary and Conclusions</h1>
+<dl>
         
-<summary>
-<h2>Rule Description</h2>
-</summary>
+<dt>WEBSITE: Implementation Score</dt>
         
-<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, main landmark: at least one">
-          
-<tbody>
-            
-<tr>
-              
-<th>
-                Definition
-              </th>
-              <td>
-                Each page must have at least one
-                <code>
-                  main
-                </code>
-                 landmark, used to identify the main content.
-              </td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                Purpose
-              </th>
-              <td>
-                
-<ul>
-                  
-<li>
-                    A
-                    <code>
-                      main
-                    </code>
-                     landmark provides a navigation point to the primary content of the page for users of assistive technologies.
-                  </li>
-                  
-<li>
-                    Most pages only need one
-                    <code>
-                      main
-                    </code>
-                     landmark, but in the case of portals or mashups, there may be more than one
-                    <code>
-                      main
-                    </code>
-                     landmark on a "page".
-                  </li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                WCAG 2.0 Success Criteria
-              </th>
-              <td>
-                
-<p class="primary">
-                  
-<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" target="_requirement_ref">
-                    2.4.1 Bypass Blocks (Level A,
-                    <em>
-                      Primary Success Criterion
-                    </em>
-                    )
-                  </a>
-                
-</p>
-                
-<p class="related">
-                  Other Related Success Criterion:
-                </p>
-                
-<ul class="related">
-                  
-<li class="related">
-                    
-<a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_requirement_ref">
-                      1.3.1 Info and Relationships (Level A)
-                    </a>
-                  
-</li>
-                  
-<li class="related">
-                    
-<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">
-                      2.4.6 Headings and Labels (Level AA)
-                    </a>
-                  
-</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                Scope
-              </th>
-              <td>
-                Page
-              </td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                Target Resources
-              </th>
-              <td>
-                <code>
-                  [role="main"]
-                </code>
-                 and
-                <code>
-                  main
-                </code>
-                 element
-                <ul>
-                  
-<li>
-                    
-<code>
-                      main
-                    </code>
-                  
-</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                Techniques
-              </th>
-              <td>
-                
-<ul>
-                  
-<li>
-                    A
-                    <code>
-                      main
-                    </code>
-                     element or an element with a
-                    <code>
-                      role="main"
-                    </code>
-                     attribute defines a
-                    <code>
-                      main
-                    </code>
-                     landmark.
-                  </li>
-                  
-<li>
-                    When there is only one
-                    <code>
-                      main
-                    </code>
-                     landmark on the page (the typical case), do not use a label.
-                  </li>
-                  
-<li>
-                    When there is more than one
-                    <code>
-                      main
-                    </code>
-                     landmark, use the
-                    <code>
-                      aria-labelledby
-                    </code>
-                     or
-                    <code>
-                      aria-label
-                    </code>
-                     attribute to describe the content of each.
-                  </li>
-                  
-<li>
-                    If you need to support Microsoft Internet Explorer 8, you must NOT use the
-                    <code>
-                      main
-                    </code>
-                     element since the element is supported in the accessibility API, just use
-                    <code>
-                      role="main"
-                    </code>
-                     to identify the main landmark.
-                  </li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>
-                Informational Links
-              </th>
-              <td>
-                
-<ul>
-                  
-<li>
-                    
-<a href="http://www.w3.org/TR/wai-aria/roles#main">
-                      Accessible Rich Internet Applications (WAI-ARIA) 1.0 Specification: main role
-                    </a>
-                  
-</li>
-                  
-<li>
-                    
-<a href="http://www.w3.org/TR/html5/sections.html#the-main-element">
-                      HTML5: The MAIN element
-                    </a>
-                  
-</li>
-                  
-<li>
-                    
-<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA11">
-                      ARIA11: Using ARIA landmarks to identify regions of a page
-                    </a>
-                  
-</li>
-                  
-<li>
-                    
-<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA13">
-                      ARIA13: Using aria-labelledby to name regions and landmarks
-                    </a>
-                  
-</li>
-                  
-<li>
-                    
-<a href="http://www.w3.org/TR/WCAG20-TECHS/ARIA14">
-                      ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used
-                    </a>
-                  
-</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-          
-</tbody>
+<dd>A general overall improvement of about 3%.</dd>
         
-</table>
+<dd>Many websites are improving, many dramitically.</dd>
+        
+<dd>Some websites getting worse.</dd>
 
+        
+<dt>RULE: <code>alt</code> attribute for <code>img</code> element</dt>
+        
+<dd>High implementation, as expected for such a well know rule.</dd>
+        
+<dd>Not much change in implementation between 2015 and 2017.</dd>
 
+        
+<dt>RULE: Label for form controls</dt>
+        
+<dd>Lower than expected implementation for such as easy rule to automatically test.</dd>
+        
+<dd>Not much change in implementation between 2015 and 2017.</dd>
+
+        
+<dt>RULE: At laset one <code>main</code> landmark</dt>
+        
+<dd>Rule shows implementation of latest standards.</dd>
+        
+<dd>Currently low usage, but increasing faster than other features.</dd>
+        
+<dd>70% increase from 2015 ro 2017.</dd>
       
-</details>
-<details>
-        
-<summary id="data1">
-<h2>Data for Main Landmark</h2>
-</summary>
-        
-<table aria-labelledby="data1" class="table table-striped" aria-label="Main Landmark rule results">
-          
-<thead>
-            
-<tr>
-              
-<th>Year</th>
-              <th class="num" title="Percentage of Pages Pass">Percent Pass</th>
-              <th class="num" title="Percentage of Pages Fail">Percent Fail</th>
-              <th class="num" title="Percentage of Pages Not Applicable">Percent N/A</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-             
-<tr>
-               
-<th>September 2015</th>
-               <td class="num">14.6</td>
-               <td class="num">85.4</td>
-               <td class="num">0.0</td>
-             
-</tr>
-             
-<tr>
-               
-<th>February 2017</th>
-               <td class="num">22.9</td>
-               <td class="num">77.1</td>
-               <td class="num">0.0</td>
-             
-</tr>
-          
-</tbody>
-        
-</table>
-      
-</details>
+</dl>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

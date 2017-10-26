@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Rule: ALT Attribute for Images</title>
+<title>Slide 8: Rule: Labels for Form Controls</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,17 +37,18 @@
                       </a>
 </li>
 <li>
-<a href="slide14.html">Last
+<a href="slide13.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 14</div>
+<div class="navbar-text pull-right">Slide 8 of 13</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule: ALT Attribute for Images</h1>
+<h1 id="h1_title" class="title">Rule: Labels for Form Controls</h1>
+<p>Percentage of pages that have labels on all the form controls on a page.</p>
 <div id="container" style="width:100%; height:400px;"></div>
 <script>
       $(function () {
@@ -56,7 +57,7 @@
             type: 'column'
         },
         title: {
-            text: 'ALT Attribute for Images'
+            text: 'Labels for Form Controls'
         },
         xAxis: {
             categories: ['Percent Pages Pass', 'Percent Pages Fail', 'Percent Pages<br>Not Applicable']
@@ -72,10 +73,10 @@
         },
         series: [{
             name: '2015',
-            data: [71.8, 21.0, 7.2]
+            data: [40, 36.4, 23.6]
         }, {
             name: '2017',
-            data: [70.6, 20.7, 8.7]
+            data: [39.2, 35.8, 25.0]
         }]
       });
     });
@@ -86,14 +87,14 @@
 <h2>Rule Description</h2>
 </summary>
         
-<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Images must have alt text">
+<table class="table table-striped table-hover rule" style="margin-top: 1em;" aria-label="Information on rule, Form controls must have labels">
           
 <tbody>
             
 <tr>
               
 <th>Definition</th>
-              <td>Each <code>img</code> element must specify an <code>alt</code> attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.</td>
+              <td>Each <code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> element must have an accessible label.</td>
             
 </tr>
             
@@ -104,26 +105,7 @@
                 
 <ul>
                   
-<li>A text alternative for an image, usually specified with an <code>alt</code> attribute, provides a summary of the purpose of the image for people with visual impairments, enabling them to understand the content or purpose of the image on the page.</li>
-                  
-<li>An image with a text alternative that is an empty string or that has <code>role="presentation"</code> is ignored by assistive technologies. Such markup indicates that the image is being used for decoration, spacing or other stylistic purposes rather than meaningful content.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<th>Mappings</th>
-              <td>
-                
-<ul>
-                  
-<li>HTML4 Legacy Techniques (Required)</li>
-                  
-<li>HTML5 and ARIA Techniques (Required)</li>
+<li>A label associated with a form control ensures that information about the form control is spoken by screen readers when it receives focus.</li>
                 
 </ul>
               
@@ -137,10 +119,22 @@
               <td>
                 
 <p class="primary">
-<a href="http://www.w3.org/TR/WCAG20/#text-equiv" target="_requirement_ref">1.1.1 Non-text Content (Level A, <em>Primary Success Criterion</em>)</a>
+<a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" target="_requirement_ref">3.3.2 Labels or Instructions (Level A, <em>Primary Success Criterion</em>)</a>
 </p>
                 
 <p class="related">Other Related Success Criterion:</p>
+                
+<ul class="related">
+                  
+<li class="related">
+<a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_requirement_ref">1.3.1 Info and Relationships (Level A)</a>
+</li>
+                  
+<li class="related">
+<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_requirement_ref">2.4.6 Headings and Labels (Level AA)</a>
+</li>
+                
+</ul>
               
 </td>
             
@@ -149,15 +143,15 @@
 <tr>
               
 <th>Target Resources</th>
-              <td><code>img</code> and [role="img"]
+              <td><code>input</code>, <code>select</code>, <code>textarea</code>, <code>progress</code>, <code>meter</code> and <code>output</code> elements
                 <ul>
                   
 <li>
-<code>area</code>
+<code>select</code>
 </li>
                   
 <li>
-<code>img</code>
+<code>textarea</code>
 </li>
                 
 </ul>
@@ -173,17 +167,15 @@
                 
 <ul>
                   
-<li>A text alternative should summarize the purpose of an image as succinctly as possible (preferably with no more than 100 characters).</li>
+<li>The preferred technique for labeling form controls is by reference: First, include an <code>id</code> attribute on the form control to be labeled; then use the <code>label</code> element with a <code>for</code> attribute value that references the <code>id</code> value of the control.</li>
                   
-<li>The <code>alt</code> attribute is the preferred and most commonly used way to provide a text alternative for <code>img</code> and <code>area</code> elements.</li>
+<li>An alternative technique is to use the <code>label</code> element to encapsulate the form control element.</li>
                   
-<li>The <code>aria-labelledby</code> attribute can be used to provide a text alternative when an image can be described using text already associated with the image, or for elements with <code>role="img"</code>.</li>
+<li>In special cases, the <code>aria-labelledby</code> attribute can be used on the form control element to reference the id(s) of the elements on the page that describe its purpose.</li>
                   
-<li>The <code>aria-label</code> attribute should only be used to provide a text alternative in the special case when an element has a <code>role="img"</code> attribute. Use the <code>alt</code> attribute for <code>img</code> and <code>area</code> elements.</li>
+<li>In special cases, the <code>aria-label</code> attribute can be used on the form control element to provide an explicit text description of its purpose.</li>
                   
-<li>The <code>title</code> attribute will be used by assistive technologies to provide a text alternative if no other specification technique is found.</li>
-                  
-<li>Use the attributes <code>alt=""</code>, <code>role="presentation"</code> or include the image as a CSS <code>background-image</code> to identify it as being used purely for stylistic or decorative purposes and one that should be ignored by people using assistive technologies.</li>
+<li>In special cases, the <code>title</code> attribute on the form control element can be used to provide an explicit text description of its purpose.</li>
                 
 </ul>
               
@@ -199,10 +191,10 @@
 <details>
         
 <summary id="data1">
-<h2>Data for ALT Attribute for Images Result</h2>
+<h2>Data for Labels for Form Controls</h2>
 </summary>
         
-<table aria-labelledby="data1" class="table table-striped" aria-label="Rule results for Each img element must specify an alt attribute or equivalent markup that either defines a text alternative or identifies the image as being used for decoration, spacing or some other stylistic purpose.">
+<table aria-labelledby="data1" class="table table-striped" aria-label="">
           
 <thead>
             
@@ -222,18 +214,18 @@
 <tr>
                
 <th>September 2015</th>
-               <td class="num">71.8%</td>
-               <td class="num">70.6%</td>
-               <td class="num">6.5%</td>
+               <td class="num">40.0%</td>
+               <td class="num">36.4%</td>
+               <td class="num">23.6%</td>
              
 </tr>
              
 <tr>
                
 <th>February 2017</th>
-               <td class="num">21.0%</td>
-               <td class="num">20.7%</td>
-               <td class="num">8.7%</td>
+               <td class="num">39.2%</td>
+               <td class="num">35.8%</td>
+               <td class="num">25.0%</td>
              
 </tr>
           
