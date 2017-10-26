@@ -156,10 +156,11 @@
             <ul>
               <li>The Figure shows two sets of data points, one set for 2015 and the other for 2017.</li>
               <li>Between 2015 and 2017, the figure shows a slight improvement of in overall implementation scores of about 2.2%.</li>
-              <li>The figure has two strong features.
+              <li>The figure has three strong features.
                 <ol>
-                  <li>The first 100 websites generally follow a linear progression from an implementation score of 20 to 60.</li>
-                  <li>The next 500 websites show an approximately linear progression of implementation score from 60 to 90.</li>
+                  <li>The first 20 websites generally follow a linear progression from an implementation score of 20 to 40.</li>
+                  <li>The next 80 websites show an approximately linear progression from an implementation score of 40 to 60.</li>
+                  <li>The next 450 websites show an approximately linear progression of implementation score from 60 to 90.</li>
                   <li>There are a few implementation scores near 100 (which would be considered an ideal score).</li>
                 </ol>
               </li>
@@ -187,7 +188,7 @@
             <li>Implementation score is an average of all 132 rules in OpenAjax HTML5 and ARIA techniques ruleset.</li>
             <li>Not all evaluation results are pass or fail, most results are not applicable or a manual check is required.</li>
             <li>Implementation score for this study is based solely on pass/fail results.</li>
-            <li>The following chart shows the implementation score differences for each website, going from largest reductions in accessibility (e.g negavitve numbers) to the largest improvements.</li>
+            <li>The following chart shows the implementation score differences for each website, going from largest reductions in accessibility (e.g negative numbers) to the largest improvements (e.g. positive numbers).</li>
           </ul>
 
           <img class="chart" src="images/implementation-diffs.png" alt="Difference in Implementation Scores Between 2015 and 2017 for federal websites, description follows the data"/>
@@ -348,8 +349,7 @@
     <title>Rule: Labels for Form Controls</title>
     <contents>
 
-      <p>Percentage of pages that have labels on all the form controls on a page.</p>
-
+      <p>Percentage of pages that all form controls have labels.</p>
 
       <div id="container" style="width:100%; height:400px;"></div>
 
