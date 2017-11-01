@@ -45,7 +45,7 @@
         <ul>
           <li>Link text describes the content in the target web page.</li>
           <li>Link text is suscinct.</li>
-          <li>Content of the link can provide meaning to a link.</li>
+          <li>Context (e.g. heading, list, paragraph..) of the link can provide meaning to a link.</li>
         </ul>
       </details>
       <details>
@@ -250,19 +250,19 @@
               <td>Re-read current link</td>
               <td>Insert+Numpad 5</td>
               <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
-              <td>Command+Option+Space</td>
+              <td><em>none</em></td>
             </tr>
             <tr>
               <td>More information on link</td>
               <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
               <td>NVDA+D</td>
-              <td>Control+Option+F4</td>
+              <td><em>none</em></td>
             </tr>
             <tr>
               <td>List of Links</td>
               <td>Insert+F7</td>
               <td>NVDA+F7</td>
-              <td>Command+Option+U, then left/right arrow to list of links</td>
+              <td>Conttol+Option+U, then left/right arrow to list of links</td>
             </tr>
             <tr>
               <td>Detailed Keyboard Information</td>
@@ -746,6 +746,12 @@
         <li>Changes needs to be more than just color (e.g. color blindess and other visual impairments)</li>
         <li>Typically border, outline or underline</li>
       </ul>
+
+    <h2>WCAG 2.0 Link Requirements</h2>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" target="_specification">2.4.7 Focus Visible</a></dt>
+        <dd>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA).</dd>
+      </dl>
     </contents>
   </slide>
 
