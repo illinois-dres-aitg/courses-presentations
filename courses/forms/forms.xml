@@ -3471,8 +3471,39 @@
     </contents>
   </slide>
 
-   <slide>
-    <title>Popup Error Feedback Example</title>
+  <slide>
+    <title>Popup Error Message Example Summary</title>
+    <contents>
+
+      <table class="survey table table-striped">
+        <thead>
+          <tr>
+            <th>Example</th>
+            <th>Required</th>
+            <th>Invalid</th>
+            <th>Live Region</th>
+            <th>Accessible<br/>Name</th>
+            <th>Accessible<br/>Description</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Example 1</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Popup Error Feedback Example 1</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -3878,37 +3909,9 @@
     </contents>
   </slide>
 
-  <slide>
-    <title>Summary of Example Features for Popup Error Message Accessibility</title>
-    <contents>
-
-      <table class="survey table table-striped">
-        <thead>
-          <tr>
-            <th>Example</th>
-            <th>Required</th>
-            <th>Invalid</th>
-            <th>Live Region</th>
-            <th>Accessible<br/>Name</th>
-            <th>Accessible<br/>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Example 1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </contents>
-  </slide>
 
   <slide>
-    <title>Popup Error Feedback Example 1: Label element, aria-describedby, and status</title>
+    <title>Popup Error Feedback Example 2: aria-describedby</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4309,7 +4312,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: Label element, title, and status</title>
+    <title>Popup Error Feedback Example 3: title attribute</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4712,7 +4715,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: required, aria-valid, status and aria-labelledby</title>
+    <title>Popup Error Feedback Example 4: aria-labelledby attribute</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -5088,7 +5091,7 @@
   </slide>
 
  <slide>
-    <title>Popup Error Feedback: Label element, aria-label and status</title>
+    <title>Popup Error Feedback Example 5: aria-labelledby attribute</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
