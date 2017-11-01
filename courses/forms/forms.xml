@@ -4280,7 +4280,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: Label element, aria-describedby, and status</title>
+    <title>Popup Error Feedback: Label element, title, and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
