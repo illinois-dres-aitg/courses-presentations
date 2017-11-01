@@ -1712,11 +1712,10 @@
 
       <h2>Features</h2>
       <ul>
-        <li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
-        <li>Uses <code>aria-descibedby</code> to reference instructions for related control.</li>
+        <li>Instructions are placed before the form control to support all users who read from top to bottom, but especially screen reader users.</li>
+        <li>Uses <code>aria-describedby</code> to reference instructions for related control.</li>
         <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
           Screen readers may not be consistent in presenting the descriptive information.</li>
-        <li>VoiceOver on MacOS reads the instructions after the control label information.</li>
         <li>Does not affect keyboard only users.</li>
       </ul>
 
@@ -3850,7 +3849,7 @@
         p += c;
         }
         }
-        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
+        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a valid phone number, use this format (111) 222-3333");
         }
         }
 
@@ -4251,7 +4250,7 @@
         p += c;
         }
         }
-        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
+        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a valid phone number, use this format (111) 222-3333");
         }
         }
 
@@ -4627,7 +4626,7 @@
         p += c;
         }
         }
-        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
+        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a valid phone number, use this format (111) 222-3333");
         }
         }
 
@@ -5023,7 +5022,7 @@
         p += c;
         }
         }
-        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
+        checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a valid phone number, use this format (111) 222-3333");
         }
         }
 
