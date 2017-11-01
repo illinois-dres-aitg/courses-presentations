@@ -3503,7 +3503,7 @@
 
 
   <slide>
-    <title>Popup Error Feedback Example 1: no reference to error message</title>
+    <title>Popup Error Example 1: no reference to error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -3911,7 +3911,7 @@
 
 
   <slide>
-    <title>Popup Error Feedback Example 2: aria-describedby reference to error message</title>
+    <title>Popup Error Example 2: aria-describedby reference to error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4312,7 +4312,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback Example 3: title attribute used for error message</title>
+    <title>Popup Error Example 3: title attribute used for error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4715,7 +4715,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback Example 4: aria-labelledby attribute used for error message</title>
+    <title>Popup Error Example 4: aria-labelledby attribute used for error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -5091,7 +5091,7 @@
   </slide>
 
  <slide>
-    <title>Popup Error Feedback Example 5: aria-label attribute used for error message</title>
+    <title>Popup Error Example 5: aria-label attribute used for error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
