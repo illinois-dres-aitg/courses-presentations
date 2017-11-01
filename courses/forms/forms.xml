@@ -3880,7 +3880,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: Label element, aria-describedby, aria-controls and status</title>
+    <title>Popup Error Feedback: Label element, aria-describedby, and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -3984,7 +3984,7 @@
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
-        <li><code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
+        <li><code>aria-describedby</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
 
 
@@ -4004,7 +4004,7 @@
               aria-invalid="false"
               type="text"
               size="30"
-              aria-controls="id-name-error"
+              aria-describedby="id-name-error"
               onblur="checkName()"/>
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           </div>
@@ -4016,7 +4016,7 @@
               aria-invalid="false"
               type="text"
               size="40"
-              aria-controls="id-address-error"
+              aria-describedby="id-address-error"
               onblur="checkAddress()"/>
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           </div>
@@ -4028,7 +4028,7 @@
               aria-invalid="false"
               type="text"
               size="14"
-              aria-controls="id-phone-error"
+              aria-describedby="id-phone-error"
               onblur="checkPhone()"/>
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           </div>
@@ -4369,7 +4369,6 @@
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
-        <li><code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
 
       <div role="region" aria-label="Example">
@@ -4389,7 +4388,6 @@
               type="text"
               size="30"
               aria-labelledby="id-name-label id-name-error"
-              aria-controls="id-name-error"
               onblur="checkName()"/>
             <span id="id-name-error" class="noerror" role="status"> </span>
           </div>
@@ -4402,7 +4400,6 @@
               type="text"
               size="40"
               aria-labelledby="id-address-label id-address-error"
-              aria-controls="id-address-error"
               onblur="checkAddress()"/>
             <span id="id-address-error" class="noerror" role="status"> </span>
           </div>
@@ -4415,7 +4412,6 @@
               type="text"
               size="14"
               aria-labelledby="id-phone-label id-phone-error"
-              aria-controls="id-phone-error"
               onblur="checkPhone()"/>
             <span id="id-phone-error" class="noerror" role="status"> </span>
           </div>
@@ -4661,7 +4657,7 @@
   </slide>
 
  <slide>
-    <title>Popup Error Feedback: Label element, aria-label, aria-controls and status</title>
+    <title>Popup Error Feedback: Label element, aria-label and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4767,7 +4763,6 @@
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
-        <li><code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
 
       <div role="region" aria-label="Example">
@@ -4782,7 +4777,6 @@
               aria-invalid="false"
               type="text"
               size="30"
-              aria-controls="id-name-error"
               onblur="checkName()"/>
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           </div>
@@ -4794,7 +4788,6 @@
               aria-invalid="false"
               type="text"
               size="40"
-              aria-controls="id-address-error"
               onblur="checkAddress()"/>
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           </div>
@@ -4806,7 +4799,6 @@
               aria-invalid="false"
               type="text"
               size="14"
-              aria-controls="id-phone-error"
               onblur="checkPhone()"/>
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           </div>

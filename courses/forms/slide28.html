@@ -136,9 +136,6 @@
         
 <li>
 <code>role="status"</code> is used to autmatically announce errors in form controls.</li>
-        
-<li>
-<code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       
 </ul>
 <div role="region" aria-label="Example">
@@ -159,7 +156,7 @@
             
 <div id="id-name-label">Name</div>
             
-<input id="id-name" required="true" aria-invalid="false" type="text" size="30" aria-labelledby="id-name-label id-name-error" aria-controls="id-name-error" onblur="checkName()">
+<input id="id-name" required="true" aria-invalid="false" type="text" size="30" aria-labelledby="id-name-label id-name-error" onblur="checkName()">
             <span id="id-name-error" class="noerror" role="status"> </span>
           
 </div>
@@ -169,7 +166,7 @@
             
 <div id="id-address-label">Address</div>
             
-<input id="id-address" aria-required="true" aria-invalid="false" type="text" size="40" aria-labelledby="id-address-label id-address-error" aria-controls="id-address-error" onblur="checkAddress()">
+<input id="id-address" aria-required="true" aria-invalid="false" type="text" size="40" aria-labelledby="id-address-label id-address-error" onblur="checkAddress()">
             <span id="id-address-error" class="noerror" role="status"> </span>
           
 </div>
@@ -179,7 +176,7 @@
             
 <div id="id-phone-label">Phone</div>
             
-<input id="id-phone" aria-required="true" aria-invalid="false" type="text" size="14" aria-labelledby="id-phone-label id-phone-error" aria-controls="id-phone-error" onblur="checkPhone()">
+<input id="id-phone" aria-required="true" aria-invalid="false" type="text" size="14" aria-labelledby="id-phone-label id-phone-error" onblur="checkPhone()">
             <span id="id-phone-error" class="noerror" role="status"> </span>
           
 </div>

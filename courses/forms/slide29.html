@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 29: Popup Error Feedback: Label element, aria-label, aria-controls and status</title>
+<title>Slide 29: Popup Error Feedback: Label element, aria-label and status</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -139,7 +139,7 @@
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Popup Error Feedback: Label element, aria-label, aria-controls and status</h1>
+<h1 id="h1_title" class="title">Popup Error Feedback: Label element, aria-label and status</h1>
 <h2>Features</h2>
 <ul>
         
@@ -156,9 +156,6 @@
         
 <li>
 <code>role="status"</code> is used to autmatically announce errors in form controls.</li>
-        
-<li>
-<code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       
 </ul>
 <div role="region" aria-label="Example">
@@ -172,7 +169,7 @@
 <div class="text">
             
 <label for="id-name">Name</label>
-            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" aria-controls="id-name-error" onblur="checkName()">
+            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" onblur="checkName()">
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           
 </div>
@@ -181,7 +178,7 @@
 <div class="text">
             
 <label for="id-address">Address</label>
-            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" aria-controls="id-address-error" onblur="checkAddress()">
+            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" onblur="checkAddress()">
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           
 </div>
@@ -190,7 +187,7 @@
 <div class="text">
             
 <label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" aria-controls="id-phone-error" onblur="checkPhone()">
+            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" onblur="checkPhone()">
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           
 </div>
