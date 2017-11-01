@@ -10,22 +10,22 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      
+
       table.survey th.rating,
       table.survey td.rating {
       text-align: center;
       }
-      
+
       table.survey tbody th {
       font-weight: normal;
       }
-      
+
       table.survey input:focus,
       table.survey input:hover {
         outline: 2px solid #444444;
         outline-offset: 0.25em;
       }
-      
+
     </style>
 </head>
 <body>
@@ -55,11 +55,11 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide30.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 22 of 29</div>
+<div class="navbar-text pull-right">Slide 22 of 30</div>
 </div>
 </div>
 </nav>
@@ -77,7 +77,7 @@
 <form id="form">
         
 <h2>Pizza Survey</h2>
-        
+
         
 <table class="survey table table-striped">
           
@@ -134,32 +134,32 @@
 </tbody>
         
 </table>
-        
+
         
 <input type="submit" value="Submit Survey">
-        
+
       
 </form>
 <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('td input');
-        
+
           for(var i = 0; i < itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-      
+
       </script>
 <h2>HTML Source Code</h2>
 <pre>

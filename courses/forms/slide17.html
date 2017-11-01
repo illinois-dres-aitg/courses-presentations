@@ -22,7 +22,7 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       div.group div.item {
         margin: 0;
         padding: 0;
@@ -38,33 +38,33 @@
         border: 2px solid transparent;
         width: 9em;
       }
-      
+
       input[type="submit"] {
         margin-top: 2em;
       }
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       div.group div.item:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      div.group div.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
-      }      
+
+      div.group div.focus {
+        background-color: #EEEEEE;
+        border-color: black;
+      }
     </style>
 </head>
 <body>
@@ -94,11 +94,11 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide30.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 17 of 29</div>
+<div class="navbar-text pull-right">Slide 17 of 30</div>
 </div>
 </div>
 </nav>
@@ -113,17 +113,17 @@
 <div id="lb1" class="label">Name</div>
         
 <input id="id-name" type="text" size="30" aria-labelledby="lb1">
-        
+
         
 <div id="lb2" class="label">Address</div>
         
 <input id="id-address" type="text" size="40" aria-labelledby="lb2">
-        
+
         
 <div id="lb3" class="label">Phone</div>
         
 <input id="id-phone" type="text" size="14" aria-labelledby="lb3">
-        
+
         
 <div id="lb4" class="label">Delivery Method</div>
         
@@ -132,12 +132,12 @@
           <option>Pickup</option>
           <option>Home delivery</option>
         </select>
-        
+
         
 <div class="group">
           
 <div id="lb5" class="title">Crust</div>
-          
+
           
 <div class="item">
             
@@ -164,7 +164,7 @@
 
         
 </div>
-        
+
         
 <div class="group">
           
@@ -228,10 +228,10 @@
 
         
 </div>
-        
+
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
-        
+
       
 </form>
 <h2>HTML Source Code</h2>
@@ -249,23 +249,23 @@
 <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('div.group input');
-        
+
           for(var i = 0; i < itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-        
+
       </script><script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');

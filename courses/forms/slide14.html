@@ -19,8 +19,8 @@
       font-weight: bold;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -28,8 +28,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -37,7 +37,7 @@
       font-weight: bold;
       font-size: 100%;
       }
-      
+
       fieldset label {
       margin: 0;
       padding: 0;
@@ -51,38 +51,38 @@
       position: relative;
       left: -0.5em;
       }
-      
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
-      fieldset label:hover { 
-      background-color: #ADDFFF; 
-      }
-      
-      fieldset label.focus { 
-      border-color: black; 
+
+      fieldset label:hover {
       background-color: #ADDFFF;
       }
-      
+
+      fieldset label.focus {
+      border-color: black;
+      background-color: #ADDFFF;
+      }
+
       .instructions {
       padding: 0;
       margin: 0;
@@ -92,7 +92,7 @@
       width: 100%;
       font-weight: normal;
       }
-      
+
     </style>
 </head>
 <body>
@@ -122,11 +122,11 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide30.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 14 of 29</div>
+<div class="navbar-text pull-right">Slide 14 of 30</div>
 </div>
 </div>
 </nav>
@@ -134,15 +134,15 @@
 <a name="main" id="main"></a>
 <h1 id="h1_title" class="title">Pizza Order Form: Instructions using label</h1>
 <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus"); 
+        if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
       </script>
 <h2>Features</h2>
 <ul>
@@ -151,7 +151,7 @@
         
 <li>Uses <code>label[for]</code> to add instructions to related control.</li>
         
-<li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control. 
+<li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
           Less predictable how a screen reader will read the instruction information.</li>
         
 <li>Does not affect keyboard only users.</li>
@@ -160,17 +160,17 @@
 <form id="form">
         
 <h2>Pizza Form</h2>
-        
+
         
 <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30">
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40">
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14">
-        
+
         
 <div id="ex1a">
           
@@ -183,84 +183,84 @@
           </select>
         
 </div>
-        
+
         
 <fieldset>
           
 <legend>Crust</legend>
-          
+
           <label>
             <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Thin
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Classic
           </label>
-          
+
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"> 
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Deep Dish
           </label>
-          
+
         
 </fieldset>
-        
+
         
 <fieldset>
           
 <legend>Toppings</legend>
-          
+
           
 <div id="ex1b">
             
 <label for="topping1" class="instructions">First topping is free and $1.00 extra for each additional topping.</label>
-            
+
             <label>
               <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
               Sausage
             </label>
           
 </div>
-          
+
           
 <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Extra cheese
           </label>
-          
+
         
 </fieldset>
-        
+
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
-        
+
       
 </form>
 <h2>HTML Source Code</h2>

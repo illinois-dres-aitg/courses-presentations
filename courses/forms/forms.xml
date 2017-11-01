@@ -4,13 +4,13 @@
 <slides>
  <lang>en</lang>
   <title>Forms: Labeling, Instructions and Error Feedback</title>
-  <name>Jon Gunderson, Ph.D.</name> 
+  <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <email>jongund@illinois.edu</email> 
-  <home>../badges-links-forms.html</home> 
-  
+  <email>jongund@illinois.edu</email>
+  <home>../badges-links-forms.html</home>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -38,7 +38,7 @@
       </script>
     </contents>
   </slide>
-  
+
   <slide>
     <title>WCAG 2.0 Requirements for Forms and Form Controls (Level A and AA)</title>
     <style>
@@ -48,22 +48,22 @@
       <dl>
         <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"        target="_spec">2.4.6 Headings and Labels</a></dt>
         <dd>Headings and labels describe topic or purpose. (Level AA) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"        target="_spec">3.2.1 On Focus</a></dt>
         <dd>When any component receives focus, it does not initiate a change of context. (Level A) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change" target="_spec">3.2.2 On Input</a></dt>
         <dd>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. (Level A) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"                target="_spec">3.3.1 Error Identification</a></dt>
         <dd>If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. (Level A) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"                      target="_spec">3.3.2 Labels or Instructions</a></dt>
         <dd> Labels or instructions are provided when content requires user input. (Level A) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"               target="_spec">3.3.3 Error Suggestion</a></dt>
         <dd>If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. (Level AA) </dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible"                     target="_spec">3.3.4 Error Prevention (Legal, Financial, Data)</a></dt>
         <dd>For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: (Level AA)
           <ul>
@@ -75,7 +75,7 @@
       </dl>
     </contents>
   </slide>
-  
+
   <slide>
     <title>ARIA and HTML5 form controls</title>
     <contents>
@@ -87,14 +87,14 @@
         <li><code>aria-labelledby</code> attribute (ARIA 1.0)</li>
         <li><code>aria-label</code> attribute (ARIA 1.0)</li>
       </ul>
-      
+
       <h2>Instructions</h2>
       <ul>
         <li><code>tabindex="0"</code> attribute to add instructions to tab order (convention)</li>
         <li><code>title</code> attribute (HTML5)</li>
         <li><code>aria-describedby</code> attribute (ARIA 1.0)</li>
-      </ul>  
-      
+      </ul>
+
       <h2>Identifying Required and Invalid Form Controls</h2>
       <ul>
         <li>Image with ALT Text</li>
@@ -104,7 +104,7 @@
         <li><code>required</code> attribute (HTML 5)</li>
         <li><code>alert</code> role for announcing errors</li>
       </ul>
-      
+
     </contents>
   </slide>
 
@@ -132,7 +132,7 @@
           </tr>
           <tr>
             <th>Accessible Name</th>
-            <td>Describes the purpose of this specific form control in the form and is computed based on author supplied information.   
+            <td>Describes the purpose of this specific form control in the form and is computed based on author supplied information.
               Examples of sources of accessible names include:
               <ul>
                 <li>Child text nodes of <code>label</code> element (preferred)</li>
@@ -143,7 +143,7 @@
             </td>
           </tr>
         </tbody>
-      </table>  
+      </table>
     </contents>
   </slide>
 
@@ -156,7 +156,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Basic Screen Reader Commands related to Forms</title>
     <contents>
@@ -207,16 +207,16 @@
             <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
           </tr>
         </tbody>
-      </table>  
+      </table>
 
 
 
     </contents>
   </slide>
-        
+
   <slide>
     <title>Pizza Order Form: No Labels</title>
-    
+
     <style id="style">
       div.label {
         margin: 0;
@@ -254,10 +254,10 @@
         margin-top: 2em;
       }
     </style>
-    
+
     <contents>
       <h2>Problems</h2>
-      
+
       <ul>
         <li>Form controls do not have labels.</li>
         <li>No keyboard focus styling.</li>
@@ -267,20 +267,20 @@
           <h2>Pizza Form</h2>
           <div class="label">Name</div>
           <input id="id-name" type="text" size="30"/>
-          
+
           <div class="label">Address</div>
           <input id="id-address" type="text" size="40"/>
-          
+
           <div class="label">Phone</div>
           <input id="id-phone" type="text" size="14"/>
-          
+
           <div class="label">Delivery Method</div>
           <select id="id-delivery">
             <option>Eat in store</option>
             <option>Pickup</option>
             <option>Home delivery</option>
           </select>
-          
+
           <div class="group">
             <div class="title">Crust</div>
             <div class="label">
@@ -296,7 +296,7 @@
               Deep Dish
             </div>
           </div>
-          
+
           <div class="group">
             <div class="title">Toppings</div>
             <div class="label">
@@ -328,32 +328,34 @@
               Extra cheese
             </div>
           </div>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
       </form>
-      
+
+      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">WebEdit: Add form control labels in Problem 1</a></p>
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
 
   <slide>
     <title>Pizza Order Form: Label Element by Reference</title>
-    
+
     <style id="style">
       label,
       div.group  div.title {
@@ -393,56 +395,56 @@
         background-color: #FFFEFF;
         font-size: 1em;
       }
-      
+
       input[type="submit"] {
         margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       div.group div.item:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-            
-      div.group div.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
+
+      div.group div.focus {
+        background-color: #EEEEEE;
+        border-color: black;
       }
     </style>
-    
+
     <contents>
 
       <form id="form">
         <h2>Pizza Form</h2>
           <label for="id-name">Name</label>
           <input id="id-name" type="text" size="30"/>
-        
+
           <label for="id-address">Address</label>
           <input id="id-address" type="text" size="40"/>
-        
+
           <label for="id-phone">Phone</label>
           <input id="id-phone" type="text" size="14"/>
-        
+
           <label for="id-delivery">Delivery Method</label>
           <select id="id-delivery">
             <option>Eat in store</option>
             <option>Pickup</option>
             <option>Home delivery</option>
           </select>
-        
+
         <div class="group">
           <div class="title">Crust</div>
           <div class="item">
@@ -458,7 +460,7 @@
             <label for="id-crust3">Deep Dish</label>
           </div>
         </div>
-        
+
         <div class="group">
           <div class="title">Toppings</div>
           <div class="item">
@@ -490,37 +492,37 @@
             <label for="id-top7">Extra cheese</label>
           </div>
         </div>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
 
-      
+
       <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
 
         window.addEventListener('load', function load(event) {
            var itemList = document.querySelectorAll('div.item input');
-           
+
            for(var i = 0; i &lt; itemList.length; i++) {
               var item = itemList[i];
               item.addEventListener('focus', itemFocus, true);
@@ -528,10 +530,10 @@
            }
         }, false);
 
-      </script>        
+      </script>
 
       <script type="text/javascript">
-        
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');
@@ -544,7 +546,7 @@
   <slide>
     <title>Pizza Order Form: Label Encapsulation</title>
     <style id="style">
-      
+
       label,
       div.group div.title {
         display: block;
@@ -556,7 +558,7 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       input[type="text"],
       select {
         margin: 0;
@@ -594,28 +596,28 @@
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       div.group label:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      div.group label.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
+
+      div.group label.focus {
+        background-color: #EEEEEE;
+        border-color: black;
       }
     </style>
-    
+
     <contents>
       <form id="form">
         <h2>Pizza Form</h2>
@@ -623,17 +625,17 @@
           Name
           <input id="id-name" type="text" size="30"/>
         </label>
-        
+
         <label>
           Address
           <input id="id-address" type="text" size="40"/>
         </label>
-        
+
         <label>
           Phone
           <input id="id-phone" type="text" size="14"/>
         </label>
-        
+
         <label>
           Delivery Method
           <select id="id-delivery">
@@ -642,7 +644,7 @@
             <option>Home delivery</option>
           </select>
         </label>
-        
+
         <div class="group">
           <div class="title">Crust</div>
           <label>
@@ -658,7 +660,7 @@
             Deep Dish
           </label>
         </div>
-        
+
         <div class="group">
           <div class="title">Toppings</div>
           <label>
@@ -690,37 +692,37 @@
             Extra cheese
           </label>
         </div>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
 
-      
+
       <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-         if( event.target ) event.target.parentNode.classList.add("focus"); 
+         if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('div.group input');
-        
+
           for(var i = 0; i &lt; itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
@@ -728,10 +730,10 @@
           }
         }, false);
 
-      </script>        
+      </script>
 
       <script type="text/javascript">
-        
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');
@@ -741,12 +743,12 @@
     </contents>
   </slide>
 
-  
+
   <slide>
     <title>Pizza Order Form: Fieldset/Legend</title>
-    
+
     <style id="style">
-      
+
       label,
       fieldset legend {
         margin: 0;
@@ -758,18 +760,18 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       input[type="text"],
       select {
         margin: 0;
         padding: 0;
         display: block;
       }
-      
+
       fieldset legend {
         padding-top: 1.25em;
       }
-      
+
       fieldset label {
         margin: 0;
         padding: 0;
@@ -785,7 +787,7 @@
         border: 2px solid transparent;
         width: 9em;
       }
-      
+
       select {
         margin: 0;
         padding: 0;
@@ -800,148 +802,150 @@
         input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       fieldset label:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      fieldset label.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
+
+      fieldset label.focus {
+        background-color: #EEEEEE;
+        border-color: black;
       }
     </style>
-    
+
     <contents>
       <form id="form">
-        
+
         <h2>Pizza Form</h2>
 
         <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14"/>
-        
+
         <label for="id-delivery">Delivery Method</label>
         <select id="id-delivery">
           <option>Eat in store</option>
           <option>Pickup</option>
           <option>Home delivery</option>
         </select>
-        
+
         <fieldset>
           <legend>Crust</legend>
-          
+
           <label>
             <input id="id-crust1" name="crust" type="radio" value="Thin"/>
             Thin
           </label>
-          
+
           <label>
             <input id="id-crust2" name="crust" type="radio" value="Classic"/>
             Classic
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Deep Dish"/>
             Deep Dish
           </label>
-          
+
         </fieldset>
-        
+
         <fieldset>
           <legend>Toppings</legend>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Sausage"/>
             Sausage
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Pepperoni"/>
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms"/>
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions"/>
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers"/>
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives"/>
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese"/>
             Extra cheese
           </label>
-          
+
         </fieldset>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
-      
+
+      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">WebEdit: Add grouping labels to the links in Problem 2</a></p>
+
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
+
       <script id="script" type="text/javascript">
-        
-        
+
+
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('fieldset input');
-        
+
           for(var i = 0; i &lt; itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-        
-      </script>        
+
+      </script>
 
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
@@ -950,10 +954,10 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
- 
+
   <slide>
     <title>Pizza Order Form: Focus Styling</title>
     <style id="style">
@@ -966,8 +970,8 @@
       font-weight: bold;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -975,8 +979,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -984,7 +988,7 @@
       font-weight: bold;
       font-size: 100%;
       }
-      
+
       fieldset label {
       margin: 0;
       padding: 0;
@@ -998,52 +1002,52 @@
       position: relative;
       left: -0.5em;
       }
-      
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
-      fieldset label:hover { 
-      background-color: #ADDFFF; 
+
+      fieldset label:hover {
+      background-color: #ADDFFF;
       }
-      
-      fieldset label.focus { 
-      border-color: black; 
+
+      fieldset label.focus {
+      border-color: black;
       background-color: #ADDFFF;
       }
     </style>
-    
+
     <contents>
       <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
       </script>
-      
+
       <h2>Features</h2>
       <ul>
         <li><code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
@@ -1053,104 +1057,104 @@
         <li>Styling background color also makes the change in focus much easier to detect visually.</li>
         <li>Do not set <code>hover</code> styling for <code>select</code> control.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
         <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14"/>
-        
+
         <label for="id-delivery">Delivery Method</label>
         <select id="id-delivery">
           <option>Eat in store</option>
           <option>Pickup</option>
           <option>Home delivery</option>
         </select>
-        
+
         <fieldset>
           <legend>Crust</legend>
-          
+
           <label>
             <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Thin
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Classic
           </label>
-          
+
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/> 
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Deep Dish
           </label>
-          
+
         </fieldset>
-        
+
         <fieldset>
           <legend>Toppings</legend>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Sausage
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Extra cheese
           </label>
-          
+
         </fieldset>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
-      
+
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -1186,8 +1190,8 @@
       font-weight: bold;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -1195,8 +1199,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -1204,7 +1208,7 @@
       font-weight: bold;
       font-size: 100%;
       }
-      
+
       fieldset label {
       margin: 0;
       padding: 0;
@@ -1218,38 +1222,38 @@
       position: relative;
       left: -0.5em;
       }
-      
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
-      fieldset label:hover { 
-      background-color: #ADDFFF; 
-      }
-      
-      fieldset label.focus { 
-      border-color: black; 
+
+      fieldset label:hover {
       background-color: #ADDFFF;
       }
-      
+
+      fieldset label.focus {
+      border-color: black;
+      background-color: #ADDFFF;
+      }
+
       .instructions {
       padding: 0;
       margin: 0;
@@ -1257,44 +1261,44 @@
       margin-bottom: 0.25em;
       font-style: italic;
       }
-      
+
     </style>
-    
+
     <contents>
       <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus"); 
+        if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
       </script>
-      
+
       <h2>Features</h2>
       <ul>
         <li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
         <li>Uses <code>tabindex=0</code> to create a tab stop for the instructions.</li>
-        <li>This technique helps screen reader users <em>hear</em> the instructions before they get to the form controls.  
+        <li>This technique helps screen reader users <em>hear</em> the instructions before they get to the form controls.
           As they <kbd>tab</kbd> throught the page they will tab to the instructions.</li>
         <li>Keyboard only users maybe a little annoyed at the extra tab stop between interactive controls.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
         <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14"/>
-        
+
         <label for="id-delivery">Delivery Method</label>
         <div id="ex1a">
            <div tabindex="0" class="instructions">Free home delivery on Monday's and Tuesday nights.</div>
@@ -1304,30 +1308,30 @@
           <option>Pickup</option>
           <option>Home delivery</option>
         </select>
-        
+
         <fieldset>
           <legend>Crust</legend>
-          
+
           <label>
             <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Thin
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Classic
           </label>
-          
+
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/> 
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Deep Dish
           </label>
-          
+
         </fieldset>
-        
+
         <fieldset>
           <legend>Toppings</legend>
-          
+
           <div id="ex1b">
             <div tabindex="0" class="instructions">First topping is free and $1.00 extra for each additional topping.</div>
           </div>
@@ -1336,49 +1340,49 @@
             <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Sausage
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Extra cheese
           </label>
-          
+
         </fieldset>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <pre><code id="sc2"></code></pre>
-            
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'ex1a');
         sourceCode.add('sc2', 'ex1b');
@@ -1401,8 +1405,8 @@
       font-weight: bold;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -1410,8 +1414,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -1419,7 +1423,7 @@
       font-weight: bold;
       font-size: 100%;
       }
-      
+
       fieldset label {
       margin: 0;
       padding: 0;
@@ -1433,38 +1437,38 @@
       position: relative;
       left: -0.5em;
       }
-      
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
-      fieldset label:hover { 
-      background-color: #ADDFFF; 
-      }
-      
-      fieldset label.focus { 
-      border-color: black; 
+
+      fieldset label:hover {
       background-color: #ADDFFF;
       }
-      
+
+      fieldset label.focus {
+      border-color: black;
+      background-color: #ADDFFF;
+      }
+
       .instructions {
       padding: 0;
       margin: 0;
@@ -1474,44 +1478,44 @@
       width: 100%;
       font-weight: normal;
       }
-      
+
     </style>
-    
+
     <contents>
       <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus"); 
+        if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
       </script>
-      
+
       <h2>Features</h2>
       <ul>
         <li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
         <li>Uses <code>label[for]</code> to add instructions to related control.</li>
-        <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control. 
+        <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
           Less predictable how a screen reader will read the instruction information.</li>
         <li>Does not affect keyboard only users.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
         <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14"/>
-        
+
         <div id="ex1a">
           <label for="id-delivery">Delivery Method</label>
           <label for="id-delivery" class="instructions">Free home delivery on Monday's and Tuesday nights.</label>
@@ -1521,89 +1525,89 @@
             <option>Home delivery</option>
           </select>
         </div>
-        
+
         <fieldset>
           <legend>Crust</legend>
-          
+
           <label>
             <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Thin
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Classic
           </label>
-          
+
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/> 
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Deep Dish
           </label>
-          
+
         </fieldset>
-        
+
         <fieldset>
           <legend>Toppings</legend>
-          
+
           <div id="ex1b">
             <label for="topping1" class="instructions">First topping is free and $1.00 extra for each additional topping.</label>
-            
+
             <label>
               <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
               Sausage
             </label>
           </div>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Extra cheese
           </label>
-          
+
         </fieldset>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
 
       <pre><code id="sc1a"></code></pre>
 
       <pre><code id="sc1b"></code></pre>
-            
-      
+
+
       <script type="text/javascript">
         sourceCode.add('sc1a', 'ex1a');
         sourceCode.add('sc1b', 'ex1b');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
 
@@ -1620,8 +1624,8 @@
       font-weight: bold;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -1629,8 +1633,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -1638,7 +1642,7 @@
       font-weight: bold;
       font-size: 100%;
       }
-      
+
       fieldset label {
       margin: 0;
       padding: 0;
@@ -1652,35 +1656,35 @@
       position: relative;
       left: -0.5em;
       }
-      
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
 
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
-      fieldset label:hover { 
-      background-color: #ADDFFF; 
+
+      fieldset label:hover {
+      background-color: #ADDFFF;
       }
-      
-      fieldset label.focus { 
-      border-color: black; 
+
+      fieldset label.focus {
+      border-color: black;
       background-color: #EEEEEE;
       }
-      
+
       .instructions {
       padding: 0;
       margin: 0;
@@ -1690,45 +1694,45 @@
       width: 100%;
       font-weight: normal;
       }
-      
+
     </style>
-    
+
     <contents>
       <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus"); 
+        if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus"); 
+        if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
       </script>
-      
+
       <h2>Features</h2>
       <ul>
         <li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
         <li>Uses <code>aria-descibedby</code> to reference instructions for related control.</li>
-        <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control. 
+        <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
           Screen readers may not be consistent in presenting the descriptive information.</li>
         <li>VoiceOver on MacOS reads the instructions after the control label information.</li>
         <li>Does not affect keyboard only users.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
         <label for="id-name">Name</label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address</label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14"/>
-        
+
         <div id="ex1a">
           <label for="id-delivery">Delivery Method</label>
           <p id="id-delivery-inst" class="instructions">Free home delivery on Monday's and Tuesday nights.</p>
@@ -1738,84 +1742,84 @@
             <option>Home delivery</option>
           </select>
         </div>
-        
+
         <fieldset>
           <legend>Crust</legend>
-          
+
           <label>
             <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Thin
           </label>
-          
+
           <label>
             <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Classic
           </label>
-          
+
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/> 
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Deep Dish
           </label>
-          
+
         </fieldset>
-        
+
         <fieldset>
           <legend>Toppings</legend>
-          
+
           <div id="ex1b">
-            
+
             <p id="topping-inst" class="instructions">First topping is free and $1.00 extra for each additional topping.</p>
-            
+
             <label>
               <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)" aria-describedby="topping-inst"/>
               Sausage
             </label>
           </div>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Pepperoni
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Mushrooms
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Onions
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Green Peppers
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Back Olives
           </label>
-          
+
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)"/>
             Extra cheese
           </label>
-          
+
         </fieldset>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
-      
+
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1a"></code></pre>
 
       <pre><code id="sc1b"></code></pre>
-            
-      
+
+
       <script type="text/javascript">
         sourceCode.add('sc1a', 'ex1a');
         sourceCode.add('sc1b', 'ex1b');
@@ -1828,28 +1832,28 @@
   <slide>
     <title>Pizza Order Form: Required Form Controls</title>
     <style id="style">
-      
-      
+
+
       .required {
       color: blue;
       font-weight: normal;
       }
-      
+
       input {
       display: block;
       }
-      
+
       div input,
       div select {
       display: inline;
       }
-      
+
       [required] + span:before,
       [aria-required="true"] + span:before {
       content: "(required)";
       color: blue;
       }
-      
+
       label {
       display: block;
       margin: 0;
@@ -1859,7 +1863,7 @@
       font-weight: bold;
       color: black;
       }
-      
+
       select {
       margin: 0;
       padding: 0;
@@ -1867,41 +1871,41 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       input[type="submit"] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover{
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
+
     </style>
-    
+
     <contents>
       <h2>Features</h2>
       <ul>
@@ -1910,22 +1914,22 @@
         <li>Use an <code>img</code> element with the <code>alt="required"</code></li>
         <li>ARIA 1.0 <code>aria-required="true"</code> attribute</li>
       </ul>
-      
+
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
         <label for="id-name">Name <span class="required">(required)</span></label>
         <input id="id-name" type="text" size="30"/>
-        
+
         <label for="id-address">Address <img src="examples/images/required.png" alt="required"/></label>
         <input id="id-address" type="text" size="40"/>
-        
+
         <label for="id-phone">Phone</label>
         <div>
           <input id="id-phone" type="text" size="14" required=""/>
           <span></span>
         </div>
-        
+
         <label for="id-delivery">Delivery Method</label>
         <div>
           <select id="id-delivery"  aria-required="true">
@@ -1935,31 +1939,31 @@
           </select>
           <span></span>
         </div>
-        
-      </form>  
-      
+
+      </form>
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-            
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
-  
-  
+
+
   <slide>
     <title>Pizza Order Form: aria-labelledby</title>
-    
+
     <style id="style">
       div.label,
       div.label,
@@ -1973,7 +1977,7 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       div.group div.item {
         margin: 0;
         padding: 0;
@@ -1989,58 +1993,58 @@
         border: 2px solid transparent;
         width: 9em;
       }
-      
+
       input[type="submit"] {
         margin-top: 2em;
       }
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       div.group div.item:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      div.group div.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
-      }      
+
+      div.group div.focus {
+        background-color: #EEEEEE;
+        border-color: black;
+      }
     </style>
-    
+
     <contents>
       <form id="form">
         <h2>Pizza Form</h2>
 
         <div id="lb1" class="label">Name</div>
         <input id="id-name" type="text" size="30" aria-labelledby="lb1"/>
-        
+
         <div id="lb2" class="label">Address</div>
         <input id="id-address" type="text" size="40" aria-labelledby="lb2"/>
-        
+
         <div id="lb3" class="label">Phone</div>
         <input id="id-phone" type="text" size="14" aria-labelledby="lb3"/>
-        
+
         <div id="lb4" class="label">Delivery Method</div>
         <select id="id-delivery" aria-labelledby="lb4">
           <option>Eat in store</option>
           <option>Pickup</option>
           <option>Home delivery</option>
         </select>
-        
+
         <div class="group">
           <div id="lb5" class="title">Crust</div>
-          
+
           <div class="item">
             <input id="id-crust" name="crust" type="radio" value="Thin" aria-labelledby="lb5-1 lb5"/>
             <span id="lb5-1">Thin</span>
@@ -2057,7 +2061,7 @@
           </div>
 
         </div>
-        
+
         <div class="group">
           <div id="lb6" class="title">Toppings</div>
 
@@ -2097,46 +2101,46 @@
           </div>
 
         </div>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
+
       <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('div.group input');
-        
+
           for(var i = 0; i &lt; itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-        
-      </script>  
 
-            
+      </script>
+
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -2144,13 +2148,13 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
-  
+
   <slide>
     <title>Pizza Order Form: aria-label</title>
-    
+
     <style id="style">
       div.label,
       div.label,
@@ -2164,7 +2168,7 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       div.group div.item {
         margin: 0;
         padding: 0;
@@ -2180,7 +2184,7 @@
         border: 2px solid transparent;
         width: 9em;
       }
-      
+
       select {
         margin: 0;
         padding: 0;
@@ -2188,56 +2192,56 @@
         background-color: #FFFEFF;
         font-size: 1em;
       }
-      
+
       input[type="submit"] {
         margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
         div.group div.item:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      div.group div.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
-      }      
+
+      div.group div.focus {
+        background-color: #EEEEEE;
+        border-color: black;
+      }
     </style>
-    
+
     <contents>
       <form id="form">
         <h2>Pizza Form</h2>
-        
+
           <div class="label">Name</div>
           <input id="id-name" type="text" size="30" aria-label="Name"/>
-        
+
           <div class="label">Address</div>
           <input id="id-address" type="text" size="40" aria-label="Address"/>
-        
+
           <div class="label">Phone</div>
           <input id="id-phone" type="text" size="14" aria-label="Phone"/>
-        
+
           <div class="label">Delivery Method</div>
           <select id="id-delivery" aria-label="Delivery method">
             <option>Eat in store</option>
             <option>Pickup</option>
             <option>Home delivery</option>
           </select>
-        
+
         <div class="group">
           <div class="title">Crust</div>
           <div class="item">
@@ -2253,7 +2257,7 @@
             Deep Dish
           </div>
         </div>
-        
+
         <div class="group">
           <div class="title">Toppings</div>
           <div class="item">
@@ -2285,43 +2289,43 @@
             Extra cheese
           </div>
         </div>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
+
       <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('div.group input');
-        
+
           for(var i = 0; i &lt; itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-        
+
       </script>
 
       <script type="text/javascript">
@@ -2331,7 +2335,7 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
 
@@ -2348,8 +2352,8 @@
       font-weight: normal;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -2357,8 +2361,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       div.group div.title {
       margin: 0;
       padding: 0;
@@ -2367,53 +2371,53 @@
       font-size: 120%;
       border-bottom: solid thin gray;
       }
-      
-      
+
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
+
     </style>
-    
+
     <contents>
-      
-      
+
+
       <h2>Accessibility Issues</h2>
       <ul>
         <li>No labeling information to uniquely differentiate the billing and shipping name, address, state and zip code controls.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Order Form</h2>
-        
+
         <div class="group">
           <div class="title">Billing Information</div>
 
           <label for="billing-name">Name</label>
           <input id="billing-name" type="text" size="30"/>
-          
+
           <label for="billing-address">Address</label>
           <input id="billing-address" type="text" size="40"/>
-          
+
           <label for="billing-state">State</label>
           <select id="billing-state">
             <option>Choose your state</option>
@@ -2468,20 +2472,20 @@
             <option>Wisconsin</option>
             <option>Wyoming</option>s
           </select>
-          
+
           <label for="billing-zip">Zip Code</label>
           <input id="billing-zip" type="text" size="12"/>
-          
+
         </div>
-        
+
         <div class="group">
           <div class="title">Shipping Information</div>
           <label for="shipping-name">Name</label>
           <input id="shipping-name" type="text" size="30"/>
-          
+
           <label for="shipping-address">Address</label>
           <input id="shipping-address" type="text" size="40"/>
-          
+
           <label for="shipping-state">State</label>
           <select id="shipping-state">
             <option>Choose your state</option>
@@ -2536,25 +2540,25 @@
             <option>Wisconsin</option>
             <option>Wyoming</option>s
           </select>
-          
+
           <label for="shipping-zip">Zip Code</label>
           <input id="shipping-zip" type="text" size="12"/>
-          
+
         </div>
-        
+
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
-      
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -2576,8 +2580,8 @@
       font-weight: normal;
       color: black;
       }
-      
-      
+
+
       select {
       margin: 0;
       padding: 0;
@@ -2585,8 +2589,8 @@
       background-color: #FFFEFF;
       font-size: 1em;
       }
-      
-      
+
+
       fieldset legend {
       margin: 0;
       padding: 0;
@@ -2594,41 +2598,41 @@
       font-weight: bold;
       font-size: 120%;
       }
-      
-      
+
+
       input[type=submit] {
       margin-top: 2em;
       }
-      
+
       input[type=submit]:focus {
       outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover {
-      background-color: #ADDFFF; 
+      background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-      outline: 2px solid black; 
-      background-color: #EEEEEE; 
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
-      
+
       select:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
-      
+
     </style>
-    
+
     <contents>
 
-      
+
       <h2>Features</h2>
       <ul>
         <li><code>fieldset/legend</code> is used to provide unique labels to the billing and shipping address information.</li>
       </ul>
-      
-      
+
+
       <form id="form">
         <h2>Order Form</h2>
 
@@ -2636,7 +2640,7 @@
           <legend>Billing Information</legend>
           <label for="billing-name">Name</label>
           <input id="billing-name" type="text" size="30"/>
-          
+
           <label for="billing-address">Address</label>
           <input id="billing-address" type="text" size="40"/>
 
@@ -2694,20 +2698,20 @@
             <option>Wisconsin</option>
             <option>Wyoming</option>s
           </select>
-          
+
           <label for="billing-zip">Zip Code</label>
           <input id="billing-zip" type="text" size="12"/>
-         
+
         </fieldset>
 
         <fieldset>
           <legend>Shipping Information</legend>
           <label for="shipping-name">Name</label>
           <input id="shipping-name" type="text" size="30"/>
-          
+
           <label for="shipping-address">Address</label>
           <input id="shipping-address" type="text" size="40"/>
-          
+
           <label for="shipping-state">State</label>
           <select id="shipping-state">
             <option>Choose your state</option>
@@ -2762,24 +2766,24 @@
             <option>Wisconsin</option>
             <option>Wyoming</option>s
           </select>
-          
+
           <label for="shipping-zip">Zip Code</label>
           <input id="shipping-zip" type="text" size="12"/>
-          
+
         </fieldset>
 
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -2792,23 +2796,23 @@
 
   <slide>
     <title>Pizza Service Survey: no labels</title>
-    
+
     <style id="style">
-      
+
       table.survey th.rating,
       table.survey td.rating {
         text-align: center;
       }
-      
+
       table.survey tbody th {
         font-weight: normal;
       }
-      
+
     </style>
-    
+
     <contents>
       <h2>Problems</h2>
-      
+
       <ul>
         <li>Radio buttons do not have any natural unique text on the page to use as a label.</li>
         <li>No keyboard focus styling.</li>
@@ -2855,62 +2859,62 @@
             </tr>
           </tbody>
         </table>
-        
+
         <input type="submit" value="Submit Survey"/>
-        
+
       </form>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
 
   <slide>
     <title>Pizza Service Survey: aria-labelledby</title>
-    
+
     <style id="style">
-      
+
       table.survey th.rating,
       table.survey td.rating {
       text-align: center;
       }
-      
+
       table.survey tbody th {
       font-weight: normal;
       }
-      
+
       table.survey input:focus,
       table.survey input:hover {
         outline: 2px solid #444444;
         outline-offset: 0.25em;
       }
-      
+
     </style>
-    
+
     <contents>
       <h2>Features</h2>
-      
+
       <ul>
         <li>Uses <code>aria-labelledby</code> to label radio buttons with existing visible content on the page.</li>
         <li>Keyboard focus and hover styling use CSS <code>:focus</code> and <code>:hover</code> pseudo selectors with the <code>outline</code> property.</li>
       </ul>
-      
+
       <form id="form">
         <h2>Pizza Survey</h2>
-        
+
         <table class="survey table table-striped">
           <thead>
             <tr>
@@ -2949,44 +2953,44 @@
             </tr>
           </tbody>
         </table>
-        
+
         <input type="submit" value="Submit Survey"/>
-        
+
       </form>
 
       <script id="script" type="text/javascript">
-        
+
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus"); 
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('td input');
-        
+
           for(var i = 0; i &lt; itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
             item.addEventListener('blur', itemBlur, true);
           }
         }, false);
-      
-      </script>  
-  
+
+      </script>
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre> 
+
+      <pre><code id="sc3"></code></pre>
 
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
@@ -2995,12 +2999,12 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
   </slide>
-  
 
- 
+
+
   <slide>
     <title>Form Control Labeling Technique Summary</title>
     <contents>
@@ -3010,13 +3014,13 @@
         <li>Should be first choice for backward compatibility support</li>
         <li>Increases selection area for moving focus or toggling the state of a form control</li>
       </ul>
-      
+
       <h2><code>title</code> attribute</h2>
       <ul>
         <li>Labels are hidden, except many browsers generate a popup tooltip when user hovers pointer over form control</li>
         <li>Backward compatibility support</li>
       </ul>
-      
+
       <h2>ARIA 1.0 <code>aria-labelledby</code> attribute</h2>
       <ul>
         <li>Complex form labeling, where label text is visible on the page</li>
@@ -3036,9 +3040,9 @@
         <li>Used for both labeling and example input, so it is in a gray area of accessibility right now</li>
         <li>Compatibility issues</li>
       </ul>
-      
+
     </contents>
-    
+
   </slide>
 
   <slide>
@@ -3050,22 +3054,22 @@
       padding: 0;
       margin-top: 1em;
       }
-      
+
       label {
       display: block;
       }
-      
+
       div.text,
       div.select,
       fieldset,
       input[type="submit"] {
       margin-top: 0.5em;
       }
-      
+
       fieldset {
       width: 25em;
       }
-      
+
       label span {
         margin-left: 0.25em;
         font-weight: normal;
@@ -3079,9 +3083,9 @@
         font-size: 110%;
       }
 
-      
+
     </style>
-    
+
     <contents>
       <h2>Features</h2>
       <ul>
@@ -3091,28 +3095,28 @@
         <li>Image used to indicate required fields</li>
         <li>Dialog box for errors</li>
       </ul>
-      
+
       <div role="region" aria-label="Example">
-        
+
         <form id="form">
           <h2>Pizza Order Form</h2>
           <p><img src="images/required.png" alt="required"/> means required field</p>
-          
+
           <div class="text">
             <label for="id-name">Name <img src="images/required.png" alt="required"/></label>
             <input id="id-name" type="text" size="30"/>
           </div>
-          
+
           <div class="text">
             <label for="id-address">Address <img src="images/required.png" alt="required"/></label>
             <input id="id-address" type="text" size="40"/>
           </div>
-          
+
           <div class="text">
             <label for="id-phone">Phone <img src="images/required.png" alt="required"/></label>
             <input id="id-phone" type="text" size="14"/>
           </div>
-          
+
           <div class="select">
             <label for="id-delivery">Delivery Method</label>
             <select id="id-delivery">
@@ -3121,7 +3125,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <fieldset>
             <legend>Crust <img src="images/required.png" alt="required"/></legend>
             <label>
@@ -3135,7 +3139,7 @@
               <input name="crust" type="radio" value="Deep Dish"/><span>Deep Dish</span>
             </label>
           </fieldset>
-          
+
           <fieldset>
             <legend>Toppings</legend>
             <label>
@@ -3160,53 +3164,53 @@
               <input name="topping" type="checkbox" value="Extra Cheese"/><span>Extra cheese</span>
             </label>
           </fieldset>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script src="examples/js/submit-order.js" type="text/javascript"></script>
-      
+
       <script id="script">
 
         function clearErrorFeedback() {
           // dummy function for error computation
         }
-        
+
         function exampleErrorFeedback(errors) {
           var num_errors = errors.length;
-        
+
           str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
           for (var i = 0; i &lt; num_errors; i++) {
             str += errors[i].message + "\n";
           }
-        
-          alert(str);    
+
+          alert(str);
         }
-        
+
       </script>
-      
-      
+
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
-      
+
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style', 'text');
@@ -3214,22 +3218,22 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
-    </contents>
-  </slide> 
 
-  <slide> 
+    </contents>
+  </slide>
+
+  <slide>
     <title>Error Feedback: List of Errors</title>
     <style type="text/css">
       label {
-        border: solid medium transparent;  
+        border: solid medium transparent;
       }
-      
+
       label.focus {
         border-color: black;
         background-color: #FFFFA0;
       }
-      
+
       input[type="text"]:focus,
       input[type="text"]:hover,
       select:focus,
@@ -3243,18 +3247,18 @@
         padding: 0;
         margin-top: 1em;
       }
-      
+
       label {
         display: block;
       }
-      
+
       div.text,
       div.select,
       fieldset,
       input[type="submit"] {
          margin-top: 0.5em;
       }
-      
+
       fieldset {
         width: 20em;
       }
@@ -3266,14 +3270,14 @@
         font-weight: bold;
         font-size: 110%;
       }
-      
+
       label span {
         padding-left: 0.25em;
         font-weight: normal;
       }
 
     </style>
-    
+
     <contents>
 
       <h2>Features</h2>
@@ -3285,31 +3289,31 @@
         <li>Error feedback through a list of links with error messages and headings to indicate the number of errors</li>
         <li><code>focus</code> and <code>blur</code> events to improve focus highlighting of form controls</li>
       </ul>
-      
+
       <div role="region" aria-label="Example">
-        
+
         <div id="id-errors" role="region" aria-label="Error information">
-          
+
         </div>
-        
+
         <form id="form">
           <h2>Pizza Order Form</h2>
-          
+
           <div class="text">
             <label for="id-name">Name (required)</label>
             <input id="id-name" type="text" size="30"/>
           </div>
-          
+
           <div class="text">
             <label for="id-address">Address (required)</label>
             <input id="id-address" type="text" size="40"/>
           </div>
-          
+
           <div class="text">
             <label for="id-phone">Phone (required)</label>
             <input id="id-phone" type="text" size="14"/>
           </div>
-          
+
           <div class="select">
             <label for="id-delivery">Delivery Method</label>
             <select id="id-delivery">
@@ -3318,7 +3322,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <fieldset>
             <legend>Crust (required)</legend>
             <label>
@@ -3331,7 +3335,7 @@
               <input name="crust" type="radio" value="Deep Dish"/><span>Deep Dish</span>
             </label>
           </fieldset>
-          
+
           <fieldset>
             <legend>Toppings</legend>
             <label>
@@ -3356,107 +3360,107 @@
               <input name="topping" type="checkbox" value="Extra Cheese"/><span>Extra cheese</span>
             </label>
           </fieldset>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script src="examples/js/submit-order.js" type="text/javascript"></script>
-      
+
       <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
         $(this).addClass('focus');
-        }, 
+        },
         function() {
         $(this).removeClass('focus');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
         $(this).addClass('focus');
-        }, 
+        },
         function() {
         $(this).removeClass('focus');
         });
-        
-        
-        });
-        
 
-        
+
+        });
+
+
+
         // Error feedback code
-        
+
         function moveFocus(id) {
            $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
         $('div#id-errors').empty();
         $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
         var num_errors = errors.length;
-        
+
         str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
         $('div#id-errors').css('display', 'block');
-        
+
         $('div#id-errors').append('&lt;h2>&lt;a tabindex="-1" id="id-errors-start">&lt;/a>' + str + '&lt;/h2>');
-        
+
         var messages = "&lt;ol>\n";
-          
+
           for (var i = 0; i &lt; num_errors; i++) {
           var e = errors[i];
           messages += '&lt;li>&lt;a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '&lt;/a>&lt;/li>\n';
           }
-          messages += "&lt;/ol>\n";       
+          messages += "&lt;/ol>\n";
           $('div#id-errors').append(messages);
           moveFocus('id-errors-start');
           }
-          
+
       </script>
-      
+
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-      
-      
+
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -3464,56 +3468,56 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
-      
+
     </contents>
-  </slide> 
-  
+  </slide>
+
    <slide>
     <title>Popup Error Feedback Example</title>
-    
+
     <script src="js/submit-order.js" type="text/javascript"></script>
-    
+
     <style id="style" type="text/css">
       div {
-        border: solid medium transparent;  
+        border: solid medium transparent;
       }
-      
+
       div.focus {
         border-color: black;
         background-color: #EEEEEE;
       }
-      
+
       div.hover {
         border-color: black;
         background-color: #EEEEEE;
       }
-      
+
       label.focus,
       input[type="text"]:focus,
       select:focus {
         background-color: #EEEEEE;
         outline: medium solid black;
       }
-      
+
       label.hover,
       input[type="text"]:hover,
       select:hover {
         background-color: #EEEEEE;
         outline: medium solid black;
       }
-      
+
       div.button {
         position: relative;
         left: -0.25em;
         width: 9em;
       }
-      
+
       label input[type="radio"],
       label input[type="checkbox"] {
         margin-left: 0.25em;
       }
-      
-      
+
+
       div#id-errors {
         color: red;
         display: none;
@@ -3521,43 +3525,43 @@
         border: thin solid red;
         width: 25em;
       }
-      
+
       div#id-errors a {
         color: red;
       }
-      
+
       h2, h3 {
         margin: 0;
         padding: 0;
         margin-top: 1em;
       }
-      
+
       label {
       display: block;
         margin: 0;
         padding: 0;
         font-weight: normal;
       }
-      
+
       fieldset,
       legend {
         padding: 0;
         margin: 0;
         margin-top: 1em;
       }
-      
+
       legend {
         margin-top: 1em;
         font-weight: bold;
         font-size: 110%;
       }
-      
+
       div.text,
       div.select,
       input[type="submit"] {
         margin-top: 0.5em;
       }
-            
+
       span.error,
         span.noerror {
         display: inline;
@@ -3568,15 +3572,15 @@
         border: thin solid red;
         padding: 0.25em;
       }
-      
+
       span.noerror {
         color: transparent;
         border: thin solid transparent;
         padding: 0.25em;
       }
-      
+
     </style>
-    
+
     <contents>
 
       <h2>Features</h2>
@@ -3585,49 +3589,49 @@
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
       </ul>
-      
+
       <div role="region" aria-label="Example">
-        
+
         <div id="id-errors" role="region" aria-label="Error information">
-          
+
         </div>
-        
+
         <form id="form">
           <h2>Pizza Order Form</h2>
-          
+
           <div class="text">
             <label for="id-name">Name</label>
-            <input id="id-name" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
+            <input id="id-name"
+              required="true"
+              aria-invalid="false"
+              type="text"
               size="30"
               onblur="checkName()"/>
             <span id="id-name-error" class="noerror" > </span>
           </div>
-          
+
           <div class="text">
             <label for="id-address">Address</label>
-            <input id="id-address" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="40" 
+            <input id="id-address"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="40"
               onblur="checkAddress()"/>
             <span id="id-address-error" class="noerror" > </span>
           </div>
-          
+
           <div class="text">
             <label for="id-phone">Phone</label>
-            <input id="id-phone" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="14" 
+            <input id="id-phone"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="14"
               onblur="checkPhone()"/>
             <span id="id-phone-error" class="noerror"> </span>
           </div>
-          
+
           <div class="select">
             <label for="id-delivery">Delivery Method</label>
             <select id="id-delivery">
@@ -3636,7 +3640,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <fieldset>
             <legend>Crust</legend>
             <div class="button">
@@ -3649,23 +3653,23 @@
               <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
             </div>
           </fieldset>
-          
+
           <fieldset>
             <legend>Toppings</legend>
             <div class="button">
               <label>
-                <input id="id-sausage" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-sausage"
+                  name="topping"
+                  type="checkbox"
                   value="Sausage"/>
                 Sausage
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-pepperoni" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-pepperoni"
+                  name="topping"
+                  type="checkbox"
                   value="Pepperoni"/>
                 Pepperoni
               </label>
@@ -3673,8 +3677,8 @@
             <div class="button">
               <label>
                 <input id="id-mushrooms"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Mushrooms"/>
                 Mushrooms
               </label>
@@ -3682,8 +3686,8 @@
             <div class="button">
               <label>
                 <input id="id-onions"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Onions"/>
                 Onions
               </label>
@@ -3691,17 +3695,17 @@
             <div class="button">
               <label>
                 <input id="id-green"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Green Peppers"/>
                 Green Peppers
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-black" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-black"
+                  name="topping"
+                  type="checkbox"
                   value="Black Olives"/>
                 Back Olives
               </label>
@@ -3709,106 +3713,106 @@
             <div class="button">
               <label>
                 <input id="id-x-cheese"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Extra Cheese"
                   aria-labelledby="id-x-cheese id-toppings"/>
                 Extra cheese
               </label>
             </div>
           </fieldset>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
           $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
           $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
           $(this).addClass('hover');
-        }, 
+        },
         function() {
           $(this).removeClass('hover');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
           $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
           $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
           $(this).addClass('hover');
-        }, 
+        },
         function() {
           $(this).removeClass('hover');
         });
-        
-        
+
+
         });
-        
+
         //
         // Scripting for submit button form validation
-        
+
         function moveFocus(id) {
           $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
           $('div#id-errors').empty();
           $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
           var num_errors = errors.length;
-        
+
           str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
           $('div#id-errors').css('display', 'block');
-          
+
           $('div#id-errors').append('&lt;h2>&lt;a id="id-errors-start">&lt;/a>' + str + '&lt;/h2>');
-          
+
           var messages = "&lt;ol>\n";
-          
+
           for (var i = 0; i &lt; num_errors; i++) {
             var e = errors[i];
             messages += '&lt;li>&lt;a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '&lt;/a>&lt;/li>\n';
             }
-            messages += "&lt;/ol>\n";       
+            messages += "&lt;/ol>\n";
             $('div#id-errors').append(messages);
-            
+
             moveFocus("id-errors-start");
           }
-          
+
         //
         // Scripting for inline form validation
-        
+
         function checkItem(id, flag, message) {
         var em = $('#' + id + '-error');
         $(em).empty();
         var ei = $('#' + id);
-        
+
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
         $(em).append(message);
@@ -3821,17 +3825,17 @@
         $(em).removeClass('error');
         }
         }
-        
+
         function checkName() {
         var ei = $('#id-name');
         checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }  
-        
+        }
+
         function checkAddress() {
         var ei = $('#id-address');
         checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }  
-        
+        }
+
         function checkPhone() {
         var ei = $('#id-phone');
         var phone = $(ei).val();
@@ -3842,28 +3846,28 @@
         p = "";
         for (var i = 0; i &lt; phone.length; i++) {
         var c = phone[i];
-        if ((c >= "0") &amp;&amp; (c &lt;= "9")) { 
+        if ((c >= "0") &amp;&amp; (c &lt;= "9")) {
         p += c;
         }
-        } 
+        }
         checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
         }
-        }  
-        
+        }
+
       </script>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre> 
-           
+
+      <pre><code id="sc3"></code></pre>
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -3873,42 +3877,42 @@
       </script>
 
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Popup Error Feedback: Label element, aria-describedby, aria-controls and status</title>
-    
+
     <script src="js/submit-order.js" type="text/javascript"></script>
-    
+
     <style type="text/css">
       div {
-      border: solid medium transparent;  
+      border: solid medium transparent;
       }
-      
+
       div.focus {
       border-color: black;
       background-color: #FFFFA0;
       }
-      
+
       div.hover {
       border-color: black;
       background-color: #EEEEEE;
       }
-      
-      
+
+
       input[type="text"]:focus,
       select:focus {
       background-color: #FFFFA0;
       outline: medium solid black;
       }
-      
+
       input[type="text"]:hover,
       select:hover {
       background-color: #EEEEEE;
       outline: medium solid black;
       }
-      
-      
+
+
       div#id-errors {
       color: red;
       display: none;
@@ -3916,43 +3920,43 @@
       border: thin solid red;
       width: 25em;
       }
-      
+
       div#id-errors a {
       color: red;
       }
-      
+
       h2, h3 {
       margin: 0;
       padding: 0;
       margin-top: 1em;
       }
-      
+
       label {
       display: block;
       margin: 0;
       padding: 0;
       font-weight: normal;
       }
-      
+
       fieldset,
       legend {
       padding: 0;
       margin: 0;
       margin-top: 1em;
       }
-      
+
       legend {
       margin-top: 1em;
       font-weight: bold;
       font-size: 110%;
       }
-      
+
       div.text,
       div.select,
       input[type="submit"] {
       margin-top: 0.5em;
       }
-            
+
       label.error,
       lanel.noerror {
       display: inline;
@@ -3963,15 +3967,15 @@
       border: thin solid red;
       padding: 0.25em;
       }
-      
+
       label.noerror {
       color: transparent;
       border: thin solid transparent;
       padding: 0.25em;
       }
-      
+
     </style>
-    
+
     <contents>
 
       <h2>Features</h2>
@@ -3982,53 +3986,53 @@
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
         <li><code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
-      
-  
+
+
       <div role="region" aria-label="Example">
-        
+
         <div id="id-errors" role="region" aria-label="Error information">
-          
+
         </div>
-        
+
         <form id="form">
           <h2>Pizza Order Form</h2>
-          
+
           <div class="text">
             <label for="id-name">Name</label>
-            <input id="id-name" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
+            <input id="id-name"
+              required="true"
+              aria-invalid="false"
+              type="text"
               size="30"
               aria-controls="id-name-error"
               onblur="checkName()"/>
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="text">
             <label for="id-address">Address</label>
-            <input id="id-address" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="40" 
+            <input id="id-address"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="40"
               aria-controls="id-address-error"
               onblur="checkAddress()"/>
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="text">
             <label for="id-phone">Phone</label>
-            <input id="id-phone" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="14" 
+            <input id="id-phone"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="14"
               aria-controls="id-phone-error"
               onblur="checkPhone()"/>
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="select">
             <label for="id-delivery">Delivery Method</label>
             <select id="id-delivery">
@@ -4037,7 +4041,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <fieldset>
             <legend>Crust</legend>
             <div class="button">
@@ -4050,23 +4054,23 @@
               <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
             </div>
           </fieldset>
-          
+
           <fieldset>
             <legend>Toppings</legend>
             <div class="button">
               <label>
-                <input id="id-sausage" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-sausage"
+                  name="topping"
+                  type="checkbox"
                   value="Sausage"/>
                 Sausage
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-pepperoni" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-pepperoni"
+                  name="topping"
+                  type="checkbox"
                   value="Pepperoni"/>
                 Pepperoni
               </label>
@@ -4074,8 +4078,8 @@
             <div class="button">
               <label>
                 <input id="id-mushrooms"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Mushrooms"/>
                 Mushrooms
               </label>
@@ -4083,8 +4087,8 @@
             <div class="button">
               <label>
                 <input id="id-onions"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Onions"/>
                 Onions
               </label>
@@ -4092,17 +4096,17 @@
             <div class="button">
               <label>
                 <input id="id-green"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Green Peppers"/>
                 Green Peppers
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-black" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-black"
+                  name="topping"
+                  type="checkbox"
                   value="Black Olives"/>
                 Back Olives
               </label>
@@ -4110,106 +4114,106 @@
             <div class="button">
               <label>
                 <input id="id-x-cheese"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Extra Cheese"
                   aria-labelledby="id-x-cheese id-toppings"/>
                 Extra cheese
               </label>
             </div>
           </fieldset>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         });
-        
+
         //
         // Scripting for submit button form validation
-        
+
         function moveFocus(id) {
         $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
         $('div#id-errors').empty();
         $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
         var num_errors = errors.length;
-        
+
         str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
         $('div#id-errors').css('display', 'block');
-        
+
         $('div#id-errors').append('&lt;h2>&lt;a id="id-errors-start">&lt;/a>' + str + '&lt;/h2>');
-        
+
         var messages = "&lt;ol>\n";
-          
+
           for (var i = 0; i &lt; num_errors; i++) {
           var e = errors[i];
           messages += '&lt;li>&lt;a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '&lt;/a>&lt;/li>\n';
           }
-          messages += "&lt;/ol>\n";       
+          messages += "&lt;/ol>\n";
           $('div#id-errors').append(messages);
-          
+
           moveFocus("id-errors-start");
           }
-          
+
         //
         // Scripting for inline form validation
-        
+
         function checkItem(id, flag, message) {
         var em = $('#' + id + '-error');
         $(em).empty();
         var ei = $('#' + id);
-        
+
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
         $(em).append(message);
@@ -4222,17 +4226,17 @@
         $(em).removeClass('error');
         }
         }
-        
+
         function checkName() {
         var ei = $('#id-name');
         checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }  
-        
+        }
+
         function checkAddress() {
         var ei = $('#id-address');
         checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }  
-        
+        }
+
         function checkPhone() {
         var ei = $('#id-phone');
         var phone = $(ei).val();
@@ -4243,28 +4247,28 @@
         p = "";
         for (var i = 0; i &lt; phone.length; i++) {
         var c = phone[i];
-        if ((c >= "0") &amp;&amp; (c &lt;= "9")) { 
+        if ((c >= "0") &amp;&amp; (c &lt;= "9")) {
         p += c;
         }
-        } 
+        }
         checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
         }
-        }  
-        
+        }
+
       </script>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre> 
-           
+
+      <pre><code id="sc3"></code></pre>
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -4274,42 +4278,42 @@
       </script>
 
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Popup Error Feedback: aria-labelledby, aria-controls and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
-    
+
     <style type="text/css">
       div {
-      border: solid medium transparent;  
+      border: solid medium transparent;
       }
-      
+
       div.focus {
       border-color: black;
       background-color: #FFFFA0;
       }
-      
+
       div.hover {
       border-color: black;
       background-color: #EEEEEE;
       }
-      
-      
+
+
       input[type="text"]:focus,
       select:focus {
       background-color: #FFFFA0;
       outline: medium solid black;
       }
-      
+
       input[type="text"]:hover,
       select:hover {
       background-color: #EEEEEE;
       outline: medium solid black;
       }
-      
-      
+
+
       div#id-errors {
       color: red;
       display: none;
@@ -4317,48 +4321,48 @@
       border: thin solid red;
       width: 25em;
       }
-      
+
       div#id-errors a {
       color: red;
       }
-      
+
       h2, h3 {
       margin: 0;
       padding: 0;
       margin-top: 1em;
       }
-      
+
       div.text,
       div.select,
       div.group,
       input[type="submit"] {
       margin-top: 0.5em;
       }
-      
+
       div.group {
       width: 20em;
       }
-      
+
       div.group div.title {
       font-weight: bold;
-      }    
-      
+      }
+
       span.error {
       color: red;
       border: thin solid red;
       padding: 0.25em;
       }
-      
+
       span.noerror {
       color: transparent;
       border: thin solid transparent;
       padding: 0.25em;
       }
-      
+
     </style>
-    
+
     <contents>
-      
+
       <h2>Features</h2>
       <ul>
         <li><code>aria-labelledby</code> attribute is used to label form control and includes element with error message.</li>
@@ -4367,55 +4371,55 @@
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
         <li><code>aria-controls</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
-      
+
       <div role="region" aria-label="Example">
-        
+
         <div id="id-errors" role="region" aria-label="Error information">
-          
+
         </div>
-        
+
         <form id="form">
           <h2>Pizza Order Form</h2>
-          
+
           <div class="text">
             <div id="id-name-label">Name</div>
-            <input id="id-name" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="30" 
+            <input id="id-name"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="30"
               aria-labelledby="id-name-label id-name-error"
               aria-controls="id-name-error"
               onblur="checkName()"/>
             <span id="id-name-error" class="noerror" role="status"> </span>
           </div>
-          
+
           <div class="text">
             <div id="id-address-label">Address</div>
-            <input id="id-address" 
-              aria-required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="40" 
+            <input id="id-address"
+              aria-required="true"
+              aria-invalid="false"
+              type="text"
+              size="40"
               aria-labelledby="id-address-label id-address-error"
               aria-controls="id-address-error"
               onblur="checkAddress()"/>
             <span id="id-address-error" class="noerror" role="status"> </span>
           </div>
-          
+
           <div class="text">
             <div id="id-phone-label">Phone</div>
-            <input id="id-phone" 
-              aria-required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="14" 
+            <input id="id-phone"
+              aria-required="true"
+              aria-invalid="false"
+              type="text"
+              size="14"
               aria-labelledby="id-phone-label id-phone-error"
               aria-controls="id-phone-error"
               onblur="checkPhone()"/>
             <span id="id-phone-error" class="noerror" role="status"> </span>
           </div>
-          
+
           <div class="select">
             <div id="id-delivery-label">Delivery Method</div>
             <select id="id-delivery" aria-labelledby="id-delivery-label">
@@ -4424,7 +4428,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <div class="group">
             <div id="id-crust" class="title">Crust</div>
             <div class="button">
@@ -4437,159 +4441,159 @@
               <input id="id-deep" name="crust" type="radio" value="Deep Dish" aria-required="true" aria-labelledby="id-thin id-deep"/> Deep Dish
             </div>
           </div>
-          
+
           <div class="group">
             <div id="id-toppings" class="title">Toppings</div>
             <div class="button">
-              <input id="id-sausage" 
-                name="topping" 
-                type="checkbox" 
-                value="Sausage" 
+              <input id="id-sausage"
+                name="topping"
+                type="checkbox"
+                value="Sausage"
                 aria-labelledby="id-sausage id-toppings"
                 aria-describedby="id-special"/>
                 Sausage
             </div>
             <div class="button">
-              <input id="id-pepperoni" 
-                name="topping" 
-                type="checkbox" 
+              <input id="id-pepperoni"
+                name="topping"
+                type="checkbox"
                 value="Pepperoni"
                 aria-labelledby="id-pepperoni id-toppings"/>
                 Pepperoni
             </div>
             <div class="button">
               <input id="id-mushrooms"
-                name="topping" 
-                type="checkbox" 
+                name="topping"
+                type="checkbox"
                 value="Mushrooms"
                 aria-labelledby="id-mushrooms id-toppings"/>
                 Mushrooms
             </div>
             <div class="button">
               <input id="id-onions"
-                name="topping" 
-                type="checkbox" 
+                name="topping"
+                type="checkbox"
                 value="Onions"
                 aria-labelledby="id-onions id-toppings"/>
                 Onions
             </div>
             <div class="button">
               <input id="id-green"
-                name="topping" 
-                type="checkbox" 
+                name="topping"
+                type="checkbox"
                 value="Green Peppers"
                 aria-labelledby="id-green id-toppings"/>
                 Green Peppers
             </div>
             <div class="button">
-              <input id="id-black" 
-                name="topping" 
-                type="checkbox" 
+              <input id="id-black"
+                name="topping"
+                type="checkbox"
                 value="Black Olives"
                 aria-labelledby="id-black id-toppings"/>
                 Back Olives
             </div>
             <div class="button">
               <input id="id-x-cheese"
-                name="topping" 
-                type="checkbox" 
+                name="topping"
+                type="checkbox"
                 value="Extra Cheese"
                 aria-labelledby="id-x-cheese id-toppings"/>
                 Extra cheese
             </div>
           </div>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         });
-        
+
         //
         // Scripting for submit button form validation
-        
+
         function moveFocus(id) {
         $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
         $('div#id-errors').empty();
         $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
         var num_errors = errors.length;
-        
+
         str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
         $('div#id-errors').css('display', 'block');
-        
+
         $('div#id-errors').append('&lt;h2>&lt;a id="id-errors-start">&lt;/a>' + str + '&lt;/h2>');
-        
+
         var messages = "&lt;ol>\n";
-          
+
           for (var i = 0; i &lt; num_errors; i++) {
           var e = errors[i];
           messages += '&lt;li>&lt;a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '&lt;/a>&lt;/li>\n';
           }
-          messages += "&lt;/ol>\n";       
+          messages += "&lt;/ol>\n";
           $('div#id-errors').append(messages);
-          
+
           moveFocus("id-errors-start");
           }
-          
+
         //
         // Scripting for inline form validation
-        
+
         function checkItem(id, flag, message) {
         var em = $('#' + id + '-error');
         $(em).empty();
         var ei = $('#' + id);
-        
+
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
         $(em).append(message);
@@ -4602,17 +4606,17 @@
         $(em).removeClass('error');
         }
         }
-        
+
         function checkName() {
         var ei = $('#id-name');
         checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }  
-        
+        }
+
         function checkAddress() {
         var ei = $('#id-address');
         checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }  
-        
+        }
+
         function checkPhone() {
         var ei = $('#id-phone');
         var phone = $(ei).val();
@@ -4623,28 +4627,28 @@
         p = "";
         for (var i = 0; i &lt; phone.length; i++) {
         var c = phone[i];
-        if ((c >= "0") &amp;&amp; (c &lt;= "9")) { 
+        if ((c >= "0") &amp;&amp; (c &lt;= "9")) {
         p += c;
         }
-        } 
+        }
         checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
         }
-        }  
-        
+        }
+
       </script>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre> 
-           
+
+      <pre><code id="sc3"></code></pre>
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -4654,42 +4658,42 @@
       </script>
 
     </contents>
-  </slide> 
+  </slide>
 
  <slide>
     <title>Popup Error Feedback: Label element, aria-label, aria-controls and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
-    
+
     <style type="text/css">
       div {
-      border: solid medium transparent;  
+      border: solid medium transparent;
       }
-      
+
       div.focus {
       border-color: black;
       background-color: #FFFFA0;
       }
-      
+
       div.hover {
       border-color: black;
       background-color: #EEEEEE;
       }
-      
-      
+
+
       input[type="text"]:focus,
       select:focus {
       background-color: #FFFFA0;
       outline: medium solid black;
       }
-      
+
       input[type="text"]:hover,
       select:hover {
       background-color: #EEEEEE;
       outline: medium solid black;
       }
-      
-      
+
+
       div#id-errors {
       color: red;
       display: none;
@@ -4697,44 +4701,44 @@
       border: thin solid red;
       width: 25em;
       }
-      
+
       div#id-errors a {
       color: red;
       }
-      
+
       h2, h3 {
       margin: 0;
       padding: 0;
       margin-top: 1em;
       }
-      
+
       label {
       display: block;
       margin: 0;
       padding: 0;
       font-weight: normal;
       }
-      
+
       fieldset,
       legend {
       padding: 0;
       margin: 0;
       margin-top: 1em;
       }
-      
+
       legend {
       margin-top: 1em;
       font-weight: bold;
       font-size: 110%;
       }
-      
+
       div.text,
       div.select,
       input[type="submit"] {
       margin-top: 0.5em;
       }
-      
-      
+
+
       label.error,
       lanel.noerror {
       display: inline;
@@ -4745,15 +4749,15 @@
       border: thin solid red;
       padding: 0.25em;
       }
-      
+
       label.noerror {
       color: transparent;
       border: thin solid transparent;
       padding: 0.25em;
       }
-      
+
     </style>
-    
+
     <contents>
 
       <h2>Features</h2>
@@ -4767,46 +4771,46 @@
       </ul>
 
       <div role="region" aria-label="Example">
-               
+
         <form id="form">
           <h2>Pizza Order Form</h2>
-          
+
           <div class="text">
             <label for="id-name">Name</label>
-            <input id="id-name" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
+            <input id="id-name"
+              required="true"
+              aria-invalid="false"
+              type="text"
               size="30"
               aria-controls="id-name-error"
               onblur="checkName()"/>
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="text">
             <label for="id-address">Address</label>
-            <input id="id-address" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="40" 
+            <input id="id-address"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="40"
               aria-controls="id-address-error"
               onblur="checkAddress()"/>
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="text">
             <label for="id-phone">Phone</label>
-            <input id="id-phone" 
-              required="true" 
-              aria-invalid="false" 
-              type="text" 
-              size="14" 
+            <input id="id-phone"
+              required="true"
+              aria-invalid="false"
+              type="text"
+              size="14"
               aria-controls="id-phone-error"
               onblur="checkPhone()"/>
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           </div>
-          
+
           <div class="select">
             <label for="id-delivery">Delivery Method</label>
             <select id="id-delivery">
@@ -4815,7 +4819,7 @@
               <option>Home delivery</option>
             </select>
           </div>
-          
+
           <fieldset>
             <legend>Crust</legend>
             <div class="button">
@@ -4828,23 +4832,23 @@
               <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
             </div>
           </fieldset>
-          
+
           <fieldset>
             <legend>Toppings</legend>
             <div class="button">
               <label>
-                <input id="id-sausage" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-sausage"
+                  name="topping"
+                  type="checkbox"
                   value="Sausage"/>
                 Sausage
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-pepperoni" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-pepperoni"
+                  name="topping"
+                  type="checkbox"
                   value="Pepperoni"/>
                 Pepperoni
               </label>
@@ -4852,8 +4856,8 @@
             <div class="button">
               <label>
                 <input id="id-mushrooms"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Mushrooms"/>
                 Mushrooms
               </label>
@@ -4861,8 +4865,8 @@
             <div class="button">
               <label>
                 <input id="id-onions"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Onions"/>
                 Onions
               </label>
@@ -4870,17 +4874,17 @@
             <div class="button">
               <label>
                 <input id="id-green"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Green Peppers"/>
                 Green Peppers
               </label>
             </div>
             <div class="button">
               <label>
-                <input id="id-black" 
-                  name="topping" 
-                  type="checkbox" 
+                <input id="id-black"
+                  name="topping"
+                  type="checkbox"
                   value="Black Olives"/>
                 Back Olives
               </label>
@@ -4888,106 +4892,106 @@
             <div class="button">
               <label>
                 <input id="id-x-cheese"
-                  name="topping" 
-                  type="checkbox" 
+                  name="topping"
+                  type="checkbox"
                   value="Extra Cheese"
                   aria-labelledby="id-x-cheese id-toppings"/>
                 Extra cheese
               </label>
             </div>
           </fieldset>
-          
+
           <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
-          
+
         </form>
-        
+
         <div id="order">
-          
+
         </div>
-        
+
       </div>
 
       <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
         $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
         $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
         $(this).addClass('hover');
-        }, 
+        },
         function() {
         $(this).removeClass('hover');
         });
-        
-        
+
+
         });
-        
+
         //
         // Scripting for submit button form validation
-        
+
         function moveFocus(id) {
         $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
         $('div#id-errors').empty();
         $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
         var num_errors = errors.length;
-        
+
         str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
         $('div#id-errors').css('display', 'block');
-        
+
         $('div#id-errors').append('&lt;h2>&lt;a id="id-errors-start">&lt;/a>' + str + '&lt;/h2>');
-        
+
         var messages = "&lt;ol>\n";
-          
+
           for (var i = 0; i &lt; num_errors; i++) {
           var e = errors[i];
           messages += '&lt;li>&lt;a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '&lt;/a>&lt;/li>\n';
           }
-          messages += "&lt;/ol>\n";       
+          messages += "&lt;/ol>\n";
           $('div#id-errors').append(messages);
-          
+
           moveFocus("id-errors-start");
           }
-          
+
         //
         // Scripting for inline form validation
-        
+
         function checkItem(id, flag, message) {
         var em = $('#' + id + '-error');
         $(em).empty();
         var ei = $('#' + id);
-        
+
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
         $(ei).attr('aria-label', message);
@@ -5002,17 +5006,17 @@
         $(em).removeClass('error');
         }
         }
-        
+
         function checkName() {
         var ei = $('#id-name');
         checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }  
-        
+        }
+
         function checkAddress() {
         var ei = $('#id-address');
         checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }  
-        
+        }
+
         function checkPhone() {
         var ei = $('#id-phone');
         var phone = $(ei).val();
@@ -5023,28 +5027,28 @@
         p = "";
         for (var i = 0; i &lt; phone.length; i++) {
         var c = phone[i];
-        if ((c >= "0") &amp;&amp; (c &lt;= "9")) { 
+        if ((c >= "0") &amp;&amp; (c &lt;= "9")) {
         p += c;
         }
-        } 
+        }
         checkItem('id-phone', ((p.length !== 7) &amp;&amp; (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
         }
-        }  
-        
+        }
+
       </script>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
-      
+
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
-     
+
       <h2>Javascript Source Code</h2>
-      
-      <pre><code id="sc3"></code></pre> 
-           
+
+      <pre><code id="sc3"></code></pre>
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
@@ -5053,8 +5057,19 @@
         hljs.initHighlightingOnLoad();
       </script>
     </contents>
-  </slide> 
+  </slide>
 
-</slides> 
+  <slide>
+    <title>Badging Requirements</title>
+    <contents>
+      <ol>
+        <li>Complete form control quiz in <a href="https://compass2g.illinois.edu">Compass2g</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">Add form control labels in Problem 1</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-fieldset/">Add grouping label form controls in Problem 2</a></li>
+      </ol>
+    </contents>
+  </slide>
+
+</slides>
 
 

@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      
+
       label,
       div.group div.title {
         display: block;
@@ -22,7 +22,7 @@
         text-align: left;
         margin-top: 1.25em;
       }
-      
+
       input[type="text"],
       select {
         margin: 0;
@@ -60,25 +60,25 @@
       input[type=submit]:focus {
         outline: 2px solid black;
       }
-      
+
       input[type="text"]:hover,
       div.group label:hover {
-        background-color: #ADDFFF; 
+        background-color: #ADDFFF;
       }
-      
+
       input[type="text"]:focus {
-        outline: 2px solid black; 
-        background-color: #EEEEEE; 
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
-      
+
       select:focus {
         outline: 2px solid black;
         background-color: #EEEEEE;
       }
-      
-      div.group label.focus { 
-        background-color: #EEEEEE; 
-        border-color: black; 
+
+      div.group label.focus {
+        background-color: #EEEEEE;
+        border-color: black;
       }
     </style>
 </head>
@@ -109,11 +109,11 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide30.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 9 of 29</div>
+<div class="navbar-text pull-right">Slide 9 of 30</div>
 </div>
 </div>
 </nav>
@@ -128,17 +128,17 @@
           Name
           <input id="id-name" type="text" size="30">
         </label>
-        
+
         <label>
           Address
           <input id="id-address" type="text" size="40">
         </label>
-        
+
         <label>
           Phone
           <input id="id-phone" type="text" size="14">
         </label>
-        
+
         <label>
           Delivery Method
           <select id="id-delivery">
@@ -147,7 +147,7 @@
             <option>Home delivery</option>
           </select>
         </label>
-        
+
         
 <div class="group">
           
@@ -167,7 +167,7 @@
           </label>
         
 </div>
-        
+
         
 <div class="group">
           
@@ -203,10 +203,10 @@
           </label>
         
 </div>
-        
+
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
-        
+
       
 </form>
 <h2>HTML Source Code</h2>
@@ -224,16 +224,16 @@
 <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-         if( event.target ) event.target.parentNode.classList.add("focus"); 
+         if( event.target ) event.target.parentNode.classList.add("focus");
         }
-        
+
         function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus"); 
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
-        
+
         window.addEventListener('load', function load(event) {
           var itemList = document.querySelectorAll('div.group input');
-        
+
           for(var i = 0; i < itemList.length; i++) {
             var item = itemList[i];
             item.addEventListener('focus', itemFocus, true);
@@ -242,7 +242,7 @@
         }, false);
 
       </script><script type="text/javascript">
-        
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');

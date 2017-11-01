@@ -11,45 +11,45 @@
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
       div {
-        border: solid medium transparent;  
+        border: solid medium transparent;
       }
-      
+
       div.focus {
         border-color: black;
         background-color: #EEEEEE;
       }
-      
+
       div.hover {
         border-color: black;
         background-color: #EEEEEE;
       }
-      
+
       label.focus,
       input[type="text"]:focus,
       select:focus {
         background-color: #EEEEEE;
         outline: medium solid black;
       }
-      
+
       label.hover,
       input[type="text"]:hover,
       select:hover {
         background-color: #EEEEEE;
         outline: medium solid black;
       }
-      
+
       div.button {
         position: relative;
         left: -0.25em;
         width: 9em;
       }
-      
+
       label input[type="radio"],
       label input[type="checkbox"] {
         margin-left: 0.25em;
       }
-      
-      
+
+
       div#id-errors {
         color: red;
         display: none;
@@ -57,43 +57,43 @@
         border: thin solid red;
         width: 25em;
       }
-      
+
       div#id-errors a {
         color: red;
       }
-      
+
       h2, h3 {
         margin: 0;
         padding: 0;
         margin-top: 1em;
       }
-      
+
       label {
       display: block;
         margin: 0;
         padding: 0;
         font-weight: normal;
       }
-      
+
       fieldset,
       legend {
         padding: 0;
         margin: 0;
         margin-top: 1em;
       }
-      
+
       legend {
         margin-top: 1em;
         font-weight: bold;
         font-size: 110%;
       }
-      
+
       div.text,
       div.select,
       input[type="submit"] {
         margin-top: 0.5em;
       }
-            
+
       span.error,
         span.noerror {
         display: inline;
@@ -104,13 +104,13 @@
         border: thin solid red;
         padding: 0.25em;
       }
-      
+
       span.noerror {
         color: transparent;
         border: thin solid transparent;
         padding: 0.25em;
       }
-      
+
     </style>
 </head>
 <body>
@@ -140,11 +140,11 @@
                       </a>
 </li>
 <li>
-<a href="slide29.html">Last
+<a href="slide30.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 26 of 29</div>
+<div class="navbar-text pull-right">Slide 26 of 30</div>
 </div>
 </div>
 </nav>
@@ -164,18 +164,18 @@
       
 </ul>
 <div role="region" aria-label="Example">
-        
+
         
 <div id="id-errors" role="region" aria-label="Error information">
-          
+
         
 </div>
-        
+
         
 <form id="form">
           
 <h2>Pizza Order Form</h2>
-          
+
           
 <div class="text">
             
@@ -184,7 +184,7 @@
             <span id="id-name-error" class="noerror"> </span>
           
 </div>
-          
+
           
 <div class="text">
             
@@ -193,7 +193,7 @@
             <span id="id-address-error" class="noerror"> </span>
           
 </div>
-          
+
           
 <div class="text">
             
@@ -202,7 +202,7 @@
             <span id="id-phone-error" class="noerror"> </span>
           
 </div>
-          
+
           
 <div class="select">
             
@@ -214,7 +214,7 @@
             </select>
           
 </div>
-          
+
           
 <fieldset>
             
@@ -239,7 +239,7 @@
 </div>
           
 </fieldset>
-          
+
           
 <fieldset>
             
@@ -309,102 +309,102 @@
 </div>
           
 </fieldset>
-          
+
           
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
-          
+
         
 </form>
-        
+
         
 <div id="order">
-          
+
         
 </div>
-        
+
       
 </div>
 <script id="script" type="text/javascript">
-        
+
         // Focus styling code
-        
+
         $(document).ready( function() {
-        
+
         $('input[type="radio"]').focus(function() {
           $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="radio"]').blur(function() {
           $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="radio"]').parent().hover(function() {
           $(this).addClass('hover');
-        }, 
+        },
         function() {
           $(this).removeClass('hover');
         });
-        
-        
+
+
         $('input[type="checkbox"]').focus(function() {
           $(this).parent().addClass('focus');
         });
-        
+
         $('input[type="checkbox"]').blur(function() {
           $(this).parent().removeClass('focus');
         });
-        
+
         $('input[type="checkbox"]').parent().hover(function() {
           $(this).addClass('hover');
-        }, 
+        },
         function() {
           $(this).removeClass('hover');
         });
-        
-        
+
+
         });
-        
+
         //
         // Scripting for submit button form validation
-        
+
         function moveFocus(id) {
           $('#'+id).focus();
         }
-        
+
         function clearErrorFeedback() {
           $('div#id-errors').empty();
           $('div#id-errors').css('display', 'none');
         }
-        
+
         function exampleErrorFeedback(errors) {
           var num_errors = errors.length;
-        
+
           str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-        
+
           $('div#id-errors').css('display', 'block');
-          
+
           $('div#id-errors').append('<h2><a id="id-errors-start"></a>' + str + '</h2>');
-          
+
           var messages = "<ol>\n";
-          
+
           for (var i = 0; i < num_errors; i++) {
             var e = errors[i];
             messages += '<li><a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '</a></li>\n';
             }
-            messages += "</ol>\n";       
+            messages += "</ol>\n";
             $('div#id-errors').append(messages);
-            
+
             moveFocus("id-errors-start");
           }
-          
+
         //
         // Scripting for inline form validation
-        
+
         function checkItem(id, flag, message) {
         var em = $('#' + id + '-error');
         $(em).empty();
         var ei = $('#' + id);
-        
+
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
         $(em).append(message);
@@ -417,17 +417,17 @@
         $(em).removeClass('error');
         }
         }
-        
+
         function checkName() {
         var ei = $('#id-name');
         checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }  
-        
+        }
+
         function checkAddress() {
         var ei = $('#id-address');
         checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }  
-        
+        }
+
         function checkPhone() {
         var ei = $('#id-phone');
         var phone = $(ei).val();
@@ -438,14 +438,14 @@
         p = "";
         for (var i = 0; i < phone.length; i++) {
         var c = phone[i];
-        if ((c >= "0") && (c <= "9")) { 
+        if ((c >= "0") && (c <= "9")) {
         p += c;
         }
-        } 
+        }
         checkItem('id-phone', ((p.length !== 7) && (p.length !== 10)), "Not a vaild phone number, use this format (111) 222-3333");
         }
-        }  
-        
+        }
+
       </script>
 <h2>HTML Source Code</h2>
 <pre>
