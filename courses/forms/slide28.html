@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: Popup Error Feedback: Label element, title, and status</title>
+<title>Slide 28: Popup Error Feedback Example 1: Label element, aria-describedby, and status</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -128,17 +128,17 @@
                       </a>
 </li>
 <li>
-<a href="slide31.html">Last
+<a href="slide32.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 31</div>
+<div class="navbar-text pull-right">Slide 28 of 32</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Popup Error Feedback: Label element, title, and status</h1>
+<h1 id="h1_title" class="title">Popup Error Feedback Example 1: Label element, aria-describedby, and status</h1>
 <h2>Features</h2>
 <ul>
         
@@ -151,10 +151,10 @@
 <code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
         
 <li>
-<code>role="status"</code> attribute is used to autmatically announce errors in form controls.</li>
+<code>role="status"</code> is used to autmatically announce errors in form controls.</li>
         
 <li>
-<code>title</code> attribute is used to provide an accessible description of the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
+<code>aria-describedby</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       
 </ul>
 <div role="region" aria-label="Example">
@@ -174,7 +174,7 @@
 <div class="text">
             
 <label for="id-name">Name</label>
-            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" title="" onblur="checkName()">
+            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" aria-describedby="id-name-error" onblur="checkName()">
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           
 </div>
@@ -183,7 +183,7 @@
 <div class="text">
             
 <label for="id-address">Address</label>
-            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" title="" onblur="checkAddress()">
+            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" aria-describedby="id-address-error" onblur="checkAddress()">
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           
 </div>
@@ -192,7 +192,7 @@
 <div class="text">
             
 <label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" title="" onblur="checkPhone()">
+            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" aria-describedby="id-phone-error" onblur="checkPhone()">
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           
 </div>
@@ -401,14 +401,12 @@
 
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
-        $(ei).attr('title', message);
         $(em).append(message);
         $(em).removeClass('noerror');
         $(em).addClass('error');
         }
         else {
         $(ei).attr('aria-invalid', 'false');
-        $(ei).attr('title', '');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }

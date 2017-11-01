@@ -3879,7 +3879,36 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: Label element, aria-describedby, and status</title>
+    <title>Summary of Example Features for Popup Error Message Accessibility</title>
+    <contents>
+
+      <table class="survey table table-striped">
+        <thead>
+          <tr>
+            <th>Example</th>
+            <th>Required</th>
+            <th>Invalid</th>
+            <th>Live Region</th>
+            <th>Accessible<br/>Name</th>
+            <th>Accessible<br/>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Example 1</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Popup Error Feedback Example 1: Label element, aria-describedby, and status</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
@@ -4683,7 +4712,7 @@
   </slide>
 
   <slide>
-    <title>Popup Error Feedback: aria-labelledby, aria-controls and status</title>
+    <title>Popup Error Feedback: required, aria-valid, status and aria-labelledby</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
 
