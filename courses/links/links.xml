@@ -4,14 +4,14 @@
 <slides>
  <lang>en</lang>
   <title>Links: Accessible Name, Context and Focus Styling</title>
-  <name>Jon Gunderson, Ph.D.</name> 
+  <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   <email>jongund@illinois.edu</email>
-  <home>../badges-links-forms.html</home> 
+  <home>../badges-links-forms.html</home>
 
-  
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -46,17 +46,17 @@
           <li>Link text describes the content in the target web page.</li>
           <li>Link text is suscinct.</li>
           <li>Content of the link can provide meaning to a link.</li>
-        </ul>  
+        </ul>
       </details>
       <details>
         <summary>Why does someone follow a link?</summary>
         <ul>
           <li>Link text identifies a topic of interest.</li>
-        </ul>  
+        </ul>
       </details>
     </contents>
   </slide>
-  
+
   <slide>
     <style>
       dt { font-weight: bold; padding-top: 1em;}
@@ -66,13 +66,13 @@
       <dl>
         <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" target="_specification">2.4.4 Link Purpose (In Context)</a></dt>
         <dd>The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general (Level A).</dd>
-        
+
         <dt><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link" target="_specification">2.4.9 Link Purpose (Link Only)</a></dt>
         <dd>A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general (Level AAA).</dd>
       </dl>
     </contents>
   </slide>
-  
+
   <slide>
     <title>WCAG 2.0 technique examples</title>
     <contents>
@@ -84,7 +84,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Accessible name calculation</title>
     <contents>
@@ -97,7 +97,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Accessible description calculation</title>
     <contents>
@@ -108,7 +108,7 @@
     </contents>
   </slide>
 
-  
+
   <slide>
     <title>Good practices for defining accessible names for links</title>
 
@@ -152,20 +152,20 @@
       margin-top: 2em;
       margin-bottom: 2em;
       }
-    </style>  
+    </style>
 
     <contents>
 
       <div id="example" class="image">
         <a href="http://150.illinois.edu/index.html">
           <img src="images\il150_logo_dark.png" alt="University of Illinois Sesquicentennial"/>
-        </a>      
-      </div>  
+        </a>
+      </div>
 
 
      <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'example');
         sourceCode.make();
@@ -185,7 +185,7 @@
       margin-top: 2em;
       margin-bottom: 2em;
       }
-    </style>  
+    </style>
 
     <contents>
 
@@ -193,22 +193,22 @@
       <div id="ex1" class="image">
         <a href="#">
           <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-        </a>      
-      </div>  
+        </a>
+      </div>
 
 
       <h2>Accessible Link using <code>title</code> attribute</h2>
       <div id="ex2" class="image">
         <a href="#" title="More information on some topic" >
           <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-        </a>      
-      </div>  
+        </a>
+      </div>
 
 
      <h2>HTML Source Code</h2>
       <pre><code id="sc1"></code></pre>
       <pre><code id="sc2"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.add('sc2', 'ex2');
@@ -218,7 +218,7 @@
 
    </contents>
 
-  </slide>  
+  </slide>
 
   <slide>
 
@@ -271,7 +271,7 @@
               <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
             </tr>
           </tbody>
-        </table>  
+        </table>
       </contents>
     </slide>
 
@@ -306,7 +306,7 @@
       ul.horizontal li:last-child:after {
       content: '';
       }
-      
+
       div.example {
       margin: 1em;
       padding: 1em;
@@ -314,35 +314,35 @@
       color: black;
       border: medium white solid;
       }
-      
+
       div#content div.example a {
       color: black;
-      }      
-      
+      }
+
       div#content div.example a:visited {
       color: black;
-      }      
-      
+      }
+
     </style>
 
     <contents>
       <p class="center">
         <a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H80.html" target="_specification">Links with Heading Context</a>
       </p>
-      
+
       <h2>Link Context Example</h2>
       <div id="ex1" class="example">
-        
+
         <h3>Royal Palm Hotel</h3>
         <ul class="horizontal">
           <li><a href="royal_palm_hotel_more_info.html">More Info</a></li>
           <li><a href="royal_palm_hotel_map.html">Map</a></li>
           <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
-          <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+          <li><a href="royal_palm_hotel_directions.html">Directions</a></li>
           <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
           <li><a href="royal_palm_hotel_book.html">Book now</a></li>
         </ul>
-        
+
         <h3>Hotel Three Rivers</h3>
         <ul class="horizontal">
           <li><a href="hotel_three_rivers_more_info.html">More Info</a></li>
@@ -351,12 +351,14 @@
           <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
           <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
           <li><a href="hotel_three_rivers_book.html">Book now</a></li>
-        </ul>   
+        </ul>
       </div>
-      
+
+      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/links-desc/">WebEdit sample for describing links</a></p>
+
       <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.make();
@@ -364,18 +366,18 @@
       </script>
 
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>NVDA showing list of links with no context markup</title>
     <contents>
       <p class="center"><img width="98%" src="images/links-list-no-aria.png" alt="screen shot NVDA list of links when there is no link context"/></p>
     </contents>
-  </slide> 
-  
-  
+  </slide>
+
+
   <slide>
-    
+
     <style>
      ul.horizontal {
         margin: 0;
@@ -404,7 +406,7 @@
       ul.horizontal li:last-child:after {
       content: '';
       }
-      
+
       div.example {
       margin: 1em;
       padding: 1em;
@@ -412,23 +414,23 @@
       color: black;
       border: medium white solid;
       }
-      
+
       div#content div.example a {
       color: black;
-      }      
-      
+      }
+
       div#content div.example a:visited {
       color: black;
-      }      
-      
+      }
+
     </style>
-    
+
     <title>Using aria-describedby to define context of a link</title>
     <contents>
-      
+
       <h2>Link Context Example</h2>
       <div id="ex1" class="example">
-        
+
         <h3 id="ref1">Royal Palm Hotel</h3>
         <ul class="horizontal">
           <li><a href="royal_palm_hotel_more_info.html" aria-describedby="ref1">More Info</a></li>
@@ -438,7 +440,7 @@
           <li><a href="royal_palm_hotel_reviews.html" aria-describedby="ref1">Guest reviews</a></li>
           <li><a href="royal_palm_hotel_book.html" aria-describedby="ref1">Book now</a></li>
         </ul>
-        
+
         <h3 id="ref2">Hotel Three Rivers</h3>
         <ul class="horizontal">
           <li><a href="hotel_three_rivers_more_info.html" aria-describedby="ref2">More Info</a></li>
@@ -447,28 +449,28 @@
           <li><a href="hotel_three_rivers_directions.html" aria-describedby="ref2">Directions</a></li>
           <li><a href="hotel_three_rivers_reviews.html" aria-describedby="ref2">Guest reviews</a></li>
           <li><a href="hotel_three_rivers_book.html" aria-describedby="ref2">Book now</a></li>
-        </ul>   
+        </ul>
       </div>
-      
+
       <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
-      </script>      
+      </script>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>NVDA showing List of Links with ARIA-DESCRIBEDBY identifying context</title>
     <contents>
       <p class="center"><img width="98%" src="images/links-list-aria-describedby.png" alt="screen shot NVDA list of links when aria-describedby identifies context"/></p>
     </contents>
-  </slide> 
-  
-  
+  </slide>
+
+
   <slide>
     <style>
      ul.horizontal {
@@ -498,7 +500,7 @@
       ul.horizontal li:last-child:after {
       content: '';
       }
-      
+
       div.example {
       margin: 1em;
       padding: 1em;
@@ -506,22 +508,22 @@
       color: black;
       border: medium white solid;
       }
-      
+
       div#content div.example a {
       color: black;
-      }      
-      
+      }
+
       div#content div.example a:visited {
       color: black;
-      }      
-      
+      }
+
     </style>
     <title>Using aria-labelledby to define the context of the link</title>
     <contents>
-      
+
       <h2>Link Context Example</h2>
       <div id="ex1" class="example">
-        
+
         <h3 id="ref1">Royal Palm Hotel</h3>
         <ul class="horizontal">
           <li><a id="ref10" href="royal_palm_hotel_more_info.html" aria-labelledby="ref10 ref1">More Info</a></li>
@@ -531,7 +533,7 @@
           <li><a id="ref14" href="royal_palm_hotel_reviews.html" aria-labelledby="ref14 ref1">Guest reviews</a></li>
           <li><a id="ref15" href="royal_palm_hotel_book.html" aria-labelledby="ref15 ref1">Book now</a></li>
         </ul>
-        
+
         <h3 id="ref2">Hotel Three Rivers</h3>
         <ul class="horizontal">
           <li><a id="ref20" href="hotel_three_rivers_more_info.html" aria-labelledby="ref20 ref2">More Info</a></li>
@@ -540,27 +542,27 @@
           <li><a id="ref23" href="hotel_three_rivers_directions.html" aria-labelledby="ref23 ref2">Directions</a></li>
           <li><a id="ref24" href="hotel_three_rivers_reviews.html" aria-labelledby="ref24 ref2">Guest reviews</a></li>
           <li><a id="ref25" href="hotel_three_rivers_book.html" aria-labelledby="ref25 ref2">Book now</a></li>
-        </ul>   
+        </ul>
       </div>
-      
+
       <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
-      </script>      
+      </script>
     </contents>
-  </slide> 
- 
-  <slide> 
+  </slide>
+
+  <slide>
     <title>NVDA showing List of Links with ARIA-LABELLEDBY identifying context</title>
     <contents>
       <p class="center"><img width="98%" src="images/links-list-aria-labelledby.png" alt="screen shot NVDA list of links when aria-labelledby identifies context"/></p>
     </contents>
-  </slide> 
-  
+  </slide>
+
 
   <slide>
     <style>
@@ -591,7 +593,7 @@
       ul.horizontal li:last-child:after {
       content: '';
       }
-      
+
       div.example {
       margin: 1em;
       padding: 1em;
@@ -599,22 +601,22 @@
       color: black;
       border: medium white solid;
       }
-      
+
       div#content div.example a {
       color: black;
-      }      
-      
+      }
+
       div#content div.example a:visited {
       color: black;
-      }      
-      
+      }
+
     </style>
     <title>Using aria-label to define the context of the link</title>
     <contents>
-      
+
       <h2>Link Context Example</h2>
       <div id="ex1" class="example">
-        
+
         <h3>Royal Palm Hotel</h3>
         <ul class="horizontal">
           <li><a href="royal_palm_hotel_more_info.html" aria-label="More Info Royal Palm Hotel">More Info</a></li>
@@ -624,7 +626,7 @@
           <li><a href="royal_palm_hotel_reviews.html" aria-label="Guest Royal Palm Hotel">Guest reviews</a></li>
           <li><a href="royal_palm_hotel_book.html" aria-label="Book now Royal Palm Hotel">Book now</a></li>
         </ul>
-        
+
         <h3>Hotel Three Rivers</h3>
         <ul class="horizontal">
           <li><a href="hotel_three_rivers_more_info.html" aria-label="More info Hotel Three Rivers">More Info</a></li>
@@ -633,22 +635,22 @@
           <li><a href="hotel_three_rivers_directions.html" aria-label="Directions Hotel Three Rivers">Directions</a></li>
           <li><a href="hotel_three_rivers_reviews.html" aria-label="Guest reviews Hotel Three Rivers">Guest reviews</a></li>
           <li><a href="hotel_three_rivers_book.html" aria-label="Book now Hotel Three Rivers">Book now</a></li>
-        </ul>   
+        </ul>
       </div>
-      
+
       <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
-      </script>        
+      </script>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
-    
+
     <style>
      ul.horizontal {
         margin: 0;
@@ -677,7 +679,7 @@
       ul.horizontal li:last-child:after {
       content: '';
       }
-      
+
       div.example {
       margin: 1em;
       padding: 1em;
@@ -685,22 +687,22 @@
       color: black;
       border: medium white solid;
       }
-      
+
       div#content div.example a {
       color: black;
-      }      
-      
+      }
+
       div#content div.example a:visited {
       color: black;
-      }           
+      }
     </style>
-    
+
     <title>WCAG heading context example using grouping label</title>
     <contents>
-      
+
       <h2>Link Context Example</h2>
       <div id="ex1" class="example">
-        
+
         <h3 id="id1">Royal Palm Hotel</h3>
         <ul class="horizontal" aria-labelledby="id1">
           <li><a href="royal_palm_hotel_more_info.html">More Info</a></li>
@@ -710,7 +712,7 @@
           <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
           <li><a href="royal_palm_hotel_book.html">Book now</a></li>
         </ul>
-        
+
         <h3 id="id2">Hotel Three Rivers</h3>
         <ul class="horizontal" aria-labelledby="id2">
           <li><a href="hotel_three_rivers_more_info.html">More Info</a></li>
@@ -719,22 +721,22 @@
           <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
           <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
           <li><a href="hotel_three_rivers_book.html">Book now</a></li>
-        </ul>   
+        </ul>
       </div>
-      
+
       <h2>Source Code</h2>
       <pre><code id="sc1"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
-      </script>  
-      
+      </script>
+
     </contents>
-  </slide> 
-  
- 
+  </slide>
+
+
   <slide>
     <title>Identifying links and link keyboard focus styling</title>
     <contents>
@@ -763,7 +765,7 @@
         <li>Make sure all styling options meet WCAG 2.0 Level AA color contrast requirements.</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Keyboard focus should always be visible</title>
@@ -773,15 +775,15 @@
         <li>Disorienting to users when keyboard focus disappears and then reappears.</li>
         <li>Disappearing focus is usally caused by links or form controls that are rendered off screen using CSS <code>position="absolute"</code>, <code>top</code> and <code>left</code> properties.</li>
         <li>If links or form controls are not visible they should be hidden using CSS <code>display: none</code> or using the HTML5 <code>hidden</code> attribute, so they are not part of the tab order of the page.</li>
-        <li>In general if you can't see a link or form control visually, the screen reader or keyboard only user should not be able to interact with link or form control.</li> 
+        <li>In general if you can't see a link or form control visually, the screen reader or keyboard only user should not be able to interact with link or form control.</li>
       </ul>
     </contents>
-  </slide> 
-  
+  </slide>
+
   <slide>
     <title>Link menu focus and hover styling example</title>
 
-    
+
     <contents>
 
     <style id="ex2">
@@ -789,7 +791,7 @@
         margin-top: 2em;
         margin-bottom: 5em;
       }
-      
+
       #id_nav h2 {
         position: absolute;
         top: -30em;
@@ -821,7 +823,7 @@
          border: 2px transparent solid;
          outline: none;
         }
-       
+
        #id_nav ul li a:focus {
          border-color: #5478c4;
          background-color: #d9e1f2;
@@ -832,8 +834,8 @@
          background-color: #E5EBF6;
          text-decoration: underline;
        }
-       
-    </style>      
+
+    </style>
       <div  id="ex1">
         <nav aria-labelledby="id_ds" id="id_nav">
 
@@ -845,28 +847,42 @@
             <li><a href="http://disability.illinois.edu/health">Health</a></li>
             <li><a href="http://disability.illinois.edu/campus-life">Campus Life</a></li>
           </ul>
-          
+
         </nav>
       </div>
-      
+
       <div style="clear: both;"></div>
-      
+
+      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/links-focus/">WebEdit sample for link focus styling</a></p>
+
+
       <h2>HTML Code</h2>
       <pre><code id="sc1"></code></pre>
-        
+
       <h2>CSS Code</h2>
       <pre><code id="sc2"></code></pre>
-      
+
       <script>
         sourceCode.add('sc1', 'ex1');
         sourceCode.add('sc2', 'ex2');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
-      </script>  
-      
+      </script>
+
     </contents>
   </slide>
-  
-</slides> 
+
+  <slide>
+    <title>Badging Requirements</title>
+    <contents>
+      <ol>
+        <li>Complete link quiz in Blackboard</li>
+        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/links-desc/">Add descriptions for links in Problem 1</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/links-focus/">Add focus styling for links in Problem 2</a></li>
+      </ol>
+    </contents>
+  </slide>
+
+</slides>
 
 
