@@ -215,6 +215,18 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>Issues in IT Accessibility</title>
+    <contents>
+      <ul>
+        <li><strong>Human resources</strong>: There are not enough people who undestand the experience of disability and the technqiues to make resources more accessible.</li>
+        <li><strong>Roles</strong>: No one needs to know everything, but everyone needs to know something to contribute to accessibility.</li>
+        <li><strong>Authoring</strong>: Authoring tools need to support accessibility by default, rather than by exception.</li>
+        <li><strong>Standards</strong>: Standards need to support accessibility and provide a means to make it easier to make resources more accessible.</li>
+      </ul>
+    </contents>
+  </slide>
+
 </slides>
 
 
