@@ -34,6 +34,7 @@
         <li>Operating Accessibility Features</li>
         <li>Accessibility Standards and Techniques</li>
         <li>Tools for learning about accessibility</li>
+        <li>Accessible authoring</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -188,6 +189,28 @@
           </ul>
         </li>
       </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst for CKEditor: Accessible Authoring</title>
+    <contents>
+      <ul>
+        <li>Accessible authoring versus accessibility remeditation</li>
+        <li><a href="https://a11yfirst.library.illinois.edu/" target="_reference">Demo of A11yFirst for CKEditor</a></li>
+        <li>Currently four plugins:
+          <ul>
+            <li>Headings</li>
+            <li>Block Format</li>
+            <li>Inline Style</li>
+            <li>A11yFirst Help</li>
+          </ul>
+        </li>
+        <li>Support requirements of CKEditor A11yChecker</li>
+      </ul>
+
+      <iframe src="https://a11yfirst.library.illinois.edu/" height="600" width="98%" title="A11yFirst for CKEditor home page"></iframe>
+
     </contents>
   </slide>
 
