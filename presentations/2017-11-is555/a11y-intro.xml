@@ -33,6 +33,7 @@
         <li>Accessibility Simulation</li>
         <li>Operating Accessibility Features</li>
         <li>Accessibility Standards and Techniques</li>
+        <li>Tools for learning about accessibility</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -80,8 +81,48 @@
     </contents>
   </slide>
 
+   <slide>
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <img src="images/wcag20-title.png" width="100%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
+    </contents>
+  </slide>
+
   <slide>
-    <title>Summary</title>
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Summary of Operating System Accessibility Features</title>
     <contents>
       <h2>Physical</h2>
       <ul>
@@ -101,6 +142,51 @@
       <ul>
         <li>Caption preference</li>
         <li>Flash screen for system sounds</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>AInspector Sidebar for Firefox</title>
+    <contents>
+      <ul>
+        <li><a href="http://ainspector.github.io">http://ainspector.github.io</a></li>
+        <li>Designed for:
+          <ul>
+            <li>Web designers</li>
+            <li>Software developers</li>
+            <li>Quality assurance testers</li>
+          </ul>
+        </li>
+        <li>Summary Rule Results
+          <ul>
+            <li>Rule Categories</li>
+            <li>WCAG 2.0 Guideline Summary</li>
+          </ul>
+        </li>
+        <li>Analyzes the browser DOM content</li>
+        <li>Highlighting elements</li>
+        <li>DOM inspector</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Bookmarklets for Visualizing Accessibility Features</title>
+    <contents>
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
+        <li>Features:
+          <ul>
+            <li>Highlight Regions and Elements on page</li>
+            <li>Element information</li>
+            <li>Default or defined <code>role</code></li>
+            <li>Accessible name</li>
+            <li>Accessible description</li>
+            <li>Important prorperties (e.g the number of items in a list)</li>
+          </ul>
+        </li>
       </ul>
     </contents>
   </slide>
