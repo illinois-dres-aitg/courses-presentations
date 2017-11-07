@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Introduction to Accessibility</title>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <conference>
+    <desc>November 8th, 2017</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Operating System Accessibility Features</title>
+    <contents>
+      <ul>
+        <li>Accessibility Simulation</li>
+        <li>Operating Accessibility Features</li>
+        <li>Accessibility Standards and Techniques</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Disability Simulation</title>
+    <contents>
+      <ul>
+        <li>Visual Impairment Googles</li>
+        <li>Splints</li>
+        <li>Gloves simulating arthritis</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>History of Built-in Accessibility</title>
+    <contents>
+      <ul>
+        <li>First introduced in the late 1980's as accessibility utlities, becomes standard part of MS-DOS, Windows and Apple OS</li>
+        <li>Windows 95 maintains requirement for full keyboard support (1995)</li>
+        <li>VoiceOver/Zoom integrated into OS X 10.4 (2011)</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessibility Features of Operating System</title>
+    <contents>
+      <h2>Laptops and Desktops</h2>
+      <ul>
+        <li><a href="http://www.microsoft.com/enable/products/windows10/">Accessibility in Windows 10</a></li>
+        <li><a href="https://www.apple.com/accessibility/osx/">OS X. Designed with your abilities in mind</a></li>
+        <p><a href="https://wiki.gnome.org/Accessibility/">GNOME Desktop Accessibility Wiki</a></p>
+      </ul>
+
+      <h2>Tablets and Phones</h2>
+      <ul>
+        <p><a href="http://www.apple.com/accessibility/ios/">iOS. A wide range of features for a wide range of needs.</a></p>
+        <li><a href="https://support.google.com/accessibility/android/">Android Accessibility Help Center</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Summary</title>
+    <contents>
+      <h2>Physical</h2>
+      <ul>
+        <li>Adjust keyboard behavior</li>
+        <li>Use keyboard to emulate mmouse</li>
+        <li>Voice commands</li>
+      </ul>
+      <h2>Visual</h2>
+      <ul>
+        <li>Colors</li>
+        <li>Font size and familty</li>
+        <li>Mouse pointer sized and style</li>
+        <li>Magnification</li>
+        <li>Speech output</li>
+      </ul>
+      <h3>Hearing</h3>
+      <ul>
+        <li>Caption preference</li>
+        <li>Flash screen for system sounds</li>
+      </ul>
+    </contents>
+  </slide>
+
+</slides>
+
+
