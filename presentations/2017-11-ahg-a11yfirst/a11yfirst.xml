@@ -41,11 +41,10 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Brief History of ARIA </li>
-        <li>Section 2: Design Patterns and Widgets</li>
-        <li>Section 3: Landmark Regions</li>
-        <li>Section 4: Developing a Keyboard Interface</li>
-        <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
+        <li>Project goals</li>
+        <li>Features of A11yFrist plug-ins</li>
+        <li>Next steps</li>
+        <li>Communication and dissemination</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -54,18 +53,25 @@
   </slide>
 
   <slide>
-    <title>The Problem of Creating Accessible Content</title>
+    <title>A11yFirst Project Goals</title>
     <contents>
-      <h2>Problem</h2>
       <ul>
-        <li></li>
-        <li></li>
+        <li>Accessible authoring versus accessibility remediation.</li>
+        <li>User interface features that support and encourage accessible authoring.</li>
+        <li>Create features to help authors understand accessibility.</li>
+        <li>Support accessibility (<em>not replace</em>) the <a href="https://ckeditor.com/cke4/addon/a11ychecker">A11y Accessibility Checker for CKEditor</a>.</li>
       </ul>
+    </contents>
+  </slide>
 
-      <h2>Issues</h2>
+
+  <slide>
+    <title>What Content Editors Don't Know</title>
+    <contents>
       <ul>
-        <li></li>
-        <li></li>
+        <li>Requirements for online content to be accessible.</li>
+        <li>The importance of their role in making online content accessible.</li>
+        <li>The techniques they must use to create accessible content.</li>
       </ul>
 
     </contents>
