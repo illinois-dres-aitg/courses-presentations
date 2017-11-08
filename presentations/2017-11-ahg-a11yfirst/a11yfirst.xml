@@ -5,19 +5,22 @@
   <lang>en</lang>
   <title>ARIA 1.1 Authoring Practices for Building Accessible Web Resources</title>
   <person>
-    <name>Jon Gunderson, Ph.D.</name>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   </person>
   <person>
-    <name>Jon Gunderson, Ph.D.</name>
+    <name>Jaeun Ku</name>
+    <desc href="http://library.illinois.edu">University Library</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+    <desc href="mailto:jku@illinois.edu">jku@illinois.edu</desc>
   </person>
   <person>
-    <name>Jon Gunderson, Ph.D.</name>
+    <name>Dena Strong</name>
+    <desc href="http://techservices.illinois.edu/">Technology Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+    <desc href="mailto:dlstrong@illinois.edu">dlstrong@illinois.edu</desc>
   </person>
   <conference>
     <name href="http://accessinghigherground.org/">Accessing Higher Ground November: Accessible Media, Web and Technology Conference</name>
