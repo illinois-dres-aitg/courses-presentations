@@ -3,13 +3,14 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
-  <title>Introduction to Accessibility</title>
+  <title>Experience of Disability and Introduction to Web Accessibility</title>
   <person>
     <name>Jon Gunderson, Ph.D.</name>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   </person>
   <conference>
+    <name href="https://courses.illinois.edu/schedule/2017/fall/IS/555">Information Science 555: Usability Engineering</name>
     <desc>November 8th, 2017</desc>
   </conference>
 
