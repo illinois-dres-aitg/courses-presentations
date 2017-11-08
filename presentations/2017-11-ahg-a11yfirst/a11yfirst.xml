@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>ARIA 1.1 Authoring Practices for Building Accessible Web Resources</title>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <conference>
+    <name href="http://accessinghigherground.org/">Accessing Higher Ground November: Accessible Media, Web and Technology Conference</name>
+    <desc>November 15th, 2017</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Brief History of ARIA </li>
+        <li>Section 2: Design Patterns and Widgets</li>
+        <li>Section 3: Landmark Regions</li>
+        <li>Section 4: Developing a Keyboard Interface</li>
+        <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>The Problem of Creating Accessible Content</title>
+    <contents>
+      <h2>Problem</h2>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <h2>Issues</h2>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Demo</title>
+    <contents>
+      <p><a href="https://a11yfirst.library.illinois.edu/">A11yFirst Demonstration Website</a></p>
+      <iframe src="https://a11yfirst.library.illinois.edu/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>E-mail Discussion and Github Repository</title>
+    <contents>
+      <ul>
+        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
+        <li><a href="https://github.com/a11yfirst/plugins-dev">A11yFirst github respository</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+
