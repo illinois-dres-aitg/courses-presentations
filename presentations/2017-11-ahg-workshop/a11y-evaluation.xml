@@ -2208,7 +2208,197 @@
 
   <slide>
     <title>Drop Down Navigation Links: Tab Key Operation</title>
+    <style>
+
+ul.example {
+  margin: 10px;
+  padding: 10px;
+  font-size: 110%;
+  list-style: none;
+  background-color: #EEEEEE;
+}
+
+.popup {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+nav > ul > li > a {
+  font-size: 110%;
+  padding: 0.25em;
+  width: 8em;
+  text-decoration: none;
+  color: black;
+  border: 2px solid transparent;
+}
+
+nav > ul > li > a:after {
+  content: url('images/down-arrow-brown.png');
+  padding-left: .25em;
+}
+
+nav > ul > li > ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 1.75em;
+  font-size: 110%;
+  list-style: none;
+  background-color: #ccddff;
+  left: -3000em;
+}
+
+nav > ul > li > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li > ul > li > a,
+nav > ul > li > ul > li > a:visited {
+  display: block;
+  text-decoration: none;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: #ccddff;
+  width: 22em;
+  color: black;
+}
+
+/* focus and hover styling */
+
+nav > ul > li > a:focus,
+nav > ul > li > a:hover {
+  border-color: black;
+  background-color: #ccddff;
+}
+
+    </style>
     <contents>
+
+     <nav >
+        <ul class="example">
+          <li class="popup">
+            <a href="#">About</a>
+            <ul>
+              <li>
+                <a href="mb-about.html#overview">Overview</a>
+              </li>
+              <li>
+                <a href="mb-about.html#admin">Administration</a>
+              </li>
+              <li >
+                <a href="mb-about.html#facts">Facts</a>
+              </li>
+              <li>
+                <a href="mb-about.html#tours" >Campus Tours</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup">
+            <a href="#">Admissions</a>
+            <ul>
+              <li>
+                <a href="mb-admissions.html#apply">Apply</a>
+              </li>
+              <li>
+                <a href="mb-admissions.html#tuition">Tuition</a>
+              </li>
+              <li >
+                <a href="mb-admissions.html#signup">Sign Up</a>
+              </li>
+              <li role="separator"></li>
+              <li>
+                <a href="mb-admissions.html#visit">Visit</a>
+              </li>
+              <li>
+                <a href="mb-admissions.html#photo">Photo Tour</a>
+              </li>
+              <li>
+                <a href="mb-admissions.html#connect">Connect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup">
+            <a href="#">Academics</a>
+            <ul>
+              <li>
+                <a href="mb-academics.html#colleges">Colleges &amp; Schools</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#programs">Programs of Study</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#honors">Honors Programs</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#online">Online Courses</a>
+              </li>
+              <li role="separator"></li>
+              <li>
+                <a href="mb-academics.html#explorer">Course Explorer</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#register">Register for Class</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#academic">Academic Calendar</a>
+              </li>
+              <li>
+                <a href="mb-academics.html#tanscripts">Transscripts</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <script>
+
+        var i, l;
+
+        var topLinks = document.querySelectorAll('nav > ul > li > a');
+
+        for (i = 0; i &lt; topLinks.length; i++) {
+          l = topLinks[i];
+
+          l.addEventListener('focus', function(event) {
+            var tgt = event.currentTarget;
+
+            if (tgt.nextElementSibling) {
+              tgt.nextElementSibling.style.left = "0";
+            }
+          });
+
+          l.addEventListener('blur', function(event) {
+            var tgt = event.currentTarget;
+
+            if (tgt.nextElementSibling) {
+              tgt.nextElementSibling.style.left = '-3000em';
+            }
+          });
+
+        }
+
+        var popupLinks = document.querySelectorAll('nav > ul > li > ul > li > a');
+
+        for (i = 0; i &lt; popupLinks.length; i++) {
+          l = popupLinks[i];
+
+          l.addEventListener('focus', function(event) {
+            var tgt = event.currentTarget;
+            tgt.parentNode.parentNode.style.left = '0';
+          });
+
+          l.addEventListener('blur', function(event) {
+            var tgt = event.currentTarget;
+            tgt.parentNode.parentNode.style.left = '-3000em';
+          });
+        }
+
+
+      </script>
+
     </contents>
   </slide>
 
@@ -2241,7 +2431,6 @@ a[role="button"]:after {
   content: url('images/down-arrow-brown.png');
   padding-left: .25em;
 }
-
 
 ul[role="menu"] {
   margin: 0;
