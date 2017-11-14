@@ -213,8 +213,6 @@ PopupMenu.prototype.open = function () {
   // Get position and bounding rectangle of controller object's DOM node
   var rect = this.controller.domNode.getBoundingClientRect();
 
-  console.log('[PopupMenu][open]');
-
   // Set CSS properties
   if (!this.controller.isMenubarItem) {
     this.domNode.parentNode.style.position = 'relative';
@@ -236,8 +234,6 @@ PopupMenu.prototype.open = function () {
 
 PopupMenu.prototype.close = function (force) {
 
-  console.log('[PopupMenu][close][force]: ' + force);
-
   var controllerHasHover = this.controller.hasHover;
 
   var hasFocus = this.hasFocus;
@@ -248,8 +244,6 @@ PopupMenu.prototype.close = function (force) {
       hasFocus = hasFocus | mi.popupMenu.hasFocus;
     }
   }
-
-  console.log('[PopupMenu][close][hasFocus]: ' + hasFocus);
 
   if (!this.controller.isMenubarItem) {
     controllerHasHover = false;
