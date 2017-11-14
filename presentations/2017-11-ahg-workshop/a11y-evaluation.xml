@@ -2794,8 +2794,8 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
       <ol>
         <li>Keyboard navigation (manual)</li>
         <li>Keyboard focus styling (manual)</li>
-        <li>Landmarks (AInspector and Bookmarklets)</li>
-        <li>Headings (AInspector and Bookmarklets)</li>
+        <li>Landmarks (AInspector and Accessibility Bookmarklets)</li>
+        <li>Headings (AInspector and Accessibility Bookmarklets)</li>
         <li>Form control labeling (AInspector, Wave and aXe)</li>
         <li>Link text (AInspector, Wave and aXe)</li>
         <li>ALT text for images (AInspector, Wave and aXe)</li>
