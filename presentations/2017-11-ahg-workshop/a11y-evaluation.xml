@@ -2794,14 +2794,15 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
       <ol>
         <li>Keyboard navigation (manual)</li>
         <li>Keyboard focus styling (manual)</li>
-        <li>Landmarks (AInspector and Accessibility Bookmarklets)</li>
-        <li>Headings (AInspector and Accessibility Bookmarklets)</li>
-        <li>Form control labeling (AInspector, Wave and aXe)</li>
-        <li>Link text (AInspector, Wave and aXe)</li>
-        <li>ALT text for images (AInspector, Wave and aXe)</li>
+        <li>Landmarks (AInspector Sidebar and Accessibility Bookmarklets)</li>
+        <li>Headings (AInspector Sidebar and Accessibility Bookmarklets)</li>
+        <li>Form control labeling (AInspector Sidebar, Wave and aXe)</li>
+        <li>Link text (AInspector Sidebar, Wave and aXe)</li>
+        <li>ALT text for images (AInspector Sidebar, Wave and aXe)</li>
         <li>Table accessibility (AInspector Sidebar)</li>
         <li>Color contrast (Any tool)</li>
         <li>Use of ARIA markup (AInspector and aXe)</li>
+        <li>Other WCAG 2.0 requirements</li>
       </ol>
 
     </contents>
