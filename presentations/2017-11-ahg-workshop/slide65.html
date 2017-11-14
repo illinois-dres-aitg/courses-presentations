@@ -16,6 +16,7 @@ ul.example {
   font-size: 110%;
   list-style: none;
   background-color: #EEEEEE;
+  height: 2.5em;
 }
 
 .popup {
@@ -62,15 +63,23 @@ nav > ul > li > ul > li > a:visited {
   padding-left: 0.5em;
   padding-right: 0.5em;
   background-color: #ccddff;
-  width: 22em;
+  width: 10em;
   color: black;
 }
 
 /* focus and hover styling */
 
-nav > ul > li > a:focus,
 nav > ul > li > a:hover {
+  background-color: #ccddff;
+}
+
+nav > ul > li > a:focus {
   border-color: black;
+  background-color: #ccddff;
+}
+
+nav > ul > li > ul > li > a:focus {
+  outline: 2px solid black;
   background-color: #ccddff;
 }
 
@@ -103,18 +112,18 @@ nav > ul > li > a:hover {
                       </a>
 </li>
 <li>
-<a href="slide68.html">Last
+<a href="slide69.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 65 of 68</div>
+<div class="navbar-text pull-right">Slide 65 of 69</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
 <h1 id="h1_title" class="title">Drop Down Navigation Links: Tab Key Operation</h1>
-<nav>
+<nav id="example">
         
 <ul class="example">
           
@@ -252,7 +261,7 @@ nav > ul > li > a:hover {
               
 <li>
                 
-<a href="#tanscripts">Transscripts</a>
+<a href="#tanscripts">Transcripts</a>
               
 </li>
             
@@ -307,6 +316,15 @@ nav > ul > li > a:hover {
         }
 
 
+      </script>
+<h2>HTML Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<script>
+        sourceCode.add('sc1', 'example');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
       </script>
 </main>
 <footer class="container">
