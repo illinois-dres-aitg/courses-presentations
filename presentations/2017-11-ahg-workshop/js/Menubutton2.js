@@ -108,6 +108,7 @@ Menubutton.prototype.handleKeydown = function (event) {
   }
 };
 
+
 Menubutton.prototype.handleClick = function (event) {
   if (this.domNode.getAttribute('aria-expanded') == 'true') {
     this.popupMenu.close();
@@ -135,3 +136,4 @@ Menubutton.prototype.handleMouseout = function (event) {
   this.hasHover = false;
   setTimeout(this.popupMenu.close.bind(this.popupMenu, false), 300);
 };
+
