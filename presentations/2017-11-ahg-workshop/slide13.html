@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: ARIA Authoring Practices</title>
+<title>Slide 13: Manual Testing: Keyboard Accessibility</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,23 +37,67 @@
                       </a>
 </li>
 <li>
-<a href="slide52.html">Last
+<a href="slide68.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 52</div>
+<div class="navbar-text pull-right">Slide 13 of 68</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">ARIA Authoring Practices</h1>
-<p class="center">
+<h1 id="h1_title" class="title">Manual Testing: Keyboard Accessibility</h1>
+<ul>
         
-<a href="http://w3c.github.io/aria/practices/aria-practices.html" target="_specification">WAI-ARIA Authoring Practices</a>
+<li>
+<kbd>tab</kbd> order of interactive elements
+          <ul>
+            
+<li>links</li>
+            
+<li>form controls</li>
+            
+<li>media players</li>
+            
+<li>Javascript widgets</li>
+            
+<li>Embedded objects (e.g. Flash, Silverlight...)</li>
+          
+</ul>
+        
+</li>
+        
+<li>Keyboard focus styling</li>
       
-</p>
-<img src="images/aria-practices.png" width="100%" alt="Graphical browser rendering of WAI-ARIA Authoring Practices 1.1 note"></main>
+</ul>
+<h2>WCAG 2.0 Keyboard Requirements</h2>
+<dl>
+        
+<dt>
+<a href="https://www.w3.org/TR/WCAG20/#keyboard-operation" target="_specification">2.1.1 Keyboard</a>
+</dt>
+        
+<dd>All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A) </dd>
+        
+<dd>
+<em>Note 1:</em> This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not.</dd>
+        
+<dd>
+<em>Note 2:</em> This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.</dd>
+
+        
+<dt>
+<a href="http://www.w3.org/TR/WCAG20//#qr-keyboard-operation-trapping" target="_specification">2.1.2 No Keyboard Trap</a>
+</dt>
+        
+<dd>If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. (Level A)</dd>
+        
+<dd>
+<em>Note:</em> Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.</dd>
+      
+</dl>
+</main>
 <footer class="container">
 <div id="footer" class="well well-sm">
         Copyright &copy; 2017 University of Illinois

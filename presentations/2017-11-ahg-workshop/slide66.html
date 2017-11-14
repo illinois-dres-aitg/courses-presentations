@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 66: Drop Down Navigation Links: ARIA Menu Button Pattern</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+.menu_button {
+  position: relative;
+}
+
+.menu_button a {
+  font-size: 110%;
+  display: block;
+  padding: 0.25em;
+  border: inset 2px gray;
+  width: 12em;
+  text-align: center;
+  background-color: #EEEEEE;
+  text-decoration: none;
+  color: black;
+}
+
+ul[role="menu"] {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 110%;
+
+  list-style: none;
+  background-color: #EEEEEE;
+  display: none;
+}
+
+ul[role="menu"] li {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="menu"] a[role="menuitem"],
+ul[role="menu"] a[role="menuitem"]:visited {
+  display: block;
+  text-decoration: none;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: #E0E0E0;
+  width: 22em;
+  color: black;
+}
+
+/* focus and hover styling */
+
+a[role="button"]:focus,
+a[role="button"]:hover {
+  border: 2px solid black;
+  background-color: #F8F8F8;
+}
+
+ul[role="menu"] a[role="menuitem"]:focus,
+ul[role="menu"] a[role="menuitem"]:hover{
+  background-color: black;
+  color: white;
+}
+    </style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="index.html">Index
+                      </a>
+</li>
+<li>
+<a href="slide1.html">First
+                      </a>
+</li>
+<li>
+<a href="slide65.html">Previous
+                      </a>
+</li>
+<li>
+<a href="slide67.html">Next
+                      </a>
+</li>
+<li>
+<a href="slide68.html">Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 66 of 68</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<a name="main" id="main"></a>
+<h1 id="h1_title" class="title">Drop Down Navigation Links: ARIA Menu Button Pattern</h1>
+<ul id="menubar1" role="menubar" aria-label="Mythical University Menu 1">
+        
+<li>
+          
+<a role="button" aria-haspopup="true" href="#">About</a>
+          
+<ul role="menu" aria-label="About">
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-about.html#overview">Overview</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-about.html#admin">Administration</a>
+            
+</li>
+            
+<li role="none">
+              
+<a id="menubar113" role="menuitem" href="mb-about.html#facts">Facts</a>
+            
+</li>
+            
+<li>
+              
+<a role="menuitem" href="mb-about.html#tours">Campus
+                Tours</a>
+            
+</li>
+          
+</ul>
+        
+</li>
+        
+<li>
+          
+<a role="button" aria-haspopup="true" href="#">Admissions</a>
+          
+<ul role="menu" aria-label="Admissions">
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#apply">Apply</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#tuition">Tuition</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#signup">Sign Up</a>
+            
+</li>
+            
+<li role="separator"></li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#visit">Visit</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#photo">Photo Tour</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-admissions.html#connect">Connect</a>
+            
+</li>
+          
+</ul>
+        
+</li>
+        
+<li>
+          
+<a role="button" aria-haspopup="true" href="#">Academics</a>
+          
+<ul role="menu" aria-label="Academics">
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#colleges">Colleges &amp; Schools</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#programs">Programs of Study</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#honors">Honors Programs</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#online">Online Courses</a>
+            
+</li>
+            
+<li role="separator"></li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#explorer">Course Explorer</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#register">Register for Class</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#academic">Academic Calendar</a>
+            
+</li>
+            
+<li role="none">
+              
+<a role="menuitem" href="mb-academics.html#tanscripts">Transscripts</a>
+            
+</li>
+          
+</ul>
+        
+</li>
+      
+</ul>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+        Copyright &copy; 2017 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

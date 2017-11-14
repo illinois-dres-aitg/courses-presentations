@@ -2,13 +2,86 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: Rule Results</title>
+<title>Slide 17: Pizza Order Form: Focus Styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+      label {
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-size: 100%;
+      font-weight: bold;
+      color: black;
+      }
+
+
+      select {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1.25em;
+      background-color: #FFFEFF;
+      font-size: 1em;
+      }
+
+
+      fieldset legend {
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-weight: bold;
+      font-size: 100%;
+      }
+
+      fieldset label {
+      margin: 0;
+      padding: 0;
+      padding-top: 0.125em;
+      padding-bottom: 0.125em;
+      padding-left: 0.5em;
+      width: 10em;
+      font-weight: normal;
+      border: 2px transparent solid;
+      display: block;
+      position: relative;
+      left: -0.5em;
+      }
+
+      input[type=submit] {
+      margin-top: 2em;
+      }
+
+      input[type=submit]:focus {
+      outline: 2px solid black;
+      }
+
+      input[type="text"]:hover {
+      background-color: #ADDFFF;
+      }
+
+      input[type="text"]:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
+      }
+
+      select:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
+      }
+
+      fieldset label:hover {
+      background-color: #ADDFFF;
+      }
+
+      fieldset label.focus {
+      border-color: black;
+      background-color: #ADDFFF;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -37,70 +110,158 @@
                       </a>
 </li>
 <li>
-<a href="slide52.html">Last
+<a href="slide68.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 17 of 52</div>
+<div class="navbar-text pull-right">Slide 17 of 68</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Rule Results</h1>
-<table aria-labelledby="id1" class="table table-striped">
+<h1 id="h1_title" class="title">Pizza Order Form: Focus Styling</h1>
+<script id="script" type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+      </script>
+<h2>Features</h2>
+<ul>
         
-<thead>
-          
-<tr>
-            
-<th>Result</th>
-            <th>Description</th>
-          
-</tr>
+<li>
+<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
         
-</thead>
+<li>
+<code>focus</code> styling has a border and <code>hover</code> does not.</li>
         
-<tbody>
-          
-<tr>
-            
-<td>Violation</td>
-            <td>Fails a required rule</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Warning</td>
-            <td>Fails a reccomended rule</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Manual Check</td>
-            <td>Human judgement is needed for verification of meeting an accessibility requirement</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Passed</td>
-            <td>The accessibility requirement has been met</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Not Applicable</td>
-            <td>No elements on the page applied to this rule</td>
-          
-</tr>
+<li>
+<code>focus</code> styling used a 2px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
         
-</tbody>
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
+        
+<li>Styling background color also makes the change in focus much easier to detect visually.</li>
+        
+<li>Do not set <code>hover</code> styling for <code>select</code> control.</li>
       
-</table>
+</ul>
+<form id="form">
+        
+<h2>Pizza Form</h2>
+
+        
+<label for="id-name">Name</label>
+        <input id="id-name" type="text" size="30">
+
+        <label for="id-address">Address</label>
+        <input id="id-address" type="text" size="40">
+
+        <label for="id-phone">Phone</label>
+        <input id="id-phone" type="text" size="14">
+
+        <label for="id-delivery">Delivery Method</label>
+        <select id="id-delivery">
+          <option>Eat in store</option>
+          <option>Pickup</option>
+          <option>Home delivery</option>
+        </select>
+
+        
+<fieldset>
+          
+<legend>Crust</legend>
+
+          <label>
+            <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Thin
+          </label>
+
+          <label>
+            <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Classic
+          </label>
+
+          <label>
+            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Deep Dish
+          </label>
+
+        
+</fieldset>
+
+        
+<fieldset>
+          
+<legend>Toppings</legend>
+
+          <label>
+            <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Sausage
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Pepperoni
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Mushrooms
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Onions
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Green Peppers
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Back Olives
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Extra cheese
+          </label>
+
+        
+</fieldset>
+
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
+
+      
+</form>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

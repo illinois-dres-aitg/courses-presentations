@@ -35,6 +35,11 @@ nav ul li {
     padding-right: 1em;
 }
 
+.navbar-default {
+    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+    background-color: #e0e0e0;
+}
+
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-text {
     color: #333;
@@ -74,8 +79,21 @@ main h3 {
     font-size: 100%;
 }
 
+main ul {
+  padding-left: 1em;
+}
+
+main li {
+  padding-bottom: 0.125em;
+}
+
 main dt {
     margin-top: 1em;
+    font-weight: bold;
+}
+
+main dd {
+    margin-bottom: 0.5em;
 }
 
 main .desc {
@@ -146,5 +164,9 @@ main summary h2 {
 
 main img.chart {
     width: 90%;
+}
+
+main .table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: #ccddff;
 }
 

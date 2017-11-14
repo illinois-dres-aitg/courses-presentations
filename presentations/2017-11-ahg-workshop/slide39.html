@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 39: Section 4.2: Discernable and Predictable Keyboard Focus</title>
+<title>Slide 39: REGION Landmark</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,31 +37,95 @@
                       </a>
 </li>
 <li>
-<a href="slide52.html">Last
+<a href="slide68.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 39 of 52</div>
+<div class="navbar-text pull-right">Slide 39 of 68</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Section 4.2: Discernable and Predictable Keyboard Focus</h1>
-<ul style="margin-bottom: 2em">
+<h1 id="h1_title" class="title">REGION Landmark</h1>
+<table class="table table-striped table-hover" aria-labelledby="id1">
         
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable">ARIA Authoring Practices: Discernable and Predictable Keyboard Focus</a>
-</li>
-        
-<li>Many users with disabilities can see the display, but need to idenfity the elements with keyboard focus and/or selections.</li>
-        
-<li>Keyboard interaction is often difficult or impossible if users cannot identify what element has keyboard focus.</li>
-        
-<li>Need more than just color, so the use of borders, underline or visual icons is important.</li>
-      
+<tbody>
+          
+<tr>
+            
+<th>Definition</th>
+            <td>
+              A <code>region</code> landmark is a perceivable section of the page containing content that is sufficiently important for users to be able to navigate to the section.
+            </td>
+          
+</tr>
+          
+<tr>
+            
+<th>ARIA 1.1 Specification</th>
+            <td>
+              <a href="https://www.w3.org/TR/wai-aria-1.1/#region" target="_specification"><code>region</code> landmark</a>
+            </td>
+          
+</tr>
+          
+<tr>
+            
+<th>Coding Patterns</th>
+            <td>
+              
+<ul>
+                
+<li>A <code>region</code> landmark must have a label using <code>aria-label</code>, <code>arai-labelledby</code> or the <code>title</code> attribute.</li>
+                
+<li>If a page includes more than one <code>region</code> landmark, each should have a unique label.</li>
+                
+<li>The <code>region</code> landmark can be used identify content that named landmarks do not appropriately describe.</li>
+              
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>Techniques</th>
+            <td>
+              
+<ul>
+                
+<li>Use the HTML5 <code>section</code> element to define a <code>region</code> landmark.</li>
+                
+<li>If the HTML5 <code>section</code> element technique is not being used, use a <code>role="region"</code> attribute to define a <code>region</code> landmark.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>Headings</th>
+            <td>
+              
+<ul>
+                
+<li>Each region landmark should have a heading <code>h2-h6</code> element identifying the content of the landmark.</li>
+                
+<li>If there are more than one region landmark on the page, use <code>aria-labelledby</code> to reference the heading element for labeling each landmark.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

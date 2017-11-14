@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 45: Section 4.8: Keyboard Shortcuts</title>
+<title>Slide 45: Important Concepts: Role and Accessible Name</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -37,31 +37,79 @@
                       </a>
 </li>
 <li>
-<a href="slide52.html">Last
+<a href="slide68.html">Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 45 of 52</div>
+<div class="navbar-text pull-right">Slide 45 of 68</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Section 4.8: Keyboard Shortcuts</h1>
-<ul style="margin-bottom: 2em">
+<h1 id="h1_title" class="title">Important Concepts: Role and Accessible Name</h1>
+<table class="table table-striped table-hover" aria-labelledby="h1_title">
         
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts">ARIA Authoring Practices: Keyboard Shortcuts</a>
-</li>
+<thead>
+          
+<tr>
+            
+<th>Concept</th>
+            <th>Description</th>
+          
+</tr>
         
-<li>Understanding how keyboard shortcuts augment a keyboard interface and whether to make a particular shortcut move focus, perform a function, or both.</li>
+</thead>
         
-<li>Making key assignments and avoiding assignment conflicts with assistive technologies, browsers, and operating systems.</li>
-        
-<li>Exposing and documenting key assignments.</li>
-      
+<tbody>
+          
+<tr>
+            
+<th>Role</th>
+            <td>Describes what the function of an element is in the document and what types of interaction is expected, examples include:
+               <ul>
+                 
+<li>link</li>
+                 
+<li>textbox</li>
+                 
+<li>checkbox</li>
+                 
+<li>radio button</li>
+               
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts" width="98%" height="600px"></iframe>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>Accessible Name</th>
+            <td>Describes the purpose of this specific form control in the form and is computed based on author supplied information.
+              Examples of sources of accessible names include:
+              <ul>
+                
+<li>Child text nodes of <code>label</code> element (preferred)</li>
+                
+<li>
+<code>aria-label</code> attribute</li>
+                
+<li>
+<code>aria-labelledby</code> attribute</li>
+                
+<li>
+<code>title</code> attribute</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
