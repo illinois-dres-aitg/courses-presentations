@@ -36,7 +36,7 @@
         <li>Part 1: The Basics</li>
         <li>Part 2: Automated Tools</li>
         <li>Part 3: ARIA Landmarks and Widgets</li>
-        <li>Part 4: ARIA Authroing Practices</li>
+        <li>Part 4: ARIA Authoring Practices</li>
         <li>Discussion and feedback</li>
       </ul>
       <script type="text/javascript">
@@ -1932,7 +1932,7 @@
   </slide>
 
   <slide>
-    <title>Important Concepts: Role and Accessible Name</title>
+    <title>Important Concepts: Role, Accessible Name and Accessible Description</title>
     <contents>
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
         <thead>
@@ -1955,12 +1955,22 @@
           </tr>
           <tr>
             <th>Accessible Name</th>
-            <td>Describes the purpose of this specific form control in the form and is computed based on author supplied information.
+            <td>Describes the purpose of this specific form control in the form and is computed based on author supplied information.<br/>
               Examples of sources of accessible names include:
               <ul>
                 <li>Child text nodes of <code>label</code> element (preferred)</li>
                 <li><code>aria-label</code> attribute</li>
                 <li><code>aria-labelledby</code> attribute</li>
+                <li><code>title</code> attribute</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Accessible Description</th>
+            <td>Additional information or context information about a link, form control or ARIA wdiget.<br/>
+              Examples of sources of accessible description include:
+              <ul>
+                <li><code>aria-describedby</code> attribute</li>
                 <li><code>title</code> attribute</li>
               </ul>
             </td>
