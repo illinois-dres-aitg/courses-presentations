@@ -98,6 +98,10 @@ Menubutton.prototype.handleKeydown = function (event) {
       }
       break;
 
+    case this.keyCode.TAB:
+      this.popupMenu.close(true);
+      break;
+
     default:
       break;
   }
