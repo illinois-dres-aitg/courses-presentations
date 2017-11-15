@@ -328,25 +328,75 @@
   </slide>
 
   <slide>
-    <title>Next Steps for ARIA Authoring Practices Guide</title>
+    <title>Accessibility Tools that Support ARIA</title>
     <contents>
-      <ul>
-        <li>Additional widget descriptions and examples</li>
-        <li>Grid and Table Examples</li>
-        <li>Accessible visual state and synchronization with ARIA states techniques</li>
-        <li>Form error feedback</li>
-        <li>Index of examples</li>
-      </ul>
+      <table class="table table-stripped" aria-labelledby="id_title">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>ARIA Support</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets</a></td>
+            <td>
+              <ul>
+                <li>Visualize landmarks</li>
+                <li>Visualize headings</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="https://ainspector.github.io">AInspector Sidebar for Firefox</a></td>
+            <td>
+              <ul>
+                <li>Landmark usage rules</li>
+                <li>ARIA validation</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="https://fae.disability.illinois.edu">Functional Accessibility Evlauator 2.0</a></td>
+            <td>
+              <ul>
+                <li>Landmark usage rules</li>
+                <li>ARIA validation</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">Deque aXe Chrome Extension</a></td>
+            <td>
+              <ul>
+                <li>ARIA validation</li>
+                <li>Landmark usage rules being developed</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </contents>
   </slide>
 
   <slide>
-    <title>Open Source Tools and Training</title>
+    <title>Training Resources</title>
     <contents>
       <ul>
-        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a></li>
-        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
-        <li><a href="http://go.illinois.edu/a11y-badges">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
+        <li><a href="https://go.illinois.edu/a11y-badges">DRES Web Accessibility Badging Program</a>:
+          <ul>
+            <li>Web Design: Landmarks, Heading and Page Title (October 2018)</li>
+            <li>Web Design: Form Controls and Links(November 2018) </li>
+            <li>Web Design: Introduction for ARIA (November 2018)</li>
+            <li>Web Accessibility Evaluation: Non-technical (January 2018)</li>
+            <li>Web Accessibility Evaluation: Technical (January 2018)</li>
+          </ul>
+        </li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">AHS Information Accessibility Design and Policy (IADP) Certificate</a>
+          <ul>
+            <li>Three 8 week online courses</li>
+          </ul>
+        </li>
       </ul>
     </contents>
   </slide>
