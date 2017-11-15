@@ -31,17 +31,90 @@
     <title>Overview</title>
     <contents>
       <ul>
+        <li>Web Standards</li>
         <li>Brief History of ARIA </li>
-        <li>Section 2: Design Patterns and Widgets</li>
-        <li>Section 3: Landmark Regions</li>
-        <li>Section 4: Developing a Keyboard Interface</li>
-        <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
+        <li>ARIA Design Patterns and Widgets</li>
+        <li>ARIA Landmark Regions</li>
+        <li>ARIA Widget Patterns</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
       </script>
     </contents>
   </slide>
+
+  <slide>
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="http://www.w3.org/TR/WCAG" width="99%" height="600"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Web Content Accessibility Guidelines 2.0: Techniques</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/WAI/WCAG20/quickref/" target="_specification">Web Content Accessibility Guidelines 2.0: Techniques</a>
+      </p>
+      <iframe src="http://www.w3.org/WAI/WCAG20/quickref/" width="99%" height="600"/>
+    </contents>
+  </slide>
+
+
+ <slide>
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Rich Internet Application API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1</a>
+      </p>
+      <img src="images/aria-api-mappings.png" width="100%" alt="Graphical browser rendering of ARIA API Mappings 1.1 Specification"/>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>HTML API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://w3c.github.io/html-aam/" target="_specification">HTML Accessibility API Mappings 1.0</a>
+      </p>
+      <img src="images/api-mappings.png" width="100%" alt="Graphical browser rendering of HTML Accessibility API Mappings 1.0 Specification"/>
+    </contents>
+  </slide>
+
 
   <slide>
     <title>The Problem of Custom Wigets</title>
