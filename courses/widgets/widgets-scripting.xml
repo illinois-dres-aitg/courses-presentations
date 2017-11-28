@@ -4,15 +4,15 @@
 <slides>
  <lang>en</lang>
   <title>Introduction to ARIA</title>
-  <name>Jon Gunderson</name> 
-  <name>Jon Gunderson, Ph.D.</name> 
+  <name>Jon Gunderson</name>
+  <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   <email>jongund@illinois.edu</email>
-  <home>../badges-aria101.html</home> 
+  <home>../badges-aria101.html</home>
 
-  
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -23,7 +23,7 @@
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/highlight.pack.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Overview</title>
     <contents>
@@ -39,7 +39,7 @@
             <li>Navigation Menus</li>
             <li>Image Carousel</li>
           </ul>
-        </li>    
+        </li>
         <li>Authoring Resources</li>
         <li>Open Source Evaluation and Inspection Tools</li>
       </ul>
@@ -49,7 +49,7 @@
     </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Web Content Accessibility Guidelines 2.0</title>
     <contents>
       <p class="center">
@@ -57,9 +57,9 @@
       </p>
       <iframe src="http://www.w3.org/TR/wai-aria/" title="WCAG 2.0 specfication" width="90%" height="600px"/>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Web Content Accessibility Guidelines 2.0 Quickref</title>
     <contents>
       <p class="center">
@@ -67,9 +67,9 @@
       </p>
       <iframe src="https://www.w3.org/WAI/WCAG20/quickref/" width="90%" height="600px"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
     <contents>
       <p class="center">
@@ -77,9 +77,9 @@
       </p>
       <iframe src="http://www.w3.org/TR/wai-aria/" title="ARIA 1.0 specfication" width="90%" height="600px"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>HTML 5</title>
     <contents>
       <p class="center">
@@ -87,9 +87,9 @@
       </p>
       <iframe src="http://www.w3.org/TR/html5/" title="HTML5 specfication" width="90%" height="600px"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>HTML5: main element</title>
     <contents>
       <p class="center">
@@ -97,10 +97,10 @@
       </p>
       <iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML5 MAIN element specfication" width="90%" height="600px"/>
     </contents>
-  </slide> 
+  </slide>
 
 
-  <slide> 
+  <slide>
     <title>HTML5: role restrictions</title>
     <contents>
       <p class="center">
@@ -108,9 +108,9 @@
       </p>
       <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-li-element" title="HTML5 LI element specfication" width="90%" height="600px"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Accessible Rich Internet Application API Mappings</title>
     <contents>
       <p class="center">
@@ -118,10 +118,10 @@
       </p>
       <iframe src="https://www.w3.org/TR/core-aam-1.1/" title="Core Accessibility API Mappings for ARIA 1.1" width="90%" height="600px"/>
     </contents>
-  </slide> 
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>HTML API Mappings</title>
     <contents>
       <p class="center">
@@ -129,7 +129,7 @@
       </p>
       <iframe src="https://w3c.github.io/html-aam/" title="HTML5 Accessibility API Mappings 1.0" width="90%" height="600px"/>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>The Problem of Custom Wigets</title>
@@ -139,7 +139,7 @@
         <li>Starting arounf the year 2000 developers and designers started using HTML+CSS+Javascript to create <em>custom user interface widgets</em> (e.g. interactive controls) for web pages.</li>
         <li>There was no standard and interoperable way to make these <em>custom widgets</em> accessible.</li>
       </ul>
-      
+
       <h2>Issues</h2>
       <ul>
         <li>Keyboard support.</li>
@@ -150,8 +150,8 @@
         <li>Interoperability between browser and accessibility APIs.</li>
       </ul>
     </contents>
-  </slide>  
-  
+  </slide>
+
   <slide>
     <title>Purpose of ARIA to Describe Behavior and Features</title>
     <contents>
@@ -186,13 +186,13 @@
         <li>The use of ARIA markup does not affect browser behavior or rendering.</li>
         <li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
       </ul>
-      
+
       <h2>Asssitive Technologies</h2>
       <ul>
         <li>Do not specify what assistive technologies will do with the information.</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Accessible Rich Internet Applications (ARIA) Basics</title>
@@ -298,7 +298,7 @@
       </table>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Tabindex and Keyboard Focus</title>
     <contents>
@@ -357,7 +357,7 @@
             </td>
           </tr>
         </tbody>
-      </table>  
+      </table>
     </contents>
   </slide>
 
@@ -386,7 +386,7 @@
                   <li>The <code>aria-labelledby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
                   <li>Text content of referenced elements are concatenated to compute the accessible name.</li>
                   <li>Typically references identify visible text on the screen.</li>
-                </ul> 
+                </ul>
               </td>
             </tr>
             <tr>
@@ -395,7 +395,7 @@
               <td>
                 <ul>
                   <li>The <code>aria-label</code> text content defines the accessible name.</li>
-                </ul>  
+                </ul>
               </td>
             </tr>
             <tr>
@@ -406,7 +406,7 @@
                   <li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
                   <li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
                   <li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
-                </ul>  
+                </ul>
               </td>
             </tr>
             <tr>
@@ -419,10 +419,10 @@
               </td>
             </tr>
           </tbody>
-        </table>    
+        </table>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Accessible Description Calculation</title>
     <contents>
@@ -449,7 +449,7 @@
                   <li>The <code>aria-describedby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
                   <li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
                   <li>Typically references identify visible text on the screen.</li>
-                </ul> 
+                </ul>
               </td>
             </tr>
             <tr>
@@ -462,7 +462,7 @@
               </td>
             </tr>
           </tbody>
-        </table>    
+        </table>
     </contents>
   </slide>
 
@@ -470,7 +470,7 @@
     <title>Example Widget: ARIA Checkbox</title>
     <style id="style">
       fieldset {
-        border-color: #EEE; 
+        border-color: #EEE;
         width: 10em;
       }
 
@@ -489,7 +489,7 @@
 
       div[role="checkbox"] {
         margin-bottom: 0.25em;
-        margin-left: 0.25em;      
+        margin-left: 0.25em;
       }
 
       div[role="checkbox"] span {
@@ -526,7 +526,7 @@
 
       label:hover,
       [role="checkbox"]:hover {
-        background-color: #CCD; 
+        background-color: #CCD;
       }
     </style>
     <contents>
@@ -583,14 +583,14 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/ksq3tqdz/" target="_jsfiddle">Checkbox example on jsfiddle</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-complete/" target="_webedit">Checkbox example on WebEdit</a></p>
 
      <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
         </legend>
-        
+
         <label>
           <input type="checkbox"
                  onfocus="checkboxFocus(event)"
@@ -598,7 +598,7 @@
 
           Green pepper
         </label>
-        
+
         <label>
           <input type="checkbox"
                  onfocus="checkboxFocus(event)"
@@ -606,19 +606,19 @@
           Onion
         </label>
 
-        <div role="checkbox" 
-             tabindex="0" 
-             aria-checked="false" 
-             onkeydown="keydownCheckbox(event)" 
+        <div role="checkbox"
+             tabindex="0"
+             aria-checked="false"
+             onkeydown="keydownCheckbox(event)"
              onclick="clickCheckbox(event)">
           <span aria-hidden="true"></span>
           Mushrooms
         </div>
 
-      <div role="checkbox" 
-           tabindex="0" 
+      <div role="checkbox"
+           tabindex="0"
            aria-checked="false"
-           onkeydown="keydownCheckbox(event)" 
+           onkeydown="keydownCheckbox(event)"
            onclick="clickCheckbox(event)">
           <span aria-hidden="true"></span>
           Spinach
@@ -628,17 +628,17 @@
      </div>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.add('sc2', 'style');
@@ -700,7 +700,7 @@
               <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
             </tr>
           </tbody>
-        </table>  
+        </table>
       </contents>
     </slide>
 
@@ -708,7 +708,7 @@
     <title>Part 1 Responding to the keyboard</title>
     <style id="style">
       fieldset {
-        border-color: #EEE; 
+        border-color: #EEE;
         width: 10em;
       }
 
@@ -727,7 +727,7 @@
 
       div[role="checkbox"] {
         margin-bottom: 0.25em;
-        margin-left: 0.25em;      
+        margin-left: 0.25em;
       }
 
       div[role="checkbox"] span {
@@ -777,34 +777,34 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/6tk720rt/" target="_jsfiddle">Part 1 on jsfiddle</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-part-1/" target="_webedit">Part 1 on WebEdit</a></p>
 
      <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
         </legend>
-        
+
         <label>
           <input type="checkbox"/>
 
           Green pepper
         </label>
-        
+
         <label>
           <input type="checkbox"/>
           Onion
         </label>
 
-        <div tabindex="0" 
-             onkeydown="keydownCheckbox(event)" 
+        <div tabindex="0"
+             onkeydown="keydownCheckbox(event)"
              onclick="clickCheckbox(event)">
           <span style="color: red; padding-right: 0.22em;">✗</span>
           Mushrooms
         </div>
 
-      <div tabindex="0" 
-           onkeydown="keydownCheckbox(event)" 
+      <div tabindex="0"
+           onkeydown="keydownCheckbox(event)"
            onclick="clickCheckbox(event)">
           <span style="color: red; padding-right: 0.22em;">✗</span>
           Spinach
@@ -814,17 +814,17 @@
      </div>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.add('sc2', 'style');
@@ -840,7 +840,7 @@
     <title>Part 2: Adding role, checked state and accessible name</title>
     <style id="style">
       fieldset {
-        border-color: #EEE; 
+        border-color: #EEE;
         width: 10em;
       }
 
@@ -859,7 +859,7 @@
 
       div[role="checkbox"] {
         margin-bottom: 0.25em;
-        margin-left: 0.25em;      
+        margin-left: 0.25em;
       }
 
       div[role="checkbox"] span {
@@ -913,43 +913,43 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/qvtv0swc/" target="_jsfiddle">Part 2 on jsfiddle</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-part-2/" target="_webedit">Part 2 on WebEdit</a></p>
 
      <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
         </legend>
-        
+
         <label>
           <input type="checkbox"/>
 
           Green pepper
         </label>
-        
+
         <label>
           <input type="checkbox"/>
           Onion
         </label>
 
-        <div role="checkbox" 
-             tabindex="0" 
-             aria-checked="false" 
-             onkeydown="keydownCheckbox(event)" 
+        <div role="checkbox"
+             tabindex="0"
+             aria-checked="false"
+             onkeydown="keydownCheckbox(event)"
              onclick="clickCheckbox(event)">
-          <span aria-hidden="true" 
+          <span aria-hidden="true"
                 style="color: red; padding-right: 0.22em;">
             ✗
           </span>
           Mushrooms
         </div>
 
-      <div role="checkbox" 
-           tabindex="0" 
+      <div role="checkbox"
+           tabindex="0"
            aria-checked="false"
-           onkeydown="keydownCheckbox(event)" 
+           onkeydown="keydownCheckbox(event)"
            onclick="clickCheckbox(event)">
-          <span aria-hidden="true"  
+          <span aria-hidden="true"
                 style="color: red; padding-right: 0.22em;">
             ✗
           </span>
@@ -960,17 +960,17 @@
      </div>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.add('sc2', 'style');
@@ -986,7 +986,7 @@
     <title>Part 3: Focus and hover styling</title>
     <style id="style">
       fieldset {
-        border-color: #EEE; 
+        border-color: #EEE;
         width: 10em;
       }
 
@@ -1005,7 +1005,7 @@
 
       div[role="checkbox"] {
         margin-bottom: 0.25em;
-        margin-left: 0.25em;      
+        margin-left: 0.25em;
       }
 
       div[role="checkbox"] span {
@@ -1027,7 +1027,7 @@
 
       label:hover,
       [role="checkbox"]:hover {
-        background-color: #CCD; 
+        background-color: #CCD;
       }
     </style>
     <contents>
@@ -1036,7 +1036,7 @@
         <li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
         <li><code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
         <li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
-        <li>Styling background color also makes the change in focus much easier to detect visually.</li>       
+        <li>Styling background color also makes the change in focus much easier to detect visually.</li>
       </ul>
 
       <script id="script" type="text/javascript">
@@ -1085,41 +1085,41 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/nwgvkznr/" target="_jsfiddle">Part 3 on jsfiddle</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-part-3/" target="_webedit">Part 3 on WebEdit</a></p>
 
      <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
         </legend>
-        
+
         <label>
           <input type="checkbox"
-             onfocus="checkboxFocus(event)" 
+             onfocus="checkboxFocus(event)"
              onblur="checkboxBlur(event)"/>
           Green pepper
         </label>
-        
+
         <label>
           <input type="checkbox"
-             onfocus="checkboxFocus(event)" 
+             onfocus="checkboxFocus(event)"
              onblur="checkboxBlur(event)"/>
           Onion
         </label>
 
-        <div role="checkbox" 
-             tabindex="0" 
-             aria-checked="false" 
-             onkeydown="keydownCheckbox(event)" 
+        <div role="checkbox"
+             tabindex="0"
+             aria-checked="false"
+             onkeydown="keydownCheckbox(event)"
              onclick="clickCheckbox(event)">
           <span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Mushrooms
         </div>
 
-      <div role="checkbox" 
-           tabindex="0" 
+      <div role="checkbox"
+           tabindex="0"
            aria-checked="false"
-           onkeydown="keydownCheckbox(event)" 
+           onkeydown="keydownCheckbox(event)"
            onclick="clickCheckbox(event)">
           <span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Spinach
@@ -1129,17 +1129,17 @@
      </div>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.add('sc2', 'style');
@@ -1154,7 +1154,7 @@
     <title>Part 4: Synchronization of aria and visual states</title>
     <style id="style">
       fieldset {
-        border-color: #EEE; 
+        border-color: #EEE;
         width: 10em;
       }
 
@@ -1173,7 +1173,7 @@
 
       div[role="checkbox"] {
         margin-bottom: 0.25em;
-        margin-left: 0.25em;      
+        margin-left: 0.25em;
       }
 
       div[role="checkbox"] span {
@@ -1210,7 +1210,7 @@
 
       label:hover,
       [role="checkbox"]:hover {
-        background-color: #CCD; 
+        background-color: #CCD;
       }
     </style>
     <contents>
@@ -1259,41 +1259,41 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://jsfiddle.net/jongund/zzds7jqs/" target="_jsfiddle">Part 4 on jsfiddle</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-part-4/" target="_webedit">Part 4 on WebEdit</a></p>
 
      <div id="example">
       <fieldset>
         <legend>
         Pizza Toppings
         </legend>
-        
+
         <label>
           <input type="checkbox"
-             onfocus="checkboxFocus(event)" 
+             onfocus="checkboxFocus(event)"
              onblur="checkboxBlur(event)"/>
           Green pepper
         </label>
-        
+
         <label>
           <input type="checkbox"
-             onfocus="checkboxFocus(event)" 
+             onfocus="checkboxFocus(event)"
              onblur="checkboxBlur(event)"/>
           Onion
         </label>
 
-        <div role="checkbox" 
-             tabindex="0" 
-             aria-checked="false" 
-             onkeydown="keydownCheckbox(event)" 
+        <div role="checkbox"
+             tabindex="0"
+             aria-checked="false"
+             onkeydown="keydownCheckbox(event)"
              onclick="clickCheckbox(event)">
           <span aria-hidden="true"> </span>
           Mushrooms
         </div>
 
-      <div role="checkbox" 
-           tabindex="0" 
+      <div role="checkbox"
+           tabindex="0"
            aria-checked="false"
-           onkeydown="keydownCheckbox(event)" 
+           onkeydown="keydownCheckbox(event)"
            onclick="clickCheckbox(event)">
           <span aria-hidden="true"> </span>
           Spinach
@@ -1303,17 +1303,17 @@
      </div>
 
       <h2>HTML Source Code</h2>
-      
+
       <pre><code id="sc1"></code></pre>
 
       <h2>CSS Source Code</h2>
-      
+
       <pre><code id="sc2"></code></pre>
 
       <h2>Javascript Source Code</h2>
-      
+
       <pre><code id="sc3"></code></pre>
-              
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.add('sc2', 'style');
@@ -1352,14 +1352,14 @@
       <li><a href="http://w3c.github.io/aria-practices/examples/disclosure/disclosure-img-long-description.html">Example 1: Image Description</a></li>
     </ul>
 
-    <iframe src="http://w3c.github.io/aria-practices/#disclosure" 
-            title="ARIA Disclosure Example"     
+    <iframe src="http://w3c.github.io/aria-practices/#disclosure"
+            title="ARIA Disclosure Example"
             width="98%"
-            height="600px"/> 
-    
+            height="600px"/>
+
     </contents>
   </slide>
-  
+
   <slide>
     <title>Design Pattern: Menu Button</title>
     <contents>
@@ -1369,10 +1369,10 @@
       <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a></li>
       <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a></li>
     </ul>
-    <iframe src="http://w3c.github.io/aria-practices/#menubutton" 
-            title="ARIA Menubutton Example"     
+    <iframe src="http://w3c.github.io/aria-practices/#menubutton"
+            title="ARIA Menubutton Example"
             width="98%"
-            height="600px"/> 
+            height="600px"/>
     </contents>
   </slide>
 
@@ -1398,7 +1398,7 @@
                   <li><kbd>right arrow</kbd></li>
                   <li><kbd>up arrow</kbd></li>
                   <li><kbd>down arrow</kbd></li>
-                </ul>  
+                </ul>
               </td>
               <td>
                 <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation" target="_specification"><code>navigation</code> landmark</a>
@@ -1409,13 +1409,13 @@
                   <li>Cursor keys provide enhanced navigation.</li>
                   <li>Uses hierarchical lists of links.</li>
                   <li>Uses ARIA <code>navigation</code> landmarks.</li>
-                  <li>Examples: 
+                  <li>Examples:
                     <ul>
                       <li><a href="http://www.dhs.state.il.us" target="_example">Illinois Department of Human Services</a></li>
                       <li><a href="http://illinois.edu/" target="_example">University of Illinois Home Page</a></li>
                       <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/" target="_example">Adobe Mega Menu</a></li>
-                    </ul>  
-                  </li>  
+                    </ul>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -1426,7 +1426,7 @@
                   <li><kbd>tab</kbd></li>
                   <li><kbd>up arrow</kbd></li>
                   <li><kbd>down arrow</kbd></li>
-                </ul>  
+                </ul>
               </td>
               <td>
                 <a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
@@ -1436,12 +1436,12 @@
                   <li><kbd>tab</kbd> moves into and out of each menu button.</li>
                   <li><kbd>up arrow</kbd> and <kbd>down arrow</kbd> move between pull down menu items.</li>
                   <li>Uses <code>button</code>, <code>menu</code> and <code>menuitem</code>  widget roles.</li>
-                  <li>Examples: 
+                  <li>Examples:
                     <ul>
                       <li><a href="http://fae.disability.illinois.edu" target="_example">Functional Accessibility Evaluator 2.0</a></li>
                       <li><a href="http://citl.illinois.edu/" target="_example">Illinois Center for Innovation in Teaching &amp; Learning</a></li>
-                    </ul>  
-                  </li>  
+                    </ul>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -1451,22 +1451,22 @@
                 <ul>
                   <li><kbd>tab</kbd></li>
                   <li><kbd>space/enter</kbd></li>
-                </ul>  
+                </ul>
               </td>
               <td>
-                <a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Disclosure Design Pattern</a>                
+                <a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Disclosure Design Pattern</a>
               </td>
               <td>
                 <ul>
                   <li><kbd>tab</kbd> moves into and out menubar.</li>
                   <li><kbd>space</kbd> or <kbd>return</kbd> opens panel of links.</li>
                   <li><kbd>tab</kbd> and cursor keys move focus between disclosed links.</li>
-                  <li>Examples: 
+                  <li>Examples:
                     <ul>
                       <li><a href="http://admissions.illinois.edu" target="_example">Illinois Admissions</a></li>
                       <li><a href="http://education.illinois.edu/" target="_example">Illinois College of Education</a></li>
-                    </ul>  
-                  </li>  
+                    </ul>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -1479,20 +1479,20 @@
                   <li><kbd>right arrow</kbd></li>
                   <li><kbd>up arrow</kbd></li>
                   <li><kbd>down arrow</kbd></li>
-                </ul>  
+                </ul>
               </td>
               <td>
-                <a href="http://w3c.github.io/aria-practices/#menubar" target="_specification">Menubar Design Pattern</a>                
+                <a href="http://w3c.github.io/aria-practices/#menubar" target="_specification">Menubar Design Pattern</a>
               </td>
               <td>
                 <ul>
                   <li><kbd>tab</kbd> moves into and out of each disclosure button.</li>
                   <li>Cursor keys move between pull down menus and menuitems.dri</li>
-                  <li>Examples: 
+                  <li>Examples:
                     <ul>
                       <li><a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html" target="_example">ARIA Authoring Practices Example</a></li>
-                    </ul>  
-                  </li>  
+                    </ul>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -1514,10 +1514,10 @@
         <li>How to you decide what to call this widget?</li>
         <li>What is the keyboard interaction?</li>
       </ul>
-      <iframe src="http://jongund.github.io/aria-examples/bootstrap-carousel/" 
-              title="ARIA Carousel Example"     
+      <iframe src="http://jongund.github.io/aria-examples/bootstrap-carousel/"
+              title="ARIA Carousel Example"
               width="98%"
-              height="600px"/> 
+              height="600px"/>
       </contents>
   </slide>
 
@@ -1529,7 +1529,7 @@
         <li>Improperly used ARIA markup can make web resources less accessible and break interoperability.</li>
         <li>ARIA examples and usage in actual websites are incomplete or incorrectly use ARIA markup adding to confusion.</li>
         <li>Lack of awareness of keyboard interaction support needed to make ARIA work properly.</li>
-      </ul>      
+      </ul>
     </contents>
   </slide>
 
@@ -1543,7 +1543,7 @@
         <li>Section 6. Intentionally Hiding Semantics with the presentation Role</li>
       </ul>
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Section 2: Design Patterns and Widgets</title>
@@ -1555,7 +1555,7 @@
         <li>Uses of ARIA roles, properties and states.</li>
         <li>Examples</li>
       </ul>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex" width="98%" height="600px"></iframe>      
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex" width="98%" height="600px"></iframe>
     </contents>
   </slide>
 
@@ -1581,7 +1581,7 @@
         <li>Landmark visualization feature.</li>
         <li>Links to related resources.</li>
       </ul>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" width="98%" height="600px"></iframe>      
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" width="98%" height="600px"></iframe>
     </contents>
   </slide>
 
@@ -1593,7 +1593,7 @@
         <li>This is often the least understood part of using ARIA technology.</li>
         <li>What is the keyboard interaciotn model and which ARIA widget roles are compatible with that model.</li>
       </ul>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard" width="98%" height="600px"></iframe>      
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard" width="98%" height="600px"></iframe>
     </contents>
   </slide>
 
@@ -1603,8 +1603,8 @@
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav">ARIA Authoring Practices: Fundamental Keyboard Navigation Conventions</a></li>
         <li>Keyboard interaction model for each widget role.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav" width="98%" height="600px"></iframe>
     </contents>
   </slide>
 
@@ -1616,34 +1616,34 @@
         <li>Many users with disabilities can see the display, but need to idenfity the elements with keyboard focus and/or selections.</li>
         <li>Keyboard interaction is often difficult or impossible if users cannot identify what element has keyboard focus.</li>
         <li>Need more than just color, so the use of borders, underline or visual icons is important.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Section 4.3: Focus vs. Selection and the Perception of Dual Focus</title>
     <contents>
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection">ARIA Authoring Practices: Focus vs. Selection and the Perception of Dual Focus</a></li>
         <li>Making the styling of keyboard focus and selection different is important.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Section 4.4: Deciding When to Make Selection Automatically Follow Focus</title>
     <contents>
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus">ARIA Authoring Practices: Deciding When to Make Selection Automatically Follow Focus</a></li>
         <li>When content is loaded basd on user interaction there can sometimes be delays in content being available, make sure the affects of these delays are minimized for keyboard users.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
-  
+
+
   <slide>
     <title>Section 4.5: Keyboard Navigation Between Components (The Tab Sequence)</title>
     <contents>
@@ -1651,12 +1651,12 @@
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between">ARIA Authoring Practices: Keyboard Navigation Between Components (The Tab Sequence)</a></li>
         <li>The use of <code>tabindex=-1</code> and <code>tabindex=0</code> to define interactive elements and tab order of content of the page.</li>
         <li><code>tabindex</code> values > 0 are discouraged, and should only be used cautiously.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
-  
+
+
   <slide>
     <title>Section 4.6: Keyboard Navigation Inside Components</title>
     <contents>
@@ -1664,22 +1664,22 @@
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within">ARIA Authoring Practices: Keyboard Navigation Inside Components</a></li>
         <li>Roving <code>tabindex</code> versus <code>aria-activedescendant</code> technique for identifying element with current focus.</li>
         <li>Call <code>focus()</code> on elements with focus.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Section 4.7: Focusability of Disabled Controls</title>
     <contents>
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls">ARIA Authoring Practices: Focusability of disabled controls</a></li>
         <li>When to keep or remove keyboard interaction to disabled controls.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Section 4.8: Keyboard Shortcuts</title>
     <contents>
@@ -1688,16 +1688,16 @@
         <li>Understanding how keyboard shortcuts augment a keyboard interface and whether to make a particular shortcut move focus, perform a function, or both.</li>
         <li>Making key assignments and avoiding assignment conflicts with assistive technologies, browsers, and operating systems.</li>
         <li>Exposing and documenting key assignments.</li>
-      </ul>  
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts" width="98%" height="600px"></iframe>      
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>p
     <title>Section 6: Intentionally Hiding Semantics with the Presentation Role</title>
     <contents>
       <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role">Section 6: Intentionally Hiding Semantics with the presentation Role </a></p>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role" width="98%" height="600px"></iframe>      
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role" width="98%" height="600px"></iframe>
     </contents>
   </slide>
 
@@ -1705,10 +1705,10 @@
     <title>Section 7. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</title>
     <contents>
       <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational">Section 7. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</a></p>
-      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational" width="98%" height="600px"></iframe>      
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Next Steps for ARIA Authoring Practices Guide</title>
     <contents>
@@ -1721,7 +1721,7 @@
       </ul>
     </contents>
   </slide>
-    
+
   <slide>
     <title>Open Source Tools</title>
     <contents>
@@ -1742,7 +1742,7 @@
             <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
             <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
           </ul>
-        </li>  
+        </li>
         <li>Designed for:
           <ul>
             <li>Managers</li>
@@ -1756,9 +1756,9 @@
         <li>Page rule result summaries</li>
         <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
         <li>Archive and share reports</li>
-      </ul>      
+      </ul>
     </contents>
-  </slide>   
+  </slide>
 
   <slide>
     <title>AInspector Sidebar for Firefox</title>
@@ -1777,14 +1777,14 @@
             <li>Rule Categories</li>
             <li>WCAG 2.0 Guideline Summary</li>
           </ul>
-        </li>  
+        </li>
         <li>Analyzes the browser DOM content</li>
         <li>Highlighting elements</li>
         <li>DOM inspector</li>
       </ul>
-      
+
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Bookmarklets for Visualizing Accessibility Features</title>
@@ -1801,9 +1801,9 @@
             <li>Important prorperties (e.g the number of items in a list)</li>
           </ul>
         </li>
-      </ul>  
+      </ul>
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Questions and Discussion</title>
@@ -1811,7 +1811,7 @@
       <h2>Badge Requirements</h2>
       <ul>
         <li>Passing quiz with 90% correct (available tomorrow through Blackboard)</li>
-        <li>Completing and submitting the checkbox 
+        <li>Completing and submitting the checkbox
           example</li>
       </ul>
       <h2>Discussion Lists</h2>
@@ -1821,8 +1821,8 @@
         <li><a href="http://webaim.org">WebAIM</a></li>
       </ul>
     </contents>
-  </slide>  
+  </slide>
 
-</slides> 
+</slides>
 
 
