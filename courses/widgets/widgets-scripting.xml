@@ -1348,9 +1348,9 @@
 
     <ul>
       <li><a href="http://www.parking.illinois.edu/about-us/faqs">Illinois Parking FAQ (Not Accessible)</a></li>
-      <li><a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Design Pattern: Disclosure (Show/Hide)</a></li>
-      <li><a href="http://w3c.github.io/aria-practices/examples/disclosure/disclosure-faq.html">Example 2: Answers to Frequently Asked Questions</a></li>
-      <li><a href="http://w3c.github.io/aria-practices/examples/disclosure/disclosure-img-long-description.html">Example 1: Image Description</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/#disclosure" target="_specification">Design Pattern: Disclosure (Show/Hide)</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-faq.html">Example 2: Answers to Frequently Asked Questions</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html">Example 1: Image Description</a></li>
     </ul>
 
     <iframe src="https://www.w3.org/TR/wai-aria-practices/#disclosure"
@@ -1365,12 +1365,12 @@
     <title>Design Pattern: Menu Button</title>
     <contents>
     <ul>
-      <li><a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a></li>
-      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button/menu-button-actions.html">Example 1: Action Menu</a></li>
-      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a></li>
-      <li><a href="https://cdn.rawgit.com/jongund/aria-practices/menu-button/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-actions.html">Example 1: Action Menu</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a></li>
     </ul>
-    <iframe src="http://w3c.github.io/aria-practices/#menubutton"
+    <iframe src="https://www.w3.org/TR/wai-aria-practices/#menubutton"
             title="ARIA Menubutton Example"
             width="98%"
             height="600px"/>
