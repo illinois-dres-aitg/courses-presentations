@@ -54,9 +54,9 @@
     <title>Web Content Accessibility Guidelines 2.0</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
       </p>
-      <iframe src="http://www.w3.org/TR/WCAG" title="WCAG 2.0 specfication" width="90%" height="600px"/>
+      <iframe src="https://www.w3.org/TR/WCAG/" title="WCAG 2.0 specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 
@@ -74,9 +74,9 @@
     <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
       </p>
-      <iframe src="http://www.w3.org/TR/wai-aria/" title="ARIA 1.0 specfication" width="90%" height="600px"/>
+      <iframe src="https://www.w3.org/TR/wai-aria/" title="ARIA 1.0 specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 
@@ -84,9 +84,9 @@
     <title>HTML 5</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+        <a href="https://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
       </p>
-      <iframe src="http://www.w3.org/TR/html5/" title="HTML5 specfication" width="90%" height="600px"/>
+      <iframe src="https://www.w3.org/TR/html5/" title="HTML5 specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 
@@ -94,9 +94,9 @@
     <title>HTML5: main element</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
       </p>
-      <iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML5 MAIN element specfication" width="90%" height="600px"/>
+      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML5 MAIN element specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 
