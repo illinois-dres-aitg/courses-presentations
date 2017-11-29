@@ -1508,7 +1508,7 @@
     </contents>
   </slide>
 
-<slide>
+  <slide>
     <title>Accessible Disclosure FAQ</title>
     <style id="style">
       dl.faq button {
@@ -1562,7 +1562,11 @@
     </style>
     <contents>
       <ul>
+        <li>The use of <code>dl</code>, <code>dt</code> and <code>dd</code> elementsto identify the semantic structure of the FAQs as a list of items with titles and descriptions.</li>
         <li><code>button</code> element used to hide and show description content for each FAQ.</li>
+        <li><code>aria-expanded</code> attribute on the title to indicate the state of the disclosure of the corresponding FAQ description.</li>
+        <li><code>aria-controls</code> attribute to identify the content controlled by the button.</li>
+        <li>Use of CSS <code>:before</code> to synchronize visual state with aria states.</li>
       </ul>
 
       <script id="script" type="text/javascript">
