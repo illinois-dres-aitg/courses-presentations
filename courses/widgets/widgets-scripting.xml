@@ -56,7 +56,7 @@
       <p class="center">
         <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
       </p>
-      <iframe src="http://www.w3.org/TR/wai-aria/" title="WCAG 2.0 specfication" width="90%" height="600px"/>
+      <iframe src="http://www.w3.org/TR/WCAG" title="WCAG 2.0 specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 
