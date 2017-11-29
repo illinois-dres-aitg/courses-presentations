@@ -1998,81 +1998,89 @@ nav > ul > li > ul > li > a:focus {
     </style>
     <contents>
 
-     <nav id="example">
-        <ul class="example">
-          <li class="popup">
-            <a href="#">About</a>
-            <ul>
-              <li>
-                <a href="#overview">Overview</a>
-              </li>
-              <li>
-                <a href="#admin">Administration</a>
-              </li>
-              <li >
-                <a href="#facts">Facts</a>
-              </li>
-              <li>
-                <a href="#tours" >Campus Tours</a>
-              </li>
-            </ul>
-          </li>
-          <li class="popup">
-            <a href="#">Admissions</a>
-            <ul>
-              <li>
-                <a href="#apply">Apply</a>
-              </li>
-              <li>
-                <a href="#tuition">Tuition</a>
-              </li>
-              <li >
-                <a href="#signup">Sign Up</a>
-              </li>
-              <li role="separator"></li>
-              <li>
-                <a href="#visit">Visit</a>
-              </li>
-              <li>
-                <a href="#photo">Photo Tour</a>
-              </li>
-              <li>
-                <a href="#connect">Connect</a>
-              </li>
-            </ul>
-          </li>
-          <li class="popup">
-            <a href="#">Academics</a>
-            <ul>
-              <li>
-                <a href="#colleges">Colleges &amp; Schools</a>
-              </li>
-              <li>
-                <a href="#programs">Programs of Study</a>
-              </li>
-              <li>
-                <a href="#honors">Honors Programs</a>
-              </li>
-              <li>
-                <a href="#online">Online Courses</a>
-              </li>
-              <li role="separator"></li>
-              <li>
-                <a href="#explorer">Course Explorer</a>
-              </li>
-              <li>
-                <a href="#register">Register for Class</a>
-              </li>
-              <li>
-                <a href="#academic">Academic Calendar</a>
-              </li>
-              <li>
-                <a href="#tanscripts">Transcripts</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <ul>
+      <li><kbd>tab</kbd> key provides navigation to all links in the navigation menu.</li>
+      <li>Links in the popup lists of links become visible when they receive focus.</li>
+      <li>Most basic and predictable keyboard model.</li>
+    </ul>
+
+     <div id="example">
+        <nav aria-label="primary">
+          <ul class="example">
+            <li class="popup">
+              <a href="#">About</a>
+              <ul>
+                <li>
+                  <a href="#overview">Overview</a>
+                </li>
+                <li>
+                  <a href="#admin">Administration</a>
+                </li>
+                <li >
+                  <a href="#facts">Facts</a>
+                </li>
+                <li>
+                  <a href="#tours" >Campus Tours</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup">
+              <a href="#">Admissions</a>
+              <ul>
+                <li>
+                  <a href="#apply">Apply</a>
+                </li>
+                <li>
+                  <a href="#tuition">Tuition</a>
+                </li>
+                <li >
+                  <a href="#signup">Sign Up</a>
+                </li>
+                <li role="separator"></li>
+                <li>
+                  <a href="#visit">Visit</a>
+                </li>
+                <li>
+                  <a href="#photo">Photo Tour</a>
+                </li>
+                <li>
+                  <a href="#connect">Connect</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup">
+              <a href="#">Academics</a>
+              <ul>
+                <li>
+                  <a href="#colleges">Colleges &amp; Schools</a>
+                </li>
+                <li>
+                  <a href="#programs">Programs of Study</a>
+                </li>
+                <li>
+                  <a href="#honors">Honors Programs</a>
+                </li>
+                <li>
+                  <a href="#online">Online Courses</a>
+                </li>
+                <li role="separator"></li>
+                <li>
+                  <a href="#explorer">Course Explorer</a>
+                </li>
+                <li>
+                  <a href="#register">Register for Class</a>
+                </li>
+                <li>
+                  <a href="#academic">Academic Calendar</a>
+                </li>
+                <li>
+                  <a href="#tanscripts">Transcripts</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <script>
 
@@ -2207,86 +2215,95 @@ ul[role="menu"] a[role="menuitem"]:hover{
     </style>
     <contents>
 
+    <ul>
+      <li><kbd>tab</kbd> key provides navigation betwen a set of menu buttons.</li>
+      <li><kbd>up</kbd> and <kbd>down</kbd> keys navigate links in popup menu.</li>
+      <li>Next step and visual affordances help people identify the popup menu of links.</li>
+    </ul>
+
+
       <script src="js/Menubutton2.js" type="text/javascript"></script>
       <script src="js/MenubuttonPopupMenuLinks.js" type="text/javascript"></script>
       <script src="js/MenubuttonMenuItemLinks.js" type="text/javascript"></script>
 
-      <nav id="example">
-        <ul class="example">
-          <li class="menu_button">
-            <a role="button" aria-haspopup="true" aria-controls="menu1" href="#">About</a>
-            <ul id="menu1" role="menu" aria-label="About">
-              <li role="none">
-                <a role="menuitem" href="#overview">Overview</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#admin">Administration</a>
-              </li>
-              <li role="none">
-                <a id="menubar113" role="menuitem" href="#facts">Facts</a>
-              </li>
-              <li>
-                <a role="menuitem" href="#tours" >Campus
-                  Tours</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu_button">
-            <a role="button" aria-haspopup="true" aria-controls="menu2" href="#">Admissions</a>
-            <ul id="menu2" role="menu" aria-label="Admissions">
-              <li role="none">
-                <a role="menuitem" href="#apply">Apply</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#tuition">Tuition</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#signup">Sign Up</a>
-              </li>
-              <li role="separator"></li>
-              <li role="none">
-                <a role="menuitem" href="#visit">Visit</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#photo">Photo Tour</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#connect">Connect</a>
-              </li>
-            </ul>
-          </li>
-          <li  class="menu_button">
-            <a role="button" aria-haspopup="true" aria-controls="menu3" href="#">Academics</a>
-            <ul id="menu3" role="menu" aria-label="Academics">
-              <li role="none">
-                <a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#programs">Programs of Study</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#honors">Honors Programs</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#online">Online Courses</a>
-              </li>
-              <li role="separator"></li>
-              <li role="none">
-                <a role="menuitem" href="#explorer">Course Explorer</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#register">Register for Class</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#academic">Academic Calendar</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#tanscripts">Transcripts</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <div id="example">
+        <nav aria-label="primary">
+          <ul class="example">
+            <li class="menu_button">
+              <a role="button" aria-haspopup="true" aria-controls="menu1" href="#">About</a>
+              <ul id="menu1" role="menu" aria-label="About">
+                <li role="none">
+                  <a role="menuitem" href="#overview">Overview</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#admin">Administration</a>
+                </li>
+                <li role="none">
+                  <a id="menubar113" role="menuitem" href="#facts">Facts</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#tours" >Campus
+                    Tours</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_button">
+              <a role="button" aria-haspopup="true" aria-controls="menu2" href="#">Admissions</a>
+              <ul id="menu2" role="menu" aria-label="Admissions">
+                <li role="none">
+                  <a role="menuitem" href="#apply">Apply</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#tuition">Tuition</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#signup">Sign Up</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#visit">Visit</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#photo">Photo Tour</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#connect">Connect</a>
+                </li>
+              </ul>
+            </li>
+            <li  class="menu_button">
+              <a role="button" aria-haspopup="true" aria-controls="menu3" href="#">Academics</a>
+              <ul id="menu3" role="menu" aria-label="Academics">
+                <li role="none">
+                  <a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#programs">Programs of Study</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#honors">Honors Programs</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#online">Online Courses</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#explorer">Course Explorer</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#register">Register for Class</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#academic">Academic Calendar</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#tanscripts">Transcripts</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <script>
         var mbs = document.querySelectorAll('a[role="button"]');
@@ -2389,87 +2406,95 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
     </style>
     <contents>
 
+    <ul>
+      <li><kbd>tab</kbd> key provides navigation into and out of menubar of links.</li>
+      <li><kbd>left</kbd>, <kbd>right</kbd>, <kbd>up</kbd> and <kbd>down</kbd> keys navigate links in popup menus.</li>
+      <li>Next step and visual affordances help people identify the popup menu of links.</li>
+    </ul>
+
       <script src="js/MenubarLinks.js" type="text/javascript"></script>
       <script src="js/MenubarItemLinks.js" type="text/javascript"></script>
       <script src="js/PopupMenuLinks.js" type="text/javascript"></script>
       <script src="js/PopupMenuItemLinks.js" type="text/javascript"></script>
 
-      <nav id="example">
-      <ul id="menubar1" role="menubar" aria-label="Mythical University Menu 1">
-        <li>
-          <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">About</a>
-          <ul role="menu" aria-label="About">
-            <li role="none">
-              <a role="menuitem" href="#overview">Overview</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#admin">Administration</a>
-            </li>
-            <li role="none">
-              <a id="menubar113" role="menuitem" href="#facts">Facts</a>
+      <div id="example">
+        <nav aria-label="primary">
+          <ul id="menubar1" role="menubar" aria-label="Mythical University Menu 1">
+            <li>
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+              <ul role="menu" aria-label="About">
+                <li role="none">
+                  <a role="menuitem" href="#overview">Overview</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#admin">Administration</a>
+                </li>
+                <li role="none">
+                  <a id="menubar113" role="menuitem" href="#facts">Facts</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#tours" >Campus
+                    Tours</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a role="menuitem" href="#tours" >Campus
-                Tours</a>
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Admissions</a>
+              <ul role="menu" aria-label="Admissions">
+                <li role="none">
+                  <a role="menuitem" href="#apply">Apply</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#tuition">Tuition</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#signup">Sign Up</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#visit">Visit</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#photo">Photo Tour</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#connect">Connect</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Academics</a>
+              <ul role="menu" aria-label="Academics">
+                <li role="none">
+                  <a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#programs">Programs of Study</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#honors">Honors Programs</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#online">Online Courses</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#explorer">Course Explorer</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#register">Register for Class</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#academic">Academic Calendar</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#tanscripts">Transcripts</a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-        <li>
-          <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Admissions</a>
-          <ul role="menu" aria-label="Admissions">
-            <li role="none">
-              <a role="menuitem" href="#apply">Apply</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#tuition">Tuition</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#signup">Sign Up</a>
-            </li>
-            <li role="separator"></li>
-            <li role="none">
-              <a role="menuitem" href="#visit">Visit</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#photo">Photo Tour</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#connect">Connect</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Academics</a>
-          <ul role="menu" aria-label="Academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs">Programs of Study</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#honors">Honors Programs</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#online">Online Courses</a>
-            </li>
-            <li role="separator"></li>
-            <li role="none">
-              <a role="menuitem" href="#explorer">Course Explorer</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#register">Register for Class</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#academic">Academic Calendar</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#tanscripts">Transcripts</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+        </nav>
+    </div>
 
       <script type="text/javascript">
               var menubar = new Menubar(document.getElementById('menubar1'));

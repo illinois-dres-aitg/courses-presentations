@@ -120,157 +120,172 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
 <main id="content" class="container">
 <a name="main" id="main"></a>
 <h1 id="h1_title" class="title">Drop Down Navigation Links: ARIA Menubar Pattern</h1>
-<script src="js/MenubarLinks.js" type="text/javascript"></script><script src="js/MenubarItemLinks.js" type="text/javascript"></script><script src="js/PopupMenuLinks.js" type="text/javascript"></script><script src="js/PopupMenuItemLinks.js" type="text/javascript"></script>
-<nav id="example">
+<ul>
       
-<ul id="menubar1" role="menubar" aria-label="Mythical University Menu 1">
-        
 <li>
-          
-<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">About</a>
-          
-<ul role="menu" aria-label="About">
-            
-<li role="none">
-              
-<a role="menuitem" href="#overview">Overview</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#admin">Administration</a>
-            
-</li>
-            
-<li role="none">
-              
-<a id="menubar113" role="menuitem" href="#facts">Facts</a>
-            
-</li>
-            
-<li>
-              
-<a role="menuitem" href="#tours">Campus
-                Tours</a>
-            
-</li>
-          
-</ul>
-        
-</li>
-        
-<li>
-          
-<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Admissions</a>
-          
-<ul role="menu" aria-label="Admissions">
-            
-<li role="none">
-              
-<a role="menuitem" href="#apply">Apply</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#tuition">Tuition</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#signup">Sign Up</a>
-            
-</li>
-            
-<li role="separator"></li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#visit">Visit</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#photo">Photo Tour</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#connect">Connect</a>
-            
-</li>
-          
-</ul>
-        
-</li>
-        
-<li>
-          
-<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Academics</a>
-          
-<ul role="menu" aria-label="Academics">
-            
-<li role="none">
-              
-<a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#programs">Programs of Study</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#honors">Honors Programs</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#online">Online Courses</a>
-            
-</li>
-            
-<li role="separator"></li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#explorer">Course Explorer</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#register">Register for Class</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#academic">Academic Calendar</a>
-            
-</li>
-            
-<li role="none">
-              
-<a role="menuitem" href="#tanscripts">Transcripts</a>
-            
-</li>
-          
-</ul>
-        
-</li>
+<kbd>tab</kbd> key provides navigation into and out of menubar of links.</li>
       
-</ul>
+<li>
+<kbd>left</kbd>, <kbd>right</kbd>, <kbd>up</kbd> and <kbd>down</kbd> keys navigate links in popup menus.</li>
+      
+<li>Next step and visual affordances help people identify the popup menu of links.</li>
     
+</ul>
+<script src="js/MenubarLinks.js" type="text/javascript"></script><script src="js/MenubarItemLinks.js" type="text/javascript"></script><script src="js/PopupMenuLinks.js" type="text/javascript"></script><script src="js/PopupMenuItemLinks.js" type="text/javascript"></script>
+<div id="example">
+        
+<nav aria-label="primary">
+          
+<ul id="menubar1" role="menubar" aria-label="Mythical University Menu 1">
+            
+<li>
+              
+<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+              
+<ul role="menu" aria-label="About">
+                
+<li role="none">
+                  
+<a role="menuitem" href="#overview">Overview</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#admin">Administration</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a id="menubar113" role="menuitem" href="#facts">Facts</a>
+                
+</li>
+                
+<li>
+                  
+<a role="menuitem" href="#tours">Campus
+                    Tours</a>
+                
+</li>
+              
+</ul>
+            
+</li>
+            
+<li>
+              
+<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Admissions</a>
+              
+<ul role="menu" aria-label="Admissions">
+                
+<li role="none">
+                  
+<a role="menuitem" href="#apply">Apply</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#tuition">Tuition</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#signup">Sign Up</a>
+                
+</li>
+                
+<li role="separator"></li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#visit">Visit</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#photo">Photo Tour</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#connect">Connect</a>
+                
+</li>
+              
+</ul>
+            
+</li>
+            
+<li>
+              
+<a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Academics</a>
+              
+<ul role="menu" aria-label="Academics">
+                
+<li role="none">
+                  
+<a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#programs">Programs of Study</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#honors">Honors Programs</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#online">Online Courses</a>
+                
+</li>
+                
+<li role="separator"></li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#explorer">Course Explorer</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#register">Register for Class</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#academic">Academic Calendar</a>
+                
+</li>
+                
+<li role="none">
+                  
+<a role="menuitem" href="#tanscripts">Transcripts</a>
+                
+</li>
+              
+</ul>
+            
+</li>
+          
+</ul>
+        
 </nav>
+    
+</div>
 <script type="text/javascript">
               var menubar = new Menubar(document.getElementById('menubar1'));
               menubar.init();
