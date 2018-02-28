@@ -13,6 +13,7 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700%7CMerriweather:400,300,300italic,400italic,700,700italic">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/focus-style.css">
     <link rel="stylesheet" href="css/home.css">
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -23,137 +24,74 @@
     <!-- Page-->
     <div class="page text-center">
       <!-- Page Header-->
-      <div class="page-head header-panel-absolute">
+      <header class="page-head header-panel-absolute">
         <!-- RD Navbar Transparent-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-stick-up-offset="210" data-xl-stick-up-offset="85" data-lg-auto-height="true" data-auto-height="false" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+          <nav role="navigation" class="rd-navbar rd-navbar-default" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-stick-up-offset="210" data-xl-stick-up-offset="85" data-lg-auto-height="true" data-auto-height="false" data-md-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
             <div class="rd-navbar-inner">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                <h4 class="panel-title veil-md">Home</h4>
-             </div>
+                <h2 class="panel-title veil-md">Home</h2>
+              </div>
               <div class="rd-navbar-menu-wrap clearfix">
                 <!--Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="reveal-inline-block" href="home.html">
+                <div class="rd-navbar-brand">
                     <div class="unit unit-xs-middle unit-xl unit-xl-horizontal unit-spacing-xxs">
-                      <div class="unit-left"><img width='170' height='172' src='images/logo-170.png' alt=''/>
+                      <a class="reveal-inline-block" href="accessible.html">
+                      <div class="unit-left"><img width='170' height='172' src='images/logo-170.png' alt='John Adams University'/>
                       </div>
+                      </a>
                       <div class="unit-body text-xl-left">
-                        <div class="rd-navbar-brand-title">John Adams University</div>
-                        <div class="rd-navbar-brand-slogan">Let every sluice of knowledge be opened and set a-flowing</div                      </div>
-                    </div></a></div>
+                        <h1 class="rd-navbar-brand-title">John Adams University</h1>
+                        <div class="rd-navbar-brand-slogan">Let every sluice of knowledge be opened and set a-flowing</div>
+                      </div>
+                    </div>
+                </div>
                 <div class="rd-navbar-nav-wrap">
                   <div class="rd-navbar-mobile-scroll">
                     <div class="rd-navbar-mobile-header-wrap">
                       <!--Navbar Brand Mobile-->
-                      <div class="rd-navbar-mobile-brand"><a href="home.html"><img width='136' height='138' src='images/logo-170.png' alt=''/></a></div>
+                      <div class="rd-navbar-mobile-brand">
+                        <a href="home1.html"><img width='136' height='138' src='images/logo-170.png' alt='Main Menu'/></a>
+                      </div>
                     </div>
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li class="active"><a href="home.html">Home</a>
+                      <li><a href="home1.html">Home</a>
                       </li>
                       <li><a href="#">Elements</a>
                         <ul class="rd-navbar-dropdown">
-                          <li><a href="grid.html">Grid</a>
-                          </li>
-                          <li><a href="icons.html">Icons</a>
-                          </li>
-                          <li><a href="tables.html">Tables</a>
-                          </li>
-                          <li><a href="progress-bars.html">Progress bars</a>
-                          </li>
-                          <li><a href="tabs-and-accordions.html">Tabs &amp; Accordions</a>
-                          </li>
-                          <li><a href="forms.html">Forms</a>
-                          </li>
-                          <li><a href="buttons.html">Buttons</a>
-                          </li>
-                          <li><a href="typography.html">Typography</a>
-                          </li>
+                          <li><a href="grid.html">Grid</a></li>
+                          <li><a href="icons.html">Icons</a></li>
+                          <li><a href="tables.html">Tables</a></li>
+                          <li><a href="progress-bars.html">Progress bars</a></li>
+                          <li><a href="tabs-and-accordions.html">Tabs &amp; Accordions</a></li>
+                          <li><a href="forms.html">Forms</a></li>
+                          <li><a href="buttons.html">Buttons</a></li>
+                          <li><a href="typography.html">Typography</a></li>
                         </ul>
                       </li>
-                      <li><a href="#">Pages</a>
-                        <div class="rd-navbar-megamenu">
-                          <div class="row section-relative">
-                            <ul class="col-md-3">
-                              <li class="tabs-nav">
-                                <h6>Academic</h6>
-                                <ul class="list-unstyled offset-lg-top-20">
-                                  <li><a href="academic.html#0">Undergraduate Study</a></li>
-                                  <li><a href="academic.html#1">Graduate &amp; Professional Study</a></li>
-                                  <li><a href="academic.html#2">Departments &amp; Programs</a></li>
-                                  <li><a href="academic.html#3">Global Education</a></li>
-                                  <li><a href="academic.html#4">Summer Session</a></li>
-                                  <li><a href="academic.html#5">Non-Degree Offerings</a></li>
-                                  <li><a href="academic.html#6">Online Learning</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <ul class="col-md-3">
-                              <li>
-                                <h6>Pages</h6>
-                                <ul class="list-unstyled offset-lg-top-20">
-                                  <li><a href="404.html">404</a></li>
-                                  <li><a href="privacy.html">Terms of Use</a></li>
-                                  <li><a href="maintenance.html">Maintenance</a></li>
-                                  <li><a href="login-register.html">Login/Register</a></li>
-                                  <li><a href="coming-soon.html">Coming Soon</a></li>
-                                  <li><a href="search-results.html">Search Results</a></li>
-                                  <li><a href="apply.html">Apply</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <ul class="col-md-3">
-                              <li>
-                                <h6>Layouts</h6>
-                                <ul class="list-unstyled offset-lg-top-20">
-                                  <li><a href="header-transparent.html">Header Transparent</a></li>
-                                  <li><a href="header-center.html">Header Center, Footer Center</a></li>
-                                  <li><a href="header-minimal.html">Header Minimal, Footer Center</a></li>
-                                  <li><a href="header-corporate.html">Header Corporate</a></li>
-                                  <li><a href="header-hamburger-menu.html">Header Hamburger Menu</a></li>
-                                  <li><a href="footer-minimal.html">Footer Minimal</a></li>
-                                  <li><a href="footer-widget.html">Footer Widget</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <ul class="col-md-3">
-                              <li>
-                                <h6>About</h6>
-                                <ul class="list-unstyled offset-lg-top-20">
-                                  <li><a href="history.html">History</a></li>
-                                  <li><a href="people.html">People</a></li>
-                                  <li><a href="team-member-profile.html">Team Member Profile</a></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <h6>Event Calendar</h6>
-                                <ul class="list-unstyled offset-lg-top-20">
-                                  <li><a href="calendar.html">Calendar</a></li>
-                                  <li><a href="day-event.html">Day Event</a></li>
-                                  <li><a href="event-page.html">Event Page</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
+                      <li><a href="#">Academic</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="academic.html#0">Undergraduate Study</a></li>
+                          <li><a href="academic.html#1">Graduate &amp; Professional Study</a></li>
+                          <li><a href="academic.html#2">Departments &amp; Programs</a></li>
+                          <li><a href="academic.html#3">Global Education</a></li>
+                          <li><a href="academic.html#4">Summer Session</a></li>
+                          <li><a href="academic.html#5">Non-Degree Offerings</a></li>
+                          <li><a href="academic.html#6">Online Learning</a></li>
+                        </ul>
                       </li>
                       <li><a href="#">News</a>
                         <ul class="rd-navbar-dropdown">
-                          <li><a href="classic-news.html">Classic news</a>
-                          </li>
-                          <li><a href="grid-news.html">Grid News</a>
-                          </li>
-                          <li><a href="masonry-news.html">Masonry News</a>
-                          </li>
-                          <li><a href="grid-news-3-columns.html">3 Columns Grid News</a>
-                          </li>
-                          <li><a href="modern-news.html">Modern News</a>
-                          </li>
-                          <li><a href="news-post-page.html">News Post Page</a>
-                          </li>
+                          <li><a href="classic-news.html">Classic news</a></li>
+                          <li><a href="grid-news.html">Grid News</a></li>
+                          <li><a href="masonry-news.html">Masonry News</a></li>
+                          <li><a href="grid-news-3-columns.html">3 Columns Grid News</a></li>
+                          <li><a href="modern-news.html">Modern News</a></li>
+                          <li><a href="news-post-page.html">News Post Page</a></li>
                         </ul>
                       </li>
                       <li><a href="#">Campus</a>
@@ -199,7 +137,7 @@
                   </div>
                 </div>
                 <!--RD Navbar Search-->
-                <div class="rd-navbar-search"><a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-search" href="#"><span></span></a>
+                <div class="rd-navbar-search"><a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-search" href="#" aria-label="Search"><span></span></a>
                   <form class="rd-navbar-search-form search-form-icon-right rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
                     <div class="form-group">
                       <label class="form-label" for="rd-navbar-search-form-input">Search</label>
@@ -214,40 +152,28 @@
             </div>
           </nav>
         </div>
-      </div>
+      </header>
       <!-- Page Content-->
-      <div class="page-content">
-        <section>
-          <!-- Swiper-->
-          <div class="swiper-container swiper-slider" data-height="42.1875%" data-loop="true" data-dragable="false" data-min-height="480px" data-slide-effect="true">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-slide-bg="images/slide-01-1920x810.jpg" style="background-position: 80% center;">
-                <div class="swiper-slide-caption">
-                  <div class="container">
-                    <div class="range range-xs-center range-lg-left">
-                      <div class="cell-md-9 text-md-left cell-xs-10">
-                        <div data-caption-animate="fadeInUp" data-caption-delay="100">
-                          <h1 class="text-bold"><a href="academic.html">Inspiration, Innovation and Discovery.</a></h1>
-                        </div>
-                        <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60 inset-lg-right-100">
-                          <h5>Any successful career starts with good education. Together with us you will have deeper knowledge of the subjects that will be especially useful for you when climbing the career ladder.</h5>
-                        </div>
-                        <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400">
-                          <a class="btn btn-primary" href="login-register.html">Sign Up for Excursion</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <main class="page-content">
+
+        <section class="bg-home context-dark text-left">
+          <!-- Background Image-->
+          <div class="shell section-70 section-xl-100 section-xl-bottom-114">
+            <div class="content offset-top-20 offset-xs-top-40 offset-xl-top-60 inset-lg-right-100">
+              <h1>Inspiration, Innovation and Discovery.</h1>
+              <p>Any successful career starts with good education. Together with us you will have deeper knowledge of the subjects that will be especially useful for you when climbing the career ladder.</p>
+            </div>
+            <div class="offset-top-20 offset-xl-top-40">
+              <a class="btn btn-primary" href="login-register.html">Sign Up for Excursion</a>
             </div>
           </div>
         </section>
+
         <!-- A Few Words About the University-->
         <section class="section-70 section-md-114">
           <div class="shell">
             <div class="range text-sm-left range-sm-middle range-sm-justify">
-              <div class="cell-sm-5 cell-md-4 cell-sm-push-2"><a href="home.html"><img class="img-responsive reveal-inline-block" src="images/logo-326x329.png" width="220" ></a></div>
+              <div class="cell-sm-5 cell-md-4 cell-sm-push-2"><a href="home1.html"><img class="img-responsive reveal-inline-block" src="images/logo-326x329.png" width="326" height="329" alt="Home"></a></div>
               <div class="cell-sm-7 cell-md-7 cell-sm-push-1 offset-top-50 offset-md-top-0">
                 <h2 class="text-bold">A Few Words <br class="veil reveal-lg-inline-block"> About the University</h2>
                 <hr class="divider bg-madison hr-sm-left-0">
@@ -260,21 +186,21 @@
           </div>
         </section>
         <!--Our Featured Courses-->
-        <section class="bg-madison context-dark">
+        <section class="bg-madison context-dark" aria-labelledby="id_featured_stories">
           <div class="shell">
             <div class="range range-xs-center range-sm-right offset-top-0">
               <div class="cell-xs-10 cell-sm-7 section-image-aside section-image-aside-left text-sm-left">
                 <div class="section-image-aside-img veil reveal-sm-block" style="background-image: url(images/home-01-846x1002.jpg);"></div>
                 <div class="section-image-aside-body section-70 section-md-114 inset-sm-left-70 inset-lg-left-110">
-                  <h2 class="text-bold">Our Featured Courses</h2>
+                  <h2 id="id_featured_stories" class="text-bold">Our Featured Courses</h2>
                   <hr class="divider hr-sm-left-0 bg-white">
                   <div class="offset-top-35 offset-md-top-60 text-light">Our Featured Courses are selected through a rigorous process and uniquely created for each semester.</div>
                   <div class="text-left">
                     <div class="offset-top-60">
-                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-01-150x120.jpg);"></a>
+                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-01-150x120.jpg);" aria-label="Financial Analyst Course"></a>
                         <div class="post-vacation-body">
                           <div>
-                            <h6 class="post-vacation-title"><a href="academic.html">Financial Analyst Course</a></h6>
+                            <h3 id="id_course_1" class="post-vacation-title"><a href="academic.html">Financial Analyst Course</a></h3>
                           </div>
                           <div class="offset-lg-top-10">
                             <p>Charles Banks</p>
@@ -282,19 +208,19 @@
                           <div class="post-vacation-meta offset-top-10">
                             <time class="text-dark" datetime="2016-01-01">June 3, 2016</time>
                             <ul class="list-inline list-unstyled list-inline-primary">
-                              <li><a class="icon icon-xxs mdi mdi-timer-sand" href="#" data-toggle="tooltip" data-placement="top" title="Part time"></a></li>
-                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" title="Certified"></a></li>
-                              <li><a class="icon icon-xxs mdi mdi-laptop-chromebook" href="#" data-toggle="tooltip" data-placement="top" title="Online Course"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-timer-sand" href="#" data-toggle="tooltip" data-placement="top" aria-label="Part Time" aria-describedby="id_course_1" title="Part time"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" aria-label="Certified"  aria-describedby="id_course_1"  title="Certified"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-laptop-chromebook" href="#" data-toggle="tooltip" data-placement="top" aria-label="Online Course"  aria-describedby="id_course_1" title="Online Course"></a></li>
                             </ul>
                           </div>
                         </div>
                       </article>
                     </div>
                     <div class="offset-top-30">
-                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-02-150x120.jpg);"></a>
+                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-02-150x120.jpg);" aria-label="Digital Marketing Course"></a>
                         <div class="post-vacation-body">
                           <div>
-                            <h6 class="post-vacation-title"><a href="academic.html">Digital Marketing Course</a></h6>
+                            <h3 id="id_course_2" class="post-vacation-title"><a href="academic.html">Digital Marketing Course</a></h3>
                           </div>
                           <div class="offset-lg-top-10">
                             <p>Maria Howard</p>
@@ -302,18 +228,18 @@
                           <div class="post-vacation-meta offset-top-10">
                             <time class="text-dark" datetime="2016-01-01">June 3, 2016</time>
                             <ul class="list-inline list-unstyled list-inline-primary">
-                              <li><a class="icon icon-xxs mdi mdi-battery-50" href="#" data-toggle="tooltip" data-placement="top" title="Facultative"></a></li>
-                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" title="Certified"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-battery-50" href="#" data-toggle="tooltip" data-placement="top" aria-label="Facultative" aria-describedby="id_course_2" title="Facultative"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" aria-label="Certified" aria-describedby="id_course_2" title="Certified"></a></li>
                             </ul>
                           </div>
                         </div>
                       </article>
                     </div>
                     <div class="offset-top-30">
-                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-03-150x120.jpg);"></a>
+                      <article class="post-vacation"><a class="post-vacation-img-wrap bg-image" href="academic.html" style="background-image: url(images/course-03-150x120.jpg);" aria-label="Graphic Design Course"></a>
                         <div class="post-vacation-body">
                           <div>
-                            <h6 class="post-vacation-title"><a href="academic.html">Graphic Design Course</a></h6>
+                            <h3 id="id_course_3" class="post-vacation-title"><a href="academic.html">Graphic Design Course</a></h3>
                           </div>
                           <div class="offset-lg-top-10">
                             <p>Steven Carter</p>
@@ -321,9 +247,9 @@
                           <div class="post-vacation-meta offset-top-10">
                             <time class="text-dark" datetime="2016-01-01">June 3, 2016</time>
                             <ul class="list-inline list-unstyled list-inline-primary">
-                              <li><a class="icon icon-xxs mdi mdi-battery-50" href="#" data-toggle="tooltip" data-placement="top" title="Facultative"></a></li>
-                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" title="Certified"></a></li>
-                              <li><a class="icon icon-xxs mdi mdi-laptop-chromebook" href="#" data-toggle="tooltip" data-placement="top" title="Online Course"></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-battery-50" href="#" data-toggle="tooltip" data-placement="top" title="Facultative" aria-label="Facultative" aria-describedby="id_course_3" ></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-star" href="#" data-toggle="tooltip" data-placement="top" title="Certified" aria-label="Certified" aria-describedby="id_course_3" ></a></li>
+                              <li><a class="icon icon-xxs mdi mdi-laptop-chromebook" href="#" data-toggle="tooltip" data-placement="top" title="Online Course" aria-label="Online Course" aria-describedby="id_course_3" ></a></li>
                             </ul>
                           </div>
                         </div>
@@ -337,9 +263,9 @@
           </div>
         </section>
         <!-- Counters-->
-        <section class="section-70 section-md-114">
+        <section class="section-70 section-md-114" aria-labelledby="id_statistics">
           <div class="shell">
-            <h2 class="text-bold">Statistics</h2>
+            <h2 id="id_statistics" class="text-bold">Statistics</h2>
             <hr class="divider bg-madison">
             <div class="range range-xs-center offset-top-60">
               <div class="cell-xs-10 cell-sm-8">
@@ -353,7 +279,7 @@
                   <div class="h3 text-bold text-primary offset-top-15"><span class="counter" data-speed="1300" data-from="0" data-to="97"></span><span>%</span></div>
                   <hr class="divider bg-gray-light divider-sm"/>
                   <div class="offset-top-10">
-                    <h6 class="text-black font-accent">Graduates</h6>
+                    <div class="stat text-black font-accent">Graduates</div>
                   </div>
                 </div>
               </div>
@@ -363,7 +289,7 @@
                   <div class="h3 text-bold text-primary offset-top-15"><span class="counter" data-speed="1250" data-from="0" data-to="30"></span><span>+</span></div>
                   <hr class="divider bg-gray-light divider-sm"/>
                   <div class="offset-top-10">
-                    <h6 class="text-black font-accent">Certified Teachers</h6>
+                    <div class="stat text-black font-accent">Certified Teachers</div>
                   </div>
                 </div>
               </div>
@@ -373,7 +299,7 @@
                   <div class="h3 text-bold text-primary offset-top-15"><span class="counter" data-step="1500" data-from="0" data-to="8"></span></div>
                   <hr class="divider bg-gray-light divider-sm"/>
                   <div class="offset-top-10">
-                    <h6 class="text-black font-accent">Student Campuses</h6>
+                    <div class="stat text-black font-accent">Student Campuses</div>
                   </div>
                 </div>
               </div>
@@ -383,7 +309,7 @@
                   <div class="h3 text-bold text-primary offset-top-15"><span class="counter" data-step="500" data-from="0" data-to="6510"></span></div>
                   <hr class="divider bg-gray-light divider-sm"/>
                   <div class="offset-top-10">
-                    <h6 class="text-black font-accent">Students</h6>
+                    <div class="stat text-black font-accent">Students</div>
                   </div>
                 </div>
               </div>
@@ -394,7 +320,7 @@
         <section class="context-dark">
           <div class="bg-vide" data-vide-bg="video/bg-video-1-lg" data-vide-options="posterType: jpg">
             <div class="shell section-100 section-md-160">
-              <h2 class="text-bold">Trusted by Over 6000+ Students</h2>
+              <h2 class="text-bold">ed by Over 6000+ Students</h2>
               <div class="offset-top-30">
                 <p>Join our community of students around the world helping you succeed.</p>
               </div>
@@ -403,17 +329,14 @@
           </div>
         </section>
         <!-- Events-->
-        <section class="bg-catskill">
+        <section class="bg-catskill" aria-labelledby="id_events">
           <div class="shell-wide section-70 section-md-114">
-            <h2 class="text-bold">Events</h2>
+            <h2 id="id_events" class="text-bold">Events</h2>
             <hr class="divider bg-madison">
             <div class="range offset-top-60 range-xs-center">
               <div class="cell-sm-6 cell-md-5 cell-xl-3">
                 <article class="post-event">
-                  <div class="post-event-img-overlay"><img class="img-responsive" src="images/blog/events-01-420x420.jpg" width="420" height="420" >
-                    <div class="post-event-overlay context-dark"><a class="btn btn-primary" href="apply.html">Book Now</a>
-                      <div class="offset-top-20"><a class="btn btn-default" href="event-page.html">Learn More</a></div>
-                    </div>
+                  <div><img class="img-responsive" src="images/blog/events-01-420x420.jpg" width="420" height="420" alt="">
                   </div>
                   <div class="unit unit-lg unit-lg-horizontal">
                     <div class="unit-left">
@@ -424,7 +347,7 @@
                     </div>
                     <div class="unit-body">
                       <div class="post-event-body text-lg-left">
-                        <h6><a href="event-page.html">Spacewalking Conference</a></h6>
+                        <h3><a href="event-page.html">Spacewalking Conference</a></h3>
                         <ul class="list-inline list-inline-xs">
                           <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline text-middle"></span><span class="inset-left-10 text-dark text-middle">Walter Stanley</span></a></li>
                         </ul>
@@ -435,10 +358,8 @@
               </div>
               <div class="cell-sm-6 cell-md-5 cell-xl-3 offset-top-50 offset-sm-top-0">
                 <article class="post-event">
-                  <div class="post-event-img-overlay"><img class="img-responsive" src="images/blog/events-02-420x420.jpg" width="420" height="420" >
-                    <div class="post-event-overlay context-dark"><a class="btn btn-primary" href="apply.html">Book Now</a>
-                      <div class="offset-top-20"><a class="btn btn-default" href="event-page.html">Learn More</a></div>
-                    </div>
+                  <div>
+                    <img class="img-responsive" src="images/blog/events-02-420x420.jpg" width="420" height="420" alt="">
                   </div>
                   <div class="unit unit-lg unit-lg-horizontal">
                     <div class="unit-left">
@@ -449,7 +370,7 @@
                     </div>
                     <div class="unit-body">
                       <div class="post-event-body text-lg-left">
-                        <h6><a href="event-page.html">International Conference on Biomolecular Engineering</a></h6>
+                        <h3><a href="event-page.html">International Conference on Biomolecular Engineering</a></h3>
                         <ul class="list-inline list-inline-xs">
                           <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline text-middle"></span><span class="inset-left-10 text-dark text-middle">Raymond Salazar</span></a></li>
                         </ul>
@@ -460,10 +381,7 @@
               </div>
               <div class="cell-sm-6 cell-md-5 cell-xl-3 offset-top-50 offset-xl-top-0">
                 <article class="post-event">
-                  <div class="post-event-img-overlay"><img class="img-responsive" src="images/blog/events-03-420x420.jpg" width="420" height="420" >
-                    <div class="post-event-overlay context-dark"><a class="btn btn-primary" href="apply.html">Book Now</a>
-                      <div class="offset-top-20"><a class="btn btn-default" href="event-page.html">Learn More</a></div>
-                    </div>
+                  <div><img class="img-responsive" src="images/blog/events-03-420x420.jpg" width="420" height="420" alt="">
                   </div>
                   <div class="unit unit-lg unit-lg-horizontal">
                     <div class="unit-left">
@@ -474,7 +392,7 @@
                     </div>
                     <div class="unit-body">
                       <div class="post-event-body text-lg-left">
-                        <h6><a href="event-page.html">Graphic Design Workshop</a></h6>
+                        <h3><a href="event-page.html">Graphic Design Workshop</a></h3>
                         <ul class="list-inline list-inline-xs">
                           <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline text-middle"></span><span class="inset-left-10 text-dark text-middle">Bruce Hawkins</span></a></li>
                         </ul>
@@ -485,10 +403,8 @@
               </div>
               <div class="cell-sm-6 cell-md-5 cell-xl-3 offset-top-50 offset-xl-top-0">
                 <article class="post-event">
-                  <div class="post-event-img-overlay"><img class="img-responsive" src="images/blog/events-04-420x420.jpg" width="420" height="420" >
-                    <div class="post-event-overlay context-dark"><a class="btn btn-primary" href="apply.html">Book Now</a>
-                      <div class="offset-top-20"><a class="btn btn-default" href="event-page.html">Learn More</a></div>
-                    </div>
+                  <div>
+                    <img class="img-responsive" src="images/blog/events-04-420x420.jpg" width="420" height="420" alt="">
                   </div>
                   <div class="unit unit-lg unit-lg-horizontal">
                     <div class="unit-left">
@@ -499,7 +415,7 @@
                     </div>
                     <div class="unit-body">
                       <div class="post-event-body text-lg-left">
-                        <h6><a href="event-page.html">History of Art</a></h6>
+                        <h3><a href="event-page.html">History of Art</a></h3>
                         <ul class="list-inline list-inline-xs">
                           <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline text-middle"></span><span class="inset-left-10 text-dark text-middle">Danielle Garza</span></a></li>
                         </ul>
@@ -513,15 +429,15 @@
           </div>
         </section>
         <!-- Latest news-->
-        <section class="bg-catskill">
+        <section class="bg-catskill" aria-labelledby="id_latest_news">
           <div class="shell section-70 section-md-114">
-            <h2 class="text-bold">Latest News</h2>
+            <h2 id="id_latest_news" class="text-bold">Latest News</h2>
             <hr class="divider bg-madison">
             <div class="range offset-top-60 text-left range-xs-center">
               <div class="cell-sm-6 cell-md-4">
-                <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-01-370x240.jpg" width="370" height="240"></a>
+                <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-01-370x240.jpg" width="370" height="240" alt="Liberal Arts Colleges Rankings"></a>
                   <div class="post-news-body">
-                    <h6><a href="news-post-page.html">Liberal Arts Colleges Rankings</a></h6>
+                    <h3><a href="news-post-page.html">Liberal Arts Colleges Rankings</a></h3>
                     <div class="offset-top-20">
                       <p>Liberal Arts Colleges emphasize undergraduate education and award at least half of their degrees in the liberal arts fields of study.</p>
                     </div>
@@ -529,11 +445,12 @@
                   </div>
                 </article>
                 <div class="offset-top-30">
-                  <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-04-370x240.jpg" width="370" height="240"></a>
+                  <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-04-370x240.jpg" width="370" height="240" alt="Ways Parents and Counselors Can
+                          Help Students Earn Scholarships"></a>
                     <div class="post-news-body">
-                      <h6><a href="news-post-page.html">
+                      <h3><a href="news-post-page.html">
                           Ways Parents and Counselors Can
-                          Help Students Earn Scholarships</a></h6>
+                          Help Students Earn Scholarships</a></h3>
                       <div class="offset-top-20">
                         <p>Securing scholarships can be stressful, but parents and counselors can serve as a resource.</p>
                       </div>
@@ -543,9 +460,9 @@
                 </div>
               </div>
               <div class="cell-sm-6 cell-md-4 offset-top-30 offset-sm-top-0">
-                <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-02-370x240.jpg" width="370" height="240"></a>
+                <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-02-370x240.jpg" width="370" height="240" alt="10 Law Schools Where the Most Accepted Students Enroll"></a>
                   <div class="post-news-body">
-                    <h6><a href="news-post-page.html">10 Law Schools Where the Most Accepted Students Enroll</a></h6>
+                    <h3><a href="news-post-page.html">10 Law Schools Where the Most Accepted Students Enroll</a></h3>
                     <div class="offset-top-20">
                       <p>At these schools, at least 42 percent of accepted students enrolled in fall 2015, U.S. News data show.</p>
                     </div>
@@ -553,11 +470,12 @@
                   </div>
                 </article>
                 <div class="offset-top-30">
-                  <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-05-370x240.jpg" width="370" height="240"></a>
+                  <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-05-370x240.jpg" width="370" height="240" alt="Consider MBA Programs That
+                          Offer Summer Prep"></a>
                     <div class="post-news-body">
-                      <h6><a href="news-post-page.html">
+                      <h3><a href="news-post-page.html">
                           Consider MBA Programs That
-                          Offer Summer Prep</a></h6>
+                          Offer Summer Prep</a></h3>
                       <div class="offset-top-20">
                         <p>Summer preparatory programs offered through schools allow students to get a head start on making connections and building skills.</p>
                       </div>
@@ -569,9 +487,9 @@
               <div class="cell-sm-12 cell-md-4 offset-top-30 offset-md-top-0">
                 <div class="range">
                   <div class="cell-sm-6 cell-md-12">
-                    <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-03-370x240.jpg" width="370" height="240" ></a>
+                    <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-03-370x240.jpg" width="370" height="240" alt="5 Ways to Pay for Community College"></a>
                       <div class="post-news-body">
-                        <h6><a href="news-post-page.html">5 Ways to Pay for Community College</a></h6>
+                        <h3><a href="news-post-page.html">5 Ways to Pay for Community College</a></h3>
                         <div class="offset-top-20">
                           <p>Many community colleges offer promise programs, which offer tuition-free awards to eligible students – mainly to students with Pell grant eligibility.</p>
                         </div>
@@ -580,9 +498,9 @@
                     </article>
                   </div>
                   <div class="cell-sm-6 cell-md-12 offset-top-30 offset-sm-top-0 offset-md-top-30">
-                    <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-06-370x240.jpg" width="370" height="240"></a>
+                    <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-06-370x240.jpg" width="370" height="240" alt="Studying in the United States"></a>
                       <div class="post-news-body">
-                        <h6><a href="news-post-page.html">Studying in the United States</a></h6>
+                        <h3><a href="news-post-page.html">Studying in the United States</a></h3>
                         <div class="offset-top-20">
                           <p>International students increasingly want to come to the United States for college or graduate school.</p>
                         </div>
@@ -596,25 +514,29 @@
             <div class="offset-top-50"><a class="btn btn-primary" href="modern-news.html">View All News Posts</a></div>
           </div>
         </section>
-      </div>
+      </main>
       <!-- Corporate footer-->
-      <div class="page-footer">
+      <footer class="page-footer">
         <div class="shell-wide">
           <div class="hr bg-gray-light"></div>
         </div>
         <div class="shell section-60">
           <div class="range range-lg-justify range-xs-center">
             <div class="cell-md-3 cell-lg-2">
-              <!--Footer brand--><a class="reveal-inline-block" href="home.html"><img width='170' height='172' src='images/logo-170.png' alt=''/>
+              <h2 class="sr-only">Footer Content</h2>
+              <!--Footer brand-->
+              <a class="reveal-inline-block" href="accessible.html">
+                <img width='170' height='172' src='images/logo-170.png' alt='John Adams University'/>
+              </a>
                 <div>
-                  <h6 class="barnd-name text-bold offset-top-25">John Adams</h6>
+                  <div class="barnd-name text-bold offset-top-25">John Adams</div>
                 </div>
                 <div>
-                  <p class="brand-slogan text-gray text-italic font-accent">University</p>
-                </div></a>
+                  <p class="brand-slogan text-italic font-accent">University</p>
+                </div>
             </div>
             <div class="cell-xs-10 cell-md-5 cell-lg-4 text-lg-left offset-top-50 offset-md-top-0">
-              <h6 class="text-bold">Contact us</h6>
+              <h3 class="text-bold">Contact us</h3>
               <div class="text-subline"></div>
               <div class="offset-top-30">
                 <ul class="list-unstyled contact-info list">
@@ -634,31 +556,32 @@
                   <li class="offset-top-15">
                     <div class="unit unit-horizontal unit-middle unit-spacing-xs">
                       <div class="unit-left"><span class="icon mdi mdi-email-open text-middle icon-xs text-madison"></span></div>
-                      <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                      <div class="unit-body"><a href="mailto:#">info@uadams.org</a></div>
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="offset-top-15 text-left">
                 <ul class="list-inline list-inline-xs list-inline-madison">
-                  <li><a class="icon icon-xxs fa-facebook icon-circle icon-gray-light-filled" href="#"></a></li>
-                  <li><a class="icon icon-xxs fa-twitter icon-circle icon-gray-light-filled" href="#"></a></li>
-                  <li><a class="icon icon-xxs fa-google icon-circle icon-gray-light-filled" href="#"></a></li>
-                  <li><a class="icon icon-xxs fa-instagram icon-circle icon-gray-light-filled" href="#"></a></li>
+                  <li><a class="icon icon-xxs fa-facebook icon-circle icon-gray-light-filled" href="#" title="Facebook"></a></li>
+                  <li><a class="icon icon-xxs fa-twitter icon-circle icon-gray-light-filled" href="#" title="Twitter"></a></li>
+                  <li><a class="icon icon-xxs fa-google icon-circle icon-gray-light-filled" href="#" title="Google"></a></li>
+                  <li><a class="icon icon-xxs fa-instagram icon-circle icon-gray-light-filled" href="#" title="Instagram"></a></li>
                 </ul>
               </div>
             </div>
             <div class="cell-xs-10 cell-md-8 cell-lg-4 text-lg-left offset-top-50 offset-lg-top-0">
-              <h6 class="text-bold">Newsletter</h6>
+              <h3 class="text-bold">Newsletter</h3>
               <div class="text-subline"></div>
               <div class="offset-top-30 text-left">
                 <p>Enter your email address to get the latest University news, special events and student activities delivered right to your inbox.</p>
+                <label for="id_email" style="color: black; font-weight: bold">Your E-mail Address</label>
               </div>
               <div class="offset-top-10">
                 <form class="rd-mailform form-subscribe" data-form-output="form-subscribe-footer" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                   <div class="form-group">
                     <div class="input-group input-group-sm">
-                      <input class="form-control" placeholder="Your e-mail" type="email" name="email" data-constraints="@Required @Email"/><span class="input-group-btn">
+                      <input id="id_email" class="form-control" placeholder="Your e-mail" type="email" name="email" data-constraints="@Required @Email" ><span class="input-group-btn">
                         <button class="btn btn-sm btn-primary" type="submit">Subscribe</button></span>
                     </div>
                   </div>
@@ -670,11 +593,10 @@
         </div>
         <div class="bg-madison context-dark">
           <div class="shell text-md-left section-5">
-            More University Templates at <a rel="nofollow" href="http://www.templatemonster.com/category.php?category=186&type=1" target="_blank">TemplateMonster.com</a>
             <p>&copy; <span id="copyright-year"></span> All Rights Reserved Terms of Use and <a href="privacy.html">Privacy Policy</a></p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
@@ -716,5 +638,21 @@
     <!-- Java script-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/menu-a11y.js"></script>
+
+    <script>
+    var SkipToConfig =
+    {
+      "settings": {
+        "skipTo": {
+          "headings"   : "h1, h2",
+          "sections"   : "nav, footer"
+        }
+      }
+    };
+    </script>
+
+
+    <script type="text/javascript" src="https://paypal.github.io/skipto/downloads/js/SkipTo.min.js"></script>
   </body>
 </html>

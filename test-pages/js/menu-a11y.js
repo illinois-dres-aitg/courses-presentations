@@ -14,13 +14,19 @@ function blurPopupMenu(event) {
 };
 
 function focusDropDownMenu(event) {
-  var node = event.currentTarget.parentNode.parentNode.parentNode;
+  var node = event.currentTarget.parentNode;
   node.classList.add('focus');
+  node = node.parentNode.parentNode;
+  node.classList.add('focus');
+  event.currentTarget.style.color = "#FFFFFF";
 };
 
 function blurDropDownMenu(event) {
-  var node = event.currentTarget.parentNode.parentNode.parentNode;
+  var node = event.currentTarget.parentNode;
   node.classList.remove('focus');
+  node = node.parentNode.parentNode;
+  node.classList.remove('focus');
+  event.currentTarget.style.color = "#B3BFDC";
 };
 
 window.addEventListener('load', function () {
@@ -48,7 +54,7 @@ window.addEventListener('load', function () {
   node = document.getElementById('ui-to-top');
 
   if (node) {
-    node.setAttribute('aria-label', 'Got to top of page');
+    node.setAttribute('aria-label', 'Go to top of page');
   }
 
   var submenuToggles = document.querySelectorAll('span.rd-navbar-submenu-toggle');

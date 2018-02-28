@@ -5,6 +5,10 @@ a.btn:focus {
   text-decoration: underline;
 }
 
+.rd-navbar-nav > .rd-navbar-submenu > .rd-navbar-dropdown > .focus > a:focus{
+  outline: 2px white solid;
+}
+
 button:focus {
   outline: 2px #b80924 solid;
 }
@@ -12,4 +16,15 @@ button:focus {
 a#drop4 {
   color: black;
   background-color: white;
+}
+
+.has-error .input-group-btn > .btn {
+  background-color: #F4470A;
+  border-color: #F4470A;
+}
+
+.has-error .form-validation {
+  padding-top: 0.125em;
+  color:  #F4470A;
+  font-size: 100%;
 }
