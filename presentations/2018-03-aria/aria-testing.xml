@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Automated Testing of Browser Implementation of ARIA and HTML5</title>
+  <person>
+    <name>Joanmarie Diggs</name>
+    <desc href="https://www.igalia.com/nc/igalia-247/igalian/item/jdiggs/">Igalia</desc>
+    <desc href="mailto:jdiggs@igalia.com">E-mail Joanmarie Diggs</desc>
+  </person>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+  <conference>
+    <name href="http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/316">2018 CSUN Conference, San Diego, CA</name>
+    <desc>March 23rd, 2018</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>ARIA Working Group</li>
+        <li>Accessibility Standards</li>
+        <li>Accessibility Standards and Asssitive Technologies</li>
+        <li>Testing web browsers for implementation</li>
+        <li>Implementatoin results</li>
+        <li>How you can help</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Working Group</title>
+    <contents>
+      <ul>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>WCAG 2.0 Is Not the Only Accessibility Standard</title>
+    <contents>
+      <ul>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Assistive Technologies and Web Standards</title>
+    <contents>
+      <ul>
+        <li></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Testing Web Browsers for Implementation</title>
+    <contents>
+      <ul>
+        <li>Headings and Paragraphs</li>
+        <li>Links</li>
+        <li>Images</li>
+        <li>Help</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ATTA Demos</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Implementation Reports</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>E-mail Discussion and Github Repository</title>
+    <contents>
+      <ul>
+        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
+        <li><a href="https://github.com/a11yfirst/plugins-dev">A11yFirst github respository</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>A11yFirst for CKEditor: Support Creating of Accessible Web Documents through User Interface Enhancements</title>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <person>
+    <name>Jaeun Ku</name>
+    <desc href="http://library.illinois.edu">University Library</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jku@illinois.edu">jku@illinois.edu</desc>
+  </person>
+  <conference>
+    <name href="http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/316">2018 CSUN Conference, San Diego, CA</name>
+    <desc>March 23rd, 2018</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Project goals</li>
+        <li>Features of A11yFrist plug-ins</li>
+        <li>Usability testing results</li>
+        <li>Next steps</li>
+        <li>Communication and dissemination</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Project Goals</title>
+    <contents>
+      <ul>
+        <li>Accessible authoring versus accessibility remediation.</li>
+        <li>User interface features that support and encourage accessible authoring.</li>
+        <li>Create features to help authors understand accessibility.</li>
+        <li>Support accessibility (<em>not replace</em>) the <a href="https://ckeditor.com/cke4/addon/a11ychecker">A11y Accessibility Checker for CKEditor</a>.</li>
+      </ul>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Authoring Issues</title>
+    <contents>
+      <ul>
+        <li>Content editors requirements for online content to be accessible.</li>
+        <li>The importance of their role in making online content accessible.</li>
+        <li>The techniques they must use to create accessible content.</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Modifications</title>
+    <contents>
+      <ul>
+        <li>Headings and Paragraphs</li>
+        <li>Links</li>
+        <li>Images</li>
+        <li>Help</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Demo</title>
+    <contents>
+      <p><a href="https://a11yfirst.library.illinois.edu/">A11yFirst Demonstration Website</a></p>
+      <iframe src="https://a11yfirst.library.illinois.edu/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>E-mail Discussion and Github Repository</title>
+    <contents>
+      <ul>
+        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
+        <li><a href="https://github.com/a11yfirst/plugins-dev">A11yFirst github respository</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+
