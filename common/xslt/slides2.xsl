@@ -340,6 +340,7 @@
                     <xsl:element name="li">
                       <xsl:attribute name="class">disabled</xsl:attribute>
                       <xsl:element name="a">
+                        <xsl:attribute name="id">ID_SLIDE_INDEX</xsl:attribute>
                         <xsl:attribute name="href">#</xsl:attribute>
                         Index
                       </xsl:element>
@@ -348,7 +349,9 @@
                   <xsl:otherwise>
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href">index.html</xsl:attribute>Index
+                        <xsl:attribute name="id">ID_SLIDE_INDEX</xsl:attribute>
+                        <xsl:attribute name="href">index.html</xsl:attribute>
+                        Index
                       </xsl:element>
                     </xsl:element>
                   </xsl:otherwise>
@@ -358,7 +361,9 @@
                   <xsl:when test="$num>1">
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href">slide1.html</xsl:attribute>First
+                        <xsl:attribute name="id">ID_SLIDE_FIRST</xsl:attribute>
+                        <xsl:attribute name="href">slide1.html</xsl:attribute>
+                        First
                       </xsl:element>
                     </xsl:element>
                   </xsl:when>
@@ -366,7 +371,9 @@
                     <xsl:element name="li">
                       <xsl:attribute name="class">disabled</xsl:attribute>
                       <xsl:element name="a">
-                        <xsl:attribute name="href">slide1.html</xsl:attribute>First
+                        <xsl:attribute name="id">ID_SLIDE_FIRST</xsl:attribute>
+                        <xsl:attribute name="href">slide1.html</xsl:attribute>
+                        First
                       </xsl:element>
                     </xsl:element>
                   </xsl:otherwise>
@@ -376,6 +383,7 @@
                   <xsl:when test="$num>1">
                     <xsl:element name="li">
                       <xsl:element name="a">
+                        <xsl:attribute name="id">ID_SLIDE_PREVIOUS</xsl:attribute>
                         <xsl:attribute name="href"><xsl:value-of select="$previous"/></xsl:attribute>Previous
                       </xsl:element>
                     </xsl:element>
@@ -384,6 +392,7 @@
                     <xsl:element name="li">
                       <xsl:attribute name="class">disabled</xsl:attribute>
                       <xsl:element name="a">
+                        <xsl:attribute name="id">ID_SLIDE_PREVIOUS</xsl:attribute>
                         <xsl:attribute name="href">#</xsl:attribute>
                         Previous
                       </xsl:element>
@@ -395,12 +404,16 @@
                   <xsl:when test="$num=0">
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href"><xsl:value-of select="$next"/></xsl:attribute>Next
+                        <xsl:attribute name="id">ID_SLIDE_NEXT</xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="$next"/></xsl:attribute>
+                        Next
                       </xsl:element>
                     </xsl:element>
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href"><xsl:value-of select="$last"/></xsl:attribute>Last
+                        <xsl:attribute name="id">ID_SLIDE_LAST</xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="$last"/></xsl:attribute>
+                        Last
                       </xsl:element>
                     </xsl:element>
                   </xsl:when>
@@ -408,12 +421,16 @@
                   <xsl:when test="$num&lt;$total">
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href"><xsl:value-of select="$next"/></xsl:attribute>Next
+                        <xsl:attribute name="id">ID_SLIDE_NEXT</xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="$next"/></xsl:attribute>
+                        Next
                       </xsl:element>
                     </xsl:element>
                     <xsl:element name="li">
                       <xsl:element name="a">
-                        <xsl:attribute name="href"><xsl:value-of select="$last"/></xsl:attribute>Last
+                        <xsl:attribute name="id">ID_SLIDE_LAST</xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="$last"/></xsl:attribute>
+                        Last
                       </xsl:element>
                     </xsl:element>
                   </xsl:when>
@@ -422,6 +439,7 @@
                     <xsl:element name="li">
                       <xsl:attribute name="class">disabled</xsl:attribute>
                       <xsl:element name="a">
+                        <xsl:attribute name="id">ID_SLIDE_NEXT</xsl:attribute>
                         <xsl:attribute name="href">#</xsl:attribute>
                         Next
                       </xsl:element>
@@ -429,6 +447,7 @@
                     <xsl:element name="li">
                       <xsl:attribute name="class">disabled</xsl:attribute>
                       <xsl:element name="a">
+                        <xsl:attribute name="id">ID_SLIDE_LAST</xsl:attribute>
                         <xsl:attribute name="href">#</xsl:attribute>
                         Last
                       </xsl:element>

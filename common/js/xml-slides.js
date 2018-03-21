@@ -1,5 +1,4 @@
-$(document).ready(
-  function() {
+function resizeContent() {
 
     $('#content').css('marginBottom', 4);
 
@@ -12,34 +11,83 @@ $(document).ready(
 
     // resize HTML Slide to fit window
     if( document_height > space) {
-    
-        $('#content').css('marginBottom', space);
-        
-    }
-  
-  } // end ready function
 
-)  // end ready event
+        $('#content').css('marginBottom', space);
+
+    }
+
+};
+
+$(document).ready(function() {
+
+    // hide content with the more class
+    $('.more').css('display', 'none');
+
+    resizeContent()
+
+});  // end ready event
+
+$(document).keydown(function( event ) {
+  var found = false;
+
+  if ( ( event.which == 32 && !event.shiftKey ) || (event.which == 40)) {
+    $('.more').each(function() {
+      if (!found && $(this).css('display') === 'none') {
+        $(this).fadeIn();
+        found = true;
+        resizeContent();
+      }
+    })
+    event.preventDefault();
+  }
+
+  if ( ( event.which == 32 && event.shiftKey ) || (event.which == 38)) {
+    $($('.more').get().reverse()).each(function() {
+      if (!found && $(this).css('display') !== 'none') {
+        $(this).fadeOut('slow', resizeContent);
+        found = true;
+      }
+    })
+    event.preventDefault();
+  }
+
+  if ( event.shiftKey && (event.which == 40)) {
+    $('.more').fadeIn();
+    event.preventDefault();
+  }
+
+  if ( event.shiftKey && (event.which == 38)) {
+    $('.more').fadeOut();
+    event.preventDefault();
+  }
+
+  if ( !event.ctrlKey && !event.altKey && event.which == 37 ) {
+    if (event.shiftKey) {
+      $('a#ID_SLIDE_FIRST').get(0).click();
+    }
+    else {
+      $('a#ID_SLIDE_PREVIOUS').get(0).click();
+    }
+    event.preventDefault();
+  }
+
+  if ( !event.ctrlKey && !event.altKey && event.which == 39 ) {
+    if (event.shiftKey) {
+      $('a#ID_SLIDE_LAST').get(0).click();
+    }
+    else {
+      $('a#ID_SLIDE_NEXT').get(0).click();
+    }
+    event.preventDefault();
+  }
+
+
+});
+
 
 $(window).resize(
   function() {
-
-    $('#content').css('marginBottom', 4);
-
-    var index_height     = $('#index').height();
-    var content_height   = $('#content').innerHeight();
-    var copyright_height = $('#copyright').height();
-    var document_height  = $(document).height();
-
-    var space = document_height - index_height - copyright_height - content_height - 120;
-
-    // resize HTML Slide to fit window
-    if( document_height > space) {
-    
-        $('#content').css('marginBottom', space);
-        
-    }
-  
+    resizeContent()
   } // end ready function
 
 )

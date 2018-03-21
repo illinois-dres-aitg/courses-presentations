@@ -3,7 +3,7 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
   <lang>en</lang>
-  <title>A11yFirst for CKEditor: Support Creating of Accessible Web Documents through User Interface Enhancements</title>
+  <title>a11yFirst for CKEditor: Support Creating of Accessible Web Documents through User Interface Enhancements</title>
   <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
@@ -11,7 +11,7 @@
     <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   </person>
   <person>
-    <name>Jaeun Ku</name>
+    <name>Jaeun Ku (Jemma)</name>
     <desc href="http://library.illinois.edu">University Library</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jku@illinois.edu">jku@illinois.edu</desc>
@@ -38,9 +38,10 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Project goals</li>
-        <li>Features of A11yFrist plug-ins</li>
+        <li>Accessible Authoring</li>
+        <li>Features of a11yFirst plug-ins</li>
         <li>Usability testing results</li>
+        <li>WordPress and Drupal plug-ins</li>
         <li>Next steps</li>
         <li>Communication and dissemination</li>
       </ul>
@@ -54,23 +55,22 @@
     <title>A11yFirst Project Goals</title>
     <contents>
       <ul>
-        <li>Accessible authoring versus accessibility remediation.</li>
-        <li>User interface features that support and encourage accessible authoring.</li>
-        <li>Create features to help authors understand accessibility.</li>
-        <li>Support accessibility (<em>not replace</em>) the <a href="https://ckeditor.com/cke4/addon/a11ychecker">A11y Accessibility Checker for CKEditor</a>.</li>
+        <li class="more">Accessible authoring versus accessibility remediation.</li>
+        <li class="more">Support accessibility as content is created.</li>
+        <li class="more">Teach authors about accessibility.</li>
       </ul>
     </contents>
   </slide>
 
 
   <slide>
-    <title>Authoring Issues</title>
+    <title>Current User Models</title>
     <contents>
-      <ul>
-        <li>Content editors requirements for online content to be accessible.</li>
-        <li>The importance of their role in making online content accessible.</li>
-        <li>The techniques they must use to create accessible content.</li>
-      </ul>
+      <ol>
+        <li class="more">Accessibility is part of their responsibilities.</li>
+        <li class="more">The HTML semantics of of headings, lists and other structural markup.</li>
+        <li class="more">.</li>
+      </ol>
 
     </contents>
   </slide>
@@ -82,7 +82,7 @@
         <li>Headings and Paragraphs</li>
         <li>Links</li>
         <li>Images</li>
-        <li>Help</li>
+        <li>Help/Information</li>
       </ul>
     </contents>
   </slide>
@@ -95,6 +95,19 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>WordPress and Drupal</title>
+    <contents>
+      <p></p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Next Steps</title>
+    <contents>
+      <p></p>
+    </contents>
+  </slide>
 
   <slide>
     <title>E-mail Discussion and Github Repository</title>
