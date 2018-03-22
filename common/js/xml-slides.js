@@ -30,7 +30,9 @@ $(document).ready(function() {
 });  // end ready event
 
 $(document).keydown(function( event ) {
-  var found = false;
+  var found      = false;
+  var allVisible = true;
+  var allHidden  = true;
 
   if ( ( event.which == 32 && !event.shiftKey ) || (event.which == 40)) {
     $('.more').each(function() {
@@ -40,7 +42,10 @@ $(document).keydown(function( event ) {
         resizeContent();
       }
     })
-    event.preventDefault();
+
+    if (found) {
+      event.preventDefault();
+    }
   }
 
   if ( ( event.which == 32 && event.shiftKey ) || (event.which == 38)) {
@@ -50,17 +55,32 @@ $(document).keydown(function( event ) {
         found = true;
       }
     })
-    event.preventDefault();
+
+    if (found) {
+      event.preventDefault();
+    }
   }
 
   if ( event.shiftKey && (event.which == 40)) {
-    $('.more').fadeIn();
-    event.preventDefault();
+    $('.more').each(function() {
+      allVisible = allVisible && ($(this).css('display') !== 'none');
+    })
+
+    if (!allVisible) {
+      $('.more').fadeIn();
+      event.preventDefault();
+    }
   }
 
   if ( event.shiftKey && (event.which == 38)) {
-    $('.more').fadeOut();
-    event.preventDefault();
+    $('.more').each(function() {
+      allHidden = allHidden && ($(this).css('display') === 'none');
+    });
+
+    if (!allHidden) {
+      $('.more').fadeOut();
+      event.preventDefault();
+    }
   }
 
   if ( !event.ctrlKey && !event.altKey && event.which == 37 ) {

@@ -51,31 +51,48 @@
   </slide>
 
   <slide>
-    <title>ARIA Working Group</title>
+    <title>WCAG Is Not the Only Accessibility Standard from the W3C</title>
     <contents>
       <ul>
-        <li></li>
+        <li class="more"><a href="">HTML 5.x</a></li>
+        <li class="more"><a href="">Accessible Rich Internet Application 1.1</a></li>
+        <li class="more"><a href="">Accessibility API Maaping (Core AAM)</a></li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>WCAG 2.0 Is Not the Only Accessibility Standard</title>
+    <title>What is the difference between WCAG and other W3C Accessibility Standards?</title>
     <contents>
       <ul>
-        <li></li>
+        <li class="more">WCAG 2.0 is interpreted for various technologies and changes in technologies.</li>
+        <li class="more">ARIA is specific markup and meanings.</li>
+        <li class="more">HTML5 and SVG define accessibility API mappings.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Activities of the ARIA Working Group</title>
+    <contents>
+      <ul>
+        <li class="more">ARIA Specfication</li>
+        <li class="more">ARIA Authoring Practices</li>
+        <li class="more">Accessibility API Mapping (AAM) of events, roles, properties and states</li>
+        <li>Coordinate activities with other working groups, including HTML5, DPUB and SVG.</li>
+        <li class="more">Testing browsers for implementation</li>
       </ul>
     </contents>
   </slide>
 
 
   <slide>
-    <title>Assistive Technologies and Web Standards</title>
+    <title>ARIA and Assistive Technologies</title>
     <contents>
       <ul>
-        <li></li>
+        <li>Authors use native semantics and</li>
+        <li>ARIA defines accessibility API mappings</li>
       </ul>
-
     </contents>
   </slide>
 

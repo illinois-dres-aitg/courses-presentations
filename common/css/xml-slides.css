@@ -93,7 +93,13 @@ main dt {
 }
 
 main dd {
-    margin-bottom: 0.5em;
+    margin: 0;
+    padding: 0;
+}
+
+main dd:before {
+    content: '-';
+    padding-right: 0.25em;
 }
 
 main .desc {
@@ -167,6 +173,6 @@ main img.chart {
 }
 
 main .table-striped > tbody > tr:nth-of-type(2n+1) {
-  background-color: #ccddff;
+  background-color: #eeffff;
 }
 
