@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Assistive Technologies and Web Standards</title>
+<title>Slide 5: HTML5, ARIA and Assistive Technologies (ATs)</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,23 +40,45 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide10.html">
+<a id="ID_SLIDE_LAST" href="slide11.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 5 of 10</div>
+<div class="navbar-text pull-right">Slide 5 of 11</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Assistive Technologies and Web Standards</h1>
-<ul>
+<h1 id="h1_title" class="title">HTML5, ARIA and Assistive Technologies (ATs)</h1>
+<dt>
         
-<li></li>
+<dt class="more">Authors</dt>
+        
+<dd class="more">HTML5 native semantics used to idenitfy the features and interaction on a page.</dd>
+        
+<dd class="more">ARIA is added to supplement native semantics or to fill in when no native semantics exist.</dd>
+        
+<dd class="more">ARIA <em>only</em> changes how information is communicated to <abbr title="Assistive Technologies">ATs</abbr>, does <code>not</code> change the beahvior of browsers*.</dd>
+
+        
+<dt class="more">Web Browsers</dt>
+        
+<dd class="more">Provide information to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> based on content provided by the author.</dd>
+        
+<dd class="more">Browsers <em>must</em> communicate the same information to accessibility APIs to acheive interoperability.</dd>
+
+        
+<dt class="more">Assistive Technologies</dt>
+        
+<dd class="more">Screen readers typically read role, name and description information to users as they navigate the content of a page.</dd>
+        
+<dd class="more">
+<abbr title="Assistive Technologies">ATs</abbr> are free to use or not use information in the accessibility API, none of the W3C specications defines their use or behavior of accessibility information*.</dd>
       
-</ul>
+</dt>
+<p class="more" style="margin-top: 1.5em">* Part of the original contract with browser and assistive technology developers to implement ARIA requirements.</p>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

@@ -37,11 +37,11 @@
     <title>Overview</title>
     <contents>
       <ul>
+        <li>W3C Accessibility Standards</li>
         <li>ARIA Working Group</li>
-        <li>Accessibility Standards</li>
         <li>Accessibility Standards and Asssitive Technologies</li>
         <li>Testing web browsers for implementation</li>
-        <li>Implementatoin results</li>
+        <li>Implementation results</li>
         <li>How you can help</li>
       </ul>
       <script type="text/javascript">
@@ -64,11 +64,20 @@
   <slide>
     <title>What is the difference between WCAG and other W3C Accessibility Standards?</title>
     <contents>
-      <ul>
-        <li class="more">WCAG 2.0 is interpreted for various technologies and changes in technologies.</li>
-        <li class="more">ARIA is specific markup and meanings.</li>
-        <li class="more">HTML5 and SVG define accessibility API mappings.</li>
-      </ul>
+      <dl>
+        <dt class="more">Web Content Acessibility Guidelines 2.0</dt>
+        <dd class="more">Guidelines that are interpreted for various technologies and operating environments.</dd>
+        <dd class="more">Disagreements on what is required or not required in different situations.</dd>
+
+        <dt class="more">ARIA Markup</dt>
+        <dd class="more">Specific syntax and requirements (e.g. a <code>menu</code> must have <code>menuitem</code>s).</dd>
+        <dd class="more">Expected behaviors associated with each role (e.g. <a href="https://www.w3.org/TR/wai-aria-practices/">ARIA Authoring Practices</a>).</dd>
+
+        <dt class="more">ARIA, HTML5 and SVG</dt>
+        <dd class="more">Define specific accessibility API mappings.</dd>
+        <dd class="more">Browsers either do the mapping requirement or not, no interpretation.</dd>
+
+      </dl>
     </contents>
   </slide>
 
@@ -79,20 +88,31 @@
         <li class="more">ARIA Specfication</li>
         <li class="more">ARIA Authoring Practices</li>
         <li class="more">Accessibility API Mapping (AAM) of events, roles, properties and states</li>
-        <li>Coordinate activities with other working groups, including HTML5, DPUB and SVG.</li>
-        <li class="more">Testing browsers for implementation</li>
+        <li class="more">Coordinate activities with other working groups, including HTML5, DPUB and SVG.</li>
+        <li class="more">Testing browsers for implementation (i.e. what this presentation is about!)</li>
       </ul>
     </contents>
   </slide>
 
 
   <slide>
-    <title>ARIA and Assistive Technologies</title>
+    <title>HTML5, ARIA and Assistive Technologies (ATs)</title>
     <contents>
-      <ul>
-        <li>Authors use native semantics and</li>
-        <li>ARIA defines accessibility API mappings</li>
-      </ul>
+      <dt>
+        <dt class="more">Authors</dt>
+        <dd class="more">HTML5 native semantics used to idenitfy the features and interaction on a page.</dd>
+        <dd class="more">ARIA is added to supplement native semantics or to fill in when no native semantics exist.</dd>
+        <dd class="more">ARIA <em>only</em> changes how information is communicated to <abbr title="Assistive Technologies">ATs</abbr>, does <code>not</code> change the beahvior of browsers*.</dd>
+
+        <dt class="more">Web Browsers</dt>
+        <dd class="more">Provide information to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> based on content provided by the author.</dd>
+        <dd class="more">Browsers <em>must</em> communicate the same information to accessibility APIs to acheive interoperability.</dd>
+
+        <dt class="more">Assistive Technologies</dt>
+        <dd class="more">Screen readers typically read role, name and description information to users as they navigate the content of a page.</dd>
+        <dd class="more"><abbr title="Assistive Technologies">ATs</abbr> are free to use or not use information in the accessibility API, none of the W3C specications defines their use or behavior of accessibility information*.</dd>
+      </dt>
+      <p class="more" style="margin-top: 1.5em">* Part of the original contract with browser and assistive technology developers to implement ARIA requirements.</p>
     </contents>
   </slide>
 
@@ -100,17 +120,42 @@
     <title>Testing Web Browsers for Implementation</title>
     <contents>
       <ul>
-        <li>Headings and Paragraphs</li>
-        <li>Links</li>
-        <li>Images</li>
-        <li>Help</li>
+        <li><a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+        <li><a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a></li>
+        <li><a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation 1.1</a></li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>ATTA Demos</title>
+    <title>WPT and ATTAs</title>
     <contents>
+        <p>Shane McCarron (Spec-Ops )and Joanie Diggs () developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>  (<em>Give them a big thank you if you meet them!</em>).</p>
+
+        <dl>
+          <dt>Web Platform Test (WPT)</dt>
+          <dd class="more">Public web testing platform to insure interoperability*.</dd>
+          <dd class="more">Open source (<em>note: you can download and run on your own computer</em>).</dd>
+          <dd class="more"><a href="https://w3c-test.org/tools/runner/index.html">W3C WPT Test runner</a></dd>
+          <dd class="more">Includes test cases for W3C specifications</dd>
+
+          <dt>Asssistive Technology Test Adapter (ATTA)</dt>
+          <dd class="more"><a href="">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a></dd>
+          <dd class="more"></dd>
+        </dl>
+
+      <p class="more" style="margin-top: 1.5em">* Open standards and interoperability are the heart and sole of W3C specifications.</p>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Web Platform Test Cases</title>
+    <contents>
+      <ul>
+        <li>Shane McCarron (Spec-Ops )and Joanie Diggs () developed a way to test browsers mapping to accessibility <abbr title="Application Programming INterfaces">APIs</abbr></li>
+      </ul>
     </contents>
   </slide>
 
