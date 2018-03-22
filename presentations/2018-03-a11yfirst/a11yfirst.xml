@@ -264,9 +264,8 @@
     <title>Drupal Plugin</title>
     <contents>
       <p>Used in a11yFirst Editor in Drupal instances.</p>
-      <p>Supported by Jason Proctor, Mount Holyoke College.</p>
-      <p><a href="https://github.com/mtholyoke/a11yfirst">GitHub repository for a11yFirst Drupal plugin</a></p>
-      <p>Will move to a repository in a11yFirst GitHub organization</p>
+      <p>Supported by <a href="mailto:jproctor@mtholyoke.edu?subject=a11yFirst%20Plugin%20for%20WordPress">Jason Proctor, Mount Holyoke College</a>.</p>
+      <p><a href="https://github.com/a11yfirst/drupal-plugin">GitHub repository for a11yFirst Drupal plugin</a></p>
     </contents>
   </slide>
 

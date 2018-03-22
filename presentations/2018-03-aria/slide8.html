@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Web Platform Test Cases</title>
+<title>Slide 8: WPT and ATTAs</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,24 +40,50 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide11.html">
+<a id="ID_SLIDE_LAST" href="slide12.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 11</div>
+<div class="navbar-text pull-right">Slide 8 of 12</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Web Platform Test Cases</h1>
-<ul>
+<h1 id="h1_title" class="title">WPT and ATTAs</h1>
+<p>Shane McCarron (Spec-Ops )and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> (<em>Give them a big thank you if you meet them!</em>).</p>
+<dl>
+          
+<dt>Web Platform Test (WPT)</dt>
+          
+<dd class="more">Public web testing platform to insure interoperability*.</dd>
+          
+<dd class="more">Open source (<em>note: you can download and run on your own computer</em>).</dd>
+          
+<dd class="more">
+<a href="https://w3c-test.org/tools/runner/index.html">W3C WPT Test runner</a>
+</dd>
+          
+<dd class="more">Includes test cases for W3C specifications</dd>
+
+          
+<dt>Asssistive Technology Test Adapter (ATTA)</dt>
+          
+<dd class="more">
+<a href="https://spec-ops.github.io/atta-api/index.html">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a>
+</dd>
+          
+<dd class="more">Receives test information for a specific API from WPT test page.</dd>
+          
+<dd class="more">Tests for required API mappings and events.</dd>
+          
+<dd class="more">Returns test result to WPT test page.</dd>
+          
+<dd class="more">Each accessibility API has it own test adapter (e.g. MSAA/IAccessible2, AXAPI, ATK-SPI, UIAutomate)</dd>
         
-<li>Shane McCarron (Spec-Ops )and Joanie Diggs () developed a way to test browsers mapping to accessibility <abbr title="Application Programming INterfaces">APIs</abbr>
-</li>
-      
-</ul>
+</dl>
+<p class="more" style="margin-top: 1.5em">* Open standards and interoperability are the heart and sole of W3C specifications.</p>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

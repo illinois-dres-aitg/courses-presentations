@@ -128,9 +128,28 @@
   </slide>
 
   <slide>
+    <title>Automated versus Manual Implementation Testing</title>
+    <contents>
+      <dl>
+        <dt>Manual Testing</dt>
+        <dd class="more">People must go to each test page.</dd>
+        <dd class="more">Use accessibility inspection tool to find target elements and check for accessibility information.</dd>
+        <dd class="more">Need lots of coordinated people to do testing.</dd>
+        <dd class="more">Limited human resources reduces number of test pages that need testing.</dd>
+
+        <dt>Automated Testing</dt>
+        <dd class="more">Orders of magnitude faster (testing in minutes instead of days).</dd>
+        <dd class="more">Many more test cases can be created and tested.</dd>
+        <dd class="more">Minimum of human resources need for testing and reporting.</dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
     <title>WPT and ATTAs</title>
     <contents>
-        <p>Shane McCarron (Spec-Ops )and Joanie Diggs () developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>  (<em>Give them a big thank you if you meet them!</em>).</p>
+        <p>Shane McCarron (Spec-Ops )and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> (<em>Give them a big thank you if you meet them!</em>).</p>
 
         <dl>
           <dt>Web Platform Test (WPT)</dt>
@@ -140,8 +159,11 @@
           <dd class="more">Includes test cases for W3C specifications</dd>
 
           <dt>Asssistive Technology Test Adapter (ATTA)</dt>
-          <dd class="more"><a href="">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a></dd>
-          <dd class="more"></dd>
+          <dd class="more"><a href="https://spec-ops.github.io/atta-api/index.html">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a></dd>
+          <dd class="more">Receives test information for a specific API from WPT test page.</dd>
+          <dd class="more">Tests for required API mappings and events.</dd>
+          <dd class="more">Returns test result to WPT test page.</dd>
+          <dd class="more">Each accessibility API has it own test adapter (e.g. MSAA/IAccessible2, AXAPI, ATK-SPI, UIAutomate)</dd>
         </dl>
 
       <p class="more" style="margin-top: 1.5em">* Open standards and interoperability are the heart and sole of W3C specifications.</p>
@@ -149,12 +171,13 @@
     </contents>
   </slide>
 
-
   <slide>
     <title>Web Platform Test Cases</title>
     <contents>
       <ul>
-        <li>Shane McCarron (Spec-Ops )and Joanie Diggs () developed a way to test browsers mapping to accessibility <abbr title="Application Programming INterfaces">APIs</abbr></li>
+        <l1><a href="https://www.w3.org/wiki/ARIA_1.1_Testable_Statements" title="Wiki">Accessible Rich Application Interface (ARIA) 1.1 test cases.</a> (<a href="https://github.com/w3c/web-platform-tests/tree/master/wai-aria" title="Accessible Rich Application Interface (ARIA) 1.1 test cases.">GitHub</a>)</l1>
+        <l1><a href="https://github.com/w3c/web-platform-tests/tree/master/core-aam" title="GitHub">CORE Accessibility API Mapping test cases.</a> (GitHub only)</l1>
+        <li><a href="https://www.w3.org/wiki/AccName_1.1_Testable_Statements" title="Wiki">Accessible Name test cases</a>.(<a href="https://github.com/w3c/web-platform-tests/tree/master/accname" title="Accessible Name test cases.">GitHub</a>)</li>
       </ul>
     </contents>
   </slide>
