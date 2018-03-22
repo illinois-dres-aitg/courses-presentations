@@ -129,20 +129,18 @@
     <title>Headings and Paragraphs</title>
     <contents>
       <ul>
-        <li>Removed </li>
-        <li>Images</li>
-        <li>Help/Information</li>
-        <li>Accessibility Checker</li>
+        <li>Describes the purpose of the headings.</li>
+        <li>Enables only allowed headings.</li>
       </ul>
     </contents>
   </slide>
 
  <slide>
-    <title>List and Links</title>
+    <title>Links</title>
     <contents>
       <ul>
-        <li></li>
-        <li></li>
+        <li>Validates link text for commone problems (e.g. click here).</li>
+        <li>Checks for URLs and E-mail addresses.</li>
       </ul>
     </contents>
   </slide>
@@ -150,10 +148,18 @@
  <slide>
     <title>Images</title>
     <contents>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
+      <dl>
+        <dt>Simple</dt>
+        <dd>Text alternative</dd>
+        <dd>Caption (optional)</dd>
+        <dt>Complex</dt>
+        <dd>Text alternative</dd>
+        <dd>Caption (optional)</dd>
+        <dd>Additional description in document</dd>
+        <dt>Decorative</dt>
+        <dd>No text alternative</dd>
+        <dd>No caption</dd>
+      </dl>
     </contents>
   </slide>
 
@@ -161,18 +167,22 @@
     <title>Help/Information</title>
     <contents>
       <ul>
-        <li></li>
-        <li></li>
+        <li>Headings/Paragraph Menu</li>
+        <li>Lists</li>
+        <li>Links</li>
+        <li>Images</li>
+        <li>Tables</li>
+        <li>Language</li>
       </ul>
     </contents>
   </slide>
 
  <slide>
-    <title>a11y Checker (quail engine)</title>
+    <title>a11yChecker (quail engine)</title>
     <contents>
       <ul>
-        <li></li>
-        <li></li>
+        <li>Activated by Button in toolbar.</li>
+        <li>a11yFirst features support rules in a11yChecke.</li>
       </ul>
     </contents>
   </slide>
@@ -234,10 +244,9 @@
       <ul>
         <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
         <li><a href="http://ainspector.github.io/">AInspector Sidebar</a></li>
-        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0</a> (Self-Registration Version)</li>
-        <li><a href="https://fae.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0</a> (Institutional Version)</li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Self-Registration Version)</a></li>
+        <li><a href="https://fae.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Institutional Version)</a></li>
       </ul>
-
 
     </contents>
   </slide>
