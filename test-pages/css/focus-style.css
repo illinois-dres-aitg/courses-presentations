@@ -5,12 +5,21 @@ a.btn:focus {
   text-decoration: underline;
 }
 
+p a[href="privacy.html"]:focus {
+  color: white;
+}
+
 .rd-navbar-nav > .rd-navbar-submenu > .rd-navbar-dropdown > .focus > a:focus{
   outline: 2px white solid;
 }
 
 button:focus {
   outline: 2px #b80924 solid;
+}
+
+button[type="submit"]:focus {
+  outline: 2px #b80924 solid;
+  outline-offset: 2px;
 }
 
 a#drop4 {
