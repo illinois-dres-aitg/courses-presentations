@@ -149,7 +149,9 @@
   <slide>
     <title>WPT and ATTAs</title>
     <contents>
-        <p>Shane McCarron (Spec-Ops )and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr> (<em>Give them a big thank you if you meet them!</em>).</p>
+        <p>Shane McCarron (Spec-Ops )and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
+        <br/>(<em>Give them a big thank you if you see them!</em>)
+        </p>
 
         <dl>
           <dt>Web Platform Test (WPT)</dt>
@@ -175,29 +177,88 @@
     <title>Web Platform Test Cases</title>
     <contents>
       <ul>
-        <l1><a href="https://www.w3.org/wiki/ARIA_1.1_Testable_Statements" title="Wiki">Accessible Rich Application Interface (ARIA) 1.1 test cases.</a> (<a href="https://github.com/w3c/web-platform-tests/tree/master/wai-aria" title="Accessible Rich Application Interface (ARIA) 1.1 test cases.">GitHub</a>)</l1>
-        <l1><a href="https://github.com/w3c/web-platform-tests/tree/master/core-aam" title="GitHub">CORE Accessibility API Mapping test cases.</a> (GitHub only)</l1>
+        <li><a href="https://www.w3.org/wiki/ARIA_1.1_Testable_Statements" title="Wiki">Accessible Rich Application Interface (ARIA) 1.1 test cases.</a> (<a href="https://github.com/w3c/web-platform-tests/tree/master/wai-aria" title="Accessible Rich Application Interface (ARIA) 1.1 test cases.">GitHub</a>)</li>
+        <li><a href="https://github.com/w3c/web-platform-tests/tree/master/core-aam" title="GitHub">CORE Accessibility API Mapping test cases.</a> (GitHub only)</li>
         <li><a href="https://www.w3.org/wiki/AccName_1.1_Testable_Statements" title="Wiki">Accessible Name test cases</a>.(<a href="https://github.com/w3c/web-platform-tests/tree/master/accname" title="Accessible Name test cases.">GitHub</a>)</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Implementation Reports</title>
+    <title>Demonstration of Generating a Report</title>
     <contents>
     </contents>
   </slide>
 
+
   <slide>
-    <title>E-mail Discussion and Github Repository</title>
+    <title>Implementation Reports</title>
     <contents>
       <ul>
-        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
-        <li><a href="https://github.com/a11yfirst/plugins-dev">A11yFirst github respository</a></li>
+        <li><a href="http://w3c.github.io/test-results/wai-aria/">Accessible Rich Application Interface (ARIA) 1.1 test results</a></li>
+        <li><a href="http://w3c.github.io/test-results/core-aam/">CORE Accessibility API Mapping (CORE-AAM) test results</a></li>
+        <li><a href="http://w3c.github.io/test-results/accname/">Accessible Name and Description Calculation (ACCNAME) 1.1 test results</a></li>
       </ul>
     </contents>
   </slide>
 
+  <slide>
+    <title>Filing Browser Bugs</title>
+    <contents>
+      <dl>
+        <dt>Chrome</dt>
+        <dd><a href="https://bugs.chromium.org/p/chromium/issues/list">Chrome bug reporting</a></dd>
+        <dd></dd>
+
+        <dt>Edge</dt>
+        <dd><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">EdgeHTML issue tracker</a></dd>
+        <dd></dd>
+
+        <dt>Firefox</dt>
+        <dd><a href="https://bugzilla.mozilla.org/enter_bug.cgi">Firefox bug reporting</a></dd>
+        <dd></dd>
+
+        <dt>Safari</dt>
+        <dd><a href="https://bugs.webkit.org/enter_bug.cgi?product=WebKit&amp;component=Accessibility&amp;op_sys=All&amp;rep_platform=All&amp;short_desc=AX%3A%20">Safari bug reporting</a></dd>
+        <dd></dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>How you can help!</title>
+    <contents>
+      <ul>
+        <li>Filing and tracking issues with browser developers.</li>
+        <li>Creating test cases.</li>
+        <li>Developing and testing ATTAs.</li>
+        <li>Contact <a href="mailto:mailto:jdiggs@igalia.com">Joanmarie Diggs</a> or <a href="mailto:jongund@illinois.edu">Jon Gunderson</a> if you are interested.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML5 and ARIA Training and Open Source Tools from Illinois</title>
+    <contents>
+      <h2>Training</h2>
+      <ul>
+        <li><a href="https://go.illinois.edu/a11y-badges">DRES Web Accessibility Badging Program</a> (6-8 hours/badge)</li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">AHS Information Accessibility Design and Policy (IADP) Certificate</a> (Three 8 Week Credit courses)
+        </li>
+      </ul>
+
+      <h2>Tools</h2>
+
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
+        <li><a href="http://ainspector.github.io/">AInspector Sidebar</a></li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Self-Registration Version)</a></li>
+        <li><a href="https://fae.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Institutional Version)</a></li>
+      </ul>
+
+    </contents>
+  </slide>
   <slide>
     <title>Questions and Discussion</title>
     <contents>
