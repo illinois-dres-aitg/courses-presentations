@@ -64,25 +64,55 @@
 
 
   <slide>
-    <title>Current User Models</title>
+    <title>Current User Thinking of WYSISWYG</title>
     <contents>
       <ol>
-        <li class="more">Accessibility is part of their responsibilities.</li>
-        <li class="more">The HTML semantics of of headings, lists and other structural markup.</li>
-        <li class="more">.</li>
+        <li class="more">What does the page look like.</li>
+        <li class="more">HTML markup is about styling than structure.</li>
+        <li class="more">Not aware of accessibility requirements.</li>
+        <li class="more">Not aware of accessibility issues.</li>
+        <li class="more">Accessibility takes more time and is hard (e.g. remidation).</li>
       </ol>
+    </contents>
+  </slide>
 
+  <slide>
+    <title>Changing User Thinking About Accessibiliy</title>
+    <contents>
+      <ol>
+        <li class="more">Accessibility is important to the organization.</li>
+        <li class="more">Accessibility is part of their responsibilities.</li>
+        <li class="more">How to use HTML semantics of headings, lists and other structural markup.</li>
+        <li class="more">Accessibility of link text.</li>
+        <li class="more">Providing descriptions of images.</li>
+        <li class="more">Accessibility is part of the authoring process.</li>
+      </ol>
     </contents>
   </slide>
 
  <slide>
-    <title>Modifications</title>
+    <title>a11yFirst for CKEditor Features</title>
     <contents>
       <ul>
         <li>Headings and Paragraphs</li>
         <li>Links</li>
         <li>Images</li>
         <li>Help/Information</li>
+        <li>Accessibility Checker</li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>a11yFirst for CKEditor Features</title>
+    <contents>
+      <ul>
+        <li>Headings and Paragraphs</li>
+        <li>Lists</li>
+        <li>Links</li>
+        <li>Images</li>
+        <li>Help/Information</li>
+        <li>Accessibility Checker</li>
       </ul>
     </contents>
   </slide>
@@ -95,17 +125,87 @@
     </contents>
   </slide>
 
-  <slide>
-    <title>WordPress and Drupal</title>
+ <slide>
+    <title>Headings and Paragraphs</title>
     <contents>
-      <p></p>
+      <ul>
+        <li>Removed </li>
+        <li>Images</li>
+        <li>Help/Information</li>
+        <li>Accessibility Checker</li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>List and Links</title>
+    <contents>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Images</title>
+    <contents>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Help/Information</title>
+    <contents>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>a11y Checker (quail engine)</title>
+    <contents>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>WordPress Plugin</title>
+    <contents>
+      <p>Replace default TinyMCE editor used in WordPress with CKEditor.</p>
+      <p>Supported by <a href="mailto:jku@illinois.edu?subject=a11yFirst%20Plugin%20for%20WordPress">Jaeun Ku (Jemma), University of Illinois</a>.</p>
+      <p><a href="https://github.com/a11yfirst/wordpress-plugin">GitHub repository for a11yFirst WordPress plugin</a></p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Drupal Plugin</title>
+    <contents>
+      <p>Used in a11yFirst Editor in Drupal instances.</p>
+      <p>Supported by Jason Proctor, Mount Holyoke College.</p>
+      <p><a href="https://github.com/mtholyoke/a11yfirst">GitHub repository for a11yFirst Drupal plugin</a></p>
+      <p>Will move to a repository in a11yFirst GitHub organization</p>
     </contents>
   </slide>
 
   <slide>
     <title>Next Steps</title>
     <contents>
-      <p></p>
+      <ul>
+        <li class="more">Complete the "a11yimage2" plugin and user testing.</li>
+        <li class="more">Update a11yFirst help documentation.</li>
+        <li class="more">Publish WordPress and Drupal Plugins.</li>
+        <li class="more">Work on accessible tables.</li>
+        <li class="more">Your feedback and help.</li>
+      </ul>
     </contents>
   </slide>
 
@@ -114,8 +214,31 @@
     <contents>
       <ul>
         <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
-        <li><a href="https://github.com/a11yfirst/plugins-dev">A11yFirst github respository</a></li>
+        <li><a href="https://github.com/a11yfirst/">A11yFirst github respository</a></li>
       </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Training and Tools from Illinois</title>
+    <contents>
+      <h2>Training</h2>
+      <ul>
+        <li><a href="https://go.illinois.edu/a11y-badges">DRES Web Accessibility Badging Program</a> (6-8 hours/badge)</li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">AHS Information Accessibility Design and Policy (IADP) Certificate (Three 8 Week Credit courses)</a>
+        </li>
+      </ul>
+
+      <h2>Tools</h2>
+
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
+        <li><a href="http://ainspector.github.io/">AInspector Sidebar</a></li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0</a> (Self-Registration Version)</li>
+        <li><a href="https://fae.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0</a> (Institutional Version)</li>
+      </ul>
+
+
     </contents>
   </slide>
 

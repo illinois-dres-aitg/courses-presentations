@@ -22,6 +22,8 @@ $(document).ready(function() {
 
     // hide content with the more class
     $('.more').css('display', 'none');
+    $('#content').css('display', 'none');
+    $('#content').fadeIn('slow');
 
     resizeContent()
 
