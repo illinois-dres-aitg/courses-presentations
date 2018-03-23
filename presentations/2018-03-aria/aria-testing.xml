@@ -132,15 +132,15 @@
     <contents>
       <dl>
         <dt>Manual Testing</dt>
-        <dd class="more">People must go to each test page.</dd>
-        <dd class="more">Use accessibility inspection tool to find target elements and check for accessibility information.</dd>
-        <dd class="more">Need lots of coordinated people to do testing.</dd>
-        <dd class="more">Limited human resources reduces number of test pages that need testing.</dd>
+        <dd>People must go to each test page.</dd>
+        <dd>Use accessibility inspection tool to find target elements and check for accessibility information.</dd>
+        <dd>Need lots of coordinated people to do testing.</dd>
+        <dd>Limited human resources reduces number of test pages that need testing.</dd>
 
         <dt>Automated Testing</dt>
-        <dd class="more">Orders of magnitude faster (testing in minutes instead of days).</dd>
-        <dd class="more">Many more test cases can be created and tested.</dd>
-        <dd class="more">Minimum of human resources need for testing and reporting.</dd>
+        <dd>Orders of magnitude faster (testing in minutes instead of days).</dd>
+        <dd>Many more test cases can be created and tested.</dd>
+        <dd>Minimum of human resources need for testing and reporting.</dd>
 
       </dl>
     </contents>
