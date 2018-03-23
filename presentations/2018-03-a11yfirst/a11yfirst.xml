@@ -52,6 +52,18 @@
   </slide>
 
   <slide>
+    <title>Univerity of Illinois Library <abbr title="Content Management System">CMS</abbr></title>
+    <contents>
+      <ul>
+        <li class="more">Moving to using WordPress to manage web content.</li>
+        <li class="more">Want to support accessible content on new website.</li>
+        <li class="more">Remidating existing content is labor intensive and expensive.</li>
+        <li class="more">Library grant to investigate more than accessibility remdiation.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>A11yFirst Project Goals</title>
     <contents>
       <ul>
@@ -59,6 +71,7 @@
         <li class="more">Support accessibility as content is created.</li>
         <li class="more">Teach authors about accessibility.</li>
         <li class="more">Change how people think about creating content.</li>
+        <li class="more">Support features of a11yChecker for CKEditor.</li>
       </ul>
     </contents>
   </slide>
@@ -66,13 +79,13 @@
   <slide>
     <title>Author Thinking of WYSISWYG Editors</title>
     <contents>
-      <ol>
+      <ul>
         <li class="more">What does the page look like.</li>
         <li class="more">HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
         <li class="more">Not aware of accessibility requirements.</li>
-        <li class="more">Not aware of accessibility issues.</li>
+        <li class="more">Not aware of accessibility issues of different types of content.</li>
         <li class="more">Accessibility takes more time and is hard (e.g. remidation model).</li>
-      </ol>
+      </ul>
     </contents>
   </slide>
 
@@ -136,6 +149,7 @@
     <title>A11yFirst Demo</title>
     <contents>
       <p><a href="https://a11yfirst.library.illinois.edu/">Public A11yFirst Demonstration Website</a></p>
+      <p>URL: <code>https://a11yfirst.library.illinois.edu/</code></p>
       <iframe src="https://a11yfirst.library.illinois.edu/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
     </contents>
   </slide>
@@ -146,7 +160,7 @@
       <dl>
         <dt>Headings</dt>
         <dd>Html tag</dd>
-        <dd>Styled the same to re-enforce using them strcuturally</dd>
+        <dd>Styled the same to re-enforce using them structurally</dd>
         <dd>Only allowed heading levels are enabled</dd>
 
         <dt>Paragraph Formatting</dt>
@@ -176,6 +190,7 @@
  <slide>
     <title>Images</title>
     <contents>
+      <p><a href="https://rawgit.com/a11yfirst/plugins-dev/feature/a11yimage2/custom/a11yimage2.html" target="_prototype">Prototype of a11yiamges plugin</a></p>
       <dl>
         <dt>Image Type</dt>
         <dd>Simple: Alternative text and/or caption.</dd>
@@ -246,7 +261,7 @@
     <title>Bug with WordPress plugin Advanced Form Fields (ACF)</title>
     <contents>
       <ul>
-        <li>Advanced Form Fields (ACF) plugin initializes TimnyMCE, instead of using WordPress API for initializing WYSISWYG editor.</li>
+        <li>Advanced Form Fields (ACF) plugin initializes TinyMCE, instead of using WordPress API for initializing WYSISWYG editor.</li>
         <li>Apparently ACF fixed this bug in an earlier version, but the bug crept back into the current code.</li>
         <li><a href="https://support.advancedcustomfields.com/forums/topic/bug-when-using-any-wysiwyg-but-tinymce-in-wp-with-acf/">ACF Bug filed by Robert Slater</a> of the University of Illinois.</li>
         <li>Please comment on bug using encouraging words and why you want the bug fixed:

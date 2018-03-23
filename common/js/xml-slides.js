@@ -18,6 +18,29 @@ function resizeContent() {
 
 };
 
+function showMore() {
+  var found = false;
+  $('.more').each(function() {
+    if (!found && $(this).css('display') === 'none') {
+      $(this).fadeIn();
+      found = true;
+      resizeContent();
+    }
+  })
+  return found;
+}
+
+function showLess() {
+  var found = false;
+  $($('.more').get().reverse()).each(function() {
+    if (!found && $(this).css('display') !== 'none') {
+      $(this).fadeOut('slow', resizeContent);
+      found = true;
+    }
+  })
+  return found;
+}
+
 $(document).ready(function() {
 
     // hide content with the more class
@@ -25,7 +48,18 @@ $(document).ready(function() {
     $('#content').css('display', 'none');
     $('#content').fadeIn('slow');
 
+
+    var html = '<div style="position: relative; top: -0.5em;">';
+    html += '<button type="button" onclick="showMore()" class="btn btn-default" aria-label="Show Next"><span class="glyphicon glyphicon-arrow-down"  aria-hidden="true"></span></button>';
+    html += '<button type="button" onclick="showLess()" class="btn btn-default" aria-label="Hide Last"><span class="glyphicon glyphicon-arrow-up"    aria-hidden="true"></span></button>';
+    html += '</div>';
+
+    if ($('.more').length) {
+//      $('#slide-nav').first().append(html);
+    }
+
     resizeContent()
+
 
 });  // end ready event
 
@@ -35,13 +69,8 @@ $(document).keydown(function( event ) {
   var allHidden  = true;
 
   if ( ( event.which == 32 && !event.shiftKey ) || (event.which == 40)) {
-    $('.more').each(function() {
-      if (!found && $(this).css('display') === 'none') {
-        $(this).fadeIn();
-        found = true;
-        resizeContent();
-      }
-    })
+
+    found = showMore();
 
     if (found) {
       event.preventDefault();
@@ -49,12 +78,8 @@ $(document).keydown(function( event ) {
   }
 
   if ( ( event.which == 32 && event.shiftKey ) || (event.which == 38)) {
-    $($('.more').get().reverse()).each(function() {
-      if (!found && $(this).css('display') !== 'none') {
-        $(this).fadeOut('slow', resizeContent);
-        found = true;
-      }
-    })
+
+    found = showLess();
 
     if (found) {
       event.preventDefault();
