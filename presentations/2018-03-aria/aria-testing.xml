@@ -155,20 +155,20 @@
 
         <dl>
           <dt>Web Platform Test (WPT)</dt>
-          <dd class="more">Public web testing platform to insure interoperability*.</dd>
-          <dd class="more">Open source (<a href="https://github.com/w3c/web-platform-tests"><abbr title="Web Platform Test">WPT</abbr> on Github</a>).</dd>
-          <dd class="more"><a href="https://w3c-test.org/tools/runner/index.html" target="_tools">W3C WPT Test runner</a></dd>
+          <dd>Public web testing platform to insure interoperability*.</dd>
+          <dd>Open source (<a href="https://github.com/w3c/web-platform-tests"><abbr title="Web Platform Test">WPT</abbr> on Github</a>).</dd>
+          <dd><a href="https://w3c-test.org/tools/runner/index.html" target="_tools">W3C WPT Test runner</a></dd>
           <dd class="more">Includes test cases for W3C specifications</dd>
 
           <dt>Asssistive Technology Test Adapter (ATTA)</dt>
-          <dd class="more"><a href="https://spec-ops.github.io/atta-api/index.html"  target="_specs">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a></dd>
-          <dd class="more">Receives test information for a specific API from WPT test page.</dd>
-          <dd class="more">Tests for required API mappings and events.</dd>
-          <dd class="more">Returns test result to WPT test page.</dd>
-          <dd class="more">Each accessibility API has it own test adapter (e.g. MSAA/IAccessible2, AXAPI, ATK-SPI, UIAutomate)</dd>
+          <dd><a href="https://spec-ops.github.io/atta-api/index.html"  target="_specs">Note on the architecture of an <abbr title="Asssistive Technology Test Adapter">ATTA</abbr></a></dd>
+          <dd>Receives test information for a specific API from WPT test page.</dd>
+          <dd>Tests for required API mappings and events.</dd>
+          <dd>Returns test result to WPT test page.</dd>
+          <dd>Each accessibility API has it own test adapter (e.g. MSAA/IAccessible2, AXAPI, ATK-SPI, UIAutomate)</dd>
         </dl>
 
-      <p class="more" style="margin-top: 1.5em">* Open standards and interoperability are the heart and sole of W3C specifications.</p>
+      <p style="margin-top: 1.5em">* Open standards and interoperability are the heart and sole of W3C specifications.</p>
 
     </contents>
   </slide>
