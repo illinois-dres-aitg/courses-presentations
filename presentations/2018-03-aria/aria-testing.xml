@@ -65,11 +65,11 @@
     <title>What is the difference between WCAG and other W3C Accessibility Standards?</title>
     <contents>
       <dl>
-        <dt class="more">Web Content Acessibility Guidelines 2.0</dt>
+        <dt>Web Content Acessibility Guidelines 2.0</dt>
         <dd class="more">Guidelines that are interpreted for various technologies and operating environments.</dd>
         <dd class="more">Disagreements on what is required or not required in different situations.</dd>
 
-        <dt class="more">ARIA Markup</dt>
+        <dt class="more">ARIA Specification</dt>
         <dd class="more">Specific syntax and requirements (e.g. a <code>menu</code> must have <code>menuitem</code>s).</dd>
         <dd class="more">Expected behaviors associated with each role (e.g. <a href="https://www.w3.org/TR/wai-aria-practices/" target="_specs">ARIA Authoring Practices</a>).</dd>
 
