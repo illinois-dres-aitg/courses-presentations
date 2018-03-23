@@ -149,7 +149,7 @@
   <slide>
     <title>WPT and ATTAs</title>
     <contents>
-        <p>Shane McCarron (Spec-Ops )and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
+        <p>Shane McCarron (Spec-Ops) and Joanmarie Diggs (Igalia) developed a way to test browsers mapping to accessibility <abbr title="Application Programming Interfaces">APIs</abbr>.
         <br/>(<em>Give them a big thank you if you see them!</em>)
         </p>
 
