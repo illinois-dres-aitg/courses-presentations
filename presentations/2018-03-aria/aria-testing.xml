@@ -205,24 +205,12 @@
   <slide>
     <title>Filing Browser Bugs</title>
     <contents>
-      <dl>
-        <dt>Chrome</dt>
-        <dd><a href="https://bugs.chromium.org/p/chromium/issues/list" target="_bugs">Chrome bug reporting</a></dd>
-        <dd></dd>
-
-        <dt>Edge</dt>
-        <dd><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/" target="_bugs">EdgeHTML issue tracker</a></dd>
-        <dd></dd>
-
-        <dt>Firefox</dt>
-        <dd><a href="https://bugzilla.mozilla.org/enter_bug.cgi" target="_bugs">Firefox bug reporting</a></dd>
-        <dd></dd>
-
-        <dt>Safari</dt>
-        <dd><a href="https://bugs.webkit.org/enter_bug.cgi?product=WebKit&amp;component=Accessibility&amp;op_sys=All&amp;rep_platform=All&amp;short_desc=AX%3A%20" target="_bugs">Safari bug reporting</a></dd>
-        <dd></dd>
-
-      </dl>
+      <ul>
+        <li><a href="https://bugs.chromium.org/p/chromium/issues/list" target="_bugs">Chrome bug reporting</a></li>
+        <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/" target="_bugs">EdgeHTML issue tracker</a></li>
+        <li><a href="https://bugzilla.mozilla.org/enter_bug.cgi" target="_bugs">Firefox bug reporting</a></li>
+        <li><a href="https://bugs.webkit.org/enter_bug.cgi?product=WebKit&amp;component=Accessibility&amp;op_sys=All&amp;rep_platform=All&amp;short_desc=AX%3A%20" target="_bugs">Safari bug reporting</a></li>
+      </ul>
     </contents>
   </slide>
 
