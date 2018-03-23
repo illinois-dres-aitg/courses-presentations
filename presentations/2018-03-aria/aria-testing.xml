@@ -227,6 +227,16 @@
   </slide>
 
   <slide>
+    <title>What is Not Tested</title>
+    <contents>
+      <ul>
+        <li>What a specific assisitive technology does with a feature.</li>
+        <li>W3C specifications ook at the latest (beta) browsers for implmentation iof requirements, so commonly used browser or legacy browsers are not part of report.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>How you can help!</title>
     <contents>
       <ul>
