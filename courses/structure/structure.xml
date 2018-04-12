@@ -106,7 +106,7 @@
     <contents>
 
       <p>
-        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.0</a>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.x</a>
       </p>
 
       <details>
@@ -116,8 +116,8 @@
           <li>Accessible name</li>
           <li>Accessible description</li>
           <li>States and properties</li>
-          <li><a href="https://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.0 Authoring Practices</a></li>
-          <li><a href="https://www.w3.org/WAI/PF/aria-implementation/" target="_specification">WAI-ARIA 1.0 User Agent Implementation Guide</a></li>
+          <li><a href="https://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.x Authoring Practices</a></li>
+          <li><a href="https://www.w3.org/WAI/PF/aria-implementation/" target="_specification">WAI-ARIA 1.x User Agent Implementation Guide</a></li>
           <li><a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1</a></li>
         </ul>
       </details>
@@ -130,7 +130,7 @@
     <title>HTML 5.x</title>
     <contents>
       <p>
-        <a href="https://www.w3.org/TR/html51" target="_specification">HTML 5 Specification</a>
+        <a href="https://www.w3.org/TR/html5/" target="_specification">HTML 5 Specification</a>
       </p>
 
       <details>
@@ -1000,22 +1000,18 @@
   </slide>
 
   <slide>
-    <title>Coding Landmarks: HTML5 Elements</title>
+    <title>Creating Landmarks using HTML5 Elements</title>
     <contents>
         <h2>Webedit Configuration</h2>
         <dl>
-          <dt>Copy Example</dt>
+          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+          <dd>Copy example using the link below</dd>
           <dd>Change title "Coding Landmarks: HTML5 Elements"</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
         </dl>
 
-        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-1/" target="_jsfidddle">WebEdit template for adding ARIA landmarks</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-2/copy/" target="_webedit">WebEdit template for adding ARIA landmarks</a></p>
 
-        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-1/" width="99%" height="600px" title="WebEdit template for adding ARIA landmarks"></iframe>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/landmark-1/output/" target="_example">Example: ARIA landmarks</a></p>
     </contents>
   </slide>
 
@@ -1036,22 +1032,18 @@
           </li>
         </ul>
 
-        <h2>WebEdit Configuration</h2>
+        <h2>Webedit Configuration</h2>
         <dl>
-          <dt>Copy template</dt>
-          <dd>Add title "Coding Landmarks: Adding Labels"</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
+          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+          <dd>Copy example using the link below</dd>
+          <dd>Change title "Coding Landmarks: Adding Labels"</dd>
         </dl>
 
-        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" target="_jsfidddle">WebEdit template for adding labels to ARIA landmarks</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-example-5/copy/" target="_webedit">WebEdit template for adding labels to landmarks</a></p>
 
-        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" width="99%" height="600px" title="WebEdit template for adding labels to ARIA landmarks"></iframe>
-
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/landmark-3/output/" target="_example">Example: Landmarks with labels</a></p>
     </contents>
+
   </slide>
 
 
@@ -1276,20 +1268,17 @@
     <slide>
     <title>Coding Headings: h1-h6 Elements</title>
     <contents>
-        <h2>WebEdit Configuration</h2>
+
+        <h2>Webedit Configuration</h2>
         <dl>
-          <dt>Copy Example</dt>
-          <dd>Change title to: "Coding Landmarks: <code>h1-h6</code> elements"</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
+          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+          <dd>Copy example using the link below</dd>
+          <dd>Change title "Coding Heading: Adding Headings and Adjusting Levels for Proper Nesting"</dd>
         </dl>
 
-        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-3/" target="_jsfiddle">Webedit example template for adding and updating headings</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-3/copy/" target="_webedit">WebEdit template for adjusting the heading structure of a web page</a></p>
 
-        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-3/" width="99%" height="600px" title="Webedit example template for adding and updating headings"></iframe>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/heading-1/output/" target="_example">Example: Properly included and nested headings"</a></p>
 
     </contents>
   </slide>
@@ -1353,21 +1342,16 @@
     <title>Coding Skip To Main Content: Simple Link</title>
     <contents>
 
-        <h2>WebEdit Configuration</h2>
+        <h2>Webedit Configuration</h2>
         <dl>
-          <dt>Copy Template</dt>
-          <dd>Change title to: "Coding Skip To Main Content: Simple Link"</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
+          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+          <dd>Copy example using the link below</dd>
+          <dd>Change title "Coding Skip-to-main: Simple Link</dd>
         </dl>
 
-        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" target="_jsfiddle">Webedit example template for adding skip-to-main content</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-4/copy/" target="_webedit">WebEdit template for adding skip to main link</a></p>
 
-        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" width="99%" height="600px" title="Webedit example template for adding skip-to-main content"></iframe>
-
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/skipto-1/output/" target="_example">Example: Skip-to-main with a link</a></p>
     </contents>
   </slide>
 
@@ -1383,20 +1367,17 @@
     <title>Coding Skip To Main Content: SkipTo.js</title>
     <contents>
 
-        <h2>WebEdit Configuration</h2>
+
+        <h2>Webedit Configuration</h2>
         <dl>
-          <dt>Copy Template</dt>
-          <dd>Change title to: "Coding Skip To Main Content: SkipTo.js Link"</dd>
-
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-
+          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+          <dd>Copy example using the link below</dd>
+          <dd>Change title "Coding Skip-to-main: PayPal SkipTo.js</dd>
         </dl>
 
-        <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" target="_jsfiddle">Webedit example template for adding skip-to-main content</a></p>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-4/copy/" target="_webedit">WebEdit template for adding PayPal Skipto.js</a></p>
 
-        <iframe src="https://webedit.disability.illinois.edu/pages/user/jongund/structure-example-2/" width="99%" height="600px" title="Webedit example template for adding skip-to-main content"></iframe>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/skipto-2/output/" target="_example">Example: PayPal SkipTo.js</a></p>
 
     </contents>
   </slide>
