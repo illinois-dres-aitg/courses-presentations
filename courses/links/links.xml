@@ -94,6 +94,7 @@
         <li><code>aria-labelledby</code> attribute</li>
         <li><code>title</code> attribute (rare)</li>
         <li><code>alt</code> attribute for <code>img</code> elements</li>
+        <li><a href="https://www.w3.org/TR/accname/">Accessible Name and Description Computation 1.1</a></li>
       </ul>
     </contents>
   </slide>
