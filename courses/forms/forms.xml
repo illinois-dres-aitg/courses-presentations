@@ -202,9 +202,9 @@
           </tr>
           <tr>
             <td>Detailed Keyboard Information</td>
-            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
-            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
-            <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
+            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm" target="_docs">JAWS Keyboard Documentation</a></td>
+            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html" target="_docs">NVDA Documentation</a></td>
+            <td><a href="https://www.apple.com/voiceover/info/guide/" target="_docs">Voice Over Guide</a></td>
           </tr>
         </tbody>
       </table>
@@ -333,7 +333,7 @@
 
       </form>
 
-      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">WebEdit: Add form control labels in Problem 1</a></p>
+      <p><a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form control</a></p>
 
       <h2>HTML Source Code</h2>
 
@@ -496,6 +496,8 @@
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
 
       </form>
+
+      <p><a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form controls using <code>label[for]</code></a>.</p>
 
       <h2>HTML Source Code</h2>
 
@@ -696,6 +698,8 @@
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
 
       </form>
+
+      <p><a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form controls using <code>label</code> encapsulation</a>.</p>
 
       <h2>HTML Source Code</h2>
 
@@ -908,9 +912,6 @@
         <input type="submit" value="Submit Order" onclick="submitOrder(event)"/>
 
       </form>
-
-      <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">WebEdit: Add grouping labels to the links in Problem 2</a></p>
-
 
       <h2>HTML Source Code</h2>
 
@@ -5588,9 +5589,9 @@
     <title>Badging Requirements</title>
     <contents>
       <ol>
-        <li>Complete form control quiz in <a href="https://compass2g.illinois.edu">Compass2g</a></li>
-        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-labeling/">Add form control labels in Problem 1</a></li>
-        <li><a href="https://webedit.disability.illinois.edu/pages/user/jongund/form-fieldset/">Add grouping label form controls in Problem 2</a></li>
+        <li>Complete form control quiz in <a href="https://compass2g.illinois.edu" target="_compass">Compass2g</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">Add form control labels in Problem 1</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/user/jongund/form-fieldset/copy/" target="_webedit">Add grouping label form controls in Problem 2</a></li>
       </ol>
     </contents>
   </slide>
