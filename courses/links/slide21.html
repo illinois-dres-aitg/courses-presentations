@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 21: Keyboard focus should always be visible</title>
+<title>Slide 21: Identifying links and link keyboard focus styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,31 +41,39 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide23.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 21 of 23</div>
+<div class="navbar-text pull-right">Slide 21 of 25</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Keyboard focus should always be visible</h1>
+<h1 id="h1_title" class="title">Identifying links and link keyboard focus styling</h1>
 <ul>
         
-<li>On some pages when tabbing through the page the keyboard focus disappears and then magically reappears.</li>
+<li>Underlining links is important for people with low vision to identify the link</li>
         
-<li>Disorienting to users when keyboard focus disappears and then reappears.</li>
+<li>Use CSS Pseudo selectors :focus and :active to style link with focus</li>
         
-<li>Disappearing focus is usally caused by links or form controls that are rendered off screen using CSS <code>position="absolute"</code>, <code>top</code> and <code>left</code> properties.</li>
+<li>Changes needs to be more than just color (e.g. color blindess and other visual impairments)</li>
         
-<li>If links or form controls are not visible they should be hidden using CSS <code>display: none</code> or using the HTML5 <code>hidden</code> attribute, so they are not part of the tab order of the page.</li>
-        
-<li>In general if you can't see a link or form control visually, the screen reader or keyboard only user should not be able to interact with link or form control.</li>
+<li>Typically border, outline or underline</li>
       
 </ul>
+<h2>WCAG 2.0 Link Requirements</h2>
+<dl>
+        
+<dt>
+<a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" target="_specification">2.4.7 Focus Visible</a>
+</dt>
+        
+<dd>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA).</dd>
+      
+</dl>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

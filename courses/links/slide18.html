@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 18: WCAG heading context example using grouping label</title>
+<title>Slide 18: Using offscreen text to define the context of the link</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -53,6 +53,7 @@
       div#content div.example a:visited {
       color: black;
       }
+
     </style>
 </head>
 <body>
@@ -85,85 +86,99 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide23.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 18 of 23</div>
+<div class="navbar-text pull-right">Slide 18 of 25</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">WCAG heading context example using grouping label</h1>
+<h1 id="h1_title" class="title">Using offscreen text to define the context of the link</h1>
 <h2>Link Context Example</h2>
 <div id="ex1" class="example">
 
         
-<h3 id="id1">Royal Palm Hotel</h3>
+<h3>Royal Palm Hotel</h3>
         
-<ul class="horizontal" aria-labelledby="id1">
+<ul class="horizontal">
           
 <li>
-<a href="royal_palm_hotel_more_info.html">More Info</a>
+<a href="royal_palm_hotel_more_info.html">More Info <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
           
 <li>
-<a href="royal_palm_hotel_map.html">Map</a>
+<a href="royal_palm_hotel_map.html">Map <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
           
 <li>
-<a href="royal_palm_hotel_photos.html">Photos</a>
+<a href="royal_palm_hotel_photos.html">Photos <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
           
 <li>
-<a href="hroyal_palm_hotel_directions.html">Directions</a>
+<a href="hroyal_palm_hotel_directions.html">Directions <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
           
 <li>
-<a href="royal_palm_hotel_reviews.html">Guest reviews</a>
+<a href="royal_palm_hotel_reviews.html">Guest reviews <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
           
 <li>
-<a href="royal_palm_hotel_book.html">Book now</a>
+<a href="royal_palm_hotel_book.html">Book now <span class="sr-only">Royal Palm Hotel</span> <span class="sr-only">Royal Palm Hotel</span></a>
 </li>
         
 </ul>
 
         
-<h3 id="id2">Hotel Three Rivers</h3>
+<h3>Hotel Three Rivers</h3>
         
-<ul class="horizontal" aria-labelledby="id2">
+<ul class="horizontal">
           
 <li>
-<a href="hotel_three_rivers_more_info.html">More Info</a>
+<a href="hotel_three_rivers_more_info.html">More Info <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
           
 <li>
-<a href="hotel_three_rivers_map.html">Map</a>
+<a href="hotel_three_rivers_map.html">Map <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
           
 <li>
-<a href="hotel_three_rivers_photos.html">Photos</a>
+<a href="hotel_three_rivers_photos.html">Photos <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
           
 <li>
-<a href="hotel_three_rivers_directions.html">Directions</a>
+<a href="hotel_three_rivers_directions.html">Directions <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
           
 <li>
-<a href="hotel_three_rivers_reviews.html">Guest reviews</a>
+<a href="hotel_three_rivers_reviews.html">Guest reviews <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
           
 <li>
-<a href="hotel_three_rivers_book.html">Book now</a>
+<a href="hotel_three_rivers_book.html">Book now <span class="sr-only">Hotel Three Rivers</span></a>
 </li>
         
 </ul>
       
 </div>
 <h2>Source Code</h2>
+<h3>CSS for sr-only class</h3>
+<pre>
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+      </pre>
+<h3>HTML</h3>
 <pre>
 <code id="sc1"></code>
 </pre>
