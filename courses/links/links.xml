@@ -872,7 +872,7 @@
             <td>
               <ul>
                 <li>Screen readers <em>do not</em> show link context information in list of links.</li>
-                <li>Accessible description is computed from visually displayed text content (e.g. higher chance of being accurate).</li>
+                <li>Accessible description is computed from visually displayed text content (i.e. higher chance of being accurate).</li>
               </ul>
           </td>
           </tr>
@@ -886,7 +886,7 @@
               <ul>
                 <li>Screen readers show link context information in list of links.</li>
                 <li>IDREFs must be uniquely generated and the references accurately set and maintained.</li>
-                <li>Accessible name is computed from visually displayed text content (e.g. higher chance of being accurate).</li>
+                <li>Accessible name is computed from visually displayed text content (i.e. higher chance of being accurate).</li>
               </ul>
             </td>
           </tr>
@@ -900,7 +900,7 @@
               <ul>
                 <li>Screen readers show link context information in list of links.</li>
                 <li>Attribute value has some redundant content with the link text.</li>
-                <li>Accessible name is computed from text content that is hidden from most users (e.g. lower chance of being accurate).</li>
+                <li>Accessible name is computed from text content that is hidden from most users (i.e. lower chance of being accurate).</li>
               </ul>
             </td>
           </tr>
@@ -914,7 +914,7 @@
               <ul>
                 <li>Screen readers show link context information in list of links.</li>
                 <li>Extra element in the link with redundant text.</li>
-                <li>Accessible name is computed from text content that is hidden from most users (e.g. lower chance of being accurate).</li>
+                <li>Accessible name is computed from text content that is hidden from most users (i.e. lower chance of being accurate).</li>
               </ul>
             </td>
           </tr>
@@ -929,7 +929,7 @@
                 <li>Some screen reader will read the group label, others do not.</li>
                 <li>Screen readers <em>do not</em> show link context information in list of links.</li>
                 <li>Extra element in the link with redundant text.</li>
-                <li>Accessible name for grouping element (e.g. <code>ul</code>) is computed text content that is visible (e.g. higher chance of being accurate).</li>
+                <li>Accessible name for grouping element (e.g. <code>ul</code>) is computed text content that is visible (i.e. higher chance of being accurate).</li>
               </ul>
             </td>
           </tr>
