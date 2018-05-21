@@ -1327,9 +1327,9 @@
 
 
   <slide>
-    <title>Best Practices on Using ARIA in HTML</title>
+    <title>Using ARIA in HTML (Best Practices)</title>
     <contents>
-      <p><a href="https://w3c.github.io/aria-in-html/">Best Practices on Using ARIA in HTML</a></p>
+      <p><a href="https://w3c.github.io/using-aria/">Using ARIA in HTML (Best Practices)</a></p>
       <ul>
         <li>Use native semantics of HTML (e.g. input[type=checkbox] rather than div[role=checkbox]).</li>
         <li>Don't override native semantics of elements (e.g. h2[role="banner]).</li>
