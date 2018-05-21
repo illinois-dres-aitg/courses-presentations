@@ -1432,7 +1432,7 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-disclosure-not-accessible/" target="_webedit">Inaccessible disclosure on WebEdit</a></p>
+     <p><a id="id_disclosure_inaccessible" href="https://webedit.disability.illinois.edu/user/jongund/aria-disclosure-not-accessible/output/" target="_webedit">Inaccessible disclosure on WebEdit</a> (<a href="https://webedit.disability.illinois.edu/user/jongund/aria-disclosure-not-accessible/copy/" aria-describedby="id_disclosure_inaccessible">Copy to Webedit</a>)</p>
 
      <div id="example">
         <div class="faq">
@@ -1678,7 +1678,12 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-disclosure-list/" target="_webedit">Accessible FAQ on WebEdit</a></p>
+     <p>
+      <a id="id_disclosure_2" href="https://webedit.disability.illinois.edu/user/jongund/aria-disclosure-list/output/" target="_webedit">
+        Accessible FAQ on WebEdit
+      </a>
+      (<a href="https://webedit.disability.illinois.edu/user/jongund/aria-disclosure-list/copy/" aria-describedby="id_disclosure_2">Copy to WebEdit</a>)
+     </p>
 
      <div id="example">
         <dl class="faq">
