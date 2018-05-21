@@ -1347,11 +1347,11 @@
     <contents>
 
     <ul>
-      <li><a href="http://www.parking.illinois.edu/about-us/faqs">Illinois Parking FAQ (Not Accessible)</a></li>
-      <li><a href="https://www.w3.org/TR/wai-aria-practices/#disclosure" target="_specification">ARIA Design Pattern for Disclosures (Show/Hide)</a>
+      <li><a href="http://www.parking.illinois.edu/about-us/faqs" target="_example">Illinois Parking FAQ (Not Accessible)</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-practices/#disclosure" target="_example">ARIA Design Pattern for Disclosures (Show/Hide)</a>
         <ul>
-          <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-faq.html">Example 2: Answers to Frequently Asked Questions</a></li>
-          <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html">Example 1: Image Description</a></li>
+          <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-faq.html" target="_example">Example 2: Answers to Frequently Asked Questions</a></li>
+          <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html" target="_example">Example 1: Image Description</a></li>
         </ul>
       </li>
     </ul>
