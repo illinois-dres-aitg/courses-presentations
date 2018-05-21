@@ -3660,7 +3660,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <td class="yes">Yes</td>
           </tr>
           <tr>
-            <td class="yes">Yes</td>
+            <td class="partial">Partial</td>
             <td>
               NVDA 2018.1.1
             </td>
