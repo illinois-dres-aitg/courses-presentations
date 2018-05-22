@@ -4171,7 +4171,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <td class="yes">Yes</td>
           </tr>
           <tr>
-            <td class="partial">Partial</td>
+            <td class="yes">Yes</td>
             <td>
               JAWS 2018
             </td>
@@ -4179,7 +4179,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               Firefox 52.8
             </td>
             <td class="yes">Yes</td>
-            <td class="no">no</td>
+            <td class="no">Yes</td>
             <td class="yes">Yes</td>
             <td class="yes">Yes</td>
           </tr>
@@ -4218,7 +4218,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               Firefox 52.8
             </td>
             <td class="yes">Yes</td>
-            <td class="no">no</td>
+            <td class="yes">Yes</td>
             <td class="no">no</td>
             <td class="no">no</td>
           </tr>
@@ -4697,7 +4697,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <td class="yes">Yes</td>
           </tr>
           <tr>
-            <td class="partial">Partial</td>
+            <td class="yes">Yes</td>
             <td>
               JAWS 2018
             </td>
@@ -4705,7 +4705,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               Firefox 52.8
             </td>
             <td class="yes">Yes</td>
-            <td class="no">no</td>
+            <td class="yes">Yes</td>
             <td class="yes">Yes</td>
             <td class="yes">Yes</td>
           </tr>
@@ -4744,7 +4744,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               Firefox 52.8
             </td>
             <td class="yes">Yes</td>
-            <td class="no">no</td>
+            <td class="yes">Yes</td>
             <td class="no">no</td>
             <td class="no">Yes</td>
           </tr>
@@ -5153,113 +5153,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
   </slide>
 
   <slide>
-    <title>Popup Error Example 5: Assistive Technology Support</title>
-    <contents>
-
-      <table class="survey table table-striped" aria-labelledby="h1_title">
-        <thead>
-          <tr>
-            <th>Support</th>
-            <th>Screen Reader</th>
-            <th>Browser</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              EDGE
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              Firefox
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Edge
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Firefox
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              Voice Over High Sierra
-            </td>
-            <td>
-              Safari 11.1
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              Voice Over High Sierra
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </contents>
-  </slide>
-
-  <slide>
     <title>Popup Error Example 6: aria-label attribute used for error message</title>
 
     <script src="js/submit-order.js" type="text/javascript"></script>
@@ -5660,208 +5553,17 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
     </contents>
   </slide>
 
-  <slide>
-    <title>Popup Error Example 6: Assistive Technology Support</title>
-    <contents>
-
-      <table class="survey table table-striped" aria-labelledby="h1_title">
-        <thead>
-          <tr>
-            <th>Support</th>
-            <th>Screen Reader</th>
-            <th>Browser</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              EDGE
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              JAWS 2018
-            </td>
-            <td>
-              Firefox
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Edge
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              NVDA 2018.1.1
-            </td>
-            <td>
-              Firefox
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              Voice Over High Sierra
-            </td>
-            <td>
-              Safari 11.1
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td class="yes">Yes</td>
-            <td>
-              Voice Over High Sierra
-            </td>
-            <td>
-              Chrome
-            </td>
-            <td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </contents>
-  </slide>
 
   <slide>
-    <title>Popup Error: Assistive Technology Support Summary</title>
+    <title>Popup Error: Best Practices</title>
     <contents>
+      <ul>
+        <li>Use <code>required</code> attribute for required form controls.</li>
+        <li>Use <code>aria-invalid="true"</code> when a field is invalid, otherwise remove the attribute for compatibility with Firefox.</li>
+        <li>Make the error message part of the accessible description, but accessible name also good.</li>
+        <li>Use <code>role="status"</code> on the popup error messages, so they will be announced to the user <strong>without</strong> interruptiong other speech.</li>
+      </ul>
 
-      <table class="survey table table-striped" aria-labelledby="h1_title">
-        <thead>
-          <tr>
-            <th>Example</th>
-            <th>Best Practice</th>
-            <th>Supported</th>
-            <th>Not Supported</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              1) no reference to error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              2) <code>label[for]</code> references error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              3) <code>aria-describedby</code> attribute reference to error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              4) <code>title</code> attribute reference to error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              5) <code>aria-labelledby</code> attribute reference to error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              6) <code>aria-label</code> attribute reference to error message
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </contents>
   </slide>
 
