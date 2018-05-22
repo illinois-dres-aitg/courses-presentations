@@ -3832,7 +3832,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
       <ul>
         <li><code>label[for]</code> element is used to label form control.</li>
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
-        <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+        <li><code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
         <li><code>aria-describedby</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
@@ -3851,7 +3851,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-name">Name</label>
             <input id="id-name"
               required="true"
-              aria-invalid="false"
               type="text"
               size="30"
               aria-describedby="id-name-error"
@@ -3863,7 +3862,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-address">Address</label>
             <input id="id-address"
               required="true"
-              aria-invalid="false"
               type="text"
               size="40"
               aria-describedby="id-address-error"
@@ -3875,7 +3873,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-phone">Phone</label>
             <input id="id-phone"
               required="true"
-              aria-invalid="false"
               type="text"
               size="14"
               aria-describedby="id-phone-error"
@@ -3901,7 +3898,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               <label><input id="id-classic" name="crust" type="radio" value="Classic" required="true" /> Classic</label>
             </div>
             <div class="button">
-              <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
+              <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"/> Deep Dish</label>
             </div>
           </fieldset>
 
@@ -4071,7 +4068,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
         $(em).addClass('error');
         }
         else {
-        $(ei).attr('aria-invalid', 'false');
+        $(ei).removeAttr('aria-invalid');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }
@@ -4359,7 +4356,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
       <ul>
         <li><code>label[for]</code> element is used to label form control.</li>
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
-        <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+        <li><code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         <li><code>role="status"</code> attribute is used to autmatically announce errors in form controls.</li>
         <li><code>title</code> attribute is used to provide an accessible description of the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       </ul>
@@ -4378,7 +4375,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-name">Name</label>
             <input id="id-name"
               required="true"
-              aria-invalid="false"
               type="text"
               size="30"
               title=""
@@ -4390,7 +4386,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-address">Address</label>
             <input id="id-address"
               required="true"
-              aria-invalid="false"
               type="text"
               size="40"
               title=""
@@ -4402,7 +4397,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-phone">Phone</label>
             <input id="id-phone"
               required="true"
-              aria-invalid="false"
               type="text"
               size="14"
               title=""
@@ -4425,10 +4419,10 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               <label><input id="id-thin" name="crust" type="radio" value="Thin" required="true"/> Thin</label>
             </div>
             <div class="button">
-              <label><input id="id-classic" name="crust" type="radio" value="Classic" required="true" /> Classic</label>
+              <label><input id="id-classic" name="crust" type="radio" value="Classic" /> Classic</label>
             </div>
             <div class="button">
-              <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
+              <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" /> Deep Dish</label>
             </div>
           </fieldset>
 
@@ -4599,7 +4593,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
         $(em).addClass('error');
         }
         else {
-        $(ei).attr('aria-invalid', 'false');
+        $(ei).removeAttr('aria-invalid');
         $(ei).attr('title', '');
         $(em).addClass('noerror');
         $(em).removeClass('error');
@@ -4872,7 +4866,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
       <ul>
         <li><code>aria-labelledby</code> attribute is used to label form control and includes element with error message.</li>
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
-        <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+        <li><code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
       </ul>
 
@@ -4889,7 +4883,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <div id="id-name-label">Name</div>
             <input id="id-name"
               required="true"
-              aria-invalid="false"
               type="text"
               size="30"
               aria-labelledby="id-name-label id-name-error"
@@ -4900,8 +4893,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
           <div class="text">
             <div id="id-address-label">Address</div>
             <input id="id-address"
-              aria-required="true"
-              aria-invalid="false"
+              required="true"
               type="text"
               size="40"
               aria-labelledby="id-address-label id-address-error"
@@ -4912,8 +4904,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
           <div class="text">
             <div id="id-phone-label">Phone</div>
             <input id="id-phone"
-              aria-required="true"
-              aria-invalid="false"
+              required="true"
               type="text"
               size="14"
               aria-labelledby="id-phone-label id-phone-error"
@@ -4936,10 +4927,10 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
               <input id="id-thin" name="crust" type="radio" value="Thin" aria-required="true" aria-labelledby="id-thin id-crust"/> Thin
             </div>
             <div class="button">
-              <input id="id-classic" name="crust" type="radio" value="Classic" aria-required="true" aria-labelledby="id-thin id-classic"/> Classic
+              <input id="id-classic" name="crust" type="radio" value="Classic" aria-required="true" aria-labelledby="id-thin id-crust"/> Classic
             </div>
             <div class="button">
-              <input id="id-deep" name="crust" type="radio" value="Deep Dish" aria-required="true" aria-labelledby="id-thin id-deep"/> Deep Dish
+              <input id="id-deep" name="crust" type="radio" value="Deep Dish" aria-required="true" aria-labelledby="id-thin id-crust"/> Deep Dish
             </div>
           </div>
 
@@ -5102,7 +5093,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
         $(em).addClass('error');
         }
         else {
-        $(ei).attr('aria-invalid', 'false');
+        $(ei).removeAttr('aria-invalid');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }
@@ -5373,7 +5364,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
         <li><code>label[for]</code> elements provide initial labels for form contorls.</li>
         <li><code>aria-label</code> attribute changes the label for a form control when it has an error.</li>
         <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
-        <li><code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+        <li><code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         <li><code>role="status"</code> is used to autmatically announce errors in form controls.</li>
       </ul>
 
@@ -5386,7 +5377,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-name">Name</label>
             <input id="id-name"
               required="true"
-              aria-invalid="false"
               type="text"
               size="30"
               onblur="checkName()"/>
@@ -5397,7 +5387,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-address">Address</label>
             <input id="id-address"
               required="true"
-              aria-invalid="false"
               type="text"
               size="40"
               onblur="checkAddress()"/>
@@ -5408,7 +5397,6 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
             <label for="id-phone">Phone</label>
             <input id="id-phone"
               required="true"
-              aria-invalid="false"
               type="text"
               size="14"
               onblur="checkPhone()"/>
@@ -5427,13 +5415,22 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
           <fieldset>
             <legend>Crust</legend>
             <div class="button">
-              <label><input id="id-thin" name="crust" type="radio" value="Thin" required="true"/> Thin</label>
+              <label>
+                <input id="id-thin" name="crust" type="radio" value="Thin" required="true"/>
+                Thin
+              </label>
             </div>
             <div class="button">
-              <label><input id="id-classic" name="crust" type="radio" value="Classic" required="true" /> Classic</label>
+              <label>
+                <input id="id-classic" name="crust" type="radio" value="Classic" required="true"/>
+                Classic
+              </label>
             </div>
             <div class="button">
-              <label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"/> Deep Dish</label>
+              <label>
+                <input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"/>
+                Deep Dish
+              </label>
             </div>
           </fieldset>
 
@@ -5604,7 +5601,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]:after {
         $(em).addClass('error');
         }
         else {
-        $(ei).attr('aria-invalid', 'false');
+        $(ei).removeAttr('aria-invalid');
         $(ei).removeAttr('aria-label');
         $(em).addClass('noerror');
         $(em).removeClass('error');

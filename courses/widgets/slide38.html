@@ -151,7 +151,7 @@
 <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         
 <li>
-<code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+<code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         
 <li>
 <code>role="status"</code> is used to autmatically announce errors in form controls.</li>
@@ -177,7 +177,7 @@
 <div class="text">
             
 <label for="id-name">Name</label>
-            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" aria-describedby="id-name-error" onblur="checkName()">
+            <input id="id-name" required="true" type="text" size="30" aria-describedby="id-name-error" onblur="checkName()">
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           
 </div>
@@ -186,7 +186,7 @@
 <div class="text">
             
 <label for="id-address">Address</label>
-            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" aria-describedby="id-address-error" onblur="checkAddress()">
+            <input id="id-address" required="true" type="text" size="40" aria-describedby="id-address-error" onblur="checkAddress()">
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           
 </div>
@@ -195,7 +195,7 @@
 <div class="text">
             
 <label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" aria-describedby="id-phone-error" onblur="checkPhone()">
+            <input id="id-phone" required="true" type="text" size="14" aria-describedby="id-phone-error" onblur="checkPhone()">
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           
 </div>
@@ -231,7 +231,7 @@
             
 <div class="button">
               
-<label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true" aria-labelledby="id-thin id-deep"> Deep Dish</label>
+<label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"> Deep Dish</label>
             
 </div>
           
@@ -409,7 +409,7 @@
         $(em).addClass('error');
         }
         else {
-        $(ei).attr('aria-invalid', 'false');
+        $(ei).removeAttr('aria-invalid');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }
