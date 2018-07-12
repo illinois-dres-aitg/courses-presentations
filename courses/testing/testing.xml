@@ -39,44 +39,88 @@
   </slide>
 
   <slide>
-    <title>Keyboard Navigation</title>
+    <title>Keyboard Navigation and Focus Styling</title>
     <contents>
+      <p>Use the <kbd>tab</kbd> key to navigate the interactive elements with Firefox.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Can I identify the control or link with keyboard focus?</li>
+        <li>Can I navigate to all interactive elements?</li>
+        <li>Can I activate all the links and actions on the page?</li>
+      </ul>
     </contents>
   </slide>
 
-  <slide>
-    <title>Focus Styling</title>
-    <contents>
-    </contents>
-  </slide>
 
   <slide>
     <title>Landmarks</title>
     <contents>
+      <p>Use <a href="https://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets</a> to highlight landmarks on the page and <a href="https://ainspector.github.io/">AInspector Sidebar</a> for evaluating landmark rules.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Is there a <code>main</code> landmark identifying the primary content of the page?</li>
+        <li>Is there a <code>banner</code> landmark identifying the content at the beginning of the page?</li>
+        <li>Is there a <code>contentinfo</code> landmark identifying the content at the end of the page??</li>
+        <li>Is there a <code>navigation</code> landmark identifying links for navigating the website?</li>
+        <li>Is all content in a landmark?</li>
+        <li>If more than one landmark of the same type do they have unique accessible names?</li>
+      </ul>
+
     </contents>
   </slide>
 
   <slide>
     <title>Headings</title>
     <contents>
+      <p>Use <a href="https://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets</a> to highlight headings on the page and <a href="https://ainspector.github.io/">AInspector Sidebar</a> for evaluating heading rules.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Is there a <code>h1</code> heading identifying the start of the primary content of the page?</li>
+        <li>Are headings used to identify section of the page?</li>
+        <li>Are headings properly nested?</li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>Form Control Labels</title>
     <contents>
+      <p>Use <a href="https://ainspector.github.io/">AInspector Sidebar</a> for evaluating form control rules.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Does each form control have a label (e.g. accessible name)?</li>
+        <li>Are <code>fieldset/legend</code> used for radio groups and groups of related controls?</li>
+        <li>How are required and invalid form controls identified?</li>
+        <li>Accessibility of error feedback for compatibility with assistive technology?</li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>Links</title>
     <contents>
+      <p>Use <a href="https://ainspector.github.io/">AInspector Sidebar</a> for evaluating form link rules.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Does each link have an accessible name?</li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>Color Contrast</title>
     <contents>
+      <p>Use <a href="https://ainspector.github.io/">AInspector Sidebar</a> for evaluating form color contrast.</p>
+
+      <p>What am I looking for:</p>
+      <ul>
+        <li>Any elements with color contrast issues?</li>
+      </ul>
     </contents>
   </slide>
 
