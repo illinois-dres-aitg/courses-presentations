@@ -218,6 +218,45 @@
 
 <p style="text-align: center"><img src="images/colorcontrast.png" alt="Color contrast chart" style="width: 90%; border-bottom: 1px solid black"/></p>
 
+    <h2>Tools</h2>
+
+     <ul>
+        <li><a target="_tool" href="http://ainspector.github.io/">AInspector Sidebar</a></li>
+        <li><a target="_tool" href="http://webaim.org/resources/contrastchecker/">WebAIM Color contrast checker</a></li>
+        <li><a target="_tool" href="https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker">WCAG Contrast Checker for Firefox</a></li>
+        <li><a target="_tool" href="https://chrome.google.com/webstore/search/color%20contrast%20analyzer">Color Contrast Analyzer for Chrome</a></li>
+        <li><a target="_tool" href="http://www.paciellogroup.com/resources/contrastAnalyser">TPC: Colour Contrast Analyser</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Text Alternatives for Images</title>
+    <contents>
+
+      <p style="float: right; margin-left: 1em"><img src="images/white-block.png" alt="Solid white image"/></p>
+
+      <p>There used to be this joke where you would get a picture of just a white box. The punchline varied, yet it was always something like, "a snowman in a blizzard" or simply something that was white on white. Of course, there were many other renditions of this - the yellow box that was a banana on the sun, and so forth.</p>
+
+      <p>Although they were sad attempts at humor, they were great examples of using alternate text (also called text descriptions).If you look at the box to the right, it looks like an empty box. When I say, "it's a snowman in a blizzard," it is very likely that your brain created that scenario in your mind to where you might actually answer, oh, ok, I see that now.</p>
+
+      <p>When Assistive Technology (AT) encounters a item that is not text, it looks in the code for alternative text (alt text). If alt text has not been used, the graphic appears blank to the user, just like the image above appears blank to you. If the alt text is there, the AT will read the description and the user will receive the conveying information just as a visual user does when they see the image.</p>
+
+      <h2>Why is it important?</h2>
+
+      <p>Alt text is important as a non-visual person will not be able to access the information of visual items. How do you know if a visual item is conveying information? If you remove the element does the document, presentation, etc. does it lose meaning? If so, then it conveys meaning. If not, it is most likely aesthetic and does not need alt-text (border images, watermarks, etc.)</p>
+
+      <p>Alt text can be simple or complex depending on what the image is conveying. As well, the same image may convey different information depending on what context it is being used in. For example, a photo of a cloudy sky would convey a different meaning if used in an atmospheric science course than in an art class.</p>
+
+      <h2>Resources</h2>
+
+      <ul>
+        <li><a href="http://diagramcenter.org/">Diagram Center</a></li>
+        <li><a href="https://webaim.org/techniques/alttext/">WebAIM: Alternative Text</a></li>
+        <li><a href="http://accessibility.psu.edu/images/alttext/">Penn State: Image ALT Text</a></li>
+      </ul>
+
     </contents>
   </slide>
 
@@ -260,20 +299,17 @@
     <contents>
       <dl>
         <dt>Tab Navigation</dt>
-        <dd>Using the <kbd>tab</kbd> to navigate interactive content on the page.</dd>
-        <dt>Keyboard Support in Widgets</dt>
-        <dd>Typically </dd>
-        <dt>Skipping to main content</dt>
-        <dd></dd>
+        <dd>Using the <kbd>tab</kbd> key to navigate interactive content on the page.</dd>
+        <dt>Keyboard Support in Links, Form Controls and Custom Widgets</dt>
+        <dd><kbd>space</kbd> or <kbd>enter</kbd> keys to perfrom an action.</dd>
+        <dd>Typically <kbd>up</kbd>, <kbd>down</kbd>, <kbd>left</kbd> and <kbd>right</kbd> cursor keys to navigate content.</dd>
+        <dt>Skiping to main content</dt>
+        <dd>Get to main content of page without excessive tabbing.</dd>
         <dt>Focus Styling</dt>
-        <dd></dd>
+        <dd>Is keyboard focus visible and easy to track.</dd>
+        <dd>Very important for keyboard only users.</dd>
+        <dd>Usually good visual focus styling is a good indicator of knowledge of accessibility.</dd>
       </dl>
-    </contents>
-  </slide>
-
-  <slide>
-    <title></title>
-    <contents>
     </contents>
   </slide>
 
@@ -284,19 +320,20 @@
         <li>Rehabition Act of 1973</li>
         <li>American with Disabilities Act (ADA)</li>
         <li>Section 508: Information Technology Accessibility</li>
-        <li>Office of Civil Rights (OCR) complaints</li>
+        <li>Technology, Education and Copyright Harmonization Act (TeachAct)</li>
+        <li>Office of Civil Rights (OCR) settlements</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Rehabition Act of 1973</title>
+    <title>Section 504 of the Rehabilitation Act of 1973</title>
     <contents>
      <div class="quote">
        No otherwise qualified individual with a disability in the United States... shall, solely by reason of her or his disability, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.
      </div>
      <ul>
-       <li><a href="http://www2.ed.gov/policy/speced/reg/narrative.html">Rehabition Act of 1973</a></li>
+       <li><a href="https://www.dol.gov/oasam/regs/statutes/sec504.htm">Section 504 Rehabilitation Act of 1973</a></li>
        <li>Civil right (cannot discriminate)</li>
        <li>Organizations receiving federal money (e.g. states, universities..)</li>
        <li>Accessible programs and services</li>
@@ -312,11 +349,12 @@
     <title>American with Disabilities Act (1992)</title>
     <contents>
       <ul>
-        <li>Extended coverage to public accomodations (e.g. businesses, non-profits, private education)</li>
-        <li>Published standards for:
+        <li>Extended coverage to public accommodations (e.g. businesses, non-profits, private education)</li>
+        <li>Equal opportunities for:
           <ul>
+            <li>State and local services</li>
             <li>Buildings</li>
-            <li>Transportation sytems</li>
+            <li>Transportation systems</li>
             <li>Telecommunications</li>
           </ul>
         </li>
@@ -349,6 +387,17 @@
     </contents>
   </slide>
 
+
+  <slide>
+    <title>Technology, Education and Copyright Harmonization Act (2002)</title>
+    <contents>
+      <p>The "Technology, Education and Copyright Harmonization Act" (the TeachAct) redefines the terms and conditions on which accredited, nonprofit educational institutions throughout the U.S. may use copyright protected materials in distance education - including on websites and by other digital means -- without permission from the copyright owner and without payment of royalties.</p>
+
+      <p><a href="http://www.ala.org/advocacy/copyright/teachact/faq">More information on the TeachAct</a></p>
+
+    </contents>
+  </slide>
+
   <slide>
     <title>International Web Accessibility Laws</title>
     <contents>
@@ -366,15 +415,54 @@
   <slide>
     <title>Office of Civil Right (OCR) Complaints in Higher Education</title>
     <contents>
-      <ul>
-        <li><a href="http://www.d.umn.edu/~lcarlson/atteam/lawsuits.html">Higher Education Accessibility Lawsuits Complaints, and Settlements</a></li>
-        <li><a href="http://ati.calstate.edu/index.php?page=61">California State University System (2009)</a></li>
-        <li><a href="http://www.readingrights.org/464">Electronic E-Books: Kindle pilot project (2009)</a></li>
-        <li><a href="http://accessibility.psu.edu/nfbpsusettlement/">Penn State University (2010)</a></li>
-        <li><a href="http://www.justice.gov/crt/about/edu/documents/montanaagree.pdf">University of Montana (2012)</a></li>
-        <li><a href="http://www.ed.gov/news/press-releases/us-education-department-reaches-agreement-youngstown-state-university-ensure-equal-access-its-websites-individuals-disabilities">Youngstown State (2014)</a></li>
-        <li><a href="http://www.nytimes.com/2015/02/13/education/harvard-and-mit-sued-over-failing-to-caption-online-courses.html?_r=0">Harvard/MIT captioning of MOOC videos (2015)</a></li>
-      </ul>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Complaint</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="http://www.umt.edu/accessibility/docs/AgreementResolution_March_7_2014.pdf">University of Montana Settlement (2014)</a></td>
+            <td>
+              <ul>
+                <li>Web accessibility policy</li>
+                <li>Auditing and remediation of web accessibility issues</li>
+                <li>EIT accessibility coordinator</li>
+                <li>Accessibility in procurement</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="http://www.ed.gov/news/press-releases/us-education-department-reaches-agreement-youngstown-state-university-ensure-equal-access-its-websites-individuals-disabilities">Youngstown State (2014)</a></td>
+            <td>
+              <ul>
+                <li>Web accessibility policy</li>
+                <li>Auditing and remediation of web accessibility issues in website and LMS</li>
+                <li>Reporting on progress to OCR</li>
+                <li>EIT accessibility coordinator</li>
+                <li>Accessibility of computing labs</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="https://www.justice.gov/sites/default/files/opa/press-releases/attachments/2015/04/02/edx_settlement_agreement.pdf">EdX settlement related to Harvard/MIT captioning of MOOC videos (2015)</a></td>
+            <td>
+              <ul>
+                <li>Web accessibility policy</li>
+                <li>Accessibility of mobile apps, LMS and websites</li>
+                <li>Website accessibility coordinator and consultants</li>
+                <li>Training developers and instructors</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="http://www.d.umn.edu/~lcarlson/atteam/lawsuits.html">Higher Education Accessibility Lawsuits Complaints, and Settlements</a></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </contents>
   </slide>
 
@@ -382,11 +470,12 @@
     <title>Summary</title>
     <contents>
       <ul>
-        <li>Establish a standard</li>
-        <li>Publicize the standard</li>
-        <li>Implementation plan</li>
-        <li>Accessibility must be managed</li>
-        <li>Procurement</li>
+        <li>Everyone has different abilities.</li>
+        <li>Universal design reduces or eliminates need for accommodations.</li>
+        <li>Accessibility is the law and is a civil right.</li>
+        <li>Policies, implementation plans and dedicated staff are need to manage accessibility.</li>
+        <li>Accessibility is a team effort, no one person or group can make an organization accessible, everyone plays a part.</li>
+        <li>People need to know their role and responsibilities for accessibility.</li>
       </ul>
     </contents>
   </slide>
