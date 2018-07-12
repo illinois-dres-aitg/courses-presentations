@@ -15,6 +15,7 @@
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
   <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
   <stylesheet media="screen">../../common/css/highlight.css</stylesheet>
+
   <script>../../common/js/jquery-2.1.1.min.js</script>
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
@@ -101,8 +102,8 @@
 
       <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-      <script src="../highcharts/js/highcharts.js"></script>
-      <script src="../highcharts/js/modules/exporting.js"></script>
+      <script src="../../common/highcharts/code/highcharts.js"></script>
+      <script src="../../common/highcharts/code/modules/exporting.js"></script>
 
       <script type="text/javascript">
 
