@@ -4,13 +4,13 @@
 <slides>
  <lang>en</lang>
   <title>Operating System Accessibility Features</title>
- <name>Jon Gunderson, Ph.D.</name> 
+ <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <email>jongund@illinois.edu</email> 
-  <home>../index.html</home> 
-  
+  <email>jongund@illinois.edu</email>
+  <home>../index.html</home>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -19,7 +19,7 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Operating System Accessibility Features</title>
     <contents>
@@ -39,13 +39,13 @@
     <title>History of Built-in Accessibility</title>
     <contents>
       <ul>
-        <li>First introduced in the late 1980's as accessibility utlities, becomes standard part of MS-DOS, Windows and Apple OS</li>
+        <li>First introduced in the late 1980's as accessibility utilities, becomes standard part of MS-DOS, Windows and Apple OS</li>
         <li>Windows 95 maintains requirement for full keyboard support (1995)</li>
         <li>VoiceOver/Zoom integrated into OS X 10.4 (2011)</li>
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Accessibility Features of Operating System</title>
     <contents>
@@ -55,7 +55,7 @@
         <li><a href="https://www.apple.com/accessibility/osx/">OS X. Designed with your abilities in mind</a></li>
         <p><a href="https://wiki.gnome.org/Accessibility/">GNOME Desktop Accessibility Wiki</a></p>
       </ul>
-      
+
       <h2>Tablets and Phones</h2>
       <ul>
         <p><a href="http://www.apple.com/accessibility/ios/">iOS. A wide range of features for a wide range of needs.</a></p>
@@ -69,14 +69,17 @@
     <contents>
       <h2>Physical</h2>
       <ul>
-        <li>Adjust keyboard behavior</li>
-        <li>Use keyboard to emulate mmouse</li>
+        <li>Sticky keys</li>
+        <li>Mouse keys</li>
+        <li>Repeat rate</li>
+        <li>Keypress timing</li>
+        <li>On screen keyboards for pointing devices (e.g. trackball, eye tracking)</li>
         <li>Voice commands</li>
       </ul>
       <h2>Visual</h2>
       <ul>
-        <li>Colors</li>
-        <li>Font size and familty</li>
+        <li>High contrast and other customizable themes</li>
+        <li>Font size and family</li>
         <li>Mouse pointer sized and style</li>
         <li>Magnification</li>
         <li>Speech output</li>
@@ -88,7 +91,94 @@
       </ul>
     </contents>
   </slide>
-  
-</slides> 
+
+  <slide>
+    <title>Sticky Keys</title>
+    <contents>
+      <ul>
+        <li>Allows one finger typing, by temporarily locking down modifier keys.</li>
+        <li>Press shift key five times to turn on or off.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Mouse Keys</title>
+    <contents>
+      <ul>
+        <li>Control the mouse pointer and activate mouse button using the keyboard.</li>
+        <li>Uses numeric keypad to move mouse pointer and to activate buttons.</li>
+      </ul>
+
+      <table class="table table-striped" aria-label="Keys for controling mouse keys">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Windows 10</th>
+            <th>OSX with Numeric Keypad</th>
+            <th>OSX without Numeric Keypad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Toggle on and off</td>
+            <td>Ease of Access options (Numeric keypad only)</td>
+            <td>Press <kbd>option</kbd> key five times</td>
+            <td>Press <kbd>option</kbd> key five times</td>
+          </tr>
+          <tr>
+            <td>Directional movement</td>
+            <td>Numeric keypad <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>, <kbd>6</kbd>, <kbd>7</kbd>, <kbd>8</kbd> and <kbd>9</kbd></td>
+            <td>Numeric keypad <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>, <kbd>6</kbd>, <kbd>7</kbd>, <kbd>8</kbd> and <kbd>9</kbd></td>
+            <td><kbd>J</kbd>, <kbd>K</kbd>, <kbd>L</kbd>, <kbd>U</kbd>, <kbd>O</kbd>, <kbd>7</kbd>, <kbd>8</kbd> and <kbd>9</kbd></td>
+          </tr>
+          <tr>
+            <td>Click</td>
+            <td>Numeric keypad <kbd>5</kbd></td>
+            <td>Numeric keypad <kbd>5</kbd></td>
+            <td><kbd>I</kbd> key</td>
+          </tr>
+          <tr>
+            <td>Double-Click</td>
+            <td>Numeric keypad <kbd>+</kbd></td>
+            <td>n/a</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td>Click and Hold button</td>
+            <td>Numeric keypad <kbd>0</kbd></td>
+            <td>Numeric keypad <kbd>0</kbd></td>
+            <td><kbd>M</kbd> key</td>
+          </tr>
+          <tr>
+            <td>Release button</td>
+            <td>Numeric keypad period <kbd>.</kbd></td>
+            <td>Numeric keypad period <kbd>.</kbd></td>
+            <td>Period key <kbd>.</kbd></td>
+          </tr>
+          <tr>
+            <td>Select left button</td>
+            <td>The forward slash <kbd>/</kbd></td>
+            <td>n/a</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td>Select right button</td>
+            <td>The minus sign <kbd>-</kbd></td>
+            <td>n/a</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td>Select both button</td>
+            <td>The asterisk (<kbd>✲</kbd>)</td>
+            <td>n/a</td>
+            <td>n/a</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+</slides>
 
 
