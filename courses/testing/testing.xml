@@ -48,6 +48,7 @@
         <li>Can I identify the control or link with keyboard focus?</li>
         <li>Can I navigate to all interactive elements?</li>
         <li>Can I activate all the links and actions on the page?</li>
+        <li>Does keyboard focus ever disappear?</li>
       </ul>
     </contents>
   </slide>
@@ -108,6 +109,7 @@
       <p>What am I looking for:</p>
       <ul>
         <li>Does each link have an accessible name?</li>
+        <li>Do accessible name identify the target of the link?</li>
       </ul>
     </contents>
   </slide>
@@ -120,6 +122,7 @@
       <p>What am I looking for:</p>
       <ul>
         <li>Any elements with color contrast issues?</li>
+        <li>Review manual checks for color contrast?</li>
       </ul>
     </contents>
   </slide>
