@@ -4,22 +4,23 @@
 <slides>
  <lang>en</lang>
   <title>Data Table Accessibility</title>
- <name>Jon Gunderson</name> 
+  <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <email>jongund@illinois.edu</email> 
-  <home>../index.html</home> 
-  
+  <email>jongund@illinois.edu</email>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
-  <stylesheet media="screen">../../common/css/xml-slides2.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+  <stylesheet media="screen">../../common/css/highlight.css</stylesheet>
   <script>../../common/js/jquery-2.1.1.min.js</script>
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/highlight.pack.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Tables Overview</title>
     <contents>
@@ -34,7 +35,7 @@
       </script>
     </contents>
   </slide>
-  
+
   <slide>
     <title>HTML Table Markup</title>
     <contents>
@@ -42,7 +43,7 @@
 	    <li>Layout tables</li>
 	    <li>Tabular data tables</li>
       </ul>
-      
+
       <h2>HTML 5 Changes to <code>table</code> element</h2>
       <ul>
         <li><code>summary</code> attribute has been deprecated</li>
@@ -52,9 +53,9 @@
       <ul>
         <li>Will probably add roles <code>table</code> and <code>cell</code> for use in markup languages like SVG</li>
       </ul>
-      
+
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <style>
@@ -76,11 +77,11 @@
 	    <li>Use only <code>tr</code> and <code>td</code> elements in table</li>
 	    <li>Make sure content is still understandable with table layout is disabled</li>
       </ul>
-      
+
       <h2>Layout Table Example</h2>
-      
+
       <div class="example">
-      
+
          <table role="presenation" id="id_lt">
          <tr >
            <td colspan="3">
@@ -110,25 +111,25 @@
          <tr>
            <td colspan="3">footer information</td>
          </tr>
-         
+
          </table>
-      
+
       </div>
-      
+
       <h2>Source Code</h2>
-      
+
       <div id="id_sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('id_sc1', 'id_lt');
         sourceCode.make();
       </script>
-      
+
     </contents>
-  </slide> 
-  
+  </slide>
+
   <slide>
     <style>
           div.example {
@@ -147,18 +148,18 @@
       <ul>
 	    <li>This layout table does not make sense when table markup is removed</li>
       </ul>
-      
+
       <h2>Layout Table Example</h2>
-      
+
       <div class="example">
-      
+
          <table role="presenation" id="id_lt">
          <tr>
            <td colspan="3">
            <h1>Page Title</h1>
            </td>
          </tr>
-         
+
          <tr>
            <td>
              <h2>Column 1</h2>
@@ -170,7 +171,7 @@
              <h2>Column 3</h2>
            </td>
          </tr>
-         
+
          <tr>
            <td>
              <p>
@@ -188,28 +189,28 @@
              </p>
            </td>
          </tr>
-         
+
          <tr>
            <td colspan="3" >footer information</td>
          </tr>
-         
+
          </table>
-      
-      </div>  
+
+      </div>
 
       <h2>Source Code</h2>
-      
+
       <div id="id_sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('id_sc1', 'id_lt');
         sourceCode.make();
       </script>
-      
+
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Data Table Design issues</title>
@@ -220,7 +221,7 @@
 	    <li>Identifying headers for data cells</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Accessible Name</title>
@@ -233,7 +234,7 @@
 	    <li><code>title</code> (Tooltip)</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Accessible Description</title>
@@ -244,7 +245,7 @@
 	    <li><code>title</code> (Tooltip)</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Identify Header Cells for a Data Cell</title>
@@ -255,17 +256,17 @@
 	    <li><code>scope</code> attribute</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
-  
-  <slide> 
+
+  <slide>
     <title>Data Table: Caption and Summary</title>
-    <contents> 
+    <contents>
 
       <div class="example">
 
         <table class="table table-striped" summary="70% of Instructors use Microsoft Office to create instructional web materials" id="id_dd">
-          <caption> Use of Microsoft Office to Create Web Materials</caption>     
+          <caption> Use of Microsoft Office to Create Web Materials</caption>
 
           <thead>
             <tr>
@@ -274,7 +275,7 @@
               <th>Word</th>
               <th>Excel</th>
             </tr>
-          </thead>  
+          </thead>
 
           <tbody>
             <tr>
@@ -283,21 +284,21 @@
               <td>87.9%</td>
               <td>51.4%</td>
             </tr>
-    
+
             <tr>
               <th>Web Developers</th>
               <td>43.7%</td>
               <td>84,9%</td>
               <td>43.7%</td>
             </tr>
-    
+
             <tr>
               <th>Disability Support</th>
               <td>57.7%</td>
               <td>73.1%</td>
               <td>46.2%</td>
             </tr>
-    
+
             <tr>
               <th>Others</th>
               <td>42.9%</td>
@@ -307,33 +308,33 @@
           </tbody>
         </table>
       </div>
-      
+
       <h2>Source Code</h2>
       <div id="id_sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('id_sc1', 'id_dd');
         sourceCode.make();
       </script>
-      
+
     </contents>
   </slide>
 
 
-  <slide> 
-   
+  <slide>
+
     <title>Data Table: aria-labeledby and aria-describedby</title>
-    <contents> 
+    <contents>
 
       <h2>Example</h2>
       <div class="example" id="id_ex">
-      
-        <h3 id="name"> Use of Microsoft Office to Create Web Materials</h3> 
+
+        <h3 id="name"> Use of Microsoft Office to Create Web Materials</h3>
 
         <table  class="table table-striped" aria-labelledby="name" aria-describedby="desc">
-        
+
           <thead>
             <tr>
               <th></th>
@@ -341,7 +342,7 @@
               <th>Word</th>
               <th>Excel</th>
             </tr>
-          </thead>  
+          </thead>
 
           <tbody>
             <tr>
@@ -350,21 +351,21 @@
               <td>87.9%</td>
               <td>51.4%</td>
             </tr>
-    
+
             <tr>
               <th>Web Developers</th>
               <td>43.7%</td>
               <td>84,9%</td>
               <td>43.7%</td>
             </tr>
-    
+
             <tr>
               <th>Disability Support</th>
               <td>57.7%</td>
               <td>73.1%</td>
               <td>46.2%</td>
             </tr>
-    
+
             <tr>
               <th>Others</th>
               <td>42.9%</td>
@@ -373,20 +374,20 @@
             </tr>
           </tbody>
         </table>
-        
+
         <p id="desc">70% of Instructors use Microsoft Office to create instructional web materials</p>
       </div>
-      
+
       <h2>Source Code</h2>
       <div id="id_sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('id_sc1', 'id_ex');
         sourceCode.make();
       </script>
-      
+
     </contents>
   </slide>
 
@@ -395,10 +396,10 @@
 
 <slide>
   <title>Complex Data Table: aria-label</title>
-  <contents> 
+  <contents>
 
   <div class="example" id="id_ex">
-    
+
     <table class="table table-striped" aria-label="Travel Expense Report">
       <thead>
         <tr>
@@ -408,8 +409,8 @@
           <th id="header4" axis="expenses">Transport</th>
           <th id="header5" axis="sub totals">Subtotals</th>
         </tr>
-      </thead>  
-      <tbody>  
+      </thead>
+      <tbody>
         <tr>
           <th id="header6" axis="location">San Jose</th>
           <td> </td>
@@ -473,21 +474,21 @@
           <td headers="header30 header4">162.00</td>
           <td headers="header30 header4">800.27</td>
         </tr>
-      </tbody>  
+      </tbody>
     </table>
-  </div>  
+  </div>
 
     <h2>Source Code</h2>
     <div id="id_sc1">
-      
+
     </div>
-    
+
     <script type="text/javascript">
       sourceCode.add('id_sc1', 'id_ex');
       sourceCode.make();
     </script>
   </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Coding Practices for Tables</title>
@@ -498,7 +499,7 @@
 	    <li>Complex data tables require the use of the <code>headers</code> attribute</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
 
-</slides> 
+</slides>
