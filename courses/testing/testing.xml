@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Accessibility Testing</title>
+  <name>Jon Gunderson, Ph.D.</name>
+  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
+  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
+  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  <email>jongund@illinois.edu</email>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+  <stylesheet media="screen">../../common/css/highlight.css</stylesheet>
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/highlight.pack.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Testing Overview</title>
+    <contents>
+      <ul>
+        <li>Keyboard accessibility and focus styling</li>
+        <li>Landmarks</li>
+        <li>Headings</li>
+        <li>Form control labels</li>
+        <li>Links</li>
+        <li>Color contrast</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Keyboard Navigation</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Focus Styling</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Landmarks</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Headings</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Form Control Labels</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Links</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Color Contrast</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+
