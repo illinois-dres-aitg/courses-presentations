@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Advantages of using Label Element</title>
+<title>Slide 37: Popup Error: Best Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -32,11 +32,11 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide4.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide36.html">Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide6.html">
+<a id="ID_SLIDE_NEXT" href="slide38.html">
                         Next
                       </a>
 </li>
@@ -46,18 +46,22 @@
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 5 of 38</div>
+<div class="navbar-text pull-right">Slide 37 of 38</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Advantages of using Label Element</h1>
+<h1 id="h1_title" class="title">Popup Error: Best Practices</h1>
 <ul>
         
-<li>Larger target area for form controls.</li>
+<li>Use <code>required</code> attribute for required form controls.</li>
         
-<li>Clicking on label moves focus to text input boxes or toggles the state of radio buttons and checkboxes.</li>
+<li>Use <code>aria-invalid="true"</code> when a field is invalid, otherwise remove the attribute for compatibility with Firefox.</li>
+        
+<li>Make the error message part of the accessible description, but accessible name also good.</li>
+        
+<li>Use <code>role="status"</code> on the popup error messages, so they will be announced to the user <strong>without</strong> interruptiong other speech.</li>
       
 </ul>
 </main>
