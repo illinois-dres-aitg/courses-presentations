@@ -275,7 +275,7 @@
         <li>Summary</li>
         <li>Defintion</li>
         <li>Purpose</li>
-        <li>WCAG 2.0 Success Criteria (e.g. primary and secondary)</li>
+        <li>WCAG 2.0 Success Criteria</li>
         <li>Techniques</li>
         <li>Scope: Website, Page or element</li>
         <li>Links to related information</li>
@@ -297,23 +297,23 @@
         </thead>
         <tbody>
           <tr>
-            <td>Violation</td>
+            <td style="background-color: #FFAEAE">Violation</td>
             <td>Fails a required rule</td>
           </tr>
           <tr>
-            <td>Warning</td>
+            <td style="background-color: #FFEC94">Warning</td>
             <td>Fails a reccomended rule</td>
           </tr>
           <tr>
-            <td>Manual Check</td>
+            <td style="background-color: #B4D8E7">Manual Check</td>
             <td>Human judgement is needed for verification of meeting an accessibility requirement</td>
           </tr>
           <tr>
-            <td>Passed</td>
+            <td style="background-color: #B0E57C">Passed</td>
             <td>The accessibility requirement has been met</td>
           </tr>
           <tr>
-            <td>Not Applicable</td>
+            <td style="background-color: black; color: gray">Not Applicable</td>
             <td>No elements on the page applied to this rule</td>
           </tr>
         </tbody>
