@@ -87,7 +87,7 @@
             <td>
               <ul>
                 <li>Describing features like "expandable", checked" or "selected".</li>
-                <li>Example: <code>&lt;div role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10"</code>.</li>
+                <li>Example: <br/><code>&lt;div role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10"</code>.</li>
               </ul>
             </td>
           </tr>
@@ -96,7 +96,7 @@
             <td>
               <ul>
                 <li><em>Accessible Name</em> provides a label identifying the function of the widget.</li>
-                <li>Example: <code>&lt;div role="slider" aria-label="Maximum Price"</code>.</li>
+                <li>Example: <br/><code>&lt;div role="slider" aria-label="Maximum Price"</code>.</li>
               </ul>
             </td>
           </tr>
@@ -105,7 +105,8 @@
             <td>
               <ul>
                 <li><em>Accessible Description</em> provides additional information about a widget including instructions and error messages.</li>
-                <li>Example: <br/><code>&lt;label>Name: &lt;input type="text" aria-invalid="true" aria-describedby="errorID">&lt;/label><br/>&lt;span id="errorID">Name cannot be empty&lt;/span></code>.</li>
+                <li>Example: <br/><code>&lt;label>Name: &lt;input type="text" aria-invalid="true" aria-describedby="errorID">&lt;/label>
+                <br/><br/>&lt;span id="errorID">Name cannot be empty&lt;/span></code>.</li>
               </ul>
             </td>
           </tr>
@@ -122,8 +123,8 @@
             <td>
               <ul>
                 <li>Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
-                <li>No ARIA: <code>&lt;div class="sr-only">slider value is 10</code>..</li>
-                <li>Using ARIA: <code>&lt;div role="slider" aria-value="10"</code>..</li>
+                <li>No ARIA: <br/><code>&lt;div class="sr-only">slider value is 10</code>..<br/></li>
+                <li>Using ARIA: <br/><code>&lt;div role="slider" aria-value="10"</code>..<br/></li>
               </ul>
             </td>
           </tr>
