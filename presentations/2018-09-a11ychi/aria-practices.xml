@@ -174,7 +174,7 @@
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#read_me_first" target="_video">Section 2. Read Me First</a></li>
         <li>No ARIA is better than bad ARIA:
           <ul>
-            <li>Principle 1: A role is a promise <br/>(<a href="https://www.youtube.com/watch?v=HV8iB6nX5dM">Video: Accessibility in the Real World by Karl "The Viking" Groves and Billy "The Lumberjack" Gregory</a>).</li>
+            <li>Principle 1: A role is a promise <br/>(<a href="https://www.youtube.com/watch?v=HV8iB6nX5dM" target="_related">Video: Accessibility in the Real World by Karl "The Viking" Groves and Billy "The Lumberjack" Gregory</a>).</li>
             <li>Principle 2: ARIA Can Both Cloak and Enhance, Creating Both Power and Danger.</li>
           </ul>
         </li>
@@ -213,11 +213,11 @@
     <title>Landmarks Example</title>
     <contents>
       <ul style="margin-bottom: 2em">
-        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/">ARIA Authoring Practices Landmark Example</a></li>
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" target="_related">ARIA Authoring Practices Landmark Example</a></li>
         <li>Uses landmark in design.</li>
         <li>Landmark visualization feature.</li>
         <li>Links to related resources.</li>
-        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a> for making hidden accessibility information visible.</li>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a> for making hidden accessibility information visible.</li>
       </ul>
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" width="98%" height="600px"></iframe>
     </contents>
@@ -257,7 +257,7 @@
       <ul style="margin-bottom: 2em">
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav">ARIA Authoring Practices: Fundamental Keyboard Navigation Conventions</a></li>
         <li>Keyboard interaction model for each widget role.</li>
-        <li>Example: <a href="https://education.illinois.edu/">College of Education Mega Menu</a></li>
+        <li>Example: <a href="https://education.illinois.edu/" target="_related">College of Education Mega Menu</a></li>
       </ul>
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav" width="98%" height="600px"></iframe>
     </contents>
@@ -271,8 +271,8 @@
         <li>Many users with disabilities can see the display, but need to identify the elements with keyboard focus and/or selections.</li>
         <li>Keyboard interaction is often difficult or impossible if users cannot identify what element has keyboard focus.</li>
         <li>Need more than just color, so the use of borders, underline or visual icons is important.</li>
-        <li>Poor Example: <a href="https://krannertcenter.com/">Krannert Performing Arts Center</a></li>
-        <li>Better Example: <a href="https://slack.com/">Slack</a></li>
+        <li>Poor Example: <a href="https://krannertcenter.com/" target="_related">Krannert Performing Arts Center</a></li>
+        <li>Better Example: <a href="https://slack.com/" target="_related">Slack</a></li>
       </ul>
       <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>
     </contents>
@@ -397,10 +397,10 @@
     <title>Open Source Tools and Training</title>
     <contents>
       <ul>
-        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
-        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
-        <li><a href="http://iadp.ahs.illinois.edu/">Information Accessibility Design and Policy Certificate</a></li>
-        <li><a href="http://go.illinois.edu/a11y-badges">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
+        <li><a href="https://fae.disability.illinois.edu" target="_related">Functional Accessibility Evaluator 2.0</a></li>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a></li>
+        <li><a href="http://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
+        <li><a href="http://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
