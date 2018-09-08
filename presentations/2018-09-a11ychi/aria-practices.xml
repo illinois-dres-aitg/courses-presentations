@@ -174,7 +174,7 @@
         <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#read_me_first" target="_video">Section 2. Read Me First</a></li>
         <li>No ARIA is better than bad ARIA:
           <ul>
-            <li>Principle 1: A role is a promise (<a href="https://www.youtube.com/watch?v=HV8iB6nX5dM">Video: Accessibility in the Real World by Karl "The Viking" Groves and Billy "The Lumberjack" Gregory</a>).</li>
+            <li>Principle 1: A role is a promise <br/>(<a href="https://www.youtube.com/watch?v=HV8iB6nX5dM">Video: Accessibility in the Real World by Karl "The Viking" Groves and Billy "The Lumberjack" Gregory</a>).</li>
             <li>Principle 2: ARIA Can Both Cloak and Enhance, Creating Both Power and Danger.</li>
           </ul>
         </li>
