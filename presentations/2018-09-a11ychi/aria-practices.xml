@@ -35,9 +35,16 @@
         <li>Section 7. Intentionally Hiding Semantics with the presentation Role</li>
         <li>Open Source Tools and Training from Illinois</li>
       </ul>
+
+      <p class="slide-show-url">
+        Slides at:<br/>
+        <a href="ps://go.illinois.edu/a11ychi">https://go.illinois.edu/a11ychi</a>
+      </p>
+<!--
       <script type="text/javascript">
         slideShowURL()
       </script>
+-->
     </contents>
   </slide>
 
