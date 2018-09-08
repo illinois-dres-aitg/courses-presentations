@@ -313,7 +313,7 @@
             <td>The accessibility requirement has been met</td>
           </tr>
           <tr>
-            <td style="background-color: black; color: #AAA">Not Applicable</td>
+            <td style="background-color: black; color: #CCC">Not Applicable</td>
             <td>No elements on the page applied to this rule</td>
           </tr>
         </tbody>
