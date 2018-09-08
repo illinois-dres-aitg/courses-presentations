@@ -978,7 +978,7 @@
           <tr>
             <td>Images</td>
             <td>image or image2</td>
-            <td>a11yimage2</td>
+            <td>a11yimage</td>
           </tr>
           <tr>
             <td>Accessibility Information</td>
@@ -988,7 +988,12 @@
           <tr>
             <td>Accessibility Checker</td>
             <td>a11ychecker</td>
-            <td><em>same</em></td>
+            <td>Slightly modified, removed two rules:
+              <ul>
+                <li>Error for using <code>title</code> attribute on image.</li>
+                <li>Checking for proper use of Blockquote semantics.</li>
+              </ul>
+            </td>
           </tr>
         </tbody>
       </table>
