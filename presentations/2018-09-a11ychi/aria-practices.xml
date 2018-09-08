@@ -149,11 +149,11 @@
     <contents>
       <h2>Browsers</h2>
       <ul>
-        <li>The use of ARIA markup does not affect browser behavior or rendering.</li>
-        <li>ARIA only affects how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+        <li>ARIA markup does <em>not</em> affect default browser behavior or rendering.</li>
+        <li>ARIA does affect how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
       </ul>
 
-      <h2>Asssitive Technologies</h2>
+      <h2>Assistive Technologies</h2>
       <ul>
         <li>Do not specify what assistive technologies will do with the information.</li>
       </ul>
