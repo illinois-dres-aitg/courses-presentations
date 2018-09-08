@@ -124,7 +124,7 @@
               <ul>
                 <li>Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
                 <li>No ARIA: <br/><code>&lt;div class="sr-only">slider value is 10</code>..<br/></li>
-                <li>Using ARIA: <br/><code>&lt;div role="slider" aria-value="10"</code>..<br/></li>
+                <li>Using ARIA: <br/><code>&lt;div role="slider" aria-valuenow="10"</code>..<br/></li>
               </ul>
             </td>
           </tr>
