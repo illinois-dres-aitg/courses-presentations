@@ -150,10 +150,10 @@
   </slide>
 
    <slide>
-    <title>Web Content Accessibility Guidelines 2.1</title>
+    <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines (WCAG) Specification</a>
+        <a href="http://www.w3.org/TR/WCAG" target="_specification">WCAG Specification</a>
       </p>
       <iframe src="http://www.w3.org/TR/WCAG " width="98%" height="600px" title="WCAG 2.1 Specification"></iframe>
     </contents>
@@ -163,7 +163,7 @@
     <title>Accessible Rich Internet Applications (ARIA) 1.1</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
+        <a href="http://www.w3.org/TR/wai-aria" target="_specification">ARIA Specification</a>
       </p>
       <iframe src="http://www.w3.org/TR/wai-aria" width="98%" height="600px" title="ARIA 1.0 Specification"></iframe>
     </contents>
@@ -173,7 +173,7 @@
     <title>HTML 5.2</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+        <a href="http://www.w3.org/TR/html5" target="_specification">HTML5 Specification</a>
       </p>
       <iframe src="http://www.w3.org/TR/html5/" width="98%" height="600px" title="HTML 5.2 Specification"></iframe>
     </contents>
@@ -190,22 +190,22 @@
   </slide>
 
   <slide>
-    <title>Accessible Rich Internet Application API Mappings</title>
+    <title>ARIA Core Accessibility API Mappings</title>
     <contents>
       <p class="center">
-        <a href="https://www.w3.org/TR/core-aam/" target="_specification">Core Accessibility API Mappings Specification</a>
+        <a href="https://www.w3.org/TR/core-aam/" target="_specification">ARIA Core Accessibility API Mappings Specification</a>
       </p>
       <iframe src="https://www.w3.org/TR/core-aam/" width="98%" height="600px" title="ARIA API Mappings 1.1 Specification"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>HTML API Mappings</title>
+    <title>HTML Accessibility API Mappings 1.0</title>
     <contents>
       <p class="center">
-        <a href="https://w3c.github.io/html-aam/" target="_specification">HTML Accessibility API Mappings 1.0</a>
+        <a href="https://w3c.github.io/html-aam/" target="_specification">HTML Accessibility API Mappings Specification</a>
       </p>
-      <iframe src="https://w3c.github.io/html-aam/" width="98%" height="600px" title="HTML Accessibility API Mappings 1.0 Specification"></iframe>
+      <iframe src="https://w3c.github.io/html-aam/" width="98%" height="600px" title="HTML Accessibility API Mappings Specification"></iframe>
     </contents>
   </slide>
 
@@ -213,7 +213,7 @@
     <title>ARIA Authoring Practices 1.1</title>
     <contents>
       <p class="center">
-        <a href="https://w3c.github.io/aria-practices/" target="_specification">WAI-ARIA Authoring Practices 1.1</a>
+        <a href="https://w3c.github.io/aria-practices/" target="_specification">ARIA Authoring Practices 1.1 Note</a>
       </p>
       <iframe src="https://w3c.github.io/aria-practices/" width="98%" height="600px" title="WAI-ARIA Authoring Practices 1.1 note"></iframe>
     </contents>
