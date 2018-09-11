@@ -153,9 +153,9 @@
     <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/WCAG" target="_specification">WCAG Specification</a>
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">WCAG Specification</a>
       </p>
-      <iframe src="http://www.w3.org/TR/WCAG " width="98%" height="600px" title="WCAG 2.1 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/WCAG " width="98%" height="600px" title="WCAG 2.1 Specification"></iframe>
     </contents>
   </slide>
 
@@ -163,9 +163,9 @@
     <title>Accessible Rich Internet Applications (ARIA) 1.1</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/wai-aria" target="_specification">ARIA Specification</a>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">ARIA Specification</a>
       </p>
-      <iframe src="http://www.w3.org/TR/wai-aria" width="98%" height="600px" title="ARIA 1.0 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/wai-aria" width="98%" height="600px" title="ARIA 1.0 Specification"></iframe>
     </contents>
   </slide>
 
@@ -173,9 +173,9 @@
     <title>HTML 5.2</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/html5" target="_specification">HTML5 Specification</a>
+        <a href="https://www.w3.org/TR/html5" target="_specification">HTML5 Specification</a>
       </p>
-      <iframe src="http://www.w3.org/TR/html5/" width="98%" height="600px" title="HTML 5.2 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/html5/" width="98%" height="600px" title="HTML 5.2 Specification"></iframe>
     </contents>
   </slide>
 
@@ -183,9 +183,9 @@
     <title>HTML5: main element</title>
     <contents>
       <p class="center">
-        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
       </p>
-      <iframe src="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" width="98%" height="600px" title="main element section of W3C HTML 5 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" width="98%" height="600px" title="main element section of W3C HTML 5 Specification"></iframe>
     </contents>
   </slide>
 
@@ -446,7 +446,7 @@
     <title>AInspector Sidebar 1.0 for Firefox ESR Version 52.x</title>
     <contents>
       <ul>
-        <li><a href="http://ainspector.github.io">http://ainspector.github.io</a></li>
+        <li><a href="https://ainspector.github.io">https://ainspector.github.io</a></li>
         <li>Designed for:
           <ul>
             <li>Web designers</li>
@@ -1146,8 +1146,8 @@
         <li><a href="https://ainspector.github.io/" target="_related">AInspector Sidebar for Firefox ESR Version 52.x</a></li>
         <li><a href="https://github.com/ainspector/webextensions-firefox" target="_related">Beta of AInspector Sidebar next for current version of Firefox</a></li>
         <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a></li>
-        <li><a href="http://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
-        <li><a href="http://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
+        <li><a href="https://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
+        <li><a href="https://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
