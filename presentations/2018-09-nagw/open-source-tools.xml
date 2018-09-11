@@ -421,6 +421,7 @@
           <ul>
             <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
             <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
+            <li><a href="https://github.com/opena11y/fae2">Source Code for FAE 2.0</a></li>
           </ul>
         </li>
         <li>Designed for:
@@ -442,7 +443,7 @@
   </slide>
 
   <slide>
-    <title>AInspector Sidebar for Firefox</title>
+    <title>AInspector Sidebar 1.0 for Firefox ESR Version 52.x</title>
     <contents>
       <ul>
         <li><a href="http://ainspector.github.io">http://ainspector.github.io</a></li>
@@ -467,11 +468,12 @@
     </contents>
   </slide>
 
+
   <slide>
     <title>Bookmarklets for Visualizing Accessibility Features</title>
     <contents>
       <ul>
-        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
+        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
         <li>Features:
           <ul>
             <li>Highlight Regions and Elements on page</li>
@@ -487,9 +489,36 @@
   </slide>
 
   <slide>
-    <title>FAE Auditor</title>
+    <title>AInspector Sidebar Next for Firefox (Alpha)</title>
     <contents>
       <ul>
+        <li><a href="https://github.com/ainspector/webextensions-firefox">Source code for AInspector Sidebar Next</a></li>
+        <li>Uses Firefox Sidebar API, which is not available in Chrome</li>
+        <li>Plans:
+          <ul>
+            <li>Replicate functionality of current AInspector Sidebar</li>
+            <li>Provide element oriented views like bookmarklets:
+              <ul>
+                <li>Structure (e.g. title, landmarks, headings and lists)</li>
+                <li>Form Controls, Links and ARIA Widgets</li>
+                <li>Images and graphics</li>
+                <li>Color Contrast</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Plan to port to Chrome/Safari at some point</li>
+     </ul>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>FAE Auditor (Alpha)</title>
+    <contents>
+      <ul>
+        <li><a href="https://fae-auditor-dev.disability.illinois.edu/">FAE Auditor (Development Version)</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
         <li>Identify strengths and weaknesses of accessibility implementation</li>
         <li>Compare websites and groups of websites</li>
         <li>Support creating accessibility dashboard</li>

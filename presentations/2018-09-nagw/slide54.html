@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 54: A11yFirst Demo</title>
+<title>Slide 54: a11yFirst configuration of CKEditor</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,24 +40,86 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide60.html">
+<a id="ID_SLIDE_LAST" href="slide61.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 54 of 60</div>
+<div class="navbar-text pull-right">Slide 54 of 61</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">A11yFirst Demo</h1>
-<p>
-<a href="https://a11yfirst.library.illinois.edu/">Public A11yFirst Demonstration Website</a>
-</p>
-<p>URL: <code>https://a11yfirst.library.illinois.edu/</code>
-</p>
-<iframe src="https://a11yfirst.library.illinois.edu/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+<h1 id="h1_title" class="title">a11yFirst configuration of CKEditor</h1>
+<table class="table table-striped" aria-label="Features and associated CKEditor plugins">
+        
+<thead>
+          
+<tr>
+            
+<th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>Headings and Paragraphs</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Accessibility Checker</td>
+            <td>a11ychecker</td>
+            <td>Slightly modified, removed two rules:
+              <ul>
+                
+<li>Error for using <code>title</code> attribute on image.</li>
+                
+<li>Checking for proper use of Blockquote semantics.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">

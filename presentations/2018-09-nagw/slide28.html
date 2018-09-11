@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: ARIA Basics</title>
+<title>Slide 28: PART 2: ARIA and ARIA Authoring Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,168 +40,18 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide60.html">
+<a id="ID_SLIDE_LAST" href="slide61.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 60</div>
+<div class="navbar-text pull-right">Slide 28 of 61</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
 <a name="main" id="main"></a>
-<h1 id="h1_title" class="title">ARIA Basics</h1>
-<table class="table table-striped">
-        
-<thead>
-          
-<tr>
-            
-<th>Feature</th>
-            <th>Description</th>
-          
-</tr>
-        
-</thead>
-        
-<tbody>
-          
-<tr>
-            
-<th>Role</th>
-            <td>
-              
-<ul>
-                
-<li>Describes the type of widget.</li>
-                
-<li>Implies the <em>keyboard interaction</em>.</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Properties and States</th>
-            <td>
-              
-<ul>
-                
-<li>Describing features like "expandable", checked" or "selected".</li>
-                
-<li>Example: <br>
-<code>&lt;div role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10"</code>.</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Name</th>
-            <td>
-              
-<ul>
-                
-<li>
-<em>Accessible Name</em> provides a label identifying the function of the widget.</li>
-                
-<li>Example: <br>
-<code>&lt;div role="slider" aria-label="Maximum Price"</code>.</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Description</th>
-            <td>
-              
-<ul>
-                
-<li>
-<em>Accessible Description</em> provides additional information about a widget including instructions and error messages.</li>
-                
-<li>Example: <br>
-<code>&lt;label&gt;Name: &lt;input type="text" aria-invalid="true" aria-describedby="errorID"&gt;&lt;/label&gt;
-                <br>
-<br>&lt;span id="errorID"&gt;Name cannot be empty&lt;/span&gt;</code>.</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Relationships</th>
-            <td>How components relate to each other (e.g. controls, owns)</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Grouping</th>
-            <td>Groups of related components (e.g. lists, menus, trees, tab panels).</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Language</th>
-            <td>
-              
-<ul>
-                
-<li>Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
-                
-<li>No ARIA: <br>
-<code>&lt;div class="sr-only"&gt;slider value is 10</code>..<br>
-</li>
-                
-<li>Using ARIA: <br>
-<code>&lt;div role="slider" aria-valuenow="10"</code>..<br>
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<th>Standardization</th>
-            <td>Mappings to accessibility APIs:
-            <ul>
-              
-<li>ATK/AT-SPI (Linux/Unix)</li>
-              
-<li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
-              
-<li>Microsoft UI Automate</li>
-              
-<li>MacOS Accessibility API</li>
-            
-</ul>
-          
-</td>
-          
-</tr>
-        
-</tbody>
-      
-</table>
+<h1 id="h1_title" class="title">PART 2: ARIA and ARIA Authoring Practices</h1>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
