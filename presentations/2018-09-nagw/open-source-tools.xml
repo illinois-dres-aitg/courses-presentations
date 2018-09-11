@@ -195,17 +195,17 @@
       <p class="center">
         <a href="https://www.w3.org/TR/core-aam/" target="_specification">ARIA Core Accessibility API Mappings Specification</a>
       </p>
-      <iframe src="https://www.w3.org/TR/core-aam/" width="98%" height="600px" title="ARIA API Mappings 1.1 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/core-aam/" width="98%" height="600px" title="CORE AAM Mappings 1.1 Specification"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>HTML Accessibility API Mappings 1.0</title>
+    <title>HTML Accessibility API Mappings</title>
     <contents>
       <p class="center">
-        <a href="https://w3c.github.io/html-aam/" target="_specification">HTML Accessibility API Mappings Specification</a>
+        <a href="https://www.w3.org/TR/html-aam-1.0/" target="_specification">HTML Accessibility API Mappings Specification</a>
       </p>
-      <iframe src="https://w3c.github.io/html-aam/" width="98%" height="600px" title="HTML Accessibility API Mappings Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/html-aam-1.0/" width="98%" height="600px" title="HTML Accessibility API Mappings Specification"></iframe>
     </contents>
   </slide>
 
