@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Experience of Disability and Introduction to Web Accessibility</title>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <conference>
+    <name href="https://courses.illinois.edu/schedule/2017/fall/IS/555">Information Science 555: Usability Engineering</name>
+    <desc>October 3rd, 2017</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Operating System Accessibility Features</title>
+    <contents>
+      <ul>
+        <li>Accessibility Simulation</li>
+        <li>Operating Accessibility Features</li>
+        <li>Accessibility Standards and Techniques</li>
+        <li>Tools for learning about accessibility</li>
+        <li>Accessible authoring</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Disability Simulation</title>
+    <contents>
+      <ul>
+        <li>Visual impairment goggles</li>
+        <li>Splints simulating paralysis</li>
+        <li>Gloves simulating arthritis</li>
+        <li>Head pointers</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>History of Built-in Accessibility</title>
+    <contents>
+      <ul>
+        <li>First introduced in the late 1980's as accessibility utlities, becomes standard part of MS-DOS, Windows and Apple OS</li>
+        <li>Windows 95 maintains requirement for full keyboard support (1995)</li>
+        <li>VoiceOver/Zoom integrated into OS X 10.4 (2011)</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessibility Features of Operating System</title>
+    <contents>
+      <h2>Laptops and Desktops</h2>
+      <ul>
+        <li><a href="http://www.microsoft.com/enable/products/windows10/" target="_a11y_info">Accessibility in Windows 10</a></li>
+        <li><a href="https://www.apple.com/accessibility/osx/" target="_a11y_info">OS X: Designed with your abilities in mind</a></li>
+        <li><a href="https://wiki.gnome.org/Accessibility/" target="_a11y_info">GNOME Desktop Accessibility Wiki</a></li>
+      </ul>
+
+      <h2>Tablets and Phones</h2>
+      <ul>
+        <li><a href="http://www.apple.com/accessibility/ios/" target="_a11y_info">iOS: A wide range of features for a wide range of needs.</a></li>
+        <li><a href="https://support.google.com/accessibility/android/" target="_a11y_info">Android Accessibility Help Center</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+   <slide>
+    <title>Web Content Accessibility Guidelines 2.0</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">W3C Web Content Accessibility Guidelines 2.0</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/WCAG" title="W3C Web Content Accessibility Guidelines 2.0" width="90%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">W3C Accessible Rich Internet Applications 1.0</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/wai-aria" title="W3C Accessible Rich Internet Applications 1.0" width="90%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html5" title="W3C HTML 5 Specification" width="90%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" title="HTML 5 main element Specification" width="90%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Summary of Operating System Accessibility Features</title>
+    <contents>
+      <h2>Physical</h2>
+      <ul>
+        <li>Adjust keyboard behavior</li>
+        <li>Use keyboard to emulate mmouse</li>
+        <li>Voice commands</li>
+      </ul>
+      <h2>Visual</h2>
+      <ul>
+        <li>Colors</li>
+        <li>Font size and familty</li>
+        <li>Mouse pointer sized and style</li>
+        <li>Magnification</li>
+        <li>Speech output</li>
+      </ul>
+      <h3>Hearing</h3>
+      <ul>
+        <li>Caption preference</li>
+        <li>Flash screen for system sounds</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Bookmarklets for Visualizing Accessibility Features</title>
+    <contents>
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a></li>
+        <li>Features:
+          <ul>
+            <li>Highlight Regions and Elements on page</li>
+            <li>Element information</li>
+            <li>Default or defined <code>role</code></li>
+            <li>Accessible name</li>
+            <li>Accessible description</li>
+            <li>Important prorperties (e.g the number of items in a list)</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst for CKEditor: Accessible Authoring</title>
+    <contents>
+      <ul>
+        <li>Accessible authoring versus accessibility remediation</li>
+        <li><a href="https://a11yfirst.library.illinois.edu/" target="_reference">Demo of A11yFirst for CKEditor</a></li>
+        <li>Currently four plugins:
+          <ul>
+            <li>Headings</li>
+            <li>Block Format</li>
+            <li>Inline Style</li>
+            <li>A11yFirst Help</li>
+          </ul>
+        </li>
+        <li>Support requirements of CKEditor A11yChecker</li>
+      </ul>
+
+      <iframe src="https://a11yfirst.library.illinois.edu/" height="600" width="98%" title="A11yFirst for CKEditor home page"></iframe>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Issues in IT Accessibility</title>
+    <contents>
+      <ul>
+        <li><strong>Human resources</strong>: There are not enough people who undestand the experience of disability and the technqiues to make resources more accessible.</li>
+        <li><strong>Roles</strong>: No one needs to know everything, but everyone needs to know something to contribute to accessibility.</li>
+        <li><strong>Authoring</strong>: Authoring tools need to support accessibility by default, rather than by exception.</li>
+        <li><strong>Standards</strong>: Standards need to support accessibility and provide a means to make it easier to make resources more accessible.</li>
+      </ul>
+
+      <h2>Accessibility 101</h2>
+      <p><a href="http://disability.illinois.edu/academic-support/accessible-it-group/badging/a11y101">Accessibility 101 online training for UI students, faculty and staff.</a></p>
+
+      <h2>Upcoming Event</h2>
+      <p><a href="https://www.inclusivedesign24.org/">Inclusive Design 24 on October 11th is a free online event on IT accessibility</a></p>
+    </contents>
+  </slide>
+
+</slides>
+
+
