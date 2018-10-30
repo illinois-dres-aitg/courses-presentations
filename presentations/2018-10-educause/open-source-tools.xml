@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Open-Source Tools for Auditing and Inspecting Web Accessibility</title>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+  <conference>
+    <name href="https://events.educause.edu/annual-conference/2018/agenda/open-source-tools-for-auditing-and-inspecting-web-accessibility">Educause 2018 Annual Conference</name>
+    <desc>October 31st, 2018</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li><a href="http://davidmacd.com/wcag_theme_song.html">Web Content Accessibility Guidelines (WCAG) 2.0 Theme Song</a></li>
+        <li>Summary</li>
+        <li>Introductions</li>
+        <li>Why open source?</li>
+        <li>Standards for web accessibility</li>
+        <li>Open Source Tools</li>
+        <li>ARIA Authoring Practices</li>
+        <li>A11yFirst Project</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Workshop Summary</title>
+    <contents>
+      <table aria-labelledby="h1_title" class="table table-striped">
+        <tbody>
+          <tr>
+            <th>Open Source</th>
+            <td>
+              Freely available for anyone to use and customize to their own needs.
+            </td>
+          </tr>
+          <tr>
+            <th>W3C Standards</th>
+            <td>
+              Support HTML5 and Accessible Rich Internet Application (ARIA) 1.0 design techniques to meet WCAG 2.0 Level A and AA requirements.
+            </td>
+          </tr>
+          <tr>
+            <th>Support Learning</th>
+            <td>
+              Support learning about accessibility by including meta information in each rule:
+              <ul>
+                <li>Definition</li>
+                <li>Purpose</li>
+                <li>HTML and ARIA Techniques</li>
+                <li>Informational Links</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Integrated</th>
+            <td>
+              <a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator (FAE) 2.0</a>
+              and <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar</a>
+              work together to understand accessibility features and issues of a web resource.
+            </td>
+          </tr>
+          <tr>
+            <th>Visualize</th>
+            <td>
+              <a href="https://accessibility-bookmarklets.org">Accessibility Bookmarklets</a> provide a means to "visualize" typically hidden accessibility information.
+            </td>
+          </tr>
+          <tr>
+            <th>Widgets</th>
+            <td>
+              <a href="https://www.w3.org/TR/wai-aria-practices-1.1/">ARIA Authoring Practices</a> is a reference on how to make custom interactive widgets accessible using web standards.
+            </td>
+          </tr>
+          <tr>
+            <th>Accessible Authoring</th>
+            <td>
+              <a href="https://a11yfirst.library.illinois.edu/">A11yFirst for CKEditor</a> provides a way to support accessible authoring.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Introductions</title>
+    <contents>
+      <ul>
+        <li>What interested you in this workshop?</li>
+        <li>What would you like to take away from this workshop?</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>What I want to get out of the workshop</title>
+    <contents>
+      <ul>
+        <li>Feedback on the usability and approachability of the open source for evaluation and inspection.</li>
+        <li>How do these tools help people understand and evaluate accessibility.</li>
+        <li>What is missing from these tools that would facilitate evaluating and inspecting accessibility.</li>
+        <li>Is there an interest in building a community of practice around OpenAjax Evaluation Library and the tools.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>PART 1: Open Source Tools</title>
+    <contents>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Why Open Source?</title>
+    <contents>
+      <ul>
+        <li><a href="http://disability.illinois.edu/history-firsts">History of University of Illinois in Disability Services</a>.</li>
+        <li>Raise awareness of accessibility issues.</li>
+        <li>Help people learn about accessibility through the use of web standards.</li>
+        <li>Develop a collective understanding of accessibility.</li>
+        <li>Use scarce resources for human resource development.</li>
+      </ul>
+    </contents>
+  </slide>
+
+   <slide>
+    <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">WCAG Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/WCAG " width="98%" height="600px" title="WCAG 2.1 Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) 1.1</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">ARIA Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/wai-aria" width="98%" height="600px" title="ARIA 1.0 Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5.2</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/html5" target="_specification">HTML5 Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html5/" width="98%" height="600px" title="HTML 5.2 Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML5: main element</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" width="98%" height="600px" title="main element section of W3C HTML 5 Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Core Accessibility API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/core-aam/" target="_specification">ARIA Core Accessibility API Mappings Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/core-aam/" width="98%" height="600px" title="CORE AAM Mappings 1.1 Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML Accessibility API Mappings</title>
+    <contents>
+      <p class="center">
+        <a href="https://www.w3.org/TR/html-aam-1.0/" target="_specification">HTML Accessibility API Mappings Specification</a>
+      </p>
+      <iframe src="https://www.w3.org/TR/html-aam-1.0/" width="98%" height="600px" title="HTML Accessibility API Mappings Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Authoring Practices 1.1</title>
+    <contents>
+      <p class="center">
+        <a href="https://w3c.github.io/aria-practices/" target="_specification">ARIA Authoring Practices 1.1 Note</a>
+      </p>
+      <iframe src="https://w3c.github.io/aria-practices/" width="98%" height="600px" title="WAI-ARIA Authoring Practices 1.1 note"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>OpenAjax Evaluation Library</title>
+    <contents>
+      <ul>
+        <li>Support the use of HTML5 and ARIA techniques for implementation of WCAG 2.0 Level A and AA requirements</li>
+        <li>Raise awareness of accessibility of accessibility issues</li>
+        <li>Knowledge base on what it means to comply with WCAG 2.0 requirements for specific technologies (e.g. teaching and learning framework)</li>
+        <li>Support institutional planning and compliance</li>
+        <li>Open source to promote discussion and conversation on what it means to be "accessible" (e.g. people can define their own definition with open source)</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Rulesets</title>
+    <contents>
+      <p class="center">
+        <a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Evaluation Library Rulesets</a>
+      </p>
+
+      <h2 id="id1">Rulesets</h2>
+      <table aria-labelledby="id1" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5 and ARIA Techniques</td>
+            <td>WCAG 2.0 Level A and AA requirements using ARIA 1.0 and HTML5 accessibility features.</td>
+          </tr>
+          <tr>
+            <td>HTML4 Legacy Techniques</td>
+            <td>WCAG 2.0 Level A and AA requirements primarily using HTML4 techniques, but allows HTML5 and ARIA 1.0 accessibility techniques.
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Rule Features</title>
+    <contents>
+      <p class="center">
+
+      </p>
+
+      <ul>
+        <li>Summary</li>
+        <li>Defintion</li>
+        <li>Purpose</li>
+        <li>WCAG 2.0 Success Criteria</li>
+        <li>Techniques</li>
+        <li>Scope: Website, Page or element</li>
+        <li>Links to related information</li>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/CONTROL_1/" target="_specification">Example Rule: Form controls must have labels</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Rule Results</title>
+    <contents>
+
+      <table aria-labelledby="id1" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Result</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color: #FFAEAE">Violation</td>
+            <td>Fails a required rule</td>
+          </tr>
+          <tr>
+            <td style="background-color: #FFEC94">Warning</td>
+            <td>Fails a reccomended rule</td>
+          </tr>
+          <tr>
+            <td style="background-color: #B4D8E7">Manual Check</td>
+            <td>Human judgement is needed for verification of meeting an accessibility requirement</td>
+          </tr>
+          <tr>
+            <td style="background-color: #B0E57C">Passed</td>
+            <td>The accessibility requirement has been met</td>
+          </tr>
+          <tr>
+            <td style="background-color: black; color: #CCC">Not Applicable</td>
+            <td>No elements on the page applied to this rule</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title> Rule Categories</title>
+    <contents>
+
+      <table class="details table table-striped table-hover" aria-labelledby="rule_categories">
+        <thead>
+          <tr>
+            <th class="text">Category</th>
+            <th class="text">Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th>Landmarks</th>
+            <td>Use ARIA landmark roles to structure the content of each page and identify major sections of content, thus making them more findable and navigable. The use of landmarks will, in many cases, reflect the visual styling and page layouts that web designers utilize to set apart various sections of content.</td>
+          </tr>
+
+          <tr>
+            <th>Headings</th>
+            <td>Use heading elements (H1-H6) to provide appropriate labels for landmarks, and to identify subsections of content within landmarks.</td>
+          </tr>
+
+          <tr>
+            <th>Styles/Content</th>
+            <td>Use proper HTML markup to identify the semantics and language of text content. Ensure that text is readable by adhering to color contrast guidelines, and that information is not conveyed solely by the use of color, shape, location or sound.</td>
+          </tr>
+
+          <tr>
+            <th>Images</th>
+            <td>Provide appropriate text alternatives for static images and graphics.</td>
+          </tr>
+
+          <tr>
+            <th>Links</th>
+            <td>Use link text that properly describes the target of each link. Ensure consistency and uniqueness for links that are usable, predictable and understandable.</td>
+          </tr>
+
+          <tr>
+            <th>Tables</th>
+            <td>Provide table captions or other meta-information as needed. Provide row and column header references for data cells of data tables. Ensure that tables used for layout properly linearize text content.</td>
+          </tr>
+
+          <tr>
+            <th>Forms</th>
+            <td>Provide meaningful labels for form elements and usable and understandable error feedback as needed.</td>
+          </tr>
+
+          <tr>
+            <th>Widgets/Scripts</th>
+            <td>Use appropriate event handlers on elements to support native interactivity using JavaScript. Ensure that custom widgets created using JavaScript support keyboard interaction and include ARIA markup to describe their roles, properties and states.</td>
+          </tr>
+
+          <tr>
+            <th>Audio/Video</th>
+            <td>Provide appropriate text transcripts, captions or audio descriptions for elements used in rendering audio and video content.</td>
+          </tr>
+
+          <tr>
+            <th>Keyboard</th>
+            <td>Provide logical and sequential keyboard navigation among interactive elements such as links and form controls. Use standard models of keyboard interaction for custom widgets.</td>
+          </tr>
+
+          <tr>
+            <th>Timing</th>
+            <td>Eliminate accessibility problems caused by time limits on input and by content that moves, scrolls, flashes or auto-updates.</td>
+          </tr>
+
+          <tr>
+            <th>Site Navigation</th>
+            <td>Ensure the consistent labeling and ordering of recurrent page sections across all pages within a website. Provide a meaningful title for each page within a website.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Ruleset and Rule Details</title>
+    <contents>
+      <ul>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/" target="_specification">HTML5 and ARIA Ruleset</a></li>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_TRANS/" target="_specification">HTML4 Legacy Ruleset</a></li>
+        <li><a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Rulesets</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Functional Accessibility Evaluator (FAE) 2.0</title>
+    <contents>
+      <ul>
+        <li>Two versions of Functional Accessibility Evaluator 2.0
+          <ul>
+            <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
+            <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
+            <li><a href="https://github.com/opena11y/fae2">Source Code for FAE 2.0</a></li>
+          </ul>
+        </li>
+        <li>Designed for:
+          <ul>
+            <li>Managers</li>
+            <li>Web designers</li>
+            <li>Software developers</li>
+            <li>Quality assurance testers</li>
+            <li>IT Auditors</li>
+          </ul>
+        </li>
+        <li>Website rule result summaries and implementation status</li>
+        <li>Page rule result summaries</li>
+        <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
+        <li>Archive and share reports</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>AInspector Sidebar 1.0 for Firefox ESR Version 52.x</title>
+    <contents>
+      <ul>
+        <li><a href="https://ainspector.github.io">https://ainspector.github.io</a></li>
+        <li>Designed for:
+          <ul>
+            <li>Web designers</li>
+            <li>Software developers</li>
+            <li>Quality assurance testers</li>
+          </ul>
+        </li>
+        <li>Summary Rule Results
+          <ul>
+            <li>Rule Categories</li>
+            <li>WCAG 2.0 Guideline Summary</li>
+          </ul>
+        </li>
+        <li>Analyzes the browser DOM content</li>
+        <li>Highlighting elements</li>
+        <li>DOM inspector</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Bookmarklets for Visualizing Accessibility Features</title>
+    <contents>
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
+        <li>Features:
+          <ul>
+            <li>Highlight Regions and Elements on page</li>
+            <li>Element information</li>
+            <li>Default or defined <code>role</code></li>
+            <li>Accessible name</li>
+            <li>Accessible description</li>
+            <li>Important properties (e.g the number of items in a list)</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>AInspector Sidebar Next for Firefox (Alpha)</title>
+    <contents>
+      <ul>
+        <li><a href="https://github.com/ainspector/webextensions-firefox">Source code for AInspector Sidebar Next</a></li>
+        <li>Uses Firefox Sidebar API, which is not available in Chrome</li>
+        <li>Plans:
+          <ul>
+            <li>Replicate functionality of current AInspector Sidebar</li>
+            <li>Provide element oriented views like bookmarklets:
+              <ul>
+                <li>Structure (e.g. title, landmarks, headings and lists)</li>
+                <li>Form Controls, Links and ARIA Widgets</li>
+                <li>Images and graphics</li>
+                <li>Color Contrast</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Plan to port to Chrome/Safari at some point</li>
+     </ul>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>FAE Auditor (Alpha)</title>
+    <contents>
+      <ul>
+        <li><a href="https://fae-auditor-dev.disability.illinois.edu/">FAE Auditor (Development Version)</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
+        <li>Identify strengths and weaknesses of accessibility implementation</li>
+        <li>Compare websites and groups of websites</li>
+        <li>Support creating accessibility dashboard</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Submit an Issue or Idea</title>
+    <contents>
+      <ul>
+        <li><a href="https://github.com/opena11y/oaa-rules/issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
+        <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
+        <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Supporting Tool and Resource Development</title>
+    <contents>
+      <h2>Support Options</h2>
+      <ul>
+        <li><a href="https://fae.disability.illinois.edu/account/donate/">Make a Donation</a></li>
+        <li><a href="https://fae.disability.illinois.edu/subscription/">Subscription Options</a></li>
+      </ul>
+
+      <h2>Use of Resources</h2>
+      <ul>
+        <li>Improve tools</li>
+        <li>New tools</li>
+        <li>Support students</li>
+        <li>Developing training materials</li>
+        <li>Support participation in standards groups</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Open Source Tools User Group</title>
+    <contents>
+      <h2>Purpose</h2>
+      <ul>
+        <li>Meet the evaluation needs of the community of users</li>
+        <li>Develop a collective understanding web accessibility</li>
+        <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
+        <li>Typically meets second Thursday of the month at 2:00pm Central Time (e.g Chicago Local Time)</li>
+      </ul>
+
+      <h2 id="join">Joining</h2>
+      <p>Create a free account on <a href="https://fae.disability.illinois.edu/accounts/register/">Functional Accessibility Evaluator 2.0</a> (note: Subscriptions help support this sevice).</p>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>PART 2: ARIA and ARIA Authoring Practices</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Basics</title>
+    <contents>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Role</th>
+            <td>
+              <ul>
+                <li>Describes the type of widget.</li>
+                <li>Implies the <em>keyboard interaction</em>.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Properties and States</th>
+            <td>
+              <ul>
+                <li>Describing features like "expandable", checked" or "selected".</li>
+                <li>Example: <br/><code>&lt;div role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10"</code>.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td>
+              <ul>
+                <li><em>Accessible Name</em> provides a label identifying the function of the widget.</li>
+                <li>Example: <br/><code>&lt;div role="slider" aria-label="Maximum Price"</code>.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td>
+              <ul>
+                <li><em>Accessible Description</em> provides additional information about a widget including instructions and error messages.</li>
+                <li>Example: <br/><code>&lt;label>Name: &lt;input type="text" aria-invalid="true" aria-describedby="errorID">&lt;/label>
+                <br/><br/>&lt;span id="errorID">Name cannot be empty&lt;/span></code>.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Relationships</th>
+            <td>How components relate to each other (e.g. controls, owns)</td>
+          </tr>
+          <tr>
+            <th>Grouping</th>
+            <td>Groups of related components (e.g. lists, menus, trees, tab panels).</td>
+          </tr>
+          <tr>
+            <th>Language</th>
+            <td>
+              <ul>
+                <li>Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
+                <li>No ARIA: <br/><code>&lt;div class="sr-only">slider value is 10</code>..<br/></li>
+                <li>Using ARIA: <br/><code>&lt;div role="slider" aria-valuenow="10"</code>..<br/></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Standardization</th>
+            <td>Mappings to accessibility APIs:
+            <ul>
+              <li>ATK/AT-SPI (Linux/Unix)</li>
+              <li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
+              <li>Microsoft UI Automate</li>
+              <li>MacOS Accessibility API</li>
+            </ul>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Contract with Browsers and Assistive Technologies</title>
+    <contents>
+      <h2>Browsers</h2>
+      <ul>
+        <li>ARIA markup does <em>not</em> affect default browser behavior or rendering.</li>
+        <li>ARIA does affect how information is represented in accessibility APIs (e.g. MSAA+IAccessible2, ATK+SPI, UIAutomate, MacOS).</li>
+      </ul>
+
+      <h2>Assistive Technologies</h2>
+      <ul>
+        <li>Do not specify what assistive technologies will do with the information.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 2: Read Me First</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#read_me_first" target="_video">Section 2. Read Me First</a></li>
+        <li>No ARIA is better than bad ARIA:
+          <ul>
+            <li>Principle 1: A role is a promise <br/>(<a href="https://www.youtube.com/watch?v=HV8iB6nX5dM" target="_related">Video: Accessibility in the Real World by Karl "The Viking" Groves and Billy "The Lumberjack" Gregory</a>).</li>
+            <li>Principle 2: ARIA Can Both Cloak and Enhance, Creating Both Power and Danger.</li>
+          </ul>
+        </li>
+        <li>Browser and assistive technology support in examples:
+          <ul>
+            <li>Illustrate appropriate use of ARIA 1.1.</li>
+            <li>Testing is required if specific technologies need to be supported (e.g. legacy technologies).</li>
+          </ul>
+        </li>
+        <li>Mobile and touch support in examples:
+          <ul>
+            <li>There is limited information on interoperability for mobile browsers.</li>
+            <li>Future goal of the guide.</li>
+          </ul>
+        </li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+ <slide>
+   <title>Section 4: Landmark Regions</title>
+   <contents>
+     <ul style="margin-bottom: 2em">
+       <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_landmark">ARIA Authoring Practices: Landmark Regions</a>.</li>
+       <li>HTML5 Sectioning Elements (e.g. <code>header</code>, <code>main</code>, <code>nav</code>, <code>aside</code>, <code>section</code> and <code>footer</code>) have default landmark roles.</li>
+       <li>Step 1: Identify the logical structure.</li>
+       <li>Step 2: Assign landmark roles to each area.</li>
+       <li>Step 3: Label areas.</li>
+     </ul>
+     <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_landmark" width="98%" height="600px"></iframe>
+   </contents>
+ </slide>
+
+  <slide>
+    <title>Landmarks Example</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" target="_related">ARIA Authoring Practices Landmark Example</a></li>
+        <li>Uses landmark in design.</li>
+        <li>Landmark visualization feature.</li>
+        <li>Links to related resources.</li>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a> for making hidden accessibility information visible.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 3.15: Menu Button</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton">ARIA Authoring Practices: Menu Button</a></li>
+        <li>Description of example.</li>
+        <li>Links to related examples.</li>
+        <li>Working example.</li>
+        <li>Keyboard interaction.</li>
+        <li>Use of roles properties and states.</li>
+        <li>Source code.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#menubutton" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5: Developing a Keyboard Interface</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard">ARIA Authoring Practices: Developing a Keyboard Interface</a></li>
+        <li>This is often the least understood part of using ARIA technology.</li>
+        <li>What is the keyboard interaction model and which ARIA widget roles are compatible with that model.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.1: Fundamental Keyboard Navigation Conventions</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav">ARIA Authoring Practices: Fundamental Keyboard Navigation Conventions</a></li>
+        <li>Keyboard interaction model for each widget role.</li>
+        <li>Example: <a href="https://education.illinois.edu/" target="_related">College of Education Mega Menu</a></li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_generalnav" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.2: Discernible and Predictable Keyboard Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable">ARIA Authoring Practices: Discernible and Predictable Keyboard Focus</a></li>
+        <li>Many users with disabilities can see the display, but need to identify the elements with keyboard focus and/or selections.</li>
+        <li>Keyboard interaction is often difficult or impossible if users cannot identify what element has keyboard focus.</li>
+        <li>Need more than just color, so the use of borders, underline or visual icons is important.</li>
+        <li>Poor Example: <a href="https://krannertcenter.com/" target="_related">Krannert Performing Arts Center</a></li>
+        <li>Better Example: <a href="https://slack.com/" target="_related">Slack</a></li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_discernable_predictable" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.3: Focus vs. Selection and the Perception of Dual Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection">ARIA Authoring Practices: Focus vs. Selection and the Perception of Dual Focus</a></li>
+        <li>Making the styling of keyboard focus and selection different is important.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_focus_vs_selection" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.4: Deciding When to Make Selection Automatically Follow Focus</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus">ARIA Authoring Practices: Deciding When to Make Selection Automatically Follow Focus</a></li>
+        <li>When content is loaded basd on user interaction there can sometimes be delays in content being available, make sure the affects of these delays are minimized for keyboard users.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_selection_follows_focus" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Section 5.5: Keyboard Navigation Between Components (The Tab Sequence)</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between">ARIA Authoring Practices: Keyboard Navigation Between Components (The Tab Sequence)</a></li>
+        <li>The use of <code>tabindex=-1</code> and <code>tabindex=0</code> to define interactive elements and tab order of content of the page.</li>
+        <li><code>tabindex</code> values > 0 are discouraged, and should only be used cautiously.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_between" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Section 5.6: Keyboard Navigation Inside Components</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within">ARIA Authoring Practices: Keyboard Navigation Inside Components</a></li>
+        <li>Roving <code>tabindex</code> versus <code>aria-activedescendant</code> technique for identifying element with current focus.</li>
+        <li>Call <code>focus()</code> on elements with focus.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_general_within" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.7: Focusability of Disabled Controls</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls">ARIA Authoring Practices: Focusability of disabled controls</a></li>
+        <li>When to keep or remove keyboard interaction to disabled controls.</li>
+      </ul>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_disabled_controls" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.8: Key Assignment Conventions for Common Functions</title>
+    <contents>
+        <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_common_conventions">ARIA Authoring Practices: Key Assignment Conventions for Common Functions</a></p>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_common_conventions" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 5.9: Keyboard Shortcuts</title>
+    <contents>
+      <ul style="margin-bottom: 2em">
+        <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts">ARIA Authoring Practices: Keyboard Shortcuts</a></li>
+        <li>Keyboard shortcuts should enhance, not replace, standard keyboard access.</li>
+        <li>Effectively choosing from among the following behaviors:</li>
+          <ul>
+            <li>Navigation: Moving focus to an element.</li>
+            <li>Activation: Performing an operation associated with an element that does not have focus and might not be visible.</li>
+            <li>Navigation and activation: Both moving focus to an element and activating it.</li>
+          </ul>
+        <li>Balancing efficiency and cognitive load:
+          <ul>
+            <li>Lack of a shortcut reduces efficiency</li>
+            <li>Too many shortcuts increases cognitive load to remember.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_shortcuts" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 7: Intentionally Hiding Semantics with the Presentation Role</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role">Section 6: Intentionally Hiding Semantics with the presentation Role </a></p>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#presentation_role" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Section 8. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational">Section 7. Roles That Automatically Hide Semantics by Making Their Descendants Presentational</a></p>
+      <iframe src="https://www.w3.org/TR/wai-aria-practices-1.1/#children_presentational" width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Name and Description: Computation and API Mappings 1.1</title>
+    <contents>
+      <p><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description: Computation and API Mappings 1.1</a></p>
+      <iframe src="https://www.w3.org/TR/accname-aam-1.1/ " width="98%" height="600px"></iframe>
+    </contents>
+  </slide>
+
+
+
+  <slide>
+    <title>PART 3: a11yFirst Accessibility WYSISWYG Editor</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Accessible Authoring</li>
+        <li>Features of a11yFirst plug-ins</li>
+        <li>Usability testing results</li>
+        <li>WordPress and Drupal plug-ins</li>
+        <li>Next steps</li>
+        <li>Communication and dissemination</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>University of Illinois Library <abbr title="Content Management System">CMS</abbr></title>
+    <contents>
+      <ul>
+        <li class="more">Moving to using WordPress to manage web content.</li>
+        <li class="more">Want to support accessible content on new website.</li>
+        <li class="more">Remidating existing content is labor intensive and expensive.</li>
+        <li class="more">Library grant to investigate more than accessibility remdiation.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Project Goals</title>
+    <contents>
+      <ul>
+        <li class="more">Accessible authoring versus remediation.</li>
+        <li class="more">Support accessibility as content is created.</li>
+        <li class="more">Teach authors about accessibility.</li>
+        <li class="more">Change how people think about creating content.</li>
+        <li class="more">Support features of a11yChecker for CKEditor.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Author Thinking of WYSISWYG Editors</title>
+    <contents>
+      <ul>
+        <li class="more">What does the page look like.</li>
+        <li class="more">HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
+        <li class="more">Not aware of accessibility requirements.</li>
+        <li class="more">Not aware of accessibility issues of different types of content.</li>
+        <li class="more">Accessibility takes more time and is hard (e.g. remidation model).</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Change User Thinking About Accessibility</title>
+    <contents>
+      <ul>
+        <li class="more">Accessibility is important to the <em>organization</em>.</li>
+        <li class="more">Accessibility is part of <em>their</em> responsibilities.</li>
+        <li class="more">HTML <em>semantics</em> are important (e.g. headings, lists, ..).</li>
+        <li class="more">Meaningful link text.</li>
+        <li class="more">Describing images.</li>
+        <li class="more">Accessibility during the <em>creation</em> of content.</li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>a11yFirst configuration of CKEditor</title>
+    <contents>
+      <table class="table table-striped" aria-label="Features and associated CKEditor plugins">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Headings and Paragraphs</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          </tr>
+          <tr>
+            <td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          </tr>
+          <tr>
+            <td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          </tr>
+          <tr>
+            <td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          </tr>
+          <tr>
+            <td>Accessibility Checker</td>
+            <td>a11ychecker</td>
+            <td>Slightly modified, removed two rules:
+              <ul>
+                <li>Error for using <code>title</code> attribute on image.</li>
+                <li>Checking for proper use of Blockquote semantics.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Demo</title>
+    <contents>
+      <p><a href="https://a11yfirst.library.illinois.edu/">Public A11yFirst Demonstration Website</a></p>
+      <p>URL: <code>https://a11yfirst.library.illinois.edu/</code></p>
+      <iframe src="https://a11yfirst.library.illinois.edu/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Headings and Paragraphs</title>
+    <contents>
+      <dl>
+        <dt>Headings</dt>
+        <dd>Html tag</dd>
+        <dd>Styled the same to re-enforce using them structurally</dd>
+        <dd>Only allowed heading levels are enabled</dd>
+
+        <dt>Paragraph Formatting</dt>
+        <dd>Normal</dd>
+        <dd>Preformatted text</dd>
+        <dd>Address line</dd>
+        <dd><em>Note:</em> Other block level styles can be added through configuration</dd>
+
+        <dt>Help</dt>
+        <dd>More information on the importance of using headings</dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Links</title>
+    <contents>
+      <dl>
+        <dt>Display Text (DT)</dt>
+        <dd>Check DT for common accessibility issues (e.g. 'link to', 'click here', ..)</dd>
+        <dd>Check DT for use a URL or e-mail address.</dd>
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Images</title>
+    <contents>
+      <dl>
+        <dt>Image Type</dt>
+        <dd>Informative: Short description and potentially long description.</dd>
+        <dd>Decorative: No alternative text.</dd>
+
+        <dt>Short Description</dt>
+        <dd>Adds information to the <code>alt</code> attribute.</dd>
+        <dd>Checks for poor alt text content (e.g. 'image of')</dd>
+        <dd>Checks for use of file name.</dd>
+
+        <dt>Complex Image</dt>
+        <dd>Identifies the image as needing to include a long description.</dd>
+
+        <dt>Location of Description</dt>
+        <dd>Adds information to the <code>title</code> attribute.</dd>
+        <dd>Options: Before, After or Both.</dd>
+
+        <dt>Caption</dt>
+        <dd>Encloses image in <code>figure</code> element and adds a <code>figcaption</code> element.</dd>
+        <dd>Optional visual label for image on page</dd>
+        <dd>Checks to make sure not the same or similiar to alt text.</dd>
+        <dd>Edit caption in image dialog box.</dd>
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Help/Information</title>
+    <contents>
+      <dl>
+        <dt>Feature Information</dt>
+        <dd>Headings/Paragraph Menu</dd>
+        <dd>Lists</dd>
+        <dd>Links</dd>
+        <dd>Images</dd>
+        <dd>Lists (future)</dd>
+        <dd>Tables (future)</dd>
+        <dd>Language (future)</dd>
+
+        <dt>Support Information</dt>
+        <dd>About A11yFirst</dd>
+        <dd>Keyboard Shortcuts</dd>
+        <dd>Getting Started (future)</dd>
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>a11yChecker (quail engine)</title>
+    <contents>
+      <ul>
+        <li>Activated by Button in toolbar.</li>
+        <li>a11yFirst features support rules in a11yChecker.</li>
+        <li>Modified checker to remove two rules:
+          <ul>
+            <li>Error for using <code>title</code> attribute on image.</li>
+            <li>Checking for proper use of Blockquote semantics.</li>
+          </ul>
+        </li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Open Source Tools and Training</title>
+    <contents>
+      <ul>
+        <li><a href="https://fae.disability.illinois.edu" target="_related">Functional Accessibility Evaluator 2.0</a></li>
+        <li><a href="https://ainspector.github.io/" target="_related">AInspector Sidebar for Firefox ESR Version 52.x</a></li>
+        <li><a href="https://github.com/ainspector/webextensions-firefox" target="_related">Beta of AInspector Sidebar next for current version of Firefox</a></li>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a></li>
+        <li><a href="https://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
+        <li><a href="https://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Places to Find More Information and Discussion Groups</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/" target="_related">W3C Web Accessibility Initiative (WAI)</a></li>
+        <li><a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals (Certification Opportunities)</a></li>
+        <li><a href="https://webaim.org/" target="_related">WebAIM</a></li>
+      </ul>
+    </contents>
+  </slide>
+</slides>
+
+
