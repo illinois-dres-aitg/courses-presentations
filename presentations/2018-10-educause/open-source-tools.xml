@@ -98,16 +98,6 @@
   </slide>
 
   <slide>
-    <title>ARIA Core Accessibility API Mappings</title>
-    <contents>
-      <p class="center">
-        <a href="https://www.w3.org/TR/core-aam/" target="_specification">ARIA Core Accessibility API Mappings Specification</a>
-      </p>
-      <iframe src="https://www.w3.org/TR/core-aam/" width="98%" height="600px" title="CORE AAM Mappings 1.1 Specification"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
     <title>HTML Accessibility API Mappings</title>
     <contents>
       <p class="center">
@@ -181,7 +171,7 @@
 
       <ul>
         <li>Summary</li>
-        <li>Defintion</li>
+        <li>Definition</li>
         <li>Purpose</li>
         <li>WCAG 2.0 Success Criteria</li>
         <li>Techniques</li>
@@ -210,11 +200,11 @@
           </tr>
           <tr>
             <td style="background-color: #FFEC94">Warning</td>
-            <td>Fails a reccomended rule</td>
+            <td>Fails a recommended rule</td>
           </tr>
           <tr>
             <td style="background-color: #B4D8E7">Manual Check</td>
-            <td>Human judgement is needed for verification of meeting an accessibility requirement</td>
+            <td>Human judgment is needed for verification of meeting an accessibility requirement</td>
           </tr>
           <tr>
             <td style="background-color: #B0E57C">Passed</td>
