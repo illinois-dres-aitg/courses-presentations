@@ -441,14 +441,13 @@
   </slide>
 
   <slide>
-    <title>Open Source Tools User Group</title>
+    <title>Open Source Accessibility Tools Sustainable Community</title>
     <contents>
       <h2>Purpose</h2>
       <ul>
         <li>Meet the evaluation needs of the community of users</li>
         <li>Develop a collective understanding web accessibility</li>
-        <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
-        <li>Typically meets second Thursday of the month at 2:00pm Central Time (e.g Chicago Local Time)</li>
+        <li>Develop solutions that can be shared among institutions</li>
       </ul>
 
       <h2 id="join">Joining</h2>
@@ -458,29 +457,15 @@
   </slide>
 
    <slide>
-    <title>Open Source Tools and Training</title>
+    <title>Training</title>
     <contents>
       <ul>
-        <li><a href="https://fae.disability.illinois.edu" target="_related">Functional Accessibility Evaluator 2.0</a></li>
-        <li><a href="https://ainspector.github.io/" target="_related">AInspector Sidebar for Firefox ESR Version 52.x</a></li>
-        <li><a href="https://github.com/ainspector/webextensions-firefox" target="_related">Beta of AInspector Sidebar next for current version of Firefox</a></li>
-        <li><a href="https://accessibility-bookmarklets.org/" target="_related">Accessibility Bookmarklets</a></li>
         <li><a href="https://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
         <li><a href="https://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
 
-  <slide>
-    <title>Places to Find More Information and Discussion Groups</title>
-    <contents>
-      <ul>
-        <li><a href="https://www.w3.org/WAI/" target="_related">W3C Web Accessibility Initiative (WAI)</a></li>
-        <li><a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals (Certification Opportunities)</a></li>
-        <li><a href="https://webaim.org/" target="_related">WebAIM</a></li>
-      </ul>
-    </contents>
-  </slide>
 </slides>
 
 
