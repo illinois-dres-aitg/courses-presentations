@@ -131,38 +131,6 @@
   </slide>
 
   <slide>
-    <title>Rulesets</title>
-    <contents>
-      <p class="center">
-        <a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Evaluation Library Rulesets</a>
-      </p>
-
-      <h2 id="id1">Rulesets</h2>
-      <table aria-labelledby="id1" class="table table-striped">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML5 and ARIA Techniques</td>
-            <td>WCAG 2.0 Level A and AA requirements using ARIA 1.0 and HTML5 accessibility features.</td>
-          </tr>
-          <tr>
-            <td>HTML4 Legacy Techniques</td>
-            <td>WCAG 2.0 Level A and AA requirements primarily using HTML4 techniques, but allows HTML5 and ARIA 1.0 accessibility techniques.
-            </td>
-          </tr>
-
-        </tbody>
-      </table>
-
-    </contents>
-  </slide>
-
-  <slide>
     <title>Rule Features</title>
     <contents>
       <p class="center">
