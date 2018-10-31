@@ -307,6 +307,8 @@
         <li><a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Rulesets</a></li>
       </ul>
 
+      <iframe src="https://fae.disability.illinois.edu/rulesets/" width="98%" height="600px" title="Comparison of OpenAjax Rulesets"></iframe>
+
     </contents>
   </slide>
 
@@ -337,6 +339,8 @@
         <li>Archive and share reports</li>
       </ul>
 
+      <iframe src="https://fae.disability.illinois.edu/" width="98%" height="600px" title="Functional Accessibility Evaluator 2.0"></iframe>
+
     </contents>
   </slide>
 
@@ -362,6 +366,8 @@
         <li>Highlighting elements</li>
       </ul>
 
+      <iframe src="https://go.illinois.edu/ainspector-wcag" width="98%" height="600px" title="Firefox Add-on AInspector WCAG"></iframe>
+
     </contents>
   </slide>
 
@@ -370,7 +376,7 @@
     <title>Bookmarklets for Visualizing Accessibility Features</title>
     <contents>
       <ul>
-        <li><a href="https://accessibility-bookmarklets.org/">Public Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
+        <li><a href="https://accessibility-bookmarklets.org/">Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
         <li>Features:
           <ul>
             <li>Highlight Regions and Elements on page</li>
@@ -382,6 +388,9 @@
           </ul>
         </li>
       </ul>
+
+      <iframe src="https://accessibility-bookmarklets.org" width="98%" height="600px" title="Bookmarklets Website"></iframe>
+
     </contents>
   </slide>
 
@@ -389,11 +398,15 @@
     <title>FAE Auditor (Beta)</title>
     <contents>
       <ul>
-        <li><a href="https://fae-auditor.disability.illinois.edu/">FAE Auditor </a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
+        <li><a href="https://fae-auditor.disability.illinois.edu/rules/2018-bb-conf-2-2018-10-17/rc/">Athletic Conferences Report</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
         <li>Identify strengths and weaknesses of accessibility implementation</li>
         <li>Compare websites and groups of websites</li>
         <li>Support creating accessibility dashboard</li>
       </ul>
+
+
+      <iframe src="https://fae-auditor.disability.illinois.edu/rules/2018-bb-conf-2-2018-10-17/rc/" width="98%" height="600px" title="Atheletic Conferences Report"></iframe>
+
     </contents>
   </slide>
 
@@ -402,7 +415,8 @@
     <contents>
       <ul>
         <li><a href="https://github.com/opena11y/oaa-rules/issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
-        <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for FAE 2.0</a></li>
+        <li><a href="https://github.com/opena11y/fae2/issues">Issues or ideas on the features for FAE 2.0</a></li>
+        <li><a href="https://github.com/ainspector/webextension-firefox/issues">Issues or ideas on the features for AInspector WCAG</a></li>
         <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
       </ul>
 
