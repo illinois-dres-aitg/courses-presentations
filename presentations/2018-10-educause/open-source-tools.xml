@@ -368,6 +368,20 @@
     </contents>
   </slide>
 
+
+  <slide>
+    <title>A11yFirst Plugins for CKEditor</title>
+    <contents>
+      <ul>
+        <li><a href="https://a11yfirst.web.illinois.edu/"  target="_a11yfirst">A11yFirst demonstration</a> (<a href="https://github.com/a11yfirst/">Source Code</a>)</li>
+        <li>Include accessibility feedback during authoring process</li>
+        <li>Authors understand the importance of accessibility</li>
+        <li>Built-in help resources on accessibility</li>
+      </ul>
+
+    </contents>
+  </slide>
+
   <slide>
     <title>Submit an Issue or Idea</title>
     <contents>
