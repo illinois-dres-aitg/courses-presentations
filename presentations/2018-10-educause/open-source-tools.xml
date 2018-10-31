@@ -284,9 +284,9 @@
       <ul>
         <li>Two versions of Functional Accessibility Evaluator 2.0
           <ul>
-            <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Individual License Version</a></li>
-            <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
-            <li><a href="https://github.com/opena11y/fae2">Source Code for FAE 2.0</a></li>
+            <li><a href="https://fae.disability.illinois.edu"  target="_fae20">FAE 2.0 Individual License Version</a></li>
+            <li><a href="https://fae.illinois.edu" target="_fae20">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/"  target="_other">InCommon</a></li>
+            <li><a href="https://github.com/opena11y/fae2" target="_other">Source Code for FAE 2.0</a></li>
           </ul>
         </li>
         <li>Designed for:
@@ -311,7 +311,7 @@
     <title>AInspector WCAG</title>
     <contents>
       <ul>
-        <li><a href="https://go.illinois.edu/ainspector-wcag">Firefox Add-ons: AInspector WCAG</a></li>
+        <li><a href="https://go.illinois.edu/ainspector-wcag" target="_ainspector_wcag">Firefox Add-ons: AInspector WCAG</a></li>
         <li>Designed for:
           <ul>
             <li>Web designers</li>
@@ -337,7 +337,7 @@
     <title>Bookmarklets for Visualizing Accessibility Features</title>
     <contents>
       <ul>
-        <li><a href="https://accessibility-bookmarklets.org/">Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_bookmarklets">Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
         <li>Features:
           <ul>
             <li>Highlight Regions and Elements on page</li>
@@ -359,7 +359,7 @@
     <title>FAE Auditor (Beta)</title>
     <contents>
       <ul>
-        <li><a href="https://fae-auditor.disability.illinois.edu/rules/2018-bb-conf-2-2018-10-17/rc/">Athletic Conferences Report</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
+        <li><a href="https://fae-auditor.disability.illinois.edu/rules/2018-bb-conf-2-2018-10-17/rc/"  target="_fae_auditor">Athletic Conferences Report</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
         <li>Identify strengths and weaknesses of accessibility implementation</li>
         <li>Compare websites and groups of websites</li>
         <li>Support creating accessibility dashboard</li>
@@ -372,10 +372,10 @@
     <title>Submit an Issue or Idea</title>
     <contents>
       <ul>
-        <li><a href="https://github.com/opena11y/oaa-rules/issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
-        <li><a href="https://github.com/opena11y/fae2/issues">Issues or ideas on the features for FAE 2.0</a></li>
-        <li><a href="https://github.com/ainspector/webextension-firefox/issues">Issues or ideas on the features for AInspector WCAG</a></li>
-        <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
+        <li><a href="https://github.com/opena11y/oaa-rules/issues"  target="_issues">Issues or ideas on the OpenAjax Rules, Rulesets and Messaging</a></li>
+        <li><a href="https://github.com/opena11y/fae2/issues" target="_issues">Issues or ideas on the features for FAE 2.0</a></li>
+        <li><a href="https://github.com/ainspector/webextension-firefox/issues" target="_issues">Issues or ideas on the features for AInspector WCAG</a></li>
+        <li><a href="https://github.com/oaa-tools/bookmarklets/issues" target="_issues">Issues or ideas on the Bookmarklets</a></li>
       </ul>
 
     </contents>
@@ -386,8 +386,8 @@
     <contents>
       <h2>Support Options</h2>
       <ul>
-        <li><a href="https://fae.disability.illinois.edu/account/donate/">Make a Donation</a></li>
-        <li><a href="https://fae.disability.illinois.edu/subscription/">Subscription Options</a></li>
+        <li><a href="https://fae.disability.illinois.edu/account/donate/" target="_other">Make a Donation</a></li>
+        <li><a href="https://fae.disability.illinois.edu/subscription/" target="_other">Subscription Options</a></li>
       </ul>
 
       <h2>Use of Resources</h2>
@@ -400,7 +400,7 @@
       </ul>
 
       <h2 id="join">Joining</h2>
-      <p>Create a free account on <a href="https://fae.disability.illinois.edu/accounts/register/">Functional Accessibility Evaluator 2.0</a></p>
+      <p>Create a free account on <a href="https://fae.disability.illinois.edu/accounts/register/" target="_fae20">Functional Accessibility Evaluator 2.0</a></p>
 
     </contents>
   </slide>
