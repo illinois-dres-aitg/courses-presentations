@@ -275,7 +275,7 @@
         <li><a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Rulesets</a></li>
       </ul>
 
-      <iframe sandbox="" src="https://fae.disability.illinois.edu/rulesets/" width="98%" height="600px" title="Comparison of OpenAjax Rulesets"></iframe>
+      <iframe sandbox="allow-same-origin" src="https://fae.disability.illinois.edu/rulesets/" width="98%" height="600px" title="Comparison of OpenAjax Rulesets"></iframe>
 
     </contents>
   </slide>
@@ -307,7 +307,7 @@
         <li>Archive and share reports</li>
       </ul>
 
-      <iframe sandbox="" src="https://fae.disability.illinois.edu/" width="98%" height="600px" title="Functional Accessibility Evaluator 2.0"></iframe>
+      <iframe sandbox="allow-same-origin" src="https://fae.disability.illinois.edu/" width="98%" height="600px" title="Functional Accessibility Evaluator 2.0"></iframe>
 
     </contents>
   </slide>
