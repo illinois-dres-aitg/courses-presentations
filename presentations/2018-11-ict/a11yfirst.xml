@@ -235,8 +235,14 @@
   </slide>
 
   <slide>
-    <title>Drupal Plugin Development</title>
+    <title>Drupal 8 Integration</title>
     <contents>
+      <ul>
+        <li>Modify <a href="https://www.drupal.org/docs/8/core/modules/editor">Drupal 8 Text Editor Module</a> to include A11yFirst features.</li>
+        <li>Text Editor module is based on CKEditor.</li>
+        <li>Integrate A11yFirst features into Text Editor module image plug-in.</li>
+        <li>Integrate A11yFirst features into Text Editor module link plug-in.</li>
+      </ul>
     </contents>
   </slide>
 
