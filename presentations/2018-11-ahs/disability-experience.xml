@@ -186,16 +186,111 @@
   </slide>
 
   <slide>
-    <title>Summary</title>
+    <title>Models of Web Accessibility</title>
+    <contents>
+      <dl>
+        <dt class="more">Accessibility Remediation</dt>
+        <dd class="more">Software is already built, before accessibility addressed.</dd>
+        <dd class="more">Often high number of accessibility issues, expensive consultants are hired to come in a triage problems.</dd>
+        <dd class="more">Fix as many high priority issues as possible before launching online resources.</dd>
+        <dd class="more">Similar to building a side walk and after you are done deciding it needs curb cuts.</dd>
+        <dt class="more">Accessible Design</dt>
+        <dd class="more">Understanding the experience of disability.</dd>
+        <dd class="more">Using Web Standards to support interoperability.</dd>
+        <dd class="more">Cost effective, no remediation, high level of usability.</dd>
+        <dd class="more">Curbcuts are part of the original design and construction of the sidewalk.</dd>
+      </dl>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Functional Accessibility Evaluator (FAE) 2.0</title>
     <contents>
       <ul>
-        <li>Providing opportunities instead of barriers for people with disabilities</li>
-        <li>Everyone will have functional limitations (e.g. disability) as we age</li>
-        <li>Designing a better web for everyone, including ourselves</li>
-        <li>Innovation in learning technologies is accessibility!</li>
+        <li>Two versions of Functional Accessibility Evaluator 2.0
+          <ul>
+            <li><a href="https://fae.disability.illinois.edu"  target="_fae20">FAE 2.0 Individual License Version</a></li>
+            <li><a href="https://fae.illinois.edu" target="_fae20">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/"  target="_other">InCommon</a></li>
+            <li><a href="https://github.com/opena11y/fae2" target="_other">Source Code for FAE 2.0</a></li>
+          </ul>
+        </li>
+        <li>Designed for:
+          <ul>
+            <li>Managers</li>
+            <li>Web designers</li>
+            <li>Software developers</li>
+            <li>Quality assurance testers</li>
+            <li>IT Auditors</li>
+          </ul>
+        </li>
+        <li>Website rule result summaries and implementation status</li>
+        <li>Page rule result summaries</li>
+        <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
+        <li>Archive and share reports</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>AInspector WCAG</title>
+    <contents>
+      <ul>
+        <li><a href="https://go.illinois.edu/ainspector-wcag" target="_ainspector_wcag">Firefox Add-ons: AInspector WCAG</a></li>
+        <li>Designed for:
+          <ul>
+            <li>Web designers</li>
+            <li>Software developers</li>
+            <li>Quality assurance testers</li>
+          </ul>
+        </li>
+        <li>Summary Rule Results
+          <ul>
+            <li>Rule Categories</li>
+            <li>WCAG Guideline</li>
+          </ul>
+        </li>
+        <li>Analyzes the browser DOM content</li>
+        <li>Highlighting elements</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Bookmarklets for Visualizing Accessibility Features</title>
+    <contents>
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/" target="_bookmarklets">Bookmarklets Website</a> (<a href="https://github.com/oaa-tools/bookmarklets">Source Code</a>)</li>
+        <li>Features:
+          <ul>
+            <li>Highlight Regions and Elements on page</li>
+            <li>Element information</li>
+            <li>Default or defined <code>role</code></li>
+            <li>Accessible name</li>
+            <li>Accessible description</li>
+            <li>Important properties (e.g the number of items in a list)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <iframe src="https://accessibility-bookmarklets.org" width="98%" height="600px" title="Bookmarklets Website"></iframe>
+
+    </contents>
+  </slide>
+
+   <slide>
+    <title>Training</title>
+    <contents>
+      <ul>
+        <li><a href="https://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
+        <li><a href="https://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
     </contents>
   </slide>
+
 
 </slides>
 
