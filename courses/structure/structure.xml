@@ -78,21 +78,21 @@
   </slide>
 
   <slide>
-    <title>Web Content Accessibility Guidelines 2.0</title>
+    <title>Web Content Accessibility Guidelines 2.1</title>
     <contents>
 
       <p>
-        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.0</a>
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.1</a>
       </p>
 
       <details>
         <summary>Disability Access Requirements</summary>
         <ul>
           <li>Technology agnostic</li>
-          <li><a href="https://www.w3.org/WAI/WCAG20/quickref/" target="_specification">How to Meet WCAG 2.0</a></li>
-          <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/" target="_specification">Understanding WCAG 2.0</a></li>
-          <li>Understanding requires knowledge of features of specific technogies</li>
-          <li><a href="https://www.w3.org/TR/WCAG20-TECHS/" target="_specification">Techniques for WCAG 2.0</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG 2.1</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG 2.1</a></li>
+          <li>Understanding requires knowledge of features of specific technologies</li>
+          <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG 2.1</a></li>
           <li>Techniques are <strong>not</strong> normative or comprehensive</li>
         </ul>
       </details>
@@ -102,11 +102,11 @@
   </slide>
 
   <slide>
-    <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
+    <title>Accessible Rich Internet Applications (ARIA) 1.1</title>
     <contents>
 
       <p>
-        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.x</a>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.1</a>
       </p>
 
       <details>
