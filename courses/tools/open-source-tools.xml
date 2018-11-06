@@ -4,14 +4,14 @@
 <slides>
   <lang>en</lang>
   <title>Open Source Tools for Evaluating and Inspecting Web Accessibility</title>
-  <name>Jon Gunderson, Ph.D.</name> 
+  <name>Jon Gunderson, Ph.D.</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   <email>jongund@illinois.edu</email>
-  <home>../badges-aria101.html</home> 
+  <home>../badges-aria101.html</home>
 
-  
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -22,21 +22,21 @@
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/highlight.pack.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Overview</title>
     <contents>
       <ul>
         <li>Standards for web accessibility</li>
-        <li>Open Source Tools</li>  
+        <li>Open Source Tools</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
       </script>
     </contents>
   </slide>
-  
-  <slide> 
+
+  <slide>
     <title>Why Open Source?</title>
     <contents>
       <ul>
@@ -48,9 +48,9 @@
         <li>Use scarce resources for human resource development.</li>
       </ul>
     </contents>
-  </slide> 
-  
-   <slide> 
+  </slide>
+
+   <slide>
     <title>Web Content Accessibility Guidelines 2.0</title>
     <contents>
       <p class="center">
@@ -58,9 +58,9 @@
       </p>
       <img src="images/wcag20-title.png" width="100%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Accessible Rich Internet Applications (ARIA) 1.0</title>
     <contents>
       <p class="center">
@@ -68,9 +68,9 @@
       </p>
       <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>HTML 5</title>
     <contents>
       <p class="center">
@@ -78,9 +78,9 @@
       </p>
       <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>HTML5: main element</title>
     <contents>
       <p class="center">
@@ -88,9 +88,9 @@
       </p>
       <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Accessible Rich Internet Application API Mappings</title>
     <contents>
       <p class="center">
@@ -98,10 +98,10 @@
       </p>
       <img src="images/aria-api-mappings.png" width="100%" alt="Graphical browser rendering of ARIA API Mappings 1.1 Specification"/>
     </contents>
-  </slide> 
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>HTML API Mappings</title>
     <contents>
       <p class="center">
@@ -109,9 +109,9 @@
       </p>
       <img src="images/api-mappings.png" width="100%" alt="Graphical browser rendering of HTML Accessibility API Mappings 1.0 Specification"/>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>ARIA Authoring Practices</title>
     <contents>
       <p class="center">
@@ -119,9 +119,9 @@
       </p>
       <img src="images/aria-practices.png" width="100%" alt="Graphical browser rendering of WAI-ARIA Authoring Practices 1.1 note"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>OpenAjax Evaluation Library</title>
     <contents>
       <ul>
@@ -132,9 +132,9 @@
         <li>Open source to promote discussion and conversation on what it means to be "accessible" (e.g. people can define their own definition with open source)</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Rules</title>
     <contents>
       <ul>
@@ -142,16 +142,16 @@
         <li>Understanding rules provides confidence in implementing accessibility.</li>
       </ul>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Rulesets</title>
     <contents>
       <p class="center">
         <a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Evaluation Library Rulesets</a>
       </p>
-      
-      <h2 id="id1">Rulesets</h2> 
+
+      <h2 id="id1">Rulesets</h2>
       <table aria-labelledby="id1" class="table table-striped">
         <thead>
           <tr>
@@ -169,18 +169,18 @@
             <td>WCAG 2.0 Level A and AA requirements primarily using HTML4 techniques, but allows HTML5 and ARIA 1.0 accessibility techniques.
             </td>
           </tr>
-          
+
         </tbody>
       </table>
 
     </contents>
-  </slide>  
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Rule Features</title>
     <contents>
       <p class="center">
-        
+
       </p>
 
       <ul>
@@ -194,9 +194,9 @@
         <li><a href="https://fae.disability.illinois.edu/rulesets/CONTROL_1/" target="_specification">Example Rule: Form controls must have labels</a></li>
       </ul>
     </contents>
-  </slide>  
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Rule Results</title>
     <contents>
 
@@ -231,10 +231,10 @@
         </tbody>
       </table>
     </contents>
-  </slide>  
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title> Rule Categories</title>
     <contents>
 
@@ -246,73 +246,73 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <th>Landmarks</th>
             <td>Use ARIA landmark roles to structure the content of each page and identify major sections of content, thus making them more findable and navigable. The use of landmarks will, in many cases, reflect the visual styling and page layouts that web designers utilize to set apart various sections of content.</td>
           </tr>
-          
+
           <tr>
             <th>Headings</th>
             <td>Use heading elements (H1-H6) to provide appropriate labels for landmarks, and to identify subsections of content within landmarks.</td>
           </tr>
-          
+
           <tr>
             <th>Styles/Content</th>
             <td>Use proper HTML markup to identify the semantics and language of text content. Ensure that text is readable by adhering to color contrast guidelines, and that information is not conveyed solely by the use of color, shape, location or sound.</td>
           </tr>
-          
+
           <tr>
             <th>Images</th>
             <td>Provide appropriate text alternatives for static images and graphics.</td>
           </tr>
-          
+
           <tr>
             <th>Links</th>
             <td>Use link text that properly describes the target of each link. Ensure consistency and uniqueness for links that are usable, predictable and understandable.</td>
           </tr>
-          
+
           <tr>
             <th>Tables</th>
             <td>Provide table captions or other meta-information as needed. Provide row and column header references for data cells of data tables. Ensure that tables used for layout properly linearize text content.</td>
           </tr>
-          
+
           <tr>
             <th>Forms</th>
             <td>Provide meaningful labels for form elements and usable and understandable error feedback as needed.</td>
           </tr>
-          
+
           <tr>
             <th>Widgets/Scripts</th>
             <td>Use appropriate event handlers on elements to support native interactivity using JavaScript. Ensure that custom widgets created using JavaScript support keyboard interaction and include ARIA markup to describe their roles, properties and states.</td>
           </tr>
-          
+
           <tr>
             <th>Audio/Video</th>
             <td>Provide appropriate text transcripts, captions or audio descriptions for elements used in rendering audio and video content.</td>
           </tr>
-          
+
           <tr>
             <th>Keyboard</th>
             <td>Provide logical and sequential keyboard navigation among interactive elements such as links and form controls. Use standard models of keyboard interaction for custom widgets.</td>
           </tr>
-          
+
           <tr>
             <th>Timing</th>
             <td>Eliminate accessibility problems caused by time limits on input and by content that moves, scrolls, flashes or auto-updates.</td>
           </tr>
-          
+
           <tr>
             <th>Site Navigation</th>
             <td>Ensure the consistent labeling and ordering of recurrent page sections across all pages within a website. Provide a meaningful title for each page within a website.</td>
           </tr>
-          
+
         </tbody>
-      </table>      
+      </table>
     </contents>
-  </slide>  
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Ruleset and Rule Details</title>
     <contents>
       <ul>
@@ -320,11 +320,11 @@
         <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_TRANS/" target="_specification">HTML4 Legacy Ruleset</a></li>
         <li><a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Rulesets</a></li>
       </ul>
-            
+
     </contents>
-  </slide> 
-  
-  
+  </slide>
+
+
   <slide>
     <title>Functional Accessibility Evaluator (FAE) 2.0</title>
     <contents>
@@ -334,7 +334,7 @@
             <li><a href="https://fae.disability.illinois.edu">FAE 2.0 Indidvidual License Version</a></li>
             <li><a href="https://fae.illinois.edu">FAE 2.0 Institutional License Version</a> using <a href="https://www.incommon.org/">InCommon</a></li>
           </ul>
-        </li>  
+        </li>
         <li>Designed for:
           <ul>
             <li>Managers</li>
@@ -349,15 +349,15 @@
         <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
         <li>Archive and share reports</li>
       </ul>
-      
+
     </contents>
-  </slide>   
+  </slide>
 
   <slide>
-    <title>AInspector Sidebar for Firefox</title>
+    <title>AInspector WCAG for Firefox</title>
     <contents>
       <ul>
-        <li><a href="http://ainspector.github.io">http://ainspector.github.io</a></li>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector WCAG Add-on for Firefox</a></li>
         <li>Designed for:
           <ul>
             <li>Web designers</li>
@@ -370,14 +370,14 @@
             <li>Rule Categories</li>
             <li>WCAG 2.0 Guideline Summary</li>
           </ul>
-        </li>  
+        </li>
         <li>Analyzes the browser DOM content</li>
         <li>Highlighting elements</li>
         <li>DOM inspector</li>
       </ul>
-      
+
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Bookmarklets for Visualizing Accessibility Features</title>
@@ -394,10 +394,10 @@
             <li>Important prorperties (e.g the number of items in a list)</li>
           </ul>
         </li>
-      </ul>  
+      </ul>
     </contents>
-  </slide>  
-  
+  </slide>
+
   <slide>
     <title>FAE Auditor</title>
     <contents>
@@ -416,7 +416,7 @@
         <li>Support creating accessibility dashboard</li>
       </ul>
     </contents>
-  </slide>   
+  </slide>
 
   <slide>
     <title>Next Steps</title>
@@ -426,7 +426,7 @@
         <li>Update rules</li>
         <li>Rulesets</li>
       </ul>
-      
+
       <h2>Functional Accessibility Evaluator 2.x</h2>
       <ul>
         <li>Resolve manual tests
@@ -440,7 +440,7 @@
         <li>Priorities of fixing accessibility issues</li>
         <li>Accessibility trends</li>
       </ul>
-      
+
       <h2>AInspector Sidebar 1.x</h2>
       <ul>
         <li>Port to Firefox Add-on SDK</li>
@@ -454,16 +454,16 @@
         <li>Lists of information in addition to visualization</li>
         <li>Bookmarklets for links and aria widgets</li>
       </ul>
-      
+
       <h2>FAE Auditor</h2>
       <ul>
         <li>Release version 1.0</li>
         <li>Develop accessibility dashboard</li>
       </ul>
-      
+
     </contents>
   </slide>
-  
+
   <slide>
     <title>Submit an Issue or Idea</title>
     <contents>
@@ -472,7 +472,7 @@
         <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
         <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
       </ul>
-      
+
     </contents>
   </slide>
 
@@ -484,7 +484,7 @@
         <li><a href="https://fae.disability.illinois.edu/account/donate/">Make a Donate</a></li>
         <li><a href="https://fae.disability.illinois.edu/subscription/">Subscription Options</a></li>
       </ul>
-      
+
       <h2>Use of Resources</h2>
       <ul>
         <li>Improve tools</li>
@@ -493,11 +493,11 @@
         <li>Developing training materials</li>
         <li>Support participation in standards groups</li>
       </ul>
-      
+
     </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Tools User Group</title>
     <contents>
       <h2>Purpose</h2>
@@ -507,18 +507,18 @@
         <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
         <li>Typically meets the first Thursday of each month at 2:00pm Central Time</li>
       </ul>
-      
+
       <h2 id="join">Join E-mail Lists</h2>
        <ul>
          <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></li>
          <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Source Tools Announcements List</a></li>
        </ul>
-      
-    </contents>  
+
+    </contents>
   </slide>
- 
- 
-  <slide> 
+
+
+  <slide>
     <title>OpenAjax Accessibility Task Force</title>
     <contents>
       <h2>Purpose</h2>
@@ -542,14 +542,14 @@
         <li>Contact <a href="mailto:jongund@illinois.edu">Jon Gunderson</a> to join the group</li>
         <li><a href="http://www.openajax.org/member/wiki/Accessibility">More information on OpenAjax Accessibility Task Force</a></li>
       </ul>
-    </contents>  
+    </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Training</title>
     <contents>
       <p><a href="http://online.ahs.illinois.edu/iadp/">Information Accessibility Design and Policy (IADP) Certificate</a></p>
-      
+
       <h2>Badging (Coming Soon)</h2>
       <ul>
         <li>4-8 hours of synchoronous online training per badge</li>
@@ -569,45 +569,45 @@
           </ul>
         </li>
       </ul>
-    </contents>  
+    </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Acknowledgements</title>
     <contents>
-      
+
       <h2>Sponsors</h2>
       <ul>
         <li>University of Illinois</li>
         <li>Employees of the Hollister Corporation (University of Illinois Foundation)</li>
         <li>IBM Corporation (OAA Evaluation Library)</li>
       </ul>
-      
+
       <h2>Primary Developers</h2>
       <dl>
         <dt>Jon Gunderson, Illinois</dt>
         <dd>Project coordinator</dd>
         <dd>OAA evaluation library software development</dd>
         <dd>Software developer for FAE 2.0</dd>
-        
+
         <dt>Nicholas Hoyt, Illinois</dt>
         <dd>Conceptual model for accessibility evaluation</dd>
         <dd>Interaction designer for AInspector, Bookmarklets and FAE 2.0</dd>
         <dd>Software developer for AInspector Sidebar and Bookmarklets</dd>
       </dl>
-      
+
       <h2>Other Contributing Developers</h2>
-      
+
       <dl>
         <dt>Pramod Joshi, AITS</dt>
         <dd>Software developer for fae-util</dd>
-        
+
         <dt>Jeff Heckel, AITS</dt>
         <dd>Software developer for fae-util</dd>
-        
+
         <dt>Landi Lark, Pixo</dt>
         <dd>Software development and design of Bookmarklets</dd>
-      </dl>      
+      </dl>
 
       <h2>Previous Contributors</h2>
       <dl>
@@ -619,7 +619,7 @@
       </dl>
     </contents>
   </slide>
-  
-</slides> 
+
+</slides>
 
 
