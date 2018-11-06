@@ -1422,11 +1422,11 @@
 
 
   <slide>
-    <title>AInspector Sidebar for Firefox</title>
+    <title>AInspector WCAG for Firefox</title>
     <contents>
-      <p><a href="https://ainspector.github.io" target="_tools">AInspector Sidebar for Firefox Documentation</a></p>
+      <p><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/" target="_tools">AInspector WCAG Add-on for Firefox</a></p>
 
-      <iframe src="https://ainspector.github.io" width="99%" height="600px" title="AInspector Sidebar for Firefox Documentation"></iframe>
+      <iframe src="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/" width="99%" height="600px" title="AInspector WCAG Add-on Firefox"></iframe>
 
     </contents>
   </slide>
