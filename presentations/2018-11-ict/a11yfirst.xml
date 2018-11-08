@@ -190,7 +190,7 @@
  <slide>
     <title>Images</title>
     <contents>
-      <p><a href="https://a11yfirst.web.illinois.edu/demo/release/custom/testdrive.html">Prototype of a11yiamges plugin</a></p>
+      <p><a href="https://a11yfirst.web.illinois.edu/demo/release/custom/testdrive.html">Prototype of A11yImage plugin</a></p>
       <dl>
         <dt>Image Type</dt>
         <dd>Informative: Alternative text and possibly long description.</dd>
