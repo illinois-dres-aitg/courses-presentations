@@ -190,12 +190,11 @@
  <slide>
     <title>Images</title>
     <contents>
-      <p><a href="https://rawgit.com/a11yfirst/plugins-dev/feature/a11yimage2/custom/a11yimage2.html" target="_prototype">Prototype of a11yiamges plugin</a></p>
+      <p><a href="https://a11yfirst.web.illinois.edu/demo/release/custom/testdrive.html">Prototype of a11yiamges plugin</a></p>
       <dl>
         <dt>Image Type</dt>
-        <dd>Simple: Alternative text and/or caption.</dd>
-        <dd>Complex: Alternative text and/or caption with description on page.</dd>
-        <dd>Decorative: No alternative text or caption.</dd>
+        <dd>Informative: Alternative text and possibly long description.</dd>
+        <dd>Decorative: No alternative text.</dd>
 
         <dt>Alternative Text</dt>
         <dd>Adds information to the <code>alt</code> attribute.</dd>
@@ -204,7 +203,7 @@
 
         <dt>Location of Description</dt>
         <dd>Adds information to the <code>title</code> attribute.</dd>
-        <dd>Options: Before, After or Both.</dd>
+        <dd>Options: None, Before, After or Both.</dd>
 
       </dl>
     </contents>
@@ -230,6 +229,12 @@
       <ul>
         <li>Activated by Button in toolbar.</li>
         <li>a11yFirst features support rules in a11yChecker.</li>
+        <li>Modified some rules:
+          <ul>
+            <li>Error for <code>title</code> on an <code>img</code> element.</li>
+            <li>Manual check for use of <code>blockquote</code> element.</li>
+          </ul>
+        </li>
       </ul>
     </contents>
   </slide>
