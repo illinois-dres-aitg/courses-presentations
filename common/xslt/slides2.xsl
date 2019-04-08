@@ -227,7 +227,7 @@
       <xsl:element name="div">
         <xsl:attribute name="id">footer</xsl:attribute>
         <xsl:attribute name="class">well well-sm</xsl:attribute>
-        Copyright &#169; 2018 University of Illinois
+        Copyright &#169; 2019 University of Illinois
       </xsl:element>
     </xsl:element>
   </xsl:template>

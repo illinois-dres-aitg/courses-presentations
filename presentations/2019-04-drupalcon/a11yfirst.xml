@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>A11yFirst Enhancements to CKEditor to support Creating Accessible  Content in Drupal</title>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+  <conference>
+    <name href="https://events.drupal.org/seattle2019/front-end-accessibility-summit">2019 DrupalCon Accessibility Summit</name>
+    <desc>Seattle, Washington</desc>
+    <desc>April 8th, 2019</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <ul>
+        <li>Accessible Authoring</li>
+        <li>Features of a11yFirst plug-ins</li>
+        <li>Drupal module</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Project Goals</title>
+    <contents>
+      <ul>
+        <li>Accessible authoring versus remediation.</li>
+        <li>Support accessibility as content is created.</li>
+        <li>Teach authors about accessibility.</li>
+        <li>Change how people think about creating content.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Author Thinking of WYSISWYG Editors</title>
+    <contents>
+      <ul>
+        <li>What does the page look like.</li>
+        <li>HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
+        <li>Not aware of accessibility requirements.</li>
+        <li>Not aware of accessibility issues of different types of content.</li>
+        <li>Accessibility takes more time and is hard (e.g. remidation model).</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Change User Thinking About Accessibility</title>
+    <contents>
+      <ul>
+        <li>Accessibility is important to the <em>organization</em>.</li>
+        <li>Accessibility is part of <em>their</em> responsibilities.</li>
+        <li>HTML <em>semantics</em> are important (e.g. headings, lists, ..).</li>
+        <li>Meaningful link text.</li>
+        <li>Describing images.</li>
+        <li>Accessibility during the <em>creation</em> of content.</li>
+      </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>A11yFirst configuration of CKEditor</title>
+    <contents>
+      <table class="table table-striped" aria-label="Features and associated CKEditor plugins">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Headings and Paragraphs</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          </tr>
+          <tr>
+            <td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          </tr>
+          <tr>
+            <td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          </tr>
+          <tr>
+            <td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Demo</title>
+    <contents>
+      <p><a href="https://a11yfirst.gitlab.io/">A11yFirst Demonstration Website</a></p>
+      <p>URL: <code>https://a11yfirst.gitlab.io/</code></p>
+      <iframe src="https://a11yfirst.gitlab.io/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Headings and Paragraphs</title>
+    <contents>
+      <p><a href="https://a11yfirst.gitlab.io/">Demo of A11yHeading plugin</a></p>
+      <dl>
+        <dt>Headings</dt>
+        <dd>Html tag</dd>
+        <dd>Styled the same to re-enforce using them structurally</dd>
+        <dd>Only allowed heading levels are enabled</dd>
+
+        <dt>Paragraph Formatting</dt>
+        <dd>Normal</dd>
+        <dd>Preformatted text</dd>
+        <dd>Address line</dd>
+        <dd><em>Note:</em> Other block level styles can be added through configuration</dd>
+
+        <dt>Help</dt>
+        <dd>More information on the importance of using headings</dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Links</title>
+    <contents>
+      <dl>
+        <dt>Display Text (DT)</dt>
+        <dd>Check DT for common accessibility issues (e.g. 'link to', 'click here', ..)</dd>
+        <dd>Check DT for use a URL or e-mail address.</dd>
+
+        <dt>Help</dt>
+        <dd>Built-in information on writing good link text.</dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Images</title>
+    <contents>
+      <p><a href="https://a11yfirst.gitlab.io/">Demo of A11yImage plugin</a></p>
+      <dl>
+
+        <dt>Alternative Text</dt>
+        <dd>Adds information to the <code>alt</code> attribute.</dd>
+        <dd>Warning fpr missing text alternative</dd>
+        <dd>Checks for poor text alternatives (e.g. 'image of')</dd>
+        <dd>Checks for use of file name.</dd>
+
+        <dt>Location of Description</dt>
+        <dd>Appends information to the <code>alt</code> attribute.</dd>
+        <dd>Options: None, Before, After or Both.</dd>
+
+        <dt>Help</dt>
+        <dd>Built-in information on writing good text alternatives and long descriptions.</dd>
+
+      </dl>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>Help/Information</title>
+    <contents>
+      <ol>
+        <li>Headings/Paragraph Menu</li>
+        <li>Lists</li>
+        <li>Links</li>
+        <li>Images</li>
+        <li>About A11yFirst</li>
+        <li>Getting Started </li>
+      </ol>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Editor Enhancements Module for Drupal 8</title>
+    <contents>
+      <p><a href="https://www.drupal.org/sandbox/jongund/3030129">Sandbox A11yFirst Editor Enhancements Module for Drupal 8</a></p>
+      <p>URL: <code>https://www.drupal.org/sandbox/jongund/3030129</code></p>
+      <img width="98%" src="screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>We Need Your Help</title>
+    <contents>
+      <ul>
+        <li>Testing and providing feedback on the current features.</li>
+        <li>Support integratation of link plugin features into default and commonly used link modules.</li>
+        <li>Support integratation of image plugin features into default and commonly used link modules.</li>
+        <li>Developing a community to support the development of training and support materials.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Next Steps</title>
+    <contents>
+      <ul>
+        <li>Become a contributed module (e.g. move out of sandbox status).</li>
+        <li>Develop training materials to help people learn about accessibility and features for A11yFirst editor enhancements.</li>
+        <li>Determine what modules people need for links and images:
+          <ul>
+            <li>Is the current a11ylink plug-in sufficient or does there need to be integration into oher link modules?</li>
+            <li>What Drupal modules do people use for managing images and/or can a11yimage module be integrated into file browsers?</li>
+          </ul>
+        </li>
+        <li>Learn more about the Drupal module architecture and development (participating in workshop tomorrow).</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>E-mail Discussion and Github Repositories</title>
+    <contents>
+      <ul>
+        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
+        <li><a href="https://www.drupal.org/sandbox/jongund/3030129">A11yFirst Editor Enhancements Drupal Module</a></li>
+        <li><a href="https://github.com/a11yfirst/">A11yFirst github respository</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Training and Open Source Tools from Illinois</title>
+    <contents>
+      <h2>Training</h2>
+      <ul>
+        <li><a href="https://go.illinois.edu/a11y-badges">DRES Web Accessibility Badging Program</a> (6-8 hours/badge)</li>
+        <li><a href="http://online.ahs.illinois.edu/iadp/">AHS Information Accessibility Design and Policy (IADP) Certificate</a> (Three 8 Week Credit courses)
+        </li>
+      </ul>
+
+      <h2>Tools</h2>
+
+      <ul>
+        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
+        <li><a href="http://ainspector.github.io/">AInspector Sidebar</a></li>
+        <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Self-Registration Version)</a></li>
+        <li><a href="https://fae.illinois.edu">Functional Accessibility Evalautor (FAE) 2.0 (Institutional Version)</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Questions and Discussion</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+
