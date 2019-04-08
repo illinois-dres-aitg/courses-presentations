@@ -3,7 +3,7 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
   <lang>en</lang>
-  <title>A11yFirst Enhancements to CKEditor to support Creating Accessible  Content in Drupal</title>
+  <title>A11yFirst Editor Enhancements Module for Drupal 8</title>
   <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
@@ -211,6 +211,13 @@
       <img width="98%" src="screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
     </contents>
   </slide>
+
+  <slide>
+    <title>Demonstration of A11yFirst in Drupal 8</title>
+    <contents>
+    </contents>
+  </slide>
+
 
   <slide>
     <title>We Need Your Help</title>
