@@ -4,22 +4,26 @@
 <slides>
   <lang>en</lang>
   <title>A11yFirst Editor Enhancements for CKeditor and Drupal 8</title>
+
   <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
   </person>
+
   <person>
     <name>Nicholas Hoyt</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   </person>
-  </person>
+
+  <person>
     <name>Jemma Ku</name>
     <desc href="https://aces.illinois.edu/extension">ACES Extension</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   </person>
+
   <conference>
     <name href="https://calendars.illinois.edu/detail/4835?eventId=33339545">University of Illinois Webmasters Events</name>
     <desc>Champaign, Illinois</desc>
