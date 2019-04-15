@@ -61,30 +61,35 @@ nav ul li {
 }
 
 main {
-    font-size: 125%;
+    font-size: 1.5em;
+    font-family: Times, 'Times New Roman', serif;
 }
 
 main h1 {
-    font-size: 180%;
+    font-size: 1.75em;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 main h2 {
     margin-top: 1.5em;
-    font-size: 125%;
     margin-bottom: 0.125em;
+    font-size: 1.5em;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 main h3 {
     margin-top: 1.5em;
-    font-size: 100%;
+    font-size: 1em;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 main ul {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 main li {
-  padding-bottom: 0.125em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 
 main dt {
