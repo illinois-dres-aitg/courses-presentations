@@ -66,7 +66,7 @@
   <slide>
     <title>What is it?</title>
     <contents>
-      <p>The A11yFirst for CKEditor<sup style="color: red">*</sup> project consists of document editing enhancements that promote and encourage the creation of accessible content as you edit.</p>
+      <p>The A11yFirst for CKEditor<sup style="color: red">*</sup> project consists of document editing enhancements that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
 
       <ul>
         <li>Reorganizes the editor toolbar</li>
@@ -101,7 +101,7 @@
         </li>
         <li>Because “timing is everything!”
           <ul>
-            <li>For example, the best time to add alt. text for an image is when its purpose is clear and you can more easily answer the question: “What information does this image provide in this particular context?”</li>
+            <li>For example, the best time to add alt. text for an image is when its purpose is clear and you can more easily answer the question: “What information does <em>this</em> image provide in <em>this</em> particular context?”</li>
           </ul>
         </li>
       </ul>
