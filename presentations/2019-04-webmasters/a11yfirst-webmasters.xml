@@ -60,6 +60,7 @@
   <slide>
     <title>What is it and why should I be using it?</title>
     <contents>
+      <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides">Link to the slides Nicholas Hoyt presented</a></p>
     </contents>
   </slide>
 
@@ -67,6 +68,15 @@
     <title>What is it?</title>
     <contents>
       <p>The A11yFirst for CKEditor<sup style="color: red">*</sup> project consists of document editing enhancements that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
+
+      <p style="margin-top: 10em"><sup style="color: red">*</sup> CKEditor is the WYSIWYG editor used in Drupal 8</p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>What is it?</title>
+    <contents>
+      <p>How does it differ from CKEditor?</p>
 
       <ul>
         <li>Reorganizes the editor toolbar</li>
@@ -88,8 +98,16 @@
   <slide>
     <title>Why should I be using it?</title>
     <contents>
+      <p>A11yFirst promotes a new model of <em>proactive editing</em> for the creation of accessible content.</p>
+    </contents>
+  </slide>
 
-      <p>A11yFirst promotes a new model of proactive editing for the creation of accessible content.</p>
+
+  <slide>
+    <title>Why should I be using it?</title>
+    <contents>
+
+      <p>Why was a new model needed?</p>
 
       <ul>
         <li>The old model of remediation is not as effective.
@@ -111,7 +129,9 @@
   <slide>
     <title>Toolbar Reorganized</title>
     <contents>
-      <p>The top row of the toolbar is used for block elements, to reinforce thinking about document structure as opposed to visual styling:</p>
+
+      <h3>Top Row</h3>
+      <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
 
       <ul>
         <li>Heading / Paragraph</li>
@@ -120,7 +140,16 @@
         <li>Table</li>
       </ul>
 
-      <p>The bottom row includes common action features such as:</p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Toolbar Reorganized</title>
+    <contents>
+
+      <h3>Bottom Row</h3>
+
+      <p>Includes common action features such as:</p>
 
       <ul>
         <li>Undo / Redo &amp; Cut / Copy / Paste</li>
@@ -135,20 +164,39 @@
   <slide>
     <title>Heading / Paragraph</title>
     <contents>
+      <h3>Headings</h3>
       <ul>
-        <li>Headings are promoted to the top of the menu</li>
-        <li>All heading menu items are styled the same to reinforce their use as structural elements</li>
-        <li>Heading menu item labels indicate purpose</li>
-        <li>Based on cursor position in the document, only headings that are in sequence can be selected</li>
-        <li>Paragraph formats: Normal, Preformatted text, Address line</li>
+        <li>Promoted to the top of the menu</li>
+        <li>Menu items are styled the same to reinforce their use as structural elements</li>
+        <li>HMenu item labels indicate purpose</li>
+        <li>Only headings that are in sequence are enabled</li>
+      </ul>
+
+      <h3>Configuration options:</h3>
+      <ul>
+        <li>Allow only one <code>h1</code> (true or false)</li>
+        <li>Gaps are ignored (<code>h1;h2;h4</code> results in <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>)</li>
+      </ul>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Heading / Paragraph</title>
+    <contents>
+
+      <h3>Paragraph formats</h3>
+      <ul>
+        <li>Normal</li>
+        <li>Preformatted text</li>
+        <li>Address line</li>
+      </ul>
+
+      <h3>Menu</h3>
+      <ul>
         <li>Provides a Help menu item</li>
       </ul>
 
-      <p>Additional configuration options &amp; features:</p>
-      <ul>
-        <li>Allow only one <code>h1</code> (true or false)</li>
-        <li>No gaps allowed (<code>h1;h2;h4</code> results in <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>)</li>
-      </ul>
     </contents>
   </slide>
 
@@ -198,17 +246,17 @@
   <slide>
     <title>A11yFirst Help</title>
     <contents>
-      <p>Toolbar menu button with help topics covering each of the A11yFirst plugins:</p>
+      <p>Help content is provided for each A11yFirst plugin:</p>
       <ul>
-        <li>The relevant topic can be selected from an A11yFirst menu or dialog box</li>
+        <li>Relevant topic can also be selected from an A11yFirst menu or dialog box</li>
         <li>Each topic also includes links to external resources</li>
-        <li>Additional topics
-          <ul>
-            <li>List buttons</li>
-            <li>Getting Started</li>
-            <li>About A11yFirst</li>
-          </ul>
-        </li>
+      </ul>
+
+      <p>Additional topics:</p>
+      <ul>
+        <li>List buttons</li>
+        <li>Getting Started</li>
+        <li>About A11yFirst</li>
       </ul>
     </contents>
   </slide>
@@ -259,9 +307,15 @@
   <slide>
     <title>A11yFirst Demonstration Pages</title>
     <contents>
-      <p><a href="https://a11yfirst.gitlab.io/">A11yFirst Demonstration Website</a></p>
-      <p>URL: <code>https://a11yfirst.gitlab.io/</code></p>
-      <iframe src="https://a11yfirst.gitlab.io/" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+      <p><a href="https://a11yfirst.gitlab.io/custom/usability/#">A11yFirst Demonstration Website</a></p>
+      <p>URL: <code>https://a11yfirst.gitlab.io/custom/usability/</code></p>
+      <iframe src="https://a11yfirst.gitlab.io/custom/usability/#" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Usability Testing</title>
+    <contents>
     </contents>
   </slide>
 
