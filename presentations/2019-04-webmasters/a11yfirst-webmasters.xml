@@ -310,9 +310,9 @@
   <slide>
     <title>A11yFirst Demonstration Pages</title>
     <contents>
-      <p><a href="https://a11yfirst.gitlab.io/custom/usability/#">A11yFirst Demonstration Website</a></p>
+      <p><a href="https://a11yfirst.gitlab.io">A11yFirst Demonstration Website</a></p>
       <p>URL: <code>https://a11yfirst.gitlab.io/custom/usability/</code></p>
-      <iframe src="https://a11yfirst.gitlab.io/custom/usability/#" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+      <iframe src="https://a11yfirst.gitlab.io" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
     </contents>
   </slide>
 
