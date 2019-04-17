@@ -60,7 +60,8 @@
   <slide>
     <title>What is it and why should I be using it?</title>
     <contents>
-      <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides">Link to the slides Nicholas Hoyt presented</a></p>
+      <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides" target="nick">Link to the slides Nicholas Hoyt presented</a></p>
+      <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/usability/#" target="demo">A11yFirst demonstration page</a></p>
     </contents>
   </slide>
 
