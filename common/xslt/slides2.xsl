@@ -142,28 +142,43 @@
           <xsl:element name="body">
 
             <xsl:call-template name="navbar">
-              <xsl:with-param name="num"   select="position()" />
+              <xsl:with-param name="num"   select="position()"             />
               <xsl:with-param name="total" select="last()" />
             </xsl:call-template>
 
             <xsl:element name="main">
               <xsl:attribute name="id">content</xsl:attribute>
               <xsl:attribute name="class">container</xsl:attribute>
-              <xsl:element name="a">
-                <xsl:attribute name="name">main</xsl:attribute>
-                <xsl:attribute name="id">main</xsl:attribute>
+
+              <xsl:element name="div">
+                <xsl:attribute name="class">row</xsl:attribute>
+
+                <xsl:element name="div">
+                  <xsl:attribute name="class">col-md-1</xsl:attribute>
+                </xsl:element>
+
+                <xsl:element name="div">
+                  <xsl:attribute name="class">col-md-9</xsl:attribute>
+
+                  <xsl:if test="title/.">
+                    <xsl:element name="h1">
+                      <xsl:attribute name="id">h1_title</xsl:attribute>
+                      <xsl:attribute name="class">title</xsl:attribute>
+                      <xsl:value-of select="title/."/>
+                    </xsl:element>
+                  </xsl:if>
+
+                  <xsl:apply-templates select="contents/*"/>
+                </xsl:element>
+
+                <xsl:element name="div">
+                  <xsl:attribute name="class">col</xsl:attribute>
+                </xsl:element>
+
               </xsl:element>
 
-              <xsl:if test="title/.">
-                <xsl:element name="h1">
-                  <xsl:attribute name="id">h1_title</xsl:attribute>
-                  <xsl:attribute name="class">title</xsl:attribute>
-                  <xsl:value-of select="title/."/>
-                </xsl:element>
-              </xsl:if>
-
-              <xsl:apply-templates select="contents/*"/>
             </xsl:element>
+
 
             <xsl:call-template name="contentinfo">
             </xsl:call-template>

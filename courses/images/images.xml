@@ -4,13 +4,13 @@
 <slides>
  <lang>en</lang>
   <title>Images Accessibility</title>
- <name>Jon Gunderson</name> 
+ <name>Jon Gunderson</name>
   <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
   <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <email>jongund@illinois.edu</email> 
-  <home>../index.html</home> 
-  
+  <email>jongund@illinois.edu</email>
+  <home>../index.html</home>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -19,7 +19,7 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Images Overview</title>
     <contents>
@@ -33,7 +33,7 @@
       </script>
     </contents>
   </slide>
-  
+
   <slide>
     <style>
       dt { font-weight: bold; padding-top: 1em;}
@@ -52,35 +52,38 @@
             <li><strong>CAPTCHA:</strong> If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.</li>
             <li><strong>Decoration, Formatting, Invisible:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.</li>
           </ul>
-          
+
         </dd>
       </dl>
     </contents>
   </slide>
 
   <slide>
-    <title>ARIA 1.0 HTML 5 Image Elements</title>
+    <title>ARIA 1.1 and HTML 5 Image Elements</title>
     <contents>
-    
-      <h2>ARIA 1.0</h2>
-      
+
+      <h2>ARIA 1.1 Roles</h2>
+
       <ul>
         <li><code><a href="http://www.w3.org/TR/wai-aria/roles#presentation">role="presentation"</a></code> is the same at <code>alt=""</code></li>
         <li><code><a href="http://www.w3.org/TR/wai-aria/roles#img">role="img"</a></code> can make any image look like an <code>img</code> element</li>
       </ul>
 
-      <h2>HTML5 Graphics Options</h2>
-      
+      <h2>ARIA 1.1 Attributes</h2>
+
+      <ul>
+        <li><code><a href="http://www.w3.org/TR/wai-aria/roles#presentation">role="presentation"</a></code> is the same at <code>alt=""</code></li>
+        <li><code><a href="http://www.w3.org/TR/wai-aria/roles#img">role="img"</a></code> can make any image look like an <code>img</code> element</li>
+      </ul>
+
+
+      <h2>HTML5 Graphic Role Mappings</h2>
+
       <ul>
         <li><code><a href="http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element">img</a></code> element</li>
         <li><code><a href="http://www.w3.org/TR/html5/grouping-content.html#the-figure-element">figure</a></code> and <code><a href="http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">figurecaption</a></code> elements</li>
         <li><code><a href="http://www.w3.org/TR/html5/scripting-1.html#the-canvas-element">canvas</a></code> element</li>
         <li><code><a href="http://www.w3.org/TR/svg">svg</a></code> specification</li>
-      </ul>
-      
-      <h2><code>longdesc</code> Attribute</h2>
-      <ul>
-        <li><a href="http://www.w3.org/TR/html-longdesc/">HTML5 Image Description Extension (longdesc)</a></li>
       </ul>
 
     </contents>
@@ -104,9 +107,9 @@
         <li><code>longdesc</code> attribute for internal or external resource</li>
         <li><code>aria-describedby</code> attribute for internal id reference</li>
       </ul>
-      
+
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Informative Image: Alt text</title>
@@ -114,60 +117,61 @@
 
       <div id="example">
         <img src="images/example-informative.png" alt="Soldiers in jungle pointing rifles an unseen target"/>
-        <h2>Troops Kindnapped in 'planned snatch', official says</h2>
+        <h2>Troops Kidnapped in 'planned snatch', official says</h2>
       </div>
-      
+
       <h2>Source Code</h2>
-      
+
       <div id="sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.make();
-      </script>      
-      
+      </script>
+
     </contents>
   </slide>
 
   <slide>
     <title>Informative Images: Alt Text and Description</title>
     <contents>
-      
+
       <div id="example">
-        <img src="images/example-informative.png" 
+        <img src="images/example-informative.png"
              alt="Soldiers in jungle pointing rifles an unseen target"
              aria-describedby="st1"/>
         <h2 id="st1">Troops Kindnapped in 'planned snatch', official says</h2>
       </div>
-      
+
       <h2>Source Code</h2>
-      
+
       <div id="sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.make();
-      </script>      
-      
+      </script>
+
     </contents>
   </slide>
- 
+
   <slide>
     <title>Informative Images: Stock Market Data</title>
     <contents>
-      
+
       <div id="example">
-        
+
         <h2 id="id1">Stock Market Data</h2>
 
-        <img src="images/stock-data.png" 
-          alt="High, low and volume of a stock price.  Following table contains data in the chart."/>
+        <img src="images/stock-data.png"
+          alt="High, low and volume of a stock price.  Following table contains data in the chart."
+          aria-details="#id_stock_data"/>
 
-        <table class="table table-striped">
+        <table id="id_stock_data" class="table table-striped">
           <caption>Stock Market Data Details</caption>
           <thead>
             <tr>
@@ -179,9 +183,9 @@
               <th>Volume</th>
             </tr>
           </thead>
-          
+
           <tbody>
-            
+
           </tbody>
           <tr>
             <th>07/29/2008</th>
@@ -263,37 +267,37 @@
             <td>149.66</td>
             <td>390,611</td>
           </tr>
-        </table>        
+        </table>
       </div>
-      
+
       <h2>Source Code</h2>
-      
+
       <div id="sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.make();
-      </script>      
-      
+      </script>
+
     </contents>
   </slide>
-  
+
   <slide>
     <title>Informative Images: Stock Market Data</title>
     <contents>
-      
+
       <div id="example">
-        
+
         <h2 id="id1">Stock Market Data</h2>
-        
-        <img src="images/stock-data.png" 
+
+        <img src="images/stock-data.png"
           alt="High, low and volume of a stock price.  Following table contains data in the chart."/>
-        
+
         <details>
           <summary id="id1">Stock Market Data Details</summary>
-        
+
           <table class="table table-striped" aria-labelledby="id1">
           <thead>
             <tr>
@@ -305,9 +309,9 @@
               <th>Volume</th>
             </tr>
           </thead>
-          
+
           <tbody>
-            
+
           </tbody>
           <tr>
             <th>07/29/2008</th>
@@ -389,25 +393,25 @@
             <td>149.66</td>
             <td>390,611</td>
           </tr>
-        </table>        
+        </table>
         </details>
       </div>
-      
+
       <h2>Source Code</h2>
-      
+
       <div id="sc1">
-        
+
       </div>
-      
+
       <script type="text/javascript">
         sourceCode.add('sc1', 'example');
         sourceCode.make();
-      </script>      
-      
+      </script>
+
     </contents>
   </slide>
-  
- 
+
+
   <slide>
     <title>Background Image Issues</title>
     <contents>
@@ -416,7 +420,7 @@
         <li>If used as a part of links, many times an accessible name is missing (e.g. Facebook links) need to use <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute to define an accessible name.</li>
       </ul>
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Other Resources</title>
@@ -429,7 +433,7 @@
       </ul>
     </contents>
   </slide>
-  
-</slides> 
+
+</slides>
 
 
