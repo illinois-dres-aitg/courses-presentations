@@ -58,10 +58,11 @@
   </slide>
 
   <slide>
-    <title>What is it and why should I be using it?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>What is it and why should I be using it?</h2>
       <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides" target="nick">Nicholas Hoyt slides</a></p>
-      <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/usability/#" target="demo">A11yFirst demonstration page</a></p>
+      <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/#" target="demo">A11yFirst demonstration page</a></p>
     </contents>
   </slide>
 
@@ -92,14 +93,14 @@
         </li>
       </ul>
 
-      <p><sup style="color: red">*</sup> CKEditor is the WYSIWYG editor used in Drupal 8</p>
     </contents>
   </slide>
 
   <slide>
     <title>Why should I be using it?</title>
     <contents>
-      <p>A11yFirst promotes a new model of <em>proactive editing</em> for the creation of accessible content.</p>
+      <p>A11yFirst promotes a new model of <em>proactive<sup style="color: red">*</sup> editing</em> for the creation of accessible content.</p>
+      <p  style="margin-top: 10em;"><sup style="color: red">*</sup> proactive: acting in anticipation of future problems or needs (from Merriam Webster Online Dictionary)</p>
     </contents>
   </slide>
 
@@ -111,11 +112,11 @@
       <p>Why was a new model needed?</p>
 
       <ul>
-        <li>The old model of remediation is not as effective.
+        <li>The old (reactive) model of remediation is ineffective.
           <ul>
-            <li>Accessibility checkers typically provide a laundry list of problems, in no particular order.</li>
+            <li>Accessibility checkers typically provide a laundry list of problems that need to be fixed.</li>
             <li>Going through the list and “fixing” the problems typically does not provide learning experiences that help people better understand accessibility.</li>
-            <li>“After the fact” checking for accessibility problems can be forgotten too easily.</li>
+            <li>It's too easy to forget (or skip) that last step of running the accessibility checker.</li>
           </ul>
         </li>
         <li>Because “timing is everything!”
@@ -153,7 +154,8 @@
       <p>Includes common action features such as:</p>
 
       <ul>
-        <li>Undo / Redo &amp; Cut / Copy / Paste</li>
+        <li>Undo / Redo</li>
+        <li>Cut / Copy / Paste</li>
         <li>Apply Character Styling</li>
         <li>Insert Special Character</li>
         <li>Set Language</li>
