@@ -314,8 +314,14 @@
   </slide>
 
   <slide>
-    <title>Usability Testing</title>
+    <title>Usability Testing Results</title>
     <contents>
+      <p>Authors need to know:</p>
+      <ul>
+        <li>Accessibility is important to the organization.</li>
+        <li>They are responsible for accessibiliy.</li>
+        <li>Basic concepts of document accessibility.</li>
+      </ul>
     </contents>
   </slide>
 
@@ -339,11 +345,11 @@
 
 
   <slide>
-    <title>A11yFirst Editor Enhancements Module for Drupal 8</title>
+    <title>Drupal 8: A11yFirst Editor Enhancements Module</title>
     <contents>
       <p><a href="https://www.drupal.org/sandbox/jongund/3030129">Sandbox A11yFirst Editor Enhancements Module for Drupal 8 (Sandbox Project)</a></p>
       <p>URL: <code>https://www.drupal.org/sandbox/jongund/3030129</code></p>
-      <img width="98%" src="screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
+      <img width="98%" src="images/screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
     </contents>
   </slide>
 
@@ -351,6 +357,27 @@
   <slide>
     <title>Demonstration of A11yFirst in Drupal 8 in ACES Extension Website</title>
     <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Drupal 8: A11yFirst Link plugin configuration</title>
+    <contents>
+      <img width="98%" src="images/link-plugin.png" aly="Drupal 8 A11yFirst Link plugin configuration"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Drupal 8: A11yFirst Stylescombo plugin configuration</title>
+    <contents>
+      <img width="98%" src="images/character-plugin.png" aly="Drupal 8 A11yFirst stylescombo plugin configuration"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Drupal 8: A11yFirst Heading/Paragraph plugin configuration</title>
+    <contents>
+      <img width="98%" src="images/heading-plugin.png" aly="Drupal 8 A11yFirst Heading/Paragraph plugin configuration"/>
     </contents>
   </slide>
 
