@@ -360,27 +360,36 @@
   <slide>
     <title>Demonstration of A11yFirst in Drupal 8 in ACES Extension Website</title>
     <contents>
+      <div class="border">
+        <img width="98%" src="images/aces-extension.png" aly="Screen shot of ACES Extension website"/>
+      </div>
     </contents>
   </slide>
 
   <slide>
     <title>Drupal 8: A11yFirst Link plugin configuration</title>
     <contents>
-      <img width="98%" src="images/link-plugin.png" aly="Drupal 8 A11yFirst Link plugin configuration"/>
+      <div class="border">
+        <img width="98%" src="images/link-plugin.png" aly="Screen shot of Drupal 8 A11yFirst Link plugin configuration"/>
+      </div>
     </contents>
   </slide>
 
   <slide>
     <title>Drupal 8: A11yFirst Stylescombo plugin configuration</title>
     <contents>
-      <img width="98%" src="images/character-plugin.png" aly="Drupal 8 A11yFirst stylescombo plugin configuration"/>
+      <div class="border">
+        <img width="98%" src="images/character-plugin.png" aly="Screen shot of Drupal 8 A11yFirst stylescombo plugin configuration"/>
+      </div>
     </contents>
   </slide>
 
   <slide>
     <title>Drupal 8: A11yFirst Heading/Paragraph plugin configuration</title>
     <contents>
-      <img width="98%" src="images/heading-plugin.png" aly="Drupal 8 A11yFirst Heading/Paragraph plugin configuration"/>
+      <div class="border">
+        <img width="98%" src="images/heading-plugin.png" aly="Screen shot of Drupal 8 A11yFirst Heading/Paragraph plugin configuration"/>
+      </div>
     </contents>
   </slide>
 
