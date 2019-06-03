@@ -116,7 +116,8 @@
     <contents>
 
       <div id="example">
-        <img src="images/example-informative.png" alt="Soldiers in jungle pointing rifles an unseen target"/>
+        <img src="images/example-informative.png"
+          alt="Soldiers in jungle pointing rifles an unseen target"/>
         <h2>Troops Kidnapped in 'planned snatch', official says</h2>
       </div>
 
@@ -169,7 +170,7 @@
 
         <img src="images/stock-data.png"
           alt="High, low and volume of a stock price.  Following table contains data in the chart."
-          aria-details="#id_stock_data"/>
+          aria-details="id_stock_data"/>
 
         <table id="id_stock_data" class="table table-striped">
           <caption>Stock Market Data Details</caption>
