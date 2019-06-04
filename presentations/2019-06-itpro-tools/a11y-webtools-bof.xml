@@ -104,15 +104,17 @@
   </slide>
 
   <slide>
-    <title>What's missing? (Nick Hoyt)</title>
+    <title>What's missing?</title>
     <contents>
+      <p><em>Led by Nick Hoyt</em></p>
       <p>Think back to when you were using a tool and you were frustrated with understanding results, missing information, or documenting and sharing results...</p>
     </contents>
   </slide>
 
   <slide>
-    <title>How do people report or share accessibility information? (Mark McCarthy)</title>
+    <title>How do people report or share accessibility information?</title>
     <contents>
+      <p><em>Led by Mark McCarthy</em></p>
       <ul>
         <li>With whom do you need to share accessibility information?</li>
         <li>How do you currently share it?</li>
@@ -122,19 +124,9 @@
   </slide>
 
   <slide>
-    <title>How do people report or share accessibility information? (Mark McCarthy)</title>
+    <title>How confident are you in covering all the WCAG 2.0 Level A and AA accessibility requirements?</title>
     <contents>
-      <ul>
-        <li>With whom do you need to share accessibility information?</li>
-        <li>How do you currently share it?</li>
-        <li>Why are you sharing the information?</li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>How confident are you in covering all the WCAG 2.0 Level A and AA accessibility requirements? (Jon)</title>
-    <contents>
+      <p><em>Led by Jon Gunderson</em></p>
       <ul>
         <li>Knowledge of accessibility requirements</li>
         <li>Information provided by automated tools</li>
@@ -145,6 +137,7 @@
   <slide>
     <title>What types of testing do you do beyond automated testing?</title>
     <contents>
+      <p><em>Led by Nick Hoyt</em></p>
       <ul>
         <li>Which accessibility requirements</li>
       </ul>
