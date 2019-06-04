@@ -6,16 +6,16 @@
   <title>A11yFirst for CKEditor and Drupal 8: Creating Accessible Content As You Edit</title>
 
   <person>
+    <name>Nicholas Hoyt</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  </person>
+
+  <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
-  </person>
-
-  <person>
-    <name>Nicholas Hoyt</name>
-    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
-    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
   </person>
 
   <person>
@@ -47,8 +47,8 @@
     <title>A11yFirst for CKEditor and Drupal 8: Creating Accessible Content As You Edit</title>
     <contents>
       <ul>
-        <li>Jon Gunderson, DRES</li>
         <li>Nicholas Hoyt, DRES</li>
+        <li>Jon Gunderson, DRES</li>
         <li>Jemma Ku, ACES Extension</li>
       </ul>
       <script type="text/javascript">
