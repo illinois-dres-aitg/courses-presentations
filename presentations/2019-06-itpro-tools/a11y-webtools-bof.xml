@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Exploring the Next Generation Web Accessibility Evaluation and Inspection Tools</title>
+
+  <person>
+    <name>Nicholas Hoyt</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+  </person>
+
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+
+  <person>
+    <name>Mark McCarthy</name>
+    <desc href="http://www.aits.uillinois.edu">Administrative Information Technology Services</desc>
+  </person>
+
+  <conference>
+    <name href="https://www.itproforum.illinois.edu/sessions#201906-14">Illinois IT Pro Forum</name>
+    <desc>Champaign, Illinois</desc>
+    <desc>June 6th, 2019</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Exploring the Next Generation Web Accessibility Evaluation and Inspection Tools</title>
+    <contents>
+      <ul>
+        <li>Nicholas Hoyt, DRES</li>
+        <li>Jon Gunderson, DRES</li>
+        <li>Mark McCarthy, AITS</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Goals</title>
+    <contents>
+      <ul>
+        <li>That we have previously developed evaluation tools AInspector Sidebar, Functional Accessibility Evaluator (FAE) and Accessibility Bookmarklets.</li>
+        <li>We are starting to work on the next generation of open source tools and are looking for user requirements.</li>
+        <li>This session is one way we are collecting information on users' wants and needs for accessibility tools</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Process</title>
+    <contents>
+      <ul>
+        <li>We have a few questions for discussion we would like to pose to the group.</li>
+        <li>There are no right or wrong answers, we mainly want to know what you need to support your accessibility efforts.</li>
+        <li>We are passing around a signup sheet, please add your name and indicate if you are interested in other events related to the tool development (e.g. additional user research, usability testing, development support).</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Introductions</title>
+    <contents>
+      <ul>
+        <li>Name</li>
+        <li>Department</li>
+        <li>What do you do</li>
+        <li>What tools do you use the most</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Discussion Questions</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>What's missing? (Nick Hoyt)</title>
+    <contents>
+      <p>Think back to when you were using a tool and you were frustrated with understanding results, missing information, or documenting and sharing results...</p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>How do people report or share accessibility information? (Mark McCarthy)</title>
+    <contents>
+      <ul>
+        <li>With whom do you need to share accessibility information?</li>
+        <li>How do you currently share it?</li>
+        <li>Why are you sharing the information?</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>How do people report or share accessibility information? (Mark McCarthy)</title>
+    <contents>
+      <ul>
+        <li>With whom do you need to share accessibility information?</li>
+        <li>How do you currently share it?</li>
+        <li>Why are you sharing the information?</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>How confident are you in covering all the WCAG 2.0 Level A and AA accessibility requirements? (Jon)</title>
+    <contents>
+      <ul>
+        <li>Knowledge of accessibility requirements</li>
+        <li>Information provided by automated tools</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>What types of testing do you do beyond automated testing?</title>
+    <contents>
+      <ul>
+        <li>Which accessibility requirements</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Form for Additional Comments</title>
+    <contents>
+      <p><a href=""></a></p>
+    </contents>
+  </slide>
+
+</slides>
+
+
