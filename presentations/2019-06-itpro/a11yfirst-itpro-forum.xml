@@ -69,14 +69,14 @@
   <slide>
     <title>What is it?</title>
     <contents>
-      <p>The A11yFirst for CKEditor<sup style="color: red">*</sup> project consists of document editing enhancements that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
+      <p>A set of document editing enhancements for CKEditor<sup style="color: red">*</sup> that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
 
       <p style="margin-top: 10em"><sup style="color: red">*</sup> CKEditor is the WYSIWYG editor used in Drupal 8</p>
     </contents>
   </slide>
 
   <slide>
-    <title>What is it?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
       <p>How does it differ from CKEditor?</p>
 
@@ -84,11 +84,11 @@
         <li>Reorganizes the editor toolbar</li>
         <li>Adds new features via plugins
           <ul>
-            <li>Heading / Paragraph menu</li>
-            <li>Character Style menu</li>
-            <li>A11yLink dialog</li>
-            <li>A11yImage dialog</li>
-            <li>A11yFirst Help menu &amp; dialog</li>
+            <li>Heading / Paragraph</li>
+            <li>Character Style</li>
+            <li>Link</li>
+            <li>Image</li>
+            <li>Help</li>
           </ul>
         </li>
       </ul>
@@ -106,20 +106,19 @@
 
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>Why was a new model needed?</title>
     <contents>
 
-      <p>Why was a new model needed?</p>
 
       <ul>
-        <li>The old (reactive) model of remediation is ineffective.
+        <li>If the goal is helping authors understand how to make their content accessible, the reactive model of fixing problems after they happen is not as effective.
           <ul>
             <li>Accessibility checkers typically provide a laundry list of problems that need to be fixed.</li>
             <li>Going through the list and “fixing” the problems typically does not provide learning experiences that help people better understand accessibility.</li>
-            <li>It's too easy to forget (or skip) that last step of running the accessibility checker.</li>
+            <li>When running the checker is the last step in the process, it's too easy to forget (or skip altogether).</li>
           </ul>
         </li>
-        <li>Because “timing is everything!”
+        <li>Because timing is important!”
           <ul>
             <li>For example, the best time to add alt. text for an image is when its purpose is clear and you can more easily answer the question: “What information does <em>this</em> image provide in <em>this</em> particular context?”</li>
           </ul>
@@ -133,6 +132,7 @@
     <contents>
 
       <h3>Top Row</h3>
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
       <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
 
       <ul>
@@ -150,15 +150,16 @@
     <contents>
 
       <h3>Bottom Row</h3>
-
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
       <p>Includes common action features such as:</p>
 
       <ul>
         <li>Undo / Redo</li>
         <li>Cut / Copy / Paste</li>
-        <li>Apply Character Styling</li>
-        <li>Insert Special Character</li>
+        <li>A11yFirst Character Style</li>
+        <li>A11yFirst Link</li>
         <li>Set Language</li>
+        <li>Insert Special Character</li>
       </ul>
 
     </contents>
@@ -169,10 +170,9 @@
     <contents>
       <h3>Headings</h3>
       <ul>
-        <li>Promoted to the top of the menu</li>
-        <li>Menu items are styled the same to reinforce their use as structural elements</li>
-        <li>HMenu item labels indicate purpose</li>
         <li>Only headings that are in sequence are enabled</li>
+        <li>Menu items are styled the same to reinforce their use as structural elements</li>
+        <li>Menu item labels indicate purpose</li>
       </ul>
 
       <h3>Configuration options:</h3>
@@ -193,15 +193,34 @@
         <li>Normal</li>
         <li>Preformatted text</li>
         <li>Address line</li>
+        <li>Normal (DIV)</li>
       </ul>
 
       <h3>Menu</h3>
       <ul>
+        <li>Menu button placed in first position of first row of toolbar</li>
         <li>Provides a Help menu item</li>
       </ul>
 
     </contents>
   </slide>
+
+  <slide>
+    <title>Why should I be using it?</title>
+    <contents>
+
+      <h2>Heading/Paragraph</h2>
+      <ol>
+        <li>It is important to use headings to demarcate and label the structure of your document.<br style="margin-top: 2em"/>
+
+        This allows screen reader users to quickly and easily navigate from one section to another.</li>
+        <li>Headings should be used sequentially.<br style="margin-top: 2em"/>
+
+        For example, understanding the context of a ‘Level 3’ heading, when there is no corresponding ‘Level 2’ heading, can be very confusing.</li>
+      </ol>
+    </contents>
+  </slide>
+
 
   <slide>
     <title>Character Style</title>
@@ -218,21 +237,46 @@
   </slide>
 
   <slide>
-    <title>A11yLink</title>
+    <title>Why should I be using it?</title>
+    <contents>
+
+    <h2>Character Style</h2>
+
+      <p>Visual styling alone should not be used in place of structural elements such as heading or list markup.</p>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Link</title>
     <contents>
       <p>Based on the CKEditor Link plugin, except that it...</p>
       <ul>
-        <li>Does not allow empty Display Text</li>
         <li>Does not default to using the URL as the Display Text</li>
-        <li>Warns when a URL is used as the Display Text</li>
-        <li>Detects the use of ‘click here,’ ‘more’ et al.</li>
+        <li>Does not allow empty Display Text</li>
+        <li>Requires confirmation when a URL is used as the Display Text</li>
+        <li>Detects the use of nondescriptive words and phrases such as ‘click here,’ ‘more’ et al.</li>
         <li>Provides a Help button</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>A11yImage</title>
+    <title>Why should I be using it?</title>
+    <contents>
+
+      <h2>A11yFirst Link</h2>
+
+      <ol>
+        <li>The display text for a link should describe the target of the link.</li>
+
+        <li>URLs are typically not very descriptive when used as display text.</li>
+      </ol>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Image</title>
     <contents>
       <ul>
         <li>Prompts for Alternative Text</li>
@@ -247,12 +291,32 @@
   </slide>
 
   <slide>
+    <title>Why should I be using it?</title>
+    <contents>
+
+      <h2>A11yFirst Image</h2>
+
+      <ol>
+        <li>People with visual impairments need text descriptions of informative images.</li>
+
+        <li>People with visual impairments need text descriptions of informative images.</li>
+
+        <li>Alternative text should be succinct and should not include redundant or irrelevant information.</li>
+
+        <li>An image that is purely decorative should have an empty alt attribute (thus there should be a way to indicate that an image is decorative).</li>
+
+        <li>A complex informative image should have a long description in the document, adjacent to the image.</li>
+      </ol>
+    </contents>
+  </slide>
+
+  <slide>
     <title>A11yFirst Help</title>
     <contents>
       <p>Help content is provided for each A11yFirst plugin:</p>
       <ul>
-        <li>Relevant topic can also be selected from an A11yFirst menu or dialog box</li>
-        <li>Each topic also includes links to external resources</li>
+        <li>Can be accessed from A11yFirst plugin menu or dialog box</li>
+        <li>Topics may include links to external resources</li>
       </ul>
 
       <p>Additional topics:</p>
