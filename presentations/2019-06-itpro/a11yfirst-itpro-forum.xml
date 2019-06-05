@@ -505,6 +505,7 @@
     <title>How you can help</title>
     <contents>
       <ul>
+        <li>Volunteer for usability testing.</li>
         <li>Integrate A11yFirst into you current projects and provide feedback on the installation and use.</li>
         <li>If you ae using a file browser with CKEditor <code>image</code> or <code>image2</code> plug-ins we would like work with you to test if <code>a11yimage</code> plugins also supports the file browser feature.</li>
       </ul>
