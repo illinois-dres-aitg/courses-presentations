@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 21: Usability Testing Results</title>
+<title>Slide 21: A11yFirst configuration of CKEditor</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide32.html">
+<a id="ID_SLIDE_LAST" href="slide34.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 21 of 32</div>
+<div class="navbar-text pull-right">Slide 21 of 34</div>
 </div>
 </div>
 </nav>
@@ -53,17 +53,67 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Usability Testing Results</h1>
-<p>Authors need to know:</p>
-<ul>
+<h1 id="h1_title" class="title">A11yFirst configuration of CKEditor</h1>
+<p>The following table shows the A11yFirst plugins and the CKEditor plugins they replace in the configuration file.  The corresponding CKEditor plugins must be removed when using the A11yFirst plug-ins.</p>
+<table class="table table-striped" aria-label="Features and associated CKEditor plugins">
         
-<li>Accessibility is important to the organization.</li>
+<thead>
+          
+<tr>
+            
+<th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          
+</tr>
         
-<li>They are responsible for accessibiliy.</li>
+</thead>
         
-<li>Basic concepts of document accessibility.</li>
+<tbody>
+          
+<tr>
+            
+<td>Heading / Paragraph</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Character Style</td>
+            <td>stylescombo</td>
+            <td>a11ystylescombo</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          
+</tr>
+        
+</tbody>
       
-</ul>
+</table>
 </div>
 <div class="col"></div>
 </div>

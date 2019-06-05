@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 19: A11yFirst configuration of CKEditor</title>
+<title>Slide 19: Why use it?</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide32.html">
+<a id="ID_SLIDE_LAST" href="slide34.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 19 of 32</div>
+<div class="navbar-text pull-right">Slide 19 of 34</div>
 </div>
 </div>
 </nav>
@@ -53,67 +53,24 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">A11yFirst configuration of CKEditor</h1>
-<p>The following table shows the A11yFirst plugins and the CKEditor plugins they replace in the configuration file.  The corresponding CKEditor plugins must be removed when using the A11yFirst plug-ins.</p>
-<table class="table table-striped" aria-label="Features and associated CKEditor plugins">
+<h1 id="h1_title" class="title">Why use it?</h1>
+<ul>
         
-<thead>
-          
-<tr>
-            
-<th>Feature</th>
-            <th>Original Plugin</th>
-            <th>a11yFirst Plugin</th>
-          
-</tr>
+<li>People with visual impairments need text descriptions of informative images.</li>
+
         
-</thead>
+<li>An informative image must at least have alternative text so that a screen reader can briefly describe the information it conveys.</li>
+
         
-<tbody>
-          
-<tr>
-            
-<td>Heading / Paragraph</td>
-            <td>format</td>
-            <td>a11yheading</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Character Style</td>
-            <td>stylescombo</td>
-            <td>a11ystylescombo</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Links</td>
-            <td>link</td>
-            <td>a11ylink</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Images</td>
-            <td>image or image2</td>
-            <td>a11yimage</td>
-          
-</tr>
-          
-<tr>
-            
-<td>Accessibility Information</td>
-            <td><em>none</em></td>
-            <td>a11yhelp</td>
-          
-</tr>
+<li>Alternative text should be succinct and should not include redundant or irrelevant information.</li>
+
         
-</tbody>
+<li>A complex informative image should have a long description in the document, adjacent to the image.</li>
+
+        
+<li>An image that is purely decorative should have an empty alt attribute, which tells the screen reader to ignore it. Thus there should be a way to indicate that an image is decorative.</li>
       
-</table>
+</ul>
 </div>
 <div class="col"></div>
 </div>

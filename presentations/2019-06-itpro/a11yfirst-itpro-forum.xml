@@ -58,28 +58,26 @@
   </slide>
 
   <slide>
-    <title>A11yFirst for CKEditor</title>
+    <title>What is it and why should I be using it?</title>
     <contents>
-      <h2>What is it and why should I be using it?</h2>
       <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides" target="nick">Nicholas Hoyt slides</a></p>
       <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/#" target="demo">A11yFirst demonstration page</a></p>
     </contents>
   </slide>
 
   <slide>
-    <title>What is it?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>What is it?</h2>
       <p>A set of document editing enhancements for CKEditor<sup style="color: red">*</sup> that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
 
-      <p style="margin-top: 10em"><sup style="color: red">*</sup> CKEditor is the WYSIWYG editor used in Drupal 8</p>
+      <p style="margin-top: 10em"><sup style="color: red">*</sup> CKEditor is the default WYSIWYG editor in Drupal 8</p>
     </contents>
   </slide>
 
   <slide>
-    <title>A11yFirst for CKEditor</title>
+    <title>How does it differ from CKEditor?</title>
     <contents>
-      <p>How does it differ from CKEditor?</p>
-
       <ul>
         <li>Reorganizes the editor toolbar</li>
         <li>Adds new features via plugins
@@ -99,17 +97,14 @@
   <slide>
     <title>Why should I be using it?</title>
     <contents>
-      <p>A11yFirst promotes a new model of <em>proactive<sup style="color: red">*</sup> editing</em> for the creation of accessible content.</p>
-      <p  style="margin-top: 10em;"><sup style="color: red">*</sup> proactive: acting in anticipation of future problems or needs (from Merriam Webster Online Dictionary)</p>
+      <p>A11yFirst for CKEditor promotes a new model of <em>proactive<sup style="color: red">*</sup> editing</em> for the creation of accessible content.</p>
+      <p style="margin-top: 10em;"><sup style="color: red">*</sup> proactive: acting in anticipation of future problems or needs (Merriam Webster)</p>
     </contents>
   </slide>
-
 
   <slide>
     <title>Why was a new model needed?</title>
     <contents>
-
-
       <ul>
         <li>If the goal is helping authors understand how to make their content accessible, the reactive model of fixing problems after they happen is not as effective.
           <ul>
@@ -118,7 +113,7 @@
             <li>When running the checker is the last step in the process, it's too easy to forget (or skip altogether).</li>
           </ul>
         </li>
-        <li>Because timing is important!”
+        <li>Because timing is important!
           <ul>
             <li>For example, the best time to add alt. text for an image is when its purpose is clear and you can more easily answer the question: “What information does <em>this</em> image provide in <em>this</em> particular context?”</li>
           </ul>
@@ -128,17 +123,31 @@
   </slide>
 
   <slide>
+    <title>The Details</title>
+    <contents>
+      <ul>
+        <li>Toolbar Reorganized</li>
+        <li>Heading / Paragraph</li>
+        <li>Character Style</li>
+        <li>Link</li>
+        <li>Image</li>
+        <li>Help</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>Toolbar Reorganized</title>
     <contents>
 
-      <h3>Top Row</h3>
+      <h2>Top Row</h2>
       <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
       <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
 
       <ul>
-        <li>Heading / Paragraph</li>
+        <li>A11yFirst Heading / Paragraph</li>
         <li>List (ordered &amp; unordered)</li>
-        <li>Image</li>
+        <li>A11yFirst Image</li>
         <li>Table</li>
       </ul>
 
@@ -149,9 +158,9 @@
     <title>Toolbar Reorganized</title>
     <contents>
 
-      <h3>Bottom Row</h3>
+      <h2>Bottom Row</h2>
       <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
-      <p>Includes common action features such as:</p>
+      <p>Includes common actions along with inline features such as:</p>
 
       <ul>
         <li>Undo / Redo</li>
@@ -166,16 +175,42 @@
   </slide>
 
   <slide>
+    <title>Toolbar Reorganized</title>
+    <contents>
+
+      <h2>What problem is it trying to solve?</h2>
+      <p>The user interface / toolbar of most WYSIWYG editors communicates to its users:</p>
+
+      <ul>
+        <li>“What your document looks like is all that matters!” (WRONG!!!)</li>
+      </ul>
+
+      <p>We are trying to counter that with a toolbar design that communicates that features related to structure are not only about visual styling.</p>
+
+      <p>When elements such as headings and lists are used, screen readers convey their semantics. For example:</p>
+
+      <ul>
+        <li>"Heading level 3: [heading content]"</li>
+        <li>"List with 5 items; item number 1: [list item content]"</li>
+      </ul>
+
+      <p>Block elements come first; visual styling is an alternative when there is no better choice.</p>
+
+    </contents>
+  </slide>
+
+
+  <slide>
     <title>Heading / Paragraph</title>
     <contents>
-      <h3>Headings</h3>
+      <h2>Headings</h2>
       <ul>
         <li>Only headings that are in sequence are enabled</li>
         <li>Menu items are styled the same to reinforce their use as structural elements</li>
         <li>Menu item labels indicate purpose</li>
       </ul>
 
-      <h3>Configuration options:</h3>
+      <h2>Configuration options</h2>
       <ul>
         <li>Allow only one <code>h1</code> (true or false)</li>
         <li>Gaps are ignored (<code>h1;h2;h4</code> results in <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>)</li>
@@ -188,7 +223,7 @@
     <title>Heading / Paragraph</title>
     <contents>
 
-      <h3>Paragraph formats</h3>
+      <h2>Paragraph formats</h2>
       <ul>
         <li>Normal</li>
         <li>Preformatted text</li>
@@ -196,9 +231,9 @@
         <li>Normal (DIV)</li>
       </ul>
 
-      <h3>Menu</h3>
+      <h2>Menu / Button</h2>
       <ul>
-        <li>Menu button placed in first position of first row of toolbar</li>
+        <li>Located in the first position of the first row of the toolbar</li>
         <li>Provides a Help menu item</li>
       </ul>
 
@@ -206,18 +241,17 @@
   </slide>
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>Why using it?</title>
     <contents>
 
-      <h2>Heading/Paragraph</h2>
-      <ol>
-        <li>It is important to use headings to demarcate and label the structure of your document.<br style="margin-top: 2em"/>
-
-        This allows screen reader users to quickly and easily navigate from one section to another.</li>
-        <li>Headings should be used sequentially.<br style="margin-top: 2em"/>
-
-        For example, understanding the context of a ‘Level 3’ heading, when there is no corresponding ‘Level 2’ heading, can be very confusing.</li>
-      </ol>
+      <ul>
+        <li>Headings are important — they make it easier for all readers to understand the structure of your document.</li>
+        <li>Headings allow screen reader users to quickly and easily navigate from one section of your document to another.</li>
+        <li>Using headings sequentially avoids unnecessary confusion
+          <div style="margin-top: 1em">
+          For example, understanding the context of a ‘Level 3’ heading, when there is no corresponding ‘Level 2’ heading preceding it, can be very confusing.</div>
+      </li>
+      </ul>
     </contents>
   </slide>
 
@@ -229,55 +263,56 @@
 
       <ul>
         <li>Eliminates block styles</li>
+        <li>Configured with same syntax as Styles</li>
+      </ul>
+      <h2>Menu / Button</h2>
+      <ul>
         <li>Located in the bottom row of the toolbar (for de-emphasis)</li>
-        <li>Configurable (same syntax as CKEditor Styles)</li>
         <li>Provides a Help menu item</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>Why use it?</title>
     <contents>
-
-    <h2>Character Style</h2>
-
-      <p>Visual styling alone should not be used in place of structural elements such as heading or list markup.</p>
-
+      <p>When visual styling is used in place of structural elements such as heading or list markup, important semantic information that helps screen reader users understand your content is missing from your document.</p>
     </contents>
   </slide>
 
   <slide>
     <title>A11yFirst Link</title>
     <contents>
-      <p>Based on the CKEditor Link plugin, except that it...</p>
+      <p>Based on the CKEditor Link plugin:</p>
       <ul>
         <li>Does not default to using the URL as the Display Text</li>
         <li>Does not allow empty Display Text</li>
         <li>Requires confirmation when a URL is used as the Display Text</li>
         <li>Detects the use of nondescriptive words and phrases such as ‘click here,’ ‘more’ et al.</li>
+      </ul>
+      <h2>Dialog box</h2>
+      <ul>
         <li>Provides a Help button</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>Why use it?</title>
     <contents>
 
-      <h2>A11yFirst Link</h2>
-
-      <ol>
+      <ul>
         <li>The display text for a link should describe the target of the link.</li>
 
         <li>URLs are typically not very descriptive when used as display text.</li>
-      </ol>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>A11yFirst Image</title>
     <contents>
+      <p>Based on the CKEditor Image2 plugin:</p>
       <ul>
         <li>Prompts for Alternative Text</li>
         <li>Warns when Alt. Text is more than 100 char. in length</li>
@@ -285,37 +320,37 @@
         <li>Detects use of file name or size in Alt. Text</li>
         <li>For a decorative image, allows the user to indicate that Alt. Text is not required</li>
         <li>Asks the user whether a Long Description is needed, and if so, where it will be located in the document</li>
+      </ul>
+      <h2>Dialog box</h2>
+      <ul>
         <li>Provides a Help button</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>Why use it?</title>
     <contents>
-
-      <h2>A11yFirst Image</h2>
-
-      <ol>
+      <ul>
         <li>People with visual impairments need text descriptions of informative images.</li>
 
-        <li>People with visual impairments need text descriptions of informative images.</li>
+        <li>An informative image must at least have alternative text so that a screen reader can briefly describe the information it conveys.</li>
 
         <li>Alternative text should be succinct and should not include redundant or irrelevant information.</li>
 
-        <li>An image that is purely decorative should have an empty alt attribute (thus there should be a way to indicate that an image is decorative).</li>
-
         <li>A complex informative image should have a long description in the document, adjacent to the image.</li>
-      </ol>
+
+        <li>An image that is purely decorative should have an empty alt attribute, which tells the screen reader to ignore it. Thus there should be a way to indicate that an image is decorative.</li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>A11yFirst Help</title>
     <contents>
-      <p>Help content is provided for each A11yFirst plugin:</p>
+      <p>Help content is provided for each A11yFirst plugin.</p>
       <ul>
-        <li>Can be accessed from A11yFirst plugin menu or dialog box</li>
+        <li>Each topic can be accessed from the corresponding A11yFirst plugin</li>
         <li>Topics may include links to external resources</li>
       </ul>
 
