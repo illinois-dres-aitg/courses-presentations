@@ -58,8 +58,9 @@
   </slide>
 
   <slide>
-    <title>What is it and why should I be using it?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>What is it and why should I be using it?</h2>
       <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides" target="nick">Nicholas Hoyt slides</a></p>
       <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/#" target="demo">A11yFirst demonstration page</a></p>
     </contents>
@@ -76,8 +77,9 @@
   </slide>
 
   <slide>
-    <title>How does it differ from CKEditor?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>How does it differ from CKEditor?</h2>
       <ul>
         <li>Reorganizes the editor toolbar</li>
         <li>Adds new features via plugins
@@ -95,16 +97,18 @@
   </slide>
 
   <slide>
-    <title>Why should I be using it?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>Why should I be using it?</h2>
       <p>A11yFirst for CKEditor promotes a new model of <em>proactive<sup style="color: red">*</sup> editing</em> for the creation of accessible content.</p>
       <p style="margin-top: 10em;"><sup style="color: red">*</sup> proactive: acting in anticipation of future problems or needs (Merriam Webster)</p>
     </contents>
   </slide>
 
   <slide>
-    <title>Why was a new model needed?</title>
+    <title>A11yFirst for CKEditor</title>
     <contents>
+      <h2>Why was a new model needed?</h2>
       <ul>
         <li>If the goal is helping authors understand how to make their content accessible, the reactive model of fixing problems after they happen is not as effective.
           <ul>
@@ -123,7 +127,7 @@
   </slide>
 
   <slide>
-    <title>The Details</title>
+    <title>The details</title>
     <contents>
       <ul>
         <li>Toolbar Reorganized</li>
@@ -241,8 +245,9 @@
   </slide>
 
   <slide>
-    <title>Why using it?</title>
+    <title>Heading / Paragraph</title>
     <contents>
+      <h2>Why using it?</h2>
 
       <ul>
         <li>Headings are important — they make it easier for all readers to understand the structure of your document.</li>
@@ -274,8 +279,9 @@
   </slide>
 
   <slide>
-    <title>Why use it?</title>
+    <title>Character Style</title>
     <contents>
+      <h2>Why use it?</h2>
       <p>When visual styling is used in place of structural elements such as heading or list markup, important semantic information that helps screen reader users understand your content is missing from your document.</p>
     </contents>
   </slide>
@@ -298,8 +304,9 @@
   </slide>
 
   <slide>
-    <title>Why use it?</title>
+    <title>A11yFirst Link</title>
     <contents>
+      <h2>Why use it?</h2>
 
       <ul>
         <li>The display text for a link should describe the target of the link.</li>
@@ -329,8 +336,9 @@
   </slide>
 
   <slide>
-    <title>Why use it?</title>
+    <title>A11yFirst Image</title>
     <contents>
+      <h2>Why use it?</h2>
       <ul>
         <li>People with visual impairments need text descriptions of informative images.</li>
 
