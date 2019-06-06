@@ -463,6 +463,14 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>ACES Extension Website using Drupal 8</title>
+    <contents>
+      <div class="border">
+        <img width="98%" src="images/extension-county-offices.png" aly="Map of Illinois showing county extension offices"/>
+      </div>
+    </contents>
+  </slide>
 
   <slide>
     <title>Demonstration of A11yFirst in Drupal 8 in ACES Extension Website</title>
