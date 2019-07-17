@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 26: Coding Landmarks: Adding Labels</title>
+<title>Slide 26: Screen Reader Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      h3 {
+        font-size: 100%;
+        font-weight: normal;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -41,62 +45,203 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide47.html">
+<a id="ID_SLIDE_LAST" href="slide49.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 26 of 47</div>
+<div class="navbar-text pull-right">Slide 26 of 49</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Coding Landmarks: Adding Labels</h1>
-<h2>Labeling Techniques</h2>
-<ul style="padding-left: 1.1em">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Screen Reader Support</h1>
+<h2>JAWS Landmark Keyboard Information</h2>
+<table class="table table-striped table-hover" aria-labelledby="id1">
+        
+<thead>
           
-<li>If a page contains more than one of the same landmark, those landmarks need a label.</li>
-          
-<li>Labels should uniquely identify the landmark from other landmarks of the same type on the page.</li>
-          
-<li>There are three ways to add a label to a landmark:
-            <ul>
-              
-<li>
-<code>aria-label</code> attribute</li>
-              
-<li>
-<code>aria-labelledby</code> attribute</li>
-              
-<li>
-<code>title</code> attribute</li>
+<tr>
             
-</ul>
+<th>Keyboard Command</th>
+            <th>Description</th>
           
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>Control</kbd>+<kbd>Z</kbd></td>
+            <td>
+              
+<ul>
+                
+<li>Toggle on/off virtual JAWS cursor for reading web pages.</li>
+                
+<li>Must be in virtual mode for the following commands to work.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>Control</kbd>+<kbd>R</kbd></td>
+            <td>Region List</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Q</kbd></td>
+            <td>Next Region</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>R</kbd></td>
+            <td>Previous Region</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h3>Other Jaws Command Resources</h3>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/jawscommands" target="_specification">Penn State: JAWS commands for web</a>
 </li>
         
-</ul>
-<h2>Webedit Configuration</h2>
-<dl>
-          
-<dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
-          
-<dd>Copy example using the link below</dd>
-          
-<dd>Change title "Coding Landmarks: Adding Labels"</dd>
+<li>
+<a href="http://webaim.org/resources/shortcuts/jaws" target="_specification">WebAIM: JAWS commands for web</a>
+</li>
         
-</dl>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/structure-example-5/copy/" target="_webedit">WebEdit template for adding labels to landmarks</a>
-</p>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/landmark-3/output/" target="_example">Example: Landmarks with labels</a>
-</p>
+<li>
+<a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm" target="_specification">Freedom Scientific: JAWS commands for web</a>
+</li>
+      
+</ul>
+<h2>NVDA Landmark Keyboard Information</h2>
+<table class="table table-striped table-hover" aria-labelledby="id1">
+        
+<thead>
+          
+<tr>
+            
+<th>Keyboard Command</th>
+            <th>Description</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>Space</kbd></td>
+            <td>
+              
+<ul>
+                
+<li>Toggle between focus mode and browse mode.</li>
+                
+<li>Must be in browse mode for the following commands to work.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
+            <td>List of Landmarks</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>D</kbd></td>
+            <td>Next Landmark</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>D</kbd></td>
+            <td>Previous Landmark</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h3>Other NVDA Command Resources</h3>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a>
+</li>
+        
+<li>
+<a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a>
+</li>
+        
+<li>
+<a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a>
+</li>
+      
+</ul>
+<h3>NVDA Landmark Keyboard Information</h3>
+<ul>
+        
+<li>d: next landmark</li>
+        
+<li>shift+d: previous landmark</li>
+        
+<li>INSERT+F7: List of elements including landmarks</li>
+      
+</ul>
+<h2>Voice over for Safari on OS X</h2>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a>
+</li>
+        
+<li>
+<a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a>
+</li>
+      
+</ul>
+<h3>Apple Support for Landmarks</h3>
+<ul>
+         
+<li>Command+F5: Starts of stops Voice Over</li>
+         
+<li>Control+Option+U: Shows Accessibility Rotor, move to landmarks using left or right arrow keys</li>
+       
+</ul>
+</div>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

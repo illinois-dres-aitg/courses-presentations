@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 36: Coding Headings: h1-h6 Elements</title>
+<title>Slide 36: Use of Headings (H1-H6) in ARIA Landmarks</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css"></style>
 </head>
 <body>
@@ -41,38 +40,95 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide47.html">
+<a id="ID_SLIDE_LAST" href="slide49.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 36 of 47</div>
+<div class="navbar-text pull-right">Slide 36 of 49</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Coding Headings: h1-h6 Elements</h1>
-<h2>Webedit Configuration</h2>
-<dl>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Use of Headings (H1-H6) in ARIA Landmarks</h1>
+<h2>
+<code>main</code> landmarks</h2>
+<ul>
           
-<dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
+<li>Should contain <code>h1</code> element at the beginning of section.</li>
           
-<dd>Copy example using the link below</dd>
+<li>
+<code>h1</code> element content describes the content or the purpose of the page.</li>
           
-<dd>Change title "Coding Heading: Adding Headings and Adjusting Levels for Proper Nesting"</dd>
+<li>Provides a redundant means for assistive technology users to navigate to main content.</li>
+          
+<li>Use headers in a structural way or in combination with HTML5 section elements.</li>
+          
+<li>If more than one <code>main</code> landmark on the page use <code>aria-labelledby</code> to use the heading as accessible name to the landmark.</li>
         
-</dl>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-3/copy/" target="_webedit">WebEdit template for adjusting the heading structure of a web page</a>
-</p>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/heading-1/output/" target="_example">Example: Properly included and nested headings"</a>
-</p>
+</ul>
+<h2>
+<code>navigation</code> and <code>complementary </code>landmarks</h2>
+<ul>
+          
+<li>Should contain <code>h2</code> element at the beginning of section.</li>
+          
+<li>
+<code>h2</code> element content describes the content or the purpose of the page.</li>
+          
+<li>Provides a redundant means for assistive technology users to navigate to content.</li>
+          
+<li>If more than one <code>navigation</code> or <code>complementary </code> landmark on the page use <code>aria-labelledby</code> to use label the landmark.</li>
+        
+</ul>
+<h2>
+<code>contentinfo</code> landmarks</h2>
+<ul>
+          
+<li>May contain <code>h2</code> element at the beginning of section.</li>
+          
+<li>
+<code>h2</code> element identifies the section as footer information.</li>
+          
+<li>Provides a redundant means for assistive technology users to navigate to content.</li>
+        
+</ul>
+<h2>
+<code>banner</code> landmark</h2>
+<ul>
+          
+<li>May contain <code>h1</code> element at the beginning of section.</li>
+          
+<li>
+<code>h1</code> element identifies the website information.</li>
+          
+<li>Provides a redundent means for assistive technology users to orient to the website.</li>
+        
+</ul>
+<h2>
+<code>region</code> landmarks</h2>
+<ul>
+          
+<li>Should contain an <code>h2-h6</code> element at the beginning of section, which has appropriate level.</li>
+          
+<li>
+<code>h2-h6</code> element identifies the section information.</li>
+          
+<li>The heading element should be used as the label for the <code>region</code> using <code>aria-labelledby</code>.</li>
+          
+<li>Provides a redundent means for assistive technology users to orient to the website.</li>
+        
+</ul>
+</div>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

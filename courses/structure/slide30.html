@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 30: What About the Article Role and the Article Element?</title>
+<title>Slide 30: Landmark Coding Patterns</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css"></style>
 </head>
 <body>
@@ -41,53 +40,57 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide47.html">
+<a id="ID_SLIDE_LAST" href="slide49.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 30 of 47</div>
+<div class="navbar-text pull-right">Slide 30 of 49</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
-<h1 id="h1_title" class="title">What About the Article Role and the Article Element?</h1>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Landmark Coding Patterns</h1>
 <ul>
         
-<li>
-<code>article</code> role (ARIA)
+<li>All content should be contained in a landmark:
           <ul>
             
-<li>Is <strong>NOT</strong> a landmark element</li>
+<li>banner (top level)</li>
             
-<li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
+<li>complementary</li>
+            
+<li>contentinfo  (top level)</li>
+            
+<li>main (top level)</li>
+            
+<li>navigation</li>
+            
+<li>region (sub sections and unique content)</li>
+            
+<li>search</li>
           
 </ul>
         
 </li>
         
 <li>
-<code>article</code> element (HTML5)
-          <ul>
-            
-<li>HTML5 section element</li>
-            
-<li>Self-contained compositions (e.g. magazine or newspaper article)</li>
-            
-<li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
-            
-<li>Interactive widget or gadget</li>
-          
-</ul>
+<em>Must</em> use labels when a landmark of the same type is used more than once</li>
         
-</li>
+<li>
+<em>Should</em> not nest landmarks of the same type</li>
       
 </ul>
+</div>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

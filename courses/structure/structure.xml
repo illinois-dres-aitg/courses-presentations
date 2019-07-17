@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <?xml-stylesheet href="funct.css" type="text/css"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
   <title>Structure: Landmarks, Headings and Page Titles</title>
-  <name>Jon Gunderson, Ph.D.</name>
-  <desc href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</desc>
-  <desc href="http://ahs.illinois.edu">College of Applied Health Sciences</desc>
-  <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <email>jongund@illinois.edu</email>
-  <home>../badges-landmarks-headings.html</home>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
 
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
   <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
-  <stylesheet media="screen">../../common/css/highlight.css</stylesheet>
+
   <script>../../common/js/jquery-2.1.1.min.js</script>
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
-  <script>../../common/js/highlight.pack.js</script>
   <script>../../common/js/xml-slides.js</script>
+
   <slide>
     <title>Overview</title>
     <contents>
@@ -31,7 +32,7 @@
         <li>Titling</li>
         <li>Skip to Main Content</li>
         <li>Website Navigation Requirements</li>
-        <li>Open SOurce Tools</li>
+        <li>Open Source Inspection and Evaluation Tools</li>
       </ul>
 
       <script type="text/javascript">
@@ -46,6 +47,12 @@
                                     Standards
     ===================================================================
 -->
+
+  <slide>
+    <title>Web Standards and Accessibility</title>
+    <contents>
+    </contents>
+  </slide>
 
   <slide>
     <title>World Wide Web Consortium (W3C)</title>
@@ -86,66 +93,86 @@
       </p>
 
       <details>
-        <summary>Disability Access Requirements</summary>
+        <summary>Important Features</summary>
         <ul>
           <li>Technology agnostic</li>
+          <li>Understanding requires knowledge of features of specific technologies</li>
+          <li>Techniques are <strong>not</strong> normative or comprehensive</li>
           <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG 2.1</a></li>
           <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG 2.1</a></li>
-          <li>Understanding requires knowledge of features of specific technologies</li>
           <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG 2.1</a></li>
-          <li>Techniques are <strong>not</strong> normative or comprehensive</li>
         </ul>
       </details>
 
-      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG 2.0 Guidelines"></iframe>
+      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG 2.1 Guidelines"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>Accessible Rich Internet Applications (ARIA) 1.1</title>
+    <title>Accessible Rich Internet Applications (ARIA) Specification</title>
     <contents>
 
       <p>
-        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications 1.1</a>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
       </p>
 
       <details>
-        <summary>Standardized Support Accessibility APIs</summary>
+        <summary>Important Features</summary>
         <ul>
           <li><code>role</code> semantics</li>
           <li>Accessible name</li>
           <li>Accessible description</li>
           <li>States and properties</li>
-          <li><a href="https://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA 1.x Authoring Practices</a></li>
-          <li><a href="https://www.w3.org/WAI/PF/aria-implementation/" target="_specification">WAI-ARIA 1.x User Agent Implementation Guide</a></li>
-          <li><a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1</a></li>
+          <li><a href="https://www.w3.org/TR/accname" target="_specification">W3C Accessible Name and Description Computation Specification</a></li>
+          <li><a href="https://www.w3.org/TR/core-aam/" target="_specification">W3C Core Accessibility API Mappings</a></li>
         </ul>
       </details>
 
-      <iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA 1.0 Specfication"></iframe>
+      <iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA Specfication"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>HTML 5.x</title>
+    <title>ARIA Authoring Practices</title>
     <contents>
-      <p>b
-        <a href="https://www.w3.org/TR/html5/" target="_specification">HTML 5 Specification</a>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices" target="_specification">W3C ARIA Authoring Practices</a>
       </p>
 
       <details>
-        <summary>Standardized Support Accessibility APIs</summary>
+        <summary>Important Features</summary>
+        <ul>
+          <li>Design patterns for using landmarks and creating accessible widgets</li>
+          <li>Full working and reviewed examples</li>
+          <li>Review of accessible name and description alogithms</li>
+        </ul>
+      </details>
+
+      <iframe src="https://www.w3.org/tr/wai-aria-practices" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5</title>
+    <contents>
+      <p>
+        <a href="https://www.w3.org/TR/html5/#the-html-element" target="_specification">HTML 5 Specification</a>
+      </p>
+
+      <details>
+        <summary>Important Features</summary>
         <ul>
           <li>Default <code>role</code> semantics</li>
           <li><code>role</code> semantics restrictions</li>
-          <li><a href="https://www.w3.org/TR/aria-in-html/" target="_specification">W3C Notes on Using ARIA in HTML</a></li>
-          <li><a href="https://specs.webplatform.org/html-aria/webspecs/master/" target="_specification">ARIA in HTML</a></li>
-          <li><a href="https://www.w3.org/TR/html-aapi/" target="_specification">W3C HTML to Platform Accessibility APIs Implementation Guide</a></li>
+          <li>Built in features to support accessibility</li>
+          <li><a href="https://www.w3.org/TR/html-aria/" target="_specification">W3C ARIA in HTML</a></li>
+          <li><a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a></li>
         </ul>
       </details>
 
 
-      <iframe src="https://www.w3.org/tr/html51" width="99%" height="600px" title="W3C HTML 5.1 Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/html5/#the-html-element" width="99%" height="600px" title="W3C HTML 5 Specification"></iframe>
     </contents>
   </slide>
 
@@ -153,20 +180,20 @@
     <title>HTML 5: main element</title>
     <contents>
       <p>
-        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+        <a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
       </p>
 
       <details>
-        <summary>Meets an important accessibility requirement</summary>
+        <summary>Accessibility Feature</summary>
         <ul>
-          <li>Default <code>role</code> semantics</li>
-          <li><code>role</code> semantics restrictions</li>
-          <li>Standardize accessibility API mappings</li>
+          <li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
+          <li>Identifies the main content of the page</li>
+          <li>Creates a <code>main</code> landmark on the page for screen readers</li>
+          <li>Can be use for the target of a skip to main link</li>
         </ul>
       </details>
 
-
-      <iframe src="https://www.w3.org/TR/html51/grouping-content.html#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
+      <iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
     </contents>
   </slide>
 
@@ -177,7 +204,6 @@
     ===================================================================
 -->
 
-
   <slide>
     <title>Landmarks and HTML5 Section Elements</title>
     <contents>
@@ -185,22 +211,22 @@
         <li>ARIA Roles</li>
         <li>HTML 5 Section Elements</li>
       </ul>
-      <h2>Related WCAG 2.0 Success Criteria</h2>
+      <h2>Related WCAG Success Criteria</h2>
       <ul>
-        <li><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" target="_specification">1.3.1 Info and Relationships</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" target="_specification">2.4.1 Bypass Blocks</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG/#content-structure-separation-programmatic" target="_specification">1.3.1 Info and Relationships</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG/#navigation-mechanisms-skip" target="_specification">2.4.1 Bypass Blocks</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
       </ul>
     </contents>
   </slide>
 
 
   <slide>
-    <title>ARIA 1.1 Landmarks</title>
+    <title>ARIA Landmarks</title>
     <contents>
-      <p><a href="https://www.w3.org/TR/wai-aria-1.1/#landmark_roles" target="_specification">ARIA 1.1 Landmark Role Specification</a></p>
+      <p><a href="https://www.w3.org/TR/wai-aria/#landmark_roles" target="_specification">ARIA Landmark Role Specification</a></p>
 
-      <table class="table table-striped" aria-label="ARIA 1.1 Landmarks">
+      <table class="table table-striped" aria-label="ARIA Landmarks">
         <thead>
           <tr>
             <th>Landmark</th>
@@ -227,27 +253,32 @@
           <tr>
             <td><code>form</code></td>
             <td>As many as needed, rarely used in practice.</td>
-            <td>Forms within an another landmark.</td>
+            <td>
+              <ul>
+                <li><code>form</code> role is only considered a landmark when it has an <a htef="http://w3c.org/TR/aria-practices/#names_and_descriptions">accessible name</a>.</li>
+                <li>Form landmarks can be used to identify multiple forms within an another landmark.</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td><code>main</code></td>
             <td>Typically one, but in mashups every app may be identified with a <code>main</code> landmark.</td>
-            <td>Identify the main content area or areas of a web page or application</td>
+            <td>Identify the main content area or areas of a web page or application.</td>
           </tr>
           <tr>
             <td><code>navigation</code></td>
             <td>As many as needed.</td>
-            <td>Identify website navigational links</td>
+            <td>Identify groups of navigational links to other pages in the website.</td>
           </tr>
           <tr>
             <td>
               <code>region</code>
               <br/>(conditional)
             </td>
-            <td>As many as needed.</td>
+            <td>As many as needed to identify important sub-sections of other landmarks, often none.</td>
             <td>
               <ul>
-                <li><code>region</code> role is only considered a landmark when it has an <a htef="">accessible name</a>.</li>
+                <li><code>region</code> role is only considered a landmark when it has an <a htef="http://w3c.org/TR/aria-practices/#names_and_descriptions">accessible name</a>.</li>
                 <li>Used to identify sub-sections of other landmarks</li>
               </ul>
             </td>
@@ -265,7 +296,7 @@
   </slide>
 
   <slide>
-    <title>Landmark Example: Disability Resources and Educational Services (DRES) Website</title>
+    <title>Landmark Design Example: Disability Resources and Educational Services (DRES) Website</title>
     <contents>
       <p class="center"><a href="http://disability.illinois.edu" target="_example">Landmark Example: DRES Website</a></p>
       <img src="images/disability-home.png" width="99%" alt="Graphical browser rendering of University of Illinois Disability Services Home Page"/>
@@ -273,19 +304,19 @@
   </slide>
 
   <slide>
-    <title>Pitfalls Observed in Initial Use of Landmarks</title>
+    <title>Pitfalls Observed in Initial Use of Landmarks by Developers</title>
     <contents>
       <ul>
         <li>ARIA menu roles were used in flyout menus:
           <ul>
-            <li>No keyboard support to manage focus</li>
-            <li>Menu roles override link role</li>
+            <li>No keyboard support to manage focus.</li>
+            <li>Menu roles override link role.</li>
           </ul>
         </li>
-        <li>Nested Navigation Landmarks, resulting in too many navigation landmarks</li>
-        <li>Landmarks indicated programmatic/styling sections, not semantic sections</li>
-        <li>Some content in landmarks some content not in landmarks</li>
-        <li><code>article</code> role was used as a landmark role</li>
+        <li>Nested Navigation Landmarks, resulting in too many navigation landmarks.</li>
+        <li>Landmarks indicated programmatic/styling sections, not semantic sections.</li>
+        <li>Some content in landmarks some content not in landmarks.</li>
+        <li><code>article</code> role was used as a landmark role.</li>
       </ul>
     </contents>
   </slide>
@@ -930,21 +961,16 @@
     <title>Coding Landmarks: Role Attributes</title>
     <contents>
 
-        <h2>Webedit Configuration</h2>
-        <dl>
-          <dt>Copy Example</dt>
-          <dd>Change title "Coding Landmarks: Role Attributes"</dd>
+        <h2>Practice adding Landmarks using ARIA role attributes</h2>
+        <ol>
+          <li><a href="https://webedit.disability.illinois.edu/accounts/login/" target="_webedit">Login into Web Edit</a></li>
+          <li>Copy example from the following Web Edit link</li>
+          <li>Change title "Coding Landmarks: Role Attributes"</li>
+          <li>Save example to your account</li>
+        </ol>
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-1/copy/" target="_webedit">Web Edit template for adding ARIA landmarks</a>
+        </p>
 
-          <dt>Bootstrap References</dt>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</a></dd>
-          <dd><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js</a></dd>
-        </dl>
-
-        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-1/" target="_jsfidddle">WebEdit template for adding ARIA landmarks</a></p>
-
-        <!--
-        <iframe src="https://webedit.disability.illinois.edu/user/jongund/structure-problem-2/" width="99%" height="600px" title="WebEdit template for adding ARIA landmarks"></iframe>
-        -->
     </contents>
   </slide>
 
@@ -957,21 +983,83 @@
     </style>
     <title>Screen Reader Support</title>
     <contents>
-      <h2>Jaws Command Resources</h2>
+
+      <h2>JAWS Landmark Keyboard Information</h2>
+
+      <table class="table table-striped table-hover" aria-labelledby="id1">
+        <thead>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>Control</kbd>+<kbd>Z</kbd></td>
+            <td>
+              <ul>
+                <li>Toggle on/off virtual JAWS cursor for reading web pages.</li>
+                <li>Must be in virtual mode for the following commands to work.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>Control</kbd>+<kbd>R</kbd></td>
+            <td>Region List</td>
+          </tr>
+          <tr>
+            <td><kbd>Q</kbd></td>
+            <td>Next Region</td>
+          </tr>
+          <tr>
+            <td><kbd>R</kbd></td>
+            <td>Previous Region</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Other Jaws Command Resources</h3>
       <ul>
         <li><a href="http://accessibility.psu.edu/jawscommands" target="_specification">Penn State: JAWS commands for web</a></li>
         <li><a href="http://webaim.org/resources/shortcuts/jaws" target="_specification">WebAIM: JAWS commands for web</a></li>
         <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm" target="_specification">Freedom Scientific: JAWS commands for web</a></li>
       </ul>
 
-      <h3>JAWS  Landmark Keyboard Information</h3>
-      <ul>
-        <li>Region List Insert+Control+R</li>
-        <li>Q: Next Region</li>
-        <li>R: Main Region</li>
-      </ul>
+      <h2>NVDA Landmark Keyboard Information</h2>
 
-      <h2>NVDA Command Resources</h2>
+      <table class="table table-striped table-hover" aria-labelledby="id1">
+        <thead>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>Space</kbd></td>
+            <td>
+              <ul>
+                <li>Toggle between focus mode and browse mode.</li>
+                <li>Must be in browse mode for the following commands to work.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
+            <td>List of Landmarks</td>
+          </tr>
+          <tr>
+            <td><kbd>D</kbd></td>
+            <td>Next Landmark</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>D</kbd></td>
+            <td>Previous Landmark</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Other NVDA Command Resources</h3>
       <ul>
         <li><a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a></li>
         <li><a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a></li>
