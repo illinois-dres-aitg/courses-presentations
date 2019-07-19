@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 20: Coding Landmarks: Adding Labels</title>
+<title>Slide 20: NVDA Landmark Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide28.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 20 of 25</div>
+<div class="navbar-text pull-right">Slide 20 of 28</div>
 </div>
 </div>
 </nav>
@@ -53,47 +53,87 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Coding Landmarks: Adding Labels</h1>
-<h2>Labeling Techniques</h2>
-<ul style="padding-left: 1.1em">
+<h1 id="h1_title" class="title">NVDA Landmark Support</h1>
+<table class="table table-striped table-hover" aria-labelledby="h1_title">
+        
+<thead>
           
-<li>If a page contains more than one of the same landmark, those landmarks need a label.</li>
-          
-<li>Labels should uniquely identify the landmark from other landmarks of the same type on the page.</li>
-          
-<li>There are three ways to add a label to a landmark:
-            <ul>
-              
-<li>
-<code>aria-label</code> attribute</li>
-              
-<li>
-<code>aria-labelledby</code> attribute</li>
-              
-<li>
-<code>title</code> attribute</li>
+<tr>
             
-</ul>
+<th>Keyboard Command</th>
+            <th>Description</th>
           
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>Space</kbd></td>
+            <td>
+              
+<ul>
+                
+<li>Toggle between focus mode and browse mode.</li>
+                
+<li>Must be in browse mode for the following commands to work.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
+            <td>List of Landmarks</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>D</kbd></td>
+            <td>Next Landmark</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>D</kbd></td>
+            <td>Previous Landmark</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h2>Feature Overview</h2>
+<ul>
+        
+<li>NVDA allows you to move sequentially through the landmarks on the page or view a list of landmarks.</li>
+        
+<li>When navigating a web page NVDA announces landmark information when the browse or focus cursor enters a new landmark.</li>
+      
+</ul>
+<h2>Other NVDA Command Resources</h2>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a>
 </li>
         
-</ul>
-<h2>Webedit Configuration</h2>
-<dl>
-          
-<dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
-          
-<dd>Copy example using the link below</dd>
-          
-<dd>Change title "Coding Landmarks: Adding Labels"</dd>
+<li>
+<a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a>
+</li>
         
-</dl>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/structure-example-5/copy/" target="_webedit">WebEdit template for adding labels to landmarks</a>
-</p>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/landmark-3/output/" target="_example">Example: Landmarks with labels</a>
-</p>
+<li>
+<a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a>
+</li>
+      
+</ul>
 </div>
 <div class="col"></div>
 </div>
