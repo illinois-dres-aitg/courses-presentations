@@ -189,6 +189,17 @@
   </slide>
 
   <slide>
+    <title>How Screen Readers use Landmarks and Headings</title>
+    <contents>
+      <ul>
+        <li><a href="#">JAWS landmarks and headings navigation features (Video)</a></li>
+        <li><a href="#">NVDA landmarks and headings navigation features (Video)</a></li>
+        <li><a href="#">Voice Over landmarks and headings navigation features (Video)</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>General Principles of Landmark Design</title>
     <contents>
 
@@ -231,7 +242,7 @@
           Do not use the landmark role as part of the label. For example, a navigation landmark with a label "Site Navigation" will be announced by a screen reader as "Site Navigation Navigation". The label should simply be "Site".
         </li>
       </ul>
-      <p><em><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#general-principles-of-landmark-design">Taken from ARIA Authoring Practices Guide</a></em></p>
+      <p><em><a href="https://www.w3.org/TR/wai-aria-practices/#general-principles-of-landmark-design">Taken from ARIA Authoring Practices Guide</a></em></p>
     </contents>
   </slide>
 
@@ -249,7 +260,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#main" target="_specification"><code>main</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#main" target="_specification"><code>main</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -334,7 +345,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#navigation" target="_specification"><code>navigation</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#navigation" target="_specification"><code>navigation</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -435,7 +446,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#banner" target="_specification"><code>banner</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#banner" target="_specification"><code>banner</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -571,7 +582,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#contentinfo" target="_specification"><code>contentinfo</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#contentinfo" target="_specification"><code>contentinfo</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -707,7 +718,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#complementary" target="_specification"><code>complementary</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#complementary" target="_specification"><code>complementary</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -759,7 +770,7 @@
           <tr>
             <th>ARIA 1.1 Specification</th>
             <td>
-              <a href="https://www.w3.org/TR/wai-aria-1.1/#region" target="_specification"><code>region</code> landmark</a>
+              <a href="https://www.w3.org/TR/wai-aria/#region" target="_specification"><code>region</code> landmark</a>
             </td>
           </tr>
           <tr>
@@ -809,16 +820,23 @@
         <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-1/copy/" target="_webedit">Web Edit template for adding ARIA landmarks</a>
         </p>
 
+        <h2>Learning Objectives</h2>
+        <ul>
+          <li>Identify the type of landmark for each section of the sample web page.</li>
+          <li>Change elements to use the proper HTML sectioning element (e.g. <code>div</code> -> <code>main</code> element).</li>
+          <li>Verify landmarks have been added by testing with a screen reader.</li>
+        </ul>
+
     </contents>
   </slide>
 
   <slide>
-    <title>Screen Reader Demononstration</title>
+    <title>Screen Reader Demonstrations</title>
     <contents>
       <ul>
-        <li><a href="">JAWS landmarks demonstration</a></li>
-        <li><a href="">NVDA landmarks demonstration</a></li>
-        <li><a href="">Voice Over landmarks demonstration</a></li>
+        <li><a href="">JAWS landmarks demonstration (Video)</a></li>
+        <li><a href="">NVDA landmarks demonstration (Video)</a></li>
+        <li><a href="">Voice Over landmarks demonstration (Video)</a></li>
       </ul>
 
       <h2>Getting Screen Readers</h2>
@@ -870,7 +888,7 @@
 
       <ul>
         <li>JAWS documentation and commands refer to landmarks as <q>regions</q>.</li>
-        <li>JAWS allows you to move sequentially through the landmarks on the page or view a list of landmarks.</li>
+        <li>In virtual you can move sequentially through the landmarks on a page or view a list of landmarks.</li>
         <li>When navigating a web page JAWS announces landmark information when the virtual or PC cursor enters a new landmark.</li>
       </ul>
 
@@ -922,7 +940,7 @@
 
       <h2>Feature Overview</h2>
       <ul>
-        <li>NVDA allows you to move sequentially through the landmarks on the page or view a list of landmarks.</li>
+        <li>In browse mode you can move sequentially through the landmarks on the page or view a list of landmarks.</li>
         <li>When navigating a web page NVDA announces landmark information when the browse or focus cursor enters a new landmark.</li>
       </ul>
 
@@ -937,7 +955,7 @@
   </slide>
 
   <slide>
-    <title>Voice Over Landmark Support</title>
+    <title>Voice Over</title>
     <contents>
 
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
@@ -969,7 +987,7 @@
         <li>When navigating a web page Voice Over announces landmark information when the browse or focus cursor enters a new landmark.</li>
       </ul>
 
-      <h2>Other NVDA Command Resources</h2>
+      <h2>Other Voice Over Command Resources</h2>
 
       <ul>
         <li><a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a></li>
@@ -994,6 +1012,12 @@
         <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-problem-2/copy/" target="_webedit">Web Edit template for adding ARIA landmarks</a>
         </p>
 
+        <h2>Learning Objectives of Activity</h2>
+        <ul>
+          <li>Identify the type of landmark for each section of the sample web page.</li>
+          <li>Change elements to use the proper role attribute (e.g. <code>div</code> -> <code>div[role="main"]</code>).</li>
+          <li>Verify landmarks have been added by testing with a screen reader.</li>
+        </ul>
     </contents>
   </slide>
 
@@ -1001,27 +1025,28 @@
     <title>Coding Landmarks: Adding Labels</title>
     <contents>
 
-        <h2>Labeling Techniques</h2>
+        <h2>Practice adding labels to landmarks</h2>
+        <ol>
+          <li><a href="https://webedit.disability.illinois.edu/accounts/login/" target="_webedit">Login into Web Edit</a></li>
+          <li>Copy example from the following Web Edit link</li>
+          <li>Change title "Coding Landmarks: Adding Labels"</li>
+          <li>Save example to your account</li>
+        </ol>
+
+        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-example-5/copy/" target="_webedit">WebEdit template for adding labels to landmarks</a></p>
+
+        <h2>Learning Objectives</h2>
         <ul style="padding-left: 1.1em">
-          <li>If a page contains more than one of the same landmark, those landmarks need a label.</li>
-          <li>Labels should uniquely identify the landmark from other landmarks of the same type on the page.</li>
-          <li>There are three ways to add a label to a landmark:
+          <li>Idenitfy landmarks that need a label (e.g. accessible name).</li>
+          <li>Creating labels that uniquely identify the content in the landmarks.</li>
+          <li>There are two primary ways to add a label to a landmark:
             <ul>
               <li><code>aria-label</code> attribute</li>
               <li><code>aria-labelledby</code> attribute</li>
-              <li><code>title</code> attribute</li>
             </ul>
           </li>
+          <li>Verify labels have been added correctly using a screen reader.  In addition to the role names, you should now hear the labels when navigate landmarks on a page.</li>
         </ul>
-
-        <h2>Webedit Configuration</h2>
-        <dl>
-          <dt>Login to <a href="https://webedit.disability.illinois.edu/accounts/login/">WebEdit</a> (Create an account if you don't have one)</dt>
-          <dd>Copy example using the link below</dd>
-          <dd>Change title "Coding Landmarks: Adding Labels"</dd>
-        </dl>
-
-        <p><a href="https://webedit.disability.illinois.edu/user/jongund/structure-example-5/copy/" target="_webedit">WebEdit template for adding labels to landmarks</a></p>
 
         <p><a href="https://webedit.disability.illinois.edu/user/jongund/landmark-3/output/" target="_example">Example: Landmarks with labels</a></p>
     </contents>
@@ -1056,12 +1081,13 @@
         </li>
         <li><em>Must</em> use labels when a landmark of the same type is used more than once</li>
         <li><em>Should</em> not nest landmarks of the same type</li>
+        <li>From a design stand point having too few or two many landmarks on a page will reduce the utility of landmarks to people using screen readers.  A rule of thumb is to have between 4-10 landmarks on a page, although more complex pages may require more landmarks.</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Landmark Example</title>
+    <title>ARIA Authoring Practices</title>
     <contents>
       <p><a href="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/index.html" target="_example">ARIA Authoring Practices Landmark Example</a></p>
 
@@ -1078,12 +1104,7 @@
         <li><code>article</code> role (ARIA)
           <ul>
             <li>Is <strong>NOT</strong> a landmark element</li>
-            <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
-          </ul>
-        </li>
-        <li><code>article</code> element (HTML5)
-          <ul>
-            <li>HTML5 section element</li>
+            <li>HTML5 <code>Article</code> element has the default role of <code>article</code>.</li>
             <li>Self-contained compositions (e.g. magazine or newspaper article)</li>
             <li>Nested discussion lists (e.g. forum post, a blog entry or a user-submitted comment)</li>
             <li>Interactive widget or gadget</li>
