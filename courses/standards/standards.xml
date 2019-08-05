@@ -3,7 +3,7 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
-  <title>Web Accessibility Standards and Professional Practice</title>
+  <title>Disability and Web Accessibility Standards</title>
   <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
@@ -28,13 +28,61 @@
       <ul>
         <li>W3C Standards for web accessibility</li>
         <li>W3C Web Accessibility Initiative (WAI)</li>
-        <li>IT Accessibility Organizations</li>
       </ul>
 
       <script type="text/javascript">
         slideShowURL()
       </script>
 
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Why was the World Wide Web Invented?</title>
+    <contents>
+      <ul>
+        <li>Tim Berners Lee was a scientist at CERN particle accellerator lab.</li>
+        <li>Scientists were having problems sharing and collaborating on documents and research results.
+          <ul>
+            <li>WordPerfect</li>
+            <li>Microsoft Word</li>
+            <li>Apple Write</li>
+            <li>LaTex</li>
+          </ul>
+        </li>
+        <li>Tim had an idea to not only share information between people, but with everyone.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Why was the World Wide Web Invented?</title>
+    <contents>
+      <ul>
+        <li>Sharing scientific information.</li>
+        <li>Common platform for viewing, creating and editing.</li>
+        <li>Open standards for everyone to use.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>World Wide Web Consortium</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/" target="_specification">World Wide Web Consortium (W3C)</a></li>
+        <li>Develop open and royality free standards:
+          <ul>
+            <li><a href="https://www.w3.org/TR/html52/">Hypertext Markup Language (HTML) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/css">Cascading Style Sheets (CSS) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/PNG/">Portable Network Graphics (PNG) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/SVG/">Scallable Vector Graphics (SVG) Specifications</a></li>
+          </ul>
+        </li>
+        <li>Interopability through at least 2 indepdent implementations</li>
+      </ul>
+
+      <iframe src="https://www.w3.org" width="99%" height="600px" title="World Wide Web Home page"></iframe>
     </contents>
   </slide>
 
@@ -126,24 +174,24 @@
     <title>HTML 5</title>
     <contents>
       <p>
-        <a href="https://www.w3.org/TR/html5/#the-html-element" target="_specification">HTML 5 Specification</a>
+        <a href="https://html.spec.whatwg.org/" target="_specification">HTML 5 Living Standard</a>
       </p>
 
       <details>
         <summary>Important Features</summary>
         <ul>
-          <li>Default <code>role</code> semantics</li>
-          <li><code>role</code> semantics restrictions</li>
           <li>Built in features to support accessibility</li>
-          <li><a href="https://www.w3.org/TR/html-aria/" target="_specification">W3C ARIA in HTML</a></li>
+          <li>Default ARIA roles</li>
+          <li>ARIA Role restrictions</li>
           <li><a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a></li>
         </ul>
       </details>
 
 
-      <iframe src="https://www.w3.org/TR/html5/#the-html-element" width="99%" height="600px" title="W3C HTML 5 Specification"></iframe>
+      <iframe src="https://html.spec.whatwg.org/" width="99%" height="600px" title="W3C HTML 5 Living Standard"></iframe>
     </contents>
   </slide>
+
 
   <slide>
     <title>HTML 5: main element</title>
@@ -167,82 +215,30 @@
   </slide>
 
   <slide>
-    <title>W3C Membership</title>
+    <title>ARIA in HTML</title>
     <contents>
+      <p>
+        <a href="https://www.w3.org/TR/html-aria/" target="_specification">ARIA in HTML5</a>
+      </p>
+
       <ul>
-        <li><a href="https://www.w3.org/Consortium/Member/List" target="_specification">W3C Members List</a></li>
-        <li>Set priorities for standards work.</li>
-        <li>Participate in the development of standards, including digital publishing</li>
-        <li>Support and participate in web accessibiity work to create a more accessibe web</li>
+        <li>Default ARIA roles</li>
+        <li>ARIA role restrictions</li>
       </ul>
-      <iframe src="https://www.w3.org/Consortium/Member/List" width="99%" height="600px" title="W3C Membership List"></iframe>
+
+      <iframe src="https://www.w3.org/TR/html-aria/" width="99%" height="600px" title="ARIA in HTML5"></iframe>
     </contents>
   </slide>
-
-  <slide>
-    <title>W3C WAI Interest Group</title>
-    <contents>
-      <ul>
-        <li><a href="https://www.w3.org/WAI/about/groups/waiig/" target="_specification">W3C Interest Group</a>.</li>
-        <li><a href="https://www.w3.org/WAI/about/groups/waiig/#mailinglist" target="_specification">Interest group e-mail discussion and announcement lists.</a></li>
-        <li>Review and provide feedback on standards.</li>
-        <li>Discuss WCAG requirements and techniques.</li>
-      </ul>
-      <iframe src="https://www.w3.org/WAI/about/groups/waiig/" width="99%" height="600px" title="W3C Membership List"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>International Association of Accessibility Professionals (IAAP)</title>
-    <contents>
-      <ul>
-        <li><a href="https://www.accessibilityassociation.org" target="_specification">W3C Web Accessibility Initiative (WAI)</a></li>
-        <li>Managers, designers, developers and content editors</li>
-        <li>Indentifying knowledge base</li>
-        <li>Sharing knowledge</li>
-        <li>Raising awareness</li>
-        <li>Certification</li>
-      </ul>
-      <iframe src="https://www.accessibilityassociation.org" width="99%" height="600px" title="International Association of Accessibility Professionals home page"></iframe>
-    </contents>
-  </slide>
-
-    <slide>
-    <title>Educause IT Accessibility Interest Group</title>
-    <contents>
-      <ul>
-        <li><a href="https://www.educause.edu/community/it-accessibility-community-group">Educause IT Accessibility Interest Group</a></li>
-        <li>IT professionals in technology in Higher Education</li>
-        <li>Monthly teleconference on sharing information on IT accessibility policy and resources</li>
-        <li>E-mail discussion list</li>
-        <li>Educause annual conference has workshops and sessions on IT accessibility issues.</li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Assistive Technology in Higher Education Network (ATHEN)</title>
-    <contents>
-      <ul>
-        <li><a href="http://athenpro.org">Assistive Technology in Higher Education Network (ATHEN)</a></li>
-        <li>Primarily people in disability services </li>
-        <li>Affliated with <a href="https://www.ahead.org/">AHEAD</a></li>
-        <li>E-mail discussion list</li>
-        <li>Annual conference on technology and disability in higher education: <a href="https://accessinghigherground.org/">Accessing Higher Ground Conference</a></li>
-      </ul>
-    </contents>
-  </slide>
-
 
   <slide>
     <title>Summary</title>
     <contents>
       <ul>
-        <li>Accessibility must be intergated into main stream development and authoring.</li>
+        <li>The heart of the web is interoperability and open standards</li>
+        <li>Accessibility must be intergated into web development and authoring.</li>
         <li>More people must understand accessibility.</li>
         <li>Need technologies that support accessible design.</li>
         <li>Authoring environments support accessibility by default, instead of by exception.</li>
-        <li>Many opportunities to learn and share information in communities of practice.</li>
       </ul>
     </contents>
   </slide>
