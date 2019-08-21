@@ -143,6 +143,14 @@ main iframe {
     margin-top: 1em;
 }
 
+main caption {
+    margin-top: 1em;
+    margin-bottom: 0.125em;
+    font-size: 1.5em;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
 main table.table ul {
     padding-left: 1em;
 }

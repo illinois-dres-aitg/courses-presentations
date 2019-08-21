@@ -238,9 +238,9 @@
       </script>
 
       <details>
-        <summary>Table of Data in the Chart</summary>
-        <h2 id="table-label">Percentage of People with Disabilities in United States in 2005</h2>
-        <table class="table table-striped" aria-labelledby="table-label">
+        <summary>Table View of the Data in Chart</summary>
+        <table class="table table-striped">
+          <caption>Disability Prevalence and the Need for Assistance by Age: 2005</caption>
           <thead>
             <tr>
               <th class="text">Age Range</th>
@@ -396,9 +396,10 @@
       </script>
 
       <details>
-        <summary>Table of Data in the Chart</summary>
+        <summary>Table View of the Data in Chart</summary>
 
         <table class="table table-striped" aria-labelledby="h1_title">
+          <caption>Percentage of Types of Disability by Age: 2005</caption>
           <thead>
             <tr>
               <th class="text">Disability</th>
