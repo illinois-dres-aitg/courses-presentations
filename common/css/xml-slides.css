@@ -155,6 +155,20 @@ main table .text {
     text-align: left;
 }
 
+main table.table tbody th.total,
+main table.table tbody td.total {
+    border-top: solid 2px black;
+    font-weight: bold;
+}
+
+
+main table.table.highlight tbody tr th:hover,
+main table.table.highlight tbody tr td:hover {
+    outline: solid 4px blue;
+    font-weight: bold;
+}
+
+
 main .code {
     font-family: monospace;
     background-color: #EEE;

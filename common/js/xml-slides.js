@@ -128,6 +128,16 @@ $(document).keydown(function( event ) {
     event.preventDefault();
   }
 
+  if (event.ctrlKey) {
+    $('table.table').addClass('highlight');
+  }
+
+});
+
+$(document).keyup(function( event ) {
+  if (!event.ctrlKey) {
+    $('table.table').removeClass('highlight');
+  }
 
 });
 
