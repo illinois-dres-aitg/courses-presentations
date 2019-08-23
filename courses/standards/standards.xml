@@ -520,8 +520,10 @@
   <slide>
     <title>W3C Web Accessibility Initiative (WAI)</title>
     <contents>
+      <p><a href="http://www.w3.org/WAI" target="_specification">W3C Web Accessibility Initiative (WAI)</a></p>
+
+      <h2>Importance</h2>
       <ul>
-        <li><a href="http://www.w3.org/WAI" target="_specification">W3C Web Accessibility Initiative (WAI)</a></li>
         <li>International standards</li>
         <li>Promotion of accessibility of web based content</li>
         <li>Collaboration of commerical, educational and consumer groups</li>
