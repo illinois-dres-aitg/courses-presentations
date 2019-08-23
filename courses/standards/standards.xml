@@ -561,10 +561,16 @@
 
   <slide>
     <title>Organization of WCAG 2.1</title>
+    <style>
+      .pour li:first-letter {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    </style>
     <contents>
       <details>
-        <summary>4 Principles (Pour)</summary>
-        <ul>
+        <summary>4 Principles (POUR)</summary>
+        <ul class="pour">
           <li>Perceivable</li>
           <li>Operable</li>
           <li>Understandable</li>
@@ -595,9 +601,15 @@
         <summary>78 Success Criteria</summary>
         <ul>
           <li>Real requirements of WCAG.</li>
-          <li>Three levels of importance: A, AA and AAA.</li>
+          <li>Three levels of importance:
+            <ul>
+              <li>A: Highest priority (29 Success Criteria)</li>
+              <li>AA: Next highest (21 Success Criteria)</li>
+              <li>AAA: Lowest priority (28 Success Criteria)</li>
+            </ul>
+          </li>
           <li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
-          <li>None of the techniques are considered normative, but they label some <em>sufficent</em> and others <em>advisory</em> techniques.</li>
+          <li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.</li>
         </ul>
       </details>
     </contents>

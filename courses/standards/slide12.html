@@ -8,7 +8,12 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+      .pour li:first-letter {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -56,9 +61,9 @@
 <h1 id="h1_title" class="title">Organization of WCAG 2.1</h1>
 <details>
         
-<summary>4 Principles (Pour)</summary>
+<summary>4 Principles (POUR)</summary>
         
-<ul>
+<ul class="pour">
           
 <li>Perceivable</li>
           
@@ -114,11 +119,22 @@
           
 <li>Real requirements of WCAG.</li>
           
-<li>Three levels of importance: A, AA and AAA.</li>
+<li>Three levels of importance:
+            <ul>
+              
+<li>A: Highest priority (29 Success Criteria)</li>
+              
+<li>AA: Next highest (21 Success Criteria)</li>
+              
+<li>AAA: Lowest priority (28 Success Criteria)</li>
+            
+</ul>
+          
+</li>
           
 <li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
           
-<li>None of the techniques are considered normative, but they label some <em>sufficent</em> and others <em>advisory</em> techniques.</li>
+<li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.</li>
         
 </ul>
       
