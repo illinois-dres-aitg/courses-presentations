@@ -20,6 +20,23 @@ header h1 {
 footer {
     margin-top: 0.25em;
     padding-top: 0.25em;
+    margin-top: 4em;
+    clear: both;
+}
+
+
+footer img {
+    position: relative;
+    top: -.2em;
+    height: 1.5em;
+    padding: 0.25em;
+    border: transparent thin solid;
+    border-radius: 5px;
+}
+
+footer a:focus img {
+    padding-top: 3em;
+    border-color: black;
 }
 
 nav ul {
@@ -61,6 +78,7 @@ nav ul li {
 }
 
 main {
+    padding-top: 3em;
     font-size: 1.5em;
     font-family: Times, 'Times New Roman', serif;
 }

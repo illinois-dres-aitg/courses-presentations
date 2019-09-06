@@ -242,6 +242,14 @@
       <xsl:element name="div">
         <xsl:attribute name="id">footer</xsl:attribute>
         <xsl:attribute name="class">well well-sm</xsl:attribute>
+        <xsl:element name="a">
+          <xsl:attribute name="href">http://illinois.edu</xsl:attribute>
+          <xsl:attribute name="target">_illinois</xsl:attribute>
+          <xsl:element name="img">
+            <xsl:attribute name="src">https://aitg.disability.illinois.edu/common/images/block-i.png</xsl:attribute>
+            <xsl:attribute name="alt">University of Illinois</xsl:attribute>
+          </xsl:element>
+        </xsl:element>
         Copyright &#169; 2019 University of Illinois
       </xsl:element>
     </xsl:element>
@@ -322,7 +330,7 @@
 
         <xsl:element name="nav">
           <xsl:attribute name="id">nav</xsl:attribute>
-          <xsl:attribute name="class">navbar navbar-default</xsl:attribute>
+          <xsl:attribute name="class">navbar navbar-default navbar-fixed-top</xsl:attribute>
 
           <xsl:element name="div">
             <xsl:attribute name="class">container</xsl:attribute>
