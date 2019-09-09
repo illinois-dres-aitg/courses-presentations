@@ -26,7 +26,9 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>Landmarks</li>
+        <li>Understanding landmark regions</li>
+        <li>HTML markup for landmarks</li>
+        <li>Assistive Technologies support for landmarks</li>
       </ul>
 
       <script type="text/javascript">
@@ -47,8 +49,8 @@
     <title>Landmarks and HTML5 Section Elements</title>
     <contents>
       <ul>
-        <li>ARIA Roles</li>
-        <li>HTML 5 Section Elements</li>
+        <li>ARIA landmark roles</li>
+        <li>HTML 5 section elements</li>
       </ul>
       <h2>Related WCAG Success Criteria</h2>
       <ul>
@@ -61,7 +63,7 @@
 
 
   <slide>
-    <title>ARIA Landmarks</title>
+    <title>ARIA Landmark Regions</title>
     <contents>
       <p><a href="https://www.w3.org/TR/wai-aria/#landmark_roles" target="_specification">ARIA Landmark Role Specification</a></p>
 
@@ -69,7 +71,7 @@
         <thead>
           <tr>
             <th>Landmark</th>
-            <th>Frequency of Usage</th>
+            <th>Frequency of Usage on Page</th>
             <th>Description</th>
           </tr>
         </thead>
