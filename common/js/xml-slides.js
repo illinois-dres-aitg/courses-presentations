@@ -129,14 +129,14 @@ $(document).keydown(function( event ) {
   }
 
   if (event.ctrlKey) {
-    $('table.table').addClass('highlight');
+    $('main').addClass('highlight');
   }
 
 });
 
 $(document).keyup(function( event ) {
   if (!event.ctrlKey) {
-    $('table.table').removeClass('highlight');
+    $('main').removeClass('highlight');
   }
 
 });

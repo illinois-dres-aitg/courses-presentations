@@ -25,17 +25,17 @@ footer {
 }
 
 
-footer img {
+footer a img {
     position: relative;
     top: -.1em;
     height: 1.5em;
     padding: 0.25em;
-    border: transparent thin solid;
+    border: transparent 2px solid;
     border-radius: 5px;
 }
 
+footer a:hover img,
 footer a:focus img {
-    padding-top: 3em;
     border-color: black;
 }
 
@@ -80,25 +80,25 @@ nav ul li {
 main {
     padding-top: 3em;
     font-size: 1.5em;
-    font-family: Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h1 {
     font-size: 1.75em;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h2 {
     margin-top: 1.5em;
     margin-bottom: 0.125em;
     font-size: 1.5em;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main h3 {
     margin-top: 1.5em;
     font-size: 1em;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main ul {
@@ -165,7 +165,7 @@ main caption {
     margin-top: 1em;
     margin-bottom: 0.125em;
     font-size: 1.5em;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
@@ -188,10 +188,19 @@ main table.table tbody td.total {
 }
 
 
-main table.table.highlight tbody tr th:hover,
-main table.table.highlight tbody tr td:hover {
+main.highlight img:hover,
+main.highlight li:hover,
+main.highlight p:hover,
+main.highlight dt:hover,
+main.highlight dd:hover,
+main.highlight table.table tbody tr th:hover,
+main.highlight table.table tbody tr td:hover {
+    outline-offset: 2px;
     outline: solid 4px blue;
-    font-weight: bold;
+}
+
+main.highlight li:hover * {
+    outline: none;
 }
 
 
