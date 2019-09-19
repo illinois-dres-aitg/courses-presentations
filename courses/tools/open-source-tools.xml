@@ -433,6 +433,7 @@
     </contents>
   </slide>
 
+<!--
   <slide>
     <title>FAE Auditor</title>
     <contents>
@@ -452,52 +453,7 @@
       </ul>
     </contents>
   </slide>
-
-  <slide>
-    <title>Next Steps</title>
-    <contents>
-      <h2>OpenAjax Evaluation Library</h2>
-      <ul>
-        <li>Update rules</li>
-        <li>Rulesets</li>
-      </ul>
-
-      <h2>Functional Accessibility Evaluator 2.x</h2>
-      <ul>
-        <li>Resolve manual tests
-          <ul>
-            <li>Not applicable</li>
-            <li>Passed</li>
-            <li>Failed</li>
-          </ul>
-        </li>
-        <li>Notes on accessibility of a result</li>
-        <li>Priorities of fixing accessibility issues</li>
-        <li>Accessibility trends</li>
-      </ul>
-
-      <h2>AInspector Sidebar 1.x</h2>
-      <ul>
-        <li>Port to Firefox Add-on SDK</li>
-        <li>Port of Chrome and other browsers</li>
-      </ul>
-
-      <h2>Accessibility Bookmarklets Next</h2>
-      <ul>
-        <li>Accessibility feedback (e.g. known accessibility problem)</li>
-        <li>Bookmarklets versus web extentsions</li>
-        <li>Lists of information in addition to visualization</li>
-        <li>Bookmarklets for links and aria widgets</li>
-      </ul>
-
-      <h2>FAE Auditor</h2>
-      <ul>
-        <li>Release version 1.0</li>
-        <li>Develop accessibility dashboard</li>
-      </ul>
-
-    </contents>
-  </slide>
+-->
 
   <slide>
     <title>Submit an Issue or Idea</title>
@@ -532,80 +488,6 @@
     </contents>
   </slide>
 
-  <slide>
-    <title>Tools User Group</title>
-    <contents>
-      <h2>Purpose</h2>
-      <ul>
-        <li>Meet the evaluation needs of the community of users</li>
-        <li>Develop a collective understanding web accessibility</li>
-        <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
-        <li>Typically meets the first Thursday of each month at 2:00pm Central Time</li>
-      </ul>
-
-      <h2 id="join">Join E-mail Lists</h2>
-       <ul>
-         <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></li>
-         <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Source Tools Announcements List</a></li>
-       </ul>
-
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>OpenAjax Accessibility Task Force</title>
-    <contents>
-      <h2>Purpose</h2>
-      <ul>
-        <li>Update and develop new rules:
-          <ul>
-            <li>Changes in accessibility HTML5 and ARIA techniques</li>
-            <li>Changes in browser and AT implementation</li>
-            <li>Support new technologies like Scalable Vector Graphics (SVG)</li>
-            <li>Improved messaging for summary, definition or purpose</li>
-          </ul>
-        </li>
-        <li>Define rulesets:
-          <ul>
-            <li>Custom rulesets</li>
-            <li>Required rules</li>
-            <li>Recommended rules</li>
-          </ul>
-        </li>
-        <li>Typically meets third Thursday of each month at 2:00pm Central Time</li>
-        <li>Contact <a href="mailto:jongund@illinois.edu">Jon Gunderson</a> to join the group</li>
-        <li><a href="http://www.openajax.org/member/wiki/Accessibility">More information on OpenAjax Accessibility Task Force</a></li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Training</title>
-    <contents>
-      <p><a href="http://online.ahs.illinois.edu/iadp/">Information Accessibility Design and Policy (IADP) Certificate</a></p>
-
-      <h2>Badging (Coming Soon)</h2>
-      <ul>
-        <li>4-8 hours of synchoronous online training per badge</li>
-        <li>Compentency based testing of skills</li>
-        <li>Supporting learning about WCAG 2.0 Level A and AA requirements</li>
-        <li>Proposed Badges organized by Rule Categories:
-          <ul>
-            <li>Navigation and Structure</li>
-            <li>Color, Content, Timing and Layout</li>
-            <li>Tabular Data Tables</li>
-            <li>Links, Forms and Accessible Error Feeback</li>
-            <li>ARIA Widgets and Common Web Widgets</li>
-            <li>Graphics</li>
-            <li>Media (e.g. audio and video, media players)</li>
-            <li>Web Accessibility Evaluation: Basic</li>
-            <li>Web Accessibility Evaluation: Advanced</li>
-          </ul>
-        </li>
-      </ul>
-    </contents>
-  </slide>
 
   <slide>
     <title>Acknowledgements</title>
@@ -637,15 +519,16 @@
         <dt>Pramod Joshi, AITS</dt>
         <dd>Software developer for fae-util</dd>
 
+      </dl>
+
+      <h2>Previous Contributors</h2>
+      <dl>
         <dt>Jeff Heckel, AITS</dt>
         <dd>Software developer for fae-util</dd>
 
         <dt>Landi Lark, Pixo</dt>
         <dd>Software development and design of Bookmarklets</dd>
-      </dl>
 
-      <h2>Previous Contributors</h2>
-      <dl>
         <dt>Prasanna Bale, Illinois Technology Services</dt>
         <dd>Software development of FAE 1.1 and AInspector for Firebug</dd>
 
