@@ -84,20 +84,56 @@
   <slide>
     <title>HTML 5</title>
     <contents>
-      <p class="center">
-        <a href="http://www.w3.org/TR/html5" target="_specification">HTML 5 Specification</a>
+      <p>
+        <a href="https://html.spec.whatwg.org/" target="_specification">HTML 5 Living Standard</a>
       </p>
-      <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Built in features to support accessibility</li>
+        <li>Default ARIA roles</li>
+        <li>ARIA Role restrictions</li>
+        <li><a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a></li>
+      </ul>
+
+      <iframe src="https://html.spec.whatwg.org/" width="99%" height="600px" title="W3C HTML 5 Living Standard"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>HTML 5: main element</title>
+    <contents>
+      <p>
+        <a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+
+      <h2>Accessibility Feature</h2>
+      <ul>
+        <li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
+        <li>Identifies the main content of the page</li>
+        <li>Creates a <code>main</code> landmark on the page for screen readers</li>
+        <li>Can be use for the target of a skip to main link</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>HTML5: main element</title>
+    <title>ARIA in HTML</title>
     <contents>
-      <p class="center">
-        <a href="http://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+      <p>
+        <a href="https://www.w3.org/TR/html-aria/" target="_specification">ARIA in HTML5</a>
       </p>
-      <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
+
+      <ul>
+        <li>Default ARIA roles</li>
+        <li>ARIA role restrictions</li>
+        <li><a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings Specification</a></li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/html-aria/#h1-h6" width="99%" height="600px" title="ARIA in HTML5: H1 to H6 mappings and restrictions"></iframe>
     </contents>
   </slide>
 
