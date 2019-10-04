@@ -199,6 +199,15 @@ main.highlight table.table tbody tr td:hover {
     outline: solid 4px blue;
 }
 
+main.highlight table.table img:hover,
+main.highlight table.table li:hover,
+main.highlight table.table p:hover,
+main.highlight table.table dt:hover,
+main.highlight table.table dd:hover {
+    outline: none;
+}
+
+
 main.highlight li:hover * {
     outline: none;
 }

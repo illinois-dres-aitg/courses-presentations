@@ -3,7 +3,7 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
-  <title>Web Accessibility Standards and Professional Practice</title>
+  <title>Professional Practices</title>
   <person>
     <name>Jon Gunderson</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
@@ -26,7 +26,6 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li>W3C Standards for web accessibility</li>
         <li>W3C Web Accessibility Initiative (WAI)</li>
         <li>IT Accessibility Organizations</li>
       </ul>
@@ -50,119 +49,6 @@
       </ul>
 
       <iframe src="https://www.w3.org/WAI" width="99%" height="600px" title="W3C Web Accessibility Initiative Home page"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Web Content Accessibility Guidelines 2.1</title>
-    <contents>
-
-      <p>
-        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.1</a>
-      </p>
-
-      <details>
-        <summary>Important Features</summary>
-        <ul>
-          <li>Technology agnostic</li>
-          <li>Understanding requires knowledge of features of specific technologies</li>
-          <li>Techniques are <strong>not</strong> normative or comprehensive</li>
-          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG 2.1</a></li>
-          <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG 2.1</a></li>
-          <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG 2.1</a></li>
-        </ul>
-      </details>
-
-      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG 2.1 Guidelines"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Accessible Rich Internet Applications (ARIA) Specification</title>
-    <contents>
-
-      <p>
-        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
-      </p>
-
-      <details>
-        <summary>Important Features</summary>
-        <ul>
-          <li><code>role</code> semantics</li>
-          <li>Accessible name</li>
-          <li>Accessible description</li>
-          <li>States and properties</li>
-          <li><a href="https://www.w3.org/TR/accname" target="_specification">W3C Accessible Name and Description Computation Specification</a></li>
-          <li><a href="https://www.w3.org/TR/core-aam/" target="_specification">W3C Core Accessibility API Mappings</a></li>
-        </ul>
-      </details>
-
-      <iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA Specfication"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>ARIA Authoring Practices</title>
-    <contents>
-
-      <p>
-        <a href="https://www.w3.org/TR/wai-aria-practices" target="_specification">W3C ARIA Authoring Practices</a>
-      </p>
-
-      <details>
-        <summary>Important Features</summary>
-        <ul>
-          <li>Design patterns for using landmarks and creating accessible widgets</li>
-          <li>Full working and reviewed examples</li>
-          <li>Review of accessible name and description alogithms</li>
-        </ul>
-      </details>
-
-      <iframe src="https://www.w3.org/tr/wai-aria-practices" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>HTML 5</title>
-    <contents>
-      <p>
-        <a href="https://www.w3.org/TR/html5/#the-html-element" target="_specification">HTML 5 Specification</a>
-      </p>
-
-      <details>
-        <summary>Important Features</summary>
-        <ul>
-          <li>Default <code>role</code> semantics</li>
-          <li><code>role</code> semantics restrictions</li>
-          <li>Built in features to support accessibility</li>
-          <li><a href="https://www.w3.org/TR/html-aria/" target="_specification">W3C ARIA in HTML</a></li>
-          <li><a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a></li>
-        </ul>
-      </details>
-
-
-      <iframe src="https://www.w3.org/TR/html5/#the-html-element" width="99%" height="600px" title="W3C HTML 5 Specification"></iframe>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>HTML 5: main element</title>
-    <contents>
-      <p>
-        <a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
-      </p>
-
-      <details>
-        <summary>Accessibility Feature</summary>
-        <ul>
-          <li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
-          <li>Identifies the main content of the page</li>
-          <li>Creates a <code>main</code> landmark on the page for screen readers</li>
-          <li>Can be use for the target of a skip to main link</li>
-        </ul>
-      </details>
-
-      <iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
     </contents>
   </slide>
 
@@ -233,6 +119,32 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>Other Organizations</title>
+    <contents>
+      <h2>Training Resources</h2>
+      <ul>
+        <li><a href="https://www.washington.edu/doit/" target="_other_org">Disabilities, Opportunities, Internetworking, and Technology (DOIT) at  University of Washington</a></li>
+        <li><a href="http://webaim.org" target="_other_org">WebAIM: Web Accessibility in Mind</a></li>
+        <li><a href="https://knowbility.org" target="_other_org">Knowibility</a></li>
+        <li><a href="https://2019ict.org/" target="_other_org">ICT Accessibility Testing Symposium</a></li>
+      </ul>
+
+      <h2>Research Centers</h2>
+      <ul>
+        <li><a href="https://trace.umd.edu/" target="_other_org">Trace Center at University of Maryland</a></li>
+        <li><a href="https://idrc.ocadu.ca/" target="_other_org">Inclusive Design Research Centre at OCAD University</a></li>
+      </ul>
+
+      <h2>Disability Advocacy Organizations</h2>
+      <ul>
+        <li><a href="https://afb.org">American Foundation for the Blind</a></li>
+        <li><a href="https://nfb.org">National Federation of the Blind</a></li>
+        <li><a href="https://nad.org">National Association of the Deaf</a></li>
+      </ul>
+
+    </contents>
+  </slide>
 
   <slide>
     <title>Summary</title>
