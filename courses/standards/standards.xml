@@ -708,7 +708,6 @@
         <li>How to think about defining landmark regions in a page design.</li>
         <li>How HTML sectioning elements create landmark regions.</li>
         <li>Labeling landmark regions.</li>
-        <li></li>
       </ul>
 
       <iframe src="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" width="99%" height="600px" title="ARIA Practices: Landmark Design Pattern"></iframe>
