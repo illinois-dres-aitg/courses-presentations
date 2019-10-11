@@ -32,10 +32,9 @@
     <title>Overview</title>
     <contents>
       <ul>
-        <li><a href="http://davidmacd.com/wcag_theme_song.html">Web Content Accessibility Guidelines (WCAG) 2.0 Theme Song</a></li>
-        <li>Why open source?</li>
+        <li><a href="http://davidmacd.com/wcag_theme_song.html">Web Content Accessibility Guidelines WCAG 2.0 Theme Song</a></li>
         <li>Standards for web accessibility</li>
-        <li>Open Source Tools</li>
+        <li>Open Source Web Accessibility Tools</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
