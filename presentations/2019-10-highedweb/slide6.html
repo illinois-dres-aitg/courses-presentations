@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 6: HTML5: main element</title>
+<title>Slide 6: Disability Rights and Types of Disabilities</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+      table.table thead th {
+        text-align: right;
+      }
+      table.table thead tr th:first-child {
+        text-align: left;
+      }
+      table.table tbody td {
+        text-align: right;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -40,12 +50,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide22.html">
+<a id="ID_SLIDE_LAST" href="slide43.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 22</div>
+<div class="navbar-text pull-right">Slide 6 of 43</div>
 </div>
 </div>
 </nav>
@@ -53,13 +63,151 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">HTML5: main element</h1>
-<p class="center">
+<h1 id="h1_title" class="title">Disability Rights and Types of Disabilities</h1>
+<h2>Disability Access Rights</h2>
+<ul>
         
-<a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_specification">HTML 5: main element</a>
+<li>
+<a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a>
+</li>
+        
+<li>Access to information is a <em>human right</em>, not just a nice thing to do.</li>
+        
+<li>Accessible at the same time as everyone else gets the information.</li>
       
-</p>
-<iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" width="98%" height="600px" title="main element section of W3C HTML 5 Specification"></iframe>
+</ul>
+<h2>Distribution of Types of Disabilities by Age Range</h2>
+<p>Data from the following chart and table is from the <a href="https://disabilitycompendium.org/sites/default/files/user-uploads/2017_AnnualReport_2017_FINAL.pdf">2017 Disability Statistics Annual Report</a> from the University of New Hampshire</p>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script src="../../common/highcharts/code/highcharts.js"></script><script src="../../common/highcharts/code/modules/exporting.js"></script><script type="text/javascript">
+
+        $('#container').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+          text: 'Percentage of Types of Disability by Age: 2005'
+          },
+          subtitle: {
+            text: 'Source: 2017 Disability Statistics Annual Report'
+          },
+          xAxis: {
+            categories: [
+            'Under 5',
+            '5 to 17',
+            '18 to 64',
+            'Over 65'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            max : 25,
+            tickAmount: 6,
+            title: {
+              text: 'Percent Population'
+            }
+          },
+          tooltip: {
+            headerFormat: "<span style='font-size:10px'>{point.key}</span><table>",
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td><td style="padding:0"><b>{point.y:.1f} percent</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+           useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: 'Vision',
+            data: [0.4, 0.9, 2.0, 6.6]
+
+            }, {
+            name: 'Hearing',
+            data: [0.5, 0.6, 2.0, 14.6]
+
+            }, {
+            name: 'Mobility',
+            data: [0.0, 0.6, 5.1, 22.5]
+            }, {
+            name: 'Cognitive',
+            data:   [0.0, 4.2, 4.5, 8.9]
+            }]
+        });
+      </script>
+<details>
+        
+<summary>Table View of the Data in Chart</summary>
+
+        
+<table class="table table-striped" aria-labelledby="h1_title">
+          
+<caption>Percentage of Types of Disability by Age: 2005</caption>
+          
+<thead>
+            
+<tr>
+              
+<th class="text">Disability</th>
+              <th class="num">Under 5 years</th>
+              <th class="num">Ages 5 to 17 years</th>
+              <th class="num">Ages 18 to 64 years</th>
+              <th class="num">Ages over 65</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<th scope="row">Vision</th>
+              <td class="num">0.4%</td>
+              <td class="num">0.9%</td>
+              <td class="num">2.0%</td>
+              <td class="num">6.6%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">Hearing</th>
+              <td class="num">0.5%</td>
+              <td class="num">0.6%</td>
+              <td class="num">2.0%</td>
+              <td class="num">14.6%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">Mobility</th>
+              <td class="num">-</td>
+              <td class="num">0.6%</td>
+              <td class="num">5.1%</td>
+              <td class="num">22.5%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">Cognitive</th>
+              <td class="num">-</td>
+              <td class="num">4.2%</td>
+              <td class="num">4.5%</td>
+              <td class="num">8.9%</td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+      
+</details>
 </div>
 <div class="col"></div>
 </div>

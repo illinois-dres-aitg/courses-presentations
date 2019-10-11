@@ -44,6 +44,810 @@
   </slide>
 
   <slide>
+    <title>Why was the World Wide Web Invented?</title>
+    <contents>
+      <ul>
+        <li>Tim Berners-Lee was a scientist at CERN particle accelerator lab in 1989.</li>
+        <li>Scientists were having problems sharing and collaborating on documents and research results, for example some of the word processing tools available in the late 1980's:
+          <ul>
+            <li>WordStar</li>
+            <li>WordPerfect</li>
+            <li>Microsoft Word</li>
+            <li>Apple Write</li>
+            <li>LaTex</li>
+          </ul>
+        </li>
+        <li>Tim had an idea to not only share information between people, but with everyone.</li>
+        <li>Documents could reference each other through hyertext linking.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Purpose of the World Wide Web</title>
+    <contents>
+      <ul>
+        <li>Sharing information.</li>
+        <li>Common platform for viewing, creating, editing and linking online information.</li>
+        <li>Open standards for everyone to use and benefit from.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Web Usage Statistics</title>
+    <contents>
+      <h2 id="table-label">World Internet Usage and Population Statistics for June 2019</h2>
+      <p>This data is from <a href="https://www.internetworldstats.com/">Internet World Stats</a>.</p>
+      <table class="table table-striped" aria-labelledby="table-label">
+        <thead>
+          <tr>
+            <th class="text">World Regions</th>
+            <th class="num">Internet Users</th>
+            <th class="num">Penetration<br/>Rate (% Pop.)</th>
+            <th class="num">Growth<br/>2000-2019</th>
+            <th class="num">Internet<br/>World %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats1.htm" target="_blank">Africa</a>
+            </th>
+            <td class="num">525,148,631</td>
+            <td class="num">39.8%</td>
+            <td class="num">11,533%</td>
+            <td class="num">11.9%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats3.htm" target="_blank">Asia</a>
+            </th>
+            <td class="num">2,200,658,148</td>
+            <td class="num">51.9%</td>
+            <td class="num">1,825%</td>
+            <td class="num">49.8%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats4.htm" target="_blank">
+            Europe</a>
+          </th>
+            <td class="num">719,413,014</td>
+            <td class="num">86.8%</td>
+            <td class="num">585%</td>
+            <td class="num">16.3%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats2.htm" target="_blank">Latin
+            America / Caribbean</a>
+            </th>
+            <td class="num">447,495,130</td>
+            <td class="num">68.0%</td>
+            <td class="num">2,377%</td>
+            <td class="num">10.1%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats5.htm" target="_blank">Middle
+            East</a>
+            </th>
+            <td class="num">173,576,793</td>
+            <td class="num">67.2%</td>
+            <td class="num">5,184%</td>
+            <td class="num">3.9%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row">
+              <a href="https://www.internetworldstats.com/stats14.htm" target="_blank">North
+            America</a>
+            </th>
+            <td class="num">327,568,628</td>
+            <td class="num">89.4%</td>
+            <td class="num">203%</td>
+            <td class="num">7.4%</td>
+          </tr>
+          <tr>
+            <th class="text" scope="row"><a href="https://www.internetworldstats.com/stats6.htm" target="_blank">Oceania /
+            Australia</a></th>
+            <td class="num">28,634,278</td>
+            <td class="num">68.4%</td>
+            <td class="num">276%</td>
+            <td class="num">0.6%</td>
+          </tr>
+          <tr>
+            <th class="text total" scope="row"><a href="https://www.internetworldstats.com/list1.htm" target="_blank">World
+            Total</a></th>
+            <td class="num total">4,422,494,622</td>
+            <td class="num total">57.3%</td>
+            <td class="num total">1,125%</td>
+            <td class="num total">100.0%</td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Distribution of Disability by Age</title>
+    <contents>
+      <p><a href="https://www.census.gov/prod/2008pubs/p70-117.pdf">Americans With Disabilities: 2005</a></p>
+
+      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+      <script src="../../common/highcharts/code/highcharts.js"></script>
+      <script src="../../common/highcharts/code/modules/exporting.js"></script>
+
+      <script type="text/javascript">
+
+        $('#container').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+          text: 'Disability Prevalence and the Need for Assistance by Age: 2005'
+          },
+          subtitle: {
+            text: 'Source: Americans With Disabilities 2005'
+          },
+          xAxis: {
+            categories: [
+            'Under 15',
+            '15-24',
+            '25 to 44',
+            '45 to 54',
+            '55 to 64',
+            '65 to 69',
+            '70 to 74',
+            '75 to 79',
+            '80 and over'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            max : 100,
+            tickAmount: 6,
+            title: {
+              text: 'Percent Population'
+            }
+          },
+          tooltip: {
+            headerFormat: "&lt;span style='font-size:10px'>{point.key}&lt;/span>&lt;table>",
+            pointFormat: '&lt;tr>&lt;td style="color:{series.color};padding:0">{series.name}: &lt;/td>&lt;td style="padding:0">&lt;b>{point.y:.1f} percent&lt;/b>&lt;/td>&lt;/tr>',
+            footerFormat: '&lt;/table>',
+            shared: true,
+           useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: 'Any disability',
+            data: [8.8, 10.4, 11.4, 19.4, 30.1, 37.4, 43.8, 55.9, 71.0]
+
+            }, {
+            name: 'Severe disability',
+            data: [3.6, 5.0, 7.5, 12.8, 20.8, 26.1, 27.6, 37.8, 56.2]
+
+            }, {
+            name: 'Needs assistance',
+            data: [0.4, 1.3, 1.9, 3.4, 5.7, 7.6, 9.4, 16.1, 29.2]
+          }]
+        });
+      </script>
+
+      <details>
+        <summary>Table View of the Data in Chart</summary>
+        <table class="table table-striped">
+          <caption>Disability Prevalence and the Need for Assistance by Age: 2005</caption>
+          <thead>
+            <tr>
+              <th class="text">Age Range</th>
+              <th class="num">Any Disability</th>
+              <th class="num">Severe Disability</th>
+              <th class="num">Needs Assistance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Under 15</th>
+              <td class="num">8.8%</td>
+              <td class="num">3.6%</td>
+              <td class="num">0.4%</td>
+            </tr>
+            <tr>
+              <th scope="row">15 to 24</th>
+              <td class="num">10.4%</td>
+              <td class="num">5.0%</td>
+              <td class="num">1.3%</td>
+            </tr>
+            <tr>
+              <th scope="row">25 to 44</th>
+              <td class="num">11.4%</td>
+              <td class="num">7.5%</td>
+              <td class="num">1.9%</td>
+            </tr>
+            <tr>
+              <th scope="row">45 to 54</th>
+              <td class="num">19.4%</td>
+              <td class="num">12.8%</td>
+              <td class="num">3.4%</td>
+            </tr>
+            <tr>
+              <th scope="row">55 to 64</th>
+              <td class="num">30.1%</td>
+              <td class="num">20.8%</td>
+              <td class="num">5.7%</td>
+            </tr>
+            <tr>
+              <th scope="row">65 to 69</th>
+              <td class="num">37.4%</td>
+              <td class="num">26.1%</td>
+              <td class="num">7.6%</td>
+            </tr>
+            <tr>
+              <th scope="row">70 to 74</th>
+              <td class="num">43.8%</td>
+              <td class="num">27.6%</td>
+              <td class="num">9.4%</td>
+            </tr>
+            <tr>
+              <th scope="row">75 to 79</th>
+              <td class="num">55.9%</td>
+              <td class="num">37.8%</td>
+              <td class="num">16.1%</td>
+            </tr>
+            <tr>
+              <th scope="row">80 and over</th>
+              <td class="num">71.0%</td>
+              <td class="num">56.2%</td>
+              <td class="num">29.2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+
+
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Disability Rights and Types of Disabilities</title>
+    <style>
+      table.table thead th {
+        text-align: right;
+      }
+      table.table thead tr th:first-child {
+        text-align: left;
+      }
+      table.table tbody td {
+        text-align: right;
+      }
+    </style>
+    <contents>
+
+      <h2>Disability Access Rights</h2>
+
+      <ul>
+        <li><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></li>
+        <li>Access to information is a <em>human right</em>, not just a nice thing to do.</li>
+        <li>Accessible at the same time as everyone else gets the information.</li>
+      </ul>
+
+      <h2>Distribution of Types of Disabilities by Age Range</h2>
+      <p>Data from the following chart and table is from the <a href="https://disabilitycompendium.org/sites/default/files/user-uploads/2017_AnnualReport_2017_FINAL.pdf">2017 Disability Statistics Annual Report</a> from the University of New Hampshire</p>
+
+      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+      <script src="../../common/highcharts/code/highcharts.js"></script>
+      <script src="../../common/highcharts/code/modules/exporting.js"></script>
+
+      <script type="text/javascript">
+
+        $('#container').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+          text: 'Percentage of Types of Disability by Age: 2005'
+          },
+          subtitle: {
+            text: 'Source: 2017 Disability Statistics Annual Report'
+          },
+          xAxis: {
+            categories: [
+            'Under 5',
+            '5 to 17',
+            '18 to 64',
+            'Over 65'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            max : 25,
+            tickAmount: 6,
+            title: {
+              text: 'Percent Population'
+            }
+          },
+          tooltip: {
+            headerFormat: "&lt;span style='font-size:10px'>{point.key}&lt;/span>&lt;table>",
+            pointFormat: '&lt;tr>&lt;td style="color:{series.color};padding:0">{series.name}: &lt;/td>&lt;td style="padding:0">&lt;b>{point.y:.1f} percent&lt;/b>&lt;/td>&lt;/tr>',
+            footerFormat: '&lt;/table>',
+            shared: true,
+           useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: 'Vision',
+            data: [0.4, 0.9, 2.0, 6.6]
+
+            }, {
+            name: 'Hearing',
+            data: [0.5, 0.6, 2.0, 14.6]
+
+            }, {
+            name: 'Mobility',
+            data: [0.0, 0.6, 5.1, 22.5]
+            }, {
+            name: 'Cognitive',
+            data:   [0.0, 4.2, 4.5, 8.9]
+            }]
+        });
+      </script>
+
+      <details>
+        <summary>Table View of the Data in Chart</summary>
+
+        <table class="table table-striped" aria-labelledby="h1_title">
+          <caption>Percentage of Types of Disability by Age: 2005</caption>
+          <thead>
+            <tr>
+              <th class="text">Disability</th>
+              <th class="num">Under 5 years</th>
+              <th class="num">Ages 5 to 17 years</th>
+              <th class="num">Ages 18 to 64 years</th>
+              <th class="num">Ages over 65</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Vision</th>
+              <td class="num">0.4%</td>
+              <td class="num">0.9%</td>
+              <td class="num">2.0%</td>
+              <td class="num">6.6%</td>
+            </tr>
+            <tr>
+              <th scope="row">Hearing</th>
+              <td class="num">0.5%</td>
+              <td class="num">0.6%</td>
+              <td class="num">2.0%</td>
+              <td class="num">14.6%</td>
+            </tr>
+            <tr>
+              <th scope="row">Mobility</th>
+              <td class="num">-</td>
+              <td class="num">0.6%</td>
+              <td class="num">5.1%</td>
+              <td class="num">22.5%</td>
+            </tr>
+            <tr>
+              <th scope="row">Cognitive</th>
+              <td class="num">-</td>
+              <td class="num">4.2%</td>
+              <td class="num">4.5%</td>
+              <td class="num">8.9%</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>World Wide Web Consortium</title>
+    <contents>
+      <ul>
+        <li><a href="http://www.w3.org/" target="_specification">World Wide Web Consortium (W3C)</a></li>
+        <li>Over 400 member organizations representing industry, governments and academic interests.</li>
+        <li>Develop open and royality free standards:
+          <ul>
+            <li><a href="https://www.w3.org/TR/html52/">Hypertext Markup Language (HTML) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/css">Cascading Style Sheets (CSS) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/PNG/">Portable Network Graphics (PNG) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/SVG/">Scallable Vector Graphics (SVG) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/MATHML/">Mathematical Markup Language (MathML) Specifications</a></li>
+          </ul>
+        </li>
+        <li>Interopability through at least 2 indepdent implementations</li>
+        <li>Automated testing of technologies using the speficications.</li>
+      </ul>
+
+      <iframe src="https://www.w3.org" width="99%" height="600px" title="World Wide Web Home page"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Interoperability and Open Standards</title>
+    <contents>
+      <ul>
+        <li>Write once and use on a wide variety of devices.</li>
+        <li>In the early days of the web the browser wars between Internet Explorer and Netscape Navigator highlighted the need for standards based web design.</li>
+        <li>No proprietary technologies or royalties for use.</li>
+      </ul>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Interoperability for Accessibility</title>
+    <contents>
+      <h2>Old Model for Accessibility</h2>
+
+      <p>If it worked with some version of the JAWS screen reader and a particular version of Microsoft Internet Explorer, a website was consideed accessible.</p>
+
+      <h2>New Model for Accessibility</h2>
+
+      <ul>
+        <li>W3C Accessible Rich Internet Application Specficiation</li>
+        <li>HTML5</li>
+        <li>W3C Accessible API Mapping Specification</li>
+      </ul>
+
+      <h3>Screen Readers</h3>
+      <ul>
+        <li>MacOS and VocieOver: Safari, Chrome, Firefox</li>
+        <li>iOS and VocieOver: Safari</li>
+        <li>Android and TalkBack: chrome</li>
+        <li>Windows 10 and NVDA: Chrome and Firefox</li>
+        <li>Windows 10 and JAWS: Chrome and Firefox</li>
+        <li>Windows 10 and Narrator: Chrome and Firefox</li>
+      </ul>
+
+      <h3>Magnifiers and High Contrast</h3>
+      <ul>
+        <li>MacOS and Zoom: Safari, Chrome, Firefox</li>
+        <li>iOS and Zoom: Safari</li>
+        <li>Android and Magnifer: chrome</li>
+        <li>Windows 10 and Magnifier: Chrome and Firefox</li>
+        <li>Windows 10 and Zoomtext: Chrome and Firefox</li>
+      </ul>
+
+      <h3>Other Common Assistive Technologies</h3>
+      <ul>
+        <li>Voice Recognition: Dragon Naturally Speaking, MacOS Speech Recognition</li>
+        <li>Learning Disabilities: Kurzweil 3000, Read and Write Gold</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>W3C Web Accessibility Initiative (WAI)</title>
+    <contents>
+      <p><a href="http://www.w3.org/WAI" target="_specification">W3C Web Accessibility Initiative (WAI)</a></p>
+
+      <h2>Importance</h2>
+      <ul>
+        <li>Develop web standards that support accessibility by people with disabilities.</li>
+        <li>Promote the accessibility of web based content, authoring tools and web browsers.</li>
+        <li>Raise awareness of how people with various disabilities access and interact with web content.</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/WAI" width="99%" height="600px" title="W3C Web Accessibility Initiative Home page"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Web Content Accessibility Guidelines 2.1</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.1</a>
+      </p>
+
+      <h2>Important Features</h2>h2>
+      <ul>
+        <li>International accessibility standard, including the United States Federal Section 508 requirements for web accessibility.</li>
+        <li>Technology agnostic, so understanding requires knowledge of features of specific technologies.</li>
+        <li>Requirements identify the goals for accessibility, not the techniques.</li>
+        <li>Techniques referenced by WCAG are <strong>not</strong> normative or comprehensive, but are deisgned to help people understand the requirement and feasibility of meeting the requirement.</li>
+        <li>Supporting references:
+          <ul>
+            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG 2.1</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG 2.1</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG 2.1</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG 2.1 Guidelines"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Organization of WCAG 2.1</title>
+    <style>
+      .pour li:first-letter {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      table.wcag thead th:first-child {
+        min-width: 12em;
+      }
+      table.wcag tbody tr:nth-child(1) td ul,
+      table.wcag tbody tr:nth-child(2) td ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+    <contents>
+
+      <table class="table table-striped wcag">
+        <thead>
+          <tr>
+            <th>WCAG Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4 Principles (POUR)</td>
+            <td>
+              <ul class="pour">
+                <li>Perceivable</li>
+                <li>Operable</li>
+                <li>Understandable</li>
+                <li>Robust</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>13 Guidelines</td>
+            <td>
+              <ul>
+                <li>1.1 Text Alternatives</li>
+                <li>1.2 Time-based Media</li>
+                <li>1.3 Adaptable</li>
+                <li>1.4 Distinguishable</li>
+                <li>2.1 Keyboard Accessible</li>
+                <li>2.2 Enough Time</li>
+                <li>2.3 Seizures</li>
+                <li>2.4 Navigable</li>
+                <li>2.5 Input Modalities (New in WCAG 2.1)</li>
+                <li>3.1 Readable</li>
+                <li>3.2 Predictable</li>
+                <li>3.3 Input Assistance</li>
+                <li>4.1 Compatible</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>78 Success Criteria</td>
+            <td>
+              <ul>
+                <li>Real requirements of WCAG.</li>
+                <li>Three levels of importance:
+                  <ul>
+                    <li>A: Highest priority (29)</li>
+                    <li>AA: Next highest (21)</li>
+                    <li>AAA: Lowest priority (28)</li>
+                  </ul>
+                </li>
+                <li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
+                <li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Rich Internet Applications (ARIA) Specification</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li><code>role</code> semantics</li>
+        <li>States and properties</li>
+        <li><a href="https://www.w3.org/TR/core-aam/" target="_specification">W3C Core Accessibility API Mappings</a></li>
+        <li><a href="https://www.w3.org/TR/accname" target="_specification">W3C Accessible Name and Description Computation Specification</a></li>
+      </ul>
+
+      <iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Authoring Practices</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices" target="_specification">W3C ARIA Authoring Practices</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Design patterns for using landmarks and creating accessible widgets</li>
+        <li>Full working and reviewed examples</li>
+        <li>Review of accessible name and description alogithms</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/tr/wai-aria-practices" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Practcies: Landmark Region Design Pattern</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" target="_specification">Landmark Region Design Pattern</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>How to think about defining landmark regions in a page design.</li>
+        <li>How HTML sectioning elements create landmark regions.</li>
+        <li>Labeling landmark regions.</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" width="99%" height="600px" title="ARIA Practices: Landmark Design Pattern"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Practcies: Landmark Example</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html" target="_specification">Landmark Region Example</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Provides example on how to use landmarks on pages in a website.</li>
+        <li>Hide/show feature to visualize landmarks in example pages.</li>
+        <li>Provides same information as the ARIA practices.</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html" target="_specification" width="99%" height="600px" title="ARIA Practices: Landmark Region Example"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Practcies: Menu Button Design Pattern</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Description</li>
+        <li>Keyboard Support</li>
+        <li>Properties and States</li>
+        <li>Example implementations</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/wai-aria-practices/#menubutton" width="99%" height="600px" title="ARIA Practices: Menu Button Design Patter"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA Practcies: Menu Button Example</title>
+    <contents>
+
+      <p>
+        <a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" target="_specification">Menu Button Example</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Keyboard interaction</li>
+        <li>Use of roles, properties and states</li>
+        <li>Focus styling techniques</li>
+        <li>Source code (<a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">copy and/or reuse of code</a>)</li>
+        <li>Reviewed for compliance with WCAG 2.x requirements</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" width="99%" height="600px" title="ARIA Practices: Menu Button Example"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>HTML 5</title>
+    <contents>
+      <p>
+        <a href="https://html.spec.whatwg.org/" target="_specification">HTML 5 Living Standard</a>
+      </p>
+
+      <h2>Important Features</h2>
+      <ul>
+        <li>Built in features to support accessibility</li>
+        <li>Default ARIA roles</li>
+        <li>ARIA Role restrictions</li>
+        <li><a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a></li>
+      </ul>
+
+      <iframe src="https://html.spec.whatwg.org/" width="99%" height="600px" title="W3C HTML 5 Living Standard"></iframe>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>HTML 5: main element</title>
+    <contents>
+      <p>
+        <a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
+      </p>
+
+      <h2>Accessibility Feature</h2>
+      <ul>
+        <li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
+        <li>Identifies the main content of the page</li>
+        <li>Creates a <code>main</code> landmark on the page for screen readers</li>
+        <li>Can be use for the target of a skip to main link</li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>ARIA in HTML</title>
+    <contents>
+      <p>
+        <a href="https://www.w3.org/TR/html-aria/" target="_specification">ARIA in HTML5</a>
+      </p>
+
+      <ul>
+        <li>Default ARIA roles</li>
+        <li>ARIA role restrictions</li>
+        <li><a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings Specification</a></li>
+      </ul>
+
+      <iframe src="https://www.w3.org/TR/html-aria/#h1-h6" width="99%" height="600px" title="ARIA in HTML5: H1 to H6 mappings and restrictions"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Summary</title>
+    <contents>
+      <ul>
+        <li>The heart of the web is interoperability and open standards</li>
+        <li>Accessibility must be integrated into web development and authoring.</li>
+        <li>More people must understand accessibility.</li>
+        <li>Web technologies need to support accessible design.</li>
+        <li>Authoring environments support accessibility by default, instead of by exception.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>Why Open Source?</title>
     <contents>
       <ul>
