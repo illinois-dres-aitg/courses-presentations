@@ -3,13 +3,37 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
-  <title>The Experience of Disability</title>
+  <title>Creating a Digitally Accessible Campus: The Illinois Experience</title>
   <person>
-    <name>Jon Gunderson</name>
+    <name>Lawrence Angrave, Ph.D.</name>
+    <desc href="https://cs.illinois.edu/directory/profile/angrave">Computer Science</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:angrave@illinois.edu">E-mail Lawrence Angrave</desc>
+  </person>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
     <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
   </person>
+  <person>
+    <name>Tim Offenstein, M.S.</name>
+    <desc href="https://techservices.illinois.edu/">Technology Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:timo@illinois.edu">E-mail Tim Offenstein</desc>
+  </person>
+  <person>
+    <name>Marc Thompson, Ph.D.</name>
+    <desc href="https://citl.illinois.edu/">Center for Inovation and Learning</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:thompso1@illinois.edu">E-mail Marc Thompson</desc>
+  </person>
+
+ <conference>
+    <name href="https://events.educause.edu/annual-conference">Educause Conference</name>
+    <desc>Chicago, Illinois</desc>
+    <desc>October 14th, 2019</desc>
+  </conference>
 
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
