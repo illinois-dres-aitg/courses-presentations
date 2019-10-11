@@ -26,13 +26,49 @@
     <title>Disability Experience Overview</title>
     <contents>
       <ul>
-        <li>Thinking about accessibility</li>
-        <li>Making disability personal</li>
-        <li>The experience of disability</li>
+        <li>History of disability at Illinois</li>
+        <li>Disability simulation</li>
+        <li>Built-in accessibility features of Windows and macOS</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
       </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Disability at Illinois</title>
+    <contents>
+      <img src="images/history1.jpg" alt="4 students in wheelchairs posing for a picture on a building entrence ramp"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>"Rehab" Program becomes Official Part of Illinois</title>
+    <contents>
+      <ul>
+        <li>GI Bill for World War 2 veterans.</li>
+        <li>Galesburg VA in 1948 had UI extension courses for soliders.</li>
+        <li>Soldiers in disabled (e.g. used wheelchairs) in World War 2 wanted to go to Illinois.</li>
+        <li>Initially rejected for adminision to Illinois based soley on disability.</li>
+        <li>Soldiers lobbied the state government and university administration to be admitted.</li>
+        <li>Had the highest grade pint average of all the houses on campus during first year on campus.</li>
+        <li>After 6 years the "Rehab" program offically changed from experimental (e.g. unfundex) to become an offical part (funded) program of the University of Illinois.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Illinois at History of Firsts</title>
+    <contents>
+      <ul>
+        <li>First post-secondary institution to provide a support service program enabling students with disabilities to attend.</li>
+        <li>Founded Delta Sigma Omicron (DSO, DIsabled Student Organization) to advocate for students with disabilities.</li>
+        <li>Organized the first organized national wheelchair sporting competitions.</li>
+        <li>First Paraolympian who won a gold medal was a UI graduate.</li>
+        <li>Research at Illinois was the basis for first architecutral accessibility ANSI standards which are still used today as part of the Americans with Disabilities Act (ADA).</li>
+        <li>Beckwith program was first residential dorms for students need personal attendant services.</li>
+      </ul>
     </contents>
   </slide>
 
