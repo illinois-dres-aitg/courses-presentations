@@ -4,16 +4,16 @@
 <slides>
   <lang>en</lang>
   <title>The Experience of Disability, Web Accessibility Standards, and Open-Source Evaluation Tools</title>
-  <name>Christian Vinten-Johansen and Jon Gunderson</name> 
+  <name>Christian Vinten-Johansen and Jon Gunderson</name>
 
   <desc href="http://psu.edu">Penn State University</desc>
   <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
-  <desc href="mailto:v23@psu.edu">v23@psu.edu</desc> 
-  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
-  <desc href="../">Presentations</desc> 
+  <desc href="mailto:v23@psu.edu">v23@psu.edu</desc>
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  <desc href="../">Presentations</desc>
   <desc>October 25th, 2016</desc>
   <desc>Educause Conference, Anaheim, CA</desc>
-  
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -22,7 +22,7 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Overview</title>
     <contents>
@@ -59,7 +59,7 @@
             <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a></li>
             <li><a href="http://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets</a></li>
           </ul>
-        </li>  
+        </li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -80,7 +80,7 @@
       </script>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: When do you plan on retiring?</title>
     <contents>
@@ -94,7 +94,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: How are you planning financially for your retirement?</title>
     <contents>
@@ -108,7 +108,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: What age are you planning on being severely disabled?</title>
     <contents>
@@ -122,7 +122,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: What disability are you planning on getting?</title>
     <contents>
@@ -136,7 +136,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: Distribution of disability by age</title>
     <style>
@@ -144,14 +144,14 @@
     </style>
     <contents>
       <p><a href="https://www.census.gov/prod/2008pubs/p70-117.pdf">Americans With Disabilities: 2005</a></p>
-      
+
       <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-      
+
       <script src="../highcharts/js/highcharts.js"></script>
       <script src="../highcharts/js/modules/exporting.js"></script>
-      
+
       <script type="text/javascript">
-        
+
         $('#container').highcharts({
         chart: {
         type: 'column'
@@ -200,30 +200,30 @@
         series: [{
         name: 'Any disability',
         data: [8.8, 10.4, 11.4, 19.4, 30.1, 37.4, 43.8, 55.9, 71.0]
-        
+
         }, {
         name: 'Severe disability',
         data: [3.6, 5.0, 7.5, 12.8, 20.8, 26.1, 27.6, 37.8, 56.2]
-        
+
         }, {
         name: 'Needs assistance',
         data: [0.4, 1.3, 1.9, 3.4, 5.7, 7.6, 9.4, 16.1, 29.2]
         }]
         });
       </script>
-      
+
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: What's your Personal Disability Quotient (PDQ)?</title>
     <contents>
       <p><a href="http://www.whatsmypdq.org/">Calculate your Personal Disability Quotient (PDQ)?</a></p>
     </contents>
   </slide>
-  
+
   <slide>
-    <title>Experience of Disability: Victor Trasan (Yahoo/PayPal/Google) on the Technology and Disability</title>
+    <title>Experience of Disability: Victor Tsaran (Yahoo/PayPal/Google) on the Technology and Disability</title>
     <contents>
       <p class="center"><a href="https://www.youtube.com/watch?v=BsJB73c38yw">TEDxSiliconValley - Victor Tsaran</a></p>
       <p class="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/BsJB73c38yw" frameborder="0" allowfullscreen=""></iframe></p>
@@ -240,7 +240,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: Accessibility Features of Operating System</title>
     <contents>
@@ -250,7 +250,7 @@
         <li><a href="https://www.apple.com/accessibility/osx/">OS X. Designed with your abilities in mind</a></li>
         <p><a href="https://wiki.gnome.org/Accessibility/">GNOME Desktop Accessibility Wiki</a></p>
       </ul>
-      
+
       <h2>Tablets and Phones</h2>
       <ul>
         <p><a href="http://www.apple.com/accessibility/ios/">iOS. A wide range of features for a wide range of needs.</a></p>
@@ -258,7 +258,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Experience of Disability: Summary of OS Accessibility Features</title>
     <contents>
@@ -283,9 +283,9 @@
       </ul>
     </contents>
   </slide>
-  
 
-  <slide> 
+
+  <slide>
     <title>Experience of Disability: Disability Simulation</title>
     <contents>
       <ul>
@@ -294,9 +294,9 @@
          <li>Blindness</li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Experience of Disability: Browser Keyboard Shortcuts</title>
     <contents>
       <table class="table table-striped">
@@ -328,7 +328,7 @@
             <th>Address Bar</th>
             <td><kbd>control</kbd>+<kbd>L</kbd></td>
             <td><kbd>command</kbd>+<kbd>L</kbd></td>
-          </tr>  
+          </tr>
           <tr>
             <th>Find</th>
             <td><kbd>control</kbd>+<kbd>F</kbd></td>
@@ -338,26 +338,26 @@
             <th>Previous page</th>
             <td><kbd>control</kbd>+<kbd>[</kbd></td>
             <td><kbd>command</kbd>+<kbd>[</kbd></td>
-          </tr>  
+          </tr>
           <tr>
             <th>Next page</th>
             <td><kbd>control</kbd>+<kbd>]</kbd></td>
             <td><kbd>command</kbd>+<kbd>]</kbd></td>
-          </tr>  
+          </tr>
           <tr>
             <th>Next Browser Tab</th>
             <td><kbd>control</kbd>+<kbd>tab</kbd></td>
             <td><kbd>control</kbd>+<kbd>tab</kbd></td>
-          </tr>  
+          </tr>
           <tr>
             <th>Next Window</th>
             <td><kbd>alt</kbd>+<kbd>tab</kbd></td>
             <td><kbd>command</kbd>+<kbd>tab</kbd></td>
-          </tr>  
+          </tr>
         </tbody>
       </table>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Experience of Disability: Screen Reader Demonstration</title>
@@ -372,7 +372,7 @@
         <li><a href="https://wiki.gnome.org/Projects/Orca">Orca Screen Reader for LINUX based Desktops</a></li>
       </ul>
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Experience of Disability: Summary</title>
@@ -385,9 +385,9 @@
       </ul>
     </contents>
   </slide>
-  
 
-  <slide> 
+
+  <slide>
     <title>Web Standards: Web Content Accessibility Guidelines 2.0</title>
     <contents>
       <p class="center">
@@ -395,9 +395,9 @@
       </p>
       <img src="images/wcag20-title.png" width="100%" alt="Graphical browser rendering of title portion of WCAG 2.0 Guidelines"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Web Standards: Accessible Rich Internet Applications (ARIA) 1.0</title>
     <contents>
       <p class="center">
@@ -405,9 +405,9 @@
       </p>
       <img src="images/wai-aria-title.png" width="100%" alt="Graphical browser rendering of title portion of W3C ARIA 1.0 Specfication"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Web Standards: HTML 5</title>
     <contents>
       <p class="center">
@@ -415,9 +415,9 @@
       </p>
       <img src="images/html5-title.png" width="100%" alt="Title portion of W3C HTML 5 Specification"/>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Web Standards: main element</title>
     <contents>
       <p class="center">
@@ -425,9 +425,9 @@
       </p>
       <img src="images/html5-main.png" width="100%" alt="Graphical browser rendering of main element section of W3C HTML 5 Specification"/>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Web Standards: API Mappings</title>
     <contents>
       <p class="center">
@@ -435,9 +435,9 @@
       </p>
       <img src="images/api-mappings.png" width="100%" alt="Graphical browser rendering of HTML Accessibility API Mappings 1.0 Specification"/>
     </contents>
-  </slide> 
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Web Standards: ARIA Authoring Practices</title>
     <contents>
       <p class="center">
@@ -445,11 +445,11 @@
       </p>
       <img src="images/aria-practices.png" width="100%" alt="Graphical browser rendering of WAI-ARIA Authoring Practices 1.1 note"/>
     </contents>
-  </slide> 
-  
-  
-  
-  <slide> 
+  </slide>
+
+
+
+  <slide>
     <title>Penn State Journery to Accessibility</title>
     <contents>
       <ul>
@@ -459,10 +459,10 @@
         <li>Training</li>
       </ul>
     </contents>
-  </slide> 
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>Open Source Tools: OpenAjax Evaluation Library</title>
     <contents>
       <ul>
@@ -473,16 +473,16 @@
         <li>Open source to promote discussion and conversation on what it means to be "accessible" (e.g. people can define their own definition)</li>
       </ul>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Open Source Tools: Rulesets</title>
     <contents>
       <p class="center">
         <a href="http://www.openajax.org/member/wiki/Accessibility" target="_specification">OpenAjax Alliance Accessibility Task Force</a>
       </p>
-      
-      <h2 id="id1">Rulesets</h2> 
+
+      <h2 id="id1">Rulesets</h2>
       <table aria-labelledby="id1" class="table table-striped">
         <thead>
           <tr>
@@ -500,14 +500,14 @@
             <td>WCAG 2.0 Level A and AA requirements primarily using HTML4 techniques, but allows HTML5 and ARIA 1.0 accessibility techniques.
             </td>
           </tr>
-          
+
         </tbody>
       </table>
 
     </contents>
-  </slide>  
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Open Source Tools: Rule Features</title>
     <contents>
 
@@ -521,9 +521,9 @@
         <li>Related information</li>
       </ul>
     </contents>
-  </slide>  
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Open Source Tools: Rule Results</title>
     <contents>
 
@@ -558,10 +558,10 @@
         </tbody>
       </table>
     </contents>
-  </slide>  
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>Open Source Tools:  Rule Categories</title>
     <contents>
 
@@ -573,73 +573,73 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <th>Landmarks</th>
             <td>Use ARIA landmark roles to structure the content of each page and identify major sections of content, thus making them more findable and navigable. The use of landmarks will, in many cases, reflect the visual styling and page layouts that web designers utilize to set apart various sections of content.</td>
           </tr>
-          
+
           <tr>
             <th>Headings</th>
             <td>Use heading elements (H1-H6) to provide appropriate labels for landmarks, and to identify subsections of content within landmarks.</td>
           </tr>
-          
+
           <tr>
             <th>Styles/Content</th>
             <td>Use proper HTML markup to identify the semantics and language of text content. Ensure that text is readable by adhering to color contrast guidelines, and that information is not conveyed solely by the use of color, shape, location or sound.</td>
           </tr>
-          
+
           <tr>
             <th>Images</th>
             <td>Provide appropriate text alternatives for static images and graphics.</td>
           </tr>
-          
+
           <tr>
             <th>Links</th>
             <td>Use link text that properly describes the target of each link. Ensure consistency and uniqueness for links that are usable, predictable and understandable.</td>
           </tr>
-          
+
           <tr>
             <th>Tables</th>
             <td>Provide table captions or other meta-information as needed. Provide row and column header references for data cells of data tables. Ensure that tables used for layout properly linearize text content.</td>
           </tr>
-          
+
           <tr>
             <th>Forms</th>
             <td>Provide meaningful labels for form elements and usable and understandable error feedback as needed.</td>
           </tr>
-          
+
           <tr>
             <th>Widgets/Scripts</th>
             <td>Use appropriate event handlers on elements to support native interactivity using JavaScript. Ensure that custom widgets created using JavaScript support keyboard interaction and include ARIA markup to describe their roles, properties and states.</td>
           </tr>
-          
+
           <tr>
             <th>Audio/Video</th>
             <td>Provide appropriate text transcripts, captions or audio descriptions for elements used in rendering audio and video content.</td>
           </tr>
-          
+
           <tr>
             <th>Keyboard</th>
             <td>Provide logical and sequential keyboard navigation among interactive elements such as links and form controls. Use standard models of keyboard interaction for custom widgets.</td>
           </tr>
-          
+
           <tr>
             <th>Timing</th>
             <td>Eliminate accessibility problems caused by time limits on input and by content that moves, scrolls, flashes or auto-updates.</td>
           </tr>
-          
+
           <tr>
             <th>Site Navigation</th>
             <td>Ensure the consistent labeling and ordering of recurrent page sections across all pages within a website. Provide a meaningful title for each page within a website.</td>
           </tr>
-          
+
         </tbody>
-      </table>      
+      </table>
     </contents>
-  </slide>  
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Open Source Tools: Ruleset and Rule Details</title>
     <contents>
       <ul>
@@ -647,11 +647,11 @@
         <li><a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_TRANS/" target="_specification">HTML4 Legacy Ruleset</a></li>
         <li><a href="https://fae.disability.illinois.edu/rulesets/" target="_specification">Comparison of OpenAjax Rulesets</a></li>
       </ul>
-            
+
     </contents>
-  </slide> 
-  
-  
+  </slide>
+
+
   <slide>
     <title>Open Source Tools: Functional Accessibility Evaluator (FAE) 2.0</title>
     <contents>
@@ -670,9 +670,9 @@
         <li>Organizes rules by Rule Categories, Rule Scope and WCAG Guidelines</li>
         <li>Archive and share reports</li>
       </ul>
-      
+
     </contents>
-  </slide>   
+  </slide>
 
   <slide>
     <title>Open Source Tools: AInspector Sidebar for Firefox</title>
@@ -691,14 +691,14 @@
             <li>Rule Categories</li>
             <li>WCAG 2.0 Guideline Summary</li>
           </ul>
-        </li>  
+        </li>
         <li>Analyzes the browser DOM content</li>
         <li>Highlighting elements</li>
         <li>DOM inspector</li>
       </ul>
-      
+
     </contents>
-  </slide>  
+  </slide>
 
   <slide>
     <title>Open Source Tools: Bookmarklets for Visualizing Accessibility Features</title>
@@ -716,11 +716,11 @@
           </ul>
         </li>
         <li><a href="https://nhoyt.com/bookmarklets/">Early prototypes of new bookmarklets and bookmarklet features</a> (e.g. no documentation, change at anytime and may have bugs)</li>
-      </ul>  
+      </ul>
     </contents>
-  </slide>  
-  
-  
+  </slide>
+
+
   <slide>
     <title>Open Source Tools: Submit an Issue or Idea</title>
     <contents>
@@ -729,11 +729,11 @@
         <li><a href="https://github.com/opena11y/fae-ainspector">Issues or ideas on the features for AInspector Sidebar or FAE 2.0</a></li>
         <li><a href="https://github.com/oaa-tools/bookmarklets/issues">Issues or ideas on the Bookmarklets</a></li>
       </ul>
-      
+
     </contents>
-  </slide>   
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Open Source Tools: Tools User Group</title>
     <contents>
       <h2>Purpose</h2>
@@ -743,18 +743,18 @@
         <li>Guide the development of the tools and OpenAjax Evaluation Library</li>
         <li>Meets the first Thursday of each month at 2:00pm Central Time</li>
       </ul>
-      
+
       <h2 id="join">Join E-mail Lists</h2>
        <ul>
          <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-discussions" aria-describedby="join">Open Source Tools Discussion List</a></li>
          <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-tools-announcements" aria-describedby="join">Open Source Tools Announcements List</a></li>
        </ul>
-      
-    </contents>  
+
+    </contents>
   </slide>
- 
- 
-  <slide> 
+
+
+  <slide>
     <title>Additional IT Accessibility Learning Resources</title>
     <contents>
       <h2>Orgnaizations and Training</h2>
@@ -765,7 +765,7 @@
         <li><a href="https://www.section508.gov">Section508.gov</a></li>
         <li><a href="http://online.ahs.illinois.edu/iadp/">Information Accessibility Design and Policy (IADP) Certificate</a></li>
       </ul>
-      
+
       <h2>Conferences</h2>
       <ul>
         <li><a href="http://accessinghigherground.org">Accessing Higher Ground</a>, November 2016</li>
@@ -773,9 +773,9 @@
         <li><a href="http://www.csun.edu/cod/conference/">CSUN Conference on Technology and Disability</a>, March 2017</li>
       </ul>
 
-      
-    </contents>  
+
+    </contents>
   </slide>
-</slides> 
+</slides>
 
 

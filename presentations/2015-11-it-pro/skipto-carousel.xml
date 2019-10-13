@@ -8,10 +8,10 @@
   <desc>Division of Disability Resources and Educational Services</desc>
   <desc>College of Applied Health Sciences</desc>
   <desc>University of Illinois</desc>
-  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
-  <desc href="https://www.itproforum.illinois.edu/">2015 Illinois IT Professional Conference</desc>  
-  <desc href="../">Presentation Home Page</desc> 
-  
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  <desc href="https://www.itproforum.illinois.edu/">2015 Illinois IT Professional Conference</desc>
+  <desc href="../">Presentation Home Page</desc>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -20,7 +20,7 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
-  
+
   <slide>
     <title>Overview</title>
     <contents>
@@ -37,43 +37,43 @@
     </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Tribute to Tim Nugent</title>
     <contents>
-      
+
         <p><a href="http://www.paralympic.org/news/tim-nugent-us-father-accessibility-dies-age-92">Tim Nugent, US ‘father of accessibility’ dies age 92</a></p>
         <div>
           <img src="tim-nugent.jpg" alt="Tim Nugent coaching the Gizz Kids in a 1950's basketball game"/>
         </div>
     </contents>
-  </slide>   
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Traditional Skip to Main Content: University Illinois Home Page</title>
     <contents>
-      
+
       <p class="center">
         <a href="http://illinois.edu">University Illinois Home Page</a>
       </p>
       <iframe src="http://illinois.edu" width="100%" height="600px" title="University Illinois Home Page"></iframe>
-      
-    </contents>
-  </slide>   
 
-  <slide> 
+    </contents>
+  </slide>
+
+  <slide>
     <title>Multiple Skip Links: University Illinois Home Page</title>
     <contents>
-      
+
       <p class="center">
         <a href="http://www.umt.edu/">University of Montana</a>
       </p>
       <iframe src="http://www.umt.edu/" width="100%" height="600px" title="University of Montana"></iframe>
-      
+
     </contents>
-  </slide>   
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>SkipTo Plugin</title>
     <contents>
       <ul>
@@ -90,40 +90,40 @@
         </li>
         <li>Worpress qnd Drupal support</li>
       </ul>
-      
+
       <p class="center">
         <a href="http://paypal.github.io/skipto/">SkipTo plugin by PayPal Accessibility Team</a>
       </p>
       <iframe src="http://paypal.github.io/skipto/" width="100%" height="600px" title="SkipTo plugin by PayPal Accessibility Team"></iframe>
-      
+
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>SkipTo.js Example: Admissions</title>
     <contents>
-      
+
       <p class="center">
         <a href="http://admissions.illinois.edu">Admissions</a>
       </p>
       <iframe src="http://admissions.illinois.edu" width="100%" height="600px" title="Admissions Website"></iframe>
-      
+
     </contents>
-  </slide>   
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Wordpress SkipTo.js Example: Interlibrary Loan &amp; Document Delivery</title>
     <contents>
-      
+
       <p class="center">
         <a href="https://wordpress.library.illinois.edu/interlibrary-loan/">Interlibrary Loan &amp; Document Delivery</a>
       </p>
       <iframe src="https://wordpress.library.illinois.edu/interlibrary-loan/" width="100%" height="600px" title="Interlibrary Loan &amp; Document Delivery"></iframe>
-      
+
     </contents>
-  </slide>   
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Other SkipTo.js Examples at Illinois</title>
     <contents>
       <h2>Implemented</h2>
@@ -133,7 +133,7 @@
         <li><a href="http://online.illinois.edu">Illinois Online</a></li>
         <li><a href="http://fae20.cita.illinois.edu">Functional Accessibility Evaluator 2.0</a></li>
       </ul>
-      
+
       <h2>In Process of Implementaion</h2>
       <ul>
         <li><a href="http://illinois.edu">Illinois Home Page</a></li>
@@ -141,9 +141,9 @@
         <li><a href="http://ahs.illinois.edu">College of Applied Helath Sciences</a></li>
       </ul>
     </contents>
-  </slide>   
+  </slide>
 
-  <slide> 
+  <slide>
     <title>Configuring SkipTo.js</title>
     <contents>
       <pre class="code">
@@ -168,9 +168,9 @@
       </pre>
     </contents>
   </slide>
- 
- 
-  <slide> 
+
+
+  <slide>
     <title>Customize Styling SkipTo.js</title>
     <contents>
       <pre class="code">
@@ -183,9 +183,9 @@
          &lt;/style>
       </pre>
     </contents>
-  </slide> 
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Next Steps with SkipTo.js</title>
     <contents>
       <ul>
@@ -223,19 +223,19 @@
     </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Carousel Example: Illinois Online</title>
     <contents>
-      
+
       <p class="center">
         <a href="http://online.illinois.edu">Illinois Online (Reverse engineered bootstrap plug-in)</a>
       </p>
       <iframe src="http://online.illinois.edu" width="100%" height="600px" title="Illinois Online Website"></iframe>
-      
+
     </contents>
-  </slide>   
- 
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Accessible Carousel Examples at Illinois</title>
     <contents>
       <h2>Implemented</h2>
@@ -251,16 +251,16 @@
         <li><a href="http://www.ece.illinois.edu">Electrical and Computer Engineering</a></li>
       </ul>
     </contents>
-  </slide>   
-  
+  </slide>
+
   <slide>
     <title>WAI-ARIA 1.0 Authoring Practices</title>
     <contents>
       <p class="center"><a href=".http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a></p>
       <iframe src="http://www.w3.org/TR/wai-aria-practices/" width="98%" height="600px" title="WAI ARIA Authoring Practices Web Page"></iframe>
     </contents>
-  </slide> 
-  
+  </slide>
+
   <slide>
     <title>Assets Framework for Accessible Web Widgets</title>
     <contents>
@@ -270,7 +270,7 @@
 
 
 
-  <slide> 
+  <slide>
     <title>Javascript Library Accessbility Group</title>
     <contents>
       <ul>
@@ -278,13 +278,13 @@
         <li>Support campus developers in creating accessible widgets</li>
         <li>Improve accessibility of common Javascript libraries (e.g. Bootstrap, JQuery-UI)</li>
         <li>Next meeting is on Tuesday December 1st at 3:00pm (in person and online using Lync)</li>
-        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-js-library-accessibility">E-mail discussion list</a> 
+        <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-js-library-accessibility">E-mail discussion list</a>
           or contact <a href="mailto:clblew@illinois.edu">Christy Blew</a> (Coordinator)</li>
       </ul>
     </contents>
-  </slide>   
-      
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Acknowledgements</title>
     <contents>
       <dl>
@@ -292,7 +292,7 @@
         <dd><em>PayPal</em>, Principle Software Developer</dd>
         <dt>Cathy O'Connor</dt>
         <dd><em>PayPal</em>, Accessibility Program Manager</dd>
-        <dt>Victor Trasan</dt>
+        <dt>Victor Tsaran</dt>
         <dd><em>Google (formally at PayPal)</em></dd>
         <dt>Dennis Lembree</dt>
         <dd><em>eBay (formally at PayPal)</em></dd>
@@ -304,7 +304,7 @@
         <dd><a href="https://lists.illinois.edu/lists/info/oaa-js-library-accessibility">Javascript Library Accessibity Listserv</a></dd>
       </dl>
     </contents>
-  </slide> 
-</slides> 
+  </slide>
+</slides>
 
 

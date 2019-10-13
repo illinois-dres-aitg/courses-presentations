@@ -1157,11 +1157,12 @@
     </contents>
   </slide>
 
+<!--
   <slide>
     <title>FAE Auditor (Beta)</title>
     <contents>
       <ul>
-        <li><a href="https://fae-auditor.disability.illinois.edu/rules/2018-bb-conf-2-2018-10-17/rc/"  target="_fae_auditor">Athletic Conferences Report</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
+        <li><a href="https://fae-auditor.disability.illinois.edu/"  target="_fae_auditor">Athletic Conferences Report</a> (<a href="https://github.com/opena11y/faeAuditor">Source Code</a>)</li>
         <li>Identify strengths and weaknesses of accessibility implementation</li>
         <li>Compare websites and groups of websites</li>
         <li>Support creating accessibility dashboard</li>
@@ -1169,20 +1170,7 @@
 
     </contents>
   </slide>
-
-
-  <slide>
-    <title>A11yFirst Plugins for CKEditor</title>
-    <contents>
-      <ul>
-        <li><a href="https://a11yfirst.web.illinois.edu/"  target="_a11yfirst">A11yFirst demonstration</a> (<a href="https://github.com/a11yfirst/">Source Code</a>)</li>
-        <li>Include accessibility feedback during authoring process</li>
-        <li>Authors understand the importance of accessibility</li>
-        <li>Built-in help resources on accessibility</li>
-      </ul>
-
-    </contents>
-  </slide>
+-->
 
   <slide>
     <title>Submit an Issue or Idea</title>
@@ -1192,6 +1180,28 @@
         <li><a href="https://github.com/opena11y/fae2/issues" target="_issues">Issues or ideas on the features for FAE 2.0</a></li>
         <li><a href="https://github.com/ainspector/webextension-firefox/issues" target="_issues">Issues or ideas on the features for AInspector WCAG</a></li>
         <li><a href="https://github.com/oaa-tools/bookmarklets/issues" target="_issues">Issues or ideas on the Bookmarklets</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>A11yFirst Editor Enhancements for CKEditor 4</title>
+    <contents>
+      <ul>
+        <li><a href="https://a11yfirst.gitlab.io/custom/a11yfirst.html"  target="_a11yfirst">A11yFirst demonstration</a></li>
+        <li>Just in time accessibility feedback during authoring process</li>
+        <li>Authors understand the importance of accessibility</li>
+        <li>Built-in help resources on accessibility</li>
+      </ul>
+
+      <h2>How to Get CKEditor</h2>
+
+      <ul>
+        <li><a href="https://ckeditor.com/cke4/builder" target="_a11yfirst">CKEditor 4 Builder</a></li>
+        <li><a href="https://www.drupal.org/sandbox/jongund/3030129" target="_a11yfirst">A11yFirst Editor Enhancements Module for Drupal 8</a></li>
+        <li><a href="https://github.com/a11yfirst/distribution/releases" target="_a11yfirst">Pre-built CKEditor 4 builds with A11yFirst</a> (what you would get from CKEditor 4 builder)</li>
+        <li><a href="https://github.com/a11yfirst/plugins-dev/tree/a11yfirst-master" target="_a11yfirst">Source Code for Plugins (a11yfirst-master branch)</a> (for developers)</li>
       </ul>
 
     </contents>
@@ -1231,7 +1241,6 @@
         <li>Develop solutions that can be shared among institutions.</li>
         <li>Build human capital the understands accessibility.</li>
       </ul>
-
     </contents>
   </slide>
 
@@ -1242,6 +1251,87 @@
         <li><a href="https://iadp.ahs.illinois.edu/" target="_related">Information Accessibility Design and Policy Certificate</a></li>
         <li><a href="https://go.illinois.edu/a11y-badges" target="_related">Web Accessibility Badging Courses using HTML5 and ARIA Authoring Practices</a></li>
       </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>W3C WAI Interest Group</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/about/groups/waiig/" target="_specification">W3C Interest Group</a>.</li>
+        <li><a href="https://www.w3.org/WAI/about/groups/waiig/#mailinglist" target="_specification">Interest group e-mail discussion and announcement lists.</a></li>
+        <li>Review and provide feedback on standards.</li>
+        <li>Discuss WCAG requirements and techniques.</li>
+      </ul>
+      <iframe src="https://www.w3.org/WAI/about/groups/waiig/" width="99%" height="600px" title="W3C Membership List"></iframe>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>International Association of Accessibility Professionals (IAAP)</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.accessibilityassociation.org" target="_specification">W3C Web Accessibility Initiative (WAI)</a></li>
+        <li>Managers, designers, developers and content editors</li>
+        <li>Indentifying knowledge base</li>
+        <li>Sharing knowledge</li>
+        <li>Raising awareness</li>
+        <li>Certification</li>
+      </ul>
+      <iframe src="https://www.accessibilityassociation.org" width="99%" height="600px" title="International Association of Accessibility Professionals home page"></iframe>
+    </contents>
+  </slide>
+
+    <slide>
+    <title>Educause IT Accessibility Interest Group</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.educause.edu/community/it-accessibility-community-group">Educause IT Accessibility Interest Group</a></li>
+        <li>IT professionals in technology in Higher Education</li>
+        <li>Monthly teleconference on sharing information on IT accessibility policy and resources</li>
+        <li>E-mail discussion list</li>
+        <li>Educause annual conference has workshops and sessions on IT accessibility issues.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Assistive Technology in Higher Education Network (ATHEN)</title>
+    <contents>
+      <ul>
+        <li><a href="http://athenpro.org">Assistive Technology in Higher Education Network (ATHEN)</a></li>
+        <li>Primarily people in disability services </li>
+        <li>Affliated with <a href="https://www.ahead.org/">AHEAD</a></li>
+        <li>E-mail discussion list</li>
+        <li>Annual conference on technology and disability in higher education: <a href="https://accessinghigherground.org/">Accessing Higher Ground Conference</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Other Organizations</title>
+    <contents>
+      <h2>Training Resources</h2>
+      <ul>
+        <li><a href="https://www.washington.edu/doit/" target="_other_org">Disabilities, Opportunities, Internetworking, and Technology (DOIT) at  University of Washington</a></li>
+        <li><a href="http://webaim.org" target="_other_org">WebAIM: Web Accessibility in Mind</a></li>
+        <li><a href="https://knowbility.org" target="_other_org">Knowibility</a></li>
+        <li><a href="https://2019ict.org/" target="_other_org">ICT Accessibility Testing Symposium</a></li>
+      </ul>
+
+      <h2>Research Centers</h2>
+      <ul>
+        <li><a href="https://trace.umd.edu/" target="_other_org">Trace Center at University of Maryland</a></li>
+        <li><a href="https://idrc.ocadu.ca/" target="_other_org">Inclusive Design Research Centre at OCAD University</a></li>
+      </ul>
+
+      <h2>Disability Advocacy Organizations</h2>
+      <ul>
+        <li><a href="https://afb.org">American Foundation for the Blind</a></li>
+        <li><a href="https://nfb.org">National Federation of the Blind</a></li>
+        <li><a href="https://nad.org">National Association of the Deaf</a></li>
+      </ul>
+
     </contents>
   </slide>
 

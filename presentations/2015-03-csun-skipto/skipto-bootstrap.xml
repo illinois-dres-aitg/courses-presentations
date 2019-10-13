@@ -4,13 +4,13 @@
 <slides>
   <lang>en</lang>
   <title>Bootstrap.js Dynamic Web Accessibility and “SkipTo” Page Navigation</title>
-  <name>Jon Gunderson and Victor Trasan</name> 
+  <name>Jon Gunderson and Victor Tsaran</name>
   <desc>Division of Disability Resources and Educational Services</desc>
   <desc>University of Illinois</desc>
-  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc> 
+  <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   <desc href="http://www.csun.edu/cod/conference/2015/sessions/index.php/public/presentations/view/77">2015 CSUN Conference</desc>
-  <desc href="../">Presentation Home Page</desc> 
-  
+  <desc href="../">Presentation Home Page</desc>
+
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -18,7 +18,7 @@
   <script>../../common/js/jquery-2.1.1.min.js</script>
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
-  <script>../../common/js/xml-slides.js</script>  
+  <script>../../common/js/xml-slides.js</script>
   <slide>
     <title>Overview</title>
     <contents>
@@ -30,14 +30,14 @@
         <li>Sorting Tables</li>
         <li>SkipTo</li>
       </ul>
-      <p class="center" style="font-size: 120%; margin-top: 1em">Slides at:<br/> 
+      <p class="center" style="font-size: 120%; margin-top: 1em">Slides at:<br/>
         <a href="http://presentations.cita.illinois.edu/2015-03-csun-skipto/">
           http://presentations.cita.illinois.edu/2015-03-csun-skipto/
         </a>
       </p>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Bootstrap.js</title>
     <contents>
@@ -62,8 +62,8 @@
       <iframe src="http://paypal.github.io/bootstrap-accessibility-plugin/demo.html" width="98%" height="600px"></iframe>
     </contents>
   </slide>
-  
-  <slide> 
+
+  <slide>
     <title>Bootstrap Accessibility Example</title>
     <contents>
       <ul>
@@ -78,8 +78,8 @@
       <p class="center"><a href="http://fae20.cita.illinois.edu">FAE 2.0 uses Bootstrap.js</a></p>
       <iframe src="http://fae20.cita.illinois.edu" width="100%" height="600px"></iframe>
     </contents>
-  </slide> 
-  
+  </slide>
+
   <slide>
     <title>Bootstrap Sortable Tables</title>
     <contents>
@@ -89,7 +89,7 @@
       </ul>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Inaccessible Sortable Tables</title>
     <contents>
@@ -97,8 +97,8 @@
       <iframe src="http://wenzhixin.net.cn/p/bootstrap-table/docs/examples.html#basic-sort-table" width="98%" height="600px" ></iframe>
     </contents>
   </slide>
-  
-  <slide> 
+
+  <slide>
     <title>Accessible Sortable Table</title>
     <contents>
       <ul>
@@ -111,30 +111,30 @@
       <p class="center"><a href="http://fae20.cita.illinois.edu/rulesets/">FAE 2.0 Rulesets View has mutliple sortable tables</a></p>
       <iframe src="http://fae20.cita.illinois.edu/rulesets/" width="100%" height="600px"></iframe>
     </contents>
-  </slide>  
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Carousels (e.g Image/News Item Rotators)</title>
     <contents>
-      
+
       <p class="center"><a href="http://getbootstrap.com/2.3.2/javascript.html#carousel">Bootstrap Carousel Component</a></p>
       <iframe src="http://getbootstrap.com/2.3.2/javascript.html#carousel" width="100%" height="600px"></iframe>
-      
+
     </contents>
-  </slide> 
+  </slide>
 
   <slide>
     <title>Bootstrap 3.2 Carousel Example</title>
     <stylesheet media="screen">bootstrap/css/bootstrap.css</stylesheet>
     <stylesheet media="screen">bootstrap/css/bootstrap-theme.css</stylesheet>
-    
+
     <contents>
       <div class="row">
         <div class="col-sm-1">
-        </div>  
+        </div>
         <div class="col-sm-10">
           <div id="carousel-highlights" class="carousel slide" data-ride="carousel">
-            
+
             <ol class="carousel-indicators">
               <li data-target="#carousel-highlights" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-highlights" data-slide-to="1"></li>
@@ -143,135 +143,135 @@
               <li data-target="#carousel-highlights" data-slide-to="4"></li>
               <li data-target="#carousel-highlights" data-slide-to="5"></li>
             </ol>
-            
+
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                
+
                 <div data-caption="#caption1">
                   <a href="http://will.illinois.edu/highlights/story/rick-steves-dynamic-europe-amsterdam-prague-berlin">
                     <img src="images/amsterdamslide__800x600.jpg" alt="Red Light Walking Tour in Amsterdam" />
                   </a>
-                </div>           
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="/highlights/story/rick-steves-dynamic-europe-amsterdam-prague-berlin">
                       Rick Steves&#8217; Dynamic Europe: Amsterdam, Prague, Berlin
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm">
                     <p>7 pm Tuesday, March 3, on WILL-TV</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption2">
-                  
+
                   <a href="http://will.illinois.edu/willtravel/tour/sept.-14-24-or-27-2015-southwest-england-paris-masterpieces-mysteries">
                     <img src="images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://will.illinois.edu/willtravel/tour/sept.-14-24-or-27-2015-southwest-england-paris-masterpieces-mysteries">
                       Travel with WILL to Southwest England and Paris
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm"><p>Sept. 14 to Sept. 24 or 27: Masterpiece and Mysteries Tour</p></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption3">
-                  
+
                   <a href="http://www.pbs.org/about/news/archive/2015/pbs-most-trusted/">
                       <img src="images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer." />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.pbs.org/about/news/archive/2015/pbs-most-trusted/">
                       Survey confirms that PBS and member stations are America&#8217;s most trusted institution
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm"></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption4">
-                  
+
                   <a href="http://www.will.illinois.edu/highlights/story/foyles-war-revisited">
                     <img src="images/foyleswarslide__800x600.jpg" alt="" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.will.illinois.edu/highlights/story/foyles-war-revisited">
                       Foyle&#8217;s War Revisited
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm">
                     <p>8 pm Sunday, March 8, on WILL-TV: Sneak peak at the final season.</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption5">
-                  
+
                   <a href="http://www.will.illinois.edu/highlights/story/great-britcom-vote-all-star-edition">
                     <img src="images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="/highlights/story/great-britcom-vote-all-star-edition">
                       Great BritCom Vote: 7 pm Sat., March 7, on WILL-TV
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm"></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption6">
-                  
+
                   <a href="http://www.will.illinois.edu/midamericangardener">
                     <img src="images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.will.illinois.edu/midamericangardener">
                       Mid-American Gardener: Thursdays at 7 pm on WILL-TV
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm">
                     <p>Watch the latest episodes.</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
-              </div>   <!-- .item -->    
+              </div>   <!-- .item -->
             </div> <!-- carousel-inner -->
-            
+
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-highlights" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -281,15 +281,15 @@
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-            
+
           </div>     <!-- #carousel-highlights -->
-        </div>  
+        </div>
       </div>
       <!-- End  embeds/_embed_carousel -->
       <script src="http://localhost/citaweb/presentations/2015-03-csun-skipto/bootstrap/js/bootstrap.js" type="text/javascript"></script>
     </contents>
   </slide>
-  
+
   <slide>
     <title>Accessibility Issues of Carousel</title>
     <contents>
@@ -313,11 +313,11 @@
     <stylesheet media="screen">bootstrap/css/bootstrap.css</stylesheet>
     <stylesheet media="screen">bootstrap/css/bootstrap-theme.css</stylesheet>
     <stylesheet media="screen">bootstrap-a11y-plugin/bootstrap-accessibility.css</stylesheet>
-    
+
     <contents>
       <div class="row">
         <div class="col-sm-1">
-        </div>  
+        </div>
         <div class="col-sm-10">
           <div id="carousel-highlights" class="carousel slide" data-ride="carousel">
 
@@ -328,135 +328,135 @@
               <li data-target="#carousel-highlights" data-slide-to="3"></li>
               <li data-target="#carousel-highlights" data-slide-to="4"></li>
               <li data-target="#carousel-highlights" data-slide-to="5"></li>
-            </ol>            
+            </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                
+
                 <div data-caption="#caption1">
                   <a href="http://will.illinois.edu/highlights/story/rick-steves-dynamic-europe-amsterdam-prague-berlin">
                     <img src="images/amsterdamslide__800x600.jpg" alt="Red Light Walking Tour in Amsterdam" />
                   </a>
-                </div>           
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="/highlights/story/rick-steves-dynamic-europe-amsterdam-prague-berlin">
                       Rick Steves&#8217; Dynamic Europe: Amsterdam, Prague, Berlin
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm">
                     <p>7 pm Tuesday, March 3, on WILL-TV</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption2">
-                  
+
                   <a href="http://will.illinois.edu/willtravel/tour/sept.-14-24-or-27-2015-southwest-england-paris-masterpieces-mysteries">
                     <img src="images/lands-endslide__800x600.jpg" alt="Land&#039;s End in Cornwall" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://will.illinois.edu/willtravel/tour/sept.-14-24-or-27-2015-southwest-england-paris-masterpieces-mysteries">
                       Travel with WILL to Southwest England and Paris
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm"><p>Sept. 14 to Sept. 24 or 27: Masterpiece and Mysteries Tour</p></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption3">
-                  
+
                   <a href="http://www.pbs.org/about/news/archive/2015/pbs-most-trusted/">
                     <img src="images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer." />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.pbs.org/about/news/archive/2015/pbs-most-trusted/">
                       Survey confirms that PBS and member stations are America&#8217;s most trusted institution
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm"></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption4">
-                  
+
                   <a href="http://www.will.illinois.edu/highlights/story/foyles-war-revisited">
                     <img src="images/foyleswarslide__800x600.jpg" alt="" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.will.illinois.edu/highlights/story/foyles-war-revisited">
                       Foyle&#8217;s War Revisited
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm">
                     <p>8 pm Sunday, March 8, on WILL-TV: Sneak peak at the final season.</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption5">
-                  
+
                   <a href="http://www.will.illinois.edu/highlights/story/great-britcom-vote-all-star-edition">
                     <img src="images/britcomdavidslide__800x600.jpg" alt="British flag with WILL-TV host David Thiel" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="/highlights/story/great-britcom-vote-all-star-edition">
                       Great BritCom Vote: 7 pm Sat., March 7, on WILL-TV
                     </a>
-                  </h2>               
-                  
+                  </h2>
+
                   <div class="hidden-xs hidden-sm"></div>
                 </div>  <!-- .carousel-caption -->
               </div>   <!-- .item -->
-              
+
               <div class="item ">
                 <div data-caption="#caption6">
-                  
+
                   <a href="http://www.will.illinois.edu/midamericangardener">
                     <img src="images/mag800-2__800x600.jpg" alt="Mid-American Gardener panelists on the set" />
                   </a>
-                  
-                </div>           
+
+                </div>
                 <div class="carousel-caption">
-                  
+
                   <h2>
                     <a href="http://www.will.illinois.edu/midamericangardener">
                       Mid-American Gardener: Thursdays at 7 pm on WILL-TV
                     </a>
                   </h2>
-                  
+
                   <div class="hidden-xs hidden-sm">
                     <p>Watch the latest episodes.</p>
                   </div>
                 </div>  <!-- .carousel-caption -->
-              </div>   <!-- .item -->    
+              </div>   <!-- .item -->
             </div> <!-- carousel-inner -->
-            
+
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-highlights" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span>
@@ -464,9 +464,9 @@
             <a class="right carousel-control" href="#carousel-highlights" role="button" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span>
             </a>
-            
+
           </div>     <!-- #carousel-highlights -->
-        </div>  
+        </div>
       </div>
       <!-- End  embeds/_embed_carousel -->
       <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
@@ -474,7 +474,7 @@
     </contents>
   </slide>
 
-  <slide> 
+  <slide>
     <title>Prototype Carousel Being Tested by Open Accessibility Alliance JS Library Group</title>
     <contents>
       <ul>
@@ -488,11 +488,11 @@
         <a href="http://192.17.26.249/sandbox/carousel">Prototype Carousel For Testing Accessible Markup</a>
       </p>
       <iframe src="http://192.17.26.249/sandbox/carousel." width="100%" height="600px" title="Prototype Carousel For Testing Accessible Markup"></iframe>
-      
-    </contents>
-  </slide> 
 
-  <slide> 
+    </contents>
+  </slide>
+
+  <slide>
     <title>SkipTo plugin by PayPal Accessibility Team</title>
     <contents>
       <ul>
@@ -501,45 +501,45 @@
         <li>Accesskey</li>
         <li>Worpress qnd Drupal support</li>
       </ul>
-      
+
       <p class="center">
         <a href="http://paypal.github.io/skipto/">SkipTo plugin by PayPal Accessibility Team</a>
       </p>
       <iframe src="http://paypal.github.io/skipto/" width="100%" height="600px" title="SkipTo plugin by PayPal Accessibility Team"></iframe>
-      
+
     </contents>
-  </slide> 
-  
-  
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>SkipTo Example Site: California Housing Finance Agency</title>
     <contents>
-      
+
       <p class="center">
         <a href="http://calhfa.ca.gov/">California Housing Finance Agency</a>
       </p>
       <iframe src="http://calhfa.ca.gov/" width="100%" height="600px" title="California Housing Finance Agency"></iframe>
-      
-    </contents>
-  </slide>   
 
-  <slide> 
+    </contents>
+  </slide>
+
+  <slide>
     <title>Enhanced SkipTo Example: Functional Accessibility Evaluator 2.0</title>
     <contents>
       <ul>
         <li>Includes heading level information</li>
         <li>Supports HTML5 section elements</li>
       </ul>
-      
+
       <p class="center">
         <a href="http://fae20.cita.illinois.edu/">Enhanced SkipTo Example: Functional Accessibility Evaluator 2.0</a>
       </p>
       <iframe src="http://fae20.cita.illinois.edu/" width="100%" height="600px" title="Enhanced SkipTo Example: Functional Accessibility Evaluator 2.0"></iframe>
-      
+
     </contents>
-  </slide>   
-  
-  <slide> 
+  </slide>
+
+  <slide>
     <title>Javascript Library Accessbility Group</title>
     <contents>
       <ul>
@@ -547,27 +547,27 @@
         <li>Meeting on Tuesday afternoons at 3:30pm Central Time in USA (e.g. Chicago Local Time)</li>
         <li><a href="https://lists.illinois.edu/lists/subscribe/oaa-js-library-accessibility">E-mail discussion list</a> or contact <a href="mailto:clblew@illinois.edu">Christy Blew</a> (coordinator)</li>
       </ul>
-      
+
       <iframe src="https://lists.illinois.edu/lists/subscribe/oaa-js-library-accessibility" width="100%" height="600px"></iframe>
-     
+
     </contents>
-  </slide> 
-  
-      
-  <slide> 
+  </slide>
+
+
+  <slide>
     <title>Acknowledgements</title>
     <contents>
       <ul>
         <li>Nawaz Khan, PayPal, Principle Software Developer</li>
         <li>Cathy O'Connor, PayPal, Accessibility Program Manager</li>
-        <li>Victor Trasan, Google (formally at PayPal)</li>
+        <li>Victor Tsaran, Google (formally at PayPal)</li>
         <li>Dennis Lembree, eBay (formally at PayPal)</li>
         <li>Jon Gunderson, University of Illinois, Project Management and Software Developer</li>
         <li>Nicholas Hoyt, University of Illinois, Interaction Designer and Software Developer</li>
         <li>Chrsity Blew, University of Illinois, Coodinates Javascript Library Accessibility Group</li>
       </ul>
     </contents>
-  </slide> 
-</slides> 
+  </slide>
+</slides>
 
 
