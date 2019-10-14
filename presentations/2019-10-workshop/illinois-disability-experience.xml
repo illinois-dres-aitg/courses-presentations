@@ -570,6 +570,24 @@ S
   </slide>
 
   <slide>
+    <title>Operating System Accessibility Features</title>
+    <contents>
+      <h2>Desktop Operating Systems</h2>
+      <ul>
+        <li><a href="https://www.microsoft.com/en-us/accessibility/windows"><strong>Windows 10:</strong> Ease of Access</a></li>
+        <li><a href="https://www.apple.com/accessibility/mac/"><strong>macOS:</strong> Accessibility</a></li>
+        <li><a href="https://help.gnome.org/users/gnome-help/stable/a11y.html"><strong>Linux/GNOME:</strong> Universal Access</a></li>
+      </ul>
+
+      <h2>Portable Devices</h2>
+      <ul>
+        <li><a href="https://support.google.com/accessibility/android#topic=6007234"><strong>Android:</strong>  Accessibility Help</a></li>
+        <li><a href="https://support.apple.com/accessibility/iphone-ipad"><strong>iOS: </strong>Accessibility Support</a></li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
     <title>Victor Tsaran (Yahoo/PayPal/Google) on the Technology and Disability</title>
     <contents>
       <p class="center"><a href="https://www.youtube.com/watch?v=BsJB73c38yw" target="_video">TEDxSiliconValley - Victor Tsaran</a></p>
