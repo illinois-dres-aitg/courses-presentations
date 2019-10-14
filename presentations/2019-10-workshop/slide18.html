@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 18: Distribution of Disability by Age</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a id="ID_SLIDE_INDEX" href="index.html">
+                        Index
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_FIRST" href="slide1.html">
+                        First
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_PREVIOUS" href="slide17.html">Previous
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_NEXT" href="slide19.html">
+                        Next
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_LAST" href="slide24.html">
+                        Last
+                      </a>
+</li>
+</ul>
+<div class="navbar-text pull-right">Slide 18 of 24</div>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Distribution of Disability by Age</h1>
+<p>
+<a href="https://www.census.gov/prod/2008pubs/p70-117.pdf">Americans With Disabilities: 2005</a>
+</p>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script src="../../common/highcharts/code/highcharts.js"></script><script src="../../common/highcharts/code/modules/exporting.js"></script><script type="text/javascript">
+
+        $('#container').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+          text: 'Disability Prevalence and the Need for Assistance by Age: 2005'
+          },
+          subtitle: {
+            text: 'Source: Americans With Disabilities 2005'
+          },
+          xAxis: {
+            categories: [
+            'Under 15',
+            '15-24',
+            '25 to 44',
+            '45 to 54',
+            '55 to 64',
+            '65 to 69',
+            '70 to 74',
+            '75 to 79',
+            '80 and over'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            max : 100,
+            tickAmount: 6,
+            title: {
+              text: 'Percent Population'
+            }
+          },
+          tooltip: {
+            headerFormat: "<span style='font-size:10px'>{point.key}</span><table>",
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td><td style="padding:0"><b>{point.y:.1f} percent</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+           useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: 'Any disability',
+            data: [8.8, 10.4, 11.4, 19.4, 30.1, 37.4, 43.8, 55.9, 71.0]
+
+            }, {
+            name: 'Severe disability',
+            data: [3.6, 5.0, 7.5, 12.8, 20.8, 26.1, 27.6, 37.8, 56.2]
+
+            }, {
+            name: 'Needs assistance',
+            data: [0.4, 1.3, 1.9, 3.4, 5.7, 7.6, 9.4, 16.1, 29.2]
+          }]
+        });
+      </script>
+<details>
+        
+<summary>Table View of the Data in Chart</summary>
+        
+<table class="table table-striped">
+          
+<caption>Disability Prevalence and the Need for Assistance by Age: 2005</caption>
+          
+<thead>
+            
+<tr>
+              
+<th class="text">Age Range</th>
+              <th class="num">Any Disability</th>
+              <th class="num">Severe Disability</th>
+              <th class="num">Needs Assistance</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<th scope="row">Under 15</th>
+              <td class="num">8.8%</td>
+              <td class="num">3.6%</td>
+              <td class="num">0.4%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">15 to 24</th>
+              <td class="num">10.4%</td>
+              <td class="num">5.0%</td>
+              <td class="num">1.3%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">25 to 44</th>
+              <td class="num">11.4%</td>
+              <td class="num">7.5%</td>
+              <td class="num">1.9%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">45 to 54</th>
+              <td class="num">19.4%</td>
+              <td class="num">12.8%</td>
+              <td class="num">3.4%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">55 to 64</th>
+              <td class="num">30.1%</td>
+              <td class="num">20.8%</td>
+              <td class="num">5.7%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">65 to 69</th>
+              <td class="num">37.4%</td>
+              <td class="num">26.1%</td>
+              <td class="num">7.6%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">70 to 74</th>
+              <td class="num">43.8%</td>
+              <td class="num">27.6%</td>
+              <td class="num">9.4%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">75 to 79</th>
+              <td class="num">55.9%</td>
+              <td class="num">37.8%</td>
+              <td class="num">16.1%</td>
+            
+</tr>
+            
+<tr>
+              
+<th scope="row">80 and over</th>
+              <td class="num">71.0%</td>
+              <td class="num">56.2%</td>
+              <td class="num">29.2%</td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+      
+</details>
+</div>
+<div class="col"></div>
+</div>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2019 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

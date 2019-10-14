@@ -63,7 +63,7 @@
   <slide>
     <title>Disability at Illinois</title>
     <contents>
-      <img src="images/history1.jpg" alt="4 students in wheelchairs posing for a picture on a building entrence ramp"/>
+      <img src="images/ramp-students.jpg" alt="4 students in wheelchairs posing for a picture on a building entrence ramp"/>
     </contents>
   </slide>
 
@@ -74,28 +74,101 @@
         <li>GI Bill for World War 2 veterans.</li>
         <li>Galesburg VA in 1948 had UI extension courses for soliders.</li>
         <li>Soldiers in disabled (e.g. used wheelchairs) in World War 2 wanted to go to Illinois.</li>
-        <li>Initially rejected for adminision to Illinois based soley on disability.</li>
+        <li>Initially rejected for admission to Illinois based soley on their disability and their perceived inability to be able to live independently on campus.</li>
         <li>Soldiers lobbied the state government and university administration to be admitted.</li>
-        <li>Had the highest grade pint average of all the houses on campus during first year on campus.</li>
+        <li>Had the highest grade point average of all the houses on campus during their first year on campus.</li>
         <li>After 6 years the "Rehab" program offically changed from experimental (e.g. unfundex) to become an offical part (funded) program of the University of Illinois.</li>
       </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>Illinois at History of Firsts</title>
+    <title>Disabilities Services Program</title>
     <contents>
-      <ul>
-        <li>First post-secondary institution to provide a support service program enabling students with disabilities to attend.</li>
-        <li>Founded Delta Sigma Omicron (DSO, DIsabled Student Organization) to advocate for students with disabilities.</li>
-        <li>Organized the first organized national wheelchair sporting competitions.</li>
-        <li>First Paraolympian who won a gold medal was a UI graduate.</li>
-        <li>Research at Illinois was the basis for first architecutral accessibility ANSI standards which are still used today as part of the Americans with Disabilities Act (ADA).</li>
-        <li>Beckwith program was first residential dorms for students need personal attendant services.</li>
-      </ul>
+      <p>First post-secondary institution to provide support services to enable students with disabilities to attend, led by Tim Nugent.</p>
+      <img src="images/nugent.jpg" alt="Tim Nugent"/>
     </contents>
   </slide>
 
+  <slide>
+    <title>Transportation Services</title>
+    <contents>
+    <p>First post-secondary institution to provide a scheduled accessible bus routes.</p>
+      <img src="images/bus.jpg" alt="Bus with ramp and students in wheelchairs"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Competitive Sports: Wheelchair Basketball</title>
+    <contents>
+      <p>Organized the first organized national wheelchair sporting competitions.</p>
+      <img src="images/basketball.jpg" alt="Huff Hall with wheelchair basketabll game being palyed"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Competitive Sports: Early Racing Wheelchair</title>
+    <contents>
+      <p>Early sporting events used modified hospital wheelchairs that were not designed for self-propulsion.</p>
+      <img src="images/wheelchair-racer-1.png" width="800" alt="Huff Hall with wheelchair basketabll game being palyed"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Competitive Sports: Modern Racing Chairs</title>
+    <contents>
+      <ul>
+        <li>DRES coaches and racers help design and test modern wheelchairs for racing, using titaniuum and composit materials.</li>
+        <li>If current students and alumi would have been a country at the last winter paraolympics in Russia, they would have had the 6th higheest metal total of any country.</li>
+        <li>In the Rio paraolympic games Illini wemone swept the gold, sliver and bronze in two events.</li>
+      </ul>
+      <img src="images/wheelchair-racer-2.png" width="800" alt="Huff Hall with wheelchair basketabll game being palyed"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Architectural Standards: Temporary Ramp</title>
+    <contents>
+      <p>Portable ramps were used in the early days to provide wheelchair access to buildings.</p>
+      <img src="images/ramp-portable.png" width="800px" alt="Portable wheelchair ramp up a set of steps"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Architectural Standards: Permanent Ramp</title>
+    <contents>
+      <p>As the program grew more permanent ramps were constructed with the slopes and widths determined by research at Illinois.</p>
+      <img src="images/ramp.jpg" alt="Nugent hall with Beckwith program"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Architectural Standards: No Ramp</title>
+    <contents>
+      <p>New construction on campus does not include steps, gentile loping sidewalks provide accessible routes into buildings.</p>
+      <img src="images/no-ramp.jpg" alt="Nugent hall with Beckwith program"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Beckwith Program: Student Access</title>
+    <contents>
+      <p>First program to offer residential housing for students who need personal attendant services.</p>
+      <img src="images/beckwith-students.jpg" alt="Students in wheelchairs in loung of Beckwith"/>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Beckwith Program at Nugent Hall: Student Inclusion</title>
+    <contents>
+      <ul>
+        <li>Nugent Hall integrates Beckwith Program in to the campus residential dorms with 22 full accessible rooms with overhead lifts and accessible bathrooms.</li>
+        <li>Each new dorm floor has an accessible room to allow for full inclusion of students with disabilities in dorm life.</li>
+      </ul>
+      <img src="images/beckwith.jpg" alt="Nugent Hall part of Ikenberry Commons dorm complex"/>
+    </contents>
+  </slide>
+S
   <slide>
     <title>When do you plan on retiring?</title>
     <contents>
@@ -294,14 +367,11 @@
           </tbody>
         </table>
       </details>
-
-
     </contents>
   </slide>
 
-
   <slide>
-    <title>Disability Rights and Types of Disabilities</title>
+    <title>Types of Disabilities by Age</title>
     <style>
       table.table thead th {
         text-align: right;
@@ -315,15 +385,6 @@
     </style>
     <contents>
 
-      <h2>Disability Access Rights</h2>
-
-      <ul>
-        <li><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></li>
-        <li>Access to information is a <em>human right</em>, not just a nice thing to do.</li>
-        <li>Accessible at the same time as everyone else gets the information.</li>
-      </ul>
-
-      <h2>Distribution of Types of Disabilities by Age Range</h2>
       <p>Data from the following chart and table is from the <a href="https://disabilitycompendium.org/sites/default/files/user-uploads/2017_AnnualReport_2017_FINAL.pdf">2017 Disability Statistics Annual Report</a> from the University of New Hampshire</p>
 
       <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -441,6 +502,26 @@
   </slide>
 
   <slide>
+    <title>Disability Access Rights</title>
+    <contents>
+      <h2>Rehabilitation Act of 1973</h2>
+      <ul>
+        <li><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></li>
+        <li>Access to information is a <em>human right</em>, not just a nice thing to do.</li>
+        <li>Accessible at the same time as everyone else gets the information.</li>
+        <li>Public schools and oranizations receiving federal money.</li>
+      </ul>
+
+      <h2>Americans with Disability Act (1992)</h2>
+      <ul>
+        <li>Public accommodation to businesses and telecommunications.</li>
+        <li>Achitectural standards</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
     <title>What's your Personal Disability Quotient (PDQ)?</title>
     <contents>
       <p><a href="http://www.whatsmypdq.org/" target="_pdq">Calculate your Personal Disability Quotient (PDQ)?</a></p>
@@ -448,174 +529,40 @@
   </slide>
 
   <slide>
-    <title>Age Related Macular Degneration</title>
+    <title>Group Activity: Disability Simulations</title>
     <contents>
-
-      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-      <script src="../../common/highcharts/code/highcharts.js"></script>
-      <script src="../../common/highcharts/code/modules/exporting.js"></script>
-
-      <script type="text/javascript">
-
-        $('#container').highcharts({
-          chart: {
-            type: 'column'
-          },
-          title: {
-            text: '2010 U.S. age-specific prevalence rates for AMD by age and race/ethnicity'
-          },
-          subtitle: {
-            text: 'Source: National Institutes of Health'
-          },
-          xAxis: {
-            categories: [
-            '50-54',
-            '55-59',
-            '25 to 44',
-            '45 to 54',
-            '55 to 64',
-            '65 to 69',
-            '70 to 74',
-            '75 to 79',
-            '80 and over'
-            ],
-            crosshair: true
-          },
-          yAxis: {
-            min: 0,
-            max : 100,
-            tickAmount: 6,
-            title: {
-              text: 'Percent Population'
-            }
-          },
-          tooltip: {
-            headerFormat: "&lt;span style='font-size:10px'>{point.key}&lt;/span>&lt;table>",
-            pointFormat: '&lt;tr>&lt;td style="color:{series.color};padding:0">{series.name}: &lt;/td>&lt;td style="padding:0">&lt;b>{point.y:.1f} mm&lt;/b>&lt;/td>&lt;/tr>',
-            footerFormat: '&lt;/table>',
-            shared: true,
-           useHTML: true
-          },
-          plotOptions: {
-            column: {
-              pointPadding: 0,
-              borderWidth: 0
-            }
-          },
-          series: [{
-            name: 'Any disability',
-            data: [8.8, 10.4, 11.4, 19.4, 30.1, 37.4, 43.8, 55.9, 71.0]
-
-            }, {
-            name: 'Severe disability',
-            data: [3.6, 5.0, 7.5, 12.8, 20.8, 26.1, 27.6, 37.8, 56.2]
-
-            }, {
-            name: 'Needs assistance',
-            data: [0.4, 1.3, 1.9, 3.4, 5.7, 7.6, 9.4, 16.1, 29.2]
-          }]
-        });
-      </script>
-
       <table class="table table-striped">
-        <caption>
-          2010 U.S. age-specific prevalence rates for AMD by age and race/ethnicity
-        </caption>
+        <caption>Simulations</caption>
         <thead>
           <tr>
-            <th>Age</th>
-            <th>White</th>
-            <th>Black</th>
-            <th>Hispanic</th>
-            <th>Other</th>
-            <th>All</th>
-          </tr>
-         </thead>
-         <tbody>
-          <tr>
-            <td>50-54</td>
-            <td>0.27%</td>
-            <td>0.56%</td>
-            <td>0.55%</td>
-            <td>0.56%</td>
-            <td>0.36%</td>
-          </tr>
-          <tr>
-            <td>55-59</td>
-            <td>0.32%</td>
-            <td>0.68%</td>
-            <td>0.67%</td>
-            <td>0.68%</td>
-            <td>0.41%</td>
-          </tr>
-
-          <tr>
-            <td>60-64</td>
-            <td>0.49%</td>
-            <td>0.83%</td>
-            <td>0.82%</td>
-            <td>0.83%</td>
-            <td>0.57%</td>
-          </tr>
-
-          <tr>
-            <td>65-69</td>
-            <td>0.88%</td>
-            <td>1.02%</td>
-            <td>1.01%</td>
-            <td>1.01%</td>
-            <td>0.91%</td>
-          </tr>
-
-          <tr>
-            <td>70-74</td>
-            <td>1.74%</td>
-            <td>1.25%</td>
-            <td>1.24%</td>
-            <td>1.23%</td>
-            <td>1.63%</td>
-          </tr>
-          <tr>
-            <td>75-79</td>
-            <td>3.57%</td>
-            <td>1.53%</td>
-            <td>1.51%</td>
-            <td>1.51%</td>
-            <td>3.16%</td>
-          </tr>
-          <tr>
-            <td>80+</td>
-            <td>13.59%</td>
-            <td>2.22%</td>
-            <td>2.12%</td>
-            <td>2.13%</td>
-            <td>11.73%</td>
-          </tr>
-          <tr>
-            <td><strong>TOTAL</strong></td>
-            <td><strong>2.46%</strong></td>
-            <td><strong>0.94%</strong></td>
-            <td><strong>0.90%</strong></td>
-            <td><strong>0.92%</strong></td>
-            <td><strong>2.09%</strong></td>
-          </tr>
-        </tbody>
-      </table>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Group Activity</title>
-    <contents>
-      <table>
-        <caption>Disability Related to Simulations</caption>
-        <thead>
-          <tr>
+            <th>Disability</th>
+            <th>Functional Limitation</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Visual_impairment" target="_more_info">Blindness and severe visual impairments</a></td>
+            <td>Cannot see or very low vision in seeing shapes and lightness</td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Macular_degeneration" target="_more_info">Macular Degenration</a></td>
+            <td><p>Central vision loss</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Glaucoma" target="_more_info">Glaucoma</a></td>
+            <td><p>Peripheral vision loss from too much pressure in the eye</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.mayoclinic.org/diseases-conditions/cataracts/symptoms-causes/syc-20353790" target="_more_info">Cateracts</a></td>
+            <td><p>Cloudy or blurry vision</p></td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Homonymous_hemianopsia" target="_more_info">Homonymous hemianopsia</a></td>
+            <td><p>Loss of half of visual field from stroke, trauma, tumors, infection, or following surgery</p></td>
+          </tr>
+          <tr>
+            <td>Arthritis, stroke, tumors, spinal surgery, cord injury and infections</td>
+            <td><p>Loss of dexterity in hands and arms</p></td>
           </tr>
         </tbody>
       </table>
