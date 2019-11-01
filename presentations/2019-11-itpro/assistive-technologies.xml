@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+  <lang>en</lang>
+  <title>Disability Inclusion: Campus Wide Assistive Technologies and Authoring Resources</title>
+  <person>
+    <name>Angella Anderson, M.S.</name>
+    <desc>Disability Specialist, Alternate Format Production</desc>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:aanders2@illinois.edu">aanders2@illinois.edu</desc>
+  </person>
+  <person>
+    <name>Jon Gunderson, Ph.D.</name>
+    <desc>Coordinator of Accessible IT Group</desc>
+    <desc href="http://disability.illinois.edu">Disability Resources and Education Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
+  </person>
+
+  <conference>
+    <name href="https://www.itproforum.illinois.edu/sessions#201911-02">IT Professionals Forum Fall 2019 Conference</name>
+    <desc>November 6th, 2019</desc>
+    <desc>iHotel, Champaign, IL</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Overview</title>
+    <contents>
+      <h2>Microsoft Windows 10</h2>
+      <ul>
+        <li>Ease of Access Options</li>
+        <li>JAWS Screen Reader</li>
+        <li>ZoomText for Magnification</li>
+        <li>Kurzweil 3000 for Reading Disabilities</li>
+      </ul>
+      <h2>macOS</h2>
+      <ul>
+        <li>Sticky Keys/Mousekeys</li>
+        <li>Zoom</li>
+        <li>VoiceOver Screen Reader</li>
+        <li>Kurzweil 3000 for Reading Disabilities</li>
+      </ul>
+      <h2>Authoring Resources</h2>
+      <ul>
+        <li>EquatIO: Acessible math</li>
+        <li>SensuAccess: Accessible documents and document transformation</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Windows: Ease of Access Options</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.microsoft.com/en-gb/Accessibility/">Learn about accessibility options</a>
+          <ul>
+            <li>Stickey Keys</li>
+            <li>Mouse Keys</li>
+            <li>High contrast display settings</li>
+            <li>Cortana voice control</li>
+            <li>Magnifier</li>
+            <li>Narrator</li>
+          </ul>
+        </li>
+        <li>Make sure to enable access "Ease of Access Features" on public computers</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Windows: JAWS Screen Reader</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Windows: ZoomText</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Windows: Kurzweil 3000</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>macOS: Accessibility</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.microsoft.com/en-gb/Accessibility/">Learn about accessibility options</a>
+          <ul>
+            <li>Stickey Keys</li>
+            <li>Mouse Keys</li>
+            <li>High contrast display settings</li>
+            <li>Siri voice control</li>
+          </ul>
+        </li>
+        <li>Make sure to enable access "Ease of Access Features" on public computers</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>macOS: VoiceOver Screen Reader</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>macOS: Zoom Magnifier</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>macOS: Kurzweil 3000</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>EquateIO</title>
+    <contents>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Sensus Access</title>
+    <contents>
+    </contents>
+  </slide>
+
+</slides>
+
+
