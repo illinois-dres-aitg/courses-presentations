@@ -2,7 +2,7 @@
 
 USAGE="slides filename.xml"
 
-SLIDE_PATH=/Library/Server/Web/Data/Sites/Default/Github/courses-presentations/common/xslt
+SLIDE_PATH=/Library/Server/Web/Data/Sites/Default/courses-presentations/common/xslt/
 
 CLASS_PATH=$SLIDE_PATH/xalan/serializer.jar
 CLASS_PATH=$CLASS_PATH:$SLIDE_PATH/xalan/serializer.jar

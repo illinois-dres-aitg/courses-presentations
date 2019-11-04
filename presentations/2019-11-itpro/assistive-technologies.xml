@@ -76,7 +76,7 @@
     <title>Windows: Ease of Access Options</title>
     <contents>
       <ul>
-        <li><a href="https://www.microsoft.com/en-gb/Accessibility/">Learn about accessibility options</a>
+        <li><a href="https://www.microsoft.com/en-gb/Accessibility/" target="_presentation">Learn about accessibility options</a>
           <ul>
             <li>Stickey Keys</li>
             <li>Mouse Keys</li>
@@ -104,8 +104,9 @@
   </slide>
 
   <slide>
-    <title>Windows: Kurzweil 3000</title>
+    <title>Windows and macOS: Kurzweil 3000</title>
     <contents>
+
     </contents>
   </slide>
 
@@ -113,42 +114,45 @@
     <title>macOS: Accessibility</title>
     <contents>
       <ul>
-        <li><a href="https://www.microsoft.com/en-gb/Accessibility/">Learn about accessibility options</a>
-          <ul>
-            <li>Stickey Keys</li>
-            <li>Mouse Keys</li>
-            <li>High contrast display settings</li>
-            <li>Siri voice control</li>
-          </ul>
-        </li>
-        <li>Make sure to enable access "Ease of Access Features" on public computers</li>
+        <li>Zoom</li>
+        <li>VoiceOver</li>
+        <li>Stickey Keys</li>
+        <li>Slow Keys</li>
+        <li>Mouse Keys</li>
+        <li>Accessibility Keyboard</li>
+        <li>High contrast display settings</li>
+        <li>Siri voice control</li>
       </ul>
+      <p class="center"><img width="100%" src="images/accessibility-preferences.png" alt="screen shot of macOS accessibility preferences"/></p>
     </contents>
   </slide>
 
   <slide>
     <title>macOS: VoiceOver Screen Reader</title>
     <contents>
+      <p class="center"><img width="100%" src="images/voiceover-smaller.png" alt="screen shot of voice over with list of headings"/></p>
     </contents>
   </slide>
 
   <slide>
-    <title>macOS: Zoom Magnifier</title>
+    <title>macOS: Zoom Magnifier and High Contrast</title>
     <contents>
+      <p class="center"><img width="100%" src="images/highcontrast-zoom-smaller.jpg" alt="screen shot of zoom on and high contrast settings enabled"/></p>
     </contents>
   </slide>
 
   <slide>
     <title>EquatIO</title>
     <contents>
-      <p><a href="https://webstore.illinois.edu/shop/product.aspx?zpid=3809">EquatIO available from University Webstore</a></p>
+      <p><a href="https://www.texthelp.com/en-us/products/equatio/" target="_presentation">EquatIO Product Information</a></p>
+      <p><a href="https://webstore.illinois.edu/shop/product.aspx?zpid=3809" target="_presentation">EquatIO available from University Webstore</a></p>
     </contents>
   </slide>
 
   <slide>
     <title>Sensus Access</title>
     <contents>
-      <p><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></p>
+      <p><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess" target="_presentation">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></p>
 
 
     </contents>
@@ -159,8 +163,8 @@
     <contents>
 
       <ul>
-        <li>Aira service website</li>
-        <li>Aira information on campus use</li>
+        <li><a href="https://www.disability.illinois.edu/academic-supports/accommodations/aira-demand-description-service" target="_presentation">Aira service website.</a></li>
+        <li><a href="https://www.disability.illinois.edu/academic-supports/accommodations/aira-demand-description-service" target="_presentation">Aira information for campus usage.</a></li>
       </ul>
 
     </contents>
