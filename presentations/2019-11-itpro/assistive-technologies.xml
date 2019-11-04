@@ -46,19 +46,25 @@
         <li>Ease of Access Options</li>
         <li>JAWS Screen Reader</li>
         <li>ZoomText for Magnification</li>
-        <li>Kurzweil 3000 for Reading Disabilities</li>
+        <li>Kurzweil 3000 for Reading Disabilitiesn(Web License)</li>
+        <li>Kurzweil 3000 Read the web extension for Chrome Browser</li>
       </ul>
       <h2>macOS</h2>
       <ul>
         <li>Sticky Keys/Mousekeys</li>
         <li>Zoom</li>
         <li>VoiceOver Screen Reader</li>
-        <li>Kurzweil 3000 for Reading Disabilities</li>
+        <li>Kurzweil 3000 for Reading Disabilities (Web License)</li>
+        <li>Kurzweil 3000 Read the web extension for Chrome Browser</li>
       </ul>
       <h2>Authoring Resources</h2>
       <ul>
         <li>EquatIO: Acessible math</li>
-        <li>SensuAccess: Accessible documents and document transformation</li>
+        <li>SensusAccess: Accessible documents and document transformation</li>
+      </ul>
+      <h2>Other Services</h2>
+      <ul>
+        <li>Aira On Demand Description Service (Stop by Poster Session)</li>
       </ul>
       <script type="text/javascript">
         slideShowURL()
@@ -133,20 +139,30 @@
   </slide>
 
   <slide>
-    <title>macOS: Kurzweil 3000</title>
+    <title>EquatIO</title>
     <contents>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>EquateIO</title>
-    <contents>
+      <p><a href="https://webstore.illinois.edu/shop/product.aspx?zpid=3809">EquatIO available from University Webstore</a></p>
     </contents>
   </slide>
 
   <slide>
     <title>Sensus Access</title>
     <contents>
+      <p><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></p>
+
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Aira On Demand Description Service</title>
+    <contents>
+
+      <ul>
+        <li>Aira service website</li>
+        <li>Aira information on campus use</li>
+      </ul>
+
     </contents>
   </slide>
 
