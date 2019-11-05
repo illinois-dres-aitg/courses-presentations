@@ -76,11 +76,16 @@
   <slide>
     <title>Why is knowing about campuswide IT accessibility resources important?</title>
     <contents>
-      <ul>
-        <li>Public computing and teaching computer labs have assisitive technologies available to students.</li>
-        <li>People testing websites and of software have access to assistive technologies for functional testing.</li>
-        <li>People may be interested for their own use or may know collegaues that may benefit from using some of these assistive technologies.</li>
-      </ul>
+      <dl>
+        <dt>Computing Labs</dt>
+        <dd>Public computing and teaching computer labs have assisitive technologies available to students.</dd>
+
+        <dt>Testing</dt>
+        <dd>People testing websites and of software have access to assistive technologies for functional testing.</dd>
+
+        <dt>Accommodating Faculty and Staff</dt>
+        <dd>People may be interested for their own use or may know collegaues that may benefit from using some of these assistive technologies.</dd>
+      </dl>
     </contents>
   </slide>
 
