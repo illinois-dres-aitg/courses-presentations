@@ -100,19 +100,35 @@
   <slide>
     <title>Windows: ZoomText</title>
     <contents>
+        <p class="center"><img width="100%" src="images/zoomtext.png" alt="screen shot of Zoomtext toolbar"/></p>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Configuring JAWS and Zoomtext</title>
+    <contents>
+      <p><a href="http://disability.illinois.edu/itproinfo">Configuring Jaws and ZoomText for campus license</a></p>
     </contents>
   </slide>
 
   <slide>
     <title>Windows and macOS: Kurzweil 3000</title>
     <contents>
+        <p class="center"><img width="100%" src="images/kurzweil3000.png" alt="screen shot of Kurzweil 3000"/></p>
+    </contents>
+  </slide>
 
+  <slide>
+    <title>Installing Kurzweil 3000 for Windows and macOS</title>
+    <contents>
+      <p><a href="http://disability.illinois.edu/itproinfo">Download links for installing Kurzweil 3000 on WIindows and macOS</a></p>
     </contents>
   </slide>
 
   <slide>
     <title>macOS: Accessibility</title>
     <contents>
+      <p><a href="https://www.apple.com/accessibility/mac/" target="_presentation" >macOS Accessibility Features</a></p>
       <ul>
         <li>Zoom</li>
         <li>VoiceOver</li>
