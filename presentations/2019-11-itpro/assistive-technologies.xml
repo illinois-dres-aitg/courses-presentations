@@ -41,9 +41,6 @@
   <slide>
     <title>Overview</title>
     <contents>
-      <script type="text/javascript">
-        slideShowURL()
-      </script>
       <table class="table table-striped">
         <tbody>
           <tr>
@@ -92,6 +89,9 @@
           </tr>
         </tbody>
       </table>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
     </contents>
   </slide>
 
