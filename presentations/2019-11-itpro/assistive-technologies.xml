@@ -128,16 +128,6 @@
     <title>macOS: Accessibility</title>
     <contents>
       <p><a href="https://www.apple.com/accessibility/mac/" target="_presentation" >macOS Accessibility Features</a></p>
-      <ul>
-        <li>Zoom</li>
-        <li>VoiceOver</li>
-        <li>Stickey Keys</li>
-        <li>Slow Keys</li>
-        <li>Mouse Keys</li>
-        <li>Accessibility Keyboard</li>
-        <li>High contrast display settings</li>
-        <li>Siri voice control</li>
-      </ul>
       <p class="center"><img width="100%" src="images/accessibility-preferences.png" alt="screen shot of macOS accessibility preferences"/></p>
     </contents>
   </slide>
@@ -172,16 +162,16 @@
     <contents>
       <ul>
         <li><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess" target="_presentation">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></li>
-        <li><a href="docs/sensus-access-socw-test.pdf">PDF Document</a></li>
+        <li><a href="docs/sensus-access-socw-test.pdf">PDF Document to be converted</a></li>
         <li><a href="docs/sensus-access-socw-conv.docx">Word Version of PDF document converted with Sensus Access</a></li>
       </ul>
+      <iframe width="90%" height="600px" src="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess" title="DRES Web Form for Submitting a Coversion Request to SensusAccess"></iframe>
     </contents>
   </slide>
 
   <slide>
     <title>Aira On Demand Description Service</title>
     <contents>
-
       <ul>
         <li><a href="https://www.disability.illinois.edu/academic-supports/accommodations/aira-demand-description-service" target="_presentation">Aira service website.</a></li>
         <li><a href="https://www.disability.illinois.edu/academic-supports/accommodations/aira-demand-description-service" target="_presentation">Aira information for campus usage.</a></li>
