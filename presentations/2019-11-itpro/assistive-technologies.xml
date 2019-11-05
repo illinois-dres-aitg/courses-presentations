@@ -95,7 +95,7 @@
     <title>Windows: JAWS Screen Reader</title>
     <contents>
       <p class="center"><a href="http://disability.illinois.edu/itproinfo">Configuring JAWS for campus license</a></p>
-      <p class="center"><img width="100%" src="images/jaws.png" alt="screen shot of JAWS list of headings"/></p>
+      <p class="center"><img src="images/jaws.png" alt="screen shot of JAWS list of headings"/></p>
     </contents>
   </slide>
 
