@@ -94,34 +94,33 @@
   <slide>
     <title>Windows: JAWS Screen Reader</title>
     <contents>
+      <p class="center"><a href="http://disability.illinois.edu/itproinfo">Configuring JAWS for campus license</a></p>
+      <p class="center"><img width="100%" src="images/jaws.png" alt="screen shot of JAWS list of headings"/></p>
     </contents>
   </slide>
 
   <slide>
     <title>Windows: ZoomText</title>
     <contents>
-        <p class="center"><img width="100%" src="images/zoomtext.png" alt="screen shot of Zoomtext toolbar"/></p>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Configuring JAWS and Zoomtext</title>
-    <contents>
-      <p><a href="http://disability.illinois.edu/itproinfo">Configuring Jaws and ZoomText for campus license</a></p>
+      <p class="center"><a href="http://disability.illinois.edu/itproinfo">Configuring ZoomText for campus license</a></p>
+      <p class="center"><img width="100%" src="images/zoomtext.png" alt="screen shot of Zoomtext toolbar"/></p>
     </contents>
   </slide>
 
   <slide>
     <title>Windows and macOS: Kurzweil 3000</title>
     <contents>
+      <p class="center"><a href="http://disability.illinois.edu/itproinfo">Download links for installing Kurzweil 3000 on WIindows and macOS</a></p>
         <p class="center"><img width="100%" src="images/kurzweil3000.png" alt="screen shot of Kurzweil 3000"/></p>
     </contents>
   </slide>
 
+
   <slide>
-    <title>Installing Kurzweil 3000 for Windows and macOS</title>
+    <title>Chrome Browser Extension: Read the Web</title>
     <contents>
-      <p><a href="http://disability.illinois.edu/itproinfo">Download links for installing Kurzweil 3000 on WIindows and macOS</a></p>
+        <p class="center"><a href="https://chrome.google.com/webstore/detail/read-the-web/hdgegmlancchhhlkkddoiedlklgocffm?hl=en">Get Read the Web Chrome Extension</a></p>
+        <p class="center"><img width="100%" src="images/read-the-web.png" alt="screen shot of Read the Web toolbar in Chrome Browser"/></p>
     </contents>
   </slide>
 
@@ -160,17 +159,22 @@
   <slide>
     <title>EquatIO</title>
     <contents>
-      <p><a href="https://www.texthelp.com/en-us/products/equatio/" target="_presentation">EquatIO Product Information</a></p>
-      <p><a href="https://webstore.illinois.edu/shop/product.aspx?zpid=3809" target="_presentation">EquatIO available from University Webstore</a></p>
+      <ul>
+        <li><a href="https://go.illinois.edu/equateio" target="_presentation">EquatIO information from DRES.</a></li>
+        <li><a href="https://webstore.illinois.edu/shop/product.aspx?zpid=3809" target="_presentation">EquatIO available from University Webstore</a></li>
+        <li><a href="docs/equatio.docx">Sample document for EquatIO demonstration</a></li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
     <title>Sensus Access</title>
     <contents>
-      <p><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess" target="_presentation">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></p>
-
-
+      <ul>
+        <li><a href="https://www.disability.illinois.edu/accommodations/text-conversion-services/sensusaccess" target="_presentation">DRES Web Form for Submitting a Coversion Request to SensusAccess</a></li>
+        <li><a href="docs/sensus-access-socw-test.pdf">PDF Document</a></li>
+        <li><a href="docs/sensus-access-socw-conv.docx">Word Version of PDF document converted with Sensus Access</a></li>
+      </ul>
     </contents>
   </slide>
 
