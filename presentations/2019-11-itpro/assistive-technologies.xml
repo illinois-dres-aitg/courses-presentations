@@ -41,32 +41,55 @@
   <slide>
     <title>Overview</title>
     <contents>
-      <h2>Microsoft Windows 10</h2>
-      <ul>
-        <li>Ease of Access Options</li>
-        <li>JAWS Screen Reader</li>
-        <li>ZoomText for Magnification</li>
-      </ul>
-      <h2>macOS</h2>
-      <ul>
-        <li>Sticky Keys/Mousekeys</li>
-        <li>Zoom Magnifier</li>
-        <li>VoiceOver Screen Reader</li>
-      </ul>
-      <h2>Kurzweil 3000</h2>
-      <ul>
-        <li>Kurzweil 3000 for Reading Disabilities (Web License)</li>
-        <li>Read the Web extension for Chrome Browser</li>
-      </ul>
-      <h2>Authoring Resources</h2>
-      <ul>
-        <li>EquatIO: Acessible math</li>
-        <li>SensusAccess: Accessible documents and document transformation</li>
-      </ul>
-      <h2>Other Services</h2>
-      <ul>
-        <li>Aira On Demand Description Service (Stop by Poster Session)</li>
-      </ul>
+      <table class="table table-striped">
+      <tbody>
+        <tr>
+          <th>Microsoft Windows 10</th>
+          <td>
+            <ul>
+              <li>Ease of Access Options</li>
+              <li>JAWS Screen Reader</li>
+              <li>ZoomText for Magnification</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>macOS</th>
+          <td>
+            <ul>
+              <li>Sticky Keys/Mousekeys</li>
+              <li>Zoom Magnifier</li>
+              <li>VoiceOver Screen Reader</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Kurzweil 3000</th>
+          <td>
+            <ul>
+              <li>Kurzweil 3000 for Reading Disabilities (Web License)</li>
+              <li>Read the Web extension for Chrome Browser</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Authoring Resources</th>
+          <td>
+            <ul>
+              <li>EquatIO: Acessible math</li>
+              <li>SensusAccess: Accessible documents and document transformation</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Other Services</th>
+          <td>
+            Aira On Demand Description Service (Stop by Poster Session)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
       <script type="text/javascript">
         slideShowURL()
       </script>
