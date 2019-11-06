@@ -150,7 +150,7 @@
     <title>Windows and macOS: Kurzweil 3000</title>
     <contents>
       <p class="center"><a href="http://disability.illinois.edu/itproinfo">Download links for installing Kurzweil 3000 on WIindows and macOS</a></p>
-      <p class="center"><a href="docs/illinois-stratic-plan.pdf">Sample document for reading.</a></p>
+      <p class="center"><a href="docs/illinois-strategic-plan.pdf">Sample document for reading.</a></p>
       <p class="center"><img width="100%" src="images/kurzweil3000.png" alt="screen shot of Kurzweil 3000"/></p>
     </contents>
   </slide>
@@ -219,6 +219,16 @@
     </contents>
   </slide>
 
+  <slide>
+    <title>Questions?</title>
+    <contents>
+      <p>Are people interested in training on:</p>
+      <ul>
+        <li>How assistive technologies work?</li>
+        <li>Creating accessible documents or converting to other formats?</li>
+      </ul>
+    </contents>
+  </slide>
 </slides>
 
 
