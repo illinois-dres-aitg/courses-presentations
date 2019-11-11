@@ -314,7 +314,7 @@
 
 
   <slide>
-    <title>Disability Rights and Types of Disabilities</title>
+    <title>Distribution of Types of Disabilities by Age Range</title>
     <style>
       table.table thead th {
         text-align: right;
@@ -328,7 +328,6 @@
     </style>
     <contents>
 
-      <h2>Distribution of Types of Disabilities by Age Range</h2>
       <p>Data from the following chart and table is from the <a href="https://disabilitycompendium.org/sites/default/files/user-uploads/2017_AnnualReport_2017_FINAL.pdf">2017 Disability Statistics Annual Report</a> from the University of New Hampshire</p>
 
       <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -446,10 +445,8 @@
   </slide>
 
   <slide>
-    <title>Disability Rights and Types of Disabilities</title>
+    <title>Civil Rights of People with Disabilites</title>
     <contents>
-
-      <h2>Disability Access Rights</h2>
 
       <ul>
         <li><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></li>
