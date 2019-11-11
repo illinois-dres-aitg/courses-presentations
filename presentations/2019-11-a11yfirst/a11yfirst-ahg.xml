@@ -12,9 +12,9 @@
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
   </person>
   <conference>
-    <name href="https://accessinghigherground.org/a11yfirst-editor-enhancements-module-for-drupal-8/">Accessing Higher Ground COnference</name>
+    <name href="https://accessinghigherground.org/a11yfirst-editor-enhancements-module-for-drupal-8/">Accessing Higher Ground Conference</name>
     <desc>Westminster, CO</desc>
-    <desc>21 November 2019</desc>
+    <desc>November 21st, 2019</desc>
   </conference>
 
   <desc href="../">Presentations</desc>
@@ -440,7 +440,6 @@
     </contents>
   </slide>
 
-
   <slide>
     <title>Drupal 8: A11yFirst Editor Enhancements Module</title>
     <contents>
@@ -451,19 +450,10 @@
   </slide>
 
   <slide>
-    <title>Demonstration of A11yFirst in Drupal 8 in ACES Extension Website</title>
+    <title>Demonstration of A11yFirst in Drupal</title>
     <contents>
       <div class="border">
         <img width="98%" src="images/aces-extension.png" aly="Screen shot of ACES Extension website"/>
-      </div>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>ACES Extension</title>
-    <contents>
-      <div class="border">
-        <img width="98%" src="images/extension-county-offices.png" aly="Map of Illinois showing county extension offices"/>
       </div>
     </contents>
   </slide>
