@@ -20,8 +20,8 @@ div.container.well-sm {
     margin-top: 4em;
 }
 
-nav.slide-nav .navbar-nav>li>a:focus,
-nav.slide_nav .navbar-nav>li>a:hover {
+nav ul.nav.navbar-nav>li>a:focus,
+nav ul.nav.navbar-nav>li>a:hover {
     text-decoration: underline;
 }
 
