@@ -1,42 +1,19 @@
 
-header {
-    min-height: 100px;
-    vertical-align: bottom;
-}
-
-header img {
-    padding-right: 0.5em;
-    float: left;
-    height: 6em;
-}
-
 header h1 {
-    padding-top: 0.5em;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 250%;
+header ul {
+    position: relative;
+    left: -12px;
 }
 
-h2 {
-    font-size: 140%;
-}
-
-h3 {
-    font-size: 120%;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline;
-    margin: 0;
-    padding: 0;
-    padding-right: 1em;
+footer img {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    height: 1em;
+    padding-right: 4px;
 }
 
 div.container.well-sm {
