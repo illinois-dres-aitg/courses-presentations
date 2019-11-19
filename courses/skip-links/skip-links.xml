@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Skip link to main content and other important landmarks</title>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Skip link overview</title>
+    <contents>
+      <ul>
+        <li>Important of skip link features</li>
+        <li>Traditional skip link functionality</li>
+        <li>Skipto Menu</li>
+      </ul>
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Importance of skip links</title>
+    <contents>
+      <ul>
+        <li>Reduces tabbing for keyboard only users to get over repetitive links at the beginning of pages to get to the main content.</li>
+        <li>Screeen reader users can use headers and landmarks to provide this functionality.</li>
+        <li>Primary benefit is for keyboard only users who are not using assisitve technology.</li>
+        <li>Main stream browsers will not implement native structural navigation support.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <style>
+      dt { font-weight: bold; padding-top: 1em;}
+    </style>
+    <title>WCAG Requirements</title>
+    <contents>
+      <dl>
+        <dt><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" target="_specification">2.4.1 Bypass Blocks</a></dt>
+        <dd>A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A).</dd>
+      </dl>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Traditional Skip links</title>
+
+    <contents>
+
+      <ui>
+        <li><a href="https://webedit.disability.illinois.edu/user/jongund/skipto-1/copy/">Example code for Traditional Skip Link</a></li>
+        <li>Use <code>&lt;a href="#main">Skip to main content&lt;/a></code> landmark as target for link.</li>
+        <li>Use <code>&lt;main id="main">....&lt;/main></code> landmark as target for link.</li>
+        <li>Javascript focus and blur event handlers are used to make the link visible on focus and hidden when it does not have focus.</li>
+      </ui>
+
+      <h2>Other Resources</h2>
+      <ul>
+        <li><a href="https://webaim.org/techniques/skipnav/" target="_other">WebAIM: "Skip Navigation" Links</a></li>
+        <li><a href="https://accessibility.psu.edu/skipnav/skiplinks/" target="_other">Penn State: Skip Links</a></li>
+
+        <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html" target="_other">H30: Providing link text that describes the purpose of a link for anchor elements</a></li>
+      </ul>
+
+    </contents>
+
+  </slide>
+
+  <slide>
+    <title>Skip link examples</title>
+
+    <contents>
+
+      <table class="table table-striped" aria-labelledby="h1_title">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Websites</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Skip link is visible (rare practice)
+            </td>
+            <td>
+              <ul>
+                <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Skip link is invisible until it receiveds focus (most common)
+            </td>
+            <td>
+              <ul>
+                <li><a href="https://illinois.edu/">University of Illinois</a></li>
+                <li><a href="https://education.illinois.edu/about/mission-vision">College of Education</a></li>
+                <li><a href="https://uiowa.edu/">Univeristy of Iowa</a></li>
+                <li><a href="https://www.osu.edu/">The Ohio State University</a></li>
+                <li><a href="https://www.psu.edu/">Penn State University</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Multiple skip links to important landmarks
+            </td>
+            <td>
+              <ul>
+                <li><a href="https://msu.edu/">Michigan State University</a></li>
+                <li><a href="https://www.indiana.edu/">Indiana University</a></li>
+                <li><a href="https://trace.umd.edu/">Trace Center</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="http://paypal.github.io/skipto/">PayPal SkipTo.js</a>
+            </td>
+            <td>
+              <ul>
+                <li><a href="http://paypal.github.io/skipto/#">PayPal Skipto</a></li>
+                <li><a href="https://disability.illinois.edu/">Disability Resources and Education Services</a></li>
+                <li><a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator</a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </contents>
+
+  </slide>
+
+
+</slides>
+
+
