@@ -41,7 +41,7 @@
     <contents>
       <ul>
         <li>Reduces tabbing for keyboard only users to get over repetitive links at the beginning of pages to get to the main content.</li>
-        <li>Screeen reader users can use headers and landmarks to provide this functionality.</li>
+        <li>Not important to screeen reader users when headings and landmarks are available on the page.</li>
         <li>Primary benefit is for keyboard only users who are not using assisitve technology.</li>
         <li>Main stream browsers will not implement native structural navigation support.</li>
       </ul>
@@ -67,7 +67,7 @@
     <contents>
 
       <ui>
-        <li><a href="https://webedit.disability.illinois.edu/user/jongund/skipto-1/copy/">Example code for Traditional Skip Link</a></li>
+        <li><a href="https://webedit.disability.illinois.edu/user/jongund/skipto-1/copy/" target="_webedit">Example code for Traditional Skip Link</a></li>
         <li>Use <code>&lt;a href="#main">Skip to main content&lt;/a></code> landmark as target for link.</li>
         <li>Use <code>&lt;main id="main">....&lt;/main></code> landmark as target for link.</li>
         <li>Javascript focus and blur event handlers are used to make the link visible on focus and hidden when it does not have focus.</li>
@@ -149,12 +149,8 @@
           </tr>
         </tbody>
       </table>
-
     </contents>
-
   </slide>
-
-
 </slides>
 
 
