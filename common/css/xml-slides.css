@@ -95,6 +95,10 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main a {
+    text-decoration: underline;
+}
+
 main h1 {
     font-size: 1.75em;
     font-family: Arial, Helvetica, sans-serif;
