@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: Pizza Order Form: Instructions using tabindex</title>
+<title>Slide 13: Pizza Order Form: Focus Styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -81,15 +81,6 @@
       border-color: black;
       background-color: #ADDFFF;
       }
-
-      .instructions {
-      padding: 0;
-      margin: 0;
-      margin-top: 0.25em;
-      margin-bottom: 0.25em;
-      font-style: italic;
-      }
-
     </style>
 </head>
 <body>
@@ -122,12 +113,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 37</div>
+<div class="navbar-text pull-right">Slide 13 of 39</div>
 </div>
 </div>
 </nav>
@@ -135,29 +126,35 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Instructions using tabindex</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: Focus Styling</h1>
 <script id="script" type="text/javascript">
 
         function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus");
+          if( event.target ) event.target.parentNode.classList.add("focus");
         }
 
         function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus");
+          if( event.target ) event.target.parentNode.classList.remove("focus");
         }
 
       </script>
 <h2>Features</h2>
 <ul>
         
-<li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
+<li>
+<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
         
-<li>Uses <code>tabindex=0</code> to create a tab stop for the instructions.</li>
+<li>
+<code>focus</code> styling has a border and <code>hover</code> does not.</li>
         
-<li>This technique helps screen reader users <em>hear</em> the instructions before they get to the form controls.
-          As they <kbd>tab</kbd> throught the page they will tab to the instructions.</li>
+<li>
+<code>focus</code> styling used a 2px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
         
-<li>Keyboard only users maybe a little annoyed at the extra tab stop between interactive controls.</li>
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
+        
+<li>Styling background color also makes the change in focus much easier to detect visually.</li>
+        
+<li>Do not set <code>hover</code> styling for <code>select</code> control.</li>
       
 </ul>
 <form id="form">
@@ -175,14 +172,7 @@
         <input id="id-phone" type="text" size="14">
 
         <label for="id-delivery">Delivery Method</label>
-        
-<div id="ex1a">
-           
-<div tabindex="0" class="instructions">Free home delivery on Monday's and Tuesday nights.</div>
-        
-</div>
-        
-<select id="id-delivery">
+        <select id="id-delivery">
           <option>Eat in store</option>
           <option>Pickup</option>
           <option>Home delivery</option>
@@ -216,15 +206,7 @@
           
 <legend>Toppings</legend>
 
-          
-<div id="ex1b">
-            
-<div tabindex="0" class="instructions">First topping is free and $1.00 extra for each additional topping.</div>
-          
-</div>
-
-          
-<label>
+          <label>
             <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Sausage
           </label>
@@ -271,12 +253,18 @@
 <pre>
 <code id="sc1"></code>
 </pre>
+<h2>CSS Source Code</h2>
 <pre>
 <code id="sc2"></code>
 </pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
 <script type="text/javascript">
-        sourceCode.add('sc1', 'ex1a');
-        sourceCode.add('sc2', 'ex1b');
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

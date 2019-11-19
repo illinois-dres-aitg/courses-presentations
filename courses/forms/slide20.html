@@ -2,64 +2,77 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 20: Billing/Shipping Form: Fieldset/Legend</title>
+<title>Slide 20: Pizza Order Form: aria-label</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      label {
-      display: block;
-      margin: 0;
-      padding: 0;
-      padding-top: 1em;
-      font-size: 100%;
-      font-weight: normal;
-      color: black;
+      div.label,
+      div.label,
+      div.group  div.title {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: left;
+        margin-top: 1.25em;
       }
 
+      div.group div.item {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: -0.5em;
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+        border: 2px solid transparent;
+        width: 9em;
+      }
 
       select {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 1.25em;
-      background-color: #FFFEFF;
-      font-size: 1em;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.25em;
+        background-color: #FFFEFF;
+        font-size: 1em;
       }
 
-
-      fieldset legend {
-      margin: 0;
-      padding: 0;
-      padding-top: 1em;
-      font-weight: bold;
-      font-size: 120%;
-      }
-
-
-      input[type=submit] {
-      margin-top: 2em;
+      input[type="submit"] {
+        margin-top: 2em;
       }
 
       input[type=submit]:focus {
-      outline: 2px solid black;
+        outline: 2px solid black;
       }
 
-      input[type="text"]:hover {
-      background-color: #ADDFFF;
+      input[type="text"]:hover,
+        div.group div.item:hover {
+        background-color: #ADDFFF;
       }
 
       input[type="text"]:focus {
-      outline: 2px solid black;
-      background-color: #EEEEEE;
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
 
       select:focus {
-      outline: 2px solid black;
-      background-color: #EEEEEE;
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
 
+      div.group div.focus {
+        background-color: #EEEEEE;
+        border-color: black;
+      }
     </style>
 </head>
 <body>
@@ -92,12 +105,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 20 of 37</div>
+<div class="navbar-text pull-right">Slide 20 of 39</div>
 </div>
 </div>
 </nav>
@@ -105,159 +118,108 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Billing/Shipping Form: Fieldset/Legend</h1>
-<h2>Features</h2>
-<ul>
-        
-<li>
-<code>fieldset/legend</code> is used to provide unique labels to the billing and shipping address information.</li>
-      
-</ul>
+<h1 id="h1_title" class="title">Pizza Order Form: aria-label</h1>
 <form id="form">
         
-<h2>Order Form</h2>
+<h2>Pizza Form</h2>
 
-        
-<fieldset>
           
-<legend>Billing Information</legend>
-          <label for="billing-name">Name</label>
-          <input id="billing-name" type="text" size="30">
+<div class="label">Name</div>
+          
+<input id="id-name" type="text" size="30" aria-label="Name">
 
-          <label for="billing-address">Address</label>
-          <input id="billing-address" type="text" size="40">
+          
+<div class="label">Address</div>
+          
+<input id="id-address" type="text" size="40" aria-label="Address">
 
-          <label for="billing-state">State</label>
-          <select id="billing-state">
-            <option>Choose your state</option>
-            <option>Alabama</option>
-            <option>Alaska</option>
-            <option>Arizona </option>
-            <option>Arkansas</option>
-            <option>California</option>
-            <option>Colorado</option>
-            <option>Connecticut</option>
-            <option>Delaware</option>
-            <option>Florida</option>
-            <option>Georgia</option>
-            <option>Hawaii</option>
-            <option>Idaho</option>
-            <option>Illinois</option>
-            <option>Indiana</option>
-            <option>Iowa</option>
-            <option>Kansas</option>
-            <option>Kentucky</option>
-            <option>Louisiana</option>
-            <option>Maine</option>
-            <option>Maryland</option>
-            <option>Massachusetts</option>
-            <option>Michigan</option>
-            <option>Minnesota</option>
-            <option>Mississippi</option>
-            <option>Missouri</option>
-            <option>Montana</option>
-            <option>Nebraska</option>
-            <option>Nevada</option>
-            <option>New Hampshire</option>
-            <option>New Jersey</option>
-            <option>New Mexico</option>
-            <option>New York </option>
-            <option>North Carolina</option>
-            <option>North Dakota </option>
-            <option>Ohio</option>
-            <option>Oklahoma</option>
-            <option>Oregon</option>
-            <option>Pennsylvania</option>
-            <option>Rhode Island</option>
-            <option>South Carolina</option>
-            <option>South Dakota</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option>Utah</option>
-            <option>Vermont</option>
-            <option>Virginia</option>
-            <option>Washington</option>
-            <option>West Virginia</option>
-            <option>Wisconsin</option>
-            <option>Wyoming</option>s
+          
+<div class="label">Phone</div>
+          
+<input id="id-phone" type="text" size="14" aria-label="Phone">
+
+          
+<div class="label">Delivery Method</div>
+          
+<select id="id-delivery" aria-label="Delivery method">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
           </select>
 
-          <label for="billing-zip">Zip Code</label>
-          <input id="billing-zip" type="text" size="12">
-
         
-</fieldset>
-
-        
-<fieldset>
+<div class="group">
           
-<legend>Shipping Information</legend>
-          <label for="shipping-name">Name</label>
-          <input id="shipping-name" type="text" size="30">
-
-          <label for="shipping-address">Address</label>
-          <input id="shipping-address" type="text" size="40">
-
-          <label for="shipping-state">State</label>
-          <select id="shipping-state">
-            <option>Choose your state</option>
-            <option>Alabama</option>
-            <option>Alaska</option>
-            <option>Arizona </option>
-            <option>Arkansas</option>
-            <option>California</option>
-            <option>Colorado</option>
-            <option>Connecticut</option>
-            <option>Delaware</option>
-            <option>Florida</option>
-            <option>Georgia</option>
-            <option>Hawaii</option>
-            <option>Idaho</option>
-            <option>Illinois</option>
-            <option>Indiana</option>
-            <option>Iowa</option>
-            <option>Kansas</option>
-            <option>Kentucky</option>
-            <option>Louisiana</option>
-            <option>Maine</option>
-            <option>Maryland</option>
-            <option>Massachusetts</option>
-            <option>Michigan</option>
-            <option>Minnesota</option>
-            <option>Mississippi</option>
-            <option>Missouri</option>
-            <option>Montana</option>
-            <option>Nebraska</option>
-            <option>Nevada</option>
-            <option>New Hampshire</option>
-            <option>New Jersey</option>
-            <option>New Mexico</option>
-            <option>New York </option>
-            <option>North Carolina</option>
-            <option>North Dakota </option>
-            <option>Ohio</option>
-            <option>Oklahoma</option>
-            <option>Oregon</option>
-            <option>Pennsylvania</option>
-            <option>Rhode Island</option>
-            <option>South Carolina</option>
-            <option>South Dakota</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option>Utah</option>
-            <option>Vermont</option>
-            <option>Virginia</option>
-            <option>Washington</option>
-            <option>West Virginia</option>
-            <option>Wisconsin</option>
-            <option>Wyoming</option>s
-          </select>
-
-          <label for="shipping-zip">Zip Code</label>
-          <input id="shipping-zip" type="text" size="12">
+<div class="title">Crust</div>
+          
+<div class="item">
+            
+<input id="id-crust" name="crust" type="radio" value="Thin" aria-label="Thin crust">
+            Thin
+          </div>
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Classic" aria-label="Classic crust">
+            Classic
+          </div>
+          
+<div class="item">
+            
+<input name="crust" type="radio" value="Deep Dish" aria-label="Deep dish crust">
+            Deep Dish
+          </div>
+        
+</div>
 
         
-</fieldset>
+<div class="group">
+          
+<div class="title">Toppings</div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Sausage" aria-label="Sausage topping">
+            Sausage
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Pepperoni" aria-label="Pepperoni topping">
+            Pepperoni
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Mushrooms" aria-label="Mushroom topping">
+            Mushrooms
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Onions" aria-label="Onion topping">
+            Onions
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Green Peppers" aria-label="Green pepper topping">
+            Green Peppers
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Black Olives" aria-label="Black olive topping">
+            Back Olives
+          </div>
+          
+<div class="item">
+            
+<input name="topping" type="checkbox" value="Extra Cheese" aria-label="Extra cheese topping">
+            Extra cheese
+          </div>
+        
+</div>
 
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
@@ -272,9 +234,34 @@
 <pre>
 <code id="sc2"></code>
 </pre>
-<script type="text/javascript">
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script id="script" type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('div.group input');
+
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+
+      </script><script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

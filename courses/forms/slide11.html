@@ -2,84 +2,82 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 11: Pizza Order Form: Focus Styling</title>
+<title>Slide 11: Pizza Order Form: Label Encapsulation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      label {
-      display: block;
-      margin: 0;
-      padding: 0;
-      padding-top: 1em;
-      font-size: 100%;
-      font-weight: bold;
-      color: black;
+
+      label,
+      div.group div.title {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+        text-align: left;
+        margin-top: 1.25em;
       }
 
+      input[type="text"],
+      select {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      div.group label {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: -0.5em;
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+        border: 2px solid transparent;
+        width: 9em;
+      }
 
       select {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 1.25em;
-      background-color: #FFFEFF;
-      font-size: 1em;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.25em;
+        background-color: #FFFEFF;
+        font-size: 1em;
       }
 
-
-      fieldset legend {
-      margin: 0;
-      padding: 0;
-      padding-top: 1em;
-      font-weight: bold;
-      font-size: 100%;
+      input[type="submit"] {
+        margin-top: 2em;
       }
-
-      fieldset label {
-      margin: 0;
-      padding: 0;
-      padding-top: 0.125em;
-      padding-bottom: 0.125em;
-      padding-left: 0.5em;
-      width: 10em;
-      font-weight: normal;
-      border: 2px transparent solid;
-      display: block;
-      position: relative;
-      left: -0.5em;
-      }
-
-      input[type=submit] {
-      margin-top: 2em;
-      }
-
       input[type=submit]:focus {
-      outline: 2px solid black;
+        outline: 2px solid black;
       }
 
-      input[type="text"]:hover {
-      background-color: #ADDFFF;
+      input[type="text"]:hover,
+      div.group label:hover {
+        background-color: #ADDFFF;
       }
 
       input[type="text"]:focus {
-      outline: 2px solid black;
-      background-color: #EEEEEE;
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
 
       select:focus {
-      outline: 2px solid black;
-      background-color: #EEEEEE;
+        outline: 2px solid black;
+        background-color: #EEEEEE;
       }
 
-      fieldset label:hover {
-      background-color: #ADDFFF;
-      }
-
-      fieldset label.focus {
-      border-color: black;
-      background-color: #ADDFFF;
+      div.group label.focus {
+        background-color: #EEEEEE;
+        border-color: black;
       }
     </style>
 </head>
@@ -113,12 +111,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 11 of 37</div>
+<div class="navbar-text pull-right">Slide 11 of 39</div>
 </div>
 </div>
 </nav>
@@ -126,129 +124,98 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Focus Styling</h1>
-<script id="script" type="text/javascript">
-
-        function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus");
-        }
-
-        function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus");
-        }
-
-      </script>
-<h2>Features</h2>
-<ul>
-        
-<li>
-<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
-        
-<li>
-<code>focus</code> styling has a border and <code>hover</code> does not.</li>
-        
-<li>
-<code>focus</code> styling used a 2px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
-        
-<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
-        
-<li>Styling background color also makes the change in focus much easier to detect visually.</li>
-        
-<li>Do not set <code>hover</code> styling for <code>select</code> control.</li>
-      
-</ul>
+<h1 id="h1_title" class="title">Pizza Order Form: Label Encapsulation</h1>
 <form id="form">
         
 <h2>Pizza Form</h2>
+        
+<label>
+          Name
+          <input id="id-name" type="text" size="30">
+        </label>
+
+        <label>
+          Address
+          <input id="id-address" type="text" size="40">
+        </label>
+
+        <label>
+          Phone
+          <input id="id-phone" type="text" size="14">
+        </label>
+
+        <label>
+          Delivery Method
+          <select id="id-delivery">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
+          </select>
+        </label>
 
         
-<label for="id-name">Name</label>
-        <input id="id-name" type="text" size="30">
-
-        <label for="id-address">Address</label>
-        <input id="id-address" type="text" size="40">
-
-        <label for="id-phone">Phone</label>
-        <input id="id-phone" type="text" size="14">
-
-        <label for="id-delivery">Delivery Method</label>
-        <select id="id-delivery">
-          <option>Eat in store</option>
-          <option>Pickup</option>
-          <option>Home delivery</option>
-        </select>
-
-        
-<fieldset>
+<div class="group">
           
-<legend>Crust</legend>
-
-          <label>
-            <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+<div class="title">Crust</div>
+          
+<label>
+            <input id="id-crust" name="crust" type="radio" value="Thin">
             Thin
           </label>
-
           <label>
-            <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="crust" type="radio" value="Classic">
             Classic
           </label>
-
           <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="crust" type="radio" value="Deep Dish">
             Deep Dish
           </label>
+        
+</div>
 
         
-</fieldset>
-
-        
-<fieldset>
+<div class="group">
           
-<legend>Toppings</legend>
-
-          <label>
-            <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+<div class="title">Toppings</div>
+          
+<label>
+            <input name="topping" type="checkbox" value="Sausage">
             Sausage
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Pepperoni">
             Pepperoni
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Mushrooms">
             Mushrooms
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Onions">
             Onions
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Green Peppers">
             Green Peppers
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Black Olives">
             Back Olives
           </label>
-
           <label>
-            <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            <input name="topping" type="checkbox" value="Extra Cheese">
             Extra cheese
           </label>
-
         
-</fieldset>
+</div>
 
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>
+<p style="margin-top: 2em;">
+<a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form controls using <code>label</code> encapsulation</a>.</p>
 <h2>HTML Source Code</h2>
 <pre>
 <code id="sc1"></code>
@@ -261,7 +228,28 @@
 <pre>
 <code id="sc3"></code>
 </pre>
-<script type="text/javascript">
+<script id="script" type="text/javascript">
+
+        function itemFocus(event) {
+         if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('div.group input');
+
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+
+      </script><script type="text/javascript">
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');

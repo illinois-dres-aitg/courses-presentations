@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 10: Pizza Order Form: Fieldset/Legend</title>
+<title>Slide 10: Pizza Order Form: Label Element by Reference</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-
       label,
-      fieldset legend {
+      div.group  div.title {
         margin: 0;
         padding: 0;
         font-size: 100%;
@@ -22,22 +21,7 @@
         margin-top: 1.25em;
       }
 
-      input[type="text"],
-      select {
-        margin: 0;
-        padding: 0;
-        display: block;
-      }
-
-      fieldset legend {
-        padding-top: 1.25em;
-      }
-
-      fieldset label {
-        margin: 0;
-        padding: 0;
-        display: block;
-        font-weight: normal;
+      div.group div.item {
         position: relative;
         left: -0.5em;
         margin: 0;
@@ -47,6 +31,13 @@
         padding-bottom: 0.125em;
         border: 2px solid transparent;
         width: 9em;
+      }
+
+      div.group label {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-weight: normal;
       }
 
       select {
@@ -60,12 +51,13 @@
       input[type="submit"] {
         margin-top: 2em;
       }
-        input[type=submit]:focus {
+
+      input[type=submit]:focus {
         outline: 2px solid black;
       }
 
       input[type="text"]:hover,
-      fieldset label:hover {
+      div.group div.item:hover {
         background-color: #ADDFFF;
       }
 
@@ -79,7 +71,7 @@
         background-color: #EEEEEE;
       }
 
-      fieldset label.focus {
+      div.group div.focus {
         background-color: #EEEEEE;
         border-color: black;
       }
@@ -115,12 +107,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 10 of 37</div>
+<div class="navbar-text pull-right">Slide 10 of 39</div>
 </div>
 </div>
 </nav>
@@ -128,100 +120,118 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Fieldset/Legend</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: Label Element by Reference</h1>
 <form id="form">
-
         
 <h2>Pizza Form</h2>
-
-        
+          
 <label for="id-name">Name</label>
-        <input id="id-name" type="text" size="30">
+          <input id="id-name" type="text" size="30">
 
-        <label for="id-address">Address</label>
-        <input id="id-address" type="text" size="40">
+          <label for="id-address">Address</label>
+          <input id="id-address" type="text" size="40">
 
-        <label for="id-phone">Phone</label>
-        <input id="id-phone" type="text" size="14">
+          <label for="id-phone">Phone</label>
+          <input id="id-phone" type="text" size="14">
 
-        <label for="id-delivery">Delivery Method</label>
-        <select id="id-delivery">
-          <option>Eat in store</option>
-          <option>Pickup</option>
-          <option>Home delivery</option>
-        </select>
+          <label for="id-delivery">Delivery Method</label>
+          <select id="id-delivery">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
+          </select>
 
         
-<fieldset>
+<div class="group">
           
-<legend>Crust</legend>
-
-          <label>
-            <input id="id-crust1" name="crust" type="radio" value="Thin">
-            Thin
-          </label>
-
-          <label>
-            <input id="id-crust2" name="crust" type="radio" value="Classic">
-            Classic
-          </label>
-
-          <label>
-            <input name="crust" type="radio" value="Deep Dish">
-            Deep Dish
-          </label>
-
-        
-</fieldset>
-
-        
-<fieldset>
+<div class="title">Crust</div>
           
-<legend>Toppings</legend>
-
-          <label>
-            <input name="topping" type="checkbox" value="Sausage">
-            Sausage
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Pepperoni">
-            Pepperoni
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Mushrooms">
-            Mushrooms
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Onions">
-            Onions
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Green Peppers">
-            Green Peppers
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Black Olives">
-            Back Olives
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Extra Cheese">
-            Extra cheese
-          </label>
+<div class="item">
+            
+<input id="id-crust1" name="crust" type="radio" value="Thin">
+            <label for="id-crust1">Thin</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-crust2" name="crust" type="radio" value="Classic">
+            <label for="id-crust2">Classic</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-crust3" name="crust" type="radio" value="Deep Dish">
+            <label for="id-crust3">Deep Dish</label>
+          
+</div>
+        
+</div>
 
         
-</fieldset>
+<div class="group">
+          
+<div class="title">Toppings</div>
+          
+<div class="item">
+            
+<input id="id-top1" name="topping" type="checkbox" value="Sausage">
+            <label for="id-top1">Sausage</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top2" name="topping" type="checkbox" value="Pepperoni">
+            <label for="id-top2">Pepperoni</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top3" name="topping" type="checkbox" value="Mushrooms">
+            <label for="id-top3">Mushrooms</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top4" name="topping" type="checkbox" value="Onions">
+            <label for="id-top4">Onions</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top5" name="topping" type="checkbox" value="Green Peppers">
+            <label for="id-top5">Green Peppers</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top6" name="topping" type="checkbox" value="Black Olives">
+            <label for="id-top6">Back Olives</label>
+          
+</div>
+          
+<div class="item">
+            
+<input id="id-top7" name="topping" type="checkbox" value="Extra Cheese">
+            <label for="id-top7">Extra cheese</label>
+          
+</div>
+        
+</div>
 
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>
+<p style="margin-top: 2em;">
+<a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form controls using <code>label</code> encapsulation</a>.</p>
 <h2>HTML Source Code</h2>
 <pre>
 <code id="sc1"></code>
@@ -236,7 +246,6 @@
 </pre>
 <script id="script" type="text/javascript">
 
-
         function itemFocus(event) {
           if( event.target ) event.target.parentNode.classList.add("focus");
         }
@@ -246,16 +255,17 @@
         }
 
         window.addEventListener('load', function load(event) {
-          var itemList = document.querySelectorAll('fieldset input');
+           var itemList = document.querySelectorAll('div.item input');
 
-          for(var i = 0; i < itemList.length; i++) {
-            var item = itemList[i];
-            item.addEventListener('focus', itemFocus, true);
-            item.addEventListener('blur', itemBlur, true);
-          }
+           for(var i = 0; i < itemList.length; i++) {
+              var item = itemList[i];
+              item.addEventListener('focus', itemFocus, true);
+              item.addEventListener('blur', itemBlur, true);
+           }
         }, false);
 
       </script><script type="text/javascript">
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');

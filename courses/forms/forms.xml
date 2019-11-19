@@ -157,58 +157,224 @@
   </slide>
 
   <slide>
-    <title>Basic Screen Reader Commands related to Forms</title>
+    <title>JAWS Form Control Support</title>
     <contents>
+
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
         <thead>
           <tr>
-            <th>Action</th>
-            <th>JAWS (Windows)</th>
-            <th>NVDA (Windows)</th>
-            <th>Voice Over (OS X)</th>
+            <th>Keyboard Command</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Next control</td>
-            <td>Tab</td>
-            <td>Tab</td>
-            <td>Tab</td>
+            <td><kbd>Insert</kbd>+<kbd>Control</kbd>+<kbd>Z</kbd></td>
+            <td>
+              <ul>
+                <li>Toggle on/off virtual JAWS cursor for reading web pages.</li>
+                <li>Must be in virtual mode for the following commands to work.</li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <td>Previous control</td>
-            <td>Shift+Tab</td>
-            <td>Shift+Tab</td>
-            <td>Shift+Tab</td>
+            <td><kbd>Insert</kbd>+<kbd>7</kbd></td>
+            <td>List of form controls</td>
           </tr>
           <tr>
-            <td>Re-read current control</td>
-            <td>Insert+Numpad 5</td>
-            <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
-            <td>Command+Option+Space</td>
+            <td><kbd>Tab</kbd></td>
+            <td>Next interactive element, including form controls.</td>
           </tr>
           <tr>
-            <td>More information on control</td>
-            <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
-            <td>NVDA+D</td>
-            <td>Control+Option+F4</td>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>Previous interactive element, including form controls.</td>
           </tr>
           <tr>
-            <td>List of Form Controls</td>
-            <td>Insert+F5</td>
-            <td>NVDA+F7</td>
-            <td>Command+Option+U, then left/right arrow to forms</td>
+            <td><kbd>F</kbd></td>
+            <td>Next form control.</td>
           </tr>
           <tr>
-            <td>Detailed Keyboard Information</td>
-            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm" target="_docs">JAWS Keyboard Documentation</a></td>
-            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html" target="_docs">NVDA Documentation</a></td>
-            <td><a href="https://www.apple.com/voiceover/info/guide/" target="_docs">Voice Over Guide</a></td>
+            <td><kbd>Shift</kbd>+<kbd>F</kbd></td>
+            <td>Previous form control.</td>
+          </tr>
+          <tr>
+            <td><kbd>B</kbd></td>
+            <td>Next button.</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>B</kbd></td>
+            <td>Previous button.</td>
+          </tr>
+          <tr>
+            <td><kbd>X</kbd></td>
+            <td>Next checkbox.</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>X</kbd></td>
+            <td>Previous checkbox.</td>
+          </tr>
+          <tr>
+            <td><kbd>Enter</kbd> (on a textbox)</td>
+            <td>Enter content into textbox.</td>
           </tr>
         </tbody>
       </table>
 
+      <h2>Feature Overview</h2>
 
+      <ul>
+        <li>In virtual you can move sequentially through the visited and unvisited links on a page or view a list of headings.</li>
+        <li>When navigating a web page JAWS announces link information when the virtual or PC cursor is on a link.</li>
+      </ul>
+
+      <h2>Other Jaws Command Resources</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/jawscommands" target="_specification">Penn State: JAWS commands for web</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/jaws" target="_specification">WebAIM: JAWS commands for web</a></li>
+        <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm" target="_specification">Freedom Scientific: JAWS commands for web</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts" target="_specification">Deque University: JAWS commands</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>NVDA Form Control Support</title>
+    <contents>
+
+      <table class="table table-striped table-hover" aria-labelledby="h1_title">
+        <thead>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>Space</kbd></td>
+            <td>
+              <ul>
+                <li>Toggle between focus mode and browse mode.</li>
+                <li>Must be in browse mode for the following commands to work.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
+            <td>List of links</td>
+          </tr>
+          <tr>
+            <td><kbd>Tab</kbd></td>
+            <td>Next interactive element, including links.</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>Previous interactive element, including links.</td>
+          </tr>
+          <tr>
+            <td><kbd>K</kbd></td>
+            <td>Next link</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>K</kbd></td>
+            <td>Previous link</td>
+          </tr>
+          <tr>
+            <td><kbd>U</kbd></td>
+            <td>Next unvisited link</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>U</kbd></td>
+            <td>Previous unvisited link</td>
+          </tr>
+          <tr>
+            <td><kbd>V</kbd></td>
+            <td>Next visited link</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>V</kbd></td>
+            <td>Previous visited link</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Feature Overview</h2>
+      <ul>
+        <li>In browse mode you can move sequentially links on the page or view a list of links.</li>
+        <li>When navigating the content of a web page NVDA announces heading information is announced.</li>
+      </ul>
+
+      <h2>Other NVDA Command Resources</h2>
+      <ul>
+        <li><a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a></li>
+        <li><a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a></li>
+        <li><a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts" target="_specification">Deque University: NVDA Commands</a></li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Voice Over Form Control Support</title>
+    <contents>
+
+      <table class="table table-striped table-hover" aria-labelledby="h1_title">
+        <thead>
+          <tr>
+            <th>Keyboard Command</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Command</kbd>+<kbd>F5</kbd></td>
+            <td>Start Voice Over on MacOS</td>
+          </tr>
+          <tr>
+            <td><kbd>Control</kbd>+<kbd>Option</kbd></td>
+            <td>Voice Over (VO) command</td>
+          </tr>
+          <tr>
+            <td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>+</kbd></td>
+            <td>Toggle VO key lock on and off</td>
+          </tr>
+          <tr>
+            <td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd></td>
+            <td>Open rotor to navigate content on the web page and use the <kbd>left arrow</kbd> or <kbd>right arrow</kbd> keys to show the list of lkinks.</td>
+          </tr>
+          <tr>
+            <td><kbd>VO</kbd>+<kbd>Command</kbd>+<kbd>L</kbd></td>
+            <td>Next link</td>
+          </tr>
+          <tr>
+            <td><kbd>VO</kbd>+<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>L</kbd></td>
+            <td>Previous link</td>
+          </tr>
+          <tr>
+            <td><kbd>VO</kbd>+<kbd>Command</kbd>+<kbd>V</kbd></td>
+            <td>Next visisted link</td>
+          </tr>
+          <tr>
+            <td><kbd>VO</kbd>+<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>V</kbd></td>
+            <td>Previous visited link</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Feature Overview</h2>
+      <ul>
+        <li>Voice Over allows you to view a list of landmarks.</li>
+        <li>When navigating a web page Voice Over announces landmark information when the browse or focus cursor enters a new landmark.</li>
+      </ul>
+
+      <h2>Other Voice Over Command Resources</h2>
+
+      <ul>
+        <li><a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a></li>
+        <li><a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#vo-mac-basics" target="_specification">Deque University: Voice Over Commands</a></li>
+      </ul>
 
     </contents>
   </slide>

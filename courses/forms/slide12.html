@@ -2,13 +2,88 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 12: Form Evaluation and Inspection Tools and Rules</title>
+<title>Slide 12: Pizza Order Form: Fieldset/Legend</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+
+      label,
+      fieldset legend {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+        display: block;
+        text-align: left;
+        margin-top: 1.25em;
+      }
+
+      input[type="text"],
+      select {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      fieldset legend {
+        padding-top: 1.25em;
+      }
+
+      fieldset label {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: -0.5em;
+        margin: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+        border: 2px solid transparent;
+        width: 9em;
+      }
+
+      select {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.25em;
+        background-color: #FFFEFF;
+        font-size: 1em;
+      }
+
+      input[type="submit"] {
+        margin-top: 2em;
+      }
+        input[type=submit]:focus {
+        outline: 2px solid black;
+      }
+
+      input[type="text"]:hover,
+      fieldset label:hover {
+        background-color: #ADDFFF;
+      }
+
+      input[type="text"]:focus {
+        outline: 2px solid black;
+        background-color: #EEEEEE;
+      }
+
+      select:focus {
+        outline: 2px solid black;
+        background-color: #EEEEEE;
+      }
+
+      fieldset label.focus {
+        background-color: #EEEEEE;
+        border-color: black;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -40,12 +115,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 12 of 37</div>
+<div class="navbar-text pull-right">Slide 12 of 39</div>
 </div>
 </div>
 </nav>
@@ -53,26 +128,140 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Form Evaluation and Inspection Tools and Rules</h1>
-<ul>
+<h1 id="h1_title" class="title">Pizza Order Form: Fieldset/Legend</h1>
+<form id="form">
+
         
-<li>
-<a href="https://addons.mozilla.org/en-us/firefox/addon/ainspector-sidebar/">AInspector Sidebar for Firefox</a>
-</li>
+<h2>Pizza Form</h2>
+
         
-<li>
-<a href="https://fae.disability.illinois.edu">Functional Accessibility Evaluator (FAE) 2.0</a>
-</li>
+<label for="id-name">Name</label>
+        <input id="id-name" type="text" size="30">
+
+        <label for="id-address">Address</label>
+        <input id="id-address" type="text" size="40">
+
+        <label for="id-phone">Phone</label>
+        <input id="id-phone" type="text" size="14">
+
+        <label for="id-delivery">Delivery Method</label>
+        <select id="id-delivery">
+          <option>Eat in store</option>
+          <option>Pickup</option>
+          <option>Home delivery</option>
+        </select>
+
         
-<li>
-<a href="https://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets</a>
-</li>
+<fieldset>
+          
+<legend>Crust</legend>
+
+          <label>
+            <input id="id-crust1" name="crust" type="radio" value="Thin">
+            Thin
+          </label>
+
+          <label>
+            <input id="id-crust2" name="crust" type="radio" value="Classic">
+            Classic
+          </label>
+
+          <label>
+            <input name="crust" type="radio" value="Deep Dish">
+            Deep Dish
+          </label>
+
         
-<li>
-<a href="https://fae.disability.illinois.edu/rulesets/ruleset/ARIA_STRICT/#rc7">Rules for creating accessible forms</a>
-</li>
+</fieldset>
+
+        
+<fieldset>
+          
+<legend>Toppings</legend>
+
+          <label>
+            <input name="topping" type="checkbox" value="Sausage">
+            Sausage
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Pepperoni">
+            Pepperoni
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Mushrooms">
+            Mushrooms
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Onions">
+            Onions
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Green Peppers">
+            Green Peppers
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Black Olives">
+            Back Olives
+          </label>
+
+          <label>
+            <input name="topping" type="checkbox" value="Extra Cheese">
+            Extra cheese
+          </label>
+
+        
+</fieldset>
+
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
+
       
-</ul>
+</form>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script id="script" type="text/javascript">
+
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('fieldset input');
+
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+
+      </script><script type="text/javascript">
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </div>
 <div class="col"></div>
 </div>

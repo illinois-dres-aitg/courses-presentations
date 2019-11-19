@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 29: Popup Error Example 2: label[for] references error message</title>
+<title>Slide 29: Popup Error Example 1: no reference to error message</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -93,18 +93,18 @@
         margin-top: 0.5em;
       }
 
-      label.error,
+      span.error,
         span.noerror {
         display: inline;
       }
 
-      label.error {
+      span.error {
         color: red;
         border: thin solid red;
         padding: 0.25em;
       }
 
-      label.noerror {
+      span.noerror {
         color: transparent;
         border: thin solid transparent;
         padding: 0.25em;
@@ -142,12 +142,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 29 of 37</div>
+<div class="navbar-text pull-right">Slide 29 of 39</div>
 </div>
 </div>
 </nav>
@@ -155,15 +155,12 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Popup Error Example 2: label[for] references error message</h1>
+<h1 id="h1_title" class="title">Popup Error Example 1: no reference to error message</h1>
 <h2>Features</h2>
 <ul>
         
 <li>
 <code>label[for]</code> element is used to label form control.</li>
-        
-<li>
-<code>label[for]</code> element is used for error feedback.</li>
         
 <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         
@@ -189,7 +186,7 @@
             
 <label for="id-name">Name</label>
             <input id="id-name" required="true" aria-invalid="false" type="text" size="30" onblur="checkName()">
-            <label for="id-name" id="id-name-error" class="noerror"> </label>
+            <span id="id-name-error" class="noerror"> </span>
           
 </div>
 
@@ -198,7 +195,7 @@
             
 <label for="id-address">Address</label>
             <input id="id-address" required="true" aria-invalid="false" type="text" size="40" onblur="checkAddress()">
-            <label for="id-address" id="id-address-error" class="noerror"> </label>
+            <span id="id-address-error" class="noerror"> </span>
           
 </div>
 
@@ -207,7 +204,7 @@
             
 <label for="id-phone">Phone</label>
             <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" onblur="checkPhone()">
-            <label for="id-phone" id="id-phone-error" class="noerror"> </label>
+            <span id="id-phone-error" class="noerror"> </span>
           
 </div>
 
@@ -230,19 +227,19 @@
             
 <div class="button">
               
-<label><input id="id-thin" name="crust" type="radio" value="Thin" required="true"> Thin</label>
+<label><input id="id-thin" name="crust" type="radio" value="Thin" required=""> Thin</label>
             
 </div>
             
 <div class="button">
               
-<label><input id="id-classic" name="crust" type="radio" value="Classic" required="true"> Classic</label>
+<label><input id="id-classic" name="crust" type="radio" value="Classic"> Classic</label>
             
 </div>
             
 <div class="button">
               
-<label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"> Deep Dish</label>
+<label><input id="id-deep" name="crust" type="radio" value="Deep Dish"> Deep Dish</label>
             
 </div>
           

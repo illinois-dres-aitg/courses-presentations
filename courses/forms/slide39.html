@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 25: Form Control Labeling Technique Summary</title>
+<title>Slide 39: Popup Error: Best Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -31,21 +31,21 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide24.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide38.html">Previous
                       </a>
 </li>
-<li>
-<a id="ID_SLIDE_NEXT" href="slide26.html">
+<li class="disabled">
+<a id="ID_SLIDE_NEXT" href="#">
                         Next
                       </a>
 </li>
-<li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<li class="disabled">
+<a id="ID_SLIDE_LAST" href="#">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 25 of 39</div>
+<div class="navbar-text pull-right">Slide 39 of 39</div>
 </div>
 </div>
 </nav>
@@ -53,54 +53,16 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Form Control Labeling Technique Summary</h1>
-<h2>
-<code>label</code> elements</h2>
+<h1 id="h1_title" class="title">Popup Error: Best Practices</h1>
 <ul>
         
-<li>Labels are visible</li>
+<li>Use <code>required</code> attribute for required form controls.</li>
         
-<li>Should be first choice for backward compatibility support</li>
+<li>Use <code>aria-invalid="true"</code> when a field is invalid, otherwise remove the attribute for compatibility with Firefox.</li>
         
-<li>Increases selection area for moving focus or toggling the state of a form control</li>
-      
-</ul>
-<h2>
-<code>title</code> attribute</h2>
-<ul>
+<li>Make the error message part of the accessible description, but accessible name also good.</li>
         
-<li>Labels are hidden, except many browsers generate a popup tooltip when user hovers pointer over form control</li>
-        
-<li>Backward compatibility support</li>
-      
-</ul>
-<h2>ARIA 1.0 <code>aria-labelledby</code> attribute</h2>
-<ul>
-        
-<li>Complex form labeling, where label text is visible on the page</li>
-        
-<li>Require creating <code>id</code>s and <code>idrefs</code>
-</li>
-        
-<li>Can be used to retrofit form controls without labels, without affecting visual rendering</li>
-      
-</ul>
-<h2>ARIA 1.0 <code>aria-label</code> attribute</h2>
-<ul>
-        
-<li>Labeling text is not visible</li>
-        
-<li>Can be used to retrofit form controls without labels, without affecting visual rendering</li>
-      
-</ul>
-<h2>HTML5 <code>placeholder</code> attribute</h2>
-<ul>
-        
-<li>Avoid use for form control labeling</li>
-        
-<li>Used for both labeling and example input, so it is in a gray area of accessibility right now</li>
-        
-<li>Compatibility issues</li>
+<li>Use <code>role="status"</code> on the popup error messages, so they will be announced to the user <strong>without</strong> interruptiong other speech.</li>
       
 </ul>
 </div>

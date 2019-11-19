@@ -2,21 +2,63 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 21: Pizza Service Survey: no labels</title>
+<title>Slide 21: Billing/Shipping Form: No group identification</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-
-      table.survey th.rating,
-      table.survey td.rating {
-        text-align: center;
+      label {
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-size: 100%;
+      font-weight: normal;
+      color: black;
       }
 
-      table.survey tbody th {
-        font-weight: normal;
+
+      select {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1.25em;
+      background-color: #FFFEFF;
+      font-size: 1em;
+      }
+
+
+      div.group div.title {
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-weight: bold;
+      font-size: 120%;
+      border-bottom: solid thin gray;
+      }
+
+
+      input[type=submit] {
+      margin-top: 2em;
+      }
+
+      input[type=submit]:focus {
+      outline: 2px solid black;
+      }
+
+      input[type="text"]:hover {
+      background-color: #ADDFFF;
+      }
+
+      input[type="text"]:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
+      }
+
+      select:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
 
     </style>
@@ -51,12 +93,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 21 of 37</div>
+<div class="navbar-text pull-right">Slide 21 of 39</div>
 </div>
 </div>
 </nav>
@@ -64,78 +106,164 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Service Survey: no labels</h1>
-<h2>Problems</h2>
+<h1 id="h1_title" class="title">Billing/Shipping Form: No group identification</h1>
+<h2>Accessibility Issues</h2>
 <ul>
         
-<li>Radio buttons do not have any natural unique text on the page to use as a label.</li>
-        
-<li>No keyboard focus styling.</li>
+<li>No labeling information to uniquely differentiate the billing and shipping name, address, state and zip code controls.</li>
       
 </ul>
 <form id="form">
         
-<h2>Pizza Survey</h2>
+<h2>Order Form</h2>
 
         
-<table class="survey table table-striped">
+<div class="group">
           
-<thead>
-            
-<tr>
-              
-<th class="question">Question</th>
-              <th class="rating">Very Dissatisfied</th>
-              <th class="rating">Dissatisfied</th>
-              <th class="rating">Neutral</th>
-              <th class="rating">Satisfied</th>
-              <th class="rating">Very Satisfied</th>
-            
-</tr>
+<div class="title">Billing Information</div>
+
           
-</thead>
-          
-<tbody>
-            
-<tr>
-              
-<th class="question">Quality of your ordering experience?</th>
-              <td class="rating"><input name="q1" type="radio" value="1"></td>
-              <td class="rating"><input name="q1" type="radio" value="2"></td>
-              <td class="rating"><input name="q1" type="radio" value="3"></td>
-              <td class="rating"><input name="q1" type="radio" value="4"></td>
-              <td class="rating"><input name="q1" type="radio" value="5"></td>
-            
-</tr>
-            
-<tr>
-              
-<th class="question">Quality of Pizza?</th>
-              <td class="rating"><input name="q2" type="radio" value="1"></td>
-              <td class="rating"><input name="q2" type="radio" value="2"></td>
-              <td class="rating"><input name="q2" type="radio" value="3"></td>
-              <td class="rating"><input name="q2" type="radio" value="4"></td>
-              <td class="rating"><input name="q2" type="radio" value="5"></td>
-            
-</tr>
-            
-<tr>
-              
-<th class="question">Quality of your Pizza delivery?</th>
-              <td class="rating"><input name="q3" type="radio" value="1"></td>
-              <td class="rating"><input name="q3" type="radio" value="2"></td>
-              <td class="rating"><input name="q3" type="radio" value="3"></td>
-              <td class="rating"><input name="q3" type="radio" value="4"></td>
-              <td class="rating"><input name="q3" type="radio" value="5"></td>
-            
-</tr>
-          
-</tbody>
-        
-</table>
+<label for="billing-name">Name</label>
+          <input id="billing-name" type="text" size="30">
+
+          <label for="billing-address">Address</label>
+          <input id="billing-address" type="text" size="40">
+
+          <label for="billing-state">State</label>
+          <select id="billing-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+
+          <label for="billing-zip">Zip Code</label>
+          <input id="billing-zip" type="text" size="12">
 
         
-<input type="submit" value="Submit Survey">
+</div>
+
+        
+<div class="group">
+          
+<div class="title">Shipping Information</div>
+          
+<label for="shipping-name">Name</label>
+          <input id="shipping-name" type="text" size="30">
+
+          <label for="shipping-address">Address</label>
+          <input id="shipping-address" type="text" size="40">
+
+          <label for="shipping-state">State</label>
+          <select id="shipping-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+
+          <label for="shipping-zip">Zip Code</label>
+          <input id="shipping-zip" type="text" size="12">
+
+        
+</div>
+
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>

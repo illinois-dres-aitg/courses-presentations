@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 33: Popup Error Example 4: title attribute used for error message</title>
+<title>Slide 33: Popup Error Example 3: aria-describedby reference to error message</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -130,12 +130,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 33 of 37</div>
+<div class="navbar-text pull-right">Slide 33 of 39</div>
 </div>
 </div>
 </nav>
@@ -143,7 +143,7 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Popup Error Example 4: title attribute used for error message</h1>
+<h1 id="h1_title" class="title">Popup Error Example 3: aria-describedby reference to error message</h1>
 <h2>Features</h2>
 <ul>
         
@@ -156,10 +156,10 @@
 <code>aria-invalid="true"</code> attribute is used to identify a form control has an invalid value, otherwise the attribute is removed for compatibility with Firefox.</li>
         
 <li>
-<code>role="status"</code> attribute is used to autmatically announce errors in form controls.</li>
+<code>role="status"</code> is used to autmatically announce errors in form controls.</li>
         
 <li>
-<code>title</code> attribute is used to provide an accessible description of the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
+<code>aria-describedby</code> is used to provide a programmatic reference to the error message, so assistive technologies could render information about the error (e.g. Braille).</li>
       
 </ul>
 <div role="region" aria-label="Example">
@@ -179,7 +179,7 @@
 <div class="text">
             
 <label for="id-name">Name</label>
-            <input id="id-name" required="true" type="text" size="30" title="" onblur="checkName()">
+            <input id="id-name" required="true" type="text" size="30" aria-describedby="id-name-error" onblur="checkName()">
             <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
           
 </div>
@@ -188,7 +188,7 @@
 <div class="text">
             
 <label for="id-address">Address</label>
-            <input id="id-address" required="true" type="text" size="40" title="" onblur="checkAddress()">
+            <input id="id-address" required="true" type="text" size="40" aria-describedby="id-address-error" onblur="checkAddress()">
             <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
           
 </div>
@@ -197,7 +197,7 @@
 <div class="text">
             
 <label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" type="text" size="14" title="" onblur="checkPhone()">
+            <input id="id-phone" required="true" type="text" size="14" aria-describedby="id-phone-error" onblur="checkPhone()">
             <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
           
 </div>
@@ -227,13 +227,13 @@
             
 <div class="button">
               
-<label><input id="id-classic" name="crust" type="radio" value="Classic"> Classic</label>
+<label><input id="id-classic" name="crust" type="radio" value="Classic" required="true"> Classic</label>
             
 </div>
             
 <div class="button">
               
-<label><input id="id-deep" name="crust" type="radio" value="Deep Dish"> Deep Dish</label>
+<label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"> Deep Dish</label>
             
 </div>
           
@@ -406,14 +406,12 @@
 
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
-        $(ei).attr('title', message);
         $(em).append(message);
         $(em).removeClass('noerror');
         $(em).addClass('error');
         }
         else {
         $(ei).removeAttr('aria-invalid');
-        $(ei).attr('title', '');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }

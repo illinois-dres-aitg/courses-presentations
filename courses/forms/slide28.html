@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 28: Popup Error Example 1: Assistive Technology Support</title>
+<title>Slide 28: Popup Error Message Example Summary</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 28 of 37</div>
+<div class="navbar-text pull-right">Slide 28 of 39</div>
 </div>
 </div>
 </nav>
@@ -53,20 +53,17 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Popup Error Example 1: Assistive Technology Support</h1>
-<table class="survey table table-striped" aria-labelledby="h1_title">
+<h1 id="h1_title" class="title">Popup Error Message Example Summary</h1>
+<h2 id="ID_COMMON">Common Features of All Examples</h2>
+<table class="survey table table-striped" aria-labelledby="ID_COMMON">
         
 <thead>
           
 <tr>
             
-<th>Support</th>
-            <th>Screen Reader</th>
-            <th>Browser</th>
-            <th>Required</th>
-            <th>Invalid</th>
-            <th>Live <br>Region</th>
-            <th>Error <br>Reference</th>
+<th>Feature</th>
+            <th>Markup</th>
+            <th>Description</th>
           
 </tr>
         
@@ -76,129 +73,180 @@
           
 <tr>
             
-<td class="no">no</td>
+<td>Required control</td>
+            <td><code>required</code> attribute</td>
             <td>
-              JAWS 2018
-            </td>
-            <td>
-              EDGE 42
-            </td>
-            <td class="no">no</td>
-            <td class="no">no</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
+              
+<ul>
+                
+<li>Use the HTML5 <code>required</code> attribute communicate to assistive technology that the form field is required.</li>
+                
+<li>The HTML5 <code>required</code> attribute is used over other techniques, since it provides the information using the native semantics of HTML5.</li>
+              
+</ul>
+            
+</td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<td>Invalid value</td>
+            <td><code>aria-invalid</code> attribute</td>
             <td>
-              JAWS 2018
+              The <code>aria-invalid</code> attribute provides a means to communicate to assistive technology that the form field has an invalid value.
             </td>
-            <td>
-              Chrome 66.0
-            </td>
-            <td class="yes">Yes</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<td>Invalid value awareness</td>
+            <td><code>role="status"</code> attribute</td>
             <td>
-              JAWS 2018
+              
+<ul>
+                
+<li>
+                  The <code>role="status"</code> attribute on the element containing the error message creates a live region that will automatically speak when content changes.
+                </li>
+                
+<li>
+                  The <code>status</code> value is used since it will not interrupt other speech, for example if the value <code>alert</code> was used it would immediately stop any other speech and announce the change, which in this case would be disorienting to the user.
+                </li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h2 id="ID_ERROR_MSG">Referencing the Error Message</h2>
+<table class="survey table table-striped" aria-labelledby="ID_ERROR_MSG">
+        
+<thead>
+          
+<tr>
+            
+<th>Example</th>
+            <th>Accessible<br>Name</th>
+            <th>Accessible<br>Description</th>
+            <th>Notes</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<th>1</th>
+            <td>
+              <code>label[for]</code> element used to reference the controls label.
             </td>
             <td>
-              Firefox 52.8
+              <em>none</em>
             </td>
-            <td class="partial">Partial</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
+            <td>
+              No information provided on the error message when focus is moved to the invalide form control.
+            </td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<th>2</th>
             <td>
-              NVDA 2018.1.1
+              
+<ul>
+                
+<li>
+<code>label[for]</code> element used to reference the controls label.</li>
+                
+<li>If there is an error on a form control, the <code>label[for]</code> attribute is added to the error message to also point to the control.</li>
+              
+</ul>
+            
+</td>
+            <td>
+              <em>none</em>
+            </td>
+             <td>
+              Error information is provided through the accessible name property.
+            </td>
+         
+</tr>
+          
+<tr>
+            
+<th>3</th>
+            <td>
+              <code>label[for]</code> element used to reference the controls label.
             </td>
             <td>
-              Edge 42
+              <code>aria-describedby</code> attribute used to reference the error message.
             </td>
-            <td class="yes">Yes</td>
-            <td class="yes">no</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
+            <td>
+              Error information is provided through the accessible description property.
+            </td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<th>4</th>
             <td>
-              NVDA 2018.1.1
+              <code>label[for]</code> element used to reference the controls label.
             </td>
             <td>
-              Chrome 66.0
+              <code>title</code> attribute contains the error message content visible in the graphical rendering.
             </td>
-            <td class="yes">Yes</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
+            <td>
+              Error information is provided through the accessible description property.
+            </td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<th>5</th>
             <td>
-              NVDA 2018.1.1
+              <code>aria-labelledby</code> attribute is used to reference both label and the error message.
             </td>
             <td>
-              Firefox 61.0
+              <em>none</em>
             </td>
-            <td class="yes">Yes</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
+            <td>
+              Error information is provided through the accessible name property.
+            </td>
           
 </tr>
           
 <tr>
             
-<td class="partial">Partial</td>
+<th>6</th>
             <td>
-              Voice Over High Sierra
-            </td>
-            <td>
-              Safari 11.1
-            </td>
-            <td class="yes">Yes</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
-          
-</tr>
-          
-<tr>
+              
+<ul>
+                
+<li>
+<code>label[for]</code> element used to reference the controls label.</li>
+                
+<li>If there is an error on a form control, the <code>aria-label</code> attribute is added and includes both the label and the error message.</li>
+              
+</ul>
             
-<td class="partial">Partial</td>
+</td>
             <td>
-              Voice Over High Sierra
+              <em>none</em>
             </td>
             <td>
-              Chrome 66.0
+              Error information is provided through the accessible name property.
             </td>
-            <td class="yes">Yes</td>
-            <td class="yes">Yes</td>
-            <td class="na">n/a</td>
-            <td class="no">no</td>
           
 </tr>
         

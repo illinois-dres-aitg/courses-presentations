@@ -2,27 +2,62 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 22: Pizza Service Survey: aria-labelledby</title>
+<title>Slide 22: Billing/Shipping Form: Fieldset/Legend</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-
-      table.survey th.rating,
-      table.survey td.rating {
-      text-align: center;
-      }
-
-      table.survey tbody th {
+      label {
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-size: 100%;
       font-weight: normal;
+      color: black;
       }
 
-      table.survey input:focus,
-      table.survey input:hover {
-        outline: 2px solid #444444;
-        outline-offset: 0.25em;
+
+      select {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1.25em;
+      background-color: #FFFEFF;
+      font-size: 1em;
+      }
+
+
+      fieldset legend {
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+      font-weight: bold;
+      font-size: 120%;
+      }
+
+
+      input[type=submit] {
+      margin-top: 2em;
+      }
+
+      input[type=submit]:focus {
+      outline: 2px solid black;
+      }
+
+      input[type="text"]:hover {
+      background-color: #ADDFFF;
+      }
+
+      input[type="text"]:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
+      }
+
+      select:focus {
+      outline: 2px solid black;
+      background-color: #EEEEEE;
       }
 
     </style>
@@ -57,12 +92,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 22 of 37</div>
+<div class="navbar-text pull-right">Slide 22 of 39</div>
 </div>
 </div>
 </nav>
@@ -70,102 +105,165 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Service Survey: aria-labelledby</h1>
+<h1 id="h1_title" class="title">Billing/Shipping Form: Fieldset/Legend</h1>
 <h2>Features</h2>
 <ul>
         
-<li>Uses <code>aria-labelledby</code> to label radio buttons with existing visible content on the page.</li>
-        
-<li>Keyboard focus and hover styling use CSS <code>:focus</code> and <code>:hover</code> pseudo selectors with the <code>outline</code> property.</li>
+<li>
+<code>fieldset/legend</code> is used to provide unique labels to the billing and shipping address information.</li>
       
 </ul>
 <form id="form">
         
-<h2>Pizza Survey</h2>
+<h2>Order Form</h2>
 
         
-<table class="survey table table-striped">
+<fieldset>
           
-<thead>
-            
-<tr>
-              
-<th class="question">Question</th>
-              <th id="r1" class="rating">Very Dissatisfied</th>
-              <th id="r2" class="rating">Dissatisfied</th>
-              <th id="r3" class="rating">Neutral</th>
-              <th id="r4" class="rating">Satisfied</th>
-              <th id="r5" class="rating">Very Satisfied</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-            
-<tr>
-              
-<th id="q1" class="question">Quality of your ordering experience?</th>
-              <td class="rating"><input name="q1" type="radio" value="1" aria-labelledby="r1 q1"></td>
-              <td class="rating"><input name="q1" type="radio" value="2" aria-labelledby="r2 q1"></td>
-              <td class="rating"><input name="q1" type="radio" value="3" aria-labelledby="r3 q1"></td>
-              <td class="rating"><input name="q1" type="radio" value="4" aria-labelledby="r4 q1"></td>
-              <td class="rating"><input name="q1" type="radio" value="5" aria-labelledby="r5 q1"></td>
-            
-</tr>
-            
-<tr>
-              
-<th id="q2" class="question">Quality of Pizza?</th>
-              <td class="rating"><input name="q2" type="radio" value="1" aria-labelledby="r1 q2"></td>
-              <td class="rating"><input name="q2" type="radio" value="2" aria-labelledby="r2 q2"></td>
-              <td class="rating"><input name="q2" type="radio" value="3" aria-labelledby="r3 q2"></td>
-              <td class="rating"><input name="q2" type="radio" value="4" aria-labelledby="r4 q2"></td>
-              <td class="rating"><input name="q2" type="radio" value="5" aria-labelledby="r5 q2"></td>
-            
-</tr>
-            
-<tr>
-              
-<th id="q3" class="question">Quality of your Pizza delivery?</th>
-              <td class="rating"><input name="q3" type="radio" value="1" aria-labelledby="r1 q3"></td>
-              <td class="rating"><input name="q3" type="radio" value="2" aria-labelledby="r2 q3"></td>
-              <td class="rating"><input name="q3" type="radio" value="3" aria-labelledby="r3 q3"></td>
-              <td class="rating"><input name="q3" type="radio" value="4" aria-labelledby="r4 q3"></td>
-              <td class="rating"><input name="q3" type="radio" value="5" aria-labelledby="r6 q3"></td>
-            
-</tr>
-          
-</tbody>
-        
-</table>
+<legend>Billing Information</legend>
+          <label for="billing-name">Name</label>
+          <input id="billing-name" type="text" size="30">
+
+          <label for="billing-address">Address</label>
+          <input id="billing-address" type="text" size="40">
+
+          <label for="billing-state">State</label>
+          <select id="billing-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+
+          <label for="billing-zip">Zip Code</label>
+          <input id="billing-zip" type="text" size="12">
 
         
-<input type="submit" value="Submit Survey">
+</fieldset>
+
+        
+<fieldset>
+          
+<legend>Shipping Information</legend>
+          <label for="shipping-name">Name</label>
+          <input id="shipping-name" type="text" size="30">
+
+          <label for="shipping-address">Address</label>
+          <input id="shipping-address" type="text" size="40">
+
+          <label for="shipping-state">State</label>
+          <select id="shipping-state">
+            <option>Choose your state</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona </option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York </option>
+            <option>North Carolina</option>
+            <option>North Dakota </option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>s
+          </select>
+
+          <label for="shipping-zip">Zip Code</label>
+          <input id="shipping-zip" type="text" size="12">
+
+        
+</fieldset>
+
+        
+<input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>
-<script id="script" type="text/javascript">
-
-        function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus");
-        }
-
-        function itemBlur(event) {
-          if( event.target ) event.target.parentNode.classList.remove("focus");
-        }
-
-        window.addEventListener('load', function load(event) {
-          var itemList = document.querySelectorAll('td input');
-
-          for(var i = 0; i < itemList.length; i++) {
-            var item = itemList[i];
-            item.addEventListener('focus', itemFocus, true);
-            item.addEventListener('blur', itemBlur, true);
-          }
-        }, false);
-
-      </script>
 <h2>HTML Source Code</h2>
 <pre>
 <code id="sc1"></code>
@@ -174,14 +272,9 @@
 <pre>
 <code id="sc2"></code>
 </pre>
-<h2>Javascript Source Code</h2>
-<pre>
-<code id="sc3"></code>
-</pre>
 <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
-        sourceCode.add('sc3', 'script');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

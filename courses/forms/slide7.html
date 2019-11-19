@@ -2,49 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Pizza Order Form: No Labels</title>
+<title>Slide 7: NVDA Form Control Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
-      div.label {
-        margin: 0;
-        padding: 0;
-        margin-top: 1.125em;
-        margin-bottom: 0.125em;
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
-        display: block;
-        text-align: left;
-      }
-
-      div.group {
-        margin: 0;
-        padding: 0;
-        margin-top: 1.25em;
-      }
-
-      div.group div.title {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-      }
-
-      div.group div.label {
-        margin: 0;
-        padding: 0;
-        margin-top: 0.25em;
-        margin-bottom: 0.25em;
-        font-weight: normal;
-      }
-
-      input[type="submit"] {
-        margin-top: 2em;
-      }
-    </style>
+<style id="style" type="text/css"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -76,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide37.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 37</div>
+<div class="navbar-text pull-right">Slide 7 of 39</div>
 </div>
 </div>
 </nav>
@@ -89,135 +53,133 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: No Labels</h1>
-<h2>Problems</h2>
+<h1 id="h1_title" class="title">NVDA Form Control Support</h1>
+<table class="table table-striped table-hover" aria-labelledby="h1_title">
+        
+<thead>
+          
+<tr>
+            
+<th>Keyboard Command</th>
+            <th>Description</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>Space</kbd></td>
+            <td>
+              
+<ul>
+                
+<li>Toggle between focus mode and browse mode.</li>
+                
+<li>Must be in browse mode for the following commands to work.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
+            <td>List of links</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Tab</kbd></td>
+            <td>Next interactive element, including links.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
+            <td>Previous interactive element, including links.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>K</kbd></td>
+            <td>Next link</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>K</kbd></td>
+            <td>Previous link</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>U</kbd></td>
+            <td>Next unvisited link</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>U</kbd></td>
+            <td>Previous unvisited link</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>V</kbd></td>
+            <td>Next visited link</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Shift</kbd>+<kbd>V</kbd></td>
+            <td>Previous visited link</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h2>Feature Overview</h2>
 <ul>
         
-<li>Form controls do not have labels.</li>
+<li>In browse mode you can move sequentially links on the page or view a list of links.</li>
         
-<li>No keyboard focus styling.</li>
+<li>When navigating the content of a web page NVDA announces heading information is announced.</li>
       
 </ul>
-<form id="form">
-          
-<h2>Pizza Form</h2>
-          
-<div class="label">Name</div>
-          
-<input id="id-name" type="text" size="30">
-
-          
-<div class="label">Address</div>
-          
-<input id="id-address" type="text" size="40">
-
-          
-<div class="label">Phone</div>
-          
-<input id="id-phone" type="text" size="14">
-
-          
-<div class="label">Delivery Method</div>
-          
-<select id="id-delivery">
-            <option>Eat in store</option>
-            <option>Pickup</option>
-            <option>Home delivery</option>
-          </select>
-
-          
-<div class="group">
-            
-<div class="title">Crust</div>
-            
-<div class="label">
-              
-<input id="id-crust" name="crust" type="radio" value="Thin">
-              Thin
-            </div>
-            
-<div class="label">
-              
-<input name="crust" type="radio" value="Classic">
-              Classic
-            </div>
-            
-<div class="label">
-              
-<input name="crust" type="radio" value="Deep Dish">
-              Deep Dish
-            </div>
-          
-</div>
-
-          
-<div class="group">
-            
-<div class="title">Toppings</div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Sausage">
-                Sausage
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Pepperoni">
-                Pepperoni
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Mushrooms">
-              Mushrooms
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Onions">
-              Onions
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Green Peppers">
-              Green Peppers
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Black Olives">
-              Back Olives
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Extra Cheese">
-              Extra cheese
-            </div>
-          
-</div>
-
-          
-<input type="submit" value="Submit Order" onclick="submitOrder(event)">
-
+<h2>Other NVDA Command Resources</h2>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a>
+</li>
+        
+<li>
+<a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a>
+</li>
+        
+<li>
+<a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a>
+</li>
+        
+<li>
+<a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts" target="_specification">Deque University: NVDA Commands</a>
+</li>
       
-</form>
-<h2>HTML Source Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Source Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<script type="text/javascript">
-        sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+</ul>
 </div>
 <div class="col"></div>
 </div>
