@@ -169,7 +169,7 @@
         <li><a href="http://accessibility.psu.edu/jawscommands" target="_specification">Penn State: JAWS commands for web</a></li>
         <li><a href="http://webaim.org/resources/shortcuts/jaws" target="_specification">WebAIM: JAWS commands for web</a></li>
         <li><a href="http://www.freedomscientific.com/Training/Surfs-up/Quick_Keys.htm" target="_specification">Freedom Scientific: JAWS commands for web</a></li>
-        <li><a href="https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts">Deque University: JAWS commands</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts" target="_specification">Deque University: JAWS commands</a></li>
       </ul>
 
     </contents>
@@ -226,7 +226,7 @@
         <li><a href="http://accessibility.psu.edu/nvda" target="_specification">Penn State: NVDA Keyboard Commands</a></li>
         <li><a href="http://webaim.org/resources/shortcuts/nvda" target="_specification">Webaim: NVDA Keyboard Commands</a></li>
         <li><a href="http://community.nvda-project.org/documentation/userGuide.html#toc40" target="_specification">NVDA: Web Browse Keyboard Commands</a></li>
-        <li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">Deque University: NVDA Commands</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts" target="_specification">Deque University: NVDA Commands</a></li>
       </ul>
 
     </contents>
@@ -282,7 +282,7 @@
       <ul>
         <li><a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a></li>
         <li><a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a></li>
-        <li><a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#vo-mac-basics">Deque University: Voice Over Commands</a></li>
+        <li><a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#vo-mac-basics" target="_specification">Deque University: Voice Over Commands</a></li>
       </ul>
 
     </contents>
