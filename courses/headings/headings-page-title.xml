@@ -154,6 +154,10 @@
             <td><kbd>1-6</kbd></td>
             <td>Next heading at the corresponding level</td>
           </tr>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>T</kbd></td>
+            <td>Read page title</td>
+          </tr>
         </tbody>
       </table>
 
@@ -176,7 +180,7 @@
   </slide>
 
   <slide>
-    <title>NVDA Heading Support</title>
+    <title>NVDA Heading and Title Support</title>
     <contents>
 
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
@@ -211,6 +215,10 @@
           <tr>
             <td><kbd>1-6</kbd></td>
             <td>Next heading at the corresponding level</td>
+          </tr>
+          <tr>
+            <td><kbd>Insert</kbd>+<kbd>T</kbd></td>
+            <td>Read page title</td>
           </tr>
         </tbody>
       </table>
@@ -268,6 +276,11 @@
             <td><kbd>VO</kbd>+<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>H</kbd></td>
             <td>Previous heading</td>
           </tr>
+          <tr>
+            <td><kbd>VO</kbd>+<kbd>F2</kbd></td>
+            <td>Read page title</td>
+          </tr>
+
         </tbody>
       </table>
 
