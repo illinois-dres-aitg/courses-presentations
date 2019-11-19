@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 22: Billing/Shipping Form: Fieldset/Legend</title>
+<title>Slide 22: Billing/Shipping Form: No group identification</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -29,12 +29,13 @@
       }
 
 
-      fieldset legend {
+      div.group div.title {
       margin: 0;
       padding: 0;
       padding-top: 1em;
       font-weight: bold;
       font-size: 120%;
+      border-bottom: solid thin gray;
       }
 
 
@@ -92,12 +93,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 22 of 39</div>
+<div class="navbar-text pull-right">Slide 22 of 40</div>
 </div>
 </div>
 </nav>
@@ -105,12 +106,11 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Billing/Shipping Form: Fieldset/Legend</h1>
-<h2>Features</h2>
+<h1 id="h1_title" class="title">Billing/Shipping Form: No group identification</h1>
+<h2>Accessibility Issues</h2>
 <ul>
         
-<li>
-<code>fieldset/legend</code> is used to provide unique labels to the billing and shipping address information.</li>
+<li>No labeling information to uniquely differentiate the billing and shipping name, address, state and zip code controls.</li>
       
 </ul>
 <form id="form">
@@ -118,10 +118,12 @@
 <h2>Order Form</h2>
 
         
-<fieldset>
+<div class="group">
           
-<legend>Billing Information</legend>
-          <label for="billing-name">Name</label>
+<div class="title">Billing Information</div>
+
+          
+<label for="billing-name">Name</label>
           <input id="billing-name" type="text" size="30">
 
           <label for="billing-address">Address</label>
@@ -186,13 +188,14 @@
           <input id="billing-zip" type="text" size="12">
 
         
-</fieldset>
+</div>
 
         
-<fieldset>
+<div class="group">
           
-<legend>Shipping Information</legend>
-          <label for="shipping-name">Name</label>
+<div class="title">Shipping Information</div>
+          
+<label for="shipping-name">Name</label>
           <input id="shipping-name" type="text" size="30">
 
           <label for="shipping-address">Address</label>
@@ -257,7 +260,7 @@
           <input id="shipping-zip" type="text" size="12">
 
         
-</fieldset>
+</div>
 
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">

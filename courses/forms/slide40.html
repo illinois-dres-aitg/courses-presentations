@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 3: ARIA and HTML5 form controls</title>
+<title>Slide 40: Popup Error: Best Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -31,21 +31,21 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide2.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide39.html">Previous
                       </a>
 </li>
-<li>
-<a id="ID_SLIDE_NEXT" href="slide4.html">
+<li class="disabled">
+<a id="ID_SLIDE_NEXT" href="#">
                         Next
                       </a>
 </li>
-<li>
-<a id="ID_SLIDE_LAST" href="slide40.html">
+<li class="disabled">
+<a id="ID_SLIDE_LAST" href="#">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 3 of 40</div>
+<div class="navbar-text pull-right">Slide 40 of 40</div>
 </div>
 </div>
 </nav>
@@ -53,57 +53,16 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA and HTML5 form controls</h1>
-<h2>Labeling form controls</h2>
+<h1 id="h1_title" class="title">Popup Error: Best Practices</h1>
 <ul>
         
-<li>
-<code>label</code> element (HTML4/HTML5)</li>
+<li>Use <code>required</code> attribute for required form controls.</li>
         
-<li>
-<code>title</code> attribute (HTML4/HMTL5)</li>
+<li>Use <code>aria-invalid="true"</code> when a field is invalid, otherwise remove the attribute for compatibility with Firefox.</li>
         
-<li>
-<code>fieldset/legend</code> elements (HTML4/HTML5)</li>
+<li>Make the error message part of the accessible description, but accessible name also good.</li>
         
-<li>
-<code>aria-labelledby</code> attribute (ARIA 1.0)</li>
-        
-<li>
-<code>aria-label</code> attribute (ARIA 1.0)</li>
-      
-</ul>
-<h2>Instructions</h2>
-<ul>
-        
-<li>
-<code>tabindex="0"</code> attribute to add instructions to tab order (convention)</li>
-        
-<li>
-<code>title</code> attribute (HTML5)</li>
-        
-<li>
-<code>aria-describedby</code> attribute (ARIA 1.0)</li>
-      
-</ul>
-<h2>Identifying Required and Invalid Form Controls</h2>
-<ul>
-        
-<li>Image with ALT Text</li>
-        
-<li>Text content (hidden or visible)</li>
-        
-<li>
-<code>aria-required</code> attribute (ARIA 1.0)</li>
-        
-<li>
-<code>aria-invalid</code> attribute (ARIA 1.0)</li>
-        
-<li>
-<code>required</code> attribute (HTML 5)</li>
-        
-<li>
-<code>alert</code> role for announcing errors</li>
+<li>Use <code>role="status"</code> on the popup error messages, so they will be announced to the user <strong>without</strong> interruptiong other speech.</li>
       
 </ul>
 </div>

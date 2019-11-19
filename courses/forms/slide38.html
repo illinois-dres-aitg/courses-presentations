@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 38: Popup Error Example 6: aria-label attribute used for error message</title>
+<title>Slide 38: Popup Error Example 5: aria-labelledby attribute used for error message</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -55,45 +55,28 @@
       margin-top: 1em;
       }
 
-      label {
-      display: block;
-      margin: 0;
-      padding: 0;
-      font-weight: normal;
-      }
-
-      fieldset,
-      legend {
-      padding: 0;
-      margin: 0;
-      margin-top: 1em;
-      }
-
-      legend {
-      margin-top: 1em;
-      font-weight: bold;
-      font-size: 110%;
-      }
-
       div.text,
       div.select,
+      div.group,
       input[type="submit"] {
       margin-top: 0.5em;
       }
 
-
-      label.error,
-      lanel.noerror {
-      display: inline;
+      div.group {
+      width: 20em;
       }
 
-      label.error {
+      div.group div.title {
+      font-weight: bold;
+      }
+
+      span.error {
       color: red;
       border: thin solid red;
       padding: 0.25em;
       }
 
-      label.noerror {
+      span.noerror {
       color: transparent;
       border: thin solid transparent;
       padding: 0.25em;
@@ -131,12 +114,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 38 of 39</div>
+<div class="navbar-text pull-right">Slide 38 of 40</div>
 </div>
 </div>
 </nav>
@@ -144,15 +127,12 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Popup Error Example 6: aria-label attribute used for error message</h1>
+<h1 id="h1_title" class="title">Popup Error Example 5: aria-labelledby attribute used for error message</h1>
 <h2>Features</h2>
 <ul>
         
 <li>
-<code>label[for]</code> elements provide initial labels for form contorls.</li>
-        
-<li>
-<code>aria-label</code> attribute changes the label for a form control when it has an error.</li>
+<code>aria-labelledby</code> attribute is used to label form control and includes element with error message.</li>
         
 <li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
         
@@ -166,6 +146,12 @@
 <div role="region" aria-label="Example">
 
         
+<div id="id-errors" role="region" aria-label="Error information">
+
+        
+</div>
+
+        
 <form id="form">
           
 <h2>Pizza Order Form</h2>
@@ -173,35 +159,39 @@
           
 <div class="text">
             
-<label for="id-name">Name</label>
-            <input id="id-name" required="true" type="text" size="30" onblur="checkName()">
-            <label id="id-name-error" for="id-name" class="noerror" role="status"> </label>
+<div id="id-name-label">Name</div>
+            
+<input id="id-name" required="true" type="text" size="30" aria-labelledby="id-name-label id-name-error" onblur="checkName()">
+            <span id="id-name-error" class="noerror" role="status"> </span>
           
 </div>
 
           
 <div class="text">
             
-<label for="id-address">Address</label>
-            <input id="id-address" required="true" type="text" size="40" onblur="checkAddress()">
-            <label id="id-address-error" for="id-address" class="noerror" role="status"> </label>
+<div id="id-address-label">Address</div>
+            
+<input id="id-address" required="true" type="text" size="40" aria-labelledby="id-address-label id-address-error" onblur="checkAddress()">
+            <span id="id-address-error" class="noerror" role="status"> </span>
           
 </div>
 
           
 <div class="text">
             
-<label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" type="text" size="14" onblur="checkPhone()">
-            <label id="id-phone-error" for="id-phone" class="noerror" role="status"> </label>
+<div id="id-phone-label">Phone</div>
+            
+<input id="id-phone" required="true" type="text" size="14" aria-labelledby="id-phone-label id-phone-error" onblur="checkPhone()">
+            <span id="id-phone-error" class="noerror" role="status"> </span>
           
 </div>
 
           
 <div class="select">
             
-<label for="id-delivery">Delivery Method</label>
-            <select id="id-delivery">
+<div id="id-delivery-label">Delivery Method</div>
+            
+<select id="id-delivery" aria-labelledby="id-delivery-label">
               <option>Eat in store</option>
               <option>Pickup</option>
               <option>Home delivery</option>
@@ -210,108 +200,75 @@
 </div>
 
           
-<fieldset>
+<div class="group">
             
-<legend>Crust</legend>
-            
-<div class="button">
-              
-<label>
-                <input id="id-thin" name="crust" type="radio" value="Thin" required="true">
-                Thin
-              </label>
-            
-</div>
+<div id="id-crust" class="title">Crust</div>
             
 <div class="button">
               
-<label>
-                <input id="id-classic" name="crust" type="radio" value="Classic" required="true">
-                Classic
-              </label>
-            
-</div>
+<input id="id-thin" name="crust" type="radio" value="Thin" aria-required="true" aria-labelledby="id-thin id-crust"> Thin
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true">
-                Deep Dish
-              </label>
+<input id="id-classic" name="crust" type="radio" value="Classic" aria-required="true" aria-labelledby="id-thin id-crust"> Classic
+            </div>
             
-</div>
+<div class="button">
+              
+<input id="id-deep" name="crust" type="radio" value="Deep Dish" aria-required="true" aria-labelledby="id-thin id-crust"> Deep Dish
+            </div>
           
-</fieldset>
+</div>
 
           
-<fieldset>
+<div class="group">
             
-<legend>Toppings</legend>
+<div id="id-toppings" class="title">Toppings</div>
             
 <div class="button">
               
-<label>
-                <input id="id-sausage" name="topping" type="checkbox" value="Sausage">
+<input id="id-sausage" name="topping" type="checkbox" value="Sausage" aria-labelledby="id-sausage id-toppings" aria-describedby="id-special">
                 Sausage
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-pepperoni" name="topping" type="checkbox" value="Pepperoni">
+<input id="id-pepperoni" name="topping" type="checkbox" value="Pepperoni" aria-labelledby="id-pepperoni id-toppings">
                 Pepperoni
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-mushrooms" name="topping" type="checkbox" value="Mushrooms">
+<input id="id-mushrooms" name="topping" type="checkbox" value="Mushrooms" aria-labelledby="id-mushrooms id-toppings">
                 Mushrooms
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-onions" name="topping" type="checkbox" value="Onions">
+<input id="id-onions" name="topping" type="checkbox" value="Onions" aria-labelledby="id-onions id-toppings">
                 Onions
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-green" name="topping" type="checkbox" value="Green Peppers">
+<input id="id-green" name="topping" type="checkbox" value="Green Peppers" aria-labelledby="id-green id-toppings">
                 Green Peppers
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-black" name="topping" type="checkbox" value="Black Olives">
+<input id="id-black" name="topping" type="checkbox" value="Black Olives" aria-labelledby="id-black id-toppings">
                 Back Olives
-              </label>
-            
-</div>
+            </div>
             
 <div class="button">
               
-<label>
-                <input id="id-x-cheese" name="topping" type="checkbox" value="Extra Cheese" aria-labelledby="id-x-cheese id-toppings">
+<input id="id-x-cheese" name="topping" type="checkbox" value="Extra Cheese" aria-labelledby="id-x-cheese id-toppings">
                 Extra cheese
-              </label>
-            
-</div>
+            </div>
           
-</fieldset>
+</div>
 
           
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
@@ -410,14 +367,12 @@
 
         if (flag) {
         $(ei).attr('aria-invalid', 'true');
-        $(ei).attr('aria-label', message);
         $(em).append(message);
         $(em).removeClass('noerror');
         $(em).addClass('error');
         }
         else {
         $(ei).removeAttr('aria-invalid');
-        $(ei).removeAttr('aria-label');
         $(em).addClass('noerror');
         $(em).removeClass('error');
         }

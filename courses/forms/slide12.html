@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 12: Pizza Order Form: Fieldset/Legend</title>
+<title>Slide 12: Pizza Order Form: Label Encapsulation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -11,13 +11,13 @@
 <style id="style" type="text/css">
 
       label,
-      fieldset legend {
+      div.group div.title {
+        display: block;
         margin: 0;
         padding: 0;
         font-size: 100%;
         font-weight: bold;
         color: black;
-        display: block;
         text-align: left;
         margin-top: 1.25em;
       }
@@ -29,11 +29,7 @@
         display: block;
       }
 
-      fieldset legend {
-        padding-top: 1.25em;
-      }
-
-      fieldset label {
+      div.group label {
         margin: 0;
         padding: 0;
         display: block;
@@ -60,12 +56,12 @@
       input[type="submit"] {
         margin-top: 2em;
       }
-        input[type=submit]:focus {
+      input[type=submit]:focus {
         outline: 2px solid black;
       }
 
       input[type="text"]:hover,
-      fieldset label:hover {
+      div.group label:hover {
         background-color: #ADDFFF;
       }
 
@@ -79,7 +75,7 @@
         background-color: #EEEEEE;
       }
 
-      fieldset label.focus {
+      div.group label.focus {
         background-color: #EEEEEE;
         border-color: black;
       }
@@ -115,12 +111,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 12 of 39</div>
+<div class="navbar-text pull-right">Slide 12 of 40</div>
 </div>
 </div>
 </nav>
@@ -128,100 +124,98 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Fieldset/Legend</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: Label Encapsulation</h1>
 <form id="form">
-
         
 <h2>Pizza Form</h2>
+        
+<label>
+          Name
+          <input id="id-name" type="text" size="30">
+        </label>
+
+        <label>
+          Address
+          <input id="id-address" type="text" size="40">
+        </label>
+
+        <label>
+          Phone
+          <input id="id-phone" type="text" size="14">
+        </label>
+
+        <label>
+          Delivery Method
+          <select id="id-delivery">
+            <option>Eat in store</option>
+            <option>Pickup</option>
+            <option>Home delivery</option>
+          </select>
+        </label>
 
         
-<label for="id-name">Name</label>
-        <input id="id-name" type="text" size="30">
-
-        <label for="id-address">Address</label>
-        <input id="id-address" type="text" size="40">
-
-        <label for="id-phone">Phone</label>
-        <input id="id-phone" type="text" size="14">
-
-        <label for="id-delivery">Delivery Method</label>
-        <select id="id-delivery">
-          <option>Eat in store</option>
-          <option>Pickup</option>
-          <option>Home delivery</option>
-        </select>
-
-        
-<fieldset>
+<div class="group">
           
-<legend>Crust</legend>
-
-          <label>
-            <input id="id-crust1" name="crust" type="radio" value="Thin">
+<div class="title">Crust</div>
+          
+<label>
+            <input id="id-crust" name="crust" type="radio" value="Thin">
             Thin
           </label>
-
           <label>
-            <input id="id-crust2" name="crust" type="radio" value="Classic">
+            <input name="crust" type="radio" value="Classic">
             Classic
           </label>
-
           <label>
             <input name="crust" type="radio" value="Deep Dish">
             Deep Dish
           </label>
+        
+</div>
 
         
-</fieldset>
-
-        
-<fieldset>
+<div class="group">
           
-<legend>Toppings</legend>
-
-          <label>
+<div class="title">Toppings</div>
+          
+<label>
             <input name="topping" type="checkbox" value="Sausage">
             Sausage
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Pepperoni">
             Pepperoni
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Mushrooms">
             Mushrooms
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Onions">
             Onions
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Green Peppers">
             Green Peppers
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Black Olives">
             Back Olives
           </label>
-
           <label>
             <input name="topping" type="checkbox" value="Extra Cheese">
             Extra cheese
           </label>
-
         
-</fieldset>
+</div>
 
         
 <input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>
+<p style="margin-top: 2em;">
+<a href="https://webedit.disability.illinois.edu/user/jongund/form-labeling/copy/" target="_webedit">WebEdit: Add labels to form controls using <code>label</code> encapsulation</a>.</p>
 <h2>HTML Source Code</h2>
 <pre>
 <code id="sc1"></code>
@@ -236,9 +230,8 @@
 </pre>
 <script id="script" type="text/javascript">
 
-
         function itemFocus(event) {
-          if( event.target ) event.target.parentNode.classList.add("focus");
+         if( event.target ) event.target.parentNode.classList.add("focus");
         }
 
         function itemBlur(event) {
@@ -246,7 +239,7 @@
         }
 
         window.addEventListener('load', function load(event) {
-          var itemList = document.querySelectorAll('fieldset input');
+          var itemList = document.querySelectorAll('div.group input');
 
           for(var i = 0; i < itemList.length; i++) {
             var item = itemList[i];
@@ -256,6 +249,7 @@
         }, false);
 
       </script><script type="text/javascript">
+
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');

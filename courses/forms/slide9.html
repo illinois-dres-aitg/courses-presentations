@@ -2,49 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 9: Pizza Order Form: No Labels</title>
+<title>Slide 9: Voice Over Form Control Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
-      div.label {
-        margin: 0;
-        padding: 0;
-        margin-top: 1.125em;
-        margin-bottom: 0.125em;
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
-        display: block;
-        text-align: left;
-      }
-
-      div.group {
-        margin: 0;
-        padding: 0;
-        margin-top: 1.25em;
-      }
-
-      div.group div.title {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-      }
-
-      div.group div.label {
-        margin: 0;
-        padding: 0;
-        margin-top: 0.25em;
-        margin-bottom: 0.25em;
-        font-weight: normal;
-      }
-
-      input[type="submit"] {
-        margin-top: 2em;
-      }
-    </style>
+<style id="style" type="text/css"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -76,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 9 of 39</div>
+<div class="navbar-text pull-right">Slide 9 of 40</div>
 </div>
 </div>
 </nav>
@@ -89,135 +53,91 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: No Labels</h1>
-<h2>Problems</h2>
+<h1 id="h1_title" class="title">Voice Over Form Control Support</h1>
+<table class="table table-striped table-hover" aria-labelledby="h1_title">
+        
+<thead>
+          
+<tr>
+            
+<th>Keyboard Command</th>
+            <th>Description</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Command</kbd>+<kbd>F5</kbd></td>
+            <td>Start Voice Over on MacOS.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd></td>
+            <td>Voice Over (VO) command.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>+</kbd></td>
+            <td>Toggle VO key lock on and off.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd></td>
+            <td>Open rotor to navigate content on the web page and use the <kbd>left arrow</kbd> or <kbd>right arrow</kbd> keys to show the list of lkinks.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>VO</kbd>+<kbd>Command</kbd>+<kbd>J</kbd></td>
+            <td>Next form control.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>VO</kbd>+<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>J</kbd></td>
+            <td>Previous form control.</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
+<h2>Feature Overview</h2>
 <ul>
         
-<li>Form controls do not have labels.</li>
+<li>Voice Over allows you to view a list of or navigate sequentially to form controls.</li>
         
-<li>No keyboard focus styling.</li>
+<li>When navigating a web page Voice Over announces form control information when the browse or focus cursor enters a form control.</li>
       
 </ul>
-<form id="form">
-          
-<h2>Pizza Form</h2>
-          
-<div class="label">Name</div>
-          
-<input id="id-name" type="text" size="30">
-
-          
-<div class="label">Address</div>
-          
-<input id="id-address" type="text" size="40">
-
-          
-<div class="label">Phone</div>
-          
-<input id="id-phone" type="text" size="14">
-
-          
-<div class="label">Delivery Method</div>
-          
-<select id="id-delivery">
-            <option>Eat in store</option>
-            <option>Pickup</option>
-            <option>Home delivery</option>
-          </select>
-
-          
-<div class="group">
-            
-<div class="title">Crust</div>
-            
-<div class="label">
-              
-<input id="id-crust" name="crust" type="radio" value="Thin">
-              Thin
-            </div>
-            
-<div class="label">
-              
-<input name="crust" type="radio" value="Classic">
-              Classic
-            </div>
-            
-<div class="label">
-              
-<input name="crust" type="radio" value="Deep Dish">
-              Deep Dish
-            </div>
-          
-</div>
-
-          
-<div class="group">
-            
-<div class="title">Toppings</div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Sausage">
-                Sausage
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Pepperoni">
-                Pepperoni
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Mushrooms">
-              Mushrooms
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Onions">
-              Onions
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Green Peppers">
-              Green Peppers
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Black Olives">
-              Back Olives
-            </div>
-            
-<div class="label">
-              
-<input name="topping" type="checkbox" value="Extra Cheese">
-              Extra cheese
-            </div>
-          
-</div>
-
-          
-<input type="submit" value="Submit Order" onclick="submitOrder(event)">
-
+<h2>Other Voice Over Command Resources</h2>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a>
+</li>
+        
+<li>
+<a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a>
+</li>
+        
+<li>
+<a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#vo-mac-basics" target="_specification">Deque University: Voice Over Commands</a>
+</li>
       
-</form>
-<h2>HTML Source Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Source Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<script type="text/javascript">
-        sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+</ul>
 </div>
 <div class="col"></div>
 </div>

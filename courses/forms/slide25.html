@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 25: Form Control Labeling Technique Summary</title>
+<title>Slide 25: Pizza Service Survey: aria-labelledby</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+
+      table.survey th.rating,
+      table.survey td.rating {
+      text-align: center;
+      }
+
+      table.survey tbody th {
+      font-weight: normal;
+      }
+
+      table.survey input:focus,
+      table.survey input:hover {
+        outline: 2px solid #444444;
+        outline-offset: 0.25em;
+      }
+
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -40,12 +57,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 25 of 39</div>
+<div class="navbar-text pull-right">Slide 25 of 40</div>
 </div>
 </div>
 </nav>
@@ -53,56 +70,121 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Form Control Labeling Technique Summary</h1>
-<h2>
-<code>label</code> elements</h2>
+<h1 id="h1_title" class="title">Pizza Service Survey: aria-labelledby</h1>
+<h2>Features</h2>
 <ul>
         
-<li>Labels are visible</li>
+<li>Uses <code>aria-labelledby</code> to label radio buttons with existing visible content on the page.</li>
         
-<li>Should be first choice for backward compatibility support</li>
-        
-<li>Increases selection area for moving focus or toggling the state of a form control</li>
+<li>Keyboard focus and hover styling use CSS <code>:focus</code> and <code>:hover</code> pseudo selectors with the <code>outline</code> property.</li>
       
 </ul>
-<h2>
-<code>title</code> attribute</h2>
-<ul>
+<form id="form">
         
-<li>Labels are hidden, except many browsers generate a popup tooltip when user hovers pointer over form control</li>
+<h2>Pizza Survey</h2>
+
         
-<li>Backward compatibility support</li>
+<table class="survey table table-striped">
+          
+<thead>
+            
+<tr>
+              
+<th class="question">Question</th>
+              <th id="r1" class="rating">Very Dissatisfied</th>
+              <th id="r2" class="rating">Dissatisfied</th>
+              <th id="r3" class="rating">Neutral</th>
+              <th id="r4" class="rating">Satisfied</th>
+              <th id="r5" class="rating">Very Satisfied</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<th id="q1" class="question">Quality of your ordering experience?</th>
+              <td class="rating"><input name="q1" type="radio" value="1" aria-labelledby="r1 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="2" aria-labelledby="r2 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="3" aria-labelledby="r3 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="4" aria-labelledby="r4 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="5" aria-labelledby="r5 q1"></td>
+            
+</tr>
+            
+<tr>
+              
+<th id="q2" class="question">Quality of Pizza?</th>
+              <td class="rating"><input name="q2" type="radio" value="1" aria-labelledby="r1 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="2" aria-labelledby="r2 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="3" aria-labelledby="r3 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="4" aria-labelledby="r4 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="5" aria-labelledby="r5 q2"></td>
+            
+</tr>
+            
+<tr>
+              
+<th id="q3" class="question">Quality of your Pizza delivery?</th>
+              <td class="rating"><input name="q3" type="radio" value="1" aria-labelledby="r1 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="2" aria-labelledby="r2 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="3" aria-labelledby="r3 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="4" aria-labelledby="r4 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="5" aria-labelledby="r6 q3"></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+
+        
+<input type="submit" value="Submit Survey">
+
       
-</ul>
-<h2>ARIA 1.0 <code>aria-labelledby</code> attribute</h2>
-<ul>
-        
-<li>Complex form labeling, where label text is visible on the page</li>
-        
-<li>Require creating <code>id</code>s and <code>idrefs</code>
-</li>
-        
-<li>Can be used to retrofit form controls without labels, without affecting visual rendering</li>
-      
-</ul>
-<h2>ARIA 1.0 <code>aria-label</code> attribute</h2>
-<ul>
-        
-<li>Labeling text is not visible</li>
-        
-<li>Can be used to retrofit form controls without labels, without affecting visual rendering</li>
-      
-</ul>
-<h2>HTML5 <code>placeholder</code> attribute</h2>
-<ul>
-        
-<li>Avoid use for form control labeling</li>
-        
-<li>Used for both labeling and example input, so it is in a gray area of accessibility right now</li>
-        
-<li>Compatibility issues</li>
-      
-</ul>
+</form>
+<script id="script" type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('td input');
+
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+
+      </script>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </div>
 <div class="col"></div>
 </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 16: Pizza Order Form: Instructions using label</title>
+<title>Slide 16: Pizza Order Form: Instructions using tabindex</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -88,8 +88,6 @@
       margin-top: 0.25em;
       margin-bottom: 0.25em;
       font-style: italic;
-      width: 100%;
-      font-weight: normal;
       }
 
     </style>
@@ -124,12 +122,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 16 of 39</div>
+<div class="navbar-text pull-right">Slide 16 of 40</div>
 </div>
 </div>
 </nav>
@@ -137,7 +135,7 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Instructions using label</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: Instructions using tabindex</h1>
 <script id="script" type="text/javascript">
 
         function itemFocus(event) {
@@ -154,12 +152,12 @@
         
 <li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
         
-<li>Uses <code>label[for]</code> to add instructions to related control.</li>
+<li>Uses <code>tabindex=0</code> to create a tab stop for the instructions.</li>
         
-<li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
-          Less predictable how a screen reader will read the instruction information.</li>
+<li>This technique helps screen reader users <em>hear</em> the instructions before they get to the form controls.
+          As they <kbd>tab</kbd> throught the page they will tab to the instructions.</li>
         
-<li>Does not affect keyboard only users.</li>
+<li>Keyboard only users maybe a little annoyed at the extra tab stop between interactive controls.</li>
       
 </ul>
 <form id="form">
@@ -176,18 +174,19 @@
         <label for="id-phone">Phone</label>
         <input id="id-phone" type="text" size="14">
 
+        <label for="id-delivery">Delivery Method</label>
         
 <div id="ex1a">
-          
-<label for="id-delivery">Delivery Method</label>
-          <label for="id-delivery" class="instructions">Free home delivery on Monday's and Tuesday nights.</label>
-          <select id="id-delivery">
-            <option>Eat in store</option>
-            <option>Pickup</option>
-            <option>Home delivery</option>
-          </select>
+           
+<div tabindex="0" class="instructions">Free home delivery on Monday's and Tuesday nights.</div>
         
 </div>
+        
+<select id="id-delivery">
+          <option>Eat in store</option>
+          <option>Pickup</option>
+          <option>Home delivery</option>
+        </select>
 
         
 <fieldset>
@@ -220,17 +219,17 @@
           
 <div id="ex1b">
             
-<label for="topping1" class="instructions">First topping is free and $1.00 extra for each additional topping.</label>
-
-            <label>
-              <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-              Sausage
-            </label>
+<div tabindex="0" class="instructions">First topping is free and $1.00 extra for each additional topping.</div>
           
 </div>
 
           
 <label>
+            <input name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            Sausage
+          </label>
+
+          <label>
             <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)">
             Pepperoni
           </label>
@@ -270,14 +269,14 @@
 </form>
 <h2>HTML Source Code</h2>
 <pre>
-<code id="sc1a"></code>
+<code id="sc1"></code>
 </pre>
 <pre>
-<code id="sc1b"></code>
+<code id="sc2"></code>
 </pre>
 <script type="text/javascript">
-        sourceCode.add('sc1a', 'ex1a');
-        sourceCode.add('sc1b', 'ex1b');
+        sourceCode.add('sc1', 'ex1a');
+        sourceCode.add('sc2', 'ex1b');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

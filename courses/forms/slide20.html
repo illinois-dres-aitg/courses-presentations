@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 20: Pizza Order Form: aria-label</title>
+<title>Slide 20: Pizza Order Form: aria-labelledby</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -38,24 +38,15 @@
         width: 9em;
       }
 
-      select {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 1.25em;
-        background-color: #FFFEFF;
-        font-size: 1em;
-      }
-
       input[type="submit"] {
         margin-top: 2em;
       }
-
       input[type=submit]:focus {
         outline: 2px solid black;
       }
 
       input[type="text"]:hover,
-        div.group div.item:hover {
+      div.group div.item:hover {
         background-color: #ADDFFF;
       }
 
@@ -105,12 +96,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide39.html">
+<a id="ID_SLIDE_LAST" href="slide40.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 20 of 39</div>
+<div class="navbar-text pull-right">Slide 20 of 40</div>
 </div>
 </div>
 </nav>
@@ -118,106 +109,128 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: aria-label</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: aria-labelledby</h1>
 <form id="form">
         
 <h2>Pizza Form</h2>
 
-          
-<div class="label">Name</div>
-          
-<input id="id-name" type="text" size="30" aria-label="Name">
+        
+<div id="lb1" class="label">Name</div>
+        
+<input id="id-name" type="text" size="30" aria-labelledby="lb1">
 
-          
-<div class="label">Address</div>
-          
-<input id="id-address" type="text" size="40" aria-label="Address">
+        
+<div id="lb2" class="label">Address</div>
+        
+<input id="id-address" type="text" size="40" aria-labelledby="lb2">
 
-          
-<div class="label">Phone</div>
-          
-<input id="id-phone" type="text" size="14" aria-label="Phone">
+        
+<div id="lb3" class="label">Phone</div>
+        
+<input id="id-phone" type="text" size="14" aria-labelledby="lb3">
 
-          
-<div class="label">Delivery Method</div>
-          
-<select id="id-delivery" aria-label="Delivery method">
-            <option>Eat in store</option>
-            <option>Pickup</option>
-            <option>Home delivery</option>
-          </select>
+        
+<div id="lb4" class="label">Delivery Method</div>
+        
+<select id="id-delivery" aria-labelledby="lb4">
+          <option>Eat in store</option>
+          <option>Pickup</option>
+          <option>Home delivery</option>
+        </select>
 
         
 <div class="group">
           
-<div class="title">Crust</div>
+<div id="lb5" class="title">Crust</div>
+
           
 <div class="item">
             
-<input id="id-crust" name="crust" type="radio" value="Thin" aria-label="Thin crust">
-            Thin
-          </div>
+<input id="id-crust" name="crust" type="radio" value="Thin" aria-labelledby="lb5-1 lb5">
+            <span id="lb5-1">Thin</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="crust" type="radio" value="Classic" aria-label="Classic crust">
-            Classic
-          </div>
+<input name="crust" type="radio" value="Classic" aria-labelledby="lb5-2 lb5">
+            <span id="lb5-2">Classic</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="crust" type="radio" value="Deep Dish" aria-label="Deep dish crust">
-            Deep Dish
-          </div>
+<input name="crust" type="radio" value="Deep Dish" aria-labelledby="lb5-3 lb5">
+            <span id="lb5-3">Deep Dish</span>
+          
+</div>
+
         
 </div>
 
         
 <div class="group">
           
-<div class="title">Toppings</div>
+<div id="lb6" class="title">Toppings</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Sausage" aria-label="Sausage topping">
-            Sausage
-          </div>
+<input name="topping" type="checkbox" value="Sausage" aria-labelledby="lb6-1 lb6">
+            <span id="lb6-1">Sausage</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Pepperoni" aria-label="Pepperoni topping">
-            Pepperoni
-          </div>
+<input name="topping" type="checkbox" value="Pepperoni" aria-labelledby="lb6-2 lb6">
+            <span id="lb6-2">Pepperoni</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Mushrooms" aria-label="Mushroom topping">
-            Mushrooms
-          </div>
+<input name="topping" type="checkbox" value="Mushrooms" aria-labelledby="lb6-3 lb6">
+            <span id="lb6-3">Mushrooms</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Onions" aria-label="Onion topping">
-            Onions
-          </div>
+<input name="topping" type="checkbox" value="Onions" aria-labelledby="lb6-4 lb6">
+            <span id="lb6-4">Onions</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Green Peppers" aria-label="Green pepper topping">
-            Green Peppers
-          </div>
+<input name="topping" type="checkbox" value="Green Peppers" aria-labelledby="lb6-5 lb6">
+            <span id="lb6-5">Green Peppers</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Black Olives" aria-label="Black olive topping">
-            Back Olives
-          </div>
+<input name="topping" type="checkbox" value="Black Olives" aria-labelledby="lb6-6 lb6">
+            <span id="lb6-6">Back Olives</span>
+          
+</div>
+
           
 <div class="item">
             
-<input name="topping" type="checkbox" value="Extra Cheese" aria-label="Extra cheese topping">
-            Extra cheese
-          </div>
+<input name="topping" type="checkbox" value="Extra Cheese" aria-labelledby="lb6-7 lb6">
+            <span id="lb6-7">Extra cheese</span>
+          
+</div>
+
         
 </div>
 
