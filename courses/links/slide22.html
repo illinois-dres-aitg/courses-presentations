@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 22: A keyboard focus and mouse hover styling strategy</title>
+<title>Slide 22: Comparsion of Link Context Techniques</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css">
+      abbr[title=no] {
+      color: gray;
+      }
+      table tbody th {
+      font-weight: normal;
+      }
+    </style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default">
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -41,44 +47,165 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide26.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 22 of 25</div>
+<div class="navbar-text pull-right">Slide 22 of 26</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
-<h1 id="h1_title" class="title">A keyboard focus and mouse hover styling strategy</h1>
-<ul>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Comparsion of Link Context Techniques</h1>
+<table class="table table-striped" aria-label="ARIA 1.1 Landmarks">
         
-<li>Actively style keyboard focus, do not rely on browser defaults for keyboard focus styling.</li>
-        
-<li>Change background color for both mouse hover and keyboard focus styling for links and form controls.</li>
-        
-<li>Use border styling for keyboard focus:
-          <ul>
-            
-<li>Define a transparent CSS <code>border</code> and then give it a color when a link or form control receives focus.</li>
-            
-<li>Use CSS <code>outline</code> with an outline color and solid outline when a link or form control receives focus.</li>
+<thead>
           
+<tr>
+            
+<th>Technique</th>
+            <th>Preferred</th>
+            <th>Accessible Name</th>
+            <th>Accessible Description</th>
+            <th>Group Label</th>
+            <th>Comments</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<th>aria-describedy</th>
+            <td>no</td>
+            <td><abbr title="no">-</abbr></td>
+            <td>Yes</td>
+            <td><abbr title="no">-</abbr></td>
+            <td>
+              
+<ul>
+                
+<li>Screen readers <em>do not</em> show link context information in list of links.</li>
+                
+<li>Accessible description is computed from visually displayed text content (i.e. higher chance of being accurate).</li>
+              
 </ul>
+          
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>aria-labelledby</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td><abbr title="no">-</abbr></td>
+            <td><abbr title="no">-</abbr></td>
+            <td>
+              
+<ul>
+                
+<li>Screen readers show link context information in list of links.</li>
+                
+<li>IDREFs must be uniquely generated and the references accurately set and maintained.</li>
+                
+<li>Accessible name is computed from visually displayed text content (i.e. higher chance of being accurate).</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>aria-label</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td><abbr title="no">-</abbr></td>
+            <td><abbr title="no">-</abbr></td>
+            <td>
+              
+<ul>
+                
+<li>Screen readers show link context information in list of links.</li>
+                
+<li>Attribute value has some redundant content with the link text.</li>
+                
+<li>Accessible name is computed from text content that is hidden from most users (i.e. lower chance of being accurate).</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>off-screen text</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td><abbr title="no">-</abbr></td>
+            <td><abbr title="no">-</abbr></td>
+            <td>
+              
+<ul>
+                
+<li>Screen readers show link context information in list of links.</li>
+                
+<li>Extra element in the link with redundant text.</li>
+                
+<li>Accessible name is computed from text content that is hidden from most users (i.e. lower chance of being accurate).</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<th>group label</th>
+            <td>no</td>
+            <td><abbr title="no">-</abbr></td>
+            <td><abbr title="no">-</abbr></td>
+            <td>Yes</td>
+            <td>
+              
+<ul>
+                
+<li>Some screen reader will read the group label, others do not.</li>
+                
+<li>Screen readers <em>do not</em> show link context information in list of links.</li>
+                
+<li>Extra element in the link with redundant text.</li>
+                
+<li>Accessible name for grouping element (e.g. <code>ul</code>) is computed text content that is visible (i.e. higher chance of being accurate).</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
         
-</li>
-        
-<li>For links in the main content and complementary areas of a web page make sure they are underline for both focus and hover, but recommend they allways have underline.</li>
-        
-<li>Make sure all styling options meet WCAG 2.0 Level AA color contrast requirements.</li>
+</tbody>
       
-</ul>
+</table>
+</div>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

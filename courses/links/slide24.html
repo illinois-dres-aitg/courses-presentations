@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 24: Link menu focus and hover styling example</title>
+<title>Slide 24: A keyboard focus and mouse hover styling strategy</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<link rel="stylesheet" type="text/css" href="../../common/css/highlight.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/highlight.pack.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css"></style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default">
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -41,125 +40,50 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide26.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 24 of 25</div>
+<div class="navbar-text pull-right">Slide 24 of 26</div>
 </div>
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
-<h1 id="h1_title" class="title">Link menu focus and hover styling example</h1>
-<style id="ex2">
-      #id_nav {
-        margin-top: 2em;
-        margin-bottom: 5em;
-      }
-
-      #id_nav h2 {
-        position: absolute;
-        top: -30em;
-        left: -300em;
-       }
-
-       #id_nav ul {
-        margin: 0;
-        padding: 0.5em;
-      }
-
-       #id_nav ul li {
-         margin: 0;
-         padding: 0;
-         list-style: none;
-         float: left;
-         padding-right: .5em;
-        border-top: solid 2px #819BD5;
-        border-bottom: solid 2px #819BD5;
-       }
-
-       #id_nav ul li a {
-         margin: 0;
-         padding: 0;
-         display: block;
-         text-decoration: none;
-         padding-left: 0.25em;
-         padding-right: 0.25em;
-         border: 2px transparent solid;
-         outline: none;
-        }
-
-       #id_nav ul li a:focus {
-         border-color: #5478c4;
-         background-color: #d9e1f2;
-         text-decoration: underline;
-       }
-
-       #id_nav ul li a:hover {
-         background-color: #E5EBF6;
-         text-decoration: underline;
-       }
-
-    </style>
-<div id="ex1">
-        
-<nav aria-labelledby="id_ds" id="id_nav">
-
-          
-<h2>Disability Resources</h2>
-          
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">A keyboard focus and mouse hover styling strategy</h1>
 <ul>
+        
+<li>Actively style keyboard focus, do not rely on browser defaults for keyboard focus styling.</li>
+        
+<li>Change background color for both mouse hover and keyboard focus styling for links and form controls.</li>
+        
+<li>Use border styling for keyboard focus:
+          <ul>
             
-<li>
-<a href="http://disability.illinois.edu/academic-support">Academic Support</a>
-</li>
+<li>Define a transparent CSS <code>border</code> and then give it a color when a link or form control receives focus.</li>
             
-<li>
-<a href="http://disability.illinois.edu/living-accommodations">Living Accommodations</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/getting-around">Getting Around</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/health">Health</a>
-</li>
-            
-<li>
-<a href="http://disability.illinois.edu/campus-life">Campus Life</a>
-</li>
+<li>Use CSS <code>outline</code> with an outline color and solid outline when a link or form control receives focus.</li>
           
 </ul>
-
         
-</nav>
+</li>
+        
+<li>For links in the main content and complementary areas of a web page make sure they are underline for both focus and hover, but recommend they allways have underline.</li>
+        
+<li>Make sure all styling options meet WCAG 2.0 Level AA color contrast requirements.</li>
       
+</ul>
 </div>
-<div style="clear: both;"></div>
-<p>
-<a href="https://webedit.disability.illinois.edu/pages/user/jongund/links-focus/">WebEdit sample for link focus styling</a>
-</p>
-<h2>HTML Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<script>
-        sourceCode.add('sc1', 'ex1');
-        sourceCode.add('sc2', 'ex2');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

@@ -118,7 +118,7 @@
   </slide>
 
   <slide>
-    <title>JAWS Heading Support Information</title>
+    <title>JAWS Heading and Title Support</title>
     <contents>
 
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
@@ -241,7 +241,7 @@
   </slide>
 
   <slide>
-    <title>Voice Over Heading Support</title>
+    <title>Voice Over Heading and Title Support</title>
     <contents>
 
       <table class="table table-striped table-hover" aria-labelledby="h1_title">
