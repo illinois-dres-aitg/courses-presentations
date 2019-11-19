@@ -1120,7 +1120,7 @@
         <li>Change background color for both mouse hover and keyboard focus styling for links and form controls.</li>
         <li>Use border styling for keyboard focus:
           <ul>
-            <li>Define a transparent CSS <code>border</code> and then give it a color when a link or form control receives focus.</li>
+            <li>Add a CSS <code>border</code> when a link or form control receives focus, adjust the margin or padding width to compensate for the border with when it appears.  Do not use a transparent border width, since this will not work in high contrast display modes.</li>
             <li>Use CSS <code>outline</code> with an outline color and solid outline when a link or form control receives focus.</li>
           </ul>
         </li>
