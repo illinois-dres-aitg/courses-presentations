@@ -105,9 +105,9 @@
     <title>HTML5: role restrictions</title>
     <contents>
       <p class="center">
-        <a href="https://www.w3.org/TR/html5/grouping-content.html#the-li-element" target="_specification">HTML 5: role restrctions</a>
+        <a href="https://www.w3.org/TR/html-aria/#el-li" target="_specification">HTML 5: role restrctions</a>
       </p>
-      <iframe src="https://www.w3.org/TR/html5/grouping-content.html#the-li-element" title="HTML5 LI element specfication" width="90%" height="600px"/>
+      <iframe src="https://www.w3.org/TR/html-aria/#el-li" title="HTML5 LI element specfication" width="90%" height="600px"/>
     </contents>
   </slide>
 

@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 18: Pizza Order Form: Instructions using aria-describedy</title>
+<title>Slide 18: Pizza Order Form: Required Form Controls</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
+
+
+      .required {
+      color: blue;
+      font-weight: normal;
+      }
+
+      input {
+      display: block;
+      }
+
+      div input,
+      div select {
+      display: inline;
+      }
+
+      [required] + span:before,
+      [aria-required="true"] + span:before {
+      content: "(required)";
+      color: blue;
+      }
+
       label {
       display: block;
       margin: 0;
@@ -19,40 +41,12 @@
       color: black;
       }
 
-
       select {
       margin: 0;
       padding: 0;
       margin-bottom: 1.25em;
       background-color: #FFFEFF;
       font-size: 1em;
-      }
-
-
-      fieldset legend {
-      margin: 0;
-      padding: 0;
-      padding-top: 1em;
-      font-weight: bold;
-      font-size: 100%;
-      }
-
-      fieldset label {
-      margin: 0;
-      padding: 0;
-      padding-top: 0.125em;
-      padding-bottom: 0.125em;
-      padding-left: 0.5em;
-      width: 10em;
-      font-weight: normal;
-      border: 2px transparent solid;
-      display: block;
-      position: relative;
-      left: -0.5em;
-      }
-
-      input[type=submit] {
-      margin-top: 2em;
       }
 
 
@@ -65,28 +59,26 @@
       background-color: #EEEEEE;
       }
 
-      select:focus {
+      input[type="submit"] {
+      margin-top: 2em;
+      }
+
+      input[type=submit]:focus {
+      outline: 2px solid black;
+      }
+
+      input[type="text"]:hover{
+      background-color: #ADDFFF;
+      }
+
+      input[type="text"]:focus {
       outline: 2px solid black;
       background-color: #EEEEEE;
       }
 
-      fieldset label:hover {
-      background-color: #ADDFFF;
-      }
-
-      fieldset label.focus {
-      border-color: black;
+      select:focus {
+      outline: 2px solid black;
       background-color: #EEEEEE;
-      }
-
-      .instructions {
-      padding: 0;
-      margin: 0;
-      margin-top: 0.25em;
-      margin-bottom: 0.25em;
-      font-style: italic;
-      width: 100%;
-      font-weight: normal;
       }
 
     </style>
@@ -121,12 +113,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide40.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 18 of 40</div>
+<div class="navbar-text pull-right">Slide 18 of 39</div>
 </div>
 </div>
 </nav>
@@ -134,29 +126,18 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Instructions using aria-describedy</h1>
-<script id="script" type="text/javascript">
-
-        function itemFocus(event) {
-        if( event.target ) event.target.parentNode.classList.add("focus");
-        }
-
-        function itemBlur(event) {
-        if( event.target ) event.target.parentNode.classList.remove("focus");
-        }
-
-      </script>
+<h1 id="h1_title" class="title">Pizza Order Form: Required Form Controls</h1>
 <h2>Features</h2>
 <ul>
         
-<li>Instructions are placed before the form control to support all users who read from top to bottom, but especially screen reader users.</li>
+<li>HTML5 <code>required</code> attribute (Preferred)</li>
         
-<li>Uses <code>aria-describedby</code> to reference instructions for related control.</li>
+<li>Use the word "required" in the text label</li>
         
-<li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
-          Screen readers may not be consistent in presenting the descriptive information.</li>
+<li>Use an <code>img</code> element with the <code>alt="required"</code>
+</li>
         
-<li>Does not affect keyboard only users.</li>
+<li>ARIA 1.0 <code>aria-required="true"</code> attribute</li>
       
 </ul>
 <form id="form">
@@ -164,121 +145,48 @@
 <h2>Pizza Form</h2>
 
         
-<label for="id-name">Name</label>
+<label for="id-name">Name <span class="required">(required)</span></label>
         <input id="id-name" type="text" size="30">
 
-        <label for="id-address">Address</label>
+        <label for="id-address">Address <img src="examples/images/required.png" alt="required"></label>
         <input id="id-address" type="text" size="40">
 
         <label for="id-phone">Phone</label>
-        <input id="id-phone" type="text" size="14">
+        
+<div>
+          
+<input id="id-phone" type="text" size="14" required="">
+          <span></span>
+        
+</div>
 
         
-<div id="ex1a">
-          
 <label for="id-delivery">Delivery Method</label>
+        
+<div>
           
-<p id="id-delivery-inst" class="instructions">Free home delivery on Monday's and Tuesday nights.</p>
-          
-<select id="id-delivery" aria-describedby="id-delivery-inst">
+<select id="id-delivery" aria-required="true">
             <option>Eat in store</option>
             <option>Pickup</option>
             <option>Home delivery</option>
           </select>
+          <span></span>
         
 </div>
-
-        
-<fieldset>
-          
-<legend>Crust</legend>
-
-          <label>
-            <input name="crust" type="radio" value="Thin" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Thin
-          </label>
-
-          <label>
-            <input name="crust" type="radio" value="Classic" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Classic
-          </label>
-
-          <label>
-            <input name="crust" type="radio" value="Deep Dish" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Deep Dish
-          </label>
-
-        
-</fieldset>
-
-        
-<fieldset>
-          
-<legend>Toppings</legend>
-
-          
-<div id="ex1b">
-
-            
-<p id="topping-inst" class="instructions">First topping is free and $1.00 extra for each additional topping.</p>
-
-            
-<label>
-              <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)" aria-describedby="topping-inst">
-              Sausage
-            </label>
-          
-</div>
-
-          
-<label>
-            <input name="topping" type="checkbox" value="Pepperoni" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Pepperoni
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Mushrooms" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Mushrooms
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Onions" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Onions
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Green Peppers" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Green Peppers
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Black Olives" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Back Olives
-          </label>
-
-          <label>
-            <input name="topping" type="checkbox" value="Extra Cheese" onfocus="itemFocus(event)" onblur="itemBlur(event)">
-            Extra cheese
-          </label>
-
-        
-</fieldset>
-
-        
-<input type="submit" value="Submit Order" onclick="submitOrder(event)">
 
       
 </form>
 <h2>HTML Source Code</h2>
 <pre>
-<code id="sc1a"></code>
+<code id="sc1"></code>
 </pre>
+<h2>CSS Source Code</h2>
 <pre>
-<code id="sc1b"></code>
+<code id="sc2"></code>
 </pre>
 <script type="text/javascript">
-        sourceCode.add('sc1a', 'ex1a');
-        sourceCode.add('sc1b', 'ex1b');
+        sourceCode.add('sc1', 'form');
+        sourceCode.add('sc2', 'style');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

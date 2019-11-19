@@ -113,7 +113,7 @@
     </style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default">
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -152,7 +152,9 @@
 </div>
 </nav>
 <main id="content" class="container">
-<a name="main" id="main"></a>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
 <h1 id="h1_title" class="title">Popup Error Example 1: no reference to error message</h1>
 <h2>Features</h2>
 <ul>
@@ -469,10 +471,14 @@
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>
+</div>
+<div class="col"></div>
+</div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-        Copyright &copy; 2018 University of Illinois
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
 </body>

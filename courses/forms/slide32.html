@@ -2,115 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 32: Popup Error Example 2: label[for] references error message</title>
+<title>Slide 32: Popup Error Example 2: Assistive Technology Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
-      div {
-        border: solid medium transparent;
-      }
-
-      div.focus {
-        border-color: black;
-        background-color: #EEEEEE;
-      }
-
-      div.hover {
-        border-color: black;
-        background-color: #EEEEEE;
-      }
-
-      label.focus,
-      input[type="text"]:focus,
-      select:focus {
-        background-color: #EEEEEE;
-        outline: medium solid black;
-      }
-
-      label.hover,
-      input[type="text"]:hover,
-      select:hover {
-        background-color: #EEEEEE;
-        outline: medium solid black;
-      }
-
-      div.button {
-        position: relative;
-        left: -0.25em;
-        width: 9em;
-      }
-
-      label input[type="radio"],
-      label input[type="checkbox"] {
-        margin-left: 0.25em;
-      }
-
-
-      div#id-errors {
-        color: red;
-        display: none;
-        margin-left: 1em;
-        border: thin solid red;
-        width: 25em;
-      }
-
-      div#id-errors a {
-        color: red;
-      }
-
-      h2, h3 {
-        margin: 0;
-        padding: 0;
-        margin-top: 1em;
-      }
-
-      label {
-      display: block;
-        margin: 0;
-        padding: 0;
-        font-weight: normal;
-      }
-
-      fieldset,
-      legend {
-        padding: 0;
-        margin: 0;
-        margin-top: 1em;
-      }
-
-      legend {
-        margin-top: 1em;
-        font-weight: bold;
-        font-size: 110%;
-      }
-
-      div.text,
-      div.select,
-      input[type="submit"] {
-        margin-top: 0.5em;
-      }
-
-      label.error,
-        span.noerror {
-        display: inline;
-      }
-
-      label.error {
-        color: red;
-        border: thin solid red;
-        padding: 0.25em;
-      }
-
-      label.noerror {
-        color: transparent;
-        border: thin solid transparent;
-        padding: 0.25em;
-      }
-
-    </style>
+<style id="style" type="text/css"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -142,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide40.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 32 of 40</div>
+<div class="navbar-text pull-right">Slide 32 of 39</div>
 </div>
 </div>
 </nav>
@@ -155,325 +53,158 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Popup Error Example 2: label[for] references error message</h1>
-<h2>Features</h2>
-<ul>
+<h1 id="h1_title" class="title">Popup Error Example 2: Assistive Technology Support</h1>
+<table class="survey table table-striped" aria-labelledby="h1_title">
         
-<li>
-<code>label[for]</code> element is used to label form control.</li>
+<thead>
+          
+<tr>
+            
+<th>Support</th>
+            <th>Screen Reader</th>
+            <th>Browser</th>
+            <th>Required</th>
+            <th>Invalid</th>
+            <th>Live <br>Region</th>
+            <th>Error <br>Reference</th>
+          
+</tr>
         
-<li>
-<code>label[for]</code> element is used for error feedback.</li>
+</thead>
         
-<li>HTML5 <code>required</code> attribute to identify a form control is required.</li>
+<tbody>
+          
+<tr>
+            
+<td class="partial">Partial</td>
+            <td>
+              JAWS 2018
+            </td>
+            <td>
+              EDGE 42
+            </td>
+            <td class="no">no</td>
+            <td class="no">no</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="yes">Yes</td>
+            <td>
+              JAWS 2018
+            </td>
+            <td>
+              Chrome 66.0
+            </td>
+            <td class="yes">Yes</td>
+            <td class="yes">Yes</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="yes">Yes</td>
+            <td>
+              JAWS 2018
+            </td>
+            <td>
+              Firefox 52.8
+            </td>
+            <td class="partial">Partial</td>
+            <td class="yes">Yes</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="partial">Partial</td>
+            <td>
+              NVDA 2018.1.1
+            </td>
+            <td>
+              Edge 42
+            </td>
+            <td class="yes">Yes</td>
+            <td class="yes">no</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="yes">Yes</td>
+            <td>
+              NVDA 2018.1.1
+            </td>
+            <td>
+              Chrome 66.0
+            </td>
+            <td class="yes">Yes</td>
+            <td class="yes">Yes</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="partial">Partial</td>
+            <td>
+              NVDA 2018.1.1
+            </td>
+            <td>
+              Firefox 52.8
+            </td>
+            <td class="yes">Yes</td>
+            <td class="no">no</td>
+            <td class="na">n/a</td>
+            <td class="no">no</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="partial">Partial</td>
+            <td>
+              Voice Over High Sierra
+            </td>
+            <td>
+              Safari 11.1
+            </td>
+            <td class="yes">Yes</td>
+            <td class="yes">Yes</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
+          
+<tr>
+            
+<td class="partial">Partial</td>
+            <td>
+              Voice Over High Sierra
+            </td>
+            <td>
+              Chrome 66.0
+            </td>
+            <td class="yes">Yes</td>
+            <td class="yes">Yes</td>
+            <td class="na">n/a</td>
+            <td class="yes">Yes</td>
+          
+</tr>
         
-<li>
-<code>aria-invalid</code> attribute is used to identify a form control has an invalid value.</li>
+</tbody>
       
-</ul>
-<div role="region" aria-label="Example">
-
-        
-<div id="id-errors" role="region" aria-label="Error information">
-
-        
-</div>
-
-        
-<form id="form">
-          
-<h2>Pizza Order Form</h2>
-
-          
-<div class="text">
-            
-<label for="id-name">Name</label>
-            <input id="id-name" required="true" aria-invalid="false" type="text" size="30" onblur="checkName()">
-            <label for="id-name" id="id-name-error" class="noerror"> </label>
-          
-</div>
-
-          
-<div class="text">
-            
-<label for="id-address">Address</label>
-            <input id="id-address" required="true" aria-invalid="false" type="text" size="40" onblur="checkAddress()">
-            <label for="id-address" id="id-address-error" class="noerror"> </label>
-          
-</div>
-
-          
-<div class="text">
-            
-<label for="id-phone">Phone</label>
-            <input id="id-phone" required="true" aria-invalid="false" type="text" size="14" onblur="checkPhone()">
-            <label for="id-phone" id="id-phone-error" class="noerror"> </label>
-          
-</div>
-
-          
-<div class="select">
-            
-<label for="id-delivery">Delivery Method</label>
-            <select id="id-delivery">
-              <option>Eat in store</option>
-              <option>Pickup</option>
-              <option>Home delivery</option>
-            </select>
-          
-</div>
-
-          
-<fieldset>
-            
-<legend>Crust</legend>
-            
-<div class="button">
-              
-<label><input id="id-thin" name="crust" type="radio" value="Thin" required="true"> Thin</label>
-            
-</div>
-            
-<div class="button">
-              
-<label><input id="id-classic" name="crust" type="radio" value="Classic" required="true"> Classic</label>
-            
-</div>
-            
-<div class="button">
-              
-<label><input id="id-deep" name="crust" type="radio" value="Deep Dish" required="true"> Deep Dish</label>
-            
-</div>
-          
-</fieldset>
-
-          
-<fieldset>
-            
-<legend>Toppings</legend>
-            
-<div class="button">
-              
-<label>
-                <input id="id-sausage" name="topping" type="checkbox" value="Sausage">
-                Sausage
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-pepperoni" name="topping" type="checkbox" value="Pepperoni">
-                Pepperoni
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-mushrooms" name="topping" type="checkbox" value="Mushrooms">
-                Mushrooms
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-onions" name="topping" type="checkbox" value="Onions">
-                Onions
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-green" name="topping" type="checkbox" value="Green Peppers">
-                Green Peppers
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-black" name="topping" type="checkbox" value="Black Olives">
-                Back Olives
-              </label>
-            
-</div>
-            
-<div class="button">
-              
-<label>
-                <input id="id-x-cheese" name="topping" type="checkbox" value="Extra Cheese">
-                Extra cheese
-              </label>
-            
-</div>
-          
-</fieldset>
-
-          
-<input type="submit" value="Submit Order" onclick="submitOrder(event)">
-
-        
-</form>
-
-        
-<div id="order">
-
-        
-</div>
-
-      
-</div>
-<script id="script" type="text/javascript">
-
-        // Focus styling code
-
-        $(document).ready( function() {
-
-        $('input[type="radio"]').focus(function() {
-          $(this).parent().addClass('focus');
-        });
-
-        $('input[type="radio"]').blur(function() {
-          $(this).parent().removeClass('focus');
-        });
-
-        $('input[type="radio"]').parent().hover(function() {
-          $(this).addClass('hover');
-        },
-        function() {
-          $(this).removeClass('hover');
-        });
-
-
-        $('input[type="checkbox"]').focus(function() {
-          $(this).parent().addClass('focus');
-        });
-
-        $('input[type="checkbox"]').blur(function() {
-          $(this).parent().removeClass('focus');
-        });
-
-        $('input[type="checkbox"]').parent().hover(function() {
-          $(this).addClass('hover');
-        },
-        function() {
-          $(this).removeClass('hover');
-        });
-
-
-        });
-
-        //
-        // Scripting for submit button form validation
-
-        function moveFocus(id) {
-          $('#'+id).focus();
-        }
-
-        function clearErrorFeedback() {
-          $('div#id-errors').empty();
-          $('div#id-errors').css('display', 'none');
-        }
-
-        function exampleErrorFeedback(errors) {
-          var num_errors = errors.length;
-
-          str = (num_errors === 1 ? "1 Error\n" : num_errors + " Errors\n");
-
-          $('div#id-errors').css('display', 'block');
-
-          $('div#id-errors').append('<h2><a id="id-errors-start"></a>' + str + '</h2>');
-
-          var messages = "<ol>\n";
-
-          for (var i = 0; i < num_errors; i++) {
-            var e = errors[i];
-            messages += '<li><a href="#' + e.id + '" onclick="moveFocus(\'' + e.id + '\')">' + e.message + '</a></li>\n';
-            }
-            messages += "</ol>\n";
-            $('div#id-errors').append(messages);
-
-            moveFocus("id-errors-start");
-          }
-
-        //
-        // Scripting for inline form validation
-
-        function checkItem(id, flag, message) {
-        var em = $('#' + id + '-error');
-        $(em).empty();
-        var ei = $('#' + id);
-
-        if (flag) {
-        $(ei).attr('aria-invalid', 'true');
-        $(em).append(message);
-        $(em).removeClass('noerror');
-        $(em).addClass('error');
-        }
-        else {
-        $(ei).attr('aria-invalid', 'false');
-        $(em).addClass('noerror');
-        $(em).removeClass('error');
-        }
-        }
-
-        function checkName() {
-        var ei = $('#id-name');
-        checkItem('id-name',($(ei).val().length === 0), "Name cannot be empty!  Enter your name");
-        }
-
-        function checkAddress() {
-        var ei = $('#id-address');
-        checkItem('id-address',($(ei).val().length === 0), "Address cannot be empty!  Enter your address");
-        }
-
-        function checkPhone() {
-        var ei = $('#id-phone');
-        var phone = $(ei).val();
-        if (phone.length === 0) {
-        checkItem('id-phone',true, "Phone cannot be empty!  Enter your phone number");
-        }
-        else {
-        p = "";
-        for (var i = 0; i < phone.length; i++) {
-        var c = phone[i];
-        if ((c >= "0") && (c <= "9")) {
-        p += c;
-        }
-        }
-        checkItem('id-phone', ((p.length !== 7) && (p.length !== 10)), "Not a valid phone number, use this format (111) 222-3333");
-        }
-        }
-
-      </script>
-<h2>HTML Source Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Source Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<h2>Javascript Source Code</h2>
-<pre>
-<code id="sc3"></code>
-</pre>
-<script type="text/javascript">
-        sourceCode.add('sc1', 'form');
-        sourceCode.add('sc2', 'style');
-        sourceCode.add('sc3', 'script');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+</table>
 </div>
 <div class="col"></div>
 </div>

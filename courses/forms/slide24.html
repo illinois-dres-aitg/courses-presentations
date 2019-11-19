@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 24: Pizza Service Survey: no labels</title>
+<title>Slide 24: Pizza Service Survey: aria-labelledby</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -12,11 +12,17 @@
 
       table.survey th.rating,
       table.survey td.rating {
-        text-align: center;
+      text-align: center;
       }
 
       table.survey tbody th {
-        font-weight: normal;
+      font-weight: normal;
+      }
+
+      table.survey input:focus,
+      table.survey input:hover {
+        outline: 2px solid #444444;
+        outline-offset: 0.25em;
       }
 
     </style>
@@ -51,12 +57,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide40.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 24 of 40</div>
+<div class="navbar-text pull-right">Slide 24 of 39</div>
 </div>
 </div>
 </nav>
@@ -64,13 +70,13 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Service Survey: no labels</h1>
-<h2>Problems</h2>
+<h1 id="h1_title" class="title">Pizza Service Survey: aria-labelledby</h1>
+<h2>Features</h2>
 <ul>
         
-<li>Radio buttons do not have any natural unique text on the page to use as a label.</li>
+<li>Uses <code>aria-labelledby</code> to label radio buttons with existing visible content on the page.</li>
         
-<li>No keyboard focus styling.</li>
+<li>Keyboard focus and hover styling use CSS <code>:focus</code> and <code>:hover</code> pseudo selectors with the <code>outline</code> property.</li>
       
 </ul>
 <form id="form">
@@ -85,11 +91,11 @@
 <tr>
               
 <th class="question">Question</th>
-              <th class="rating">Very Dissatisfied</th>
-              <th class="rating">Dissatisfied</th>
-              <th class="rating">Neutral</th>
-              <th class="rating">Satisfied</th>
-              <th class="rating">Very Satisfied</th>
+              <th id="r1" class="rating">Very Dissatisfied</th>
+              <th id="r2" class="rating">Dissatisfied</th>
+              <th id="r3" class="rating">Neutral</th>
+              <th id="r4" class="rating">Satisfied</th>
+              <th id="r5" class="rating">Very Satisfied</th>
             
 </tr>
           
@@ -99,34 +105,34 @@
             
 <tr>
               
-<th class="question">Quality of your ordering experience?</th>
-              <td class="rating"><input name="q1" type="radio" value="1"></td>
-              <td class="rating"><input name="q1" type="radio" value="2"></td>
-              <td class="rating"><input name="q1" type="radio" value="3"></td>
-              <td class="rating"><input name="q1" type="radio" value="4"></td>
-              <td class="rating"><input name="q1" type="radio" value="5"></td>
+<th id="q1" class="question">Quality of your ordering experience?</th>
+              <td class="rating"><input name="q1" type="radio" value="1" aria-labelledby="r1 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="2" aria-labelledby="r2 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="3" aria-labelledby="r3 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="4" aria-labelledby="r4 q1"></td>
+              <td class="rating"><input name="q1" type="radio" value="5" aria-labelledby="r5 q1"></td>
             
 </tr>
             
 <tr>
               
-<th class="question">Quality of Pizza?</th>
-              <td class="rating"><input name="q2" type="radio" value="1"></td>
-              <td class="rating"><input name="q2" type="radio" value="2"></td>
-              <td class="rating"><input name="q2" type="radio" value="3"></td>
-              <td class="rating"><input name="q2" type="radio" value="4"></td>
-              <td class="rating"><input name="q2" type="radio" value="5"></td>
+<th id="q2" class="question">Quality of Pizza?</th>
+              <td class="rating"><input name="q2" type="radio" value="1" aria-labelledby="r1 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="2" aria-labelledby="r2 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="3" aria-labelledby="r3 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="4" aria-labelledby="r4 q2"></td>
+              <td class="rating"><input name="q2" type="radio" value="5" aria-labelledby="r5 q2"></td>
             
 </tr>
             
 <tr>
               
-<th class="question">Quality of your Pizza delivery?</th>
-              <td class="rating"><input name="q3" type="radio" value="1"></td>
-              <td class="rating"><input name="q3" type="radio" value="2"></td>
-              <td class="rating"><input name="q3" type="radio" value="3"></td>
-              <td class="rating"><input name="q3" type="radio" value="4"></td>
-              <td class="rating"><input name="q3" type="radio" value="5"></td>
+<th id="q3" class="question">Quality of your Pizza delivery?</th>
+              <td class="rating"><input name="q3" type="radio" value="1" aria-labelledby="r1 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="2" aria-labelledby="r2 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="3" aria-labelledby="r3 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="4" aria-labelledby="r4 q3"></td>
+              <td class="rating"><input name="q3" type="radio" value="5" aria-labelledby="r6 q3"></td>
             
 </tr>
           
@@ -139,6 +145,27 @@
 
       
 </form>
+<script id="script" type="text/javascript">
+
+        function itemFocus(event) {
+          if( event.target ) event.target.parentNode.classList.add("focus");
+        }
+
+        function itemBlur(event) {
+          if( event.target ) event.target.parentNode.classList.remove("focus");
+        }
+
+        window.addEventListener('load', function load(event) {
+          var itemList = document.querySelectorAll('td input');
+
+          for(var i = 0; i < itemList.length; i++) {
+            var item = itemList[i];
+            item.addEventListener('focus', itemFocus, true);
+            item.addEventListener('blur', itemBlur, true);
+          }
+        }, false);
+
+      </script>
 <h2>HTML Source Code</h2>
 <pre>
 <code id="sc1"></code>
@@ -147,9 +174,14 @@
 <pre>
 <code id="sc2"></code>
 </pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
 <script type="text/javascript">
         sourceCode.add('sc1', 'form');
         sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
         sourceCode.make();
         hljs.initHighlightingOnLoad();
       </script>

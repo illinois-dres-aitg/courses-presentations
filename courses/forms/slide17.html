@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: Pizza Order Form: Instructions using label</title>
+<title>Slide 17: Pizza Order Form: Instructions using aria-describedy</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -55,9 +55,6 @@
       margin-top: 2em;
       }
 
-      input[type=submit]:focus {
-      outline: 2px solid black;
-      }
 
       input[type="text"]:hover {
       background-color: #ADDFFF;
@@ -79,7 +76,7 @@
 
       fieldset label.focus {
       border-color: black;
-      background-color: #ADDFFF;
+      background-color: #EEEEEE;
       }
 
       .instructions {
@@ -124,12 +121,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide40.html">
+<a id="ID_SLIDE_LAST" href="slide39.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 17 of 40</div>
+<div class="navbar-text pull-right">Slide 17 of 39</div>
 </div>
 </div>
 </nav>
@@ -137,7 +134,7 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Pizza Order Form: Instructions using label</h1>
+<h1 id="h1_title" class="title">Pizza Order Form: Instructions using aria-describedy</h1>
 <script id="script" type="text/javascript">
 
         function itemFocus(event) {
@@ -152,12 +149,12 @@
 <h2>Features</h2>
 <ul>
         
-<li>Instructions are placed before the form control to support all users who read from top to botton, but especially screen reader users.</li>
+<li>Instructions are placed before the form control to support all users who read from top to bottom, but especially screen reader users.</li>
         
-<li>Uses <code>label[for]</code> to add instructions to related control.</li>
+<li>Uses <code>aria-describedby</code> to reference instructions for related control.</li>
         
 <li>This technique helps screen reader users <em>hear</em> the instructions when they get to the related form control.
-          Less predictable how a screen reader will read the instruction information.</li>
+          Screen readers may not be consistent in presenting the descriptive information.</li>
         
 <li>Does not affect keyboard only users.</li>
       
@@ -180,8 +177,10 @@
 <div id="ex1a">
           
 <label for="id-delivery">Delivery Method</label>
-          <label for="id-delivery" class="instructions">Free home delivery on Monday's and Tuesday nights.</label>
-          <select id="id-delivery">
+          
+<p id="id-delivery-inst" class="instructions">Free home delivery on Monday's and Tuesday nights.</p>
+          
+<select id="id-delivery" aria-describedby="id-delivery-inst">
             <option>Eat in store</option>
             <option>Pickup</option>
             <option>Home delivery</option>
@@ -219,11 +218,13 @@
 
           
 <div id="ex1b">
-            
-<label for="topping1" class="instructions">First topping is free and $1.00 extra for each additional topping.</label>
 
-            <label>
-              <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)">
+            
+<p id="topping-inst" class="instructions">First topping is free and $1.00 extra for each additional topping.</p>
+
+            
+<label>
+              <input id="topping1" name="topping" type="checkbox" value="Sausage" onfocus="itemFocus(event)" onblur="itemBlur(event)" aria-describedby="topping-inst">
               Sausage
             </label>
           
