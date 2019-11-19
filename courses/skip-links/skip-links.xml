@@ -100,7 +100,7 @@
         <tbody>
           <tr>
             <td>
-              Skip link is visible (rare practice)
+              Skip link is visible <br/>(rare practice)
             </td>
             <td>
               <ul>
@@ -110,7 +110,7 @@
           </tr>
           <tr>
             <td>
-              Skip link is invisible until it receiveds focus (most common practice)
+              Skip link is invisible until it receiveds focus<br/>(most common practice)
             </td>
             <td>
               <ul>
