@@ -87,6 +87,7 @@
   <slide>
     <title>Accessible name calculation</title>
     <contents>
+      <p><a href="https://w3c.github.io/aria/#namecalculation">Accessible name and description guidance in editors draft of ARIA Practices</a></p>
       <ul>
         <li>Child text nodes of <code>a</code> element</li>
         <li><code>aria-label</code> attribute</li>
