@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 6: DRES Home Page Landmarks</title>
+<title>Slide 8: Hiding Headings (H1-H6) and Other Content</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -31,21 +31,21 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide5.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide7.html">Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide7.html">
+<a id="ID_SLIDE_NEXT" href="slide9.html">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide28.html">
+<a id="ID_SLIDE_LAST" href="slide10.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 28</div>
+<div class="navbar-text pull-right">Slide 8 of 10</div>
 </div>
 </div>
 </nav>
@@ -53,9 +53,97 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">DRES Home Page Landmarks</h1>
-<p class="center">
-<img width="98%" src="images/dres-landmarks-home-page.png" alt="screen shot highlighting landmarks on dres home page"></p>
+<h1 id="h1_title" class="title">Hiding Headings (H1-H6) and Other Content</h1>
+<h2 id="id_aria">Hiding content graphically and from Assistive Technology</h2>
+<table class="table table-striped" aria-labelledby="id_aria">
+        
+<thead>
+          
+<tr>
+            
+<th>Technology</th>
+            <th>Technique</th>
+            <th>Assistive Technology</th>
+            <th>Graphical Rendering</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>display: none</code></td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>visibility: hidden</code></td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>position: absolute</code>
+<br>
+              
+<code>top: -30em</code>
+<br>
+              
+<code>left: -300em</code>
+<br>
+            
+</td>
+            <td><strong>Visible</strong></td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>CSS</td>
+            <td><code>font-size: 1px</code>
+<br>
+              
+<code>line-height: 1px</code>
+<br>
+            
+</td>
+            <td><strong>Visible</strong></td>
+            <td>hidden (almost)</td>
+          
+</tr>
+          
+<tr>
+            
+<td>HTML5</td>
+            <td><code>hidden</code> attribute</td>
+            <td>hidden</td>
+            <td>hidden</td>
+          
+</tr>
+          
+<tr>
+            
+<td>ARIA 1.0</td>
+            <td><code>aria-hidden=true</code> attribute</td>
+            <td>hidden</td>
+            <td><strong>Visible</strong></td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </div>
 <div class="col"></div>
 </div>

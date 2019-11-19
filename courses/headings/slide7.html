@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: Titling a Web Resource</title>
+<title>Slide 7: Voice Over Heading Support</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -11,7 +11,7 @@
 <style id="style" type="text/css"></style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default">
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -34,18 +34,18 @@
 <a id="ID_SLIDE_PREVIOUS" href="slide6.html">Previous
                       </a>
 </li>
-<li class="disabled">
-<a id="ID_SLIDE_NEXT" href="#">
+<li>
+<a id="ID_SLIDE_NEXT" href="slide8.html">
                         Next
                       </a>
 </li>
-<li class="disabled">
-<a id="ID_SLIDE_LAST" href="#">
+<li>
+<a id="ID_SLIDE_LAST" href="slide10.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 7 of 7</div>
+<div class="navbar-text pull-right">Slide 7 of 10</div>
 </div>
 </div>
 </nav>
@@ -53,39 +53,98 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Titling a Web Resource</h1>
-<details>
+<h1 id="h1_title" class="title">Voice Over Heading Support</h1>
+<table class="table table-striped table-hover" aria-labelledby="h1_title">
         
-<summary>Accessible <code>title</code> element</summary>
-        
-<ul>
+<thead>
           
-<li>Identify website</li>
+<tr>
+            
+<th>Keyboard Command</th>
+            <th>Description</th>
           
-<li>Identify page in website</li>
+</tr>
         
-</ul>
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td><kbd>Command</kbd>+<kbd>F5</kbd></td>
+            <td>Start Voice Over on MacOS</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd></td>
+            <td>Voice Over (VO) command</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>+</kbd></td>
+            <td>Toggle VO key lock on and off</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>U</kbd></td>
+            <td>Open rotor to navigate content on the web page and use the left or right arrow keys to show the list of headings.</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>VO</kbd>+<kbd>Command</kbd>+<kbd>H</kbd></td>
+            <td>Next heading</td>
+          
+</tr>
+          
+<tr>
+            
+<td><kbd>VO</kbd>+<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>H</kbd></td>
+            <td>Previous heading</td>
+          
+</tr>
+        
+</tbody>
       
-</details>
-<h2>Example</h2>
-<p>
-<a href="http://disability.illinois.edu/academic-support">DRES Academic Support</a>
-</p>
-<p class="code">
-        &lt;head&gt;<br>
-        &nbsp;&nbsp;&lt;title&gt;Academic Support | Disability Resources &amp; Educational Services - University of Illinois &lt;title&gt;<br>
-<br>
-        &nbsp;&nbsp;....<br>
-<br>
-        &lt;/head&gt;
-
-      </p>
+</table>
+<h2>Feature Overview</h2>
+<ul>
+        
+<li>Voice Over allows you to view a list of landmarks.</li>
+        
+<li>When navigating a web page Voice Over announces landmark information when the browse or focus cursor enters a new landmark.</li>
+      
+</ul>
+<h2>Other Voice Over Command Resources</h2>
+<ul>
+        
+<li>
+<a href="http://accessibility.psu.edu/voiceover" target="_specification">Penn State: Voice Over for OS X</a>
+</li>
+        
+<li>
+<a href="http://www.apple.com/voiceover/info/guide/_1131.html" target="_specification">Apple Voice Over Commands</a>
+</li>
+        
+<li>
+<a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#vo-mac-basics">Deque University: Voice Over Commands</a>
+</li>
+      
+</ul>
 </div>
 <div class="col"></div>
 </div>
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2019 University of Illinois
       </div>
 </footer>
