@@ -223,8 +223,8 @@
       <h2>Feature Overview</h2>
 
       <ul>
-        <li>In virtual you can move sequentially through the visited and unvisited links on a page or view a list of headings.</li>
-        <li>When navigating a web page JAWS announces link information when the virtual or PC cursor is on a link.</li>
+        <li>In virtual you can move sequentially through the form controls on a page.</li>
+        <li>When navigating a web page JAWS announces form control information when the virtual or PC cursor is on a form control.</li>
       </ul>
 
       <h2>Other Jaws Command Resources</h2>
@@ -261,47 +261,55 @@
           </tr>
           <tr>
             <td><kbd>Insert</kbd>+<kbd>F7</kbd></td>
-            <td>List of links</td>
+            <td>List of form controls.</td>
           </tr>
           <tr>
             <td><kbd>Tab</kbd></td>
-            <td>Next interactive element, including links.</td>
+            <td>Next interactive element, including form controls.</td>
           </tr>
           <tr>
             <td><kbd>Shift</kbd>+<kbd>Tab</kbd></td>
-            <td>Previous interactive element, including links.</td>
+            <td>Previous interactive element, including form controls.</td>
           </tr>
           <tr>
-            <td><kbd>K</kbd></td>
-            <td>Next link</td>
+            <td><kbd>B</kbd></td>
+            <td>Next form control.</td>
           </tr>
           <tr>
-            <td><kbd>Shift</kbd>+<kbd>K</kbd></td>
-            <td>Previous link</td>
+            <td><kbd>Shift</kbd>+<kbd>B</kbd></td>
+            <td>Previous form control.</td>
           </tr>
           <tr>
-            <td><kbd>U</kbd></td>
-            <td>Next unvisited link</td>
+            <td><kbd>B</kbd></td>
+            <td>Next button.</td>
           </tr>
           <tr>
-            <td><kbd>Shift</kbd>+<kbd>U</kbd></td>
-            <td>Previous unvisited link</td>
+            <td><kbd>Shift</kbd>+<kbd>B</kbd></td>
+            <td>Previous button.</td>
           </tr>
           <tr>
-            <td><kbd>V</kbd></td>
-            <td>Next visited link</td>
+            <td><kbd>X</kbd></td>
+            <td>Next checkbox.</td>
           </tr>
           <tr>
-            <td><kbd>Shift</kbd>+<kbd>V</kbd></td>
-            <td>Previous visited link</td>
+            <td><kbd>Shift</kbd>+<kbd>X</kbd></td>
+            <td>Previous checkbox.</td>
+          </tr>
+          <tr>
+            <td><kbd>R</kbd></td>
+            <td>Next radio button.</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift</kbd>+<kbd>R</kbd></td>
+            <td>Previous rado button.</td>
           </tr>
         </tbody>
       </table>
 
       <h2>Feature Overview</h2>
       <ul>
-        <li>In browse mode you can move sequentially links on the page or view a list of links.</li>
-        <li>When navigating the content of a web page NVDA announces heading information is announced.</li>
+        <li>In browse mode you can move sequentially form controls on the page or view a list of form controls.</li>
+        <li>When navigating the content of a web page NVDA announces form control information when the cursor is on a form control.</li>
       </ul>
 
       <h2>Other NVDA Command Resources</h2>

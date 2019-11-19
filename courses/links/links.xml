@@ -354,7 +354,7 @@
       <h2>Feature Overview</h2>
       <ul>
         <li>In browse mode you can move sequentially links on the page or view a list of links.</li>
-        <li>When navigating the content of a web page NVDA announces heading information is announced.</li>
+        <li>When navigating the content of a web page NVDA announces link information when the cursor is on a link.</li>
       </ul>
 
       <h2>Other NVDA Command Resources</h2>
