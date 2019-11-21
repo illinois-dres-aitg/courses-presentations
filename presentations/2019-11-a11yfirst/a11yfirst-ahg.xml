@@ -31,7 +31,7 @@
   <script>../../common/js/xml-slides.js</script>
 
   <slide>
-    <title>A11yFirst for CKEditor and Drupal 8: Creating Accessible Content As You Edit</title>
+    <title>Overview</title>
     <contents>
       <ul>
         <li>Problem of supporting Authors in creating accessible content</li>
@@ -82,6 +82,9 @@
     </contents>
   </slide>
 
+
+
+
   <slide>
     <title>Change User Thinking About Accessibility</title>
     <contents>
@@ -93,6 +96,59 @@
         <li>Describing images.</li>
         <li>Accessibility during the <em>creation</em> of content.</li>
       </ul>
+    </contents>
+  </slide>
+
+ <slide>
+    <title>A11yFirst configuration of CKEditor</title>
+    <contents>
+
+      <h2>Typical CKEditor Toolbar</h2>
+      <p><img src="images/toolbar-typical.png" alt="screen shot of toolbar showing typical CKEditor button configuration"/></p>
+      <p><a href="https://ckeditor.com/ckeditor-4/demo/#article" target="_ckeditor">CKEditor demonstration</a></p>
+
+      <h2>A11yFirst Toolbar</h2>
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing A11yFirst button configuration"/></p>
+      <p><a href="https://a11yfirst.gitlab.io/custom/a11yfirst.html" target="_a11yfirst">A11yFirst demonstration</a></p>
+
+      <h2 id="">A11yFirst Replacements for Original Plugins</h2>
+      <p>The following table shows the A11yFirst plugins and the CKEditor plugins they replace in the configuration file.  The corresponding CKEditor plugins must be removed when using the A11yFirst plug-ins.</p>
+      <table class="table table-striped" aria-label="Features and associated CKEditor plugins">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heading / Paragraph</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          </tr>
+          <tr>
+            <td>Character Style</td>
+            <td>stylescombo</td>
+            <td>a11ystylescombo</td>
+          </tr>
+          <tr>
+            <td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          </tr>
+          <tr>
+            <td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          </tr>
+          <tr>
+            <td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          </tr>
+        </tbody>
+      </table>
     </contents>
   </slide>
 
@@ -256,7 +312,7 @@
     <title>Toolbar Reorganized: Top Row</title>
     <contents>
 
-      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing A11yFirst button configuration"/></p>
       <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
 
       <ul>
@@ -273,7 +329,7 @@
     <title>Toolbar Reorganized: Bottom Row</title>
     <contents>
 
-      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing A11yFirst button configuration"/></p>
       <p>Includes common actions along with inline features such as:</p>
 
       <ul>
@@ -288,57 +344,23 @@
     </contents>
   </slide>
 
-
-
- <slide>
-    <title>A11yFirst configuration of CKEditor</title>
+  <slide>
+    <title>Public A11yFirst Demonstration Page</title>
     <contents>
-      <p>The following table shows the A11yFirst plugins and the CKEditor plugins they replace in the configuration file.  The corresponding CKEditor plugins must be removed when using the A11yFirst plug-ins.</p>
-      <table class="table table-striped" aria-label="Features and associated CKEditor plugins">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Original Plugin</th>
-            <th>a11yFirst Plugin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Heading / Paragraph</td>
-            <td>format</td>
-            <td>a11yheading</td>
-          </tr>
-          <tr>
-            <td>Character Style</td>
-            <td>stylescombo</td>
-            <td>a11ystylescombo</td>
-          </tr>
-          <tr>
-            <td>Links</td>
-            <td>link</td>
-            <td>a11ylink</td>
-          </tr>
-          <tr>
-            <td>Images</td>
-            <td>image or image2</td>
-            <td>a11yimage</td>
-          </tr>
-          <tr>
-            <td>Accessibility Information</td>
-            <td><em>none</em></td>
-            <td>a11yhelp</td>
-          </tr>
-        </tbody>
-      </table>
+      <p><a href="https://a11yfirst.gitlab.io/custom/a11yfirst.html" target="_a11yfirst">A11yFirst Demonstration Website</a></p>
+      <p>URL: <code>https://a11yfirst.gitlab.io/custom/a11yfirst.html</code></p>
+      <iframe src="https://a11yfirst.gitlab.io/custom/a11yfirst.html" width="800px" height="600px" title="A11yFirst Demonstration Website"></iframe>
     </contents>
   </slide>
 
   <slide>
-    <title>A11yFirst Demonstration Pages</title>
+    <title>Drupal 8: A11yFirst Editor Enhancements Module</title>
     <contents>
-      <p><a href="https://a11yfirst.gitlab.io">A11yFirst Demonstration Website</a></p>
-      <p>URL: <code>https://a11yfirst.gitlab.io</code></p>
-      <iframe src="https://a11yfirst.gitlab.io" width="90%" height="600" title="A11yFirst Demonstration Website"></iframe>
+      <ul>
+        <li><a href="https://a11yfirsteditor.web.illinois.edu/" target="_drupal_demo">A11yFirst Demonstration Website</a></li>
+        <li><a href="https://www.drupal.org/sandbox/jongund/3030129" target="_drupal_sandbox">Sandbox A11yFirst Editor Enhancements Module for Drupal 8 (Sandbox Project)</a></li>
+       </ul>
+      <img width="98%" src="images/screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
     </contents>
   </slide>
 
@@ -358,8 +380,8 @@
     <title>How can I use it?</title>
     <contents>
       <ul>
-        <li>Pre-configured releases (ZIP file)</li>
         <li>Drupal 8 Module</li>
+        <li>Pre-configured releases (ZIP file)</li>
         <li>Add-ons available in CKEditor Builder</li>
       </ul>
     </contents>
@@ -370,7 +392,7 @@
     <contents>
       <p>A distribution of CKEditor pre-configured with the A11yFirst toolbar design and A11yFirst plugins is available to use in projects where you are currently using CKEditor or TinyMCE. </p>
 
-      <p><a href="https://github.com/a11yfirst/distribution/releases">Releases of A11yFirst Distributions</a></p>
+      <p><a href="https://github.com/a11yfirst/distribution/releases" target="_releases">Releases of A11yFirst Distributions</a></p>
 
       <p>URL: <code>https://github.com/a11yfirst/distribution/releases</code></p>
 
@@ -378,23 +400,14 @@
   </slide>
 
   <slide>
-    <title>Drupal 8: A11yFirst Editor Enhancements Module</title>
-    <contents>
-      <p><a href="https://www.drupal.org/sandbox/jongund/3030129">Sandbox A11yFirst Editor Enhancements Module for Drupal 8 (Sandbox Project)</a></p>
-      <p>URL: <code>https://www.drupal.org/sandbox/jongund/3030129</code></p>
-      <img width="98%" src="images/screenshot-1.png" aly="A11yFirst Editor Enhancements for Drupal 8"/>
-    </contents>
-  </slide>
-
-  <slide>
     <title>CKEditor 4 Builder Add-ons</title>
     <contents>
       <ul>
-        <li><a href="https://ckeditor.com/cke4/addon/a11yheading">A11yFirst Header / Paragraph</a></li>
-        <li><a href="https://ckeditor.com/cke4/addon/a11yimage">A11yFirst Image</a></li>
-        <li><a href="https://ckeditor.com/cke4/addon/a11ylink">A11yFirst Link</a></li>
-        <li><a href="https://ckeditor.com/cke4/addon/a11ystylescombo">A11yFirst Character Style</a></li>
-        <li><a href="https://ckeditor.com/cke4/addon/a11yfirsthelp">A11yFirst Help</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yheading" target="_plugin">A11yFirst Header / Paragraph</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yimage" target="_plugin">A11yFirst Image</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11ylink" target="_plugin">A11yFirst Link</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11ystylescombo" target="_plugin">A11yFirst Character Style</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yfirsthelp" target="_plugin">A11yFirst Help</a></li>
       </ul>
     </contents>
   </slide>
@@ -415,9 +428,9 @@
     <title>E-mail Discussion and Github Repositories</title>
     <contents>
       <ul>
-        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l">Subscribe to A11yFirst disucssion and announcement list.</a></li>
-        <li><a href="https://www.drupal.org/sandbox/jongund/3030129">A11yFirst Editor Enhancements Drupal Module</a></li>
-        <li><a href="https://github.com/a11yfirst/">A11yFirst github respository</a></li>
+        <li><a href="https://lists.illinois.edu/lists/info/a11yfirst-ckeditor-l"  target="_discussion">Subscribe to A11yFirst disucssion and announcement list.</a></li>
+        <li><a href="https://www.drupal.org/sandbox/jongund/3030129" target="_discussion">A11yFirst Editor Enhancements Drupal Module</a></li>
+        <li><a href="https://github.com/a11yfirst/" target="_discussion">A11yFirst github respository</a></li>
       </ul>
     </contents>
   </slide>

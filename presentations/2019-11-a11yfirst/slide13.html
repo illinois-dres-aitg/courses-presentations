@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: A11yFirst Image: Why use it?</title>
+<title>Slide 13: A11yFirst Image</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -53,22 +53,27 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">A11yFirst Image: Why use it?</h1>
+<h1 id="h1_title" class="title">A11yFirst Image</h1>
+<p>Based on the CKEditor Image2 plugin:</p>
 <ul>
         
-<li>People with visual impairments need text descriptions of informative images.</li>
-
+<li>Prompts for Alternative Text</li>
         
-<li>An informative image must at least have alternative text so that a screen reader can briefly describe the information it conveys.</li>
-
+<li>Warns when Alt. Text is more than 100 char. in length</li>
         
-<li>Alternative text should be succinct and should not include redundant or irrelevant information.</li>
-
+<li>Detects Alt. Text words and phrases such as &lsquo;image of,&rsquo; &lsquo;photo of&rsquo; et al.</li>
         
-<li>A complex informative image should have a long description in the document, adjacent to the image.</li>
-
+<li>Detects use of file name or size in Alt. Text</li>
         
-<li>An image that is purely decorative should have an empty alt attribute, which tells the screen reader to ignore it. Thus there should be a way to indicate that an image is decorative.</li>
+<li>For a decorative image, allows the user to indicate that Alt. Text is not required</li>
+        
+<li>Asks the user whether a Long Description is needed, and if so, where it will be located in the document</li>
+      
+</ul>
+<h2>Dialog box</h2>
+<ul>
+        
+<li>Provides a Help button</li>
       
 </ul>
 </div>
