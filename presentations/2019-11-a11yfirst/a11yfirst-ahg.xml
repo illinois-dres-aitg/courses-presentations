@@ -48,10 +48,10 @@
     <title>University of Illinois Library <abbr title="Content Management System">CMS</abbr></title>
     <contents>
       <ul>
-        <li class="more">Moving to using WordPress to manage web content.</li>
-        <li class="more">Want to support accessible content on new website.</li>
-        <li class="more">Remediation of existing content is labor intensive and expensive.</li>
-        <li class="more">Library grant to investigate more than accessibility remdiation.</li>
+        <li>Moving to using WordPress to manage web content.</li>
+        <li>Want to support accessible content on new website.</li>
+        <li>Remediation of existing content is labor intensive and expensive.</li>
+        <li>Library grant to investigate more than accessibility remdiation.</li>
       </ul>
     </contents>
   </slide>
@@ -60,11 +60,11 @@
     <title>A11yFirst Project Goals</title>
     <contents>
       <ul>
-        <li class="more">Accessible authoring versus remediation.</li>
-        <li class="more">Support accessibility as content is created.</li>
-        <li class="more">Teach authors about accessibility.</li>
-        <li class="more">Change how people think about creating content.</li>
-        <li class="more">Support features of a11yChecker for CKEditor.</li>
+        <li>Accessible authoring versus remediation.</li>
+        <li>Support accessibility as content is created.</li>
+        <li>Teach authors about accessibility.</li>
+        <li>Change how people think about creating content.</li>
+        <li>Support features of a11yChecker for CKEditor.</li>
       </ul>
     </contents>
   </slide>
@@ -73,11 +73,11 @@
     <title>Author Thinking of WYSISWYG Editors</title>
     <contents>
       <ul>
-        <li class="more">What does the page look like.</li>
-        <li class="more">HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
-        <li class="more">Not aware of accessibility requirements.</li>
-        <li class="more">Not aware of accessibility issues of different types of content.</li>
-        <li class="more">Accessibility takes more time and is hard (e.g. remidation model).</li>
+        <li>What does the page look like.</li>
+        <li>HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
+        <li>Not aware of accessibility requirements.</li>
+        <li>Not aware of accessibility issues of different types of content.</li>
+        <li>Accessibility takes more time and is hard (e.g. remidation model).</li>
       </ul>
     </contents>
   </slide>
@@ -86,12 +86,12 @@
     <title>Change User Thinking About Accessibility</title>
     <contents>
       <ul>
-        <li class="more">Accessibility is important to the <em>organization</em>.</li>
-        <li class="more">Accessibility is part of <em>their</em> responsibilities.</li>
-        <li class="more">HTML <em>semantics</em> are important (e.g. headings, lists, ..).</li>
-        <li class="more">Meaningful link text.</li>
-        <li class="more">Describing images.</li>
-        <li class="more">Accessibility during the <em>creation</em> of content.</li>
+        <li>Accessibility is important to the <em>organization</em>.</li>
+        <li>Accessibility is part of <em>their</em> responsibilities.</li>
+        <li>HTML <em>semantics</em> are important (e.g. headings, lists, ..).</li>
+        <li>Meaningful link text.</li>
+        <li>Describing images.</li>
+        <li>Accessibility during the <em>creation</em> of content.</li>
       </ul>
     </contents>
   </slide>
