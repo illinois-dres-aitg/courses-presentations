@@ -45,38 +45,54 @@
   </slide>
 
   <slide>
-    <title>Toolbar Reorganized: Top Row</title>
+    <title>University of Illinois Library <abbr title="Content Management System">CMS</abbr></title>
     <contents>
-
-      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
-      <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
-
       <ul>
-        <li>A11yFirst Heading / Paragraph</li>
-        <li>List (ordered &amp; unordered)</li>
-        <li>A11yFirst Image</li>
-        <li>Table</li>
+        <li class="more">Moving to using WordPress to manage web content.</li>
+        <li class="more">Want to support accessible content on new website.</li>
+        <li class="more">Remediation of existing content is labor intensive and expensive.</li>
+        <li class="more">Library grant to investigate more than accessibility remdiation.</li>
       </ul>
-
     </contents>
   </slide>
 
   <slide>
-    <title>Toolbar Reorganized: Bottom Row</title>
+    <title>A11yFirst Project Goals</title>
     <contents>
-
-      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
-      <p>Includes common actions along with inline features such as:</p>
-
       <ul>
-        <li>Undo / Redo</li>
-        <li>Cut / Copy / Paste</li>
-        <li>A11yFirst Character Style</li>
-        <li>A11yFirst Link</li>
-        <li>Set Language</li>
-        <li>Insert Special Character</li>
+        <li class="more">Accessible authoring versus remediation.</li>
+        <li class="more">Support accessibility as content is created.</li>
+        <li class="more">Teach authors about accessibility.</li>
+        <li class="more">Change how people think about creating content.</li>
+        <li class="more">Support features of a11yChecker for CKEditor.</li>
       </ul>
+    </contents>
+  </slide>
 
+  <slide>
+    <title>Author Thinking of WYSISWYG Editors</title>
+    <contents>
+      <ul>
+        <li class="more">What does the page look like.</li>
+        <li class="more">HTML markup is about styling (e.g. don't understand/appreciate structure).</li>
+        <li class="more">Not aware of accessibility requirements.</li>
+        <li class="more">Not aware of accessibility issues of different types of content.</li>
+        <li class="more">Accessibility takes more time and is hard (e.g. remidation model).</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Change User Thinking About Accessibility</title>
+    <contents>
+      <ul>
+        <li class="more">Accessibility is important to the <em>organization</em>.</li>
+        <li class="more">Accessibility is part of <em>their</em> responsibilities.</li>
+        <li class="more">HTML <em>semantics</em> are important (e.g. headings, lists, ..).</li>
+        <li class="more">Meaningful link text.</li>
+        <li class="more">Describing images.</li>
+        <li class="more">Accessibility during the <em>creation</em> of content.</li>
+      </ul>
     </contents>
   </slide>
 
@@ -235,6 +251,44 @@
       </ul>
     </contents>
   </slide>
+
+  <slide>
+    <title>Toolbar Reorganized: Top Row</title>
+    <contents>
+
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
+      <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
+
+      <ul>
+        <li>A11yFirst Heading / Paragraph</li>
+        <li>List (ordered &amp; unordered)</li>
+        <li>A11yFirst Image</li>
+        <li>Table</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Toolbar Reorganized: Bottom Row</title>
+    <contents>
+
+      <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
+      <p>Includes common actions along with inline features such as:</p>
+
+      <ul>
+        <li>Undo / Redo</li>
+        <li>Cut / Copy / Paste</li>
+        <li>A11yFirst Character Style</li>
+        <li>A11yFirst Link</li>
+        <li>Set Language</li>
+        <li>Insert Special Character</li>
+      </ul>
+
+    </contents>
+  </slide>
+
+
 
  <slide>
     <title>A11yFirst configuration of CKEditor</title>
