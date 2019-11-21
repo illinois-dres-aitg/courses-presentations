@@ -45,93 +45,9 @@
   </slide>
 
   <slide>
-    <title>A11yFirst for CKEditor</title>
-    <contents>
-      <h2>What is it and why should I be using it?</h2>
-      <p style="margin-top: 4em"><a href="http://nhoyt.com/a11yfirst-slides" target="nick">Nicholas Hoyt slides</a></p>
-      <p style="margin-top: 2em"><a href="https://a11yfirst.gitlab.io/custom/#" target="demo">A11yFirst demonstration page</a></p>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>A11yFirst for CKEditor</title>
-    <contents>
-      <h2>What is it?</h2>
-      <p>A set of document editing enhancements for CKEditor<sup style="color: red">*</sup> that promote and encourage <em>the creation of accessible content as you edit</em>.</p>
-
-      <p style="margin-top: 10em"><sup style="color: red">*</sup> CKEditor is the default WYSIWYG editor in Drupal 8</p>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>A11yFirst for CKEditor</title>
-    <contents>
-      <h2>How does it differ from CKEditor?</h2>
-      <ul>
-        <li>Reorganizes the editor toolbar</li>
-        <li>Adds new features via plugins
-          <ul>
-            <li>Heading / Paragraph</li>
-            <li>Character Style</li>
-            <li>Link</li>
-            <li>Image</li>
-            <li>Help</li>
-          </ul>
-        </li>
-      </ul>
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>A11yFirst for CKEditor</title>
-    <contents>
-      <h2>Why should I be using it?</h2>
-      <p>A11yFirst for CKEditor promotes a new model of <em>proactive<sup style="color: red">*</sup> editing</em> for the creation of accessible content.</p>
-      <p style="margin-top: 10em;"><sup style="color: red">*</sup> proactive: acting in anticipation of future problems or needs (Merriam Webster)</p>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>A11yFirst for CKEditor</title>
-    <contents>
-      <h2>Why was a new model needed?</h2>
-      <ul>
-        <li>If the goal is helping authors understand how to make their content accessible, the reactive model of fixing problems after they happen is not as effective.
-          <ul>
-            <li>Accessibility checkers typically provide a laundry list of problems that need to be fixed.</li>
-            <li>Going through the list and “fixing” the problems typically does not provide learning experiences that help people better understand accessibility.</li>
-            <li>When running the checker is the last step in the process, it's too easy to forget (or skip altogether).</li>
-          </ul>
-        </li>
-        <li>Because timing is important!
-          <ul>
-            <li>For example, the best time to add alt. text for an image is when its purpose is clear and you can more easily answer the question: “What information does <em>this</em> image provide in <em>this</em> particular context?”</li>
-          </ul>
-        </li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>The details</title>
-    <contents>
-      <ul>
-        <li>Toolbar Reorganized</li>
-        <li>Heading / Paragraph</li>
-        <li>Character Style</li>
-        <li>Link</li>
-        <li>Image</li>
-        <li>Help</li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Toolbar Reorganized</title>
+    <title>Toolbar Reorganized: Top Row</title>
     <contents>
 
-      <h2>Top Row</h2>
       <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
       <p>Used for block elements, to promote choices relating to document structure as opposed to visual styling:</p>
 
@@ -146,10 +62,9 @@
   </slide>
 
   <slide>
-    <title>Toolbar Reorganized</title>
+    <title>Toolbar Reorganized: Bottom Row</title>
     <contents>
 
-      <h2>Bottom Row</h2>
       <p><img src="images/toolbar.png" alt="screen shot of toolbar showing button configuration"/></p>
       <p>Includes common actions along with inline features such as:</p>
 
@@ -166,34 +81,9 @@
   </slide>
 
   <slide>
-    <title>Toolbar Reorganized</title>
+    <title>Heading / Paragraph: Menu Button</title>
     <contents>
 
-      <h2>What problem is it trying to solve?</h2>
-      <p>The user interface / toolbar of most WYSIWYG editors communicates to its users:</p>
-
-      <ul>
-        <li>“What your document looks like is all that matters!” (WRONG!!!)</li>
-      </ul>
-
-      <p>We are trying to counter that with a toolbar design that communicates that features related to structure are not only about visual styling.</p>
-
-      <p>When elements such as headings and lists are used, screen readers convey their semantics. For example:</p>
-
-      <ul>
-        <li>"Heading level 3: [heading content]"</li>
-        <li>"List with 5 items; item number 1: [list item content]"</li>
-      </ul>
-
-      <p>New message: There is value in giving precedence to block actions, which carry the semantics we just saw illustrated, and consequently in using visual styling only when there is no better alternative.</p>
-
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Heading / Paragraph</title>
-    <contents>
       <h2>Headings</h2>
       <ul>
         <li>Only headings that are in sequence are enabled</li>
@@ -201,18 +91,11 @@
         <li>Menu item labels indicate purpose</li>
       </ul>
 
-      <h2>Configuration options</h2>
+      <h2>Heading configuration options</h2>
       <ul>
         <li>Allow only one <code>h1</code> (true or false)</li>
         <li>Gaps are ignored (<code>h1;h2;h4</code> results in <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>)</li>
       </ul>
-    </contents>
-  </slide>
-
-
-  <slide>
-    <title>Heading / Paragraph</title>
-    <contents>
 
       <h2>Paragraph formats</h2>
       <ul>
@@ -232,16 +115,15 @@
   </slide>
 
   <slide>
-    <title>Heading / Paragraph</title>
+    <title>Heading / Paragraph: Why use it?</title>
     <contents>
-      <h2>Why use it?</h2>
 
       <ul>
         <li>Headings are important — they make it easier for all readers to understand the structure of your document.</li>
         <li>Headings allow screen reader users to quickly and easily navigate from one section of your document to another.</li>
         <li>Using headings sequentially avoids unnecessary confusion
           <div style="margin-top: 1em">
-          For example, understanding the context of a ‘Level 3’ heading, when there is no corresponding ‘Level 2’ heading preceding it, can be very confusing.</div>
+          For example, understanding the context of a ‘Level 3’ heading, when there is no corresponding ‘Level 2’ heading preceding it, can be confusing.</div>
       </li>
       </ul>
     </contents>
@@ -249,7 +131,7 @@
 
 
   <slide>
-    <title>Character Style</title>
+    <title>Character Style: Menu Button</title>
     <contents>
       <p>Based on the CKEditor Styles menu:</p>
 
@@ -266,9 +148,8 @@
   </slide>
 
   <slide>
-    <title>Character Style</title>
+    <title>Character Style: Why use it?</title>
     <contents>
-      <h2>Why use it?</h2>
       <p>When visual styling is used in place of structural elements such as heading or list markup, important semantic information that helps screen reader users understand your content is missing from your document.</p>
     </contents>
   </slide>
@@ -283,6 +164,7 @@
         <li>Requires confirmation when a URL is used as the Display Text</li>
         <li>Detects the use of nondescriptive words and phrases such as ‘click here,’ ‘more’ et al.</li>
       </ul>
+
       <h2>Dialog box</h2>
       <ul>
         <li>Provides a Help button</li>
@@ -291,13 +173,10 @@
   </slide>
 
   <slide>
-    <title>A11yFirst Link</title>
+    <title>A11yFirst Link: Why use it?</title>
     <contents>
-      <h2>Why use it?</h2>
-
       <ul>
         <li>The display text for a link should describe the target of the link.</li>
-
         <li>URLs are typically not very descriptive when used as display text.</li>
       </ul>
     </contents>
@@ -323,9 +202,8 @@
   </slide>
 
   <slide>
-    <title>A11yFirst Image</title>
+    <title>A11yFirst Image: Why use it?</title>
     <contents>
-      <h2>Why use it?</h2>
       <ul>
         <li>People with visual impairments need text descriptions of informative images.</li>
 
@@ -450,43 +328,26 @@
   </slide>
 
   <slide>
-    <title>Demonstration of A11yFirst in Drupal</title>
+    <title>CKEditor 4 Builder Add-ons</title>
     <contents>
-      <div class="border">
-        <img width="98%" src="images/aces-extension.png" aly="Screen shot of ACES Extension website"/>
-      </div>
+      <ul>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yheading">A11yFirst Header / Paragraph</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yimage">A11yFirst Image</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11ylink">A11yFirst Link</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11ystylescombo">A11yFirst Character Style</a></li>
+        <li><a href="https://ckeditor.com/cke4/addon/a11yfirsthelp">A11yFirst Help</a></li>
+      </ul>
     </contents>
   </slide>
 
   <slide>
-    <title>How can I get it and next steps?</title>
+    <title>Next Steps</title>
     <contents>
-      <h2>A11yFirst Plugins</h2>
       <ul>
-        <li>Submit to CKEditor as contributed plugins and make them available on the CKeditor website.</li>
-        <li>Explore with CKEditor how to:
-          <ul>
-            <li>Integrate the <code>a11yimage</code> plugin features into the CKEditor <code>image</code> and <code>images2</code> plugins.</li>
-            <li>Integrate the <code>a11ylink</code> plugin features into the CKEditor <code>link</code> plugin.</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2>Drupal 8</h2>
-      <ul>
-        <li>Become a contributed module (e.g. move out of sandbox status).</li>
-        <li>Work with Drupal core team for CKeditor to:
-          <ul>
-            <li>Integrate the <code>a11yimage</code> plugin features into the Drupal 8 image module.</li>
-            <li>Integrate the <code>a11ylink</code> plugin features into the Drupal 8 link module.</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2>Training Resources</h2>
-      <ul>
-        <li>Develop getting started video on accessible authoring and the A11yFirst features.</li>
-        <li>Develop a short online training module for people to go through to learn about and test their understanding of creating accessible web documents.</li>
+        <li>A11yFirst Modue for Drupal 8: Supporting image uploads.</li>
+        <li>Documentation and training materials.</li>
+        <li>Lobbying LMS vendors to include A11yFirst features.</li>
+        <li>Porting features to TinyMCE.</li>
       </ul>
     </contents>
   </slide>

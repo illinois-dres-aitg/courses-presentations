@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: Heading / Paragraph</title>
+<title>Slide 13: A11yFirst configuration of CKEditor</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide30.html">
+<a id="ID_SLIDE_LAST" href="slide22.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 30</div>
+<div class="navbar-text pull-right">Slide 13 of 22</div>
 </div>
 </div>
 </nav>
@@ -53,21 +53,67 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Heading / Paragraph</h1>
-<h2>Why use it?</h2>
-<ul>
+<h1 id="h1_title" class="title">A11yFirst configuration of CKEditor</h1>
+<p>The following table shows the A11yFirst plugins and the CKEditor plugins they replace in the configuration file.  The corresponding CKEditor plugins must be removed when using the A11yFirst plug-ins.</p>
+<table class="table table-striped" aria-label="Features and associated CKEditor plugins">
         
-<li>Headings are important &mdash; they make it easier for all readers to understand the structure of your document.</li>
+<thead>
+          
+<tr>
+            
+<th>Feature</th>
+            <th>Original Plugin</th>
+            <th>a11yFirst Plugin</th>
+          
+</tr>
         
-<li>Headings allow screen reader users to quickly and easily navigate from one section of your document to another.</li>
+</thead>
         
-<li>Using headings sequentially avoids unnecessary confusion
-          <div style="margin-top: 1em">
-          For example, understanding the context of a &lsquo;Level 3&rsquo; heading, when there is no corresponding &lsquo;Level 2&rsquo; heading preceding it, can be very confusing.</div>
+<tbody>
+          
+<tr>
+            
+<td>Heading / Paragraph</td>
+            <td>format</td>
+            <td>a11yheading</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Character Style</td>
+            <td>stylescombo</td>
+            <td>a11ystylescombo</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Links</td>
+            <td>link</td>
+            <td>a11ylink</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Images</td>
+            <td>image or image2</td>
+            <td>a11yimage</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Accessibility Information</td>
+            <td><em>none</em></td>
+            <td>a11yhelp</td>
+          
+</tr>
+        
+</tbody>
       
-</li>
-      
-</ul>
+</table>
 </div>
 <div class="col"></div>
 </div>
