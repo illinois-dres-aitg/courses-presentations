@@ -250,7 +250,7 @@
             <xsl:attribute name="alt">University of Illinois</xsl:attribute>
           </xsl:element>
         </xsl:element>
-        Copyright &#169; 2019 University of Illinois
+        Copyright &#169; 2020 University of Illinois
       </xsl:element>
     </xsl:element>
   </xsl:template>
