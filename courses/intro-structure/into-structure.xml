@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+  <title>Web Standards and Accessibility </title>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Welcome to Web Standards and Accessibility</title>
+    <contents>
+      <h2>Insructor</h2>
+
+      <figure>
+        <img width="40%" src="../../common/images/jon.jpg" alt="Photo of Jon Gunderson"/>
+        <figcaption>Jon Gunderson, Ph.D., <abbr title="Certified Web Accessibility Professional">CWAP</abbr></figcaption>
+      </figure>
+
+      <h3>Experience</h3>
+      <ul>
+        <li>Coordinator of the <a href="https://disability.illinois.edu" title="Disability Resouces and Education Services">DRES</a> Accessible IT Group at the <a href="https://illinois.edu">University of Illinois</a> in the <a href="https://ahs.illlinois.edu">College of Applied Health Sciences</a>.</li>
+        <li>20 years participating in the <a href="https://www.w3.org/WAI/">W3C Web Accessibility Iniitiative</a>.</li>
+        <li>Almost 40 years of working with computer technology and disability.</li>
+        <li>Over 10 years of teaching web accessibility courses.</li>
+        <li>Major contributor to the W3C <abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices Guide.</li>
+        <li><a href="https://www.disability.illinois.edu/about/staff-directory/jon-gunderson">More information about Jon Gunderson</a></li>
+      </ul>
+
+      <script type="text/javascript">
+        slideShowURL()
+      </script>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Goals</title>
+    <contents>
+      <ul>
+        <li>Original purpose of the web</li>
+        <li>Importance of standards for accessibility</li>
+        <li>W3C Standards for web accessibility</li>
+      </ul>
+    </contents>
+  </slide>
+
+
+</slides>
+

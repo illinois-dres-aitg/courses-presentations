@@ -167,6 +167,11 @@ main .slide-show-url {
     font-size: 140%;
 }
 
+main figcaption {
+    margin-top: 0.25em;
+    font-size 110%;
+}
+
 #example {
     margin-top: 0.5em;
     padding: 0.5em;

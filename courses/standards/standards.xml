@@ -23,10 +23,12 @@
   <script>../../common/js/xml-slides.js</script>
 
   <slide>
-    <title>Goals</title>
+    <title>Goals for Web Standards and Accessibility</title>
     <contents>
       <ul>
         <li>Original purpose of the web</li>
+        <li>Disability prevalence as we age</li>
+        <li>Universal Design is good for everybody</li>
         <li>Importance of standards for accessibility</li>
         <li>W3C Standards for web accessibility</li>
       </ul>
@@ -445,9 +447,24 @@
   </slide>
 
   <slide>
-    <title>Civil Rights of People with Disabilites</title>
+    <title>Univeral Design Benefits Everyone</title>
     <contents>
+      <h2>Universal Design</h2>
+      <p>Gives all users more options in using and interactinf with web content.  The following are a few examples:</p>
+      <ul>
+        <li>Captions for videoes are need by the people who are deaf, but are very useful for people who are:
+          <ul>
+            <li>Non-native speakers of the language being spoken on the video.</li>
+            <li>People with learning disabilities who may have auditory processing difficulties.</li>
+            <li>People in a noisy or quiet environment and cannot listen to the audio.</li>
+            <li>Students learning new terminology in a course can see the spelling of the words to help them remember and understanding the term.</li>
+            <li>Users searching for  on the captions to find relavant portions of the video.</li>
+          </ul>
+        </li>
+        <li></li>
+      </ul>
 
+      <h2>Disability Rights Laws</h2>
       <ul>
         <li><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></li>
         <li>Access to information is a <em>human right</em>, not just a nice thing to do.</li>
