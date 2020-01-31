@@ -320,3 +320,6 @@ function slideShowURL() {
 }
 
 
+function closeWindow() {
+  window.close();
+}
