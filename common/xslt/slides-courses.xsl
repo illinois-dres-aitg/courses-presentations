@@ -205,17 +205,20 @@
                           Slide Transcript
                         </xsl:element>
 
-                        <xsl:element name="div">
-                          <xsl:attribute name="class">transcript</xsl:attribute>
-                          <xsl:choose>
-                            <xsl:when test="transcript">
-                                <xsl:value-of select="transcript"/>
-                            </xsl:when>
-                            <xsl:otherwise>
+                        <xsl:choose>
+                          <xsl:when test="transcript">
+                            <xsl:element name="div">
+                              <xsl:attribute name="class">slide-transcript</xsl:attribute>
+                              <xsl:value-of select="transcript"/>
+                            </xsl:element>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:element name="div">
+                              <xsl:attribute name="class">notranscript</xsl:attribute>
                               No transcript found for this slide.
-                            </xsl:otherwise>
-                          </xsl:choose>
-                      </xsl:element>
+                            </xsl:element>
+                          </xsl:otherwise>
+                        </xsl:choose>
 
                     </xsl:element>
                   </xsl:element>
@@ -233,7 +236,7 @@
                   </xsl:element>
 
                   <xsl:element name="div">
-                    <xsl:attribute name="class">col-md-9 full-transcript</xsl:attribute>
+                    <xsl:attribute name="class">col-md-9 full-transcript-link</xsl:attribute>
 
                     <xsl:element name="a">
                       <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="position()"/></xsl:attribute>
@@ -271,8 +274,7 @@
           <xsl:attribute name="lang"><xsl:value-of select="/slides/lang/."/></xsl:attribute>
           <xsl:element name="head">
             <xsl:element name="title">
-              <xsl:text>Transcription for Slide </xsl:text><xsl:value-of  select="position()"/><xsl:text>: </xsl:text>
-              <xsl:value-of select="title/."/>
+              <xsl:text>Full Transcription: </xsl:text><xsl:value-of  select="/slides/title"/>
             </xsl:element>
 
             <xsl:call-template name="head">
@@ -317,7 +319,7 @@
                     <xsl:choose>
                       <xsl:when test="transcript">
                         <xsl:element name="div">
-                          <xsl:attribute name="class">transcript</xsl:attribute>
+                          <xsl:attribute name="class">full-transcript</xsl:attribute>
                           <xsl:value-of select="transcript/."/>
                         </xsl:element>
                       </xsl:when>

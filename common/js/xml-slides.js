@@ -66,13 +66,11 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  var transcriptNodes = document.querySelectorAll('div.transcript');
-
-  transcriptNodes.forEach( function(node) {
+  function transcriptNode(node) {
 
     function addPhrase(i, j) {
 
-      var k;
+      var k, html='';
 
       if (j <= 0 || (i === 0 && j === 0)) {
         return;
@@ -88,30 +86,70 @@ $(document).ready(function() {
           phrase = '<span class="name">' + phrase.substring(0, k+1) + '</span>' + phrase.substring(k+1, phrase.length);
         }
 
-        transcriptHTML += '<div class="phrase">\n';
-        transcriptHTML += phrase;
-        transcriptHTML += '\n</div>\n';
+        html += '<div class="phrase">\n';
+        html += phrase;
+        html += '\n</div>\n';
       }
+
+      return html;
 
     }
 
-    var phrase;
+    function getNextPhraseIndex(start) {
+
+      var max = transcriptText.length-1;
+
+      var j1 = transcriptText.indexOf('.', start);
+      if (j1 < 0) {
+        j1 = max;
+      }
+
+      var j2 = transcriptText.indexOf('?', start);
+      if (j2 < 0) {
+        j2 = max;
+      }
+
+      var j3 = transcriptText.indexOf('!', start);
+      if (j3 < 0) {
+        j3 = max;
+      }
+
+      if (j1===max && j2===max && j3===max) {
+        return -1;
+      }
+      return Math.min(j1, j2, j3);
+    }
+
+
     var transcriptHTML = '';
     var transcriptText = node.textContent;
 
     var index1 = 0;
-    var index2 = transcriptText.indexOf('.');
+    var index2 = getNextPhraseIndex(0);
 
     while (index2 > 0) {
-      addPhrase(index1, index2);
+      transcriptHTML += addPhrase(index1, index2);
       index1 = index2+1;
-      index2 = transcriptText.indexOf('.', index1);
+      index2 = getNextPhraseIndex(index1);
     }
-    addPhrase(index1, index2);
+    transcriptHTML += addPhrase(index1, index2);
 
     $(node).html(transcriptHTML);
 
+
+  }
+
+  var fullTranscriptNodes = document.querySelectorAll('.full-transcript');
+  var slideTranscriptNodes = document.querySelectorAll('.slide-transcript');
+
+  fullTranscriptNodes.forEach( function(node) {
+    transcriptNode(node);
   });
+
+  slideTranscriptNodes.forEach( function(node) {
+    transcriptNode(node);
+  });
+
 
 });  // end ready event
 

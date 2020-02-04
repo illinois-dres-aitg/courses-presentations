@@ -282,34 +282,52 @@ aside .slide-transcript summary {
     font-weight: bold;
 }
 
-aside .full-transcript {
+aside .full-transcript-link {
     margin-top: 1em;
     font-size: 110%;
     font-weight: bold;
 }
 
-.transcript .phrase {
+.full-transcript .phrase,
+.slide-transcript .phrase {
     margin: 0.5em 0;
     padding: 0.25em;
     line-height: 1.5em;
 }
 
-.transcript .phrase .name {
+.full-transcript .phrase .name,
+.slide-transcript .phrase .name {
     font-weight: bold;
 }
 
-.transcript .phrase:nth-child(even) {
+.full-transcript .phrase:nth-child(even),
+.slide-transcript .phrase:nth-child(even) {
     background-color: #EEEEEE;
     border: 1px solid #EEEEEE;
     border-radius: 4px;
 }
 
-body .transcript {
+body {
+    counter-reset: slide_count;
+}
+
+body h2 {
+    counter-increment: slide_count;
+}
+
+body .slide-transcript,
+body .full-transcript {
     counter-reset: phrase_count;
 }
 
-.transcript .phrase::before {
+.full-transcript .phrase::before {
+    counter-increment: phrase_count;                   /* Increment the value of section counter by 1 */
+    content: counter(slide_count) "." counter(phrase_count) ": ";
+}
+
+.slide-transcript .phrase::before {
     counter-increment: phrase_count;                   /* Increment the value of section counter by 1 */
     content: counter(phrase_count) ": ";
 }
+
 
