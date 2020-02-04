@@ -72,8 +72,8 @@ $(document).ready(function() {
 
       var k, html='';
 
-      if (j <= 0 || (i === 0 && j === 0)) {
-        return;
+      if (j <= 0 || (i === j)) {
+        return '';
       }
 
       var phrase = transcriptText.substring(i, j+1).trim();
@@ -133,6 +133,8 @@ $(document).ready(function() {
       index2 = getNextPhraseIndex(index1);
     }
     transcriptHTML += addPhrase(index1, index2);
+
+    console.log(transcriptHTML);
 
     $(node).html(transcriptHTML);
 
