@@ -39,7 +39,7 @@ header h1 {
 footer {
     margin-top: 0.25em;
     padding-top: 0.25em;
-    margin-top: 4em;
+    margin-top: 1em;
     clear: both;
 }
 
@@ -170,7 +170,7 @@ main .name {
 }
 
 main .slide-show-url {
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 140%;
 }
 
@@ -270,5 +270,46 @@ main img.chart {
 
 main .table-striped > tbody > tr:nth-of-type(2n+1) {
   background-color: #ebf0fa;
+}
+
+aside .slide-transcript {
+    padding: 0.25em;
+    border: gray 1px solid;
+}
+
+aside .slide-transcript summary {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+aside .full-transcript {
+    margin-top: 1em;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.transcript .phrase {
+    margin: 0.5em 0;
+    padding: 0.25em;
+    line-height: 1.5em;
+}
+
+.transcript .phrase .name {
+    font-weight: bold;
+}
+
+.transcript .phrase:nth-child(even) {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+body .transcript {
+    counter-reset: phrase_count;
+}
+
+.transcript .phrase::before {
+    counter-increment: phrase_count;                   /* Increment the value of section counter by 1 */
+    content: counter(phrase_count) ": ";
 }
 

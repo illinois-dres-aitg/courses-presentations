@@ -4,10 +4,11 @@ function resizeContent() {
 
     var index_height     = $('#index').height();
     var content_height   = $('#content').innerHeight();
+    var aside_height     = $('aside[aria-labelledby]').innerHeight();
     var copyright_height = $('#copyright').height();
     var document_height  = $(document).height();
 
-    var space = document_height - index_height - copyright_height - content_height - 120;
+    var space = document_height - index_height - copyright_height - aside_height - content_height - 80;
 
     // resize HTML Slide to fit window
     if( document_height > space) {
@@ -60,6 +61,57 @@ $(document).ready(function() {
 
     resizeContent()
 
+
+});  // end ready event
+
+$(document).ready(function() {
+
+  var transcriptNodes = document.querySelectorAll('div.transcript');
+
+  transcriptNodes.forEach( function(node) {
+
+    function addPhrase(i, j) {
+
+      var k;
+
+      if (j <= 0 || (i === 0 && j === 0)) {
+        return;
+      }
+
+      var phrase = transcriptText.substring(i, j+1).trim();
+
+      if (phrase.length) {
+
+        k = phrase.indexOf(':');
+
+        if ( k > 0) {
+          phrase = '<span class="name">' + phrase.substring(0, k+1) + '</span>' + phrase.substring(k+1, phrase.length);
+        }
+
+        transcriptHTML += '<div class="phrase">\n';
+        transcriptHTML += phrase;
+        transcriptHTML += '\n</div>\n';
+      }
+
+    }
+
+    var phrase;
+    var transcriptHTML = '';
+    var transcriptText = node.textContent;
+
+    var index1 = 0;
+    var index2 = transcriptText.indexOf('.');
+
+    while (index2 > 0) {
+      addPhrase(index1, index2);
+      index1 = index2+1;
+      index2 = transcriptText.indexOf('.', index1);
+    }
+    addPhrase(index1, index2);
+
+    $(node).html(transcriptHTML);
+
+  });
 
 });  // end ready event
 

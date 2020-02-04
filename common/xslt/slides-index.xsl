@@ -30,8 +30,6 @@
           <xsl:with-param name="total" select="count(/slides/slide)" />
         </xsl:call-template>
 
-
-
         <xsl:element name="main">
           <xsl:attribute name="class">container</xsl:attribute>
           <xsl:attribute name="id">content</xsl:attribute>
@@ -144,8 +142,9 @@
           <xsl:element name="body">
 
             <xsl:call-template name="navbar">
-              <xsl:with-param name="num"            select="position()"/>
-              <xsl:with-param name="total"          select="last()" />
+              <xsl:with-param name="num"        select="position()"/>
+              <xsl:with-param name="total"      select="last()" />
+              <xsl:with-param name="transcript" select="transcript/." />
             </xsl:call-template>
 
             <xsl:element name="main">
@@ -181,51 +180,54 @@
 
             </xsl:element>
 
-            <xsl:if test="/slides/addtranscript">
+            <xsl:if test="transcript">
 
               <xsl:element name="aside">
                 <xsl:attribute name="class">container</xsl:attribute>
                 <xsl:attribute name="aria-labelledby">transcript</xsl:attribute>
 
-                <xsl:element name="div">
-                  <xsl:attribute name="class">row</xsl:attribute>
+                <xsl:element name="details">
 
-                  <xsl:element name="div">
-                     <xsl:attribute name="class">col-md-1</xsl:attribute>
+                  <xsl:element name="summary">
+                    <xsl:attribute name="id">transcript</xsl:attribute>
+                    Transcript
                   </xsl:element>
 
+
                   <xsl:element name="div">
-                      <xsl:attribute name="class">col-md-9</xsl:attribute>
+                      <xsl:attribute name="class">row</xsl:attribute>
 
-                      <xsl:element name="details">
-                        <xsl:attribute name="class">slide-transcript</xsl:attribute>
-
-                        <xsl:element name="summary">
-                          <xsl:attribute name="id">transcript</xsl:attribute>
-                          Slide Transcript
-                        </xsl:element>
-
-                        <xsl:element name="div">
-                          <xsl:attribute name="class">transcript</xsl:attribute>
-                          <xsl:choose>
-                            <xsl:when test="transcript">
-                                <xsl:value-of select="transcript"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                              No transcript found for this slide.
-                            </xsl:otherwise>
-                          </xsl:choose>
+                      <xsl:element name="div">
+                        <xsl:attribute name="class">col-md-1</xsl:attribute>
                       </xsl:element>
 
-                    </xsl:element>
-                  </xsl:element>
+                      <xsl:element name="div">
+                        <xsl:attribute name="class">col-md-9</xsl:attribute>
 
-                  <xsl:element name="div">
-                    <xsl:attribute name="class">col</xsl:attribute>
+                        <xsl:value-of select="transcript"/>
+
+                        <xsl:element name="div">
+                          <xsl:element name="a">
+                            <xsl:attribute href="">transcript<xsl:value-of select="position()"/>.html</xsl:attribute>
+                            Open trnscript in new window
+                        </xsl:element>
+
+                      </xsl:element>
+
+                      <xsl:element name="div">
+                        <xsl:attribute name="class">col</xsl:attribute>
+                      </xsl:element>
+
                   </xsl:element>
                 </xsl:element>
+              </xsl:element>
 
-                <xsl:element name="div">
+
+
+
+              </xsl:element>
+
+              <xsl:element name="div">
                   <xsl:attribute name="class">row</xsl:attribute>
 
                   <xsl:element name="div">
@@ -233,22 +235,20 @@
                   </xsl:element>
 
                   <xsl:element name="div">
-                    <xsl:attribute name="class">col-md-9 full-transcript</xsl:attribute>
+                    <xsl:attribute name="class">col-md-9</xsl:attribute>
 
                     <xsl:element name="a">
-                      <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="position()"/></xsl:attribute>
-                      <xsl:attribute name="target">_transcript</xsl:attribute>
-                      Full Transcript
+                        <xsl:attribute name="href">transcript<xsl:value-of select="position()"/>.html</xsl:attribute>
+                        <xsl:attribute name="target">_transcript</xsl:attribute>
                     </xsl:element>
+
                   </xsl:element>
 
                   <xsl:element name="div">
                     <xsl:attribute name="class">col</xsl:attribute>
                   </xsl:element>
-                </xsl:element>
 
               </xsl:element>
-
             </xsl:if>
 
             <xsl:call-template name="contentinfo">
@@ -259,97 +259,94 @@
 
       </redirect:write>
 
-    </xsl:for-each>
+      <xsl:if test="transcript/.">
 
-    <xsl:if test="/slides/addtranscript">
+        <xsl:variable name="fname">transcript<xsl:value-of select="position()"/>.html</xsl:variable>
 
-      <xsl:variable name="fname">transcript.html</xsl:variable>
+        <redirect:write select="$fname">
 
-      <redirect:write select="$fname">
+          <xsl:element name="html">
+            <xsl:attribute name="lang"><xsl:value-of select="/slides/lang/."/></xsl:attribute>
+            <xsl:element name="head">
+              <xsl:element name="title">
+                <xsl:text>Transcription for Slide </xsl:text><xsl:value-of  select="position()"/><xsl:text>: </xsl:text>
+                <xsl:value-of select="title/."/>
+              </xsl:element>
 
-        <xsl:element name="html">
-          <xsl:attribute name="lang"><xsl:value-of select="/slides/lang/."/></xsl:attribute>
-          <xsl:element name="head">
-            <xsl:element name="title">
-              <xsl:text>Transcription for Slide </xsl:text><xsl:value-of  select="position()"/><xsl:text>: </xsl:text>
-              <xsl:value-of select="title/."/>
+              <xsl:call-template name="head">
+                <xsl:with-param name="style" select = "style/." />
+              </xsl:call-template>
+
             </xsl:element>
 
-            <xsl:call-template name="head">
-              <xsl:with-param name="style" select = "style/." />
-            </xsl:call-template>
+            <xsl:element name="body">
 
-          </xsl:element>
-
-          <xsl:element name="body">
-
-            <xsl:element name="main">
-              <xsl:attribute name="id">content</xsl:attribute>
-              <xsl:attribute name="class">container</xsl:attribute>
-
-              <xsl:element name="div">
-                <xsl:attribute name="class">row</xsl:attribute>
+              <xsl:element name="nav">
+                <xsl:attribute name="id">nav</xsl:attribute>
+                <xsl:attribute name="class">navbar navbar-default navbar-fixed-top navbar-center</xsl:attribute>
 
                 <xsl:element name="div">
-                  <xsl:attribute name="class">col-md-1</xsl:attribute>
-                </xsl:element>
+                  <xsl:attribute name="id">slide-nav</xsl:attribute>
+                  <xsl:attribute name="class">collapse navbar-collapse</xsl:attribute>
 
-                <xsl:element name="div">
-                  <xsl:attribute name="class">col-md-9</xsl:attribute>
-
-                  <xsl:element name="h1">
-                    <xsl:attribute name="id">h1_title</xsl:attribute>
-                    <xsl:attribute name="class">title</xsl:attribute>
-                    Transcript for <xsl:value-of select="/slides/title/."/>
+                  <xsl:element name="div">
+                      <xsl:attribute name="class">navbar-text</xsl:attribute>
+                      <xsl:element name="button">
+                        <xsl:attribute name="class">btn btn-primary</xsl:attribute>
+                        <xsl:attribute name="onclick">closeWindow()</xsl:attribute>
+                        Close
+                      </xsl:element>
                   </xsl:element>
 
-                  <xsl:for-each select="/slides/slide">
-                    <xsl:element name="h2">
-                      <xsl:element name="a">
-                        <xsl:attribute name="id">slide<xsl:value-of select="position()"/></xsl:attribute>
-                        <xsl:attribute name="target">_slides</xsl:attribute>
-                        <xsl:attribute name="href">slide<xsl:value-of select="position()"/>.html</xsl:attribute>
-                        Slide <xsl:value-of select="position()"/>:
-                        <xsl:value-of select="title/."/>
-                      </xsl:element>
-                    </xsl:element>
-
-                    <xsl:choose>
-                      <xsl:when test="transcript">
-                        <xsl:element name="div">
-                          <xsl:attribute name="class">transcript</xsl:attribute>
-                          <xsl:value-of select="transcript/."/>
-                        </xsl:element>
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <xsl:element name="div">
-                          <xsl:attribute name="class">notranscript</xsl:attribute>
-                          No transcript for this slide.
-                        </xsl:element>
-                      </xsl:otherwise>
-                    </xsl:choose>
-
-                  </xsl:for-each>
-
-                </xsl:element>
-
-                <xsl:element name="div">
-                  <xsl:attribute name="class">col</xsl:attribute>
                 </xsl:element>
 
               </xsl:element>
 
+
+              <xsl:element name="main">
+                <xsl:attribute name="id">content</xsl:attribute>
+                <xsl:attribute name="class">container</xsl:attribute>
+
+                <xsl:element name="div">
+                  <xsl:attribute name="class">row</xsl:attribute>
+
+                  <xsl:element name="div">
+                    <xsl:attribute name="class">col-md-1</xsl:attribute>
+                  </xsl:element>
+
+                  <xsl:element name="div">
+                    <xsl:attribute name="class">col-md-9</xsl:attribute>
+
+                    <xsl:if test="title/.">
+                      <xsl:element name="h1">
+                        <xsl:attribute name="id">h1_title</xsl:attribute>
+                        <xsl:attribute name="class">title</xsl:attribute>
+                        Transcript for Slide <xsl:value-of select="position()"/>: <xsl:value-of select="title/."/>
+                      </xsl:element>
+                    </xsl:if>
+
+                    <xsl:value-of select="transcript"/>
+                  </xsl:element>
+
+                  <xsl:element name="div">
+                    <xsl:attribute name="class">col</xsl:attribute>
+                  </xsl:element>
+
+                </xsl:element>
+
+              </xsl:element>
+
+
+              <xsl:call-template name="contentinfo">
+              </xsl:call-template>
+
             </xsl:element>
-
-            <xsl:call-template name="contentinfo">
-            </xsl:call-template>
-
           </xsl:element>
-        </xsl:element>
 
-      </redirect:write>
+        </redirect:write>
 
-    </xsl:if>
+      </xsl:if>
+    </xsl:for-each>
 
   </xsl:template>
 
@@ -659,7 +656,7 @@
 
               <xsl:element name="ul">
                 <xsl:attribute name="class">nav navbar-nav pull-right</xsl:attribute>
-                <xsl:if test="/slides/addtranscript">
+                <xsl:if test="transcript">
                   <xsl:element name="li">
                     <xsl:attribute name="style">float: left</xsl:attribute>
                     <xsl:element name="a">
@@ -669,19 +666,20 @@
                   </xsl:element>
                 </xsl:if>
 
-                <xsl:if test="not(/slides/noslidenumbers)">
-                  <xsl:if test="position() > 0">
-                    <xsl:element name="li">
-                      <xsl:attribute name="class">nav navbar-text</xsl:attribute>
-                        <xsl:text>Slide </xsl:text>
-                        <xsl:value-of select="position()"/>
-                        <xsl:text> of </xsl:text>
-                        <xsl:value-of select="last()"/>
-                    </xsl:element>
-                  </xsl:if>
+                <xsl:if test="position() > 0 and not /noslidenumbers">
+                  <xsl:element name="li">
+                    <xsl:attribute name="class">nav navbar-text</xsl:attribute>
+                      <xsl:text>Slide </xsl:text>
+                      <xsl:value-of select="position()"/>
+                      <xsl:text> of </xsl:text>
+                      <xsl:value-of select="last()"/>
+                  </xsl:element>
                 </xsl:if>
 
               </xsl:element>
+
+
+
             </xsl:element>
           </xsl:element>
        </xsl:element>
