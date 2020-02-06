@@ -81,10 +81,11 @@ $(document).ready(function() {
 
       if (phrase.length) {
 
-        k = phrase.indexOf(':');
+        k = phrase.indexOf('[');
+        l = phrase.indexOf(']');
 
-        if ( k > 0) {
-          phrase = '<span class="name">' + phrase.substring(0, k+1) + '</span>' + phrase.substring(k+1, phrase.length);
+        if ( k >= 0 && l > 0) {
+          phrase = '<span class="name">' + phrase.substring(k, l+1) + '</span>' + phrase.substring(l+1, phrase.length);
         }
 
         html += '<div class="phrase">\n';
@@ -98,27 +99,50 @@ $(document).ready(function() {
 
     function getNextPhraseIndex(start) {
 
+      var phrase;
       var max = transcriptText.length-1;
 
-      var j1 = transcriptText.indexOf('.', start);
-      if (j1 < 0) {
-        j1 = max;
+
+      var j = transcriptText.indexOf('.', start);
+      if (j < 0) {
+        j = max;
+      }
+      else {
+        phrase = transcriptText.substring(start, j).trim()
+        if (phrase.length < 6) {
+          j = transcriptText.indexOf('.', j+1);
+        }
+        if (j < 0) {
+          j = max;
+        }
       }
 
-      var j2 = transcriptText.indexOf('?', start);
-      if (j2 < 0) {
-        j2 = max;
+      var k = transcriptText.indexOf('?', start);
+      if (k < 0) {
+        k = max;
       }
 
-      var j3 = transcriptText.indexOf('!', start);
-      if (j3 < 0) {
-        j3 = max;
+      var l = transcriptText.indexOf('!', start);
+      if (l < 0) {
+        l = max;
       }
 
-      if (j1===max && j2===max && j3===max) {
+      var m = transcriptText.indexOf(':', start);
+      if (m < 0) {
+        m = max;
+      }
+      else {
+        phrase = transcriptText.substring(start, m).trim()
+        if (phrase.length < 20 || m > j || m > k || m > l) {
+          m = max;
+        }
+      }
+
+
+      if (j===max && k===max && l===max && m===max) {
         return -1;
       }
-      return Math.min(j1, j2, j3);
+      return Math.min(j, k, l, m);
     }
 
 
@@ -134,8 +158,6 @@ $(document).ready(function() {
       index2 = getNextPhraseIndex(index1);
     }
     transcriptHTML += addPhrase(index1, index2);
-
-    console.log(transcriptHTML);
 
     $(node).html(transcriptHTML);
 

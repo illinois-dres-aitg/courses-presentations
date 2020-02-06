@@ -93,9 +93,12 @@
 <summary id="id-slide-transcript-button">
                           Slide Transcript
                         </summary>
-<div class="notranscript">
-                              No transcript found for this slide.
-                            </div>
+<div class="slide-transcript">
+
+ARIA back in 2002 was originally presented as a repair language to make dynamic HTML content accessible, with the hopes that HTML would eventually include the semantics need by assistive technologies to describe the features and behaviors of custom widgets.  HTML did not evolve to provide more complex semantics and so instead ARIA was integrated into HTML5 as the description language to communicate the behaviors and accessibility information needed for custom interactive widgets created with Javascript, HTML and CSS to assistive technologies.
+
+HTML5 now standardizes how HTML and ARIA markup will be made available through accessibility Application Programming Interfaces (APIs)  on Windows, macOS and GNOME/Linux.   This is a huge win for accessibility and interoperability, because browsers will be required to be much more consistent in how they communicate the semantics and behaviors of a web page to assistive technologies.  Ideally it will not matter if a screen reader user is using Chrome, Firefox or Edge on Windows or Safari, Chrome or Firefox on macOS, they should all be providing the same information to the screen reader and the same level of accessibility.   HTML5 uses the ARIA specification to define how the elements and attributes in HTML5 will be communicated to assistive technologies and even identifies role restrictions so that certain HTML elements can only have a limited set of roles that can override their default role to keep developers form making poor decisions on how to use ARIA.  For example, an H1 element is not allowed to have the role &ldquo;checkbox&rdquo;, but a LI element with the default role of &ldquo;listitem&rdquo; can have its default role overridden by a &ldquo;menuitem&rdquo; or a &ldquo;treeitem&rdquo; role since they all have similar semantics of being part of a list.
+    </div>
 </details>
 </div>
 <div class="col"></div>

@@ -91,9 +91,14 @@
 <summary id="id-slide-transcript-button">
                           Slide Transcript
                         </summary>
-<div class="notranscript">
-                              No transcript found for this slide.
-                            </div>
+<div class="slide-transcript">
+
+The ARIA practices contain information about how to use ARIA widget roles to create WCAG compliant custom interactive components on a web page.   This slide shows the design pattern for a menu button.   The pattern includes a description defining what ARIA means by a menu button, the keyboard support and the properties and states used in the pattern.  It is important to understand the ARIA definition of user interface components when using ARIA roles, properties and states, since the same or similar terms are often used by designers and Javascript component libraries that do not have the same function or behaviors.
+
+The menu button pattern describes using the SPACE or ENTER key to open the popup menu and move focus to the first item in the menu.  It also recommends supporting the UP ARROW and DOWN ARROW keys to open the menu, with UP ARROW moving focus to the last item in the menu instead of the first item.
+
+The two key features that identify the button as a menu button are the element having the role=button and aria-haspopup equal to &ldquo;true&rdquo; or&rdquo; menu&rdquo;.  It also describes how other aria-expanded and aria-controls should be used.
+    </div>
 </details>
 </div>
 <div class="col"></div>

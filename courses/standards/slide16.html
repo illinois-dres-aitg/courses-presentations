@@ -96,9 +96,15 @@
 <summary id="id-slide-transcript-button">
                           Slide Transcript
                         </summary>
-<div class="notranscript">
-                              No transcript found for this slide.
-                            </div>
+<div class="slide-transcript">
+      While WCAG is the most well known W3C document on accessibility, there are other documents that are as equally important for standardizing how authors using HTML, CSS and Javascript to describe the organization and features of a web page, and how web browsers, including Firefox, Chrome, Safari and Edge, communicate accessibility information to assistive technologies.   The Accessible Rich Internet Application (ARIA) Specification is a markup language designed to describe web content to assistive technologies, like screen readers that need information on the organization and structure, and interactive behaviors of the content in a web page.
+
+One way ARIA can be used to describe the semantics of a website&rsquo;s features is when the built-in semantics of the HTML markup language are not sufficient to describe a feature or behavior. For example, a popup menu in a web page is often created using DIV elements which have no semantic information that it is part of a popup menu.  ARIA provides a way to communicate the popup menu using the roles MENU and MENUITEM to tell assistive technologies that author has identified this collection of DIV elements is functioning as a popup menu.
+
+In addition to providing roles, authors must also implement keyboard behaviors consistent with a popup menu and update the ARIA state attribute &ldquo;aria-expanded&rdquo; to indicate when the menu is open or closed.
+
+One of the most important parts of the ARIA specification is defining how a browser communicates roles, properties and states to accessibility APIs for Microsoft Windows, macOS and GNOME/Linux ATK-SPI.  These mappings are of fundamental importance for interoperability, since browsers must communicate the information in the same way to assistive technologies.    When browsers are consistent on how they provide information to accessibility APIs people with disabilities will also have a much more consistent experience when using different browsers and assistive technologies.  Ideally it would not matter if the screen reader user was using Firefox, Chrome or Edge on Windows 10 , the screen reader should provide the same experience.  In summary ARIA is an important technology to provide a standardized bridge for authors to communicate the semantics and behaviors of a web page to assistive technologies and how browsers communicate this information to assistive technologies through accessibility APIs.
+    </div>
 </details>
 </div>
 <div class="col"></div>
