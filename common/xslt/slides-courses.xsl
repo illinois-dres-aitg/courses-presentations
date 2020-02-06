@@ -674,6 +674,7 @@
                         <xsl:element name="li">
                           <xsl:attribute name="style">float: left</xsl:attribute>
                           <xsl:element name="a">
+                            <xsl:attribute name="target">transcript</xsl:attribute>
                             <xsl:attribute name="href">transcript.html</xsl:attribute>
                               Transcript
                           </xsl:element>
