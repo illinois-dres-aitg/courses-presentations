@@ -108,8 +108,7 @@ $(document).ready(function() {
         j = max;
       }
       else {
-        phrase = transcriptText.substring(start, j).trim()
-        if (phrase.length < 6) {
+        if ('0123456789'.indexOf(transcriptText[j-1]) >= 0) {
           j = transcriptText.indexOf('.', j+1);
         }
         if (j < 0) {
