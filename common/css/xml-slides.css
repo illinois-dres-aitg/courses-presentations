@@ -332,4 +332,12 @@ body .full-transcript {
     content: counter(phrase_count) ": ";
 }
 
+.full-transcript .phrase {
+  padding-left: 2em ;
+  text-indent: -2em ;
+}
 
+.slide-transcript .phrase {
+  padding-left: 1em ;
+  text-indent: -1em ;
+}
