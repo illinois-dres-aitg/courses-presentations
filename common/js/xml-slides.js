@@ -4,17 +4,18 @@ function resizeContent() {
 
     var index_height     = $('#index').height();
     var content_height   = $('#content').innerHeight();
-    var aside_height     = $('aside[aria-labelledby]').innerHeight();
+    var transcript_height  = $('aside[aria-label]').innerHeight();
+    if (!transcript_height) {
+      transcript_height = 0;
+    }
     var copyright_height = $('#copyright').height();
     var document_height  = $(document).height();
 
-    var space = document_height - index_height - copyright_height - aside_height - content_height - 80;
+    var space = document_height - index_height - copyright_height - transcript_height - content_height - 90;
 
     // resize HTML Slide to fit window
     if( document_height > space) {
-
         $('#content').css('marginBottom', space);
-
     }
 
 };

@@ -18,6 +18,11 @@ a:focus {
     border: 1px dashed black;
 }
 
+summary {
+    display:list-item;
+}
+
+
 header {
     border-bottom: orange solid thin;
     margin-bottom: 0.25em;
@@ -254,9 +259,6 @@ main details {
     margin-bottom: 2em;
 }
 
-main summary {
-    display:list-item;
-}
 
 main summary h2 {
     margin: 0;
@@ -272,12 +274,12 @@ main .table-striped > tbody > tr:nth-of-type(2n+1) {
   background-color: #ebf0fa;
 }
 
-aside .slide-transcript {
+aside details {
     padding: 0.25em;
     border: gray 1px solid;
 }
 
-aside .slide-transcript summary {
+summary#id-slide-transcript-button {
     font-size: 110%;
     font-weight: bold;
 }

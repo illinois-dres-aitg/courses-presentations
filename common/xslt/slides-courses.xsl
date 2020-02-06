@@ -6,7 +6,7 @@
     xmlns:redirect="org.apache.xalan.xslt.extensions.Redirect"
     extension-element-prefixes="redirect">
 
-  <xsl:output method="html" doctype-public="-//W3C//DTD HTML//EN" indent="yes"/>
+  <xsl:output method="html" doctype-public="" indent="yes"/>
 
   <xsl:template match="/">
 
@@ -185,7 +185,7 @@
 
               <xsl:element name="aside">
                 <xsl:attribute name="class">container</xsl:attribute>
-                <xsl:attribute name="aria-labelledby">transcript</xsl:attribute>
+                <xsl:attribute name="aria-label">Transcript</xsl:attribute>
 
                 <xsl:element name="div">
                   <xsl:attribute name="class">row</xsl:attribute>
@@ -198,10 +198,10 @@
                       <xsl:attribute name="class">col-md-9</xsl:attribute>
 
                       <xsl:element name="details">
-                        <xsl:attribute name="class">slide-transcript</xsl:attribute>
+                        <xsl:attribute name="class">transcript-container</xsl:attribute>
 
                         <xsl:element name="summary">
-                          <xsl:attribute name="id">transcript</xsl:attribute>
+                          <xsl:attribute name="id">id-slide-transcript-button</xsl:attribute>
                           Slide Transcript
                         </xsl:element>
 
@@ -220,7 +220,7 @@
                           </xsl:otherwise>
                         </xsl:choose>
 
-                    </xsl:element>
+                      </xsl:element>
                   </xsl:element>
 
                   <xsl:element name="div">
@@ -240,7 +240,7 @@
 
                     <xsl:element name="a">
                       <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="position()"/></xsl:attribute>
-                      <xsl:attribute name="target">_transcript</xsl:attribute>
+                      <xsl:attribute name="target">transcript</xsl:attribute>
                       Full Transcript
                     </xsl:element>
                   </xsl:element>
@@ -309,7 +309,7 @@
                     <xsl:element name="h2">
                       <xsl:element name="a">
                         <xsl:attribute name="id">slide<xsl:value-of select="position()"/></xsl:attribute>
-                        <xsl:attribute name="target">_slides</xsl:attribute>
+                        <xsl:attribute name="target">slides</xsl:attribute>
                         <xsl:attribute name="href">slide<xsl:value-of select="position()"/>.html</xsl:attribute>
                         Slide <xsl:value-of select="position()"/>:
                         <xsl:value-of select="title/."/>
@@ -387,14 +387,12 @@
 
     <xsl:for-each select="/slides/script">
       <xsl:element name="script">
-        <xsl:attribute name="type">text/javascript</xsl:attribute>
         <xsl:attribute name="src"><xsl:value-of select="."/></xsl:attribute>
       </xsl:element>
     </xsl:for-each>
 
       <xsl:element name="style">
         <xsl:attribute name="id">style</xsl:attribute>
-        <xsl:attribute name="type">text/css</xsl:attribute>
         <xsl:value-of select="$style"/>
       </xsl:element>
 
@@ -409,7 +407,7 @@
         <xsl:attribute name="class">well well-sm</xsl:attribute>
         <xsl:element name="a">
           <xsl:attribute name="href">http://illinois.edu</xsl:attribute>
-          <xsl:attribute name="target">_illinois</xsl:attribute>
+          <xsl:attribute name="target">illinois</xsl:attribute>
           <xsl:element name="img">
             <xsl:attribute name="src">https://aitg.disability.illinois.edu/common/images/block-i.png</xsl:attribute>
             <xsl:attribute name="alt">University of Illinois</xsl:attribute>
@@ -665,7 +663,7 @@
                   <xsl:element name="li">
                     <xsl:attribute name="style">float: left</xsl:attribute>
                     <xsl:element name="a">
-                      <xsl:attribute name="href">#transcript</xsl:attribute>
+                      <xsl:attribute name="href">#id-slide-transcript-button</xsl:attribute>
                         Transcript
                     </xsl:element>
                   </xsl:element>
