@@ -660,13 +660,26 @@
               <xsl:element name="ul">
                 <xsl:attribute name="class">nav navbar-nav pull-right</xsl:attribute>
                 <xsl:if test="/slides/addtranscript">
-                  <xsl:element name="li">
-                    <xsl:attribute name="style">float: left</xsl:attribute>
-                    <xsl:element name="a">
-                      <xsl:attribute name="href">#id-slide-transcript-button</xsl:attribute>
-                        Transcript
-                    </xsl:element>
-                  </xsl:element>
+                  <xsl:choose>
+                    <xsl:when test="transcript">
+                      <xsl:element name="li">
+                        <xsl:attribute name="style">float: left</xsl:attribute>
+                        <xsl:element name="a">
+                          <xsl:attribute name="href">#id-slide-transcript-button</xsl:attribute>
+                            Transcript
+                        </xsl:element>
+                      </xsl:element>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:element name="li">
+                          <xsl:attribute name="style">float: left</xsl:attribute>
+                          <xsl:element name="a">
+                            <xsl:attribute name="href">transcript.html</xsl:attribute>
+                              Transcript
+                          </xsl:element>
+                        </xsl:element>
+                    </xsl:otherwise>
+                  </xsl:choose>
                 </xsl:if>
 
                 <xsl:if test="not(/slides/noslidenumbers)">
