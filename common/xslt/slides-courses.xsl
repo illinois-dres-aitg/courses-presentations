@@ -228,28 +228,6 @@
                   </xsl:element>
                 </xsl:element>
 
-                <xsl:element name="div">
-                  <xsl:attribute name="class">row</xsl:attribute>
-
-                  <xsl:element name="div">
-                    <xsl:attribute name="class">col-md-1</xsl:attribute>
-                  </xsl:element>
-
-                  <xsl:element name="div">
-                    <xsl:attribute name="class">col-md-9 full-transcript-link</xsl:attribute>
-
-                    <xsl:element name="a">
-                      <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="position()"/></xsl:attribute>
-                      <xsl:attribute name="target">transcript</xsl:attribute>
-                      Full Transcript
-                    </xsl:element>
-                  </xsl:element>
-
-                  <xsl:element name="div">
-                    <xsl:attribute name="class">col</xsl:attribute>
-                  </xsl:element>
-                </xsl:element>
-
               </xsl:element>
 
             </xsl:if>
@@ -660,27 +638,14 @@
               <xsl:element name="ul">
                 <xsl:attribute name="class">nav navbar-nav pull-right</xsl:attribute>
                 <xsl:if test="/slides/addtranscript">
-                  <xsl:choose>
-                    <xsl:when test="transcript">
-                      <xsl:element name="li">
-                        <xsl:attribute name="style">float: left</xsl:attribute>
-                        <xsl:element name="a">
-                          <xsl:attribute name="href">#id-slide-transcript-button</xsl:attribute>
-                            Transcript
-                        </xsl:element>
-                      </xsl:element>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:element name="li">
-                          <xsl:attribute name="style">float: left</xsl:attribute>
-                          <xsl:element name="a">
-                            <xsl:attribute name="target">transcript</xsl:attribute>
-                            <xsl:attribute name="href">transcript.html</xsl:attribute>
-                              Transcript
-                          </xsl:element>
-                        </xsl:element>
-                    </xsl:otherwise>
-                  </xsl:choose>
+                  <xsl:element name="li">
+                    <xsl:attribute name="style">float: left</xsl:attribute>
+                    <xsl:element name="a">
+                      <xsl:attribute name="target">transcript</xsl:attribute>
+                      <xsl:attribute name="href">transcript.html</xsl:attribute>
+                        Full Transcript
+                    </xsl:element>
+                  </xsl:element>
                 </xsl:if>
 
                 <xsl:if test="not(/slides/noslidenumbers)">
