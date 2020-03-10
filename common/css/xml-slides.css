@@ -254,11 +254,6 @@ main .code {
     border-radius: 6px;
 }
 
-main details {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
 
 main summary h2 {
     margin: 0;
@@ -274,14 +269,24 @@ main .table-striped > tbody > tr:nth-of-type(2n+1) {
   background-color: #ebf0fa;
 }
 
-aside details {
+aside.container {
+    margin-top: 4em;
+}
+
+aside details.stranscript-container {
     padding: 0.25em;
-    border: gray 1px solid;
+    border: transparent solid thin;
 }
 
 summary#id-slide-transcript-button {
-    font-size: 110%;
+    font-size: 80%;
+    border-radius: 5px;
     font-weight: bold;
+}
+
+summary#id-slide-transcript-button:focus {
+    outline-color: black;
+    outline-offset: 2px;
 }
 
 aside .full-transcript-link {
@@ -292,6 +297,7 @@ aside .full-transcript-link {
 
 .full-transcript .phrase,
 .slide-transcript .phrase {
+    font-size: 120%;
     margin: 0.5em 0;
     padding: 0.25em;
     line-height: 1.5em;

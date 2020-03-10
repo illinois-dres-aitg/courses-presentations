@@ -202,6 +202,7 @@
 
                         <xsl:element name="summary">
                           <xsl:attribute name="id">id-slide-transcript-button</xsl:attribute>
+                          <xsl:attribute name="class">btn btn-primary btn-sm</xsl:attribute>
                           Slide Transcript
                         </xsl:element>
 

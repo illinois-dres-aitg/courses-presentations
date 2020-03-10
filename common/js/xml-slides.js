@@ -174,6 +174,9 @@ $(document).ready(function() {
     transcriptNode(node);
   });
 
+  $('details.transcript').change(function() {
+    alert( "Handler for .change() called." );
+  });
 
 });  // end ready event
 
