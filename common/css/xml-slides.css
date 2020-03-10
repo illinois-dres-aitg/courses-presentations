@@ -315,6 +315,8 @@ aside .full-transcript-link {
     border-radius: 4px;
 }
 
+/*
+
 body {
     counter-reset: slide_count;
 }
@@ -329,12 +331,12 @@ body .full-transcript {
 }
 
 .full-transcript .phrase::before {
-    counter-increment: phrase_count;                   /* Increment the value of section counter by 1 */
+    counter-increment: phrase_count;
     content: counter(slide_count) "." counter(phrase_count) ": ";
 }
 
 .slide-transcript .phrase::before {
-    counter-increment: phrase_count;                   /* Increment the value of section counter by 1 */
+    counter-increment: phrase_count;
     content: counter(phrase_count) ": ";
 }
 
@@ -347,3 +349,4 @@ body .full-transcript {
   padding-left: 1em ;
   text-indent: -1em ;
 }
+*/
