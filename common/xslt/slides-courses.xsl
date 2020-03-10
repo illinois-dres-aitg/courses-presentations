@@ -643,7 +643,7 @@
                     <xsl:attribute name="style">float: left</xsl:attribute>
                     <xsl:element name="a">
                       <xsl:attribute name="target">transcript</xsl:attribute>
-                      <xsl:attribute name="href">transcript.html</xsl:attribute>
+                      <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="$num"/></xsl:attribute>
                         Full Transcript
                     </xsl:element>
                   </xsl:element>
