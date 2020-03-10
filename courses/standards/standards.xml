@@ -26,14 +26,21 @@
 
 
   <slide>
-    <title>Goals</title>
+    <title>Introduction and Goals</title>
     <contents>
+      <h2>Jon Gunderson, Instructor</h2>
       <ul>
-        <li>Original purpose of the web</li>
-        <li>Disability prevalence and types as we age</li>
-        <li>Principles of Universal Design</li>
-        <li>Importance of standards for accessibility</li>
-        <li>W3C Standards for web accessibility</li>
+        <li>University of Illinois for over 25 years in disability services and IT accessibility.</li>
+        <li>Member of W3C Web Accessibility Initiative for 20 years.</li>
+        <li>Member the Accessible Rich Internet Application (ARIA) working group.</li>
+      </ul>
+      <h2>Goals</h2>
+      <ul>
+        <li>Original purpose of the web.</li>
+        <li>Disability prevalence and types as we age.</li>
+        <li>Principles of Universal Design.</li>
+        <li>Importance of standards for accessibility.</li>
+        <li>W3C Standards for web accessibility.</li>
       </ul>
 
       <script>
