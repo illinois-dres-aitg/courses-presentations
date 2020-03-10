@@ -254,7 +254,7 @@
           <xsl:attribute name="lang"><xsl:value-of select="/slides/lang/."/></xsl:attribute>
           <xsl:element name="head">
             <xsl:element name="title">
-              <xsl:text>Full Transcription: </xsl:text><xsl:value-of  select="/slides/title"/>
+              <xsl:text>Full Audio Transcription: </xsl:text><xsl:value-of  select="/slides/title"/>
             </xsl:element>
 
             <xsl:call-template name="head">
@@ -282,7 +282,7 @@
                   <xsl:element name="h1">
                     <xsl:attribute name="id">h1_title</xsl:attribute>
                     <xsl:attribute name="class">title</xsl:attribute>
-                    Transcript for <xsl:value-of select="/slides/title/."/>
+                    Full Audio Transcript for <xsl:value-of select="/slides/title/."/>
                   </xsl:element>
 
                   <xsl:for-each select="/slides/slide">
@@ -645,7 +645,7 @@
                     <xsl:element name="a">
                       <xsl:attribute name="target">transcript</xsl:attribute>
                       <xsl:attribute name="href">transcript.html#slide<xsl:value-of select="$num"/></xsl:attribute>
-                        Full Transcript
+                        Full Audio Transcript
                     </xsl:element>
                   </xsl:element>
                 </xsl:if>

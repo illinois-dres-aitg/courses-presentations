@@ -315,38 +315,3 @@ aside .full-transcript-link {
     border-radius: 4px;
 }
 
-/*
-
-body {
-    counter-reset: slide_count;
-}
-
-body h2 {
-    counter-increment: slide_count;
-}
-
-body .slide-transcript,
-body .full-transcript {
-    counter-reset: phrase_count;
-}
-
-.full-transcript .phrase::before {
-    counter-increment: phrase_count;
-    content: counter(slide_count) "." counter(phrase_count) ": ";
-}
-
-.slide-transcript .phrase::before {
-    counter-increment: phrase_count;
-    content: counter(phrase_count) ": ";
-}
-
-.full-transcript .phrase {
-  padding-left: 2em ;
-  text-indent: -2em ;
-}
-
-.slide-transcript .phrase {
-  padding-left: 1em ;
-  text-indent: -1em ;
-}
-*/
