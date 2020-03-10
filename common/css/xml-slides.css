@@ -282,10 +282,11 @@ summary#id-slide-transcript-button {
     font-size: 90%;
     border-radius: 5px;
     font-weight: bold;
+    width: 12em;
 }
 
 summary#id-slide-transcript-button:focus {
-    outline-color: black;
+    outline: black dotted 2px;
     outline-offset: 2px;
 }
 
