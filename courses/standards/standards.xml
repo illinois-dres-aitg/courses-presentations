@@ -102,18 +102,29 @@ of each slide.
           </ul>
         </li>
         <li>Tim had an idea to not only share information between people, but with everyone.</li>
-        <li>Documents could reference each other through hyertext linking.</li>
+        <li>Documents reference each other through hyertext linking, making it reasier to find and retrieve related information.</li>
       </ul>
     </contents>
     <transcript>
 This slide is about why the world wide web was developed in the first place.
-While it is hard to image a world without the web today, it is still a relatively new technology, created by Tim Berners-Lee in 1989 as aresearch project at the CERN particle accelerator lab in Switzerland.
-Tim was observing a problem research teams were having collaborating on writing reports and papers, and in general managing, finding and sharing research protocols and results.
-Scientists would send each other documents via e-mail and when they tried to open them, they discovered they did not have the application needed to view and edit the document.
-This was because they were using different word processors, some used WordStar, others used Word Perfect, others used Microsoft Word or some other application.
-These programs did not recognize the document format pf other word processors and the researchers were stuck having to spend time reformatting or retyping content.
+
+While it is hard to image a world without the web today, it is still a relatively new technology, created by Tim Berners-Lee in 1989 as a research project at the CERN particle accelerator lab in Switzerland.
+
+Tim was observing a problem research teams were having collaborating on research.
+
+Scientists would send each other documents via e-mail and when they tried to open them, they
+discovered they did not have the application needed to view and edit the document.
+
+This was due to them using different word processors, some used WordStar, others used Word Perfect, others used Microsoft Word or some other application.
+
+These programs did not recognize the document formats of other word processors and the researchers were stuck spending time reformatting or retyping content.
+
+Researchers also had a problem organizing, storing and retreiving the vast amount of documents that were being generated.
+
 Tim had the idea that people should be able to create sharable documents and that everyone should be able to view and that other team members could share in editing.
-Another important feature of the web is including the concept of hypertext, the ability of documents to reference other document through links, so people can easily navigate and view related or supporting information.
+
+Another important feature of the web is including the concept of hypertext, the ability of documents to reference other documents through links, so people can easily navigate and view related or supporting information, which alleviate many of the problems of finding and retrieving documents.
+
     </transcript>
   </slide>
 
