@@ -79,6 +79,8 @@ $(document).ready(function() {
 
       var phrase = transcriptText.substring(i, j+1).trim();
 
+      console.log('phrase: ' + phrase);
+
       if (phrase.length) {
 
         k = phrase.indexOf('[');
@@ -99,59 +101,63 @@ $(document).ready(function() {
 
     function getNextPhraseIndex(start) {
 
-      var phrase;
-      var max = transcriptText.length-1;
+      var index = start;
+      var spaceCount = 0;
+      var isLastCharANumber = false;
+      var c = '';
+      var c1 = '';
+      var parenCount = 0;
 
+      while (index < transcriptTextLength) {
 
-      var j = transcriptText.indexOf('.', start);
-      if (j < 0) {
-        j = max;
-      }
-      else {
-        if ('0123456789'.indexOf(transcriptText[j-1]) >= 0) {
-          j = transcriptText.indexOf('.', j+1);
+        c1 = c;
+        c = transcriptText[index];
+
+        if ('([{'.indexOf(c) >= 0) {
+          parenCount += 1;
         }
-        if (j < 0) {
-          j = max;
+
+        if (')]}'.indexOf(c) >= 0) {
+          parenCount -= 1;
         }
-      }
 
-      var k = transcriptText.indexOf('?', start);
-      if (k < 0) {
-        k = max;
-      }
-
-      var l = transcriptText.indexOf('!', start);
-      if (l < 0) {
-        l = max;
-      }
-
-      var m = transcriptText.indexOf(':', start);
-      if (m < 0) {
-        m = max;
-      }
-      else {
-        phrase = transcriptText.substring(start, m).trim()
-        if (phrase.length < 20 || m > j || m > k || m > l) {
-          m = max;
+        if (c === ' ') {
+          spaceCount += 1;
         }
-      }
+
+        isLastCharANumber = '0123456789'.indexOf(c1) >= 0;
+
+        if (('?!'.indexOf(c) >= 0) && !parenCount) {
+          return index;
+        }
+
+        if (c === ':' && spaceCount && !parenCount) {
+          return index;
+        }
 
 
-      if (j===max && k===max && l===max && m===max) {
-        return -1;
+        if (c === '.' && !isLastCharANumber) {
+          if (spaceCount && !parenCount) {
+            return index;
+          }
+        }
+
+        index += 1;
       }
-      return Math.min(j, k, l, m);
+
+      return transcriptTextLast;
+
     }
 
-
     var transcriptHTML = '';
-    var transcriptText = node.textContent;
+    var transcriptText = node.textContent.trim();
+    var transcriptTextLength = transcriptText.length;
+    var transcriptTextLast   = transcriptTextLength-1;
 
     var index1 = 0;
     var index2 = getNextPhraseIndex(0);
 
-    while (index2 > 0) {
+    while (index2 < transcriptTextLast) {
       transcriptHTML += addPhrase(index1, index2);
       index1 = index2+1;
       index2 = getNextPhraseIndex(index1);

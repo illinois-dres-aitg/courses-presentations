@@ -3,6 +3,8 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
+ <noslidenumbers/>
+ <addtranscript/>
   <title>ARIA Landmarks</title>
   <person>
     <name>Jon Gunderson</name>
@@ -10,7 +12,6 @@
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
   </person>
-
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
@@ -21,6 +22,7 @@
   <script>../../common/js/bootstrap.min.js</script>
   <script>../../common/js/bootstrap-accessibility.min.js</script>
   <script>../../common/js/xml-slides.js</script>
+
 
   <slide>
     <title>Overview</title>
@@ -36,6 +38,11 @@
       </script>
 
     </contents>
+    <transcript>
+
+
+
+    </transcript>
   </slide>
 
 
@@ -59,6 +66,9 @@
         <li><a href="https://www.w3.org/TR/WCAG/#navigation-mechanisms-descriptive" target="_specification">2.4.6 Headings and Labels</a></li>
       </ul>
     </contents>
+    <transcript>
+
+    </transcript>
   </slide>
 
 
