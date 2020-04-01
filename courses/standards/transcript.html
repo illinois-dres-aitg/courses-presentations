@@ -457,6 +457,14 @@ Analogy is adding curb cuts to an already existing sidewalk, it requires using j
 <h2>
 <a id="slide16" target="slides" href="slide16.html">
                         Slide 16:
+                        Meeting the Requirements of WCAG 2.1</a>
+</h2>
+<div class="full-transcript">
+    
+</div>
+<h2>
+<a id="slide17" target="slides" href="slide17.html">
+                        Slide 17:
                         Accessible Rich Internet Applications (ARIA) Specification</a>
 </h2>
 <div class="full-transcript">
@@ -469,8 +477,8 @@ In addition to providing roles, authors must also implement keyboard behaviors c
 One of the most important parts of the ARIA specification is defining how a browser communicates roles, properties and states to accessibility APIs for Microsoft Windows, macOS and GNOME/Linux ATK-SPI.  These mappings are of fundamental importance for interoperability, since browsers must communicate the information in the same way to assistive technologies.    When browsers are consistent on how they provide information to accessibility APIs people with disabilities will also have a much more consistent experience when using different browsers and assistive technologies.  Ideally it would not matter if the screen reader user was using Firefox, Chrome or Edge on Windows 10 , the screen reader should provide the same experience.  In summary ARIA is an important technology to provide a standardized bridge for authors to communicate the semantics and behaviors of a web page to assistive technologies and how browsers communicate this information to assistive technologies through accessibility APIs.
     </div>
 <h2>
-<a id="slide17" target="slides" href="slide17.html">
-                        Slide 17:
+<a id="slide18" target="slides" href="slide18.html">
+                        Slide 18:
                         ARIA Authoring Practices</a>
 </h2>
 <div class="full-transcript">
@@ -485,8 +493,8 @@ One of the most important parts of the ARIA specification is defining how a brow
       The examples for these widgets are in the practices for use in testing implementation of ARIA features and assistive technology support.
     </div>
 <h2>
-<a id="slide18" target="slides" href="slide18.html">
-                        Slide 18:
+<a id="slide19" target="slides" href="slide19.html">
+                        Slide 19:
                         ARIA Practcies: Landmark Region Design Pattern</a>
 </h2>
 <div class="full-transcript">
@@ -499,8 +507,8 @@ Many HTML sectioning elements generate landmarks by default so it is very import
 When more than one landmark of the same type appears on the page they need to have descriptive labels to help people understand the differences in content between the two regions.
     </div>
 <h2>
-<a id="slide19" target="slides" href="slide19.html">
-                        Slide 19:
+<a id="slide20" target="slides" href="slide20.html">
+                        Slide 20:
                         ARIA Practcies: Landmark Example</a>
 </h2>
 <div class="full-transcript">
@@ -528,8 +536,8 @@ A contentinfo landmark region is on the bottom of the page and identifies the co
 I press the &ldquo;show headings&rdquo; button and it highlights the headings on the page.   Many of the headings are used for labeling the landmark regions to help users understand the content in the region.
     </div>
 <h2>
-<a id="slide20" target="slides" href="slide20.html">
-                        Slide 20:
+<a id="slide21" target="slides" href="slide21.html">
+                        Slide 21:
                         ARIA Practcies: Menu Button Design Pattern</a>
 </h2>
 <div class="full-transcript">
@@ -541,8 +549,8 @@ The menu button pattern describes using the SPACE or ENTER key to open the popup
 The two key features that identify the button as a menu button are the element having the role=button and aria-haspopup equal to &ldquo;true&rdquo; or&rdquo; menu&rdquo;.  It also describes how other aria-expanded and aria-controls should be used.
     </div>
 <h2>
-<a id="slide21" target="slides" href="slide21.html">
-                        Slide 21:
+<a id="slide22" target="slides" href="slide22.html">
+                        Slide 22:
                         ARIA Practcies: Menu Button Example</a>
 </h2>
 <div class="full-transcript">
@@ -561,8 +569,8 @@ The code in the examples is considered open source and can be reused and modifie
 
     </div>
 <h2>
-<a id="slide22" target="slides" href="slide22.html">
-                        Slide 22:
+<a id="slide23" target="slides" href="slide23.html">
+                        Slide 23:
                         HTML 5</a>
 </h2>
 <div class="full-transcript">
@@ -572,8 +580,8 @@ ARIA back in 2002 was originally presented as a repair language to make dynamic 
 HTML5 now standardizes how HTML and ARIA markup will be made available through accessibility Application Programming Interfaces (APIs)  on Windows, macOS and GNOME/Linux.   This is a huge win for accessibility and interoperability, because browsers will be required to be much more consistent in how they communicate the semantics and behaviors of a web page to assistive technologies.  Ideally it will not matter if a screen reader user is using Chrome, Firefox or Edge on Windows or Safari, Chrome or Firefox on macOS, they should all be providing the same information to the screen reader and the same level of accessibility.   HTML5 uses the ARIA specification to define how the elements and attributes in HTML5 will be communicated to assistive technologies and even identifies role restrictions so that certain HTML elements can only have a limited set of roles that can override their default role to keep developers form making poor decisions on how to use ARIA.  For example, an H1 element is not allowed to have the role &ldquo;checkbox&rdquo;, but a LI element with the default role of &ldquo;listitem&rdquo; can have its default role overridden by a &ldquo;menuitem&rdquo; or a &ldquo;treeitem&rdquo; role since they all have similar semantics of being part of a list.
     </div>
 <h2>
-<a id="slide23" target="slides" href="slide23.html">
-                        Slide 23:
+<a id="slide24" target="slides" href="slide24.html">
+                        Slide 24:
                         HTML 5: main element</a>
 </h2>
 <div class="full-transcript">
@@ -582,8 +590,8 @@ HTML5 now standardizes how HTML and ARIA markup will be made available through a
 It can also be used as the target for a skip navigation link to support keyboard only users.
     </div>
 <h2>
-<a id="slide24" target="slides" href="slide24.html">
-                        Slide 24:
+<a id="slide25" target="slides" href="slide25.html">
+                        Slide 25:
                         ARIA in HTML</a>
 </h2>
 <div class="full-transcript">
@@ -596,8 +604,8 @@ The specification also includes a set of allowed roles that can be used to overr
 Another specification called the Core Accessibility API Mappings specification defines how ARIA roles, properties and states are represented in accessibility APIs for Microsoft Windows, macOS and Gnome/Linux.
     </div>
 <h2>
-<a id="slide25" target="slides" href="slide25.html">
-                        Slide 25:
+<a id="slide26" target="slides" href="slide26.html">
+                        Slide 26:
                         Summary</a>
 </h2>
 <div class="full-transcript">
@@ -614,8 +622,8 @@ In my mind the number one issue we have is authoring tools not supporting access
 What we need is accessibility by default, where the tool makes it easier to create accessible content and harder to create inaccessible content, by providing prompts and guidance to the author as they are editing a document or page.
     </div>
 <h2>
-<a id="slide26" target="slides" href="slide26.html">
-                        Slide 26:
+<a id="slide27" target="slides" href="slide27.html">
+                        Slide 27:
                         Next Steps</a>
 </h2>
 <div class="full-transcript">

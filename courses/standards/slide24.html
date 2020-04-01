@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 24: ARIA in HTML</title>
+<title>Slide 24: HTML 5: main element</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide26.html" title="Slide 26">
+<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
                         Last
                       </a>
 </li>
@@ -60,24 +60,25 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA in HTML</h1>
+<h1 id="h1_title" class="title">HTML 5: main element</h1>
 <p>
         
-<a href="https://www.w3.org/TR/html-aria/" target="_specification">ARIA in HTML5</a>
+<a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
       
 </p>
+<h2>Accessibility Feature</h2>
 <ul>
         
-<li>Default ARIA roles</li>
+<li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
         
-<li>ARIA role restrictions</li>
+<li>Identifies the main content of the page</li>
         
-<li>
-<a href="https://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings Specification</a>
-</li>
+<li>Creates a <code>main</code> landmark on the page for screen readers</li>
+        
+<li>Can be use for the target of a skip to main link</li>
       
 </ul>
-<iframe src="https://www.w3.org/TR/html-aria/#h1-h6" width="99%" height="600px" title="ARIA in HTML5: H1 to H6 mappings and restrictions"></iframe>
+<iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -91,13 +92,9 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-The ARIA in HTML specification is the document that defines how HTML element and attributes will be communicated to accessibility APIs using ARIA roles, properties and states.
+      New elements like the &ldquo;main&rdquo; element have also been added to HTML5 to make it easier for developers to implement accessibility requirements.   The main element should be used to identify the main content of a page and it creates a main landmark region.  This provides a means for people using screen readers to use landmark navigation feature of the screen reader to easily get to the main content of the page.
 
-Every HTML element will have a default role when ARIA 1.2 specification is completed.  For example, the H1 through H6 element in HTML have the role heading and the aria-level property set based on the level of the header.
-
-The specification also includes a set of allowed roles that can be used to override the default role of the element.
-
-Another specification called the Core Accessibility API Mappings specification defines how ARIA roles, properties and states are represented in accessibility APIs for Microsoft Windows, macOS and Gnome/Linux.
+It can also be used as the target for a skip navigation link to support keyboard only users.
     </div>
 </details>
 </div>

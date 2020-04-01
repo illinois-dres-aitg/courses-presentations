@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: ARIA Authoring Practices</title>
+<title>Slide 17: Accessible Rich Internet Applications (ARIA) Specification</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide26.html" title="Slide 26">
+<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
                         Last
                       </a>
 </li>
@@ -60,23 +60,30 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Authoring Practices</h1>
+<h1 id="h1_title" class="title">Accessible Rich Internet Applications (ARIA) Specification</h1>
 <p>
         
-<a href="https://www.w3.org/TR/wai-aria-practices" target="_specification">W3C ARIA Authoring Practices</a>
+<a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
       
 </p>
 <h2>Important Features</h2>
 <ul>
         
-<li>Design patterns for using landmarks and creating accessible widgets</li>
+<li>
+<code>role</code> semantics</li>
         
-<li>Full working and reviewed examples</li>
+<li>States and properties</li>
         
-<li>Review of accessible name and description alogithms</li>
+<li>
+<a href="https://www.w3.org/TR/core-aam/" target="_specification">W3C Core Accessibility API Mappings</a>
+</li>
+        
+<li>
+<a href="https://www.w3.org/TR/accname" target="_specification">W3C Accessible Name and Description Computation Specification</a>
+</li>
       
 </ul>
-<iframe src="https://www.w3.org/tr/wai-aria-practices" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
+<iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -90,15 +97,13 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      While the ARIA specification provides a powerful new tool to create accessible websites, like any tool it can be used inappropriately, especially if the user is not very familiar with accessibility or assistive technologies.
-      The ARIA Authoring practices provide information on both landmark regions and interactive widget roles.
-      Unfortunately, there is a lot of poor or confusing ARIA markup on the web that is making web pages less accessible, rather than more accessible.
-      To help authors understand how to use ARIA correctly the ARIA working group created the ARIA Authoring Practices which provide detailed information on how to use ARIA to create accessible web pages and interactive widgets.
-      The practices provide information on keyboard support, and how to use ARIA roles, properties and states to communicate document structure and interactive features to assistive technologies.
-      The practices also contain fully working examples that demonstrate the features needed to support accessibility for people to test and review for their own designs and widget libraries.
-      The example code is open source and can be reused to provide the basis for a production quality accessible widgets.
-      Caution should be used in directly using the code in the examples in a production environment, since the examples might not meet the requirements of mobile web applications (e.g. touch support) and may demonstrate features that are not fully supported by all accessibility APIs, like slider and spin button.
-      The examples for these widgets are in the practices for use in testing implementation of ARIA features and assistive technology support.
+      While WCAG is the most well known W3C document on accessibility, there are other documents that are as equally important for standardizing how authors using HTML, CSS and Javascript to describe the organization and features of a web page, and how web browsers, including Firefox, Chrome, Safari and Edge, communicate accessibility information to assistive technologies.   The Accessible Rich Internet Application (ARIA) Specification is a markup language designed to describe web content to assistive technologies, like screen readers that need information on the organization and structure, and interactive behaviors of the content in a web page.
+
+One way ARIA can be used to describe the semantics of a website&rsquo;s features is when the built-in semantics of the HTML markup language are not sufficient to describe a feature or behavior. For example, a popup menu in a web page is often created using DIV elements which have no semantic information that it is part of a popup menu.  ARIA provides a way to communicate the popup menu using the roles MENU and MENUITEM to tell assistive technologies that author has identified this collection of DIV elements is functioning as a popup menu.
+
+In addition to providing roles, authors must also implement keyboard behaviors consistent with a popup menu and update the ARIA state attribute &ldquo;aria-expanded&rdquo; to indicate when the menu is open or closed.
+
+One of the most important parts of the ARIA specification is defining how a browser communicates roles, properties and states to accessibility APIs for Microsoft Windows, macOS and GNOME/Linux ATK-SPI.  These mappings are of fundamental importance for interoperability, since browsers must communicate the information in the same way to assistive technologies.    When browsers are consistent on how they provide information to accessibility APIs people with disabilities will also have a much more consistent experience when using different browsers and assistive technologies.  Ideally it would not matter if the screen reader user was using Firefox, Chrome or Edge on Windows 10 , the screen reader should provide the same experience.  In summary ARIA is an important technology to provide a standardized bridge for authors to communicate the semantics and behaviors of a web page to assistive technologies and how browsers communicate this information to assistive technologies through accessibility APIs.
     </div>
 </details>
 </div>

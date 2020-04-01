@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 18: ARIA Practcies: Landmark Region Design Pattern</title>
+<title>Slide 18: ARIA Authoring Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide26.html" title="Slide 26">
+<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
                         Last
                       </a>
 </li>
@@ -60,23 +60,23 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Practcies: Landmark Region Design Pattern</h1>
+<h1 id="h1_title" class="title">ARIA Authoring Practices</h1>
 <p>
         
-<a href="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" target="_specification">Landmark Region Design Pattern</a>
+<a href="https://www.w3.org/TR/wai-aria-practices" target="_specification">W3C ARIA Authoring Practices</a>
       
 </p>
 <h2>Important Features</h2>
 <ul>
         
-<li>How to think about defining landmark regions in a page design.</li>
+<li>Design patterns for using landmarks and creating accessible widgets</li>
         
-<li>How HTML sectioning elements create landmark regions.</li>
+<li>Full working and reviewed examples</li>
         
-<li>Labeling landmark regions.</li>
+<li>Review of accessible name and description alogithms</li>
       
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" width="99%" height="600px" title="ARIA Practices: Landmark Design Pattern"></iframe>
+<iframe src="https://www.w3.org/tr/wai-aria-practices" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -90,13 +90,15 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      Landmark regions are an important technology to help screen reader users understand the functional groups of content on a page.  Landmark regions have roles that identify the type of content in a section of the website, for example the main content or group of navigation links.
-
-The practices provide designers and developers with information on how to design and analyze a website or application for the use of landmark regions.
-
-Many HTML sectioning elements generate landmarks by default so it is very important to understand how to use and define them, otherwise pages will provide poor or misleading information about the sections of a website that will lead to confusion and wasted time for screen reader users.
-
-When more than one landmark of the same type appears on the page they need to have descriptive labels to help people understand the differences in content between the two regions.
+      While the ARIA specification provides a powerful new tool to create accessible websites, like any tool it can be used inappropriately, especially if the user is not very familiar with accessibility or assistive technologies.
+      The ARIA Authoring practices provide information on both landmark regions and interactive widget roles.
+      Unfortunately, there is a lot of poor or confusing ARIA markup on the web that is making web pages less accessible, rather than more accessible.
+      To help authors understand how to use ARIA correctly the ARIA working group created the ARIA Authoring Practices which provide detailed information on how to use ARIA to create accessible web pages and interactive widgets.
+      The practices provide information on keyboard support, and how to use ARIA roles, properties and states to communicate document structure and interactive features to assistive technologies.
+      The practices also contain fully working examples that demonstrate the features needed to support accessibility for people to test and review for their own designs and widget libraries.
+      The example code is open source and can be reused to provide the basis for a production quality accessible widgets.
+      Caution should be used in directly using the code in the examples in a production environment, since the examples might not meet the requirements of mobile web applications (e.g. touch support) and may demonstrate features that are not fully supported by all accessibility APIs, like slider and spin button.
+      The examples for these widgets are in the practices for use in testing implementation of ARIA features and assistive technology support.
     </div>
 </details>
 </div>
