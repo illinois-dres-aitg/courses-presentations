@@ -1130,7 +1130,7 @@ The Triple-A requirements have the lowest priority for implementation and confor
 
 The priority for a requirement is based on the consensus of the WCAG working group.  The priority is important when retrofitting accessibility into existing designs, since changes are difficult and expensive to make.
 
-Analogy is adding curb cuts to an already existing sidewalk, it requires using jack hammers and chisels to remove the existing concrete, before pouring the cement for the curb cut.   On new sidewalks the curb cuts require little if any additional work and the same is true when designing a new web resource. When companies and organizations consider accessibility during the design phase of product development there is typically no or little cost in adding accessibility features, so it is easier to including most of the requirements.  The priorities therefore guide companies and organizations who are new to accessibility requirements in identifying where to start their accessibility efforts.
+Analogy is adding curb cuts to an already existing sidewalk, it requires using jack hammers and chisels to remove the existing concrete, before pouring the cement for the curb cut.   On new sidewalks the curb cuts require little if any additional work and the same is true when designing a new web resource. When companies and organizations consider accessibility during the design phase of product development there is typically no or little cost in adding accessibility features, and accessibility testing can more easily integrated into the testing plan for the product or service.  The priorities therefore guide companies and organizations who are new to accessibility requirements in identifying where to start their accessibility efforts.
     </transcript>
   </slide>
 
@@ -1142,9 +1142,12 @@ Analogy is adding curb cuts to an already existing sidewalk, it requires using j
         <li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.</li>
         <li>There are many accessibility techniques that are not part of the WCAG techniques document that can be used to meet success criteria requirements, so it is important to understand the accessibility issue being address by each success criteria.</li>
         <li>Requirements like <a href="https://www.w3.org/TR/WCAG/#keyboard">Success Criteria 2.1.1 Keyboard</a> will have unique techniques for web applications based on the complexity of the user interaction and require an understanding of other accessibility specifications like <a href="https://www.w3.org/tr/wai-aria"><abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> to support consistent user experience or interoperabiliy.</li>
+        <li>Only about 35-40% of the requirements lend themselves to automated testing, so relying on automated tools will only result identifying a best 40% of the accessibility issues on a web resource.
+        </li>
       </ul>
     </contents>
     <transcript>
+      
     </transcript>
   </slide>
 
