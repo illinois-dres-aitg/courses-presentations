@@ -55,9 +55,9 @@ I have been participating in the W3C Web Accessibility Initiative for over 20 ye
 
 I am currently a member the Accessible Rich Internet Application (ARIA) working group of the W3C.
 
-My goal in teaching this badging course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
+My goal in teaching this course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
 
-I welcome you to the web standards and accessibility module of our badging courses to help you better understand the importance of W3C standards in making the web more accessible.
+I welcome you to the web standards and accessibility module of our courses to help you better understand the importance of W3C standards in making the web more accessible.
 
 This slide outlines the major goals of the web standards and accessibility video.
 
@@ -943,11 +943,11 @@ The job of web developers is to make sure that they use the web standards to inc
   </slide>
 
   <slide>
-    <title>Web Content Accessibility Guidelines 2.1</title>
+    <title>W3C Web Content Accessibility Guidelines (WCAG)</title>
     <contents>
 
       <p>
-        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines 2.1</a>
+        <a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines</a>
       </p>
 
       <h2>Important Features</h2>h2>
@@ -958,14 +958,14 @@ The job of web developers is to make sure that they use the web standards to inc
         <li>Techniques referenced by WCAG are <strong>not</strong> normative or comprehensive, but are deisgned to help people understand the requirement and feasibility of meeting the requirement.</li>
         <li>Supporting references:
           <ul>
-            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG 2.1</a></li>
-            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG 2.1</a></li>
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG 2.1</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG requirements</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG requirements</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG</a></li>
           </ul>
         </li>
       </ul>
 
-      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG 2.1 Guidelines"></iframe>
+      <iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG Guidelines"></iframe>
     </contents>
     <transcript>
 
@@ -976,7 +976,7 @@ The requirements identify the accessibility needs of people with disabilities to
   </slide>
 
   <slide>
-    <title>Organization of WCAG 2.1</title>
+    <title>Organization of WCAG</title>
     <style>
       .pour li:first-letter {
         font-size: 1.5em;
@@ -1135,25 +1135,58 @@ Analogy is adding curb cuts to an already existing sidewalk, it requires using j
   </slide>
 
   <slide>
-    <title>Meeting the Requirements of WCAG 2.1</title>
+    <title>WCAG Success Criteria and Techniques</title>
     <contents>
       <ul>
         <li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
-        <li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.</li>
-        <li>There are many accessibility techniques that are not part of the WCAG techniques document that can be used to meet success criteria requirements, so it is important to understand the accessibility issue being address by each success criteria.</li>
+        <li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.  Fore example, using the <code>alt</code> attribute of the <code>img</code> element to provide a text alternative for an image are well known and widely used.</li>
+        <li>WCAG doesn't include many important accessibility techniques that are widely used, for example using the <code>h1</code> heading to identify the title of a web page.</li>
         <li>Requirements like <a href="https://www.w3.org/TR/WCAG/#keyboard">Success Criteria 2.1.1 Keyboard</a> will have unique techniques for web applications based on the complexity of the user interaction and require an understanding of other accessibility specifications like <a href="https://www.w3.org/tr/wai-aria"><abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> to support consistent user experience or interoperabiliy.</li>
+        <li>The more you understand the accessibility requirements of each success criteria and web standards available to meet the requirements the more accessible and usable your web pages will be to people with disabilities.</li>
         <li>Only about 35-40% of the requirements lend themselves to automated testing, so relying on automated tools will only result identifying a best 40% of the accessibility issues on a web resource.
         </li>
       </ul>
     </contents>
     <transcript>
-      This is a test
+      Accessibilty regulations, like the United States Section 508 requirements, are based on the level A and AA Success Criteria of WCAG.
+
+      Each Success Criteria have a number of supporting documentation on how to understand the requirements and when possible representative techniques.
+
+      The techniques are not normative, which basically means you are not required to use the techniques to satisfy a success criteria.
+
+      Techniques are identified as sufficient and advisory.
+
+      Using a sufficient technique usually means you will meet the requirement.
+
+      Sufficeint techniques have wide spread support by both authors, browsers and the assistive technologies used by people with disabilities to access web content.
+
+      An example of a sufficient techqniue is ALT text for IMG tags, which have wide spread authoring, browser and assistive technology implementation.
+
+      Advisory techniques typically to not have wide scale support among authors, may not meet all of the requirements of the success criteria or have insufficient or inconsistent implementation in browsers or assistive technologies.
+
+      The techniques are not comprehensive, and there are many other ways to meet or exceed the minimal requirements of WCAG.
+
+      For example the use of the H1 element to identify the title or primary content on the page is often used to help screen reader users know the primary content on the page abd provide a reference point to easily get to the start of the primary content.
+
+      But the WCAG techqniues resource does not include this as even an advisory techniques, even though there is widespread author, browser and assistive technology support.
+
+      The tecchniques for requirements like Success Criteria 2.1.1 on keyboard operation will depend on the complexity of the user interaction in a web application and knowledge of other web standards like the Accessible Rich Interent Application or ARIA specification.
+
+      In any case it is important to familiarize yourself with the actual requirements of each success cirtoeria to make sure that they are incorporated into the design, development and testing of the web resource.
+
+      An important note about automated testing tools for WCAG requirements.
+
+      Only about 30-40% of the requirements lend them selves to automated testing, so reliance on automated tolls at best will only identify 40% of the WCAG level A and AA requirements.
+
+      Automated tools can also be easily fooled, saying a particular requirement has been met, when what really happened is code was modified to statisfy what the testing tool was looking for, but not the accessibility requirement.
+
+      For example, adding an empty ALT attribute, even though the image does carry informative information on the page.
 
     </transcript>
   </slide>
 
   <slide>
-    <title>Accessible Rich Internet Applications (ARIA) Specification</title>
+    <title>W3C Accessible Rich Internet Applications (ARIA) Specification</title>
     <contents>
 
       <p>
@@ -1182,7 +1215,7 @@ One of the most important parts of the ARIA specification is defining how a brow
   </slide>
 
   <slide>
-    <title>ARIA Authoring Practices</title>
+    <title>W3C ARIA Authoring Practices</title>
     <contents>
 
       <p>
@@ -1453,10 +1486,10 @@ What we need is accessibility by default, where the tool makes it easier to crea
   <slide>
     <title>Next Steps</title>
     <contents>
-      <p>If you are watching this video as part of a badging course, please return to the course home page to complete the assignments and activities associated with this module.</p>
+      <p>If you are watching this video as part of a course, please return to the course home page to complete the assignments and activities associated with this module.</p>
     </contents>
     <transcript>
-If you are watching this video as part of a badging course, please return to the course home page to complete the assignments and activities associated with this lecture.
+If you are watching this video as part of a course, please return to the course home page to complete the assignments and activities associated with this lecture.
     </transcript>
   </slide>
 </slides>

@@ -31,9 +31,9 @@ I have been participating in the W3C Web Accessibility Initiative for over 20 ye
 
 I am currently a member the Accessible Rich Internet Application (ARIA) working group of the W3C.
 
-My goal in teaching this badging course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
+My goal in teaching this course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
 
-I welcome you to the web standards and accessibility module of our badging courses to help you better understand the importance of W3C standards in making the web more accessible.
+I welcome you to the web standards and accessibility module of our courses to help you better understand the importance of W3C standards in making the web more accessible.
 
 This slide outlines the major goals of the web standards and accessibility video.
 
@@ -397,7 +397,7 @@ The job of web developers is to make sure that they use the web standards to inc
 <h2>
 <a id="slide14" target="slides" href="slide14.html">
                         Slide 14:
-                        Web Content Accessibility Guidelines 2.1</a>
+                        W3C Web Content Accessibility Guidelines (WCAG)</a>
 </h2>
 <div class="full-transcript">
 
@@ -408,7 +408,7 @@ The requirements identify the accessibility needs of people with disabilities to
 <h2>
 <a id="slide15" target="slides" href="slide15.html">
                         Slide 15:
-                        Organization of WCAG 2.1</a>
+                        Organization of WCAG</a>
 </h2>
 <div class="full-transcript">
       We don&rsquo;t have time to take a deep dive into WCAG, but I would like to give you a little more information into the organization of WCAG.
@@ -457,16 +457,48 @@ Analogy is adding curb cuts to an already existing sidewalk, it requires using j
 <h2>
 <a id="slide16" target="slides" href="slide16.html">
                         Slide 16:
-                        Meeting the Requirements of WCAG 2.1</a>
+                        WCAG Success Criteria and Techniques</a>
 </h2>
 <div class="full-transcript">
-      
-    
-</div>
+      Accessibilty regulations, like the United States Section 508 requirements, are based on the level A and AA Success Criteria of WCAG.
+
+      Each Success Criteria have a number of supporting documentation on how to understand the requirements and when possible representative techniques.
+
+      The techniques are not normative, which basically means you are not required to use the techniques to satisfy a success criteria.
+
+      Techniques are identified as sufficient and advisory.
+
+      Using a sufficient technique usually means you will meet the requirement.
+
+      Sufficeint techniques have wide spread support by both authors, browsers and the assistive technologies used by people with disabilities to access web content.
+
+      An example of a sufficient techqniue is ALT text for IMG tags, which have wide spread authoring, browser and assistive technology implementation.
+
+      Advisory techniques typically to not have wide scale support among authors, may not meet all of the requirements of the success criteria or have insufficient or inconsistent implementation in browsers or assistive technologies.
+
+      The techniques are not comprehensive, and there are many other ways to meet or exceed the minimal requirements of WCAG.
+
+      For example the use of the H1 element to identify the title or primary content on the page is often used to help screen reader users know the primary content on the page abd provide a reference point to easily get to the start of the primary content.
+
+      But the WCAG techqniues resource does not include this as even an advisory techniques, even though there is widespread author, browser and assistive technology support.
+
+      The tecchniques for requirements like Success Criteria 2.1.1 on keyboard operation will depend on the complexity of the user interaction in a web application and knowledge of other web standards like the Accessible Rich Interent Application or ARIA specification.
+
+      In any case it is important to familiarize yourself with the actual requirements of each success cirtoeria to make sure that they are incorporated into the design, development and testing of the web resource.
+
+      An important note about automated testing tools for WCAG requirements.
+
+      Only about 30-40% of the requirements lend them selves to automated testing, so reliance on automated tolls at best will only identify 40% of the WCAG level A and AA requirements.
+
+      Automated tools can also be easily fooled, saying a particular requirement has been met, when what really happened is code was modified to statisfy what the testing tool was looking for, but not the accessibility requirement.
+
+      For example, adding an empty ALT attribute, even though the image does carry informative information on the page.
+
+    </div>
 <h2>
 <a id="slide17" target="slides" href="slide17.html">
                         Slide 17:
-                        Accessible Rich Internet Applications (ARIA) Specification</a>
+                        W3C Accessible Rich Internet Applications (ARIA) Specification</a>
 </h2>
 <div class="full-transcript">
       While WCAG is the most well known W3C document on accessibility, there are other documents that are as equally important for standardizing how authors using HTML, CSS and Javascript to describe the organization and features of a web page, and how web browsers, including Firefox, Chrome, Safari and Edge, communicate accessibility information to assistive technologies.   The Accessible Rich Internet Application (ARIA) Specification is a markup language designed to describe web content to assistive technologies, like screen readers that need information on the organization and structure, and interactive behaviors of the content in a web page.
@@ -480,7 +512,7 @@ One of the most important parts of the ARIA specification is defining how a brow
 <h2>
 <a id="slide18" target="slides" href="slide18.html">
                         Slide 18:
-                        ARIA Authoring Practices</a>
+                        W3C ARIA Authoring Practices</a>
 </h2>
 <div class="full-transcript">
       While the ARIA specification provides a powerful new tool to create accessible websites, like any tool it can be used inappropriately, especially if the user is not very familiar with accessibility or assistive technologies.
@@ -628,7 +660,7 @@ What we need is accessibility by default, where the tool makes it easier to crea
                         Next Steps</a>
 </h2>
 <div class="full-transcript">
-If you are watching this video as part of a badging course, please return to the course home page to complete the assignments and activities associated with this lecture.
+If you are watching this video as part of a course, please return to the course home page to complete the assignments and activities associated with this lecture.
     </div>
 </div>
 <div class="col"></div>
