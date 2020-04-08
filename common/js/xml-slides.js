@@ -101,12 +101,23 @@ $(document).ready(function() {
 
     function getNextPhraseIndex(start) {
 
+
+
+      function ignoreCharacter(c) {
+        return " \n\r".indexOf(c) >= 0;
+      }
+
       var index = start;
       var spaceCount = 0;
       var isLastCharANumber = false;
       var c = '';
       var c1 = '';
       var parenCount = 0;
+
+      while (ignoreCharacter(transcriptText[index]) &&
+             (index < transcriptTextLength)) {
+        index++;
+      }
 
       while (index < transcriptTextLength) {
 
@@ -136,10 +147,8 @@ $(document).ready(function() {
         }
 
 
-        if (c === '.' && !isLastCharANumber) {
-          if (spaceCount && !parenCount) {
-            return index;
-          }
+        if (c === '.' && spaceCount && !parenCount) {
+          return index;
         }
 
         index += 1;
