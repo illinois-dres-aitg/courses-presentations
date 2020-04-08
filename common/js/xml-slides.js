@@ -147,7 +147,7 @@ $(document).ready(function() {
         }
 
 
-        if (c === '.' && spaceCount && !parenCount) {
+        if (c === '.' && !isLastCharANumber && !parenCount) {
           return index;
         }
 
