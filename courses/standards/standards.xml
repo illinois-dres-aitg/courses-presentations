@@ -736,29 +736,26 @@ The seventh and last princple is Size and space for approach and use.
    <slide>
     <title>Examples of how Online Univeral Design Benefits All Users</title>
     <contents>
-      <dl>
-        <dt>Video Captions</dt>
-        <dd>Captions for videos are need by the people who are deaf, but are very useful for people who are:
-          <ul>
-            <li>Non-native speakers of the language being spoken on the video.</li>
-            <li>Students spend significantly less time listening to online lectures when captions are available.</li>
-            <li>People in a noisy or quiet environment and cannot hear or listen to the audio.</li>
-            <li>When people hear new words or terms, or a speaker has a difficult to understand accent.</li>
-            <li>Key word searches on the caption text to find relavant portions of a video.</li>
-          </ul>
-        </dd>
-        <dt>Keyboard Support</dt>
-        <dd>Keyboard interaction is required for people who cannot use the mouse, due to blindness or physical disability, but are also useful for:
-          <ul>
-            <li>Touch typists who prefer to use keyboard commands, rather than pointing and clicking with a mouse.</li>
-            <li>People who are traveling when using a mouse or track pad is difficult due to constraints in their seating positon and posture.</li>
-          </ul>
-        </dd>
-      </dl>
+        <h2>Video Captions</h2>
+        <p>Captions for videos are need by the people who are deaf, but are very useful for people who are:</p>
+        <ul>
+          <li>Non-native speakers of the language being spoken on the video.</li>
+          <li>Students spend significantly less time listening to online lectures when captions are available.</li>
+          <li>People in a noisy or quiet environment and cannot hear or listen to the audio.</li>
+          <li>When people hear new words or terms, or a speaker has a difficult to understand accent.</li>
+          <li>Key word searches on the caption text to find relavant portions of a video.</li>
+        </ul>
+
+        <h2>Keyboard Support</h2>
+        <p>Keyboard interaction is required for people who cannot use the mouse, due to blindness or physical disability, but are also useful for:</p>
+        <ul>
+          <li>Touch typists who prefer to use keyboard commands, rather than pointing and clicking with a mouse.</li>
+          <li>People who are traveling when using a mouse or track pad is difficult due to constraints in their seating positon and posture.</li>
+        </ul>
     </contents>
     <transcript>
 
-      Everyday examples of UNiversal Design include curbs cuts in sidewalks, ramps into buildings, automatcially opening doors into buildings and wider doors and grab bars in bathrooms that benefit more than just people with mobility impairments.
+      Everyday examples of Universal Design include curbs cuts in sidewalks, ramps into buildings, automatcially opening doors into buildings and wider doors and grab bars in bathrooms that benefit more than just people with mobility impairments.
 
       This slide highlights some of the benefits of universal design in the online world.
 
