@@ -2,48 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Organization of WCAG</title>
+<title>Slide 15: W3C Web Content Accessibility Guidelines (WCAG)</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
-<style id="style">
-      .pour li:first-letter {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-      table.wcag thead th:first-child {
-        min-width: 12em;
-      }
-      table.wcag tbody tr:nth-child(1) td ul,
-      table.wcag tbody tr:nth-child(2) td ul {
-        list-style: none;
-        margin-left: 0;
-        padding-left: 0;
-      }
-
-      ol.guidelines {
-       margin: 0;
-       padding: 0;
-       list-style: none;
-       counter-reset: section;
-      }
-
-      ol.guidelines li {
-        font-weight: bold;
-      }
-
-      ol.guidelines li li {
-        font-weight: normal;
-        margin-left: 1em;
-      }
-
-      ol.guidelines li::before {
-        counter-increment: section;
-        content: counters(section, ".") " ";
-      }
-    </style>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -76,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -95,141 +60,44 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Organization of WCAG</h1>
-<table class="table table-striped wcag">
+<h1 id="h1_title" class="title">W3C Web Content Accessibility Guidelines (WCAG)</h1>
+<p>
         
-<thead>
-          
-<tr>
-            
-<th>WCAG Feature</th>
-            <th>Description</th>
-          
-</tr>
-        
-</thead>
-        
-<tbody>
-          
-<tr>
-            
-<td>4 Principles (POUR)</td>
-            <td>
-              
-<ul class="pour">
-                
-<li>Perceivable</li>
-                
-<li>Operable</li>
-                
-<li>Understandable</li>
-                
-<li>Robust</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>13 Guidelines</td>
-            <td>
-              
-<ol class="guidelines">
-                
-<li>Perceivable
-                  <ol class="guidelines">
-                    
-<li>Text Alternatives</li>
-                    
-<li>Time-based Media</li>
-                    
-<li>Adaptable</li>
-                    
-<li>Distinguishable</li>
-                  
-</ol>
-                
-</li>
-                
-<li>Operable
-                  <ol class="guidelines">
-                    
-<li>Keyboard Accessible</li>
-                    
-<li>Enough Time</li>
-                    
-<li>Seizures</li>
-                    
-<li>Navigable</li>
-                    
-<li>Input Modalities (New in WCAG 2.1)</li>
-                  
-</ol>
-                
-</li>
-                
-<li>Understandable
-                  <ol class="guidelines">
-                    
-<li>Readable</li>
-                    
-<li>Predictable</li>
-                    
-<li>Input Assistance</li>
-                  
-</ol>
-                
-</li>
-                
-<li>Robost
-                  <ol class="guidelines">
-                    
-<li>Compatible</li>
-                  
-</ol>
-                
-</li>
-              
-</ol>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>78 Success Criteria</td>
-            <td>
-              
-<ul>
-                
-<li>Real requirements of WCAG.</li>
-                
-<li>Three levels of importance:
-                  <ul>
-                    
-<li>A: Highest priority (29)</li>
-                    
-<li>AA: Next highest (21)</li>
-                    
-<li>AAA: Lowest priority (28)</li>
-                  
-</ul>
-                
-</li>
-              
-</ul>
-            
-</td>
-          
-</tr>
-        
-</tbody>
+<a href="https://www.w3.org/TR/WCAG" target="_specification">Web Content Accessibility Guidelines</a>
       
-</table>
+</p>
+<h2>Important Features</h2>
+<ul>
+        
+<li>International accessibility standard, including the United States Federal Section 508 requirements for web accessibility.</li>
+        
+<li>Technology agnostic, so understanding requires knowledge of features of specific technologies.</li>
+        
+<li>Requirements identify the goals for accessibility, not the techniques.</li>
+        
+<li>Techniques referenced by WCAG are <strong>not</strong> normative or comprehensive, but are deisgned to help people understand the requirement and feasibility of meeting the requirement.</li>
+        
+<li>Supporting references:
+          <ul>
+            
+<li>
+<a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_specification">How to Meet WCAG requirements</a>
+</li>
+            
+<li>
+<a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_specification">Understanding WCAG requirements</a>
+</li>
+            
+<li>
+<a href="https://www.w3.org/TR/WCAG20-TECHS" target="_specification">Techniques for WCAG</a>
+</li>
+          
+</ul>
+        
+</li>
+      
+</ul>
+<iframe src="https://www.w3.org/tr/wcag" width="99%" height="600px" title="W3C WCAG Guidelines"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -243,48 +111,10 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      We don&rsquo;t have time to take a deep dive into WCAG, but I would like to give you a little more information into the organization of WCAG.
 
-At the top level are the 4 principles, Perceiving, Operable, Understanding and Robust. With Robust requirements requiring the use of standards and built-in operating system features to support interoperability and compatibility with assistive technologies.
+The most well-known work of W3C Web Accessibility Initiative is the development of the Web Content Accessibility Guidelines or WCAG which is the internationally recognized standard for the accessibility of web content, including the United States Federal Section 508 web accessibility requirements.   Some important features to know about WCAG is that while it was inspired by the need to make HTML based documents and applications accessible, it was designed to be technology agnostic so it could be applied to a wider range of technologies, for example PDF documents and web application technologies like Adobe Flash and Microsoft Silverlight.
 
-The principles are divided into 13 sub-categories called Guidelines which provide more specific labels for groups of success criteria.
-
-The Guidelines for Perceivable include:
-Text Alternatives.
-Time-based Media.
-Adaptable.
-Distinguishable.
-
-The Guidelines for Operable:
-Keyboard Accessible.
-Enough Time.
-Seizures.
-Navigable.
-and new WCAG 2.1 Input Modalities.
-
-The Guidelines for Readable:
-Readable.
-Predictable.
-and Input Assistance.
-
-There is only one Guideline for Robust:
-Compatible.
-
-I guess they wanted the &ldquo;R&rdquo; of Robust, instead of the &ldquo;C&rdquo; of Compatible to make the acronym &ldquo;POUR&rdquo;. Who wants to say &ldquo;POUC&rdquo;?
-
-The Success Criteria are the real requirements of WCAG.
-
-Each success criteria can have one of three priorities: Single A, Double A or Triple A
-
-The Single A requirements have the highest priority for implementation and conformance
-
-The Double AA requirements have the next highest priority implementation and conformance
-
-The Triple-A requirements have the lowest priority for implementation and conformance
-
-The priority for a requirement is based on the consensus of the WCAG working group.  The priority is important when retrofitting accessibility into existing designs, since changes are difficult and expensive to make.
-
-Analogy is adding curb cuts to an already existing sidewalk, it requires using jack hammers and chisels to remove the existing concrete, before pouring the cement for the curb cut.   On new sidewalks the curb cuts require little if any additional work and the same is true when designing a new web resource. When companies and organizations consider accessibility during the design phase of product development there is typically no or little cost in adding accessibility features, and accessibility testing can more easily integrated into the testing plan for the product or service.  The priorities therefore guide companies and organizations who are new to accessibility requirements in identifying where to start their accessibility efforts.
+The requirements identify the accessibility needs of people with disabilities to access online resources, with supporting references to techniques to help people learn how the needs can be met with a specific technology, like HTML or Adobe PDF.   It is important to note the techniques are just advisory, they are incomplete and often missing common best practices.   People looking for a design resource in the technique reference will mostly be disappointed and frustrated, since the techniques are mostly based on minimum changes in code needed for what the working group considers sufficient implementation of a Success Criteria requirement.
     </div>
 </details>
 </div>

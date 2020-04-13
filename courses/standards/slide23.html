@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 23: HTML 5</title>
+<title>Slide 23: ARIA Practcies: Menu Button Example</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,27 +60,27 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">HTML 5</h1>
+<h1 id="h1_title" class="title">ARIA Practcies: Menu Button Example</h1>
 <p>
         
-<a href="https://html.spec.whatwg.org/" target="_specification">HTML 5 Living Standard</a>
+<a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" target="_specification">Menu Button Example</a>
       
 </p>
 <h2>Important Features</h2>
 <ul>
         
-<li>Built in features to support accessibility</li>
+<li>Keyboard interaction</li>
         
-<li>Default ARIA roles</li>
+<li>Use of roles, properties and states</li>
         
-<li>ARIA Role restrictions</li>
+<li>Focus styling techniques</li>
         
-<li>
-<a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a>
-</li>
+<li>Source code (<a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">copy and/or reuse of code</a>)</li>
+        
+<li>Reviewed for compliance with WCAG 2.x requirements</li>
       
 </ul>
-<iframe src="https://html.spec.whatwg.org/" width="99%" height="600px" title="W3C HTML 5 Living Standard"></iframe>
+<iframe src="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" width="99%" height="600px" title="ARIA Practices: Menu Button Example"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -95,9 +95,18 @@
                         </summary>
 <div class="slide-transcript">
 
-ARIA back in 2002 was originally presented as a repair language to make dynamic HTML content accessible, with the hopes that HTML would eventually include the semantics need by assistive technologies to describe the features and behaviors of custom widgets.  HTML did not evolve to provide more complex semantics and so instead ARIA was integrated into HTML5 as the description language to communicate the behaviors and accessibility information needed for custom interactive widgets created with Javascript, HTML and CSS to assistive technologies.
+Each design pattern includes a working example to demonstrate the features of the design pattern.  I select the menu button example link to take me directly to the example page.
 
-HTML5 now standardizes how HTML and ARIA markup will be made available through accessibility Application Programming Interfaces (APIs)  on Windows, macOS and GNOME/Linux.   This is a huge win for accessibility and interoperability, because browsers will be required to be much more consistent in how they communicate the semantics and behaviors of a web page to assistive technologies.  Ideally it will not matter if a screen reader user is using Chrome, Firefox or Edge on Windows or Safari, Chrome or Firefox on macOS, they should all be providing the same information to the screen reader and the same level of accessibility.   HTML5 uses the ARIA specification to define how the elements and attributes in HTML5 will be communicated to assistive technologies and even identifies role restrictions so that certain HTML elements can only have a limited set of roles that can override their default role to keep developers form making poor decisions on how to use ARIA.  For example, an H1 element is not allowed to have the role &ldquo;checkbox&rdquo;, but a LI element with the default role of &ldquo;listitem&rdquo; can have its default role overridden by a &ldquo;menuitem&rdquo; or a &ldquo;treeitem&rdquo; role since they all have similar semantics of being part of a list.
+The example provides a way for people to explore the keyboard support for the pattern.  I use the TAB key to move keyboard focus to the button labelled &ldquo;WAI-ARIA Quick Links&rdquo; and then press the space bar to open the menu.   I press the up down and up arrow keys to move through the menu options.  I can use the ESCape key to close the menu.
+
+As I scroll down the document, the next section provides details about the keyboard support for this particular example.
+
+After the keyboard support section is a section on the ARIA roles, properties and states  attributes used in the example, with information on tabindex value management.
+
+The last section provide links to CSS and Javascript files and a source code view of the HTML code use in the example.   The source code shows the relationship of the roles, properties and states
+
+The code in the examples is considered open source and can be reused and modified for your own needs, but caution should be used in using the exact code in production environments.  The code may not work with some mobile devices that rely on touch event support, or legacy browsers like Internet Explorer that does not support modern javascript and DOM techniques, and some patterns, for example combobox, slider and spin button may not be fully implemented by all accessibility APIs and assistive technologies.  The examples are included in the practices to authors better understand the design patterns and to help with implementation testing with browsers and assistive technologies.
+
     </div>
 </details>
 </div>

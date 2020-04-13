@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 17: W3C Accessible Rich Internet Applications (ARIA) Specification</title>
+<title>Slide 17: WCAG Success Criteria and Techniques</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,30 +60,23 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">W3C Accessible Rich Internet Applications (ARIA) Specification</h1>
-<p>
-        
-<a href="https://www.w3.org/TR/wai-aria" target="_specification">Accessible Rich Internet Applications Specification</a>
-      
-</p>
-<h2>Important Features</h2>
+<h1 id="h1_title" class="title">WCAG Success Criteria and Techniques</h1>
 <ul>
         
-<li>
-<code>role</code> semantics</li>
+<li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
         
-<li>States and properties</li>
+<li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.  Fore example, using the <code>alt</code> attribute of the <code>img</code> element to provide a text alternative for an image are well known and widely used.</li>
         
-<li>
-<a href="https://www.w3.org/TR/core-aam/" target="_specification">W3C Core Accessibility API Mappings</a>
-</li>
+<li>WCAG doesn't include many important accessibility techniques that are widely used, for example using the <code>h1</code> heading to identify the title of a web page.</li>
         
-<li>
-<a href="https://www.w3.org/TR/accname" target="_specification">W3C Accessible Name and Description Computation Specification</a>
-</li>
+<li>Requirements like <a href="https://www.w3.org/TR/WCAG/#keyboard">Success Criteria 2.1.1 Keyboard</a> will have unique techniques for web applications based on the complexity of the user interaction and require an understanding of other accessibility specifications like <a href="https://www.w3.org/tr/wai-aria"><abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> to support consistent user experience or interoperabiliy.</li>
+        
+<li>The more you understand the accessibility requirements of each success criteria and web standards available to meet the requirements the more accessible and usable your web pages will be to people with disabilities.</li>
+        
+<li>Only about 35-40% of the requirements lend themselves to automated testing, so relying on automated tools will only result identifying a best 40% of the accessibility issues on a web resource.
+        </li>
       
 </ul>
-<iframe src="https://www.w3.org/tr/wai-aria" width="99%" height="600px" title="W3C ARIA Authoring Practices"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -97,13 +90,40 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      While WCAG is the most well known W3C document on accessibility, there are other documents that are as equally important for standardizing how authors using HTML, CSS and Javascript to describe the organization and features of a web page, and how web browsers, including Firefox, Chrome, Safari and Edge, communicate accessibility information to assistive technologies.   The Accessible Rich Internet Application (ARIA) Specification is a markup language designed to describe web content to assistive technologies, like screen readers that need information on the organization and structure, and interactive behaviors of the content in a web page.
+      Accessibilty regulations, like the United States Section 508 requirements, are based on the level A and AA Success Criteria of WCAG.
 
-One way ARIA can be used to describe the semantics of a website&rsquo;s features is when the built-in semantics of the HTML markup language are not sufficient to describe a feature or behavior. For example, a popup menu in a web page is often created using DIV elements which have no semantic information that it is part of a popup menu.  ARIA provides a way to communicate the popup menu using the roles MENU and MENUITEM to tell assistive technologies that author has identified this collection of DIV elements is functioning as a popup menu.
+      Each Success Criteria have a number of supporting documentation on how to understand the requirements and when possible representative techniques.
 
-In addition to providing roles, authors must also implement keyboard behaviors consistent with a popup menu and update the ARIA state attribute &ldquo;aria-expanded&rdquo; to indicate when the menu is open or closed.
+      The techniques are not normative, which basically means you are not required to use the techniques to satisfy a success criteria.
 
-One of the most important parts of the ARIA specification is defining how a browser communicates roles, properties and states to accessibility APIs for Microsoft Windows, macOS and GNOME/Linux ATK-SPI.  These mappings are of fundamental importance for interoperability, since browsers must communicate the information in the same way to assistive technologies.    When browsers are consistent on how they provide information to accessibility APIs people with disabilities will also have a much more consistent experience when using different browsers and assistive technologies.  Ideally it would not matter if the screen reader user was using Firefox, Chrome or Edge on Windows 10 , the screen reader should provide the same experience.  In summary ARIA is an important technology to provide a standardized bridge for authors to communicate the semantics and behaviors of a web page to assistive technologies and how browsers communicate this information to assistive technologies through accessibility APIs.
+      Techniques are identified as sufficient and advisory.
+
+      Using a sufficient technique usually means you will meet the requirement.
+
+      Sufficeint techniques have wide spread support by both authors, browsers and the assistive technologies used by people with disabilities to access web content.
+
+      An example of a sufficient techqniue is ALT text for IMG tags, which have wide spread authoring, browser and assistive technology implementation.
+
+      Advisory techniques typically to not have wide scale support among authors, may not meet all of the requirements of the success criteria or have insufficient or inconsistent implementation in browsers or assistive technologies.
+
+      The techniques are not comprehensive, and there are many other ways to meet or exceed the minimal requirements of WCAG.
+
+      For example the use of the H1 element to identify the title or primary content on the page is often used to help screen reader users know the primary content on the page abd provide a reference point to easily get to the start of the primary content.
+
+      But the WCAG techqniues resource does not include this as even an advisory techniques, even though there is widespread author, browser and assistive technology support.
+
+      The tecchniques for requirements like Success Criteria 2.1.1 on keyboard operation will depend on the complexity of the user interaction in a web application and knowledge of other web standards like the Accessible Rich Interent Application or ARIA specification.
+
+      In any case it is important to familiarize yourself with the actual requirements of each success cirtoeria to make sure that they are incorporated into the design, development and testing of the web resource.
+
+      An important note about automated testing tools for WCAG requirements.
+
+      Only about 30-40% of the requirements lend them selves to automated testing, so reliance on automated tolls at best will only identify 40% of the WCAG level A and AA requirements.
+
+      Automated tools can also be easily fooled, saying a particular requirement has been met, when what really happened is code was modified to statisfy what the testing tool was looking for, but not the accessibility requirement.
+
+      For example, adding an empty ALT attribute, even though the image does carry informative information on the page.
+
     </div>
 </details>
 </div>

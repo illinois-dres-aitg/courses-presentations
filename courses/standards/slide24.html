@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 24: HTML 5: main element</title>
+<title>Slide 24: HTML 5</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,25 +60,27 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">HTML 5: main element</h1>
+<h1 id="h1_title" class="title">HTML 5</h1>
 <p>
         
-<a href="https://www.w3.org/TR/html5/#the-main-element" target="_specification">HTML 5: main element</a>
+<a href="https://html.spec.whatwg.org/" target="_specification">HTML 5 Living Standard</a>
       
 </p>
-<h2>Accessibility Feature</h2>
+<h2>Important Features</h2>
 <ul>
         
-<li>Supports implementation of WCAG Success Criteria 2.4.1 Bypass Blocks</li>
+<li>Built in features to support accessibility</li>
         
-<li>Identifies the main content of the page</li>
+<li>Default ARIA roles</li>
         
-<li>Creates a <code>main</code> landmark on the page for screen readers</li>
+<li>ARIA Role restrictions</li>
         
-<li>Can be use for the target of a skip to main link</li>
+<li>
+<a href="https://www.w3.org/TR/html-aam" target="_specification">HTML Accessibility API Mappings Specification</a>
+</li>
       
 </ul>
-<iframe src="https://www.w3.org/TR/html5/#the-main-element" width="99%" height="600px" title="W3C MAIN element Specification"></iframe>
+<iframe src="https://html.spec.whatwg.org/" width="99%" height="600px" title="W3C HTML 5 Living Standard"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -92,9 +94,10 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      New elements like the &ldquo;main&rdquo; element have also been added to HTML5 to make it easier for developers to implement accessibility requirements.   The main element should be used to identify the main content of a page and it creates a main landmark region.  This provides a means for people using screen readers to use landmark navigation feature of the screen reader to easily get to the main content of the page.
 
-It can also be used as the target for a skip navigation link to support keyboard only users.
+ARIA back in 2002 was originally presented as a repair language to make dynamic HTML content accessible, with the hopes that HTML would eventually include the semantics need by assistive technologies to describe the features and behaviors of custom widgets.  HTML did not evolve to provide more complex semantics and so instead ARIA was integrated into HTML5 as the description language to communicate the behaviors and accessibility information needed for custom interactive widgets created with Javascript, HTML and CSS to assistive technologies.
+
+HTML5 now standardizes how HTML and ARIA markup will be made available through accessibility Application Programming Interfaces (APIs)  on Windows, macOS and GNOME/Linux.   This is a huge win for accessibility and interoperability, because browsers will be required to be much more consistent in how they communicate the semantics and behaviors of a web page to assistive technologies.  Ideally it will not matter if a screen reader user is using Chrome, Firefox or Edge on Windows or Safari, Chrome or Firefox on macOS, they should all be providing the same information to the screen reader and the same level of accessibility.   HTML5 uses the ARIA specification to define how the elements and attributes in HTML5 will be communicated to assistive technologies and even identifies role restrictions so that certain HTML elements can only have a limited set of roles that can override their default role to keep developers form making poor decisions on how to use ARIA.  For example, an H1 element is not allowed to have the role &ldquo;checkbox&rdquo;, but a LI element with the default role of &ldquo;listitem&rdquo; can have its default role overridden by a &ldquo;menuitem&rdquo; or a &ldquo;treeitem&rdquo; role since they all have similar semantics of being part of a list.
     </div>
 </details>
 </div>

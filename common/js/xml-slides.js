@@ -142,10 +142,9 @@ $(document).ready(function() {
           return index;
         }
 
-        if (c === ':' && spaceCount && !parenCount) {
+        if (c === ':' && (spaceCount > 1) && !parenCount) {
           return index;
         }
-
 
         if (c === '.' && (!isLastCharANumber || spaceCount) && !parenCount) {
           return index;
@@ -447,8 +446,8 @@ var sourceCode = new SourceCode();
 
 function slideShowURL() {
   var link = window.location.href
-  link = link.substr(0,link.lastIndexOf('/'))
-  document.write('<p class="slide-show-url">Slides at:<br/><a href="' + link + '">' + link + '</a></p>')
+//  link = link.substr(0,link.lastIndexOf('/'))
+  document.write('<p class="slide-show-url">Current slide URL:<br/><a href="' + link + '">' + link + '</a></p>')
 }
 
 

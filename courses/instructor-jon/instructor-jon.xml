@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="funct.css" type="text/css"?>
+<?xm-well_formed path="funct.dtd"?>
+<slides>
+ <lang>en</lang>
+ <noslidenumbers/>
+ <addtranscript/>
+  <title>Disability, Universal Design and Web Standards</title>
+  <person>
+    <name>Jon Gunderson</name>
+    <desc href="http://disability.illinois.edu">Disability Resources and Educational Services</desc>
+    <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
+    <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
+  </person>
+  <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
+  <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>
+
+  <stylesheet media="screen">../../common/css/xml-slides.css</stylesheet>
+
+  <script>../../common/js/jquery-2.1.1.min.js</script>
+  <script>../../common/js/bootstrap.min.js</script>
+  <script>../../common/js/bootstrap-accessibility.min.js</script>
+  <script>../../common/js/xml-slides.js</script>
+
+  <slide>
+    <title>Instructor: Jon Gunderson</title>
+    <contents>
+      <p>
+        <img src="images/jon-head-shot.jpg" alt="Jon Gunderson head shot" style="width: 200px; margin-left: 1em"/>
+      </p>
+      <ul>
+        <li>Background in Electrical Engineering, Computer Science and Human Factors.</li>
+        <li>40 years of experience in technology and disability.</li>
+        <li>University of Illinois for over 25 years in disability services and IT accessibility.</li>
+        <li>Member of W3C Web Accessibility Initiative for 20 years.</li>
+        <li>Member the Accessible Rich Internet Application (ARIA) working group.</li>
+      </ul>
+
+      <script>
+        slideShowURL()
+      </script>
+
+    </contents>
+    <transcript>
+      Hello, my Name is Jon Gunderson.
+
+I have been involved with technology and disability for almost 40 years.
+
+I started working in technology and disability as an undergraduate student at the University of Wisconsin on a communication device for people with speech impairments.
+
+During my graduate studies I worked on projects related to computer accessibility at the Trace Center directed by Professor Gregg Vanderheiden.
+
+After my graduate studies I came to the University of Illinois as part of a training grant in Rehabilitation Engineering and transitioned to disability services to help make information technologies more accessible and usable to students with disabilities.
+
+For the past 25 years I have been working on campus, state and national standards to help project with managers, developers and designers at the university understand how to make information technologies more accessible to people with disabilities.
+
+I have been participating in the W3C Web Accessibility Initiative for over 20 years to help develop international standards for making online resources more accessible to people with disabilities.
+
+I am currently a member the Accessible Rich Internet Application (ARIA) working group of the W3C, and a mjor contirbutor to the ARIA Authoring practices guide.
+
+My goal in teaching this course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
+
+I welcome you to the web standards and accessibility module of our courses to help you better understand the importance of W3C standards in making the web more accessible.
+
+    </transcript>
+  </slide>
+</slides>

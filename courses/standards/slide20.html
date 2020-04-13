@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 20: ARIA Practcies: Landmark Example</title>
+<title>Slide 20: ARIA Practcies: Landmark Region Design Pattern</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,23 +60,23 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Practcies: Landmark Example</h1>
+<h1 id="h1_title" class="title">ARIA Practcies: Landmark Region Design Pattern</h1>
 <p>
         
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html" target="_specification">Landmark Region Example</a>
+<a href="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" target="_specification">Landmark Region Design Pattern</a>
       
 </p>
 <h2>Important Features</h2>
 <ul>
         
-<li>Provides example on how to use landmarks on pages in a website.</li>
+<li>How to think about defining landmark regions in a page design.</li>
         
-<li>Hide/show feature to visualize landmarks in example pages.</li>
+<li>How HTML sectioning elements create landmark regions.</li>
         
-<li>Provides same information as the ARIA practices.</li>
+<li>Labeling landmark regions.</li>
       
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html" target="_specification" width="99%" height="600px" title="ARIA Practices: Landmark Region Example"></iframe>
+<iframe src="https://www.w3.org/TR/wai-aria-practices/#aria_landmark" width="99%" height="600px" title="ARIA Practices: Landmark Design Pattern"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -90,28 +90,13 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
+      Landmark regions are an important technology to help screen reader users understand the functional groups of content on a page.  Landmark regions have roles that identify the type of content in a section of the website, for example the main content or group of navigation links.
 
-The ARIA Authoring Practices provides an example of how to use landmarks on a web page.  This slide has a link to the example and I am going to follow the link.
+The practices provide designers and developers with information on how to design and analyze a website or application for the use of landmark regions.
 
-The landmark example website mirrors the ARIA authoring practices design information to help people understand how to use the most common landmarks: banner, navigation, main, complementary and contentinfo.
+Many HTML sectioning elements generate landmarks by default so it is very important to understand how to use and define them, otherwise pages will provide poor or misleading information about the sections of a website that will lead to confusion and wasted time for screen reader users.
 
-There are two buttons near the top of the page that can be used to visually highlight the landmark regions and headings on each page.
-
-I select the &ldquo;Show Landmarks&rdquo; button to visually highlight the landmarks on the page.
-
-A banner landmark along the top of the page, containing content that is the same on all the pages within the website.
-
-A navigation landmark region on the left most column that identifies links related to navigating between pages in the example website.
-
-A main landmark region containing the primary content on the page is in the middle column.
-
-A region landmark is part of the main landmark to identify the example code section.
-
-Two complementary landmarks are on the right side of the page with links to other information related to the main content of the page.
-
-A contentinfo landmark region is on the bottom of the page and identifies the common content at the end of all the pages in the example website.
-
-I press the &ldquo;show headings&rdquo; button and it highlights the headings on the page.   Many of the headings are used for labeling the landmark regions to help users understand the content in the region.
+When more than one landmark of the same type appears on the page they need to have descriptive labels to help people understand the differences in content between the two regions.
     </div>
 </details>
 </div>

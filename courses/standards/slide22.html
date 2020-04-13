@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 22: ARIA Practcies: Menu Button Example</title>
+<title>Slide 22: ARIA Practcies: Menu Button Design Pattern</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,7 +41,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,27 +60,25 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Practcies: Menu Button Example</h1>
+<h1 id="h1_title" class="title">ARIA Practcies: Menu Button Design Pattern</h1>
 <p>
         
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" target="_specification">Menu Button Example</a>
+<a href="https://www.w3.org/TR/wai-aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
       
 </p>
 <h2>Important Features</h2>
 <ul>
         
-<li>Keyboard interaction</li>
+<li>Description</li>
         
-<li>Use of roles, properties and states</li>
+<li>Keyboard Support</li>
         
-<li>Focus styling techniques</li>
+<li>Properties and States</li>
         
-<li>Source code (<a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">copy and/or reuse of code</a>)</li>
-        
-<li>Reviewed for compliance with WCAG 2.x requirements</li>
+<li>Example implementations</li>
       
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html#ex1" width="99%" height="600px" title="ARIA Practices: Menu Button Example"></iframe>
+<iframe src="https://www.w3.org/TR/wai-aria-practices/#menubutton" width="99%" height="600px" title="ARIA Practices: Menu Button Design Patter"></iframe>
 </div>
 <div class="col"></div>
 </div>
@@ -95,18 +93,11 @@
                         </summary>
 <div class="slide-transcript">
 
-Each design pattern includes a working example to demonstrate the features of the design pattern.  I select the menu button example link to take me directly to the example page.
+The ARIA practices contain information about how to use ARIA widget roles to create WCAG compliant custom interactive components on a web page.   This slide shows the design pattern for a menu button.   The pattern includes a description defining what ARIA means by a menu button, the keyboard support and the properties and states used in the pattern.  It is important to understand the ARIA definition of user interface components when using ARIA roles, properties and states, since the same or similar terms are often used by designers and Javascript component libraries that do not have the same function or behaviors.
 
-The example provides a way for people to explore the keyboard support for the pattern.  I use the TAB key to move keyboard focus to the button labelled &ldquo;WAI-ARIA Quick Links&rdquo; and then press the space bar to open the menu.   I press the up down and up arrow keys to move through the menu options.  I can use the ESCape key to close the menu.
+The menu button pattern describes using the SPACE or ENTER key to open the popup menu and move focus to the first item in the menu.  It also recommends supporting the UP ARROW and DOWN ARROW keys to open the menu, with UP ARROW moving focus to the last item in the menu instead of the first item.
 
-As I scroll down the document, the next section provides details about the keyboard support for this particular example.
-
-After the keyboard support section is a section on the ARIA roles, properties and states  attributes used in the example, with information on tabindex value management.
-
-The last section provide links to CSS and Javascript files and a source code view of the HTML code use in the example.   The source code shows the relationship of the roles, properties and states
-
-The code in the examples is considered open source and can be reused and modified for your own needs, but caution should be used in using the exact code in production environments.  The code may not work with some mobile devices that rely on touch event support, or legacy browsers like Internet Explorer that does not support modern javascript and DOM techniques, and some patterns, for example combobox, slider and spin button may not be fully implemented by all accessibility APIs and assistive technologies.  The examples are included in the practices to authors better understand the design patterns and to help with implementation testing with browsers and assistive technologies.
-
+The two key features that identify the button as a menu button are the element having the role=button and aria-haspopup equal to &ldquo;true&rdquo; or&rdquo; menu&rdquo;.  It also describes how other aria-expanded and aria-controls should be used.
     </div>
 </details>
 </div>

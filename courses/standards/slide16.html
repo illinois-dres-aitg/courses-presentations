@@ -2,13 +2,48 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 16: WCAG Success Criteria and Techniques</title>
+<title>Slide 16: Organization of WCAG</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
-<style id="style"></style>
+<style id="style">
+      .pour li:first-letter {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      table.wcag thead th:first-child {
+        min-width: 12em;
+      }
+      table.wcag tbody tr:nth-child(1) td ul,
+      table.wcag tbody tr:nth-child(2) td ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      ol.guidelines {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       counter-reset: section;
+      }
+
+      ol.guidelines li {
+        font-weight: bold;
+      }
+
+      ol.guidelines li li {
+        font-weight: normal;
+        margin-left: 1em;
+      }
+
+      ol.guidelines li::before {
+        counter-increment: section;
+        content: counters(section, ".") " ";
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -41,7 +76,7 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide27.html" title="Slide 27">
+<a id="ID_SLIDE_LAST" href="slide28.html" title="Slide 28">
                         Last
                       </a>
 </li>
@@ -60,23 +95,141 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">WCAG Success Criteria and Techniques</h1>
-<ul>
+<h1 id="h1_title" class="title">Organization of WCAG</h1>
+<table class="table table-striped wcag">
         
-<li>Meeting level A and AA requirements are used by most regulatory standards (e.g. Section 508) as the mimimum for conformance.</li>
+<thead>
+          
+<tr>
+            
+<th>WCAG Feature</th>
+            <th>Description</th>
+          
+</tr>
         
-<li>None of the WCAG techniques are considered normative, but some are idenitfied as <em>sufficent</em> and others <em>advisory</em> techniques.  Fore example, using the <code>alt</code> attribute of the <code>img</code> element to provide a text alternative for an image are well known and widely used.</li>
+</thead>
         
-<li>WCAG doesn't include many important accessibility techniques that are widely used, for example using the <code>h1</code> heading to identify the title of a web page.</li>
-        
-<li>Requirements like <a href="https://www.w3.org/TR/WCAG/#keyboard">Success Criteria 2.1.1 Keyboard</a> will have unique techniques for web applications based on the complexity of the user interaction and require an understanding of other accessibility specifications like <a href="https://www.w3.org/tr/wai-aria"><abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> to support consistent user experience or interoperabiliy.</li>
-        
-<li>The more you understand the accessibility requirements of each success criteria and web standards available to meet the requirements the more accessible and usable your web pages will be to people with disabilities.</li>
-        
-<li>Only about 35-40% of the requirements lend themselves to automated testing, so relying on automated tools will only result identifying a best 40% of the accessibility issues on a web resource.
-        </li>
-      
+<tbody>
+          
+<tr>
+            
+<td>4 Principles (POUR)</td>
+            <td>
+              
+<ul class="pour">
+                
+<li>Perceivable</li>
+                
+<li>Operable</li>
+                
+<li>Understandable</li>
+                
+<li>Robust</li>
+              
 </ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td>13 Guidelines</td>
+            <td>
+              
+<ol class="guidelines">
+                
+<li>Perceivable
+                  <ol class="guidelines">
+                    
+<li>Text Alternatives</li>
+                    
+<li>Time-based Media</li>
+                    
+<li>Adaptable</li>
+                    
+<li>Distinguishable</li>
+                  
+</ol>
+                
+</li>
+                
+<li>Operable
+                  <ol class="guidelines">
+                    
+<li>Keyboard Accessible</li>
+                    
+<li>Enough Time</li>
+                    
+<li>Seizures</li>
+                    
+<li>Navigable</li>
+                    
+<li>Input Modalities (New in WCAG 2.1)</li>
+                  
+</ol>
+                
+</li>
+                
+<li>Understandable
+                  <ol class="guidelines">
+                    
+<li>Readable</li>
+                    
+<li>Predictable</li>
+                    
+<li>Input Assistance</li>
+                  
+</ol>
+                
+</li>
+                
+<li>Robost
+                  <ol class="guidelines">
+                    
+<li>Compatible</li>
+                  
+</ol>
+                
+</li>
+              
+</ol>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td>78 Success Criteria</td>
+            <td>
+              
+<ul>
+                
+<li>Real requirements of WCAG.</li>
+                
+<li>Three levels of importance:
+                  <ul>
+                    
+<li>A: Highest priority (29)</li>
+                    
+<li>AA: Next highest (21)</li>
+                    
+<li>AAA: Lowest priority (28)</li>
+                  
+</ul>
+                
+</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </div>
 <div class="col"></div>
 </div>
@@ -90,40 +243,48 @@
                           Audio Transcript
                         </summary>
 <div class="slide-transcript">
-      Accessibilty regulations, like the United States Section 508 requirements, are based on the level A and AA Success Criteria of WCAG.
+      We don&rsquo;t have time to take a deep dive into WCAG, but I would like to give you a little more information into the organization of WCAG.
 
-      Each Success Criteria have a number of supporting documentation on how to understand the requirements and when possible representative techniques.
+At the top level are the 4 principles, Perceiving, Operable, Understanding and Robust. With Robust requirements requiring the use of standards and built-in operating system features to support interoperability and compatibility with assistive technologies.
 
-      The techniques are not normative, which basically means you are not required to use the techniques to satisfy a success criteria.
+The principles are divided into 13 sub-categories called Guidelines which provide more specific labels for groups of success criteria.
 
-      Techniques are identified as sufficient and advisory.
+The Guidelines for Perceivable include:
+Text Alternatives.
+Time-based Media.
+Adaptable.
+Distinguishable.
 
-      Using a sufficient technique usually means you will meet the requirement.
+The Guidelines for Operable:
+Keyboard Accessible.
+Enough Time.
+Seizures.
+Navigable.
+and new WCAG 2.1 Input Modalities.
 
-      Sufficeint techniques have wide spread support by both authors, browsers and the assistive technologies used by people with disabilities to access web content.
+The Guidelines for Readable:
+Readable.
+Predictable.
+and Input Assistance.
 
-      An example of a sufficient techqniue is ALT text for IMG tags, which have wide spread authoring, browser and assistive technology implementation.
+There is only one Guideline for Robust:
+Compatible.
 
-      Advisory techniques typically to not have wide scale support among authors, may not meet all of the requirements of the success criteria or have insufficient or inconsistent implementation in browsers or assistive technologies.
+I guess they wanted the &ldquo;R&rdquo; of Robust, instead of the &ldquo;C&rdquo; of Compatible to make the acronym &ldquo;POUR&rdquo;. Who wants to say &ldquo;POUC&rdquo;?
 
-      The techniques are not comprehensive, and there are many other ways to meet or exceed the minimal requirements of WCAG.
+The Success Criteria are the real requirements of WCAG.
 
-      For example the use of the H1 element to identify the title or primary content on the page is often used to help screen reader users know the primary content on the page abd provide a reference point to easily get to the start of the primary content.
+Each success criteria can have one of three priorities: Single A, Double A or Triple A
 
-      But the WCAG techqniues resource does not include this as even an advisory techniques, even though there is widespread author, browser and assistive technology support.
+The Single A requirements have the highest priority for implementation and conformance
 
-      The tecchniques for requirements like Success Criteria 2.1.1 on keyboard operation will depend on the complexity of the user interaction in a web application and knowledge of other web standards like the Accessible Rich Interent Application or ARIA specification.
+The Double AA requirements have the next highest priority implementation and conformance
 
-      In any case it is important to familiarize yourself with the actual requirements of each success cirtoeria to make sure that they are incorporated into the design, development and testing of the web resource.
+The Triple-A requirements have the lowest priority for implementation and conformance
 
-      An important note about automated testing tools for WCAG requirements.
+The priority for a requirement is based on the consensus of the WCAG working group.  The priority is important when retrofitting accessibility into existing designs, since changes are difficult and expensive to make.
 
-      Only about 30-40% of the requirements lend them selves to automated testing, so reliance on automated tolls at best will only identify 40% of the WCAG level A and AA requirements.
-
-      Automated tools can also be easily fooled, saying a particular requirement has been met, when what really happened is code was modified to statisfy what the testing tool was looking for, but not the accessibility requirement.
-
-      For example, adding an empty ALT attribute, even though the image does carry informative information on the page.
-
+Analogy is adding curb cuts to an already existing sidewalk, it requires using jack hammers and chisels to remove the existing concrete, before pouring the cement for the curb cut.   On new sidewalks the curb cuts require little if any additional work and the same is true when designing a new web resource. When companies and organizations consider accessibility during the design phase of product development there is typically no or little cost in adding accessibility features, and accessibility testing can more easily integrated into the testing plan for the product or service.  The priorities therefore guide companies and organizations who are new to accessibility requirements in identifying where to start their accessibility efforts.
     </div>
 </details>
 </div>
