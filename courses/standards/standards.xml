@@ -26,9 +26,7 @@
   <slide>
     <title>Goals</title>
     <contents>
-      <h2>Goals</h2>
-
-      <h3>Part 1: The Web and Universal Design</h3>
+      <h2>Part 1: The Web and Universal Design</h2>
 
       <ul>
         <li>Original purpose of the web.</li>
@@ -37,7 +35,7 @@
         <li>US accessibility laws.</li>
       </ul>
 
-      <h3>Part 2: W3C Standards</h3>
+      <h2>Part 2: W3C Standards</h2>
 
       <ul>
         <li>W3C Web Accessibility Initiative (WAI).</li>
