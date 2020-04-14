@@ -54,19 +54,11 @@
     <transcript>
       Hello, my Name is Jon Gunderson.
 
-I have been helping the University of Illinois for over 25 years to understand how to make information technologies more accessible to people with disabilities.
+This slide outlines the major goals of the universal design and web standards video.
 
-I have been participating in the W3C Web Accessibility Initiative for over 20 years to help develop standards for making online resources more accessible to people with disabilities.
+The video is broken into to parts, the first part will talk about disability and universal design.
 
-I am currently a member the Accessible Rich Internet Application (ARIA) working group of the W3C.
-
-My goal in teaching this course is to help you understand how web technologies can be designed to be more accessible to people with disabilities and to give you insights on how people with disabilities experience the web.
-
-I welcome you to the web standards and accessibility module of our courses to help you better understand the importance of W3C standards in making the web more accessible.
-
-This slide outlines the major goals of the web standards and accessibility video.
-
-This video should help you learn about and understand.
+This two videos should help you learn about and understand.
 
 The original purpose of the web.
 
@@ -75,6 +67,8 @@ The prevalence and types of disabilities as we age.
 Introduce the concept of Universal Design for the web.
 
 Universal Design principles improve the usability of the web for everyone, including people with disabilities.
+
+Basic accessibility laws.
 
 Why the use of web standards is important for creating accessible web content.
 
@@ -105,7 +99,7 @@ of each slide.
           </ul>
         </li>
         <li>Tim had an idea to not only share information between people, but with everyone.</li>
-        <li>Documents reference each other through hyertext linking, making it reasier to find and retrieve related information.</li>
+        <li>Documents reference each other through hypertext linking, making it easier to find and retrieve related information.</li>
       </ul>
     </contents>
     <transcript>
@@ -122,7 +116,7 @@ This was due to the use of different word processors, some used WordStar, others
 
 These programs did not recognize the document formats of other word processors and the researchers were stuck spending time reformatting or retyping content.
 
-Researchers were also having a hard time organizing, storing and retreiving the vast number of documents that were being created at CERN.
+Researchers were also having a hard time organizing, storing and retrieving the vast number of documents that were being created at CERN.
 
 Tim had the idea that people should be able to create sharable documents that research teams could easily view and edit, and that the documents could be easily shared with other researchers and research teams.
 
@@ -666,7 +660,7 @@ Current accessibility standards related specifically to cognitive impairments ar
   </slide>
 
   <slide>
-    <title>Seven Principles of Univeral Design</title>
+    <title>Seven Principles of Universal Design</title>
     <contents>
       <p>From <a href="https://www.washington.edu/doit/universal-design-instruction-udi-definition-principles-guidelines-and-examples">Universal Design of Instruction (UDI): Definition, Principles, Guidelines, and Examples</a></p>
       <dl>
@@ -676,11 +670,11 @@ Current accessibility standards related specifically to cognitive impairments ar
 
         <dt>Flexibility in use</dt>
         <dd>The design accommodates a wide range of individual preferences and abilities.</dd>
-        <dd><em>Example:</em> A museum that provides medai to allow people to choose to read or listen to descriptions of the contents of display cases.</dd>
+        <dd><em>Example:</em> A museum that provides media to allow people to choose to read or listen to descriptions of the contents of display cases.</dd>
 
         <dt>Simple and intuitive use</dt>
         <dd>Use of the design is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level.</dd>
-        <dd><em>Example:</em> Control buttons on consumer electonics that are labeled with text and symbols that are simple and intuitive to understand.</dd>
+        <dd><em>Example:</em> Control buttons on consumer electronics that are labeled with text and symbols that are simple and intuitive to understand.</dd>
 
         <dt>Perceptible information</dt>
         <dd>The design communicates necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities.</dd>
@@ -731,7 +725,7 @@ The sixth princple is Low physical effort.
     The design can be used efficiently, comfortably, and with a minimum of fatigue.
     An example of the sixth principle is doors to a building that open automatically for people with a wide variety of physical characteristics.
 
-The seventh and last princple is Size and space for approach and use.
+The seventh and last principle is Size and space for approach and use.
     Appropriate size and space is provided for approach, reach, manipulation, and use regardless of the user's body size, posture, or mobility.
     An example of the seventh principle is a flexible work area that has adequate workspace for people who are left- or right-handed and for those who need to work from a standing or seated position.
 
@@ -748,14 +742,14 @@ The seventh and last princple is Size and space for approach and use.
           <li>Students listening to online lectures spend significantly less time listening when captions are available.</li>
           <li>People in a noisy or quiet environments and cannot hear or listen to the audio.</li>
           <li>When people hear new words or terms, or when speaker is difficult to understand due to regional accent or recording quality.</li>
-          <li>Key word searches on the caption text to find relavant portions of a video.</li>
+          <li>Key word searches on the caption text to find relevant portions of a video.</li>
         </ul>
 
         <h2>Keyboard Support</h2>
         <p>Keyboard interaction is required for people who cannot use the mouse, due to blindness or physical disability, but are also useful for:</p>
         <ul>
           <li>Touch typists who prefer to use keyboard commands, rather than pointing and clicking with a mouse.</li>
-          <li>People who are traveling when using a mouse or track pad is difficult due to constraints in their seating positon and posture.</li>
+          <li>People who are traveling when using a mouse or track pad is difficult due to constraints in their seating position and posture.</li>
         </ul>
     </contents>
     <transcript>
@@ -766,11 +760,11 @@ The seventh and last princple is Size and space for approach and use.
 
     Captions for videos are required for people who are deaf, but are very useful to everyone.
 
-        For example non-native speakers of the language being spoken on a video is a common occurance in higher education, where students are often encouraged to take at least part of their studies in other counties and cultures.  Students can often read a native language better than they can understand the language being spoken and therefore captions improve comprehnsion when they are available.
+        For example non-native speakers of the language being spoken on a video is a common occurance in higher education, where students are often encouraged to take at least part of their studies in other counties and cultures.  Students can often read a native language better than they can understand the language being spoken and therefore captions improve comprehension when they are available.
 
-        Another example is the redundancy captions provide to everyone to learn more efficently.
+        Another example is the redundancy captions provide to everyone to learn more efficiently.
 
-        In one controlled study of an online math course with prerecorded videos, half the students recieved the videos with captions and half without captions.  The group receving the captioned videos spent on average 40% less time watching the videos, or approximately 45 less hours, than the group without captions.  There was no difference in the distribution of grades between the two groups of students at the end of the course.  For the growing number of part-time and non-traditional students the reduction in time would be extremely valuable to them.  Which group would you want to be in?
+        In one controlled study of an online math course with prerecorded videos, half the students received the videos with captions and half without captions.  The group receiving the captioned videos spent on average 40% less time watching the videos, or approximately 45 less hours, than the group without captions.  There was no difference in the distribution of grades between the two groups of students at the end of the course.  For the growing number of part-time and non-traditional students the reduction in time would be extremely valuable to them.  Which group would you want to be in?
 
         People are using computing devices almost everywhere, including when commuting on public transportation, in crowded rooms or when their significant other maybe sleeping.
 
@@ -790,24 +784,27 @@ The seventh and last princple is Size and space for approach and use.
   </transcript>
   </slide>
   <slide>
-    <title>Disability Laws</title>
+    <title>United States Disability Laws</title>
     <contents>
       <dl>
-        <dt><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabitation Act of 1973</a></dt>
+        <dt><a href="https://www.ada.gov/cguide.htm#anchor65610">Rehabilitation Act of 1973</a></dt>
         <dd>Access to information is a <em>human right</em>, not just a nice thing to do.</dd>
         <dd>Accessible at the same time as everyone else gets the information.</dd>
-
-        <dt><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines">Section 508: Information and Communication Technology (ICT) Standards and Guidelines</a></dt>
-        <dd>Uses <a href="https://www.w3.org/TR/WCAG/">W3C Web Content Accessibility Guidelines</a> Level A and AA requirements.</dd>
-        <dd>Applies to directly to Federal Websites.</dd>
-        <dd>Standard for disability related cvil rights complaints for access to websites.</dd>
 
         <dt><a href="https://en.wikipedia.org/wiki/Americans_with_Disabilities_Act_of_1990">Americans with Disabilities Act of 1990</a></dt>
         <dd>Title I - Employment</dd>
         <dd>Title II - Public Transportation</dd>
         <dd>Title III - Commercial Facilities</dd>
         <dd>Title IV - Telecommunications</dd>
+
+
+        <dt><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines">Section 508: Information and Communication Technology (ICT) Standards and Guidelines (2000 and 2017)</a></dt>
+        <dd>Uses <a href="https://www.w3.org/TR/WCAG/">W3C Web Content Accessibility Guidelines</a> Level A and AA requirements.</dd>
+        <dd>Applies to directly to Federal Websites.</dd>
+        <dd>Standard for disability related civil rights complaints for access to websites.</dd>
+
       </dl>
+
 
     </contents>
     <transcript>
@@ -817,11 +814,13 @@ The seventh and last princple is Size and space for approach and use.
 
       The basic premise of the act is people with disabilities should have access to same information at the same time and in their preferred format as everyone else.
 
-      While the web did not exist in 1973, these same principles applies to websites covered by the act, the federal government and entity receiving federal funds, including educational institutions, state and local governments.
+      While the web did not exist in 1973, these same principles applies to websites covered by the act, the federal government and entities that receiving federal funds, including educational institutions, state and local governments.
+
+      In 1990 the Americans with Disabilities Act (ADA) was signed into law to extended access rights to employment, public transportation, telecommunication systems and businesses like stores and restaurants.
 
       For the web that means making websites accessible using the W3C Web Content Accessibility Guidelines, which we will talk about in a few minutes.
 
-      NOTE: Even for private companies where the law is ambigious, most voluntarly comply when they learn there are barriers to people with disabilities.
+      NOTE: Even for private companies where the law is ambiguous, most voluntarily comply when they learn there are barriers to people with disabilities.
     </transcript>
   </slide>
 
@@ -852,12 +851,12 @@ The seventh and last princple is Size and space for approach and use.
             <li><a href="https://www.w3.org/TR/html52/">Hypertext Markup Language (HTML) Specifications</a></li>
             <li><a href="https://www.w3.org/TR/css">Cascading Style Sheets (CSS) Specifications</a></li>
             <li><a href="https://www.w3.org/TR/PNG/">Portable Network Graphics (PNG) Specifications</a></li>
-            <li><a href="https://www.w3.org/TR/SVG/">Scallable Vector Graphics (SVG) Specifications</a></li>
+            <li><a href="https://www.w3.org/TR/SVG/">Scalable Vector Graphics (SVG) Specifications</a></li>
             <li><a href="https://www.w3.org/TR/MATHML/">Mathematical Markup Language (MathML) Specifications</a></li>
           </ul>
         </li>
-        <li>Interopability through at least 2 indepdent implementations</li>
-        <li>Automated testing of technologies using the speficications.</li>
+        <li>Interoperability through at least 2 independent implementations</li>
+        <li>Automated testing of technologies using the specifications.</li>
       </ul>
 
       <iframe src="https://www.w3.org" width="99%" height="600px" title="World Wide Web Home page"></iframe>
@@ -903,12 +902,12 @@ In many ways this frustration continues for people with assistive technologies h
     <contents>
       <h2>Old Model for Accessibility</h2>
 
-      <p>If it worked with some version of the JAWS screen reader and a particular version of Microsoft Internet Explorer, a website was consideed accessible.</p>
+      <p>If it worked with some version of the JAWS screen reader and a particular version of Microsoft Internet Explorer, a website was considered accessible.</p>
 
       <h2>New Model for Accessibility</h2>
 
       <ul>
-        <li>W3C Accessible Rich Internet Application Specficiation</li>
+        <li>W3C Accessible Rich Internet Application Specification</li>
         <li>HTML5</li>
         <li>W3C Accessible API Mapping Specification</li>
       </ul>
