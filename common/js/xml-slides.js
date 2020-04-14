@@ -112,6 +112,7 @@ $(document).ready(function() {
       var isLastCharANumber = false;
       var c = '';
       var c1 = '';
+      var c2 = '';
       var parenCount = 0;
 
       while (ignoreCharacter(transcriptText[index]) &&
@@ -123,6 +124,12 @@ $(document).ready(function() {
 
         c1 = c;
         c = transcriptText[index];
+        if (index < (transcriptTextLength-1)) {
+          c2 = transcriptText[index+1]
+        }
+        else {
+          c2 = '';
+        }
 
         if ('([{'.indexOf(c) >= 0) {
           parenCount += 1;
@@ -137,6 +144,7 @@ $(document).ready(function() {
         }
 
         isLastCharANumber = '0123456789'.indexOf(c1) >= 0;
+        isNextCharANumber = '0123456789'.indexOf(c2) >= 0;
 
         if (('?!'.indexOf(c) >= 0) && !parenCount) {
           return index;
@@ -146,7 +154,10 @@ $(document).ready(function() {
           return index;
         }
 
-        if (c === '.' && (!isLastCharANumber || spaceCount) && !parenCount) {
+        if (c === '.' &&
+            (!isLastCharANumber || spaceCount) &&
+            (!isLastCharANumber && !isLastCharANumber) &&
+            !parenCount) {
           return index;
         }
 
