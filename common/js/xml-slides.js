@@ -78,9 +78,6 @@ $(document).ready(function() {
       }
 
       var phrase = transcriptText.substring(i, j+1).trim();
-
-      console.log('phrase: ' + phrase);
-
       if (phrase.length) {
 
         k = phrase.indexOf('[');
@@ -156,7 +153,7 @@ $(document).ready(function() {
 
         if (c === '.' &&
             (!isLastCharANumber || spaceCount) &&
-            (!isLastCharANumber && !isLastCharANumber) &&
+            !(isLastCharANumber && isNextCharANumber) &&
             !parenCount) {
           return index;
         }
