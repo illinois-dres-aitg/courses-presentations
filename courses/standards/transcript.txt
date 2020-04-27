@@ -1,0 +1,582 @@
+
+        === Slide 1 ===
+        
+Hello, my name is Jon Gunderson from the University of Illinois and I am the instructor for this course.
+
+This slide outlines the major goals of the universal design and web standards video.
+
+The set of slides in this presentation will be divided into two videos, the first part is about disability,  universal design and accessibility laws.
+
+The second video will focus on the W3C web accessibility standards.
+
+These two videos should help you learn about and understand.
+
+The original purpose of the web.
+
+The prevalence and types of disabilities as we age.
+
+Introduce the concept of Universal Design for the web.
+
+Universal Design principles improve the usability of the web for everyone, including people with disabilities.
+
+United States accessibility laws that make web accessibility a civil right.
+
+How the W3C is helping to make the web more accessible.
+
+Why the use of web standards is important for creating accessible web content.
+
+And how W3C standards support accessible design.
+
+NOTE: All of the HTML slides used in this video are publicly available for you to view and share.
+
+The audio transcript of the video is available through a disclosure button on the bottom of each slide.
+
+A link to the full audio transcript is available in the navigation bar at the beginning
+of each slide.
+
+    
+        === Slide 2 ===
+        
+This slide is about why the world wide web was developed in the first place.
+
+While it is hard to image a world without the web today, it is still a relatively new technology, created by Tim Berners-Lee in 1989 as a research project at the CERN particle accelerator lab in Switzerland.
+
+Tim was observing a problem researchers were having collaborating on research.
+
+Scientists would send each other documents via e-mail and when they tried to open them, they
+discovered they did not have the application needed to view and edit the document.
+
+This was due to the use of different word processors, some used WordStar, others used Word Perfect, others used Microsoft Word or some other application.
+
+These programs did not recognize the document formats of other word processors and the researchers were stuck spending time reformatting or retyping content.
+
+Researchers were also having a hard time organizing, storing and retrieving the vast number of documents that were being created at CERN.
+
+Tim had the idea that people should be able to create sharable documents that research teams could easily view and edit, and that the documents could be easily shared with other researchers and research teams.
+
+Another important feature Tim included in the web is the concept of hypertext.
+
+Hypertext provides the ability of documents to reference other documents through links, so people can navigate and view related or supporting information.
+
+Hypertext alleviates many of the problems of finding and retrieving archived documents by including links to them when they are referenced in other documents.
+
+    
+        === Slide 3 ===
+        
+Tim’s goal of sharing and linking information became the basis of the web.
+
+The first web browsers included the ability to edit content, so people could easily collaborate on writing, sharing and linking to web documents.
+
+While the web has changed a lot since 1989 when Tim first demonstrated the potential of the web, the core principles remain the same, to provide a common platform for everyone to be able to view, create, edit and link to information on the web, including people with disabilities.
+
+Tim also made the technologies he created open standards for everyone to be able to contribute to and to benefit from.
+
+The use of open standards eliminates many of the barriers to participation associated with licensing fees and royalties.
+
+Open standards mean people do not have to pay to use the technologies and anyone can use them to create new products and services.
+
+The online courses in accessibility from Illinois are designed to help people understand how they can make sure people with disabilities gain the same benefits from web as everyone else.
+      
+        === Slide 4 ===
+        
+The table on this slide shows the extent of how important the web and internet has become to people from around the world.  The table provides data on Internet usage by geographic region for June 2019.
+
+The table has five columns and nine rows.
+
+I am using the mouse pointer to highlight the geographic regions and data associated with some of the regions.
+
+In the first column of the table:
+
+Africa.
+Asia.
+Europe.
+Latin America/Caribbean.
+Middle East.
+North America.
+Oceania/Australia.
+The last cell world totals.
+
+The second column is the number of people from a region who use the Internet.
+
+and note in the last row of the second column, the world total is over four billion people using the Internet.
+
+The third column is the percentage of the population for each region using the internet.
+
+The highest percentages of people using the Internet are in North America and Europe at over 86%.
+
+and the lowest is Africa, but even in Africa the percent usage is almost 40%.
+
+The fourth column is the growth in use of the Internet for that region since the year 2000.
+
+Over 11,000 percent for Africa.
+
+Over 1,800 percent for Asia.
+
+Almost 2,400 percent for Latin America.
+
+Over 5,000 percent for the Middle East.
+
+and the data clearly shows that developing countries are increasing their rate of usage at a rapid pace, and will soon be near the saturation rates of western countries.
+
+The fifth column is the percentage of all Internet usage by that region and it is interesting to note that almost half of world Internet usage is in Asia, with western countries only representing about 25% of world usage.
+
+The data in the table show that Tim’s vision of creating a web for everyone is being fulfilled with over 4 billion people using the Internet, representing 57% of the planet’s population.
+
+    
+        === Slide 5 ===
+        
+The chart in this side shows that disability becomes a pretty inclusive club as people age in the United States.
+
+If you cannot see the chart or have difficulty reading charts there is an option to view a table of the data after the chart on the web page.
+
+The chart shows the percentage of the population that has any disability, a severe disability and a disability that needs assistance for activities of daily living for nine different age ranges.  I am going to point to the rate of severe disability in the charts using the mouse:
+
+3.6% for people under 15 years old.
+
+5% for people 15 to 24 years old.
+
+7.5% for people 25 to 44 years old.
+
+12.6% for people 45 to 54 years old.
+
+20.8% for people 55 to 64 years old.
+
+26.1% for people 65 to 69 years old.
+
+27.6% for people 70 to 74 years old.
+
+37.8% for people 75 to 79 years old.
+
+56.2% for people over 80.
+
+By age 80, about half of people with severe disability need some type of daily assistance.
+
+The ability to use the web will continue to be important as we age, so designing web pages to be accessible not only helps people with disabilities now, including our family and friends, but most likely we will be also helping ourselves as we age.
+    
+        === Slide 6 ===
+        
+One of the questions many people new to accessibility ask is how many people have disabilities?
+
+How many people will be impacted if I make a website more accessible?
+
+ While one slide cannot provide a detailed answer to these questions, the chart on this slide does provide some insights to the prevalence of four broad types of disability as we age: vision, hearing, mobility and cognitive.
+
+If you cannot see the chart or have difficulty reading charts there is an option to view a data table just after the chart on the web page.
+
+From the perspective of web design, it is easy for people to understand how someone with a visual impairment who has trouble seeing the computer screen or cannot see the screen at all would have trouble using a web page.
+
+For example, one of the best-known accessibility requirements is providing a text description or Alternative Text for each image in a web page, so that someone using a screen reader can understand the purpose of the image.
+
+I am going to point to bars in the chart with the mouse to highlight how the rate of visual impairments increases with age:
+
+0.4% for people less than 5 years old.
+
+0.9% for people from 5 to 17 years old.
+
+2% for people from 18 to 64 years old.
+
+6.6% of people over 65 years age.
+
+Multiply these percentages by 7 billion people and you can see that millions of people with visual impairments are affected by the design decisions of web developers and web development teams.
+
+People with hearing impairments have similar demographics as people with visual impairments.  I am going to point to bars in the chart with the mouse to highlight how the rate of hearing impairments increases with age:
+
+0.5% for people less than 5 years old.
+
+0.6% for people from 5 to 17 years old.
+
+2% for people from 18 to 64 years old.
+
+14.6% of people over 65 years of age.
+
+Comparing the hearing impairments to visual Impairments shows similar instances, until age 65.
+
+At 65 there are more than twice as many people with hearing impairments as visual impairments.
+
+The main design feature for people with hearing impairments is the availability of captions for videos.
+
+Captioning videos is a real winner for making the web more useful to everyone, since captions also benefit people who’s native language is different from the speakers on the video.  For example, here at the University of Illinois we have many students from foreign countries including India and China.  The use of video lectures has greatly increased in the past couple of years and in some courses the lectures are only available as a video, similar to the course you are taking now.  While these students learn English before they come to the United States, for many of them the ability to read English is much better than their ability to listen to English, since there are often few opportunities to listen to native English speakers in other countries.  In this case the captions will help them understand the lecture content much more easily.   The captions can also help many students with learning disabilities that have trouble processing speech.  The redundancy of the captions with the speech helps students to learn much more efficiently.   Caption text can also be used by search engines to help people find specific topics of interest within a video.  It is much easier to search for keywords in a video with closed captions, than videoes without closed captions.
+
+People with mobility impairments are not as common until people are over 18 years of age when about 5% of the population experiences a mobility impairment of some type and then increase to 22% for people over 65 years old.   Not all mobility impairments affect the ability to use computing and mobile technologies, but many do affect the ability of people to type on a keyboard, move and activate the button on a mouse, or point and tap their finger on a touch screen device.  In these cases, there is a need to make sure that web and mobile apps can be operated with assistive technologies like voice input or other devices that make it appear the person is typing from a keyboard or pointing on a touch screen.
+
+One of the most difficult to understand areas of making web pages accessible is for people with learning disabilities and cognitive impairments.
+
+I am going to point with the mouse to bars in the chart to show the prevalence of identified cognitive impairments:
+
+4.2% for people from 5 to 17 years old.
+
+4.5% for people from 18 to 64 years old.
+
+22.5% of people over 65 years of age.
+
+Current accessibility standards related specifically to cognitive impairments are relatively few, but standards continue to be developed to help designers and developers better understand the needs of people with cognitive impairments.
+    
+        === Slide 7 ===
+        
+      It is often difficult for people without a disability to understand or empathize with the functional barriers faced by people with disabilities in the environments our societies have created.
+
+      Often simple changes in the environment enable participation and inclusion.
+
+      This slide shows the general principles of universal design conplied by North Carolina State University in 1997.
+
+
+The first principle is Equitable use.
+    The design is useful and marketable to people with diverse abilities.
+    An example of the first principle are websites designed so they are accessible to everyone, including people who are blind and using text-to-speech software.
+
+The second principle is Flexibility in use.
+    The design accommodates a wide range of individual preferences and abilities.
+    An example of the second principle is when visiting a museum the museum provides media that allows people to choose to read or listen to a description of the contents of display cases.
+
+The third principle is Simple and intuitive use.
+    Use of the design is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level.
+    An example of the third principle is illustrated by controls on consumer electronics that are labeled with both text and symbols that are simple and intuitive to understand.
+
+The fourth principle is Perceptible information.
+    The design communicates necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities.
+    An example of the fifth principle are videos that include captions.
+
+The fifth principle is Tolerance for error.
+    The design minimizes hazards and the adverse consequences of accidental or unintended actions.
+    An example of the fifth principle is a software program that provides guidance and background information when people make an inappropriate or invalid response.
+
+The sixth princple is Low physical effort.
+    The design can be used efficiently, comfortably, and with a minimum of fatigue.
+    An example of the sixth principle is doors to a building that open automatically for people with a wide variety of physical characteristics.
+
+The seventh and last principle is Size and space for approach and use.
+    Appropriate size and space is provided for approach, reach, manipulation, and use regardless of the user's body size, posture, or mobility.
+    An example of the seventh principle is a flexible work area that has adequate workspace for people who are left- or right-handed and for those who need to work from a standing or seated position.
+
+    
+        === Slide 8 ===
+        
+
+      Everyday examples of Universal Design include curbs cuts in sidewalks, ramps and automatically opening doors into buildings and wider doors in bathrooms that benefit more than just people with mobility impairments.
+
+      This slide highlights some of the benefits of universal design in the online world.
+
+    Captions for videos are required for people who are deaf, but are very useful to everyone.
+
+        For example non-native speakers of the language being spoken on a video is a common occurance in higher education, where students are often encouraged to take at least part of their studies in other counties and cultures.  Students can often read a native language better than they can understand the language being spoken and therefore captions improve comprehension when they are available.
+
+        Another example is the redundancy captions provide to everyone to learn more efficiently.
+
+        In one controlled study of an online math course with prerecorded videos, half the students received the videos with captions and half without captions.  The group receiving the captioned videos spent on average 40% less time watching the videos, or approximately 45 less hours, than the group without captions.  There was no difference in the distribution of grades between the two groups of students at the end of the course.  For the growing number of part-time and non-traditional students the reduction in time would be extremely valuable to them.  Which group would you want to be in?
+
+        People are using computing devices almost everywhere, including when commuting on public transportation, in crowded rooms or when their significant other maybe sleeping.
+
+        When in noisy environments where it is too difficult to hear or when sound would disturb others, captions are invaluable way to make videos usable.
+
+        Another benefit is when an unfamiliar or new word is spoken, or the speaker has an difficult to understand accent or the sound recording is of poor quality.  When the listener can see the spelling of new terms and phrases it makes them easier to remember and understand.
+
+        Captions allow people and automated search engines to perform key word searches on the caption text to find relavant portions of the video for viewing.  The search results can take people to the start of the most relavent part of a video, saving the user time and frustration of trying to find the same information on an uncaptioned video.
+
+    Keyboard interaction is required for people who cannot use the mouse, due to blindness or physical disability, but are also useful for eveyone in some situations.
+
+        People who prefer touch typing can control the computer without having to take their hands of the keyboard to use a mouse or other pointing device.  By supporting keyboard operation the software gives the user a choice and control over how they want to complete a task on the computer.
+
+        Often times people who are commuting or traveling by air do not have the space or posture to use a pointing device.  The keyboard gives them another way for them to complete a task while in transit.
+
+    In the information age Universal Design helps make our online world adapt to the preferences of people and the situations they often find themselves, rather than forcing people to adapt to the interaction constraints of a particular device or software program.
+  
+        === Slide 9 ===
+        
+      The Rehabilitation Act of 1973 was the first legislation in the United States that required the services of the federal government and public education to be accessible to people with disabilities.
+
+      The act established that access to public services and information is a civil right, not just something nice to do.
+
+      It requires that people with disabilities have access to information available to everyone else at the same time and in an accessible format.
+
+      While the web did not exist in 1973, the principles are the same for websites, accessible at the same time as for everyone else.
+
+      The act only applies to the federal government and organizations that receive federal funding, including educational institutions, and state and local governments.
+
+      In 1990 the Americans with Disabilities Act (ADA) was signed into law to extended the civil rights more generally to:
+
+      Title 1 on Employment, so people who are qualified for a job can not be disqualified based on their disability.
+
+      Title 2 on Public transportation, so people with disabilities can use buses, taxi services, trains and airlines.
+
+      Title 3 on Commerical Facilities by requiring stores and restaurants to comply with building codes to make sure people with disabilities can access and benefit from their products and services.
+
+      Title 4 on Telecommunication systems, including phones and voice relay systems for the deaf.
+
+      The ADA does not make any specific reference or requirements for the web, since the web was barely invented at the time of the signing, so there is some legal ambiguity if the ADA applies to the websites of private companies.
+
+      In 2000 the Federal Section 508 requirements of the Rehabilitation Act of 1973 were amended to include specific requirements for software and web accessibility.
+
+      The Section 508 Information, Communication and Technology (ICT) requirements for websites were based on the high priority requirements of the W3C Web Content Accessibility Guidelines 1.0.
+
+      In 2017 Section 508 ICT Standard was updated to use the W3C Web Content Accessibility Guidelines 2.0 Level A and AA requirements, which we will talk about in a later session.
+
+      The use of the Section 508 ICT standard is often cited as the standard in civil right discrimination when websites are not accessible.
+
+      Even for private companies where the the ADA law is ambiguous, most companies voluntarily comply when they learn there are barriers to people with disabilities.
+
+      So even though it is a civil right, it is also the right thing to do.
+    
+        === Slide 10 ===
+        
+    
+        === Slide 11 ===
+        
+As the web became more popular and moved from the academic to the public sphere, Tim was asked in 1994 to lead a new organization to develop and maintain the open standards of the Web.
+Thus the World Wide Web Consortium or W3C was born and currently has over 400 members organizations representing industry, academic and non-profit interests.
+Some of the standards developed and maintained by the W3C include:
+Hypertext Markup Language (HTML).
+Cascading Style Sheets (CSS).
+Portable Network Graphics (PNG).
+Scalable Vector Graphics (SVG).
+and Mathematical Markup Language (MathML).
+The W3C process is designed to ensure interoperability of the standards including requiring at least 2 independent implementations of each specification and the use of extensive automation to ensure all technologies support the requirements of the specification through comprehensive test suites.
+    
+        === Slide 12 ===
+        
+Interoperability and open standards are the primary principles used by the W3C in the creation of specifications.
+Interoperability means that ideally people should only have to create their content once and it will be usable on a wide range of devices and applications.
+For people who were developing web pages in the late 1990s and early 2000’s this was difficult to do.
+The browser rivalry between Microsoft and Netscape was a competition for who’s browser was going to dominate and each would try to convince developers to use proprietary features of their browser, that resulted in parts or the entire page being unusable in the other browser.
+The lack of interoperability frustrated both developers and users.
+It took many years and the rise of Firefox and Chrome browsers to push companies back into supporting the W3C standards.
+The W3C specifications can be used royalty free, so both large and small companies can compete equally without concern of expensive licensing fees or being cut off from using a technology.
+In many ways this frustration continues for people with assistive technologies having much different experiences between browsers.
+    
+        === Slide 13 ===
+        
+Interoperability is also very important for accessibility.
+For a long time interoperability was only a dream for people concerned about accessibility.
+In the early days of the web, up until a few years ago, accessibility was often defined as a web page working with some version of the JAWS screen reader and a specific version of Microsoft Internet Explorer.
+During this period W3C specifications addressed how technologies like HTML and CSS should be processed for graphical rendering in a standardized way, but not how page information should be communicated to assistive technologies like screen readers.
+
+The interoperability problem for assistive technologies changed with the development of the W3C Accessible Rich Internet Application (ARIA) specification.
+ARIA began the process of standardizing how browsers like Edge, Firefox, Chrome and Safari communicate web page information to assistive technologies, so that users could have the same or similar experience when using different browsers and operating systems with the assistive technology of choice.
+
+JAWS is not the only screen reader available to people who are blind, for the desktop there is also Non-Visual Desktop Access (NVDA) for Windows and VoiceOver for MacOS.
+Phone and tablet devices have VoiceOver for iOS and TalkBack for Android.
+
+Accessibility has gone beyond just screen reader compatibility, to include magnification software, support for high contrast operating system settings and the use of voice input technologies.
+
+This is good news for users of assistive technologies since they will have a much wider range of options to view and interact with content on the web.
+The job of web developers is to make sure that they use the web standards to include people with disabilities, but this is not always as easy as I make it sound, since there are still some bugs, gaps in implementation of requirements and missing features in the specifications themsleves.  BUt we are on the path and accessibility is getting better everyday.
+
+    
+        === Slide 14 ===
+        
+      In 1995 when the popularity of the web started to increase, web browsers were not very accessible to assistive technologies and most website developers were not evening thinking about the need to make websites accessible to people with disabilities.
+      In 1997 the W3C launched the Web Accessibility Initiative or WAI for short to help address the accessibility issues of web technologies and content creation.
+      WAI is a public and private partnership to help ensure that web technologies are designed to be accessible to people with disabilities, develop standards to guide authors and developers in creating accessible content and raise awareness of the ways people with various disabilities access content on the web.
+      WAI supports a wide variety of projects aimed to help raise awareness of accessibility issues and develop guidance in creating accessible content, authoring tools, web browsing technologies  and including accessibility features in W3C specifications.
+    
+        === Slide 15 ===
+        
+
+The most well-known work of W3C Web Accessibility Initiative is the development of the Web Content Accessibility Guidelines or WCAG which is the internationally recognized standard for the accessibility of web content, including the United States Federal Section 508 web accessibility requirements.   Some important features to know about WCAG is that while it was inspired by the need to make HTML based documents and applications accessible, it was designed to be technology agnostic so it could be applied to a wider range of technologies, for example PDF documents and web application technologies like Adobe Flash and Microsoft Silverlight.
+
+The requirements identify the accessibility needs of people with disabilities to access online resources, with supporting references to techniques to help people learn how the needs can be met with a specific technology, like HTML or Adobe PDF.   It is important to note the techniques are just advisory, they are incomplete and often missing common best practices.   People looking for a design resource in the technique reference will mostly be disappointed and frustrated, since the techniques are mostly based on minimum changes in code needed for what the working group considers sufficient implementation of a Success Criteria requirement.
+    
+        === Slide 16 ===
+        
+      We don’t have time to take a deep dive into WCAG, but I would like to give you a little more information into the organization of WCAG.
+
+At the top level are the 4 principles, Perceiving, Operable, Understanding and Robust. With Robust requirements requiring the use of standards and built-in operating system features to support interoperability and compatibility with assistive technologies.
+
+The principles are divided into 13 sub-categories called Guidelines which provide more specific labels for groups of success criteria.
+
+The Guidelines for Perceivable include:
+Text Alternatives.
+Time-based Media.
+Adaptable.
+Distinguishable.
+
+The Guidelines for Operable:
+Keyboard Accessible.
+Enough Time.
+Seizures.
+Navigable.
+and new WCAG 2.1 Input Modalities.
+
+The Guidelines for Readable:
+Readable.
+Predictable.
+and Input Assistance.
+
+There is only one Guideline for Robust:
+Compatible.
+
+I guess they wanted the “R” of Robust, instead of the “C” of Compatible to make the acronym “POUR”. Who wants to say “POUC”?
+
+The Success Criteria are the real requirements of WCAG.
+
+Each success criteria can have one of three priorities: Single A, Double A or Triple A
+
+The Single A requirements have the highest priority for implementation and conformance
+
+The Double AA requirements have the next highest priority implementation and conformance
+
+The Triple-A requirements have the lowest priority for implementation and conformance
+
+The priority for a requirement is based on the consensus of the WCAG working group.  The priority is important when retrofitting accessibility into existing designs, since changes are difficult and expensive to make.
+
+Analogy is adding curb cuts to an already existing sidewalk, it requires using jack hammers and chisels to remove the existing concrete, before pouring the cement for the curb cut.   On new sidewalks the curb cuts require little if any additional work and the same is true when designing a new web resource. When companies and organizations consider accessibility during the design phase of product development there is typically no or little cost in adding accessibility features, and accessibility testing can more easily integrated into the testing plan for the product or service.  The priorities therefore guide companies and organizations who are new to accessibility requirements in identifying where to start their accessibility efforts.
+    
+        === Slide 17 ===
+        
+      Accessibilty regulations, like the United States Section 508 requirements, are based on the level A and AA Success Criteria of WCAG.
+
+      Each Success Criteria have a number of supporting documentation on how to understand the requirements and when possible representative techniques.
+
+      The techniques are not normative, which basically means you are not required to use the techniques to satisfy a success criteria.
+
+      Techniques are identified as sufficient and advisory.
+
+      Using a sufficient technique usually means you will meet the requirement.
+
+      Sufficeint techniques have wide spread support by both authors, browsers and the assistive technologies used by people with disabilities to access web content.
+
+      An example of a sufficient techqniue is ALT text for IMG tags, which have wide spread authoring, browser and assistive technology implementation.
+
+      Advisory techniques typically to not have wide scale support among authors, may not meet all of the requirements of the success criteria or have insufficient or inconsistent implementation in browsers or assistive technologies.
+
+      The techniques are not comprehensive, and there are many other ways to meet or exceed the minimal requirements of WCAG.
+
+      For example the use of the H1 element to identify the title or primary content on the page is often used to help screen reader users know the primary content on the page abd provide a reference point to easily get to the start of the primary content.
+
+      But the WCAG techqniues resource does not include this as even an advisory techniques, even though there is widespread author, browser and assistive technology support.
+
+      The tecchniques for requirements like Success Criteria 2.1.1 on keyboard operation will depend on the complexity of the user interaction in a web application and knowledge of other web standards like the Accessible Rich Interent Application or ARIA specification.
+
+      In any case it is important to familiarize yourself with the actual requirements of each success cirtoeria to make sure that they are incorporated into the design, development and testing of the web resource.
+
+      An important note about automated testing tools for WCAG requirements.
+
+      Only about 30-40% of the requirements lend them selves to automated testing, so reliance on automated tolls at best will only identify 40% of the WCAG level A and AA requirements.
+
+      Automated tools can also be easily fooled, saying a particular requirement has been met, when what really happened is code was modified to statisfy what the testing tool was looking for, but not the accessibility requirement.
+
+      For example, adding an empty ALT attribute, even though the image does carry informative information on the page.
+
+    
+        === Slide 18 ===
+        
+      While WCAG is the most well known W3C document on accessibility, there are other documents that are as equally important for standardizing how authors using HTML, CSS and Javascript to describe the organization and features of a web page, and how web browsers, including Firefox, Chrome, Safari and Edge, communicate accessibility information to assistive technologies.   The Accessible Rich Internet Application (ARIA) Specification is a markup language designed to describe web content to assistive technologies, like screen readers that need information on the organization and structure, and interactive behaviors of the content in a web page.
+
+One way ARIA can be used to describe the semantics of a website’s features is when the built-in semantics of the HTML markup language are not sufficient to describe a feature or behavior. For example, a popup menu in a web page is often created using DIV elements which have no semantic information that it is part of a popup menu.  ARIA provides a way to communicate the popup menu using the roles MENU and MENUITEM to tell assistive technologies that author has identified this collection of DIV elements is functioning as a popup menu.
+
+In addition to providing roles, authors must also implement keyboard behaviors consistent with a popup menu and update the ARIA state attribute “aria-expanded” to indicate when the menu is open or closed.
+
+One of the most important parts of the ARIA specification is defining how a browser communicates roles, properties and states to accessibility APIs for Microsoft Windows, macOS and GNOME/Linux ATK-SPI.  These mappings are of fundamental importance for interoperability, since browsers must communicate the information in the same way to assistive technologies.    When browsers are consistent on how they provide information to accessibility APIs people with disabilities will also have a much more consistent experience when using different browsers and assistive technologies.  Ideally it would not matter if the screen reader user was using Firefox, Chrome or Edge on Windows 10 , the screen reader should provide the same experience.  In summary ARIA is an important technology to provide a standardized bridge for authors to communicate the semantics and behaviors of a web page to assistive technologies and how browsers communicate this information to assistive technologies through accessibility APIs.
+    
+        === Slide 19 ===
+        
+      While the ARIA specification provides a powerful new tool to create accessible websites, like any tool it can be used inappropriately, especially if the user is not very familiar with accessibility or assistive technologies.
+      The ARIA Authoring practices provide information on both landmark regions and interactive widget roles.
+      Unfortunately, there is a lot of poor or confusing ARIA markup on the web that is making web pages less accessible, rather than more accessible.
+      To help authors understand how to use ARIA correctly the ARIA working group created the ARIA Authoring Practices which provide detailed information on how to use ARIA to create accessible web pages and interactive widgets.
+      The practices provide information on keyboard support, and how to use ARIA roles, properties and states to communicate document structure and interactive features to assistive technologies.
+      The practices also contain fully working examples that demonstrate the features needed to support accessibility for people to test and review for their own designs and widget libraries.
+      The example code is open source and can be reused to provide the basis for a production quality accessible widgets.
+      Caution should be used in directly using the code in the examples in a production environment, since the examples might not meet the requirements of mobile web applications (e.g. touch support) and may demonstrate features that are not fully supported by all accessibility APIs, like slider and spin button.
+      The examples for these widgets are in the practices for use in testing implementation of ARIA features and assistive technology support.
+    
+        === Slide 20 ===
+        
+      Landmark regions are an important technology to help screen reader users understand the functional groups of content on a page.  Landmark regions have roles that identify the type of content in a section of the website, for example the main content or group of navigation links.
+
+The practices provide designers and developers with information on how to design and analyze a website or application for the use of landmark regions.
+
+Many HTML sectioning elements generate landmarks by default so it is very important to understand how to use and define them, otherwise pages will provide poor or misleading information about the sections of a website that will lead to confusion and wasted time for screen reader users.
+
+When more than one landmark of the same type appears on the page they need to have descriptive labels to help people understand the differences in content between the two regions.
+    
+        === Slide 21 ===
+        
+
+The ARIA Authoring Practices provides an example of how to use landmarks on a web page.  This slide has a link to the example and I am going to follow the link.
+
+The landmark example website mirrors the ARIA authoring practices design information to help people understand how to use the most common landmarks: banner, navigation, main, complementary and contentinfo.
+
+There are two buttons near the top of the page that can be used to visually highlight the landmark regions and headings on each page.
+
+I select the “Show Landmarks” button to visually highlight the landmarks on the page.
+
+A banner landmark along the top of the page, containing content that is the same on all the pages within the website.
+
+A navigation landmark region on the left most column that identifies links related to navigating between pages in the example website.
+
+A main landmark region containing the primary content on the page is in the middle column.
+
+A region landmark is part of the main landmark to identify the example code section.
+
+Two complementary landmarks are on the right side of the page with links to other information related to the main content of the page.
+
+A contentinfo landmark region is on the bottom of the page and identifies the common content at the end of all the pages in the example website.
+
+I press the “show headings” button and it highlights the headings on the page.   Many of the headings are used for labeling the landmark regions to help users understand the content in the region.
+    
+        === Slide 22 ===
+        
+
+The ARIA practices contain information about how to use ARIA widget roles to create WCAG compliant custom interactive components on a web page.   This slide shows the design pattern for a menu button.   The pattern includes a description defining what ARIA means by a menu button, the keyboard support and the properties and states used in the pattern.  It is important to understand the ARIA definition of user interface components when using ARIA roles, properties and states, since the same or similar terms are often used by designers and Javascript component libraries that do not have the same function or behaviors.
+
+The menu button pattern describes using the SPACE or ENTER key to open the popup menu and move focus to the first item in the menu.  It also recommends supporting the UP ARROW and DOWN ARROW keys to open the menu, with UP ARROW moving focus to the last item in the menu instead of the first item.
+
+The two key features that identify the button as a menu button are the element having the role=button and aria-haspopup equal to “true” or” menu”.  It also describes how other aria-expanded and aria-controls should be used.
+    
+        === Slide 23 ===
+        
+
+Each design pattern includes a working example to demonstrate the features of the design pattern.  I select the menu button example link to take me directly to the example page.
+
+The example provides a way for people to explore the keyboard support for the pattern.  I use the TAB key to move keyboard focus to the button labelled “WAI-ARIA Quick Links” and then press the space bar to open the menu.   I press the up down and up arrow keys to move through the menu options.  I can use the ESCape key to close the menu.
+
+As I scroll down the document, the next section provides details about the keyboard support for this particular example.
+
+After the keyboard support section is a section on the ARIA roles, properties and states  attributes used in the example, with information on tabindex value management.
+
+The last section provide links to CSS and Javascript files and a source code view of the HTML code use in the example.   The source code shows the relationship of the roles, properties and states
+
+The code in the examples is considered open source and can be reused and modified for your own needs, but caution should be used in using the exact code in production environments.  The code may not work with some mobile devices that rely on touch event support, or legacy browsers like Internet Explorer that does not support modern javascript and DOM techniques, and some patterns, for example combobox, slider and spin button may not be fully implemented by all accessibility APIs and assistive technologies.  The examples are included in the practices to authors better understand the design patterns and to help with implementation testing with browsers and assistive technologies.
+
+    
+        === Slide 24 ===
+        
+
+ARIA back in 2002 was originally presented as a repair language to make dynamic HTML content accessible, with the hopes that HTML would eventually include the semantics need by assistive technologies to describe the features and behaviors of custom widgets.  HTML did not evolve to provide more complex semantics and so instead ARIA was integrated into HTML5 as the description language to communicate the behaviors and accessibility information needed for custom interactive widgets created with Javascript, HTML and CSS to assistive technologies.
+
+HTML5 now standardizes how HTML and ARIA markup will be made available through accessibility Application Programming Interfaces (APIs)  on Windows, macOS and GNOME/Linux.   This is a huge win for accessibility and interoperability, because browsers will be required to be much more consistent in how they communicate the semantics and behaviors of a web page to assistive technologies.  Ideally it will not matter if a screen reader user is using Chrome, Firefox or Edge on Windows or Safari, Chrome or Firefox on macOS, they should all be providing the same information to the screen reader and the same level of accessibility.   HTML5 uses the ARIA specification to define how the elements and attributes in HTML5 will be communicated to assistive technologies and even identifies role restrictions so that certain HTML elements can only have a limited set of roles that can override their default role to keep developers form making poor decisions on how to use ARIA.  For example, an H1 element is not allowed to have the role “checkbox”, but a LI element with the default role of “listitem” can have its default role overridden by a “menuitem” or a “treeitem” role since they all have similar semantics of being part of a list.
+    
+        === Slide 25 ===
+        
+      New elements like the “main” element have also been added to HTML5 to make it easier for developers to implement accessibility requirements.   The main element should be used to identify the main content of a page and it creates a main landmark region.  This provides a means for people using screen readers to use landmark navigation feature of the screen reader to easily get to the main content of the page.
+
+It can also be used as the target for a skip navigation link to support keyboard only users.
+    
+        === Slide 26 ===
+        
+The ARIA in HTML specification is the document that defines how HTML element and attributes will be communicated to accessibility APIs using ARIA roles, properties and states.
+
+Every HTML element will have a default role when ARIA 1.2 specification is completed.  For example, the H1 through H6 element in HTML have the role heading and the aria-level property set based on the level of the header.
+
+The specification also includes a set of allowed roles that can be used to override the default role of the element.
+
+Another specification called the Core Accessibility API Mappings specification defines how ARIA roles, properties and states are represented in accessibility APIs for Microsoft Windows, macOS and Gnome/Linux.
+    
+        === Slide 27 ===
+        
+In summary this video has provided information on:
+
+That the heart of the web is interoperability and open standards, making information available to everyone and this is becoming more of a reality for people with disabilities with the emergence of HTML5 and ARIA web standards for accessibility.
+
+More people must understand accessibility, so I applaud the people taking these courses to learn more about how to create accessible online resources using web standards.
+
+Web design and development platforms need to include accessibility as part of their templates, user interface libraries and quality assurance testing systems to help educate and support developers in creating content that is not only considered accessible, but also usable by people with disabilities.
+
+In my mind the number one issue we have is authoring tools not supporting accessibility.  Accessibility must be integrated into web authoring environments, like the WYSIWYG editor used on content management systems like WordPress and Drupal.  Right now we have what I call accessibility by exception, people have to know about accessibility, the needs of people with disabilities, the accessibility features of the technology they are using, and how to get their authoring tool to include the accessibility features in the content they are creating.  These are four pretty big steps for most people and each step leaves more and more people out of creating accessible content.
+
+What we need is accessibility by default, where the tool makes it easier to create accessible content and harder to create inaccessible content, by providing prompts and guidance to the author as they are editing a document or page.
+    
+        === Slide 28 ===
+        
+If you are watching this video as part of a course, please return to the course home page to complete the assignments and activities associated with this lecture.
+    

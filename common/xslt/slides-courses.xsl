@@ -331,6 +331,12 @@
 
       </redirect:write>
 
+      <xsl:variable name="fname">transcript.html</xsl:variable>
+
+      <redirect:write select="$fname">
+
+      </redirect:write>
+
     </xsl:if>
 
   </xsl:template>
