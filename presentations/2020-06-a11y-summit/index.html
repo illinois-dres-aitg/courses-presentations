@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>How ARIA Works and what's new in ARIA 1.2</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="disabled">
+<a id="ID_SLIDE_INDEX" href="#">
+                        Index
+                      </a>
+</li>
+<li class="disabled">
+<a id="ID_SLIDE_FIRST" href="slide1.html">
+                        First
+                      </a>
+</li>
+<li class="disabled">
+<a id="ID_SLIDE_PREVIOUS" href="#">
+                        Previous
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_NEXT" href="slide1.html">
+                        Next
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_LAST" href="slide41.html">
+                        Last
+                      </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="container" id="content">
+<h1>How ARIA Works and what's new in ARIA 1.2</h1>
+<p class="name"></p>
+<div class="person">
+<p class="name">Jon Gunderson, Ph.D.</p>
+<p class="desc">
+<a href="http://disability.illinois.edu">Division of Disability Resources and Educational Services</a>
+</p>
+<p class="desc">
+<a href="http://ahs.illinois.edu">College of Applied Health Sciences</a>
+</p>
+<p class="desc">
+<a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a>
+</p>
+<p class="desc">
+<a href="mailto:jongund@illinois.edu">jongund@illinois.edu</a>
+</p>
+</div>
+<p class="desc">
+<a href="http://disability.illinois.edu/academic-support/accessible-it-group/badging">Illinois A11y Badges</a>
+</p>
+<h2 class="index">Slides
+          </h2>
+<ol>
+<li class="index">
+<a href="slide1.html" class="index">Overview</a>
+</li>
+<li class="index">
+<a href="slide2.html" class="index">Purpose of ARIA is Describe Semantics and Behavior</a>
+</li>
+<li class="index">
+<a href="slide3.html" class="index">ARIA Contract with Browsers and Assistive Technologies</a>
+</li>
+<li class="index">
+<a href="slide4.html" class="index">Accessible Rich Internet Applications (ARIA) Basics</a>
+</li>
+<li class="index">
+<a href="slide5.html" class="index">Tabindex and Keyboard Focus</a>
+</li>
+<li class="index">
+<a href="slide6.html" class="index">Accessible Name Calculation</a>
+</li>
+<li class="index">
+<a href="slide7.html" class="index">Accessible Description Calculation</a>
+</li>
+<li class="index">
+<a href="slide8.html" class="index">Example Widget: ARIA Checkbox</a>
+</li>
+<li class="index">
+<a href="slide9.html" class="index">Basic Screen Reader Commands</a>
+</li>
+<li class="index">
+<a href="slide10.html" class="index">Part 1 Responding to the keyboard</a>
+</li>
+<li class="index">
+<a href="slide11.html" class="index">Part 2: Adding role, checked state and accessible name</a>
+</li>
+<li class="index">
+<a href="slide12.html" class="index">Part 3: Focus and hover styling</a>
+</li>
+<li class="index">
+<a href="slide13.html" class="index">Part 4: Synchronization of ARIA and visual states</a>
+</li>
+<li class="index">
+<a href="slide14.html" class="index">Using ARIA in HTML (Best Practices)</a>
+</li>
+<li class="index">
+<a href="slide15.html" class="index">Design Pattern: Disclosure (Hide/Show)</a>
+</li>
+<li class="index">
+<a href="slide16.html" class="index">Typical Inaccessible Disclosure FAQ</a>
+</li>
+<li class="index">
+<a href="slide17.html" class="index">Accessible Disclosure FAQ</a>
+</li>
+<li class="index">
+<a href="slide18.html" class="index">Design Pattern: Menu Button</a>
+</li>
+<li class="index">
+<a href="slide19.html" class="index">Design Pattern: Navigation Menu Options</a>
+</li>
+<li class="index">
+<a href="slide20.html" class="index">Design Example: Drop Down Navigation Links</a>
+</li>
+<li class="index">
+<a href="slide21.html" class="index">Drop Down Navigation Links: Tab Key Operation</a>
+</li>
+<li class="index">
+<a href="slide22.html" class="index">Drop Down Navigation Links: ARIA Menu Button Pattern</a>
+</li>
+<li class="index">
+<a href="slide23.html" class="index">Drop Down Navigation Links: ARIA Menubar Pattern</a>
+</li>
+<li class="index">
+<a href="slide24.html" class="index">Popup Error Message Example Summary</a>
+</li>
+<li class="index">
+<a href="slide25.html" class="index">Popup Error Example 1: no reference to error message</a>
+</li>
+<li class="index">
+<a href="slide26.html" class="index">Popup Error Example 1: Assistive Technology Support</a>
+</li>
+<li class="index">
+<a href="slide27.html" class="index">Popup Error Example 2: label[for] references error message</a>
+</li>
+<li class="index">
+<a href="slide28.html" class="index">Popup Error Example 2: Assistive Technology Support</a>
+</li>
+<li class="index">
+<a href="slide29.html" class="index">Popup Error Example 3: aria-describedby reference to error message</a>
+</li>
+<li class="index">
+<a href="slide30.html" class="index">Popup Error Example 3: Assistive Technology Support</a>
+</li>
+<li class="index">
+<a href="slide31.html" class="index">Popup Error Example 4: title attribute used for error message</a>
+</li>
+<li class="index">
+<a href="slide32.html" class="index">Popup Error Example 4: Assistive Technology Support</a>
+</li>
+<li class="index">
+<a href="slide33.html" class="index">Popup Error Example 5: aria-labelledby attribute used for error message</a>
+</li>
+<li class="index">
+<a href="slide34.html" class="index">Popup Error Example 6: aria-label attribute used for error message</a>
+</li>
+<li class="index">
+<a href="slide35.html" class="index">Popup Error: Best Practices</a>
+</li>
+<li class="index">
+<a href="slide36.html" class="index">Design Pattern: Image Carousel</a>
+</li>
+<li class="index">
+<a href="slide37.html" class="index">The Need for ARIA Authoring Practices</a>
+</li>
+<li class="index">
+<a href="slide38.html" class="index">ARIA Authoring Practices 1.2 (Working Draft)</a>
+</li>
+<li class="index">
+<a href="slide39.html" class="index">Next Steps for ARIA Authoring Practices Guide</a>
+</li>
+<li class="index">
+<a href="slide40.html" class="index">Open Source Tools</a>
+</li>
+<li class="index">
+<a href="slide41.html" class="index">Questions and Discussion</a>
+</li>
+</ol>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2020 University of Illinois
+      </div>
+</footer>
+</body>
+</html>
