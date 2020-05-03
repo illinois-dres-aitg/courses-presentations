@@ -12,7 +12,13 @@
     <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   </person>
 
-  <desc href="http://disability.illinois.edu/academic-support/accessible-it-group/badging">Illinois A11y Badges</desc>
+  <conference>
+    <name href="https://a11ysummit20.highedweb.org">HighEdWeb Accessibility Summit</name>
+    <desc>Online</desc>
+    <desc>June 25th, 2020</desc>
+  </conference>
+
+  <desc href="../">Presentations</desc>
 
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
@@ -114,7 +120,7 @@
                 <li>Visually styling keyboard focus:
                   <ul>
                     <li>Mimic the mouse hover styling to match look and feel or website, to make it feel an integral part of the website design.</li>
-                    <li>Include a strong visual CSS <code>border</code> or <code>outline</code> to make the focus standout as users tab through the page.</li>
+                    <li>Include adding and removing a CSS <code>border</code> or use the <code>outline</code> property to make the focus standout as users tab through the page and for compatibility with user high contrast settings.</li>
                   </ul>
                 </li>
               </ul>
@@ -140,8 +146,10 @@
                 <li><code>aria-labelledby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
                 <li><code>aria-label</code> attribute: String defining the accessible name.</li>
                 <li>Text content of the element with widget role (e.g. text of menu item).</li>
+                <li><code>label</code> role for elements related to HTML form controls (<span class="new">New in ARIA 1.2</span>).</li>
+                <li><code>legend</code> role for grouping roles (<span class="new">New in ARIA 1.2</span>).</li>
                 <li><code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
-                <li><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible name algorithm</a></li>
+                <li><a href="https://w3c.github.io/aria/#namecalculation">Working draft of ARIA Accessible Name Calculation</a></li>
               </ul>
             </td>
           </tr>
@@ -166,8 +174,9 @@
             <td>
               <ul>
                 <li><code>aria-describedby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
-                <li><code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
-                <li><a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible description algorithm</a></li>
+                <li><code>aria-description</code> attribute: String defining the accessible description (<span class="new">New in ARIA 1.2</span>).</li>
+                <li><code>title</code> attribute: String used for the accessible description, if not used for accessible name (e.g. name of last resort).</li>
+                <li><a href="https://w3c.github.io/accname/">Working draft of ARIA accessible description algorithm</a></li>
               </ul>
             </td>
           </tr>
@@ -175,8 +184,7 @@
             <td>W3C Authoring Resources</td>
             <td>
               <ul>
-                <li><a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a></li>
-                <li><a href="http://www.w3.org/TR/aria-in-html/" target="_specification">Using ARIA in HTML</a></li>
+                <li><a href="https://w3c.github.io/aria-practices/" target="_specification">Working draft of ARIA Authoring Practices</a></li>
                 <li><a href="https://www.w3.org/TR/core-aam-1.1/" target="_specification">Core Accessibility API Mappings 1.1
                 </a></li>
                 <li><a href="https://www.w3.org/TR/html-aam-1.0/" target="_specification">HTML Accessibility API Mappings 1.0</a></li>
@@ -289,6 +297,43 @@
             </tr>
             <tr>
               <td>3</td>
+              <td>Encapsulation using the <code>label</code> role<br/><span class="new">New in ARIA 1.2</span></td>
+              <td>
+                <ul>
+                  <li>Allows the use of the HTML <code>label</code> element to label ARIA enabled widgets using encapsulation.</li>
+                  <li>Supported widget roles:
+                    <ul>
+                      <li><code>checkbox</code></li>
+                      <li><code>listbox</code></li>
+                      <li><code>meter</code></li>
+                      <li><code>radio</code></li>
+                      <li><code>searchbox</code></li>
+                      <li><code>spinbutton</code></li>
+                      <li><code>switch</code></li>
+                      <li><code>textbox</code></li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><code>legend</code> for grouping roles<br/><span class="new">New in ARIA 1.2</span></td>
+              <td>
+                <ul>
+                  <li>Allows the use of the HTML <code>legend</code> element to label grouping roles.</li>
+                  <li>Similar to the HTML <code>fieldset</code>/<code>legend</code> elements providing a grouping label.</li>
+                  <li>Supported grouping roles:
+                    <ul>
+                      <li><code>group</code></li>
+                      <li><code>gradiogroup</code></li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
               <td>text content</td>
               <td>
                 <ul>
@@ -299,7 +344,7 @@
               </td>
             </tr>
             <tr>
-              <td>4</td>
+              <td>6</td>
               <td><code>title</code></td>
               <td>
                 <ul>
@@ -337,12 +382,19 @@
                 <ul>
                   <li>The <code>aria-describedby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
                   <li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
-                  <li>Typically references identify visible text on the screen.</li>
+                  <li>Designed to reference visible text on the screen, like instructions.</li>
                 </ul>
               </td>
             </tr>
             <tr>
               <td>2</td>
+              <td><code>aria-description</code><br/><span class="new">New in ARIA 1.2</span></td>
+              <td>
+                Similar to <code>aria-label</code>, but used to provide an accessible description.
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
               <td><code>title</code></td>
               <td>
                 <ul>
@@ -356,7 +408,26 @@
   </slide>
 
   <slide>
-    <title>Example Widget: ARIA Checkbox</title>
+    <title>Example Widget: Inaccessible Custom Checkbox</title>
+    <contents>
+     <h2>Accessibility Issues</h2>
+     <ul>
+      <li>Keyboard support</li>
+      <li>Keyboard focus styling</li>
+      <li>Role information</li>
+      <li>Accessible name</li>
+      <li>State of checkbox</li>
+     </ul>
+
+     <h2>Example</h2>
+
+     <p><a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-inaccessible/output/" target="_webedit">Checkbox example on WebEdit</a></p>
+    </contents>
+  </slide>
+
+
+  <slide>
+    <title>Example Widget: ARIA Enabled Custom Checkbox</title>
     <style id="style">
       fieldset {
         border-color: #EEE;
@@ -472,7 +543,7 @@
 
      <h2>Example</h2>
 
-     <p><a href="https://webedit.disability.illinois.edu/pages/user/jongund/aria-checkbox-complete/" target="_webedit">Checkbox example on WebEdit</a></p>
+     <p><a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-accessible/output/" target="_webedit">Checkbox example on WebEdit</a></p>
 
      <div id="example">
       <fieldset>

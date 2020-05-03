@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 11: Part 2: Adding role, checked state and accessible name</title>
+<title>Slide 11: Part 1 Responding to the keyboard</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -67,12 +67,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 11 of 41</div>
+<div class="navbar-text pull-right">Slide 11 of 42</div>
 </div>
 </div>
 </nav>
@@ -80,16 +80,12 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 2: Adding role, checked state and accessible name</h1>
+<h1 id="h1_title" class="title">Part 1 Responding to the keyboard</h1>
 <ul>
         
-<li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
+<li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
         
-<li>Adding <code>aria-checked</code> attribute.</li>
-        
-<li>Accessible name from text content.</li>
-        
-<li>Removing state character (e.g. <span style="color: red">✗</span>) from accessible name using <code>aria-hidden</code>.</li>
+<li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
       
 </ul>
 <script id="script" type="text/javascript">
@@ -99,13 +95,11 @@
             n.innerHTML = '✓';
             n.style.color = 'green';
             n.style.paddingRight = '0px';
-            n.setAttribute('aria-checked', 'true');
           }
           else {
             n.innerHTML = '✗';
             n.style.color = 'red';
             n.style.paddingRight = '0.22em';
-            n.setAttribute('aria-checked', 'false');
           }
         }
 
@@ -130,7 +124,7 @@
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-2/copy/" target="_webedit">Part 2 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-1/copy/" target="_webedit">Part 1 on WebEdit</a>
 </p>
 <div id="example">
       
@@ -152,20 +146,16 @@
         </label>
 
         
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+<div tabindex="0" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">
-            ✗
-          </span>
+<span style="color: red; padding-right: 0.22em;">✗</span>
           Mushrooms
         </div>
 
       
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+<div tabindex="0" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">
-            ✗
-          </span>
+<span style="color: red; padding-right: 0.22em;">✗</span>
           Spinach
         </div>
 

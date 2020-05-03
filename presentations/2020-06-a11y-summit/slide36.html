@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 36: Design Pattern: Image Carousel</title>
+<title>Slide 36: Popup Error: Best Practices</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 36 of 41</div>
+<div class="navbar-text pull-right">Slide 36 of 42</div>
 </div>
 </div>
 </nav>
@@ -53,31 +53,18 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Design Pattern: Image Carousel</h1>
+<h1 id="h1_title" class="title">Popup Error: Best Practices</h1>
 <ul>
         
-<li>
-<a href="http://will.illinois.edu">Will Radio and TV: Carousel Image Rotator (Not Accessible)</a>
-</li>
+<li>Use <code>required</code> attribute for required form controls.</li>
         
-<li>
-<a href="http://citl.illinois.edu">Center for Innovate Teaching and Learning: Carousel Image Rotator (Accessible)</a>
-</li>
+<li>Use <code>aria-invalid="true"</code> when a field is invalid, otherwise remove the attribute for compatibility with Firefox.</li>
         
-<li>
-<a href="http://jongund.github.io/aria-examples/bootstrap-carousel/" target="_example">Carousel Issues and Bootstrap.js Solution</a>
-</li>
+<li>Make the error message part of the accessible description, but accessible name also good.</li>
+        
+<li>Use <code>role="status"</code> on the popup error messages, so they will be announced to the user <strong>without</strong> interruptiong other speech.</li>
       
 </ul>
-<h2>Questions</h2>
-<ul>
-        
-<li>How to you decide what to call this widget?</li>
-        
-<li>What is the keyboard interaction?</li>
-      
-</ul>
-<iframe src="http://jongund.github.io/aria-examples/bootstrap-carousel/" title="ARIA Carousel Example" width="98%" height="600px"></iframe>
 </div>
 <div class="col"></div>
 </div>

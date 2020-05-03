@@ -2,13 +2,73 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 14: Using ARIA in HTML (Best Practices)</title>
+<title>Slide 14: Part 4: Synchronization of ARIA and visual states</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+      fieldset {
+        border-color: #EEE;
+        width: 10em;
+      }
+
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25em;
+      }
+
+      label input {
+        margin-right: 0.5em;
+      }
+
+      div[role="checkbox"] {
+        margin-bottom: 0.25em;
+        margin-left: 0.25em;
+      }
+
+      div[role="checkbox"] span {
+        margin-right: 0.25em;
+      }
+
+      div[role="checkbox"][aria-checked="true"] span {
+        margin-right: 0.135em;
+      }
+
+      div[role="checkbox"] span:before {
+        content: '✗';
+        color: red;
+      }
+
+      div[role="checkbox"][aria-checked="true"] span:before {
+        content: '✓';
+        color: green;
+        font-size: 90%;
+      }
+
+      label,
+      [role="checkbox"] {
+        border: thin solid transparent;
+        width: 10em;
+      }
+
+
+      label.focus,
+      [role="checkbox"]:focus {
+        border-color: #999;
+        background-color: #DDE;
+      }
+
+      label:hover,
+      [role="checkbox"]:hover {
+        background-color: #CCD;
+      }
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
@@ -40,12 +100,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 14 of 41</div>
+<div class="navbar-text pull-right">Slide 14 of 42</div>
 </div>
 </div>
 </nav>
@@ -53,27 +113,110 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Using ARIA in HTML (Best Practices)</h1>
-<p>
-<a href="https://w3c.github.io/using-aria/">Using ARIA in HTML (Best Practices)</a>
-</p>
+<h1 id="h1_title" class="title">Part 4: Synchronization of ARIA and visual states</h1>
 <ul>
         
-<li>Use native semantics of HTML (e.g. <code>input[type=checkbox]</code> rather than div[role=checkbox]).</li>
+<li>Using CSS attribute selectors and CSS <code>content</code> property to synchronize visual and aria states.</li>
         
-<li>Don't override native semantics of elements (e.g. <code>h2[role="banner]</code>).</li>
-        
-<li>Don't define the native semantics of an element (e.g <code>main[role=main]</code>).</li>
-        
-<li>All interactive ARIA controls must be usable with the keyboard.</li>
-        
-<li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
-        
-<li>All interactive elements must have an accessible name.</li>
-        
-<li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
+<li>Use of CSS <code>content</code> property supports high contrast browser settings, unike the use of CSS <code>background-image</code>.</li>
       
 </ul>
+<script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          if (node.getAttribute('aria-checked') !== 'true') {
+            node.setAttribute('aria-checked', 'true');
+          }
+          else {
+            node.setAttribute('aria-checked', 'false');
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.keyCode === 32) {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+        function checkboxFocus(event) {
+          event.currentTarget.parentNode.classList.add('focus');
+        }
+
+        function checkboxBlur(event) {
+          event.currentTarget.parentNode.classList.remove('focus');
+        }
+
+      </script>
+<h2>Example</h2>
+<p>
+<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-4/copy/" target="_webedit">Part 4 on WebEdit</a>
+</p>
+<div id="example">
+      
+<fieldset>
+        
+<legend>
+        Pizza Toppings
+        </legend>
+
+        <label>
+          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+          Green pepper
+        </label>
+
+        <label>
+          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+          Onion
+        </label>
+
+        
+<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+          
+<span aria-hidden="true"> </span>
+          Mushrooms
+        </div>
+
+      
+<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+          
+<span aria-hidden="true"> </span>
+          Spinach
+        </div>
+
+      
+</fieldset>
+     
+</div>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </div>
 <div class="col"></div>
 </div>

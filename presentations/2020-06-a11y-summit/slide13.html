@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: Part 4: Synchronization of ARIA and visual states</title>
+<title>Slide 13: Part 3: Focus and hover styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -34,21 +34,6 @@
 
       div[role="checkbox"] span {
         margin-right: 0.25em;
-      }
-
-      div[role="checkbox"][aria-checked="true"] span {
-        margin-right: 0.135em;
-      }
-
-      div[role="checkbox"] span:before {
-        content: '✗';
-        color: red;
-      }
-
-      div[role="checkbox"][aria-checked="true"] span:before {
-        content: '✓';
-        color: green;
-        font-size: 90%;
       }
 
       label,
@@ -100,12 +85,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 41</div>
+<div class="navbar-text pull-right">Slide 13 of 42</div>
 </div>
 </div>
 </nav>
@@ -113,21 +98,36 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 4: Synchronization of ARIA and visual states</h1>
+<h1 id="h1_title" class="title">Part 3: Focus and hover styling</h1>
 <ul>
         
-<li>Using CSS attribute selectors and CSS <code>content</code> property to synchronize visual and aria states.</li>
+<li>
+<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
         
-<li>Use of CSS <code>content</code> property supports high contrast browser settings, unike the use of CSS <code>background-image</code>.</li>
+<li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
+        
+<li>
+<code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
+        
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
+        
+<li>Styling background color also makes the change in focus much easier to detect visually.</li>
       
 </ul>
 <script id="script" type="text/javascript">
         function toggleCheckbox(node) {
-          if (node.getAttribute('aria-checked') !== 'true') {
-            node.setAttribute('aria-checked', 'true');
+          var n = node.firstElementChild;
+          if (n.innerHTML.indexOf('✗') >= 0) {
+            n.innerHTML = '✓';
+            n.style.color = 'green';
+            n.style.paddingRight = '0px';
+            n.setAttribute('aria-checked', 'true');
           }
           else {
-            node.setAttribute('aria-checked', 'false');
+            n.innerHTML = '✗';
+            n.style.color = 'red';
+            n.style.paddingRight = '0.22em';
+            n.setAttribute('aria-checked', 'false');
           }
         }
 
@@ -156,11 +156,10 @@
         function checkboxBlur(event) {
           event.currentTarget.parentNode.classList.remove('focus');
         }
-
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-4/copy/" target="_webedit">Part 4 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-3/copy/" target="_webedit">Part 3 on WebEdit</a>
 </p>
 <div id="example">
       
@@ -183,14 +182,14 @@
         
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span aria-hidden="true"> </span>
+<span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Mushrooms
         </div>
 
       
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
           
-<span aria-hidden="true"> </span>
+<span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
           Spinach
         </div>
 

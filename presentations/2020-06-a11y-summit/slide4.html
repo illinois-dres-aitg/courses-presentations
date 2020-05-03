@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 4 of 41</div>
+<div class="navbar-text pull-right">Slide 4 of 42</div>
 </div>
 </div>
 </nav>
@@ -107,7 +107,7 @@
                     
 <li>Mimic the mouse hover styling to match look and feel or website, to make it feel an integral part of the website design.</li>
                     
-<li>Include a strong visual CSS <code>border</code> or <code>outline</code> to make the focus standout as users tab through the page.</li>
+<li>Include adding and removing a CSS <code>border</code> or use the <code>outline</code> property to make the focus standout as users tab through the page and for compatibility with user high contrast settings.</li>
                   
 </ul>
                 
@@ -157,10 +157,16 @@
 <li>Text content of the element with widget role (e.g. text of menu item).</li>
                 
 <li>
+<code>label</code> role for elements related to HTML form controls (<span class="new">New in ARIA 1.2</span>).</li>
+                
+<li>
+<code>legend</code> role for grouping roles (<span class="new">New in ARIA 1.2</span>).</li>
+                
+<li>
 <code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
                 
 <li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible name algorithm</a>
+<a href="https://w3c.github.io/aria/#namecalculation">Working draft of ARIA Accessible Name Calculation</a>
 </li>
               
 </ul>
@@ -209,10 +215,13 @@
 <code>aria-describedby</code> attribute: List of <code>IDREF</code>s to elements with text content on the page.</li>
                 
 <li>
-<code>title</code> attribute: String defining the accessible name (e.g. name of last resort).</li>
+<code>aria-description</code> attribute: String defining the accessible description (<span class="new">New in ARIA 1.2</span>).</li>
                 
 <li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible description algorithm</a>
+<code>title</code> attribute: String used for the accessible description, if not used for accessible name (e.g. name of last resort).</li>
+                
+<li>
+<a href="https://w3c.github.io/accname/">Working draft of ARIA accessible description algorithm</a>
 </li>
               
 </ul>
@@ -229,11 +238,7 @@
 <ul>
                 
 <li>
-<a href="http://www.w3.org/TR/wai-aria-practices/" target="_specification">WAI-ARIA Authoring Practices</a>
-</li>
-                
-<li>
-<a href="http://www.w3.org/TR/aria-in-html/" target="_specification">Using ARIA in HTML</a>
+<a href="https://w3c.github.io/aria-practices/" target="_specification">Working draft of ARIA Authoring Practices</a>
 </li>
                 
 <li>

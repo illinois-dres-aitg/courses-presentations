@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Design Pattern: Disclosure (Hide/Show)</title>
+<title>Slide 15: Using ARIA in HTML (Best Practices)</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -40,12 +40,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide41.html">
+<a id="ID_SLIDE_LAST" href="slide42.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 15 of 41</div>
+<div class="navbar-text pull-right">Slide 15 of 42</div>
 </div>
 </div>
 </nav>
@@ -53,32 +53,27 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Design Pattern: Disclosure (Hide/Show)</h1>
+<h1 id="h1_title" class="title">Using ARIA in HTML (Best Practices)</h1>
+<p>
+<a href="https://w3c.github.io/using-aria/">Using ARIA in HTML (Best Practices)</a>
+</p>
 <ul>
-      
-<li>
-<a href="http://www.parking.illinois.edu/about-us/faqs" target="_example">Illinois Parking FAQ (Not Accessible)</a>
-</li>
-      
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/#disclosure" target="_example">ARIA Design Pattern for Disclosures (Show/Hide)</a>
         
-<ul>
-          
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-faq.html" target="_example"><abbr title="ARIA Authoring Practices">APG</abbr> Example 1: Answers to Frequently Asked Questions</a>
-</li>
-          
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-img-long-description.html" target="_example"><abbr title="ARIA Authoring Practices">APG</abbr> Example 2: Image Description</a>
-</li>
+<li>Use native semantics of HTML (e.g. <code>input[type=checkbox]</code> rather than div[role=checkbox]).</li>
         
-</ul>
+<li>Don't override native semantics of elements (e.g. <code>h2[role="banner]</code>).</li>
+        
+<li>Don't define the native semantics of an element (e.g <code>main[role=main]</code>).</li>
+        
+<li>All interactive ARIA controls must be usable with the keyboard.</li>
+        
+<li>Do not use role="presentation" or aria-hidden="true" on a visible focusable element.</li>
+        
+<li>All interactive elements must have an accessible name.</li>
+        
+<li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for ansynchrounous content changes important for the users attention.</li>
       
-</li>
-    
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices/#disclosure" title="ARIA Disclosure Example" width="98%" height="600px"></iframe>
 </div>
 <div class="col"></div>
 </div>
