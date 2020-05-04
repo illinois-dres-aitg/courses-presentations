@@ -2,76 +2,65 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 9: Example Widget: ARIA Enabled Custom Checkbox</title>
+<title>Slide 9: Example Widget: Accessible Custom Checkbox Widget using ARIA</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      fieldset {
-        border-color: #EEE;
-        width: 10em;
-      }
+fieldset {
+  border-color: #EEE;
+  width: 10em;
+}
 
-      fieldset legend {
-        font-size: 100%;
-      }
+fieldset legend {
+  font-size: 100%;
+}
 
-      label {
-        display: block;
-        margin-bottom: 0.25em;
-      }
+label,
+[role="checkbox"] {
+  display: block;
+  margin: 0.25em;
+  font-weight: normal;
+  padding: 4px;
+  border: none;
+  width: 10em;
+}
 
-      label input {
-        margin-right: 0.5em;
-      }
+label input[type=checkbox] {
+  padding-left: 1em;
+}
 
-      div[role="checkbox"] {
-        margin-bottom: 0.25em;
-        margin-left: 0.25em;
-      }
+div[role="checkbox"] span:before {
+  content: '✗';
+  color: red;
+  padding-left: 0.125em;
+  padding-right: 0.25em;
+}
 
-      div[role="checkbox"] span {
-        margin-right: 0.25em;
-      }
+div[role="checkbox"][aria-checked="true"] span:before {
+  content: '✓';
+  color: green;
+  padding-left: 0.125em;
+  padding-right: 0.315em;
+}
 
-      div[role="checkbox"][aria-checked="true"] span {
-        margin-right: 0.135em;
-      }
+label.focus,
+[role="checkbox"]:focus {
+  padding: 2px;
+  border: 2px solid #999;
+  background-color: #DDE;
+}
 
-      div[role="checkbox"] span:before {
-        content: '✗';
-        color: red;
-      }
-
-      div[role="checkbox"][aria-checked="true"] span:before {
-        content: '✓';
-        color: green;
-        font-size: 90%;
-      }
-
-      label,
-      [role="checkbox"] {
-        border: thin solid transparent;
-        width: 10em;
-      }
-
-
-      label.focus,
-      [role="checkbox"]:focus {
-        border-color: #999;
-        background-color: #DDE;
-      }
-
-      label:hover,
-      [role="checkbox"]:hover {
-        background-color: #CCD;
-      }
+label:hover,
+[role="checkbox"]:hover {
+  background-color: #CCD;
+}
     </style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<nav id="nav" class="navbar navbar-default">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -100,12 +89,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide42.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 9 of 42</div>
+<div class="navbar-text pull-right">Slide 9 of 25</div>
 </div>
 </div>
 </nav>
@@ -113,41 +102,41 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Example Widget: ARIA Enabled Custom Checkbox</h1>
+<h1 id="h1_title" class="title">Example Widget: Accessible Custom Checkbox Widget using ARIA</h1>
 <script id="script" type="text/javascript">
-        function toggleCheckbox(node) {
-          if (node.getAttribute('aria-checked') === 'true') {
-            node.setAttribute('aria-checked', 'false');
-          }
-          else {
-            node.setAttribute('aria-checked', 'true');
-          }
-        }
+function toggleCheckbox(node) {
+  if (node.getAttribute('aria-checked') === 'true') {
+    node.setAttribute('aria-checked', 'false');
+  }
+  else {
+    node.setAttribute('aria-checked', 'true');
+  }
+}
 
-        function keydownCheckbox(event) {
-          var cb = event.currentTarget;
-          if (event.keyCode === 32) {
-            toggleCheckbox(cb);
+function keydownCheckbox(event) {
+  var cb = event.currentTarget;
+  if (event.key === ' ') {
+    toggleCheckbox(cb);
 
-            event.stopPropagation();
-            event.preventDefault();
-          }
-        }
+    event.stopPropagation();
+    event.preventDefault();
+  }
+}
 
-        function clickCheckbox(event) {
-          var cb = event.currentTarget;
-          toggleCheckbox(cb);
-          event.stopPropagation();
-          event.preventDefault();
-        }
+function clickCheckbox(event) {
+  var cb = event.currentTarget;
+  toggleCheckbox(cb);
+  event.stopPropagation();
+  event.preventDefault();
+}
 
-        function checkboxFocus(event) {
-          event.currentTarget.parentNode.classList.add('focus');
-        }
+function checkboxFocus(event) {
+  event.currentTarget.parentNode.classList.add('focus');
+}
 
-        function checkboxBlur(event) {
-          event.currentTarget.parentNode.classList.remove('focus');
-        }
+function checkboxBlur(event) {
+  event.currentTarget.parentNode.classList.remove('focus');
+}
       </script>
 <h2>Features</h2>
 <ul>
@@ -181,39 +170,44 @@
 <a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-accessible/output/" target="_webedit">Checkbox example on WebEdit</a>
 </p>
 <div id="example">
-      
-<fieldset>
-        
-<legend>
-        Pizza Toppings
-        </legend>
 
-        <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onBlur="checkboxBlur(event)">
+<fieldset>
+    
+<legend>
+
+        Pizza Toppings
+
+    </legend>
+    <label>
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+
 
           Green pepper
-        </label>
 
-        <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onBlur="checkboxBlur(event)">
+    </label>
+    <label>
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+
           Onion
-        </label>
 
-        
+    </label>
+    
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
+      
 <span aria-hidden="true"></span>
+
           Mushrooms
-        </div>
 
-      
+    </div>
+    
 <div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
-<span aria-hidden="true"></span>
-          Spinach
-        </div>
-
       
+<span aria-hidden="true"></span>
+
+          Spinach
+
+    </div>
+  
 </fieldset>
      
 </div>

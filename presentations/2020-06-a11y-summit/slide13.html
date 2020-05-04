@@ -2,61 +2,66 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: Part 3: Focus and hover styling</title>
+<title>Slide 13: Part 3: Keyboard Focus and hover styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      fieldset {
-        border-color: #EEE;
-        width: 10em;
-      }
+fieldset {
+     border-color: #EEE;
+     width: 10em;
+}
 
-      fieldset legend {
-        font-size: 100%;
-      }
+fieldset legend {
+     font-size: 100%;
+}
 
-      label {
-        display: block;
-        margin-bottom: 0.25em;
-      }
+label,
+div.checkbox {
+     padding: 4px;
+     width: 10em;
+     display: block;
+     margin-top: 0.25em;
+     margin-bottom: 0.25em;
+}
 
-      label input {
-        margin-right: 0.5em;
-      }
+label input {
+     margin-right: 0.5em;
+}
 
-      div[role="checkbox"] {
-        margin-bottom: 0.25em;
-        margin-left: 0.25em;
-      }
+div.checkbox span {
+     padding: 0.25em;
+}
 
-      div[role="checkbox"] span {
-        margin-right: 0.25em;
-      }
+div.checkbox span:before {
+    content: '✗';
+    color: red;
+    padding-right: 0.125em;
+}
 
-      label,
-      [role="checkbox"] {
-        border: thin solid transparent;
-        width: 10em;
-      }
+div.checkbox.checked span:before {
+    content: '✓';
+    color: green;
+    padding-right: 0.190em;
+}
 
+label.focus,
+div.checkbox:focus {
+  padding: 2px;
+  border: 2px solid #999;
+  background-color: #DDE;
+}
 
-      label.focus,
-      [role="checkbox"]:focus {
-        border-color: #999;
-        background-color: #DDE;
-      }
-
-      label:hover,
-      [role="checkbox"]:hover {
-        background-color: #CCD;
-      }
+label:hover,
+div.checkbox:hover {
+  background-color: #CCD;
+}
     </style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<nav id="nav" class="navbar navbar-default">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -85,12 +90,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide42.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 42</div>
+<div class="navbar-text pull-right">Slide 13 of 25</div>
 </div>
 </div>
 </nav>
@@ -98,102 +103,91 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 3: Focus and hover styling</h1>
+<h1 id="h1_title" class="title">Part 3: Keyboard Focus and hover styling</h1>
 <ul>
         
-<li>
-<code>hover</code> and <code>focus</code> styling the similar to harmonize look and feel of styling between interaction techniques.</li>
+<li>Keyboard <code>focus</code> and <code>hover</code> styling should be similar to to harmonize the look and feel of styling between interaction techniques.</li>
         
 <li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
         
 <li>
-<code>focus</code> styling used a 1px <code>border</code> or <code>outline</code> width to make the control with focus salient to users.</li>
+<code>focus</code> styling should use a 2 pixel<code>border</code> or <code>outline</code> width to make the control with focus easy for users to see and track.</li>
         
-<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of radio buttons and checkboxes with their labels.</li>
+<li>If the <code>border</code> technique is used the <code>border</code> must be removed when the widget does not have focus to support focus styling to change when users select operating system high contrast modes.</li>
         
-<li>Styling background color also makes the change in focus much easier to detect visually.</li>
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of standard radio buttons and checkboxes by styling their labels.</li>
+        
+<li>Styling background color makes the focus change much easier to detect visually.</li>
       
 </ul>
 <script id="script" type="text/javascript">
-        function toggleCheckbox(node) {
-          var n = node.firstElementChild;
-          if (n.innerHTML.indexOf('✗') >= 0) {
-            n.innerHTML = '✓';
-            n.style.color = 'green';
-            n.style.paddingRight = '0px';
-            n.setAttribute('aria-checked', 'true');
-          }
-          else {
-            n.innerHTML = '✗';
-            n.style.color = 'red';
-            n.style.paddingRight = '0.22em';
-            n.setAttribute('aria-checked', 'false');
-          }
-        }
+function toggleCheckbox(node) {
+ if (node.classList.contains('checked')) {
+  node.classList.remove('checked');
+  node.setAttribute('aria-checked', 'false');
+ } else {
+  node.classList.add('checked');
+  node.setAttribute('aria-checked', 'true');
+ }
+}
 
-        function keydownCheckbox(event) {
-          var cb = event.currentTarget;
-          if (event.keyCode === 32) {
-            toggleCheckbox(cb);
+function clickCheckbox(event) {
+ var cb = event.currentTarget;
+ toggleCheckbox(cb);
+ event.stopPropagation();
+ event.preventDefault();
+}
 
-            event.stopPropagation();
-            event.preventDefault();
-          }
-        }
+function keydownCheckbox(event) {
+  var cb = event.currentTarget;
+  if (event.key === ' ') {
+    toggleCheckbox(cb);
 
-        function clickCheckbox(event) {
-          var cb = event.currentTarget;
-          toggleCheckbox(cb);
+    event.stopPropagation();
+    event.preventDefault();
+  }
+}
 
-          event.stopPropagation();
-          event.preventDefault();
-        }
+function checkboxFocus(event) {
+  event.currentTarget.parentElement.classList.add('focus');
+}
 
-        function checkboxFocus(event) {
-          event.currentTarget.parentNode.classList.add('focus');
-        }
-
-        function checkboxBlur(event) {
-          event.currentTarget.parentNode.classList.remove('focus');
-        }
+function checkboxBlur(event) {
+  event.currentTarget.parentElement.classList.remove('focus');
+}
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-3/copy/" target="_webedit">Part 3 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-3/output/" target="_webedit">Part 3 on WebEdit</a>
 </p>
 <div id="example">
-      
+
 <fieldset>
-        
+    
 <legend>
         Pizza Toppings
-        </legend>
-
-        <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
-          Green pepper
-        </label>
-
-        <label>
-          <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
-          Onion
-        </label>
-
-        
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
-          Mushrooms
-        </div>
-
+    </legend>
+    <label>
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+        Green pepper
+     </label>
+    <label>
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
+        Onion
+    </label>
+    
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
       
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">✗</span>
+<span aria-hidden="true"></span>
+        Mushrooms
+    </div>
+    
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+      
+<span aria-hidden="true"></span>
           Spinach
-        </div>
-
-      
+    </div>
+  
 </fieldset>
      
 </div>

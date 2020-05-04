@@ -8,10 +8,59 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+fieldset {
+     border-color: #EEE;
+     width: 10em;
+}
+
+fieldset legend {
+     font-size: 100%;
+}
+
+label,
+div.checkbox {
+     padding: 2px;
+     width: 10em;
+     display: block;
+     margin-top: 0.25em;
+     margin-bottom: 0.25em;
+}
+
+label input {
+     margin-right: 0.5em;
+}
+
+div.checkbox span {
+     padding: 0.25em;
+     margin-right: 0.25em;
+}
+ div.checkbox span:before {
+     content: '✗';
+     color: red;
+}
+
+div.checkbox.checked span {
+  margin-right: 0.375em;
+}
+
+div.checkbox.checked span:before {
+     content: '✓';
+     color: green;
+     font-size: 90%;
+}
+ label {
+}
+ label:hover,
+.checkbox:hover {
+     padding: 0;
+     border: 2px solid #000;
+     background-color: #CCD;
+}
+    </style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<nav id="nav" class="navbar navbar-default">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -40,12 +89,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide42.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 42</div>
+<div class="navbar-text pull-right">Slide 8 of 25</div>
 </div>
 </div>
 </nav>
@@ -72,6 +121,72 @@
 <p>
 <a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-inaccessible/output/" target="_webedit">Checkbox example on WebEdit</a>
 </p>
+<script id="script">
+function toggleCheckbox(node) {
+ if (node.classList.contains('checked')) {
+  node.classList.remove('checked');
+ } else {
+  node.classList.add('checked');
+ }
+}
+
+function clickCheckbox(event) {
+ var cb = event.currentTarget;
+ toggleCheckbox(cb);
+ event.stopPropagation();
+ event.preventDefault();
+}
+     </script>
+<div id="example">
+      
+<fieldset>
+        
+<legend>
+            Pizza Toppings
+        </legend>
+        <label>
+          <input type="checkbox">
+            Green pepper
+         </label>
+        <label>
+          <input type="checkbox">
+            Onion
+        </label>
+        
+<div class="checkbox" onclick="clickCheckbox(event)">
+          
+<span></span>
+            Mushrooms
+        </div>
+        
+<div class="checkbox" onclick="clickCheckbox(event)">
+          
+<span></span>
+            Spinach
+        </div>
+      
+</fieldset>
+     
+</div>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </div>
 <div class="col"></div>
 </div>

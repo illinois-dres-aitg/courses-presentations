@@ -330,7 +330,7 @@
 
         <xsl:element name="nav">
           <xsl:attribute name="id">nav</xsl:attribute>
-          <xsl:attribute name="class">navbar navbar-default navbar-fixed-top</xsl:attribute>
+          <xsl:attribute name="class">navbar navbar-default</xsl:attribute>
 
           <xsl:element name="div">
             <xsl:attribute name="class">container</xsl:attribute>

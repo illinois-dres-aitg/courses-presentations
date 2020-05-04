@@ -9,36 +9,54 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
 <style id="style" type="text/css">
-      fieldset {
-        border-color: #EEE;
-        width: 10em;
-      }
+fieldset {
+     border-color: #EEE;
+     width: 10em;
+}
 
-      fieldset legend {
-        font-size: 100%;
-      }
+fieldset legend {
+     font-size: 100%;
+}
 
-      label {
-        display: block;
-        margin-bottom: 0.25em;
-      }
+label,
+div.checkbox {
+     padding: 2px;
+     width: 10em;
+     display: block;
+     margin-top: 0.25em;
+     margin-bottom: 0.25em;
+}
 
-      label input {
-        margin-right: 0.5em;
-      }
+label input {
+     margin-right: 0.5em;
+}
 
-      div[role="checkbox"] {
-        margin-bottom: 0.25em;
-        margin-left: 0.25em;
-      }
+div.checkbox span {
+     padding: 0.25em;
+}
 
-      div[role="checkbox"] span {
-        margin-right: 0.25em;
-      }
-    </style>
+div.checkbox span:before {
+    content: '✗';
+    color: red;
+    padding-right: 0.125em;
+}
+
+div.checkbox.checked span:before {
+    content: '✓';
+    color: green;
+    padding-right: 0.190em;
+}
+
+label:hover,
+.checkbox:hover {
+     padding: 0;
+     border: 2px solid #000;
+     background-color: #CCD;
+}
+</style>
 </head>
 <body>
-<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<nav id="nav" class="navbar navbar-default">
 <div class="container">
 <div class="navbar-header">
 <button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
@@ -67,12 +85,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide42.html">
+<a id="ID_SLIDE_LAST" href="slide25.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 12 of 42</div>
+<div class="navbar-text pull-right">Slide 12 of 25</div>
 </div>
 </div>
 </nav>
@@ -93,83 +111,65 @@
       
 </ul>
 <script id="script" type="text/javascript">
-        function toggleCheckbox(node) {
-          var n = node.firstElementChild;
-          if (n.innerHTML.indexOf('✗') >= 0) {
-            n.innerHTML = '✓';
-            n.style.color = 'green';
-            n.style.paddingRight = '0px';
-            n.setAttribute('aria-checked', 'true');
-          }
-          else {
-            n.innerHTML = '✗';
-            n.style.color = 'red';
-            n.style.paddingRight = '0.22em';
-            n.setAttribute('aria-checked', 'false');
-          }
-        }
+function toggleCheckbox(node) {
+ if (node.classList.contains('checked')) {
+  node.classList.remove('checked');
+  node.setAttribute('aria-checked', 'false');
+ } else {
+  node.classList.add('checked');
+  node.setAttribute('aria-checked', 'true');
+ }
+}
 
-        function keydownCheckbox(event) {
-          var cb = event.currentTarget;
-          if (event.keyCode === 32) {
-            toggleCheckbox(cb);
+function clickCheckbox(event) {
+ var cb = event.currentTarget;
+ toggleCheckbox(cb);
+ event.stopPropagation();
+ event.preventDefault();
+}
 
-            event.stopPropagation();
-            event.preventDefault();
-          }
-        }
+function keydownCheckbox(event) {
+  var cb = event.currentTarget;
+  if (event.key === ' ') {
+    toggleCheckbox(cb);
 
-        function clickCheckbox(event) {
-          var cb = event.currentTarget;
-          toggleCheckbox(cb);
-
-          event.stopPropagation();
-          event.preventDefault();
-        }
-
+    event.stopPropagation();
+    event.preventDefault();
+  }
+}
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/aria-checkbox-part-2/copy/" target="_webedit">Part 2 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-2/output/" target="_webedit">Part 2 on WebEdit</a>
 </p>
 <div id="example">
-      
+
 <fieldset>
-        
+    
 <legend>
         Pizza Toppings
-        </legend>
-
-        <label>
-          <input type="checkbox">
-
-          Green pepper
-        </label>
-
-        <label>
-          <input type="checkbox">
-          Onion
-        </label>
-
-        
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">
-            ✗
-          </span>
-          Mushrooms
-        </div>
-
+    </legend>
+    <label>
+      <input type="checkbox">
+        Green pepper
+     </label>
+    <label>
+      <input type="checkbox">
+        Onion
+    </label>
+    
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
       
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-          
-<span aria-hidden="true" style="color: red; padding-right: 0.22em;">
-            ✗
-          </span>
+<span aria-hidden="true"></span>
+        Mushrooms
+    </div>
+    
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+      
+<span aria-hidden="true"></span>
           Spinach
-        </div>
-
-      
+    </div>
+  
 </fieldset>
      
 </div>
