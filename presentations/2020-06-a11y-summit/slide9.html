@@ -2,62 +2,13 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 9: Example Widget: Accessible Custom Checkbox Widget using ARIA</title>
+<title>Slide 9: Basic Screen Reader Commands</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
-fieldset {
-  border-color: #EEE;
-  width: 10em;
-}
-
-fieldset legend {
-  font-size: 100%;
-}
-
-label,
-[role="checkbox"] {
-  display: block;
-  margin: 0.25em;
-  font-weight: normal;
-  padding: 4px;
-  border: none;
-  width: 10em;
-}
-
-label input[type=checkbox] {
-  padding-left: 1em;
-}
-
-div[role="checkbox"] span:before {
-  content: '✗';
-  color: red;
-  padding-left: 0.125em;
-  padding-right: 0.25em;
-}
-
-div[role="checkbox"][aria-checked="true"] span:before {
-  content: '✓';
-  color: green;
-  padding-left: 0.125em;
-  padding-right: 0.315em;
-}
-
-label.focus,
-[role="checkbox"]:focus {
-  padding: 2px;
-  border: 2px solid #999;
-  background-color: #DDE;
-}
-
-label:hover,
-[role="checkbox"]:hover {
-  background-color: #CCD;
-}
-    </style>
+<style id="style" type="text/css"></style>
 <stylesheet>
 <link rel="stylesheet" type="text/css" href="">
 </stylesheet>
@@ -92,12 +43,12 @@ label:hover,
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 9 of 25</div>
+<div class="navbar-text pull-right">Slide 9 of 19</div>
 </div>
 </div>
 </nav>
@@ -105,134 +56,81 @@ label:hover,
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Example Widget: Accessible Custom Checkbox Widget using ARIA</h1>
-<script id="script" type="text/javascript">
-function toggleCheckbox(node) {
-  if (node.getAttribute('aria-checked') === 'true') {
-    node.setAttribute('aria-checked', 'false');
-  }
-  else {
-    node.setAttribute('aria-checked', 'true');
-  }
-}
-
-function keydownCheckbox(event) {
-  var cb = event.currentTarget;
-  if (event.key === ' ') {
-    toggleCheckbox(cb);
-
-    event.stopPropagation();
-    event.preventDefault();
-  }
-}
-
-function clickCheckbox(event) {
-  var cb = event.currentTarget;
-  toggleCheckbox(cb);
-  event.stopPropagation();
-  event.preventDefault();
-}
-
-function checkboxFocus(event) {
-  event.currentTarget.parentNode.classList.add('focus');
-}
-
-function checkboxBlur(event) {
-  event.currentTarget.parentNode.classList.remove('focus');
-}
-      </script>
-<h2>Features</h2>
-<ul>
-       
-<li>Responds to mouse events using <code>onClick</code> event.</li>
-       
-<li>Responds to <kbd>space</kbd> keyboard event using <code>onKeyDown</code> event.</li>
-       
-<li>
-<code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page.</li>
-       
-<li>
-<code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox".</li>
-       
-<li>
-<code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked".</li>
-       
-<li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element.</li>
-       
-<li>
-<code>aria-hidden</code> attribute hides the characters used for indicating state (i.e. <span style="color: red">✗</span> and <span style="color: green">✓</span>) from being included in the accessible name calculation.</li>
-       
-<li>CSS attribute selectors are used to keep the visual indication of checked state snychronized with accessibility API.</li>
-       
-<li>
-<code>onFocus</code> and <code>onBlur</code> event handlers are used on standard checkboxes to provide visual indication of keyboard focus.</li>
-     
-</ul>
-<h2>Example</h2>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-accessible/output/" target="_webedit">Checkbox example on WebEdit</a>
-</p>
-<div id="example">
-
-<fieldset>
-    
-<legend>
-
-        Pizza Toppings
-
-    </legend>
-    <label>
-      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
-
-
-          Green pepper
-
-    </label>
-    <label>
-      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
-
-          Onion
-
-    </label>
-    
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
+<h1 id="h1_title" class="title">Basic Screen Reader Commands</h1>
+<table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
+        
+<thead>
+          
+<tr>
+            
+<th>Action</th>
+            <th>JAWS (Windows)</th>
+            <th>NVDA (Windows)</th>
+            <th>Voice Over (OS X)</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>Next link, form control or widget</td>
+            <td>Tab</td>
+            <td>Tab</td>
+            <td>Tab</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Previous link, form control or widget</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Re-read current item</td>
+            <td>Insert+Numpad 5</td>
+            <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
+            <td>Command+Option+Space</td>
+          
+</tr>
+          
+<tr>
+            
+<td>More information on item</td>
+            <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
+            <td>NVDA+D</td>
+            <td>Control+Option+F4</td>
+          
+</tr>
+          
+<tr>
+            
+<td>List of Links</td>
+            <td>Insert+F7</td>
+            <td>NVDA+F7</td>
+            <td>Command+Option+U, then left/right arrow to list of links</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Detailed Keyboard Information</td>
+            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
+            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
+            <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
+          
+</tr>
+        
+</tbody>
       
-<span aria-hidden="true"></span>
-
-          Mushrooms
-
-    </div>
-    
-<div role="checkbox" tabindex="0" aria-checked="false" onkeydown="keydownCheckbox(event)" onclick="clickCheckbox(event)">
-      
-<span aria-hidden="true"></span>
-
-          Spinach
-
-    </div>
-  
-</fieldset>
-     
-</div>
-<h2>HTML Source Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Source Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<h2>Javascript Source Code</h2>
-<pre>
-<code id="sc3"></code>
-</pre>
-<script type="text/javascript">
-        sourceCode.add('sc1', 'example');
-        sourceCode.add('sc2', 'style');
-        sourceCode.add('sc3', 'script');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+</table>
 </div>
 <div class="col"></div>
 </div>

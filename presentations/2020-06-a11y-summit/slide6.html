@@ -43,12 +43,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 25</div>
+<div class="navbar-text pull-right">Slide 6 of 19</div>
 </div>
 </div>
 </nav>
@@ -60,7 +60,7 @@
 <ul>
           
 <li>
-<a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a>
+<a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a>
 </li>
           
 <li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
@@ -91,11 +91,11 @@
                 
 <ul>
                   
-<li>The <code>aria-labelledby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
+<li>The <code>aria-labelledby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
                   
 <li>Text content of referenced elements are concatenated to compute the accessible name.</li>
                   
-<li>Typically references identify visible text on the screen.</li>
+<li>References typically identify visible text on the screen in visual proximity to the control.</li>
                 
 </ul>
               
@@ -111,7 +111,7 @@
                 
 <ul>
                   
-<li>The <code>aria-label</code> text content defines the accessible name.</li>
+<li>The <code>aria-label</code> attribute text content defines the accessible name.</li>
                 
 </ul>
               
@@ -122,15 +122,13 @@
 <tr>
               
 <td>3</td>
-              <td>Encapsulation using the <code>label</code> role<br>
+              <td>Encapsulation using the <code>label</code> element<br>
 <span class="new">New in ARIA 1.2</span></td>
               <td>
                 
 <ul>
                   
-<li>Allows the use of the HTML <code>label</code> element to label ARIA enabled widgets using encapsulation.</li>
-                  
-<li>Supported widget roles:
+<li>Allows the use of the HTML <code>label</code> element to define an accessible name for the following roles:
                     <ul>
                       
 <li>
@@ -178,34 +176,11 @@
 <tr>
               
 <td>4</td>
-              <td><code>legend</code> for grouping roles<br>
+              <td>The <code>legend</code> element for grouping roles<br>
 <span class="new">New in ARIA 1.2</span></td>
               <td>
-                
-<ul>
-                  
-<li>Allows the use of the HTML <code>legend</code> element to label grouping roles.</li>
-                  
-<li>Similar to the HTML <code>fieldset</code>/<code>legend</code> elements providing a grouping label.</li>
-                  
-<li>Supported grouping roles:
-                    <ul>
-                      
-<li>
-<code>group</code>
-</li>
-                      
-<li>
-<code>gradiogroup</code>
-</li>
-                    
-</ul>
-                  
-</li>
-                
-</ul>
-              
-</td>
+                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
+              </td>
             
 </tr>
             

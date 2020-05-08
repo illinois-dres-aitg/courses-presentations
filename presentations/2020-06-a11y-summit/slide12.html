@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 12: Part 2: Adding role, checked state and accessible name</title>
+<title>Slide 12: Part 3: Keyboard Focus and hover styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -20,7 +20,7 @@ fieldset legend {
 
 label,
 div.checkbox {
-     padding: 2px;
+     padding: 4px;
      width: 10em;
      display: block;
      margin-top: 0.25em;
@@ -47,13 +47,18 @@ div.checkbox.checked span:before {
     padding-right: 0.190em;
 }
 
-label:hover,
-.checkbox:hover {
-     padding: 0;
-     border: 2px solid #000;
-     background-color: #CCD;
+label.focus,
+div.checkbox:focus {
+  padding: 2px;
+  border: 2px solid #999;
+  background-color: #DDE;
 }
-</style>
+
+label:hover,
+div.checkbox:hover {
+  background-color: #CCD;
+}
+    </style>
 <stylesheet>
 <link rel="stylesheet" type="text/css" href="">
 </stylesheet>
@@ -88,12 +93,12 @@ label:hover,
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 12 of 25</div>
+<div class="navbar-text pull-right">Slide 12 of 19</div>
 </div>
 </div>
 </nav>
@@ -101,16 +106,21 @@ label:hover,
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 2: Adding role, checked state and accessible name</h1>
+<h1 id="h1_title" class="title">Part 3: Keyboard Focus and hover styling</h1>
 <ul>
         
-<li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
+<li>Keyboard <code>focus</code> and <code>hover</code> styling should be similar to to harmonize the look and feel of styling between interaction techniques.</li>
         
-<li>Adding <code>aria-checked</code> attribute.</li>
+<li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
         
-<li>Accessible name from text content.</li>
+<li>
+<code>focus</code> styling should use a 2 pixel<code>border</code> or <code>outline</code> width to make the control with focus easy for users to see and track.</li>
         
-<li>Removing state character (e.g. <span style="color: red">✗</span>) from accessible name using <code>aria-hidden</code>.</li>
+<li>If the <code>border</code> technique is used the <code>border</code> must be removed when the widget does not have focus to support focus styling to change when users select operating system high contrast modes.</li>
+        
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of standard radio buttons and checkboxes by styling their labels.</li>
+        
+<li>Styling background color makes the focus change much easier to detect visually.</li>
       
 </ul>
 <script id="script" type="text/javascript">
@@ -140,10 +150,18 @@ function keydownCheckbox(event) {
     event.preventDefault();
   }
 }
+
+function checkboxFocus(event) {
+  event.currentTarget.parentElement.classList.add('focus');
+}
+
+function checkboxBlur(event) {
+  event.currentTarget.parentElement.classList.remove('focus');
+}
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-2/output/" target="_webedit">Part 2 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-3/output/" target="_webedit">Part 3 on WebEdit</a>
 </p>
 <div id="example">
 
@@ -153,11 +171,11 @@ function keydownCheckbox(event) {
         Pizza Toppings
     </legend>
     <label>
-      <input type="checkbox">
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
         Green pepper
      </label>
     <label>
-      <input type="checkbox">
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
         Onion
     </label>
     

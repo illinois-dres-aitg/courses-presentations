@@ -122,8 +122,7 @@
               HTM5 focus and tabindex requirements
             </a>
         </li>
-        <li>Support in <strong>all</strong> modern major browsers</li>
-       <li>Visual focus styling should be actively defined to make it easy to find (e.g. do NOT rely on the default browser focus styling of focus)</li>
+       <li>Actively define visual focus style, since the default browser visual focus styling of focus is typically hard to discern.</li>
       </ul>
 
       <h2 id="tabindex_values">Tabindex Values</h2>
@@ -172,7 +171,7 @@
     <title>Accessible Name Calculation</title>
     <contents>
         <ul>
-          <li><a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a></li>
+          <li><a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a></li>
           <li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
         </ul>
         <h2 id="heading_ant">Accessible Name Techniques</h2>
@@ -190,9 +189,9 @@
               <td><code>aria-labelledby</code></td>
               <td>
                 <ul>
-                  <li>The <code>aria-labelledby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
+                  <li>The <code>aria-labelledby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
                   <li>Text content of referenced elements are concatenated to compute the accessible name.</li>
-                  <li>Typically references identify visible text on the screen.</li>
+                  <li>References typically identify visible text on the screen in visual proximity to the control.</li>
                 </ul>
               </td>
             </tr>
@@ -201,17 +200,16 @@
               <td><code>aria-label</code></td>
               <td>
                 <ul>
-                  <li>The <code>aria-label</code> text content defines the accessible name.</li>
+                  <li>The <code>aria-label</code> attribute text content defines the accessible name.</li>
                 </ul>
               </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Encapsulation using the <code>label</code> role<br/><span class="new">New in ARIA 1.2</span></td>
+              <td>Encapsulation using the <code>label</code> element<br/><span class="new">New in ARIA 1.2</span></td>
               <td>
                 <ul>
-                  <li>Allows the use of the HTML <code>label</code> element to label ARIA enabled widgets using encapsulation.</li>
-                  <li>Supported widget roles:
+                  <li>Allows the use of the HTML <code>label</code> element to define an accessible name for the following roles:
                     <ul>
                       <li><code>checkbox</code></li>
                       <li><code>listbox</code></li>
@@ -228,18 +226,9 @@
             </tr>
             <tr>
               <td>4</td>
-              <td><code>legend</code> for grouping roles<br/><span class="new">New in ARIA 1.2</span></td>
+              <td>The <code>legend</code> element for grouping roles<br/><span class="new">New in ARIA 1.2</span></td>
               <td>
-                <ul>
-                  <li>Allows the use of the HTML <code>legend</code> element to label grouping roles.</li>
-                  <li>Similar to the HTML <code>fieldset</code>/<code>legend</code> elements providing a grouping label.</li>
-                  <li>Supported grouping roles:
-                    <ul>
-                      <li><code>group</code></li>
-                      <li><code>gradiogroup</code></li>
-                    </ul>
-                  </li>
-                </ul>
+                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
               </td>
             </tr>
             <tr>
@@ -271,8 +260,8 @@
     <title>Accessible Description Calculation</title>
     <contents>
         <ul>
-          <li><a href="https://www.w3.org/TR/accname-aam-1.1/">W3C Accessible Name and Description: Computation and API Mappings 1.1</a></li>
-          <li>Accessible description information provides more informaiton about a form control, link or aria enabled widget.</li>
+          <li><a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a></li>
+          <li>Accessible description provides more information about a form control, link or aria widget.</li>
           <li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
         </ul>
         <h2 id="heading_ant">Accessible Description Techniques</h2>
@@ -290,9 +279,9 @@
               <td><code>aria-describedby</code></td>
               <td>
                 <ul>
-                  <li>The <code>aria-describedby</code> contains a list of <code>IDREF</code>s to elements on the page.</li>
+                  <li>The <code>aria-describedby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
                   <li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
-                  <li>Designed to reference visible text on the screen, like instructions.</li>
+                  <li>Designed to reference visible text on the screen, like instructions and error feedback.</li>
                 </ul>
               </td>
             </tr>
@@ -300,7 +289,7 @@
               <td>2</td>
               <td><code>aria-description</code><br/><span class="new">New in ARIA 1.2</span></td>
               <td>
-                Similar to <code>aria-label</code>, but used to provide an accessible description.
+                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
               </td>
             </tr>
             <tr>
@@ -448,237 +437,59 @@ function clickCheckbox(event) {
     </contents>
   </slide>
 
-  <slide>
-    <title>Example Widget: Accessible Custom Checkbox Widget using ARIA</title>
-    <style id="style">
-fieldset {
-  border-color: #EEE;
-  width: 10em;
-}
-
-fieldset legend {
-  font-size: 100%;
-}
-
-label,
-[role="checkbox"] {
-  display: block;
-  margin: 0.25em;
-  font-weight: normal;
-  padding: 4px;
-  border: none;
-  width: 10em;
-}
-
-label input[type=checkbox] {
-  padding-left: 1em;
-}
-
-div[role="checkbox"] span:before {
-  content: '✗';
-  color: red;
-  padding-left: 0.125em;
-  padding-right: 0.25em;
-}
-
-div[role="checkbox"][aria-checked="true"] span:before {
-  content: '✓';
-  color: green;
-  padding-left: 0.125em;
-  padding-right: 0.315em;
-}
-
-label.focus,
-[role="checkbox"]:focus {
-  padding: 2px;
-  border: 2px solid #999;
-  background-color: #DDE;
-}
-
-label:hover,
-[role="checkbox"]:hover {
-  background-color: #CCD;
-}
-    </style>
-    <contents>
-
-
-      <script id="script" type="text/javascript">
-function toggleCheckbox(node) {
-  if (node.getAttribute('aria-checked') === 'true') {
-    node.setAttribute('aria-checked', 'false');
-  }
-  else {
-    node.setAttribute('aria-checked', 'true');
-  }
-}
-
-function keydownCheckbox(event) {
-  var cb = event.currentTarget;
-  if (event.key === ' ') {
-    toggleCheckbox(cb);
-
-    event.stopPropagation();
-    event.preventDefault();
-  }
-}
-
-function clickCheckbox(event) {
-  var cb = event.currentTarget;
-  toggleCheckbox(cb);
-  event.stopPropagation();
-  event.preventDefault();
-}
-
-function checkboxFocus(event) {
-  event.currentTarget.parentNode.classList.add('focus');
-}
-
-function checkboxBlur(event) {
-  event.currentTarget.parentNode.classList.remove('focus');
-}
-      </script>
-
-     <h2>Features</h2>
-     <ul>
-       <li>Responds to mouse events using <code>onClick</code> event.</li>
-       <li>Responds to <kbd>space</kbd> keyboard event using <code>onKeyDown</code> event.</li>
-       <li><code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page.</li>
-       <li><code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox".</li>
-       <li><code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked".</li>
-       <li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element.</li>
-       <li><code>aria-hidden</code> attribute hides the characters used for indicating state (i.e. <span style="color: red">✗</span> and <span style="color: green">✓</span>) from being included in the accessible name calculation.</li>
-       <li>CSS attribute selectors are used to keep the visual indication of checked state snychronized with accessibility API.</li>
-       <li><code>onFocus</code> and <code>onBlur</code> event handlers are used on standard checkboxes to provide visual indication of keyboard focus.</li>
-     </ul>
-
-     <h2>Example</h2>
-
-     <p><a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-accessible/output/" target="_webedit">Checkbox example on WebEdit</a></p>
-
-     <div id="example">
-<fieldset>
-    <legend>
-
-        Pizza Toppings
-
-    </legend>
-    <label>
-      <input type="checkbox"
-           onfocus="checkboxFocus(event)"
-           onblur="checkboxBlur(event)"/>
-
-
-          Green pepper
-
-    </label>
-    <label>
-      <input type="checkbox"
-           onfocus="checkboxFocus(event)"
-           onblur="checkboxBlur(event)"/>
-
-          Onion
-
-    </label>
-    <div role="checkbox"
-       tabindex="0"
-       aria-checked="false"
-       onkeydown="keydownCheckbox(event)"
-       onclick="clickCheckbox(event)">
-      <span aria-hidden="true"></span>
-
-          Mushrooms
-
-    </div>
-    <div role="checkbox"
-       tabindex="0"
-       aria-checked="false"
-       onkeydown="keydownCheckbox(event)"
-       onclick="clickCheckbox(event)">
-      <span aria-hidden="true"></span>
-
-          Spinach
-
-    </div>
-  </fieldset>
-     </div>
-
-      <h2>HTML Source Code</h2>
-
-      <pre><code id="sc1"></code></pre>
-
-      <h2>CSS Source Code</h2>
-
-      <pre><code id="sc2"></code></pre>
-
-      <h2>Javascript Source Code</h2>
-
-      <pre><code id="sc3"></code></pre>
-
-      <script type="text/javascript">
-        sourceCode.add('sc1', 'example');
-        sourceCode.add('sc2', 'style');
-        sourceCode.add('sc3', 'script');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
-   </contents>
-  </slide>
-
  <slide>
-
-      <title>Basic Screen Reader Commands</title>
-      <contents>
-        <table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
-          <thead>
-            <tr>
-              <th>Action</th>
-              <th>JAWS (Windows)</th>
-              <th>NVDA (Windows)</th>
-              <th>Voice Over (OS X)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Next link, form control or widget</td>
-              <td>Tab</td>
-              <td>Tab</td>
-              <td>Tab</td>
-            </tr>
-            <tr>
-              <td>Previous link, form control or widget</td>
-              <td>Shift+Tab</td>
-              <td>Shift+Tab</td>
-              <td>Shift+Tab</td>
-            </tr>
-            <tr>
-              <td>Re-read current item</td>
-              <td>Insert+Numpad 5</td>
-              <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
-              <td>Command+Option+Space</td>
-            </tr>
-            <tr>
-              <td>More information on item</td>
-              <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
-              <td>NVDA+D</td>
-              <td>Control+Option+F4</td>
-            </tr>
-            <tr>
-              <td>List of Links</td>
-              <td>Insert+F7</td>
-              <td>NVDA+F7</td>
-              <td>Command+Option+U, then left/right arrow to list of links</td>
-            </tr>
-            <tr>
-              <td>Detailed Keyboard Information</td>
-              <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
-              <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
-              <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </contents>
-    </slide>
+    <title>Basic Screen Reader Commands</title>
+    <contents>
+      <table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>JAWS (Windows)</th>
+            <th>NVDA (Windows)</th>
+            <th>Voice Over (OS X)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Next link, form control or widget</td>
+            <td>Tab</td>
+            <td>Tab</td>
+            <td>Tab</td>
+          </tr>
+          <tr>
+            <td>Previous link, form control or widget</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+          </tr>
+          <tr>
+            <td>Re-read current item</td>
+            <td>Insert+Numpad 5</td>
+            <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
+            <td>Command+Option+Space</td>
+          </tr>
+          <tr>
+            <td>More information on item</td>
+            <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
+            <td>NVDA+D</td>
+            <td>Control+Option+F4</td>
+          </tr>
+          <tr>
+            <td>List of Links</td>
+            <td>Insert+F7</td>
+            <td>NVDA+F7</td>
+            <td>Command+Option+U, then left/right arrow to list of links</td>
+          </tr>
+          <tr>
+            <td>Detailed Keyboard Information</td>
+            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
+            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
+            <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </contents>
+  </slide>
 
   <slide>
     <title>Part 1 Responding to the keyboard</title>
@@ -1280,6 +1091,183 @@ function checkboxBlur(event) {
   </slide>
 
   <slide>
+    <title>Example Widget: Accessible Custom Checkbox Widget using ARIA</title>
+    <style id="style">
+      fieldset {
+        border-color: #EEE;
+        width: 10em;
+      }
+
+      fieldset legend {
+        font-size: 100%;
+      }
+
+      label,
+      [role="checkbox"] {
+        display: block;
+        margin: 0.25em;
+        font-weight: normal;
+        padding: 4px;
+        border: none;
+        width: 10em;
+      }
+
+      label input[type=checkbox] {
+        padding-left: 1em;
+      }
+
+      div[role="checkbox"] span:before {
+        content: '✗';
+        color: red;
+        padding-left: 0.125em;
+        padding-right: 0.25em;
+      }
+
+      div[role="checkbox"][aria-checked="true"] span:before {
+        content: '✓';
+        color: green;
+        padding-left: 0.125em;
+        padding-right: 0.315em;
+      }
+
+      label.focus,
+      [role="checkbox"]:focus {
+        padding: 2px;
+        border: 2px solid #999;
+        background-color: #DDE;
+      }
+
+      label:hover,
+      [role="checkbox"]:hover {
+        background-color: #CCD;
+      }
+    </style>
+    <contents>
+
+
+      <script id="script" type="text/javascript">
+        function toggleCheckbox(node) {
+          if (node.getAttribute('aria-checked') === 'true') {
+            node.setAttribute('aria-checked', 'false');
+          }
+          else {
+            node.setAttribute('aria-checked', 'true');
+          }
+        }
+
+        function keydownCheckbox(event) {
+          var cb = event.currentTarget;
+          if (event.key === ' ') {
+            toggleCheckbox(cb);
+
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }
+
+        function clickCheckbox(event) {
+          var cb = event.currentTarget;
+          toggleCheckbox(cb);
+          event.stopPropagation();
+          event.preventDefault();
+        }
+
+        function checkboxFocus(event) {
+          event.currentTarget.parentNode.classList.add('focus');
+        }
+
+        function checkboxBlur(event) {
+          event.currentTarget.parentNode.classList.remove('focus');
+        }
+      </script>
+
+     <h2>Features</h2>
+     <ul>
+       <li>Responds to mouse events using <code>onClick</code> event.</li>
+       <li>Responds to <kbd>space</kbd> keyboard event using <code>onKeyDown</code> event.</li>
+       <li><code>tabindex=0</code> makes widget keyboard focusable and include in tab order of page.</li>
+       <li><code>role="checkbox"</code> identifies widget to assistive technologies as a "checkbox".</li>
+       <li><code>aria-checked</code> attribute identifies the state as being "checked" or "unchecked".</li>
+       <li>Accessible name comes from child text content of the <code>div[role="checkbox"]</code> element.</li>
+       <li><code>aria-hidden</code> attribute hides the characters used for indicating state (i.e. <span style="color: red">✗</span> and <span style="color: green">✓</span>) from being included in the accessible name calculation.</li>
+       <li>CSS attribute selectors are used to keep the visual indication of checked state snychronized with accessibility API.</li>
+       <li><code>onFocus</code> and <code>onBlur</code> event handlers are used on standard checkboxes to provide visual indication of keyboard focus.</li>
+     </ul>
+
+     <h2>Example</h2>
+
+     <p><a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-accessible/output/" target="_webedit">Checkbox example on WebEdit</a></p>
+
+     <div id="example">
+    <fieldset>
+        <legend>
+
+            Pizza Toppings
+
+        </legend>
+        <label>
+          <input type="checkbox"
+               onfocus="checkboxFocus(event)"
+               onblur="checkboxBlur(event)"/>
+
+
+              Green pepper
+
+        </label>
+        <label>
+          <input type="checkbox"
+               onfocus="checkboxFocus(event)"
+               onblur="checkboxBlur(event)"/>
+
+              Onion
+
+        </label>
+        <div role="checkbox"
+           tabindex="0"
+           aria-checked="false"
+           onkeydown="keydownCheckbox(event)"
+           onclick="clickCheckbox(event)">
+          <span aria-hidden="true"></span>
+
+              Mushrooms
+
+        </div>
+        <div role="checkbox"
+           tabindex="0"
+           aria-checked="false"
+           onkeydown="keydownCheckbox(event)"
+           onclick="clickCheckbox(event)">
+          <span aria-hidden="true"></span>
+
+              Spinach
+
+        </div>
+      </fieldset>
+     </div>
+
+      <h2>HTML Source Code</h2>
+
+      <pre><code id="sc1"></code></pre>
+
+      <h2>CSS Source Code</h2>
+
+      <pre><code id="sc2"></code></pre>
+
+      <h2>Javascript Source Code</h2>
+
+      <pre><code id="sc3"></code></pre>
+
+      <script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
+   </contents>
+  </slide>
+
+  <slide>
     <title>Using ARIA in HTML (Best Practices)</title>
     <contents>
       <p><a href="https://w3c.github.io/using-aria/">Using ARIA in HTML (Best Practices)</a></p>
@@ -1287,680 +1275,11 @@ function checkboxBlur(event) {
         <li>Use native semantics of HTML (e.g. <code>input[type=checkbox]</code> rather than div[role=checkbox]).</li>
         <li>Don't override native semantics of elements (e.g. <code>h2[role="banner]</code>).</li>
         <li>Don't redefine the native semantics of an element (e.g. <code>main[role=main]</code>).</li>
-        <li>All interactive ARIA controls must be usable with the keyboard.</li>
+        <li>All interactive ARIA widgets must be operable with the keyboard.</li>
         <li>Do not use role="presentation" or aria-hidden="true" on a visible focusable elements.</li>
         <li>All interactive elements must have an accessible name.</li>
         <li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for asynchronous content changes important for the users attention.</li>
       </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Design Pattern: Menu Button</title>
-    <contents>
-    <ul>
-      <li><a href="https://www.w3.org/TR/wai-aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a></li>
-      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-actions.html">Example 1: Action Menu</a></li>
-      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a></li>
-      <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a></li>
-    </ul>
-    <iframe src="https://www.w3.org/TR/wai-aria-practices/#menubutton"
-            title="ARIA Menubutton Example"
-            width="98%"
-            height="600px"/>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Design Pattern: Navigation Menu Options</title>
-    <contents>
-       <table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
-          <thead>
-            <tr>
-              <th>Technique</th>
-              <th>Keyboard Interaction</th>
-              <th>ARIA</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Keyboard Enhancement</th>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd></li>
-                  <li><kbd>left arrow</kbd></li>
-                  <li><kbd>right arrow</kbd></li>
-                  <li><kbd>up arrow</kbd></li>
-                  <li><kbd>down arrow</kbd></li>
-                </ul>
-              </td>
-              <td>
-                <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_lh_navigation" target="_specification"><code>navigation</code> landmark</a>
-              </td>
-              <td>
-                <ul>
-                  <li>Primarily <kbd>tab</kbd> key navigation.</li>
-                  <li>Cursor keys provide enhanced navigation.</li>
-                  <li>Uses hierarchical lists of links.</li>
-                  <li>Uses ARIA <code>navigation</code> landmarks.</li>
-                  <li>Examples:
-                    <ul>
-                      <li><a href="http://www.dhs.state.il.us" target="_example">Illinois Department of Human Services</a></li>
-                      <li><a href="http://illinois.edu/" target="_example">University of Illinois Home Page</a></li>
-                      <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/" target="_example">Adobe Mega Menu</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>Menu Button</th>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd></li>
-                  <li><kbd>up arrow</kbd></li>
-                  <li><kbd>down arrow</kbd></li>
-                </ul>
-              </td>
-              <td>
-                <a href="http://w3c.github.io/aria-practices/#menubutton" target="_specification">Menu Button Design Pattern</a>
-              </td>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd> moves into and out of each menu button.</li>
-                  <li><kbd>up arrow</kbd> and <kbd>down arrow</kbd> move between pull down menu items.</li>
-                  <li>Uses <code>button</code>, <code>menu</code> and <code>menuitem</code>  widget roles.</li>
-                  <li>Examples:
-                    <ul>
-                      <li><a href="http://fae.disability.illinois.edu" target="_example">Functional Accessibility Evaluator 2.0</a></li>
-                      <li><a href="http://citl.illinois.edu/" target="_example">Illinois Center for Innovation in Teaching &amp; Learning</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>Disclosure</th>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd></li>
-                  <li><kbd>space/enter</kbd></li>
-                </ul>
-              </td>
-              <td>
-                <a href="http://w3c.github.io/aria-practices/#disclosure" target="_specification">Disclosure Design Pattern</a>
-              </td>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd> moves into and out menubar.</li>
-                  <li><kbd>space</kbd> or <kbd>return</kbd> opens panel of links.</li>
-                  <li><kbd>tab</kbd> and cursor keys move focus between disclosed links.</li>
-                  <li>Examples:
-                    <ul>
-                      <li><a href="http://admissions.illinois.edu" target="_example">Illinois Admissions</a></li>
-                      <li><a href="http://education.illinois.edu/" target="_example">Illinois College of Education</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>Menubar</th>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd></li>
-                  <li><kbd>left arrow</kbd></li>
-                  <li><kbd>right arrow</kbd></li>
-                  <li><kbd>up arrow</kbd></li>
-                  <li><kbd>down arrow</kbd></li>
-                </ul>
-              </td>
-              <td>
-                <a href="http://w3c.github.io/aria-practices/#menubar" target="_specification">Menubar Design Pattern</a>
-              </td>
-              <td>
-                <ul>
-                  <li><kbd>tab</kbd> moves into and out of each disclosure button.</li>
-                  <li>Cursor keys move between pull down menus and menuitems.dri</li>
-                  <li>Examples:
-                    <ul>
-                      <li><a href="http://w3c.github.io/aria-practices/examples/menubar/menubar-1/menubar-1.html" target="_example">ARIA Authoring Practices Example</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-    </contents>
-  </slide>
-
- <slide>
-    <title>Design Example: Drop Down Navigation Links</title>
-    <contents>
-      <ul>
-        <li>Keyboard interaction dictates the ARIA roles</li>
-      </ul>
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Drop Down Navigation Links: Tab Key Operation</title>
-    <style>
-
-ul.example {
-  margin: 10px;
-  padding: 10px;
-  font-size: 110%;
-  list-style: none;
-  background-color: #EEEEEE;
-  height: 2.5em;
-}
-
-.popup {
-  display: block;
-  float: left;
-  position: relative;
-}
-
-nav > ul > li > a {
-  font-size: 110%;
-  padding: 4px;
-  padding-right: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-nav > ul > li > a:after {
-  content: url('images/down-arrow-brown.png');
-  padding-left: .25em;
-}
-
-nav > ul > li > ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 1.75em;
-  font-size: 110%;
-  list-style: none;
-  background-color: #ccddff;
-  left: -3000em;
-}
-
-nav > ul > li > ul > li {
-  margin: 0;
-  padding: 0;
-}
-
-nav > ul > li > ul > li > a,
-nav > ul > li > ul > li > a:visited {
-  display: block;
-  text-decoration: none;
-  padding: 4px;
-  background-color: #ccddff;
-  color: black;
-}
-
-/* focus and hover styling */
-
-nav > ul > li > a:hover {
-  background-color: #ccddff;
-}
-
-nav > ul > li > a:focus {
-  padding: 2px;
-  padding-right: 14px;
-  border: 2px solid black;
-  background-color: #ccddff;
-}
-
-nav > ul > li > ul > li > a:focus {
-  padding: 2px;
-  border: 2px solid black;
-  background-color: #ccddff;
-}
-
-    </style>
-    <contents>
-
-    <ul>
-      <li><kbd>tab</kbd> key provides navigation to all links in the navigation menu.</li>
-      <li>Links in the popup lists of links become visible when they receive focus.</li>
-      <li>Most basic and predictable keyboard model.</li>
-    </ul>
-
-     <div id="example">
-        <nav aria-label="primary">
-          <ul class="example">
-            <li class="popup">
-              <a href="#">About</a>
-              <ul>
-                <li>
-                  <a href="#overview">Overview</a>
-                </li>
-                <li>
-                  <a href="#admin">Administration</a>
-                </li>
-                <li >
-                  <a href="#facts">Facts</a>
-                </li>
-                <li>
-                  <a href="#tours" >Campus Tours</a>
-                </li>
-              </ul>
-            </li>
-            <li class="popup">
-              <a href="#">Admissions</a>
-              <ul>
-                <li>
-                  <a href="#apply">Apply</a>
-                </li>
-                <li>
-                  <a href="#tuition">Tuition</a>
-                </li>
-                <li >
-                  <a href="#signup">Sign Up</a>
-                </li>
-                <li role="separator"></li>
-                <li>
-                  <a href="#visit">Visit</a>
-                </li>
-                <li>
-                  <a href="#photo">Photo Tour</a>
-                </li>
-                <li>
-                  <a href="#connect">Connect</a>
-                </li>
-              </ul>
-            </li>
-            <li class="popup">
-              <a href="#">Academics</a>
-              <ul>
-                <li>
-                  <a href="#colleges">Colleges &amp; Schools</a>
-                </li>
-                <li>
-                  <a href="#programs">Programs of Study</a>
-                </li>
-                <li>
-                  <a href="#honors">Honors Programs</a>
-                </li>
-                <li>
-                  <a href="#online">Online Courses</a>
-                </li>
-                <li role="separator"></li>
-                <li>
-                  <a href="#explorer">Course Explorer</a>
-                </li>
-                <li>
-                  <a href="#register">Register for Class</a>
-                </li>
-                <li>
-                  <a href="#academic">Academic Calendar</a>
-                </li>
-                <li>
-                  <a href="#tanscripts">Transcripts</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <script>
-
-        var i, l;
-
-        var topLinks = document.querySelectorAll('nav > ul > li > a');
-
-        for (i = 0; i &lt; topLinks.length; i++) {
-          l = topLinks[i];
-
-          l.addEventListener('focus', function(event) {
-            var tgt = event.currentTarget;
-
-            if (tgt.nextElementSibling) {
-              tgt.nextElementSibling.style.left = "0";
-            }
-          });
-
-          l.addEventListener('blur', function(event) {
-            var tgt = event.currentTarget;
-
-            if (tgt.nextElementSibling) {
-              tgt.nextElementSibling.style.left = '-3000em';
-            }
-          });
-
-        }
-
-        var popupLinks = document.querySelectorAll('nav > ul > li > ul > li > a');
-
-        for (i = 0; i &lt; popupLinks.length; i++) {
-          l = popupLinks[i];
-
-          l.addEventListener('focus', function(event) {
-            var tgt = event.currentTarget;
-            tgt.parentNode.parentNode.style.left = '0';
-          });
-
-          l.addEventListener('blur', function(event) {
-            var tgt = event.currentTarget;
-            tgt.parentNode.parentNode.style.left = '-3000em';
-          });
-        }
-
-
-      </script>
-
-      <h2>HTML Code</h2>
-      <pre><code id="sc1"></code></pre>
-
-      <script>
-        sourceCode.add('sc1', 'example');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
-
-
-    </contents>
-  </slide>
-
-  <slide>
-    <title>Drop Down Navigation Links: ARIA Menu Button Pattern</title>
-    <style>
-
-ul.example {
-  margin: 10px;
-  padding: 10px;
-  font-size: 110%;
-  list-style: none;
-  background-color: #EEEEEE;
-}
-
-.menu_button {
-  position: relative;
-}
-
-
-a[role="button"] {
-  font-size: 110%;
-  padding: 4px;
-  padding-right: 14px;
-  text-decoration: none;
-  color: black;
-}
-
-a[role="button"]:after {
-  content: url('images/down-arrow-brown.png');
-  padding-left: 4px;
-}
-
-ul[role="menu"] {
-  margin: 0;
-  padding: 4px;
-  border: 1px solid black;
-  border-radius: 5px;
-  position: absolute;
-  font-size: 110%;
-
-  list-style: none;
-  background-color: #ccddff;
-  display: none;
-}
-
-ul[role="menu"] li {
-  margin: 0;
-  padding: 0;
-}
-
-ul[role="menu"] a[role="menuitem"],
-ul[role="menu"] a[role="menuitem"]:visited {
-  display: block;
-  text-decoration: none;
-  padding: 4px;
-  background-color: #ccddff;
-  color: black;
-}
-
-/* focus and hover styling */
-
-a[role="button"]:focus,
-a[role="button"]:hover {
-  padding: 2px;
-  padding-right: 12px;
-  border: 2px solid black;
-  background-color: #ccddff;
-}
-
-ul[role="menu"] a[role="menuitem"]:focus {
-  padding: 2px;
-  border: 2px solid black;
-  background-color: #ccddff;
-}
-
-ul[role="menu"] a[role="menuitem"]:hover{
-  background-color: #ccddff;
-}
-
-    </style>
-    <contents>
-
-    <ul>
-      <li><kbd>tab</kbd> key provides navigation betwen a set of menu buttons.</li>
-      <li><kbd>up</kbd> and <kbd>down</kbd> keys navigate links in popup menu.</li>
-      <li>Next step and visual affordances help people identify the popup menu of links.</li>
-    </ul>
-
-
-      <script src="js/Menubutton2.js" type="text/javascript"></script>
-      <script src="js/MenubuttonPopupMenuLinks.js" type="text/javascript"></script>
-      <script src="js/MenubuttonMenuItemLinks.js" type="text/javascript"></script>
-
-      <div id="example">
-        <nav aria-label="primary">
-          <ul class="example">
-            <li class="menu_button">
-              <a role="button" aria-haspopup="true" aria-controls="menu1" href="#">About</a>
-              <ul id="menu1" role="menu" aria-label="About">
-                <li role="none">
-                  <a role="menuitem" href="#overview">Overview</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#admin">Administration</a>
-                </li>
-                <li role="none">
-                  <a id="menubar113" role="menuitem" href="#facts">Facts</a>
-                </li>
-                <li>
-                  <a role="menuitem" href="#tours" >Campus
-                    Tours</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu_button">
-              <a role="button" aria-haspopup="true" aria-controls="menu2" href="#">Admissions</a>
-              <ul id="menu2" role="menu" aria-label="Admissions">
-                <li role="none">
-                  <a role="menuitem" href="#apply">Apply</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#tuition">Tuition</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#signup">Sign Up</a>
-                </li>
-                <li role="separator"></li>
-                <li role="none">
-                  <a role="menuitem" href="#visit">Visit</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#photo">Photo Tour</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#connect">Connect</a>
-                </li>
-              </ul>
-            </li>
-            <li  class="menu_button">
-              <a role="button" aria-haspopup="true" aria-controls="menu3" href="#">Academics</a>
-              <ul id="menu3" role="menu" aria-label="Academics">
-                <li role="none">
-                  <a role="menuitem" href="#colleges">Colleges &amp; Schools</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#programs">Programs of Study</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#honors">Honors Programs</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#online">Online Courses</a>
-                </li>
-                <li role="separator"></li>
-                <li role="none">
-                  <a role="menuitem" href="#explorer">Course Explorer</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#register">Register for Class</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#academic">Academic Calendar</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#tanscripts">Transcripts</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <script>
-        var mbs = document.querySelectorAll('a[role="button"]');
-
-        for (var i = 0; i &lt; mbs.length; i++) {
-          console.log('TEST: ' + i);
-          var mb = new Menubutton(mbs[i]);
-          mb.init();
-        }
-      </script>
-
-
-      <h2>HTML Code</h2>
-      <pre><code id="sc1"></code></pre>
-
-      <script>
-        sourceCode.add('sc1', 'example');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
-
-
-    </contents>
-  </slide>
-
-  <slide>
-    <stylesheet>css/menubar-navigation.css</stylesheet>
-    <title>Drop Down Navigation Links: ARIA Menubar Pattern</title>
-    <contents>
-
-    <ul>
-      <li><kbd>tab</kbd> key provides navigation into and out of menubar of links.</li>
-      <li><kbd>left</kbd>, <kbd>right</kbd>, <kbd>up</kbd> and <kbd>down</kbd> keys navigate links in popup menus.</li>
-      <li>Next step and visual affordances help people identify the popup menu of links.</li>
-    </ul>
-
-    <div id="example">
-      <nav aria-label="Mythical University">
-        <ul class="menubar-navigation" role="menubar" aria-label="Mythical University">
-          <li role="none">
-            <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">About</a>
-            <ul role="menu" aria-label="About">
-              <li role="none">
-                <a role="menuitem" href="#">Overview</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Administration</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#" >History</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Campus
-                  Tours</a>
-              </li>
-            </ul>
-          </li>
-          <li role="none">
-            <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Admissions</a>
-            <ul role="menu" aria-label="Admissions">
-              <li role="none">
-                <a role="menuitem" href="#">Apply</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Tuition</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Sign Up</a>
-              </li>
-              <li role="separator"></li>
-              <li role="none">
-                <a role="menuitem" href="#">Visit</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Photo Tour</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Connect</a>
-              </li>
-            </ul>
-          </li>
-          <li role="none">
-            <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Academics</a>
-            <ul role="menu" aria-label="Academics">
-              <li role="none">
-                <a role="menuitem" href="#">Colleges &amp; Schools</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Programs of Study</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Honors Programs</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Online Courses</a>
-              </li>
-              <li role="separator"></li>
-              <li role="none">
-                <a role="menuitem" href="#">Course Explorer</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Register for Class</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Academic Calendar</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Transcripts</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <script src="js/menubar-navigation.js" type="text/javascript"></script>
-
-      <h2>HTML Code</h2>
-      <pre><code id="sc1"></code></pre>
-
-      <script>
-        sourceCode.add('sc1', 'example');
-        sourceCode.make();
-      </script>
-
     </contents>
   </slide>
 

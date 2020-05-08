@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 16: Design Pattern: Menu Button</title>
+<title>Slide 16: New features in ARIA 1.2</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -43,12 +43,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 16 of 25</div>
+<div class="navbar-text pull-right">Slide 16 of 19</div>
 </div>
 </div>
 </nav>
@@ -56,27 +56,41 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Design Pattern: Menu Button</h1>
+<h1 id="h1_title" class="title">New features in ARIA 1.2</h1>
+<p>
+<a href="https://w3c.github.io/aria/">Working Draft of ARIA 1.2 Specification</a>
+</p>
 <ul>
-      
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/#menubutton" target="_specification">ARIA Authoring Practices: Menu Button</a>
-</li>
-      
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-actions.html">Example 1: Action Menu</a>
-</li>
-      
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html">Example 2: Navigation Menu</a>
-</li>
-      
-<li>
-<a href="https://www.w3.org/TR/wai-aria-practices/examples/menu-button//menu-button-actions-active-descendant.html">Example 3: Action Menu (<code>aria-activedescendant</code>)</a>
-</li>
-    
+        
+<li>HTML harmonization:
+          <ul>
+            
+<li>Define roles appropriate for every HTML element.</li>
+            
+<li>Assign default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
+            
+<li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
+          
 </ul>
-<iframe src="https://www.w3.org/TR/wai-aria-practices/#menubutton" title="ARIA Menubutton Example" width="98%" height="600px"></iframe>
+        
+</li>
+        
+<li>New ways to define an accessible name:
+          <ul>
+            
+<li>Encapsulation using the <code>label</code>role for a limited set of elements (e.g. <code>checkbox</code>, <code>radio</code> ...).</li>
+            
+<li>The <code>legend</code> role for the <code>group</code> and <code>radiogroup</code> roles.</li>
+          
+</ul>
+        
+</li>
+        
+<li>Combobox design pattern 1.2 that works with assistive technologies.</li>
+        
+<li>Accessible Object Model (AOM) to reflect ARIA properties.</li>
+      
+</ul>
 </div>
 <div class="col"></div>
 </div>

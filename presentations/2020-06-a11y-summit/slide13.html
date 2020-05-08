@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: Part 3: Keyboard Focus and hover styling</title>
+<title>Slide 13: Part 4: Synchronization of ARIA and visual states</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -19,7 +19,7 @@ fieldset legend {
 }
 
 label,
-div.checkbox {
+[role="checkbox"] {
      padding: 4px;
      width: 10em;
      display: block;
@@ -31,31 +31,31 @@ label input {
      margin-right: 0.5em;
 }
 
-div.checkbox span {
+[role="checkbox"] span {
      padding: 0.25em;
 }
 
-div.checkbox span:before {
+[role="checkbox"] span:before {
     content: '✗';
     color: red;
     padding-right: 0.125em;
 }
 
-div.checkbox.checked span:before {
+[role="checkbox"][aria-checked="true"] span:before {
     content: '✓';
     color: green;
     padding-right: 0.190em;
 }
 
 label.focus,
-div.checkbox:focus {
+[role="checkbox"]:focus {
   padding: 2px;
   border: 2px solid #999;
   background-color: #DDE;
 }
 
 label:hover,
-div.checkbox:hover {
+[role="checkbox"]:hover {
   background-color: #CCD;
 }
     </style>
@@ -93,12 +93,12 @@ div.checkbox:hover {
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 13 of 25</div>
+<div class="navbar-text pull-right">Slide 13 of 19</div>
 </div>
 </div>
 </nav>
@@ -106,30 +106,19 @@ div.checkbox:hover {
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 3: Keyboard Focus and hover styling</h1>
+<h1 id="h1_title" class="title">Part 4: Synchronization of ARIA and visual states</h1>
 <ul>
         
-<li>Keyboard <code>focus</code> and <code>hover</code> styling should be similar to to harmonize the look and feel of styling between interaction techniques.</li>
+<li>Using CSS attribute selectors and CSS <code>content</code> property to synchronize visual and aria states.</li>
         
-<li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
-        
-<li>
-<code>focus</code> styling should use a 2 pixel<code>border</code> or <code>outline</code> width to make the control with focus easy for users to see and track.</li>
-        
-<li>If the <code>border</code> technique is used the <code>border</code> must be removed when the widget does not have focus to support focus styling to change when users select operating system high contrast modes.</li>
-        
-<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of standard radio buttons and checkboxes by styling their labels.</li>
-        
-<li>Styling background color makes the focus change much easier to detect visually.</li>
+<li>Use of CSS <code>content</code> property supports high contrast browser settings, unike the use of CSS <code>background-image</code>.</li>
       
 </ul>
 <script id="script" type="text/javascript">
 function toggleCheckbox(node) {
- if (node.classList.contains('checked')) {
-  node.classList.remove('checked');
+ if (node.getAttribute('aria-checked') === 'true') {
   node.setAttribute('aria-checked', 'false');
  } else {
-  node.classList.add('checked');
   node.setAttribute('aria-checked', 'true');
  }
 }
@@ -161,9 +150,11 @@ function checkboxBlur(event) {
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-3/output/" target="_webedit">Part 3 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-4/output/" target="_webedit">Part 4 on WebEdit</a>
 </p>
 <div id="example">
+
+<h1>Part 4: Custom Checkbox Widget with synchronization of ARIA and visual states</h1>
 
 <fieldset>
     

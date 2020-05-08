@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 11: Part 1 Responding to the keyboard</title>
+<title>Slide 11: Part 2: Adding role, checked state and accessible name</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -46,7 +46,14 @@ div.checkbox.checked span:before {
     color: green;
     padding-right: 0.190em;
 }
-    </style>
+
+label:hover,
+.checkbox:hover {
+     padding: 0;
+     border: 2px solid #000;
+     background-color: #CCD;
+}
+</style>
 <stylesheet>
 <link rel="stylesheet" type="text/css" href="">
 </stylesheet>
@@ -81,12 +88,12 @@ div.checkbox.checked span:before {
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 11 of 25</div>
+<div class="navbar-text pull-right">Slide 11 of 19</div>
 </div>
 </div>
 </nav>
@@ -94,20 +101,26 @@ div.checkbox.checked span:before {
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 1 Responding to the keyboard</h1>
+<h1 id="h1_title" class="title">Part 2: Adding role, checked state and accessible name</h1>
 <ul>
         
-<li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
+<li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
         
-<li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
+<li>Adding <code>aria-checked</code> attribute.</li>
+        
+<li>Accessible name from text content.</li>
+        
+<li>Removing state character (e.g. <span style="color: red">✗</span>) from accessible name using <code>aria-hidden</code>.</li>
       
 </ul>
 <script id="script" type="text/javascript">
 function toggleCheckbox(node) {
  if (node.classList.contains('checked')) {
   node.classList.remove('checked');
+  node.setAttribute('aria-checked', 'false');
  } else {
   node.classList.add('checked');
+  node.setAttribute('aria-checked', 'true');
  }
 }
 
@@ -126,10 +139,11 @@ function keydownCheckbox(event) {
     event.stopPropagation();
     event.preventDefault();
   }
-}      </script>
+}
+      </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-1/output/" target="_webedit">Part 1 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-2/output/" target="_webedit">Part 2 on WebEdit</a>
 </p>
 <div id="example">
 
@@ -147,15 +161,15 @@ function keydownCheckbox(event) {
         Onion
     </label>
     
-<div class="checkbox" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
       
-<span></span>
+<span aria-hidden="true"></span>
         Mushrooms
     </div>
     
-<div class="checkbox" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+<div class="checkbox" role="checkbox" aria-checked="false" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
       
-<span></span>
+<span aria-hidden="true"></span>
           Spinach
     </div>
   

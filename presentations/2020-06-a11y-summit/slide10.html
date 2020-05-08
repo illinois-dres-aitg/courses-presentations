@@ -2,13 +2,51 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 10: Basic Screen Reader Commands</title>
+<title>Slide 10: Part 1 Responding to the keyboard</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
 <script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
+<style id="style" type="text/css">
+fieldset {
+     border-color: #EEE;
+     width: 10em;
+}
+
+fieldset legend {
+     font-size: 100%;
+}
+
+label,
+div.checkbox {
+     padding: 2px;
+     width: 10em;
+     display: block;
+     margin-top: 0.25em;
+     margin-bottom: 0.25em;
+}
+
+label input {
+     margin-right: 0.5em;
+}
+
+div.checkbox span {
+     padding: 0.25em;
+}
+
+div.checkbox span:before {
+    content: '✗';
+    color: red;
+    padding-right: 0.125em;
+}
+
+div.checkbox.checked span:before {
+    content: '✓';
+    color: green;
+    padding-right: 0.190em;
+}
+    </style>
 <stylesheet>
 <link rel="stylesheet" type="text/css" href="">
 </stylesheet>
@@ -43,12 +81,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide25.html">
+<a id="ID_SLIDE_LAST" href="slide19.html">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 10 of 25</div>
+<div class="navbar-text pull-right">Slide 10 of 19</div>
 </div>
 </div>
 </nav>
@@ -56,81 +94,93 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Basic Screen Reader Commands</h1>
-<table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
-          
-<thead>
-            
-<tr>
-              
-<th>Action</th>
-              <th>JAWS (Windows)</th>
-              <th>NVDA (Windows)</th>
-              <th>Voice Over (OS X)</th>
-            
-</tr>
-          
-</thead>
-          
-<tbody>
-            
-<tr>
-              
-<td>Next link, form control or widget</td>
-              <td>Tab</td>
-              <td>Tab</td>
-              <td>Tab</td>
-            
-</tr>
-            
-<tr>
-              
-<td>Previous link, form control or widget</td>
-              <td>Shift+Tab</td>
-              <td>Shift+Tab</td>
-              <td>Shift+Tab</td>
-            
-</tr>
-            
-<tr>
-              
-<td>Re-read current item</td>
-              <td>Insert+Numpad 5</td>
-              <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
-              <td>Command+Option+Space</td>
-            
-</tr>
-            
-<tr>
-              
-<td>More information on item</td>
-              <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
-              <td>NVDA+D</td>
-              <td>Control+Option+F4</td>
-            
-</tr>
-            
-<tr>
-              
-<td>List of Links</td>
-              <td>Insert+F7</td>
-              <td>NVDA+F7</td>
-              <td>Command+Option+U, then left/right arrow to list of links</td>
-            
-</tr>
-            
-<tr>
-              
-<td>Detailed Keyboard Information</td>
-              <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
-              <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
-              <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
-            
-</tr>
-          
-</tbody>
+<h1 id="h1_title" class="title">Part 1 Responding to the keyboard</h1>
+<ul>
         
-</table>
+<li>Adding <code>tabindex="0"</code> to make part of tab order of the page.</li>
+        
+<li>Add <code>onKeyDown</code> event handler to toggle checkbox when <kbd>space</kbd> key is pressed.</li>
+      
+</ul>
+<script id="script" type="text/javascript">
+function toggleCheckbox(node) {
+ if (node.classList.contains('checked')) {
+  node.classList.remove('checked');
+ } else {
+  node.classList.add('checked');
+ }
+}
+
+function clickCheckbox(event) {
+ var cb = event.currentTarget;
+ toggleCheckbox(cb);
+ event.stopPropagation();
+ event.preventDefault();
+}
+
+function keydownCheckbox(event) {
+  var cb = event.currentTarget;
+  if (event.key === ' ') {
+    toggleCheckbox(cb);
+
+    event.stopPropagation();
+    event.preventDefault();
+  }
+}      </script>
+<h2>Example</h2>
+<p>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-1/output/" target="_webedit">Part 1 on WebEdit</a>
+</p>
+<div id="example">
+
+<fieldset>
+    
+<legend>
+        Pizza Toppings
+    </legend>
+    <label>
+      <input type="checkbox">
+        Green pepper
+     </label>
+    <label>
+      <input type="checkbox">
+        Onion
+    </label>
+    
+<div class="checkbox" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+      
+<span></span>
+        Mushrooms
+    </div>
+    
+<div class="checkbox" tabindex="0" onclick="clickCheckbox(event)" onkeydown="keydownCheckbox(event)">
+      
+<span></span>
+          Spinach
+    </div>
+  
+</fieldset>
+     
+</div>
+<h2>HTML Source Code</h2>
+<pre>
+<code id="sc1"></code>
+</pre>
+<h2>CSS Source Code</h2>
+<pre>
+<code id="sc2"></code>
+</pre>
+<h2>Javascript Source Code</h2>
+<pre>
+<code id="sc3"></code>
+</pre>
+<script type="text/javascript">
+        sourceCode.add('sc1', 'example');
+        sourceCode.add('sc2', 'style');
+        sourceCode.add('sc3', 'script');
+        sourceCode.make();
+        hljs.initHighlightingOnLoad();
+      </script>
 </div>
 <div class="col"></div>
 </div>
