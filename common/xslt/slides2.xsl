@@ -134,6 +134,7 @@
 
             <xsl:call-template name="head">
               <xsl:with-param name="style" select = "style/." />
+              <xsl:with-param name="stylesheet" select = "stylesheet/." />
             </xsl:call-template>
 
           </xsl:element>
@@ -204,6 +205,7 @@
 
   <xsl:template name="head" >
     <xsl:param name = "style" />
+    <xsl:param name = "stylesheet" />
 
     <xsl:if test="meta">
       <xsl:element name="meta">
@@ -231,6 +233,14 @@
         <xsl:attribute name="id">style</xsl:attribute>
         <xsl:attribute name="type">text/css</xsl:attribute>
         <xsl:value-of select="$style"/>
+      </xsl:element>
+
+      <xsl:element name="stylesheet">
+      <xsl:element name="link">
+        <xsl:attribute name="rel">stylesheet</xsl:attribute>
+        <xsl:attribute name="type">text/css</xsl:attribute>
+        <xsl:attribute name="href"><xsl:value-of select="$stylesheet"/></xsl:attribute>
+      </xsl:element>
       </xsl:element>
 
   </xsl:template>
