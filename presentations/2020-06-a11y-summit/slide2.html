@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,11 +7,8 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide1.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide1.html" title="Slide 1">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide3.html">
+<a id="ID_SLIDE_NEXT" href="slide3.html" title="Slide 3">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 2 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide2">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 2 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -104,9 +109,43 @@
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+The basic purpose of aria which is to describe the semantics and behavior of webpages that does this in several ways.
+Some of the important terms you will learn about today include:
+The most basic feature of ARIA is the role attribute which describes to users of screen readers the type of keyboard interaction and the potential properties and states of a custom widget.
+When people first look at the aria specification, they see all of these familiar roles like &ldquo;menu&rdquo;, &ldquo;tab panel&rdquo;, &ldquo;dialog&rdquo; and &ldquo;navigation&rdquo;.
+They start looking around their webpage and feel that I have these things in my webpage and they start sprinkling the roles throughout their webpage thinking that&rsquo;ll be more accessible.
+Actually the page will be less accessible, since the keyboard interaction associated with these roles most likely is not supported.
+Using roles that do not actually describe the behavior of a widget is analogous to someone opening up a door to what they think is a bathroom, stepping in and falling into a swimming pool.
+The screen reader user will be disoriented.
+For example, you use a &ldquo;menu&rdquo; role, but it is just a list of tab-able links, the cursor keys don&rsquo;t work you just pushed the user into the pool.
+Properties and states attributes communicate information about a widget being expanded, or if can open a pop-up menu, or a checkbox being checked or unchecked, more on that later.
+An important feature that is often not understood about using ARIA roles, properties and states is that the translation of this information to local languages is handled by the browser and operating system.  This is an important feature when websites are used by people from all around the world.
+Widgets and many structural roles need a label or accessible name.   ARIA defines how the accessible name is calculated.  For example, a role of &ldquo;textbox&rdquo; tells the user they can enter text, but the label &ldquo;name&rdquo; tells them this textbox is for entering your name.
+There are other features for describing relationships between widgets and to identify groups of related content or controls.  When relationships and grouping are properly used screen readers can provide navigation features to allow users to more efficiently ignore and find content of interest to them.  When not properly used pages become more confusing and difficult to navigate.
+The primary adage for people to developers not familiar with ARIA is &ldquo;No ARIA is better than bad ARIA&rdquo;.
+ARIA does not directly interact with assistive technologies like screen readers.
+ARIA only controls how information about a web page is communicate to screen readers through operating system accessibility APIs.
+The current ARIA specification provides accessibility API mappings for ATK/AT-SPI (Linux/Unix), Microsoft Active Accessibility (MSAA) + IAccessible2 for Windows 10, Microsoft UI Automate for Windows 10 and the MacOS Accessibility API.
+
+
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,11 +7,8 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,27 +26,34 @@
                       </a>
 </li>
 <li class="disabled">
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="On First Slide">
                         First
                       </a>
 </li>
 <li class="disabled">
-<a id="ID_SLIDE_PREVIOUS" href="#">
+<a id="ID_SLIDE_PREVIOUS" href="#" title="On First Slide">
                         Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide2.html">
+<a id="ID_SLIDE_NEXT" href="slide2.html" title="Slide 2">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 1 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide1">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 1 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -76,9 +80,47 @@
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+Hello my name is Jon Gunderson.
+
+I work at the University of Illinois in disability services.
+
+I&rsquo;ve been working in the area of technology and disability for over 40 years and specifically in web technologies for 20 years.
+
+I&rsquo;m a member of the aria working group and a contributor to the aria authoring practices.
+
+Thank you for the opportunity to talk about some of the basics of aria technologies.
+
+There&rsquo;s a lot of misunderstandings about how aria works and how to use it to make webpages more accessible and compliant with W3C Web content accessibility standards.
+
+Today were going to talk about some the basic principles associated with aria.
+
+We are going to build a simple custom checkbox widget using some of these principles and show how it changes the user experience for people using screen readers.
+
+I&rsquo;ll also be talking about some the new features that are available in up coming release of aria 1.2.
+
+I will also reference the aria authoring practices which I think is an important resource for anybody trying to understand how to use aria to make websites more accessible.
+
+At the bottom of the slide is a URL to the HTML slides of the this presentation.
+
+The URL publicly available and I encourage you to follow along with the HTML slides directly and try out some the examples during the presenation.
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

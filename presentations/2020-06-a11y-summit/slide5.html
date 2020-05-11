@@ -1,17 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Tabindex and Keyboard Focus</title>
+<title>Slide 5: Accessible Name Calculation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide4.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide4.html" title="Slide 4">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide6.html">
+<a id="ID_SLIDE_NEXT" href="slide6.html" title="Slide 6">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 5 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide5">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 5 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -56,108 +61,226 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Tabindex and Keyboard Focus</h1>
+<h1 id="h1_title" class="title">Accessible Name Calculation</h1>
 <ul>
-        
+          
 <li>
-            
-<a href="https://www.w3.org/TR/html4/interact/forms.html#adef-tabindex" target="_specification">
-              HTM4 tabindex requirements
-            </a>
-        
+<a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a>
 </li>
+          
+<li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
         
-<li>
-            
-<a href="https://www.w3.org/TR/html5/editing.html#focus" target="_specification">
-              HTM5 focus and tabindex requirements
-            </a>
-        
-</li>
-       
-<li>Actively define visual focus style, since the default browser visual focus styling of focus is typically hard to discern.</li>
-      
 </ul>
-<h2 id="tabindex_values">Tabindex Values</h2>
-<table class="table table-striped table-hover" aria-label="tabindex_values">
-        
+<h2 id="heading_ant">Accessible Name Techniques</h2>
+<table class="table table-striped table-hover" aria-labelledby="heading_ant">
+          
 <thead>
-          
-<tr>
             
-<th>Value</th>
-            <th>Description</th>
-          
+<tr>
+              
+<th>Priority</th>
+              <th>Technique</th>
+              <th>Description</th>
+            
 </tr>
-        
+          
 </thead>
-        
+          
 <tbody>
-          
-<tr>
             
-<td>-1</td>
-            <td>
+<tr>
               
+<td>1</td>
+              <td><code>aria-labelledby</code></td>
+              <td>
+                
 <ul>
+                  
+<li>The <code>aria-labelledby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
+                  
+<li>Text content of referenced elements are concatenated to compute the accessible name.</li>
+                  
+<li>References typically identify visible text on the screen in visual proximity to the control.</li>
                 
-<li>Support keyboard focus/blur events.</li>
-                
-<li>Not included in the tab order of the page.</li>
-              
 </ul>
-            
+              
 </td>
-          
-</tr>
-          
-<tr>
             
-<td>0</td>
-            <td>
+</tr>
+            
+<tr>
               
+<td>2</td>
+              <td><code>aria-label</code></td>
+              <td>
+                
 <ul>
+                  
+<li>The <code>aria-label</code> attribute text content defines the accessible name.</li>
                 
-<li>Support keyboard focus/blur events.</li>
-                
-<li>Included in the tab order of the page.</li>
-              
 </ul>
-            
-</td>
-          
-</tr>
-          
-<tr>
-            
-<td>&gt; 0</td>
-            <td>
               
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>3</td>
+              <td>Encapsulation using the <code>label</code> element<br>
+<span class="new">New in ARIA 1.2</span></td>
+              <td>
+                
 <ul>
-                
-<li>Support keyboard focus/blur events.</li>
-                
-<li>Defines the tab order of the page.</li>
-                
+                  
+<li>Allows the use of the HTML <code>label</code> element to define an accessible name for the following roles:
+                    <ul>
+                      
 <li>
-<strong>Note:</strong> This technique is not recommended due to browser incompatibilities and unpredicatable focus behaviors.</li>
-              
+<code>checkbox</code>
+</li>
+                      
+<li>
+<code>listbox</code>
+</li>
+                      
+<li>
+<code>meter</code>
+</li>
+                      
+<li>
+<code>radio</code>
+</li>
+                      
+<li>
+<code>searchbox</code>
+</li>
+                      
+<li>
+<code>spinbutton</code>
+</li>
+                      
+<li>
+<code>switch</code>
+</li>
+                      
+<li>
+<code>textbox</code>
+</li>
+                    
 </ul>
-            
+                  
+</li>
+                
+</ul>
+              
 </td>
-          
+            
 </tr>
-        
+            
+<tr>
+              
+<td>4</td>
+              <td>The <code>legend</code> element for grouping roles<br>
+<span class="new">New in ARIA 1.2</span></td>
+              <td>
+                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
+              </td>
+            
+</tr>
+            
+<tr>
+              
+<td>5</td>
+              <td>text content</td>
+              <td>
+                
+<ul>
+                  
+<li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
+                  
+<li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
+                  
+<li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>6</td>
+              <td><code>title</code></td>
+              <td>
+                
+<ul>
+                  
+<li>If no other source of an accessible name is found and the element has a <code>title</code> attribute, the content of the <code>title</code> attribute will used to define the accessible name.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
 </tbody>
-      
+        
 </table>
 </div>
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+      Most ARIA roles need an accessible name or sometimes referred to as a label in HTML.
+
+      Using text on the screen are typically the best sources for the accessible name for controls and widgets, since the text will be the same for both the person using the graphical rendering and the person using a screen reader.
+
+      For example, in the checkbox example we will be going through shortly we will be use the text content of the DIV element for the accessible name.
+
+      This slide provides an overview of the different techniques that can use used to define an accessible name.
+
+      Browsers will first look for an aria-labelledby attribute.
+
+      Aria-labelledby attribute uses ID references to point to text on the web page to create the accessible name.
+
+      If more than one ID is provided the text is concatenated to compute the accessible name.
+
+      This is the most complex way to generate the accessible name and can also be used to include values of other controls and widgets on the page.
+
+      If aria-labelledby is not found the next item the browser will look for is the aria-label attribute.
+
+      In this case the text content of the aria-label attribute is used as a the accessible name.
+
+      If the aria-label attribute is not found and starting with the release of ARIA 1.2 the browser will look for a label role for a small subset of widget roles that can be labeled using encapsulation.
+
+      The label role will typically be ddefined using the standard HTML LABEL element.
+
+      For the group and radiogroup roles, the LEGEND element can be used to define an accessible name starting in ARIA 1.2.
+
+      Some widget roles like checkbox in our example today, can be labeled use the child text content.
+
+      If no other accessible name has been found for a widget and the element has a title attribute, the content of the title attribute will be used for the accessible name.
+
+      The title attribute is usually not considered a good source for the accessible name, since it is used by many browser to render a tooltip.  Tooltips are generally used more to provide help than a label, so therefore usually not too good as a label.
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

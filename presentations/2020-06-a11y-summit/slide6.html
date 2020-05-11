@@ -1,17 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 6: Accessible Name Calculation</title>
+<title>Slide 6: Accessible Description Calculation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide5.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide5.html" title="Slide 5">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide7.html">
+<a id="ID_SLIDE_NEXT" href="slide7.html" title="Slide 7">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 6 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide6">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 6 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -56,17 +61,19 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Accessible Name Calculation</h1>
+<h1 id="h1_title" class="title">Accessible Description Calculation</h1>
 <ul>
           
 <li>
 <a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a>
 </li>
           
-<li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
+<li>Accessible description provides more information about a form control, link or aria widget.</li>
+          
+<li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
         
 </ul>
-<h2 id="heading_ant">Accessible Name Techniques</h2>
+<h2 id="heading_ant">Accessible Description Techniques</h2>
 <table class="table table-striped table-hover" aria-labelledby="heading_ant">
           
 <thead>
@@ -86,16 +93,16 @@
 <tr>
               
 <td>1</td>
-              <td><code>aria-labelledby</code></td>
+              <td><code>aria-describedby</code></td>
               <td>
                 
 <ul>
                   
-<li>The <code>aria-labelledby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
+<li>The <code>aria-describedby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
                   
-<li>Text content of referenced elements are concatenated to compute the accessible name.</li>
+<li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
                   
-<li>References typically identify visible text on the screen in visual proximity to the control.</li>
+<li>Designed to reference visible text on the screen, like instructions and error feedback.</li>
                 
 </ul>
               
@@ -106,113 +113,24 @@
 <tr>
               
 <td>2</td>
-              <td><code>aria-label</code></td>
-              <td>
-                
-<ul>
-                  
-<li>The <code>aria-label</code> attribute text content defines the accessible name.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>3</td>
-              <td>Encapsulation using the <code>label</code> element<br>
+              <td><code>aria-description</code>
+<br>
 <span class="new">New in ARIA 1.2</span></td>
               <td>
-                
-<ul>
-                  
-<li>Allows the use of the HTML <code>label</code> element to define an accessible name for the following roles:
-                    <ul>
-                      
-<li>
-<code>checkbox</code>
-</li>
-                      
-<li>
-<code>listbox</code>
-</li>
-                      
-<li>
-<code>meter</code>
-</li>
-                      
-<li>
-<code>radio</code>
-</li>
-                      
-<li>
-<code>searchbox</code>
-</li>
-                      
-<li>
-<code>spinbutton</code>
-</li>
-                      
-<li>
-<code>switch</code>
-</li>
-                      
-<li>
-<code>textbox</code>
-</li>
-                    
-</ul>
-                  
-</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>4</td>
-              <td>The <code>legend</code> element for grouping roles<br>
-<span class="new">New in ARIA 1.2</span></td>
-              <td>
-                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
+                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
               </td>
             
 </tr>
             
 <tr>
               
-<td>5</td>
-              <td>text content</td>
-              <td>
-                
-<ul>
-                  
-<li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
-                  
-<li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
-                  
-<li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
-                
-</ul>
-              
-</td>
-            
-</tr>
-            
-<tr>
-              
-<td>6</td>
+<td>3</td>
               <td><code>title</code></td>
               <td>
                 
 <ul>
                   
-<li>If no other source of an accessible name is found and the element has a <code>title</code> attribute, the content of the <code>title</code> attribute will used to define the accessible name.</li>
+<li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
                 
 </ul>
               
@@ -227,9 +145,38 @@
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+      The accessible description calculation is similar to accessible name, but there are fewer options.
+
+      The description of a widget is typically spoken by a screen reader last after role, accessible name, and any properties and state information.
+
+      Screen reader also can configure their screen reader to not render most descriptions if they find they are a distraction or not very helpful on a web page.
+
+      Similar to aria-labelledby there is an aria-describedby that uses the same algorithm as aria-labelledby, but used to to identify a description.
+
+      Browsers will look for the aria-describedby attribute first.
+
+      If there is not aria-describedby attribute, in the release of ARIA 1.2 there is a new aria-description attribute that can be used, similar to aria-label.
+
+      Last the browser will use the title attribute to define a description, if it is not being used for the accessible name.
+
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

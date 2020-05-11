@@ -331,12 +331,6 @@
 
       </redirect:write>
 
-      <xsl:variable name="fname">transcript.html</xsl:variable>
-
-      <redirect:write select="$fname">
-
-      </redirect:write>
-
     </xsl:if>
 
   </xsl:template>
@@ -483,7 +477,7 @@
 
         <xsl:element name="nav">
           <xsl:attribute name="id">nav</xsl:attribute>
-          <xsl:attribute name="class">navbar navbar-default navbar-fixed-top</xsl:attribute>
+          <xsl:attribute name="class">navbar navbar-default</xsl:attribute>
 
           <xsl:element name="div">
             <xsl:attribute name="class">container</xsl:attribute>

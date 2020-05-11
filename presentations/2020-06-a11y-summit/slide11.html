@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 11: Part 2: Adding role, checked state and accessible name</title>
+<title>Slide 11: Part 3: Keyboard Focus and hover styling</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style">
 fieldset {
      border-color: #EEE;
      width: 10em;
@@ -20,7 +20,7 @@ fieldset legend {
 
 label,
 div.checkbox {
-     padding: 2px;
+     padding: 4px;
      width: 10em;
      display: block;
      margin-top: 0.25em;
@@ -47,16 +47,18 @@ div.checkbox.checked span:before {
     padding-right: 0.190em;
 }
 
-label:hover,
-.checkbox:hover {
-     padding: 0;
-     border: 2px solid #000;
-     background-color: #CCD;
+label.focus,
+div.checkbox:focus {
+  padding: 2px;
+  border: 2px solid #999;
+  background-color: #DDE;
 }
-</style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+
+label:hover,
+div.checkbox:hover {
+  background-color: #CCD;
+}
+    </style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -74,26 +76,34 @@ label:hover,
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide10.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide10.html" title="Slide 10">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide12.html">
+<a id="ID_SLIDE_NEXT" href="slide12.html" title="Slide 12">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 11 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide11">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 11 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -101,16 +111,21 @@ label:hover,
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Part 2: Adding role, checked state and accessible name</h1>
+<h1 id="h1_title" class="title">Part 3: Keyboard Focus and hover styling</h1>
 <ul>
         
-<li>Adding <code>role="checkbox"</code> to make part of tab order of the page.</li>
+<li>Keyboard <code>focus</code> and <code>hover</code> styling should be similar to to harmonize the look and feel of styling between interaction techniques.</li>
         
-<li>Adding <code>aria-checked</code> attribute.</li>
+<li>Recommend <code>focus</code> styling has a border and <code>hover</code> does not.</li>
         
-<li>Accessible name from text content.</li>
+<li>
+<code>focus</code> styling should use a 2 pixel<code>border</code> or <code>outline</code> width to make the control with focus easy for users to see and track.</li>
         
-<li>Removing state character (e.g. <span style="color: red">✗</span>) from accessible name using <code>aria-hidden</code>.</li>
+<li>If the <code>border</code> technique is used the <code>border</code> must be removed when the widget does not have focus to support focus styling to change when users select operating system high contrast modes.</li>
+        
+<li>Need to use <code>onfocus</code> and <code>onblur</code> events to create focus styling of standard radio buttons and checkboxes by styling their labels.</li>
+        
+<li>Styling background color makes the focus change much easier to detect visually.</li>
       
 </ul>
 <script id="script" type="text/javascript">
@@ -140,10 +155,18 @@ function keydownCheckbox(event) {
     event.preventDefault();
   }
 }
+
+function checkboxFocus(event) {
+  event.currentTarget.parentElement.classList.add('focus');
+}
+
+function checkboxBlur(event) {
+  event.currentTarget.parentElement.classList.remove('focus');
+}
       </script>
 <h2>Example</h2>
 <p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-2/output/" target="_webedit">Part 2 on WebEdit</a>
+<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-part-3/output/" target="_webedit">Part 3 on WebEdit</a>
 </p>
 <div id="example">
 
@@ -153,11 +176,11 @@ function keydownCheckbox(event) {
         Pizza Toppings
     </legend>
     <label>
-      <input type="checkbox">
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
         Green pepper
      </label>
     <label>
-      <input type="checkbox">
+      <input type="checkbox" onfocus="checkboxFocus(event)" onblur="checkboxBlur(event)">
         Onion
     </label>
     
@@ -199,9 +222,25 @@ function keydownCheckbox(event) {
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="notranscript">
+                              No transcript found for this slide.
+                            </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

@@ -1,17 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 4: Accessible Rich Internet Applications (ARIA) Basics</title>
+<title>Slide 4: Tabindex and Keyboard Focus</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide3.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide3.html" title="Slide 3">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide5.html">
+<a id="ID_SLIDE_NEXT" href="slide5.html" title="Slide 5">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 4 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide4">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 4 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -56,30 +61,132 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Accessible Rich Internet Applications (ARIA) Basics</h1>
-<p>The next set of slides will cover the importance of the following HTML and ARIA features:</p>
+<h1 id="h1_title" class="title">Tabindex and Keyboard Focus</h1>
 <ul>
         
-<li>Setting <code>tabindex</code> to enable focus events on elements.</li>
+<li>
+            
+<a href="https://www.w3.org/TR/html4/interact/forms.html#adef-tabindex" target="_specification">
+              HTM4 tabindex requirements
+            </a>
         
-<li>Keyboard focus styling to make keyboard focus visible.</li>
+</li>
         
-<li>ARIA <code>roles</code> for describing interactive behaviors and identify document sections.</li>
+<li>
+            
+<a href="https://www.w3.org/TR/html5/editing.html#focus" target="_specification">
+              HTM5 focus and tabindex requirements
+            </a>
         
-<li>Computation of accessible names for widget and structural roles.</li>
-        
-<li>ARIA properties and states.</li>
-        
-<li>Computation of accessible descriptions for widget roles for instructions and error feedback.</li>
+</li>
+       
+<li>Actively define visual focus style, since the default browser visual focus styling of focus is typically hard to discern.</li>
       
 </ul>
+<h2 id="tabindex_values">Tabindex Values</h2>
+<table class="table table-striped table-hover" aria-label="tabindex_values">
+        
+<thead>
+          
+<tr>
+            
+<th>Value</th>
+            <th>Description</th>
+          
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>-1</td>
+            <td>
+              
+<ul>
+                
+<li>Support keyboard focus/blur events.</li>
+                
+<li>Not included in the tab order of the page.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td>0</td>
+            <td>
+              
+<ul>
+                
+<li>Support keyboard focus/blur events.</li>
+                
+<li>Included in the tab order of the page.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+          
+<tr>
+            
+<td>&gt; 0</td>
+            <td>
+              
+<ul>
+                
+<li>Support keyboard focus/blur events.</li>
+                
+<li>Defines the tab order of the page.</li>
+                
+<li>
+<strong>Note:</strong> This technique is not recommended due to browser incompatibilities and unpredicatable focus behaviors.</li>
+              
+</ul>
+            
+</td>
+          
+</tr>
+        
+</tbody>
+      
+</table>
 </div>
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+Tabindex is an important feature for identifying which element on the page can receive keyboiard focus and keyboard events.
+For example if I am building a web application and using DIV element to build a interactive menu with Javascript and CSS, I need to use tabindex to make the menu part of the tab sequence of the page and to allow keyboard events to change the menu selection.
+Tabindex values of 0 are used to make elements part of the tab sequence of the page.
+Tabindex values of -1 allow an element to receive keyboard focus and to process keyboard events, but the element is not included in the tabindex of a page.
+Sometimes an element, like an Anchor or link element, which Is normally part of the tab sequence of the page will be used in a more complex tree or menu widget.
+In this case we want to make sure the the link is not part of the tabindex of the web page by we setting its tabindex value to -1.
+The only think I have to say about tabindex values besides 0 and -1 is one is don&rsquo;t&rsquo; do it!
+There are many bad things that can happen and not very much potential benefit to using tabindex values greater than 0.
+I have never used a tabindex value greater than 0 in my 20 years of web development and we don&rsquo;t have time in this presentation to do a deeper dive.
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

@@ -1,66 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: Example Widget: Inaccessible Custom Checkbox</title>
+<title>Slide 8: Basic Screen Reader Commands</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css">
-fieldset {
-     border-color: #EEE;
-     width: 10em;
-}
-
-fieldset legend {
-     font-size: 100%;
-}
-
-label,
-div.checkbox {
-     padding: 2px;
-     width: 10em;
-     display: block;
-     margin-top: 0.25em;
-     margin-bottom: 0.25em;
-}
-
-label input {
-     margin-right: 0.5em;
-}
-
-div.checkbox span {
-     padding: 0.25em;
-     margin-right: 0.25em;
-}
- div.checkbox span:before {
-     content: '✗';
-     color: red;
-}
-
-div.checkbox.checked span {
-  margin-right: 0.375em;
-}
-
-div.checkbox.checked span:before {
-     content: '✓';
-     color: green;
-     font-size: 90%;
-}
- label {
-}
- label:hover,
-.checkbox:hover {
-     padding: 0;
-     border: 2px solid #000;
-     background-color: #CCD;
-}
-    </style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -78,26 +26,34 @@ div.checkbox.checked span:before {
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide7.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide7.html" title="Slide 7">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide9.html">
+<a id="ID_SLIDE_NEXT" href="slide9.html" title="Slide 9">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide8">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 8 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -105,98 +61,110 @@ div.checkbox.checked span:before {
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Example Widget: Inaccessible Custom Checkbox</h1>
-<h2>Accessibility Issues</h2>
-<ul>
-      
-<li>Keyboard support</li>
-      
-<li>Keyboard focus styling</li>
-      
-<li>Role information</li>
-      
-<li>Accessible name</li>
-      
-<li>State of checkbox</li>
-     
-</ul>
-<h2>Example</h2>
-<p>
-<a href="https://webedit.disability.illinois.edu/user/jongund/checkbox-inaccessible/output/" target="_webedit">Checkbox example on WebEdit</a>
-</p>
-<script id="script">
-function toggleCheckbox(node) {
- if (node.classList.contains('checked')) {
-  node.classList.remove('checked');
- } else {
-  node.classList.add('checked');
- }
-}
-
-function clickCheckbox(event) {
- var cb = event.currentTarget;
- toggleCheckbox(cb);
- event.stopPropagation();
- event.preventDefault();
-}
-     </script>
-<div id="example">
-      
-<fieldset>
+<h1 id="h1_title" class="title">Basic Screen Reader Commands</h1>
+<table class="table table-striped table-hover" aria-label="Basic Screen Reader Commands">
         
-<legend>
-            Pizza Toppings
-        </legend>
-        <label>
-          <input type="checkbox">
-            Green pepper
-         </label>
-        <label>
-          <input type="checkbox">
-            Onion
-        </label>
-        
-<div class="checkbox" onclick="clickCheckbox(event)">
+<thead>
           
-<span></span>
-            Mushrooms
-        </div>
-        
-<div class="checkbox" onclick="clickCheckbox(event)">
+<tr>
+            
+<th>Action</th>
+            <th>JAWS (Windows)</th>
+            <th>NVDA (Windows)</th>
+            <th>Voice Over (OS X)</th>
           
-<span></span>
-            Spinach
-        </div>
+</tr>
+        
+</thead>
+        
+<tbody>
+          
+<tr>
+            
+<td>Next link, form control or widget</td>
+            <td>Tab</td>
+            <td>Tab</td>
+            <td>Tab</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Previous link, form control or widget</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+            <td>Shift+Tab</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Re-read current item</td>
+            <td>Insert+Numpad 5</td>
+            <td>NVDA+Numpad 5 or NVDA+Shift+O</td>
+            <td>Command+Option+Space</td>
+          
+</tr>
+          
+<tr>
+            
+<td>More information on item</td>
+            <td>Insert+SHIFT+F1 and Insert+Control+Shift+F1</td>
+            <td>NVDA+D</td>
+            <td>Control+Option+F4</td>
+          
+</tr>
+          
+<tr>
+            
+<td>List of Links</td>
+            <td>Insert+F7</td>
+            <td>NVDA+F7</td>
+            <td>Command+Option+U, then left/right arrow to list of links</td>
+          
+</tr>
+          
+<tr>
+            
+<td>Detailed Keyboard Information</td>
+            <td><a href="http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm">JAWS Keyboard Documentation</a></td>
+            <td><a href="http://www.nvaccess.org/files/nvda/documentation/userGuide.html">NVDA Documentation</a></td>
+            <td><a href="https://www.apple.com/voiceover/info/guide/">Voice Over Guide</a></td>
+          
+</tr>
+        
+</tbody>
       
-</fieldset>
-     
-</div>
-<h2>HTML Source Code</h2>
-<pre>
-<code id="sc1"></code>
-</pre>
-<h2>CSS Source Code</h2>
-<pre>
-<code id="sc2"></code>
-</pre>
-<h2>Javascript Source Code</h2>
-<pre>
-<code id="sc3"></code>
-</pre>
-<script type="text/javascript">
-        sourceCode.add('sc1', 'example');
-        sourceCode.add('sc2', 'style');
-        sourceCode.add('sc3', 'script');
-        sourceCode.make();
-        hljs.initHighlightingOnLoad();
-      </script>
+</table>
 </div>
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+      This slide shows some basic keyboard commands for using screen readers.
+
+      I encourage you to try these examples with a screen reader so you can begin to understand the experience of using a screen reader and see how adding ARIA changes the user experience.
+
+      The examples I am showing today mostly just requires using the TAB key and listening to the information the screen reader is speaking.
+
+      Some screen reader like NVDA and VoiceOver have a optional panel to visually show what they are speaking if it is difficult for you to understand what is being spoken.
+    </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

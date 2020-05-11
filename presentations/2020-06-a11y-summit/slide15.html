@@ -1,17 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 15: Using ARIA in HTML (Best Practices)</title>
+<title>Slide 15: New features in ARIA 1.2</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide14.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide14.html" title="Slide 14">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide16.html">
+<a id="ID_SLIDE_NEXT" href="slide16.html" title="Slide 16">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 15 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide15">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 15 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -56,34 +61,64 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Using ARIA in HTML (Best Practices)</h1>
+<h1 id="h1_title" class="title">New features in ARIA 1.2</h1>
 <p>
-<a href="https://w3c.github.io/using-aria/">Using ARIA in HTML (Best Practices)</a>
+<a href="https://w3c.github.io/aria/">Working Draft of ARIA 1.2 Specification</a>
 </p>
 <ul>
         
-<li>Use native semantics of HTML (e.g. <code>input[type=checkbox]</code> rather than div[role=checkbox]).</li>
+<li>HTML harmonization:
+          <ul>
+            
+<li>Define roles appropriate for every HTML element.</li>
+            
+<li>Assign default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
+            
+<li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
+          
+</ul>
         
-<li>Don't override native semantics of elements (e.g. <code>h2[role="banner]</code>).</li>
+</li>
         
-<li>Don't redefine the native semantics of an element (e.g. <code>main[role=main]</code>).</li>
+<li>New ways to define an accessible name:
+          <ul>
+            
+<li>Encapsulation using the <code>label</code>role for a limited set of elements (e.g. <code>checkbox</code>, <code>radio</code> ...).</li>
+            
+<li>The <code>legend</code> role for the <code>group</code> and <code>radiogroup</code> roles.</li>
+          
+</ul>
         
-<li>All interactive ARIA widgets must be operable with the keyboard.</li>
+</li>
         
-<li>Do not use role="presentation" or aria-hidden="true" on a visible focusable elements.</li>
+<li>Combobox design pattern 1.2 that works with assistive technologies.</li>
         
-<li>All interactive elements must have an accessible name.</li>
-        
-<li>Live regions (e.g. <code>aria-live</code> attribute and <code>log</code>, <code>status</code>, and <code>alert</code> roles) should be used with extreme caution, only for asynchronous content changes important for the users attention.</li>
+<li>Accessible Object Model (AOM) to reflect ARIA properties.</li>
       
 </ul>
 </div>
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="notranscript">
+                              No transcript found for this slide.
+                            </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

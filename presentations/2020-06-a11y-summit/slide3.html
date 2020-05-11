@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,11 +7,8 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,34 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide2.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide2.html" title="Slide 2">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide4.html">
+<a id="ID_SLIDE_NEXT" href="slide4.html" title="Slide 4">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide19.html">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 3 of 19</div>
+<ul class="nav navbar-nav pull-right">
+<li style="float: left">
+<a target="transcript" href="transcript.html#slide3">
+                        Full Audio Transcript
+                    </a>
+</li>
+<li class="nav navbar-text">Slide 3 of 18</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -75,9 +80,38 @@
 <div class="col"></div>
 </div>
 </main>
+<aside class="container" aria-label="Transcript">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<details class="transcript-container">
+<summary id="id-slide-transcript-button" class="btn-primary btn-sm" title="Audio transcript of the portion of the video for this slide">
+                          Audio Transcript
+                        </summary>
+<div class="slide-transcript">
+Slide 3 talks about the contract that ARIA working group made with browser developers and assistive technology developers.
+First, for browser developers ARIA does not change the behavior of the web page.  So if I use a &ldquo;menu&rdquo; role or &ldquo;aria-haspopup&rdquo; on a web page, nothing changes about the web page in the standard graphical rendering.
+This was important, because ARIA was originally designed to &ldquo;repair&rdquo; in accessible web pages, and add if adding ARIA &ldquo;broke&rdquo; changed the behavior of the web page is some way, it could break the page for people using the graphical rendering, it would not have been accepted by either the browser or developer community.
+ARIA only changes what information is communicated to assistive technologies through accessibility APIs.
+So if your page includes a &ldquo;menu&rdquo; role you as the author need to make sure it has the keyboard interaction for the menu role, and that keyboard interaction is available to all users of our web page.
+ARIA if nothing else was a huge first step in standardizing how browsers map web page information to assistive technologies, which is fundamental for interoperability.
+Before ARIA, browser developers had to make their own decisions about how to represent web content in accessibility APIS.
+While some mapping like for headings (H1-H6) are pretty clear other content was open to interpretation, meaning which browser a screen reader was using could have a big impact on their experience.
+The second promise was to developers of screen readers.
+The promise to screen reader developers was not to tell them what to do with this information.
+They said they know their users and would make use of the new information if it was reliable and important to their users.
+This means it is not entirely predictable what adding ARIA to a web page will mean for users of different types of assistive technologies.
+A new W3C working group called ARIA AT working group is developing test cases to see how different types of assistive technologies are rendering ARIA information.
+This information is important to developers so they can understand how adding an ARIA feature will affect the user experience in different contexts, and also assistive technology companies for them to see where they may not be using all the ARIA information available to them.
+      </div>
+</details>
+</div>
+<div class="col"></div>
+</div>
+</aside>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>
