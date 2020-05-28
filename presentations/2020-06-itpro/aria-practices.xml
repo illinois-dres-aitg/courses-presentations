@@ -3,20 +3,17 @@
 <?xm-well_formed path="funct.dtd"?>
 <slides>
  <lang>en</lang>
-  <title>How ARIA Works and what's new in ARIA 1.2</title>
+  <title>W3C ARIA Authoring Practices 1.2 for Developers and Evaluators</title>
   <person>
     <name>Mark McCarthy, CPWA</name>
     <desc>Quality Assurance Accessibility Engineer</desc>
     <desc>Administrative Information Technology Services</desc>
-    <desc>University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:mcmccar2@uillinois.edu">mcmccar2@uillinois.edu</desc>
   </person>
   <person>
     <name>Jon Gunderson, Ph.D., CPWA</name>
     <desc>Coordinator of Accessible IT Group</desc>
     <desc>Division of Disability Resources and Educational Services</desc>
-    <desc>College of Applied Health Sciences</desc>
-    <desc>University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">jongund@illinois.edu</desc>
   </person>
 
