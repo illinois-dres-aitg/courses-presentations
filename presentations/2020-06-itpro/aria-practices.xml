@@ -261,8 +261,10 @@
 
         <h3>Getting ARIA Attributes</h3>
 
-        <p><code>var role = element.role;  // role must be defined in-line or pragmatically to return value</code></p>
-        <p><code>var label = element.ariaLabel;  // aria-label must be defined in-line or programmatically to return value</code></p>
+        <p><code>var role = element.role;</code></p>
+        <p><code>var label = element.ariaLabel;</code></p>
+
+        <p>NOTE: The role or aria-label must be defined in-line or programmatically to return value.</p>
 
         <h3>Gotchas</h3>
         <ul>
