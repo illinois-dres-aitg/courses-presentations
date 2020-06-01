@@ -248,11 +248,27 @@
     <slide>
     <title>Accessible Object Model (AOM)</title>
     <contents>
-      <ul>
-        <li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code></li>
-        <li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code></li>
-        <li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code></li>
-      </ul>
+
+        <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> methods for setting ARIA roles, properties and states, new DOM properties will also be available.
+
+        <h3>Setting Role Attribute</h3>
+
+        <p><code>element.role="tablist";</code></p>
+
+        <h3>Setting ARIA Attributes</h3>
+
+        <p><code>element.ariaLabel="Name";</code></p>
+
+        <h3>Getting ARIA Attributes</h3>
+
+        <p><code>var role = element.role;  // role must be defined in-line or pragmatically to return value</code></p>
+        <p><code>var label = element.ariaLabel;  // aria-label must be defined in-line or programmatically to return value</code></p>
+
+        <h3>Gotchas</h3>
+        <ul>
+          <li>Only values that have been set in-line or programmatically can be read using the <code>.role</code> or <code>.aria-*</code> DOM property.</li>
+          <li>Not all ARIA properties will be implemented, notably ARIA properties related to <code>ID</code> references, like <code>aria-labelledby</code>, <code>aria-controls</code>, etc..., since the HTML specification is still defining how properties using <code>ID</code> references will be implemented in the DOM.</li>
+        </ul>
     </contents>
   </slide>
 
