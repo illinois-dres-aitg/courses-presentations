@@ -310,7 +310,13 @@
    <slide>
     <title>W3C ARIA Assistive Technology Project Community Group</title>
     <contents>
-      <p><a href="https://www.w3.org/community/aria-at/" target="_group">ARIA-AT Community group website</a>, looking for participation.</p>
+      <p><a href="https://www.w3.org/community/aria-at/" target="_group">ARIA-AT Community group</a> goals:</p>
+      <ul>
+        <li>Provide information on who ARIA changes the user experience for people with disabilities.</li>
+        <li>Provide feedback to screen reader developers on how they provide ARIA information and expectations on what they should be providing.</li>
+        <li>Improve consistency of information provided by different assistive technologies.</li>
+        <li>Long term goal is to have tests for each ARIA Practices code example.</li>
+      </ul>
       <p><iframe src="https://www.w3.org/community/aria-at/" title="ARIA-AT Community group website" width="98%" height="600px"></iframe></p>
     </contents>
   </slide>
