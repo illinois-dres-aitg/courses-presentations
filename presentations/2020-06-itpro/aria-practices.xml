@@ -69,7 +69,7 @@
   <slide>
     <title>Standardize Information Provided to Accessibility APIs</title>
     <contents>
-      <p>Define markup mappings to accessibility APIs:</p>
+      <p>Define how browsers represent HTML markup to the following accessibility APIs:</p>
         <ul>
           <li>ATK/AT-SPI (Linux/Unix)</li>
           <li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
