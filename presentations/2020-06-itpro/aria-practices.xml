@@ -257,25 +257,31 @@
   </slide>
 
    <slide>
-    <title>ARIA Authoring Practices 1.2 (Working Draft)</title>
+    <title>Combobox Design Pattern and Examples</title>
     <contents>
-      <p><a href="https://w3c.github.io/aria-practices/">Working Draft of ARIA Authoring Practices 1.2</a></p>
+      <p><a href="https://w3c.github.io/aria-practices/#combobox">Editors Draft of Combobox Design Pattern</a></p>
       <ul>
-        <li>Combobox design pattern 1.2 that works with assistive technologies.</li>
-        <li>Unit testing of examples for:
+        <li>Keyboard interaction.</li>
+        <li>Proper use of ARIA roles.</li>
+        <li>Proper use of ARIA properties and states.</li>
+        <li>Examples:
           <ul>
-            <li>Keyboard interaction.</li>
-            <li>Proper use of ARIA roles.</li>
-            <li>Proper use of ARIA properties and states.</li>
+            <li><a href="https://w3c.github.io/aria-practices/examples/combobox/combobox-autocomplete-both.html"  target="_example">Combobox with auto-complete</a></li>
+            <li><a href="https://raw.githack.com/w3c/aria-practices/issue34-add-combobox-datepicker/examples/combobox/combobox-datepicker.html" target="_example">Date picker combobox</a> (Note: currently a pull request)</li>
+            <li>Regression testing for quality assurances and could be used as models for in-house regression testing.</li>
+            <li>Newer examples support high contrast modes on Windows 10 and macOS.</li>
           </ul>
         </li>
-        <li>High contrast support in newer examples:
-          <ul>
-            <li>Date pickers</li>
-            <li>Combobox</li>
-            <li>Carousel</li>
-          </ul>
-        </li>
+      </ul>
+    </contents>
+  </slide>
+
+   <slide>
+    <title>W3C ARIA Assistive Technology Project Community Group</title>
+    <contents>
+      <ul>
+        <li><a href="https://www.w3.org/community/aria-at/" target="_group">ARIA-AT Community group website</a>, looking for participation.</li>
+        <li><a href="https://aria-at.w3.org" target="_group">ARIA-AT group test harness</a> and test cases for checkboxes and menubar.</li>
       </ul>
     </contents>
   </slide>
