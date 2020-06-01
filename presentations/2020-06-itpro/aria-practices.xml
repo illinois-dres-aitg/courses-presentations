@@ -241,7 +241,15 @@
   <slide>
     <title>Combobox design pattern 1.2</title>
     <contents>
-        <p>Combobox design pattern 1.2 that works with assistive technologies.</p>
+      <ul>
+        <li><code>combobox</code> role is on the <code>input</code> element.</li>
+        <li><code>aria-expanded</code> attribute is on the <code>input</code> element.</li>
+        <li><code>aria-haspopup</code> attribute is on the <code>input</code> element.</li>
+        <li><code>aria-controls</code> references the popup widget (e.g. listbox, grid or tree).</li>
+      </ul>
+
+      <h2>Legacy Combobox Patterns</h2>
+      <p>ARIA 1.2 pattern is similar to the ARIA 1.0 combobox pattern, but instead of using <code>aria-owns</code> uses <code>aria-controls</code> to reference associated popup widget and has good AT support.  ARIA 1.1 pattern was never supported by assistive technologies and used a container model of having the <code>input</code> element and popup widget as  descendants of an element with the role <code>combobox</code>.  The 1.1 pattern change was made to support of UIAutomation model of a combobox.</p>
     </contents>
   </slide>
 
