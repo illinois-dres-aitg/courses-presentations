@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,8 +7,11 @@
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
-<style id="style"></style>
+<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
+<style id="style" type="text/css"></style>
+<stylesheet>
+<link rel="stylesheet" type="text/css" href="">
+</stylesheet>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -26,29 +29,26 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
+<a id="ID_SLIDE_FIRST" href="slide1.html">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide9.html" title="Slide 9">
-                        Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide9.html">Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide11.html" title="Slide 11">
+<a id="ID_SLIDE_NEXT" href="slide11.html">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide13.html" title="Slide 13">
+<a id="ID_SLIDE_LAST" href="slide13.html">
                         Last
                       </a>
 </li>
 </ul>
-<ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 10 of 13</li>
-</ul>
+<div class="navbar-text pull-right">Slide 10 of 13</div>
 </div>
 </div>
 </nav>
@@ -57,17 +57,29 @@
 <div class="col-md-1"></div>
 <div class="col-md-9">
 <h1 id="h1_title" class="title">Accessible Object Model (AOM)</h1>
+<p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
+<h3>Setting Role Attribute</h3>
+<p>
+<code>element.role="tablist";</code>
+</p>
+<h3>Setting ARIA Attributes</h3>
+<p>
+<code>element.ariaLabel="Name";</code>
+</p>
+<h3>Getting ARIA Attributes</h3>
+<p>
+<code>var role = element.role;  // role must be defined in-line or pragmatically to return value</code>
+</p>
+<p>
+<code>var label = element.ariaLabel;  // aria-label must be defined in-line or programmatically to return value</code>
+</p>
+<h3>Gotchas</h3>
 <ul>
+          
+<li>Only values that have been set in-line or programmatically can be read using the <code>.role</code> or <code>.aria-*</code> DOM property.</li>
+          
+<li>Not all ARIA properties will be implemented, notably ARIA properties related to <code>ID</code> references, like <code>aria-labelledby</code>, <code>aria-controls</code>, etc..., since the HTML specification is still defining how properties using <code>ID</code> references will be implemented in the DOM.</li>
         
-<li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code>
-</li>
-        
-<li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code>
-</li>
-        
-<li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code>
-</li>
-      
 </ul>
 </div>
 <div class="col"></div>
@@ -75,7 +87,7 @@
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

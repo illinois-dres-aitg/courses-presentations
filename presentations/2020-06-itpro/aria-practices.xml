@@ -249,7 +249,7 @@
     <title>Accessible Object Model (AOM)</title>
     <contents>
 
-        <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> methods for setting ARIA roles, properties and states, new DOM properties will also be available.
+        <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
 
         <h3>Setting Role Attribute</h3>
 
