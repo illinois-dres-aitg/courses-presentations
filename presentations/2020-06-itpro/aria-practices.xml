@@ -239,7 +239,7 @@
   </slide>
 
   <slide>
-    <title>Combobox design pattern 1.2</title>
+    <title>ARIA 1.2 Combobox Design Pattern</title>
     <contents>
       <ul>
         <li><code>combobox</code> role is on the <code>input</code> element.</li>
