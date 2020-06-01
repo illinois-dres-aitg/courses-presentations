@@ -257,6 +257,8 @@
 
         <h2>Setting ARIA Attributes</h2>
 
+        <p>Use camel case naming convention for property name.</p>
+
         <p><code>element.ariaLabel="Name";</code></p>
         <p><code>element.ariaChecked="true";</code></p>
 
