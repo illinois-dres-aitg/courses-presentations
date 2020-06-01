@@ -52,30 +52,33 @@
   </slide>
 
   <slide>
-    <title>Purpose of ARIA is Describe Semantics and Behavior</title>
+    <title>Describing Semantics and Behavior</title>
     <contents>
-       <ul>
-         <li>Provide an inter-operable way to describe the features of <em>custom widgets</em>:
-           <ul>
-             <li><strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
-             <li><strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
-             <li><strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
-             <li><strong>Labeling:</strong> Giving a widget and its components names to understand their purpose.</li>
-             <li><strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
-             <li><strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
-           </ul>
-        </li>
-        <li>Define markup mappings to accessibility APIs:
-          <ul>
-            <li>ATK/AT-SPI (Linux/Unix)</li>
-            <li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
-            <li>Microsoft UI Automate</li>
-            <li>MacOS Accessibility API</li>
-          </ul>
-         </li>
-      </ul>
+     <p>Provide an inter-operable way to describe the features of <em>custom widgets</em>:</p>
+     <ul>
+       <li><strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
+       <li><strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
+       <li><strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
+       <li><strong>Labeling:</strong> Giving a widget and its components names to understand their purpose.</li>
+       <li><strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
+       <li><strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
+     </ul>
     </contents>
   </slide>
+
+  <slide>
+    <title>Standardize Information Provided to Accessibility APIs</title>
+    <contents>
+      <p>Define markup mappings to accessibility APIs:</p>
+        <ul>
+          <li>ATK/AT-SPI (Linux/Unix)</li>
+          <li>Microsoft Active Accessibility (MSAA) + IAccessible2</li>
+          <li>Microsoft UI Automate</li>
+          <li>MacOS Accessibility API</li>
+        </ul>
+    </contents>
+  </slide>
+
 
   <slide>
     <title>ARIA Contract with Browsers and Assistive Technologies</title>

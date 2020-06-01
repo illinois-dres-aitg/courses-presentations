@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 5: Accessible Description Calculation</title>
+<title>Slide 5: Accessible Name Calculation</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,13 +41,13 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide8.html" title="Slide 8">
+<a id="ID_SLIDE_LAST" href="slide9.html" title="Slide 9">
                         Last
                       </a>
 </li>
 </ul>
 <ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 5 of 8</li>
+<li class="nav navbar-text">Slide 5 of 9</li>
 </ul>
 </div>
 </div>
@@ -56,19 +56,17 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Accessible Description Calculation</h1>
+<h1 id="h1_title" class="title">Accessible Name Calculation</h1>
 <ul>
           
 <li>
 <a href="https://www.w3.org/TR/accname-aam/">W3C Accessible Name and Description Computation Specification</a>
 </li>
           
-<li>Accessible description provides more information about a form control, link or aria widget.</li>
-          
-<li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
+<li>In general only <strong>one</strong> technique should be used to define an accessible name, if more than on technique is used the following priortiy is used for the calculation.</li>
         
 </ul>
-<h2 id="heading_ant">Accessible Description Techniques</h2>
+<h2 id="heading_ant">Accessible Name Techniques</h2>
 <table class="table table-striped table-hover" aria-labelledby="heading_ant">
           
 <thead>
@@ -88,16 +86,16 @@
 <tr>
               
 <td>1</td>
-              <td><code>aria-describedby</code></td>
+              <td><code>aria-labelledby</code></td>
               <td>
                 
 <ul>
                   
-<li>The <code>aria-describedby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
+<li>The <code>aria-labelledby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
                   
-<li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
+<li>Text content of referenced elements are concatenated to compute the accessible name.</li>
                   
-<li>Designed to reference visible text on the screen, like instructions and error feedback.</li>
+<li>References typically identify visible text on the screen in visual proximity to the control.</li>
                 
 </ul>
               
@@ -108,24 +106,59 @@
 <tr>
               
 <td>2</td>
-              <td><code>aria-description</code>
-<br>
-<span class="new">Proposed, maybe in ARIA 1.2</span></td>
+              <td><code>aria-label</code></td>
               <td>
-                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
-              </td>
+                
+<ul>
+                  
+<li>The <code>aria-label</code> attribute text content defines the accessible name.</li>
+                
+</ul>
+              
+</td>
             
 </tr>
             
 <tr>
               
 <td>3</td>
+              <td>The <code>legend</code> element for grouping roles<br>
+<span class="new">Proposed, maybe in ARIA 1.2</span></td>
+              <td>
+                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
+              </td>
+            
+</tr>
+            
+<tr>
+              
+<td>4</td>
+              <td>text content</td>
+              <td>
+                
+<ul>
+                  
+<li>Some ARIA widget roles allow the text content of the container element to define an accessible name (e.g. <code>role="checkbox"</code>).</li>
+                  
+<li>Text content includes text alternatives, for example <code>alt</code> attribute content of an <code>img</code> element.</li>
+                  
+<li>Text content includes text from generated CSS, for example when the <code>content</code> property is used.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>5</td>
               <td><code>title</code></td>
               <td>
                 
 <ul>
                   
-<li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
+<li>If no other source of an accessible name is found and the element has a <code>title</code> attribute, the content of the <code>title</code> attribute will used to define the accessible name.</li>
                 
 </ul>
               

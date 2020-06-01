@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 7: ARIA Authoring Practices 1.2 (Working Draft)</title>
+<title>Slide 7: New features in ARIA 1.2</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,13 +41,13 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide8.html" title="Slide 8">
+<a id="ID_SLIDE_LAST" href="slide9.html" title="Slide 9">
                         Last
                       </a>
 </li>
 </ul>
 <ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 7 of 8</li>
+<li class="nav navbar-text">Slide 7 of 9</li>
 </ul>
 </div>
 </div>
@@ -56,35 +56,32 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Authoring Practices 1.2 (Working Draft)</h1>
+<h1 id="h1_title" class="title">New features in ARIA 1.2</h1>
 <p>
-<a href="https://w3c.github.io/aria-practices/">Working Draft of ARIA Authoring Practices 1.2</a>
+<a href="https://w3c.github.io/aria/">Working Draft of ARIA 1.2 Specification</a>
 </p>
 <ul>
         
-<li>Combobox design pattern 1.2 that works with assistive technologies.</li>
-        
-<li>Unit testing of examples for:
+<li>HTML harmonization:
           <ul>
             
-<li>Keyboard interaction.</li>
+<li>Define roles appropriate for every HTML element.</li>
             
-<li>Proper use of ARIA roles.</li>
+<li>Allows assignment of default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
             
-<li>Proper use of ARIA properties and states.</li>
+<li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
           
 </ul>
         
 </li>
         
-<li>High contrast support in newer examples:
+<li>Combobox design pattern 1.2 that works with assistive technologies.</li>
+        
+<li>Accessible Object Model (AOM) to reflect some ARIA properties.
           <ul>
             
-<li>Date pickers</li>
-            
-<li>Combobox</li>
-            
-<li>Carousel</li>
+<li>Setting attributes using javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("ariaLabel", "Name");</code>
+</li>
           
 </ul>
         
