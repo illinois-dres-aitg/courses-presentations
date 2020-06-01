@@ -230,7 +230,9 @@
         <li>Combobox design pattern 1.2 that works with assistive technologies.</li>
         <li>Accessible Object Model (AOM) to reflect some ARIA properties.
           <ul>
-            <li>Setting attributes using javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("ariaLabel", "Name");</code></li>
+            <li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code></li>
+            <li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code></li>
+            <li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code></li>
           </ul>
         </li>
       </ul>
