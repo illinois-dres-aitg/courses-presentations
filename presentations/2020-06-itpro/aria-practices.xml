@@ -322,7 +322,7 @@
   </slide>
 
    <slide>
-    <title>W3C ARIA Assistive Technology Project Community Group</title>
+    <title>Prototype of ARIA-AT Test Harness and Test Cases</title>
     <contents>
       <p><a href="https://aria-at.w3.org" target="_group">ARIA-AT group test harness</a> and test cases for:</p>
       <ul>
