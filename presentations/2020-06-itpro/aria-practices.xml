@@ -59,7 +59,7 @@
              <li><strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
              <li><strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
              <li><strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
-             <li><strong>Labeling:</strong> How to label the features of the widget and its components (e.g. accessible name).</li>
+             <li><strong>Labeling:</strong> Giving a widget and its components names to understand their purpose.</li>
              <li><strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
              <li><strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
            </ul>
@@ -131,7 +131,7 @@
             </tr>
             <tr>
               <td>3</td>
-              <td>The <code>legend</code> element for grouping roles<br/><span class="new">New in ARIA 1.2</span></td>
+              <td>The <code>legend</code> element for grouping roles<br/><span class="new">Proposed, maybe in ARIA 1.2</span></td>
               <td>
                   Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>gradiogroup</code> roles.
               </td>
@@ -192,7 +192,7 @@
             </tr>
             <tr>
               <td>2</td>
-              <td><code>aria-description</code><br/><span class="new">New in ARIA 1.2</span></td>
+              <td><code>aria-description</code><br/><span class="new">Proposed, maybe in ARIA 1.2</span></td>
               <td>
                 Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
               </td>
@@ -224,7 +224,11 @@
           </ul>
         </li>
         <li>Combobox design pattern 1.2 that works with assistive technologies.</li>
-        <li>Accessible Object Model (AOM) to reflect some ARIA properties.</li>
+        <li>Accessible Object Model (AOM) to reflect some ARIA properties.
+          <ul>
+            <li>Setting attributes using javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("ariaLabel", "Name");</code></li>
+          </ul>
+        </li>
       </ul>
     </contents>
   </slide>
