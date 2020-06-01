@@ -170,7 +170,7 @@
     <contents>
         <ul>
           <li><a href="https://w3c.github.io/aria-practices/#names_and_descriptions">Section 5: Providing Accessible Names and Descriptions</a></li>
-          <li>Accessible description provides more information about a form control, link or aria widget.</li>
+          <li>Accessible description provides more information about a form control, link or ARIA widget.</li>
           <li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
         </ul>
         <h2 id="heading_ant">Accessible Description Techniques</h2>
@@ -196,7 +196,7 @@
             </tr>
             <tr>
               <td>2</td>
-              <td><code>aria-description</code><br/><span class="new">Proposed, maybe in ARIA 1.2</span></td>
+              <td><code>aria-description</code><br/><span class="new">Proposed, probably in ARIA 1.2</span></td>
               <td>
                 Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
               </td>
