@@ -215,30 +215,46 @@
     </contents>
   </slide>
 
-   <slide>
+  <slide>
     <title>New features in ARIA 1.2</title>
     <contents>
-      <p><a href="https://w3c.github.io/aria/">Working Draft of ARIA 1.2 Specification</a></p>
+      <p><a href="https://w3c.github.io/aria/">Editors Draft of ARIA 1.2 Specification</a></p>
       <ul>
         <li>HTML harmonization:
-          <ul>
-            <li>Define roles appropriate for every HTML element.</li>
-            <li>Allows assignment of default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
-            <li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
-          </ul>
-        </li>
         <li>Combobox design pattern 1.2 that works with assistive technologies.</li>
         <li>Accessible Object Model (AOM) to reflect some ARIA properties.
-          <ul>
-            <li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code></li>
-            <li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code></li>
-            <li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code></li>
-          </ul>
-        </li>
       </ul>
     </contents>
   </slide>
 
+  <slide>
+    <title>HTML harmonization</title>
+    <contents>
+      <ul>
+        <li>Define roles appropriate for every HTML element.</li>
+        <li>Allows assignment of default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
+        <li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
+      </ul>
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Combobox design pattern 1.2</title>
+    <contents>
+        <p>Combobox design pattern 1.2 that works with assistive technologies.</p>
+    </contents>
+  </slide>
+
+    <slide>
+    <title>Accessible Object Model (AOM)</title>
+    <contents>
+      <ul>
+        <li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code></li>
+        <li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code></li>
+        <li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code></li>
+      </ul>
+    </contents>
+  </slide>
 
    <slide>
     <title>ARIA Authoring Practices 1.2 (Working Draft)</title>
