@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 2: Describing Semantics and Behavior</title>
+<title>Slide 10: Accessible Object Model (AOM)</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -31,12 +31,12 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide1.html" title="Slide 1">
+<a id="ID_SLIDE_PREVIOUS" href="slide9.html" title="Slide 9">
                         Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide3.html" title="Slide 3">
+<a id="ID_SLIDE_NEXT" href="slide11.html" title="Slide 11">
                         Next
                       </a>
 </li>
@@ -47,7 +47,7 @@
 </li>
 </ul>
 <ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 2 of 12</li>
+<li class="nav navbar-text">Slide 10 of 12</li>
 </ul>
 </div>
 </div>
@@ -56,28 +56,18 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Describing Semantics and Behavior</h1>
-<p>Provide an inter-operable way to describe the features of <em>custom widgets</em>:</p>
+<h1 id="h1_title" class="title">Accessible Object Model (AOM)</h1>
 <ul>
-       
-<li>
-<strong>Role:</strong> Describes the type of widget, which implies the <em>keyboard interaction</em>.</li>
-       
-<li>
-<strong>Properties and States:</strong> Describing features like "expandable", "checked" or "selected".</li>
-       
-<li>
-<strong>Language independence:</strong> Roles, properties and states can be translated by the operating systems and assistive technologies to local languages.</li>
-       
-<li>
-<strong>Labeling:</strong> Giving a widget and its components names to understand their purpose.</li>
-       
-<li>
-<strong>Relationships:</strong> How different components relate to each other (e.g. descriptions, controls, owns).</li>
-       
-<li>
-<strong>Grouping:</strong> Groups of related components (e.g. lists, menus, trees, tab panels).</li>
-     
+        
+<li>Setting the Role attributes using javascript using DOM element object, for example <code>element.role="tablist";</code> instead of <code>element.setAttribute("role", "tablist");</code>
+</li>
+        
+<li>Setting ARIA properties and states with javascript using DOM element object, for example <code>element.ariaLabel="Name";</code> instead of <code>element.setAttribute("aria-label", "Name");</code>
+</li>
+        
+<li>If you set an ARIA role or attributes with script, you can read it from the DOM element object, for example <code>var label = element.ariaLabel;</code> instead of <code>var label = element.getAttribute("aria-label");</code>
+</li>
+      
 </ul>
 </div>
 <div class="col"></div>

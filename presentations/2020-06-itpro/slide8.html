@@ -1,17 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<!DOCTYPE html PUBLIC "">
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 8: ARIA Authoring Practices 1.2 (Working Draft)</title>
+<title>Slide 8: HTML harmonization</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
-<script type="text/javascript" src="../../common/js/jquery-2.1.1.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap.min.js"></script><script type="text/javascript" src="../../common/js/bootstrap-accessibility.min.js"></script><script type="text/javascript" src="../../common/js/xml-slides.js"></script>
-<style id="style" type="text/css"></style>
-<stylesheet>
-<link rel="stylesheet" type="text/css" href="">
-</stylesheet>
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
 </head>
 <body>
 <nav id="nav" class="navbar navbar-default">
@@ -29,26 +26,29 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_FIRST" href="slide1.html">
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
                         First
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_PREVIOUS" href="slide7.html">Previous
+<a id="ID_SLIDE_PREVIOUS" href="slide7.html" title="Slide 7">
+                        Previous
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_NEXT" href="slide9.html">
+<a id="ID_SLIDE_NEXT" href="slide9.html" title="Slide 9">
                         Next
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide9.html">
+<a id="ID_SLIDE_LAST" href="slide12.html" title="Slide 12">
                         Last
                       </a>
 </li>
 </ul>
-<div class="navbar-text pull-right">Slide 8 of 9</div>
+<ul class="nav navbar-nav pull-right">
+<li class="nav navbar-text">Slide 8 of 12</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -56,39 +56,14 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">ARIA Authoring Practices 1.2 (Working Draft)</h1>
-<p>
-<a href="https://w3c.github.io/aria-practices/">Working Draft of ARIA Authoring Practices 1.2</a>
-</p>
+<h1 id="h1_title" class="title">HTML harmonization</h1>
 <ul>
         
-<li>Combobox design pattern 1.2 that works with assistive technologies.</li>
+<li>Define roles appropriate for every HTML element.</li>
         
-<li>Unit testing of examples for:
-          <ul>
-            
-<li>Keyboard interaction.</li>
-            
-<li>Proper use of ARIA roles.</li>
-            
-<li>Proper use of ARIA properties and states.</li>
-          
-</ul>
+<li>Allows assignment of default <a href="https://www.w3.org/TR/html-aria/" target="_spec">ARIA role mappings to every HTML element</a>.</li>
         
-</li>
-        
-<li>High contrast support in newer examples:
-          <ul>
-            
-<li>Date pickers</li>
-            
-<li>Combobox</li>
-            
-<li>Carousel</li>
-          
-</ul>
-        
-</li>
+<li>Some new roles, like <code>generic</code> role for elements with no semantics like <code>div</code> and <code>span</code>, should not be used by developers.</li>
       
 </ul>
 </div>
@@ -97,7 +72,7 @@
 </main>
 <footer class="container">
 <div id="footer" class="well well-sm">
-<a href="http://illinois.edu" target="_illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
         Copyright &copy; 2020 University of Illinois
       </div>
 </footer>

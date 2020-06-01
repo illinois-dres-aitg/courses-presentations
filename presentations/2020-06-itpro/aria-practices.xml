@@ -220,9 +220,9 @@
     <contents>
       <p><a href="https://w3c.github.io/aria/">Editors Draft of ARIA 1.2 Specification</a></p>
       <ul>
-        <li>HTML harmonization:
+        <li>HTML harmonization</li>
         <li>Combobox design pattern 1.2 that works with assistive technologies.</li>
-        <li>Accessible Object Model (AOM) to reflect some ARIA properties.
+        <li>Accessible Object Model (AOM) to reflect some ARIA properties.</li>
       </ul>
     </contents>
   </slide>
