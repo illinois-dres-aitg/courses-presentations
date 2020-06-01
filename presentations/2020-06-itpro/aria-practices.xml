@@ -311,7 +311,7 @@
     <title>W3C ARIA Assistive Technology Project Community Group</title>
     <contents>
       <p><a href="https://www.w3.org/community/aria-at/" target="_group">ARIA-AT Community group website</a>, looking for participation.</p>
-      <p><iframe src="https://www.w3.org/community/aria-at/" title="ARIA-AT Community group website" width="98%" height="600px"></iframe>
+      <p><iframe src="https://www.w3.org/community/aria-at/" title="ARIA-AT Community group website" width="98%" height="600px"></iframe></p>
     </contents>
   </slide>
 
@@ -323,7 +323,7 @@
         <li>Checkboxes</li>
         <li>Menubar</li>
       </ul>
-      <p><iframe src="https://aria-at.w3.org" title="ARIA-AT group test harness" width="98%" height="600px"></iframe>
+      <p><iframe src="https://aria-at.w3.org" title="ARIA-AT group test harness" width="98%" height="600px"></iframe></p>
     </contents>
   </slide>
 
