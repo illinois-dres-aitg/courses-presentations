@@ -135,13 +135,6 @@
             </tr>
             <tr>
               <td>3</td>
-              <td>The <code>legend</code> element for grouping roles<br/><span class="new">Proposed, maybe in ARIA 1.2</span></td>
-              <td>
-                  Allows the use of the HTML <code>legend</code> element to define the accessible name for the <code>group</code> and <code>radiogroup</code> roles.
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
               <td>text content</td>
               <td>
                 <ul>
@@ -152,7 +145,7 @@
               </td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>4</td>
               <td><code>title</code></td>
               <td>
                 <ul>
@@ -196,18 +189,18 @@
             </tr>
             <tr>
               <td>2</td>
-              <td><code>aria-description</code><br/><span class="new">Proposed, probably in ARIA 1.2</span></td>
-              <td>
-                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
               <td><code>title</code></td>
               <td>
                 <ul>
                   <li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><code>aria-description</code><br/><span class="new">Proposed in 1.2, but has been moved to ARIA 1.3</span></td>
+              <td>
+                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
               </td>
             </tr>
           </tbody>
