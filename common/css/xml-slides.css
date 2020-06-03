@@ -4,6 +4,13 @@
     color: green;
 }
 
+.postponed {
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+    color: purple;
+}
+
 a {
     display: inline-block;
     padding: 2px;

@@ -5,7 +5,7 @@
  <lang>en</lang>
   <title>W3C ARIA Authoring Practices 1.2 for Developers and Evaluators</title>
   <person>
-    <name>Mark McCarthy, CPWA</name>
+    <name>Mark McCarthy, M.S., CPWA</name>
     <desc>Quality Assurance Accessibility Engineer</desc>
     <desc>Administrative Information Technology Services</desc>
     <desc href="mailto:mcmccar2@uillinois.edu">mcmccar2@uillinois.edu</desc>
@@ -153,6 +153,13 @@
                 </ul>
               </td>
             </tr>
+            <tr>
+              <td><span class="postponed">Postponed</span></td>
+              <td><code>label</code> and <code>legend</code></td>
+              <td>
+                <code>label</code> encapsulation and <code>legend</code> naming techniques are in the current <a href="https://w3c.github.io/aria/#namecalculation" target="spec">ARIA 1.2 editors working draft</a> as naming techniques, but will be removed and may be in a future version of ARIA.
+              </td>
+            </tr>
           </tbody>
         </table>
     </contents>
@@ -197,10 +204,13 @@
               </td>
             </tr>
             <tr>
-              <td>3</td>
-              <td><code>aria-description</code><br/><span class="new">Proposed in 1.2, but has been moved to ARIA 1.3</span></td>
+              <td><span class="postponed">Postponed</span></td>
+              <td><code>aria-description</code></td>
               <td>
-                Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.
+                <ul>
+                  <li>Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.</li>
+                  <li>The <code>aria-description</code> attribute is in the current <a href="https://w3c.github.io/aria/#aria-description" target="_spec">editors working draft for ARIA 1.2</a>, but will be removed and will most likely be included in ARIA 1.3.</li>
+                </ul>
               </td>
             </tr>
           </tbody>
@@ -329,6 +339,19 @@
   <slide>
     <title>Questions and Discussion</title>
     <contents>
+      <details>
+        <summary>Does anyone know what the acronym CPWA means?</summary>
+        <ul>
+          <li>Certified Professional in Web Accessibility (CWPA)</li>
+          <li><a href="https://www.accessibilityassociation.org/certifications" target="_iaap">Information on certification options</a>
+            <ul>
+              <li>Certified Professional in Accessibility Core Competencies (CPACC)</li>
+              <li>Web Accessibility Specialist (WAS)</li>
+              <li><abbr title="Certified Professional in Web Accessibility">CPWA</abbr> = <abbr title="Certified Professional in Accessibility Core Competencies">CPACC</abbr> + <abbr title=">Web Accessibility Specialist">WAS</abbr></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
     </contents>
   </slide>
 
