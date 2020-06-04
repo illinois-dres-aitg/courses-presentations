@@ -361,13 +361,28 @@ git        <li>Proper use of ARIA roles.</li>
         <summary>Does anyone know what the acronym CPWA means?</summary>
         <ul>
           <li>Certified Professional in Web Accessibility (CWPA)</li>
-          <li><a href="https://www.accessibilityassociation.org/certifications" target="_iaap">Information on certification options</a>
+          <li><a href="https://www.accessibilityassociation.org/certifications" target="_iaap">Certification options:</a>
             <ul>
               <li>Certified Professional in Accessibility Core Competencies (CPACC)</li>
               <li>Web Accessibility Specialist (WAS)</li>
               <li><abbr title="Certified Professional in Web Accessibility">CPWA</abbr> = <abbr title="Certified Professional in Accessibility Core Competencies">CPACC</abbr> + <abbr title=">Web Accessibility Specialist">WAS</abbr></li>
             </ul>
           </li>
+        </ul>
+      </details>
+      <details style="margin-top: 3em">
+        <summary>Interested in developing the open standards of the W3C?</summary>
+        <ul>
+          <li>University of Illinois is <a href="https://www.w3.org/Consortium/Member/List" target="_w3c">member of the W3C</a>.</li>
+          <li><a href="https://www.w3.org/groups/" target="_w3c">Opportunities in developing open standards</a>:
+            <ul>
+              <li>Working Groups: Membership required or being an invited expert.</li>
+              <li>Interest Groups: Anyone can join.</li>
+              <li>Community Groups: Anyone can join.</li>
+            </ul>
+          </li>
+          <li>Contact <a href="mailto:jongund@illinois.edu">Jon Gunderson</a> to get more information about joining a Working Group.</li>
+          <li>Anyone can participate in Interest and Community Groups, but since Illinois is a W3C member you may need to setup a W3C account by contacting Jon Gunderson.</li>
         </ul>
       </details>
     </contents>
