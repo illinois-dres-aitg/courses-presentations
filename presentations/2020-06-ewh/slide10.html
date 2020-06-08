@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 10: Accessible Object Model (AOM): Setting Roles, Properties and States</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a id="ID_SLIDE_INDEX" href="index.html">
+                        Index
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
+                        First
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_PREVIOUS" href="slide9.html" title="Slide 9">
+                        Previous
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_NEXT" href="slide11.html" title="Slide 11">
+                        Next
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
+                        Last
+                      </a>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li class="nav navbar-text">Slide 10 of 18</li>
+</ul>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Accessible Object Model (AOM): Setting Roles, Properties and States</h1>
+<p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
+<table class="table table-striped">
+          
+<caption>Setting ARIA Role</caption>
+          
+<tbody>
+            
+<tr>
+              
+<th>Role</th>
+              <td><code>tablist</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="tablist"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("role", "tablist");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.role = tablist";</code></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+<table class="table table-striped">
+          
+<caption>Setting Accessible Name</caption>
+          
+<tbody>
+            
+<tr>
+              
+<th>Attribute</th>
+              <td><code>aria-label</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="button" aria-label="Play"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("aria-label", "play");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaLabel = "Play";</code></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+<table class="table table-striped">
+          
+<caption>Setting State</caption>
+          
+<tbody>
+            
+<tr>
+              
+<th>Attribute</th>
+              <td><code>aria-checked</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="checkbox" aria-checked="mixed"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("aria-checked", "mixed");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaChecked = "mixed";</code></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+</div>
+<div class="col"></div>
+</div>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2020 University of Illinois
+      </div>
+</footer>
+</body>
+</html>

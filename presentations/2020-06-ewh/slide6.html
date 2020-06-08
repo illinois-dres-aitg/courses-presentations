@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Slide 6: Accessible Description Calculation</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/xml-slides.css">
+<script src="../../common/js/jquery-2.1.1.min.js"></script><script src="../../common/js/bootstrap.min.js"></script><script src="../../common/js/bootstrap-accessibility.min.js"></script><script src="../../common/js/xml-slides.js"></script>
+<style id="style"></style>
+</head>
+<body>
+<nav id="nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#slide-nav"><span class="sr-only">
+                  Toggle navigation
+                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<div id="slide-nav" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a id="ID_SLIDE_INDEX" href="index.html">
+                        Index
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_FIRST" href="slide1.html" title="Slide 1">
+                        First
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_PREVIOUS" href="slide5.html" title="Slide 5">
+                        Previous
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_NEXT" href="slide7.html" title="Slide 7">
+                        Next
+                      </a>
+</li>
+<li>
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
+                        Last
+                      </a>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li class="nav navbar-text">Slide 6 of 18</li>
+</ul>
+</div>
+</div>
+</nav>
+<main id="content" class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-9">
+<h1 id="h1_title" class="title">Accessible Description Calculation</h1>
+<ul>
+          
+<li>
+<a href="https://w3c.github.io/aria-practices/#names_and_descriptions">Section 5: Providing Accessible Names and Descriptions</a>
+</li>
+          
+<li>Accessible description provides more information about a form control, link or ARIA widget.</li>
+          
+<li>Screen readers each have their own ways of rendering and sometimes ignoring the <em>description information</em> information.</li>
+        
+</ul>
+<h2 id="heading_ant">Accessible Description Techniques</h2>
+<table class="table table-striped table-hover" aria-labelledby="heading_ant">
+          
+<thead>
+            
+<tr>
+              
+<th>Priority</th>
+              <th>Technique</th>
+              <th>Description</th>
+            
+</tr>
+          
+</thead>
+          
+<tbody>
+            
+<tr>
+              
+<td>1</td>
+              <td><code>aria-describedby</code></td>
+              <td>
+                
+<ul>
+                  
+<li>The <code>aria-describedby</code> attribute contains a list of <code>IDREF</code>s to elements on the page.</li>
+                  
+<li>Text content of referenced elements are concatenated to compute the <em>accessible description</em>.</li>
+                  
+<li>Designed to reference visible text on the screen, like instructions and error feedback.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td>2</td>
+              <td><code>title</code></td>
+              <td>
+                
+<ul>
+                  
+<li>If no other source of an <em>accessible description</em> is found and the element has a <code>title</code> attribute that is <strong>not</strong> being used to define an accessible name, the content of the <code>title</code> attribute is used to define the <em>accessible description</em>.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+            
+<tr>
+              
+<td><span class="postponed">Postponed</span></td>
+              <td><code>aria-description</code></td>
+              <td>
+                
+<ul>
+                  
+<li>Similar to <code>aria-label</code> attribute, text content is used to define an accessible description.</li>
+                  
+<li>The <code>aria-description</code> attribute is in the current <a href="https://w3c.github.io/aria/#aria-description" target="_spec">editors working draft for ARIA 1.2</a>, but will be removed and will most likely be included in ARIA 1.3.</li>
+                
+</ul>
+              
+</td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+</div>
+<div class="col"></div>
+</div>
+</main>
+<footer class="container">
+<div id="footer" class="well well-sm">
+<a href="http://illinois.edu" target="illinois"><img src="https://aitg.disability.illinois.edu/common/images/block-i.png" alt="University of Illinois"></a>
+        Copyright &copy; 2020 University of Illinois
+      </div>
+</footer>
+</body>
+</html>
