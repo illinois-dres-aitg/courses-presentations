@@ -260,7 +260,7 @@
     <title>Accessible Object Model (AOM): Setting Roles, Properties and States</title>
     <contents>
 
-        <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
+       <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available through the <a href="https://w3c.github.io/aria/#idl-interface" target="_spec">IDL Interface requirements defined in ARIA 1.2 Editor's Working Draft</a>.</p>
 
         <table class="table table-striped">
           <caption>Setting ARIA Role</caption>
