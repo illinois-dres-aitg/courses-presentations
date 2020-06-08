@@ -256,56 +256,298 @@
     </contents>
   </slide>
 
+
   <slide>
     <title>Accessible Object Model (AOM): Setting Roles, Properties and States</title>
     <contents>
 
+        <p>NOTE: SLides were updated after presentation to provide additional information on the AOM, including the addition of 3 new slides.</p>
+
         <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
 
         <table class="table table-striped">
-          <caption>Examples of setting roles and attributes</caption>
-          <thead>
-            <tr>
-              <th>Role/Property</th>
-              <th>Inline code</th>
-              <th><code>setAttribute</code></th>
-              <th>DOM Property<br/>(<span class="new">new in ARIA 1.2</span>)</th>
-            </tr>
-          </thead>
-            <tr>
-              <td><code>tablist</code> role</td>
-              <td><code>&lt;div role="tablist" &gt;</code></td>
-              <td><code>element.setAttribute("role", "tablist");</code></td>
-              <td><code>element.setAttribute("role", "tablist");</code></td>
-            </tr>
+          <caption>Setting ARIA Role</caption>
           <tbody>
+            <tr>
+              <th>Role</th>
+              <td><code>tablist</code></td>
+            </tr>
+            <tr>
+              <th>Inline</th>
+              <td><code>&lt;div role="tablist"&gt;</code></td>
+            </tr>
+            <tr>
+              <th>setAttribute</th>
+              <td><code>e.setAttribute("role", "tablist");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.role = tablist";</code></td>
+            </tr>
           </tbody>
+        </table>
+
+        <table class="table table-striped">
+          <caption>Setting Accessible Name</caption>
+          <tbody>
+            <tr>
+              <th>Attribute</th>
+              <td><code>aria-label</code></td>
+            </tr>
+            <tr>
+              <th>Inline</th>
+              <td><code>&lt;div role="button" aria-label="Play"&gt;</code></td>
+            </tr>
+            <tr>
+              <th>setAttribute</th>
+              <td><code>e.setAttribute("aria-label", "play");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaLabel = "Play";</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-striped">
+          <caption>Setting State</caption>
+          <tbody>
+            <tr>
+              <th>Attribute</th>
+              <td><code>aria-checked</code></td>
+            </tr>
+            <tr>
+              <th>Inline</th>
+              <td><code>&lt;div role="checkbox" aria-checked="mixed"&gt;</code></td>
+            </tr>
+            <tr>
+              <th>setAttribute</th>
+              <td><code>e.setAttribute("aria-checked", "mixed");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaChecked = "mixed";</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>NOTE: AOM is only available on the most recent browser releases.</p>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Object Model (AOM): Getting Values</title>
+    <contents>
+        <table class="table table-striped">
+          <caption>Getting ARIA Role</caption>
+          <tbody>
+            <tr>
+              <th>Attribute</th>
+              <td><code>role</code></td>
+            </tr>
+            <tr>
+              <th>getAttribute</th>
+              <td><code>var role = e.getAttribute("role");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>var role = e.role;</code><sup>1</sup></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-striped">
+          <caption>Getting Accessible Name</caption>
+          <tbody>
+            <tr>
+              <th>Attribute</th>
+              <td><code>aria-label</code></td>
+            </tr>
+            <tr>
+              <th>getAttribute</th>
+              <td><code>var label = e.getAttribute("aria-label");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>var label = e.ariaLabel;</code><sup>1</sup></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-striped">
+          <caption>Getting State</caption>
+          <tbody>
+            <tr>
+              <th>Attribute</th>
+              <td><code>aria-checked</code></td>
+            </tr>
+            <tr>
+              <th>setAttribute</th>
+              <td><code>var value = e.getAttribute("aria-checked");</code></td>
+            </tr>
+            <tr>
+              <th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>var value = e.ariaChecked;</code><sup>1</sup></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><sup>1</sup>NOTE: Currently must be set using the AOM DOM property to return a value reliably and as in setting only available on the most recent browser releases.</p>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Object Model (AOM): Test Page</title>
+    <contents>
 
 
-        <h2>Setting Role Attribute</h2>
+      <table class="table table-striped">
+        <caption>Getting Role Value with DOM <code>role</code> property</caption>
+        <thead>
+          <tr>
+            <th>Setting Code</th>
+            <th>Role Value</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sourcecode">&lt;input type="checkbox"/></td>
+            <td id="aom-11-role"></td>
+            <td id="aom-11-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">&lt;div role="checkbox"></td>
+            <td id="aom-12-role"></td>
+            <td id="aom-12-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">e.setAttribute('role', 'checkbox');</td>
+            <td id="aom-13-role"></td>
+            <td id="aom-13-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">e.role = 'checkbox';</td>
+            <td id="aom-14-role"></td>
+            <td id="aom-14-type"></td>
+          </tr>
+        </tbody>
+      </table>
 
-        <p><code>element.role="tablist";</code></p>
+      <table class="table table-striped">
+        <caption>Getting value with DOM <code>ariaChecked</code> property</caption>
+        <thead>
+          <tr>
+            <th>Setting Code</th>
+            <th>Role Value</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sourcecode">&lt;div role="checkbox"  aria-checked="true"></td>
+            <td id="aom-22-checked"></td>
+            <td id="aom-22-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">e.setAttribute('aria-checked', 'true');</td>
+            <td id="aom-23-checked"></td>
+            <td id="aom-23-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">e.ariaChecked = 'true';</td>
+            <td id="aom-24-checked"></td>
+            <td id="aom-24-type"></td>
+          </tr>
+          <tr>
+            <td class="sourcecode">e.ariaChecked = true;</td>
+            <td id="aom-25-checked"></td>
+            <td id="aom-25-type"></td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h2>Setting ARIA Attributes</h2>
+      <div hidden="">
+        <div id="aom-11"><input type="checkbox"/></div>
 
-        <p>Use camel case naming convention for property name.</p>
+        <script>
+          var role = document.getElementById("aom-11").firstElementChild.role;
+          document.getElementById("aom-11-role").textContent = role ? role : "";           document.getElementById("aom-11-type").textContent = typeof role;
+        </script>
 
-        <p><code>element.ariaLabel="Name";</code></p>
-        <p><code>element.ariaChecked="true";</code></p>
+        <div id="aom-12"><div role="checkbox"></div></div>
 
-        <h2>Getting ARIA Attributes</h2>
+        <script>
+          role = document.getElementById("aom-12").firstElementChild.role;
+          document.getElementById("aom-12-role").textContent = role ? role : "";           document.getElementById("aom-12-type").textContent = typeof role;
+        </script>
 
-        <p><code>var role = element.role;</code></p>
-        <p><code>var label = element.ariaLabel;</code></p>
-        <p><code>var checked = element.ariaChecked;</code></p>
+        <div id="aom-13"><div></div></div>
+        <div id="aom-13-code">e.setAttribute("role", "checkbox")</div>
 
-        <p>NOTE: The role or aria-label must be defined in-line or programmatically to return value.</p>
+        <script>
+          document.getElementById("aom-13").firstElementChild.setAttribute("role", "checkbox");
+          role = document.getElementById("aom-13").firstElementChild.role;
+          document.getElementById("aom-13-role").textContent = role ? role : "";           document.getElementById("aom-13-type").textContent = typeof role;
+        </script>
 
-        <h2>Gotchas</h2>
+        <div id="aom-14"><div></div></div>
+        <div id="aom-14-code">e.role="checkbox"</div>
+
+        <script>
+          document.getElementById("aom-14").firstElementChild.role = "checkbox";
+          role = document.getElementById("aom-14").firstElementChild.role;
+          document.getElementById("aom-14-role").textContent = role ? role : "";           document.getElementById("aom-14-type").textContent = typeof role;
+        </script>
+
+        <div id="aom-22"><div role="checkbox" aria-checked="true"></div></div>
+
+        <script>
+          var checked = document.getElementById("aom-22").firstElementChild.ariachecked;
+          document.getElementById("aom-22-checked").textContent = checked ? checked : "";           document.getElementById("aom-22-type").textContent = typeof checked;
+        </script>
+
+        <div id="aom-23"><div></div></div>
+        <div id="aom-23-code">e.setAttribute("aria-checked", "true");</div>
+
+        <script>
+          document.getElementById("aom-23").firstElementChild.setAttribute("aria-checked", "true");
+          checked = document.getElementById("aom-23").firstElementChild.ariaChecked;
+          document.getElementById("aom-23-checked").textContent = checked ? checked : "";           document.getElementById("aom-23-type").textContent = typeof checked;
+        </script>
+
+        <div id="aom-24"><div></div></div>
+        <div id="aom-24-code">e.ariaRequired="true";</div>
+
+        <script>
+          document.getElementById("aom-24").firstElementChild.ariaRequired = "true";
+          checked = document.getElementById("aom-24").firstElementChild.ariaRequired;
+          document.getElementById("aom-24-checked").textContent = checked ? checked : "";           document.getElementById("aom-24-type").textContent = typeof checked;
+        </script>
+
+        <div id="aom-25"><div></div></div>
+        <div id="aom-25-code">e.ariaRequired=true;</div>
+
+        <script>
+          document.getElementById("aom-25").firstElementChild.ariaRequired=true;
+          checked = document.getElementById("aom-25").firstElementChild.ariaRequired;
+          document.getElementById("aom-25-checked").textContent = checked ? checked : "";           document.getElementById("aom-25-type").textContent = typeof checked;
+        </script>
+
+      </div>
+
+    </contents>
+  </slide>
+
+  <slide>
+    <title>Accessible Object Model (AOM): Gotchas</title>
+    <contents>
         <ul>
-          <li>Only values that have been set in-line or programmatically can be read using the <code>.role</code> or <code>.aria-*</code> DOM property.</li>
+          <li>Only values that have been set using the DOM property can be read using the DOM property.</li>
           <li>Not all ARIA properties will be implemented, notably ARIA properties related to <code>ID</code> references, like <code>aria-labelledby</code>, <code>aria-controls</code>, etc..., since the HTML specification is still defining how properties using <code>ID</code> references will be implemented in the DOM.</li>
-          <li>Still determining whether string versus boolean values will be returned for some states with boolean values.</li>
+          <li>Still determining whether string versus boolean values (or depends on how it was set) will be returned for some states with boolean values (e.g. <code>aria-checked</code>).</li>
         </ul>
     </contents>
   </slide>

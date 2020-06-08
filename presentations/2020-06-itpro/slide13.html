@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 13: W3C ARIA Assistive Technology Project Community Group</title>
+<title>Slide 13: Accessible Object Model (AOM): Gotchas</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,13 +41,13 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide15.html" title="Slide 15">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
 <ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 13 of 15</li>
+<li class="nav navbar-text">Slide 13 of 18</li>
 </ul>
 </div>
 </div>
@@ -56,23 +56,16 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">W3C ARIA Assistive Technology Project Community Group</h1>
-<p>
-<a href="https://www.w3.org/community/aria-at/" target="_group">ARIA-AT Community group</a> goals:</p>
+<h1 id="h1_title" class="title">Accessible Object Model (AOM): Gotchas</h1>
 <ul>
+          
+<li>Only values that have been set using the DOM property can be read using the DOM property.</li>
+          
+<li>Not all ARIA properties will be implemented, notably ARIA properties related to <code>ID</code> references, like <code>aria-labelledby</code>, <code>aria-controls</code>, etc..., since the HTML specification is still defining how properties using <code>ID</code> references will be implemented in the DOM.</li>
+          
+<li>Still determining whether string versus boolean values (or depends on how it was set) will be returned for some states with boolean values (e.g. <code>aria-checked</code>).</li>
         
-<li>Provide information on who ARIA changes the user experience for people with disabilities.</li>
-        
-<li>Provide feedback to screen reader developers on how they provide ARIA information and expectations on what they should be providing.</li>
-        
-<li>Improve consistency of information provided by different assistive technologies.</li>
-        
-<li>Long term goal is to have tests for each ARIA Practices code example.</li>
-      
 </ul>
-<p>
-<iframe src="https://www.w3.org/community/aria-at/" title="ARIA-AT Community group website" width="98%" height="600px"></iframe>
-</p>
 </div>
 <div class="col"></div>
 </div>

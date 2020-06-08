@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Slide 10: Accessible Object Model (AOM)</title>
+<title>Slide 10: Accessible Object Model (AOM): Setting Roles, Properties and States</title>
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap-accessibility.css">
@@ -41,13 +41,13 @@
                       </a>
 </li>
 <li>
-<a id="ID_SLIDE_LAST" href="slide15.html" title="Slide 15">
+<a id="ID_SLIDE_LAST" href="slide18.html" title="Slide 18">
                         Last
                       </a>
 </li>
 </ul>
 <ul class="nav navbar-nav pull-right">
-<li class="nav navbar-text">Slide 10 of 15</li>
+<li class="nav navbar-text">Slide 10 of 18</li>
 </ul>
 </div>
 </div>
@@ -56,41 +56,121 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9">
-<h1 id="h1_title" class="title">Accessible Object Model (AOM)</h1>
+<h1 id="h1_title" class="title">Accessible Object Model (AOM): Setting Roles, Properties and States</h1>
+<p>NOTE: SLides were updated after presentation to provide additional information on the AOM, including the addition of 3 new slides.</p>
 <p>In addition to using in-line HTML code and the <code>setAttribute</code> and <code>getAttribute</code> DOM methods for setting ARIA roles, properties and states, new DOM properties will also be available.</p>
-<h2>Setting Role Attribute</h2>
-<p>
-<code>element.role="tablist";</code>
-</p>
-<h2>Setting ARIA Attributes</h2>
-<p>Use camel case naming convention for property name.</p>
-<p>
-<code>element.ariaLabel="Name";</code>
-</p>
-<p>
-<code>element.ariaChecked="true";</code>
-</p>
-<h2>Getting ARIA Attributes</h2>
-<p>
-<code>var role = element.role;</code>
-</p>
-<p>
-<code>var label = element.ariaLabel;</code>
-</p>
-<p>
-<code>var checked = element.ariaChecked;</code>
-</p>
-<p>NOTE: The role or aria-label must be defined in-line or programmatically to return value.</p>
-<h2>Gotchas</h2>
-<ul>
+<table class="table table-striped">
           
-<li>Only values that have been set in-line or programmatically can be read using the <code>.role</code> or <code>.aria-*</code> DOM property.</li>
+<caption>Setting ARIA Role</caption>
           
-<li>Not all ARIA properties will be implemented, notably ARIA properties related to <code>ID</code> references, like <code>aria-labelledby</code>, <code>aria-controls</code>, etc..., since the HTML specification is still defining how properties using <code>ID</code> references will be implemented in the DOM.</li>
+<tbody>
+            
+<tr>
+              
+<th>Role</th>
+              <td><code>tablist</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="tablist"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("role", "tablist");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.role = tablist";</code></td>
+            
+</tr>
           
-<li>Still determining whether string versus boolean values will be returned for some states with boolean values.</li>
+</tbody>
         
-</ul>
+</table>
+<table class="table table-striped">
+          
+<caption>Setting Accessible Name</caption>
+          
+<tbody>
+            
+<tr>
+              
+<th>Attribute</th>
+              <td><code>aria-label</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="button" aria-label="Play"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("aria-label", "play");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaLabel = "Play";</code></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+<table class="table table-striped">
+          
+<caption>Setting State</caption>
+          
+<tbody>
+            
+<tr>
+              
+<th>Attribute</th>
+              <td><code>aria-checked</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>Inline</th>
+              <td><code>&lt;div role="checkbox" aria-checked="mixed"&gt;</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>setAttribute</th>
+              <td><code>e.setAttribute("aria-checked", "mixed");</code></td>
+            
+</tr>
+            
+<tr>
+              
+<th>DOM Property (<span class="new">ARIA 1.2</span>)</th>
+              <td><code>e.ariaChecked = "mixed";</code></td>
+            
+</tr>
+          
+</tbody>
+        
+</table>
+<p>NOTE: AOM is only available on the most recent browser releases.</p>
 </div>
 <div class="col"></div>
 </div>
