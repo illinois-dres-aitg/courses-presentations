@@ -466,7 +466,7 @@
 
         <script>
           var role = document.getElementById("aom-11").firstElementChild.role;
-          document.getElementById("aom-11-role").textContent = role ? '\' + role + '\'' : "undefined";
+          document.getElementById("aom-11-role").textContent = role ? '\'' + role + '\'' : "undefined";
 
         </script>
 
