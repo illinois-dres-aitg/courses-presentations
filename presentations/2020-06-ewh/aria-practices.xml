@@ -405,8 +405,8 @@
         <thead>
           <tr>
             <th>Setting Code</th>
-            <th>Role Value</th>
-            <th>Type</th>
+            <th><code>.role</code> Value</th>
+            <th><code>.role</code> Type</th>
           </tr>
         </thead>
         <tbody>
@@ -438,8 +438,8 @@
         <thead>
           <tr>
             <th>Setting Code</th>
-            <th>Role Value</th>
-            <th>Type</th>
+            <th><code>.ariaChecked</code> Value</th>
+            <th><code>.ariaChecked</code> Type</th>
           </tr>
         </thead>
         <tbody>
