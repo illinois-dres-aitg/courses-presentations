@@ -66,8 +66,7 @@
 <tr>
             
 <th>Setting Code</th>
-            <th><code>.role</code> Value</th>
-            <th><code>.role</code> Type</th>
+            <th>Return value of <code>.role</code></th>
           
 </tr>
         
@@ -79,7 +78,6 @@
             
 <td class="sourcecode">&lt;input type="checkbox"/&gt;</td>
             <td id="aom-11-role"></td>
-            <td id="aom-11-type"></td>
           
 </tr>
           
@@ -87,7 +85,6 @@
             
 <td class="sourcecode">&lt;div role="checkbox"&gt;</td>
             <td id="aom-12-role"></td>
-            <td id="aom-12-type"></td>
           
 </tr>
           
@@ -95,7 +92,6 @@
             
 <td class="sourcecode">e.setAttribute('role', 'checkbox');</td>
             <td id="aom-13-role"></td>
-            <td id="aom-13-type"></td>
           
 </tr>
           
@@ -103,7 +99,6 @@
             
 <td class="sourcecode">e.role = 'checkbox';</td>
             <td id="aom-14-role"></td>
-            <td id="aom-14-type"></td>
           
 </tr>
         
@@ -119,8 +114,8 @@
 <tr>
             
 <th>Setting Code</th>
-            <th><code>.ariaChecked</code> Value</th>
-            <th><code>.ariaChecked</code> Type</th>
+            <th>Return value of <code>.ariaChecked</code></th>
+            <th>Return of "typeOf" for <code>.ariaChecked</code></th>
           
 </tr>
         
@@ -172,7 +167,8 @@
         
 <script>
           var role = document.getElementById("aom-11").firstElementChild.role;
-          document.getElementById("aom-11-role").textContent = role ? role : "";           document.getElementById("aom-11-type").textContent = typeof role;
+          document.getElementById("aom-11-role").textContent = role ? '"' + role + '"' : "undefined";
+
         </script>
 
         
@@ -183,7 +179,7 @@
         
 <script>
           role = document.getElementById("aom-12").firstElementChild.role;
-          document.getElementById("aom-12-role").textContent = role ? role : "";           document.getElementById("aom-12-type").textContent = typeof role;
+          document.getElementById("aom-12-role").textContent = role ? '"' + role + '"' : "undefined";
         </script>
 
         
@@ -197,7 +193,7 @@
 <script>
           document.getElementById("aom-13").firstElementChild.setAttribute("role", "checkbox");
           role = document.getElementById("aom-13").firstElementChild.role;
-          document.getElementById("aom-13-role").textContent = role ? role : "";           document.getElementById("aom-13-type").textContent = typeof role;
+          document.getElementById("aom-13-role").textContent = role ? '"' + role + '"' : "undefined";
         </script>
 
         
@@ -211,7 +207,7 @@
 <script>
           document.getElementById("aom-14").firstElementChild.role = "checkbox";
           role = document.getElementById("aom-14").firstElementChild.role;
-          document.getElementById("aom-14-role").textContent = role ? role : "";           document.getElementById("aom-14-type").textContent = typeof role;
+          document.getElementById("aom-14-role").textContent = role ? '"' + role + '"' : "undefined";
         </script>
 
         
