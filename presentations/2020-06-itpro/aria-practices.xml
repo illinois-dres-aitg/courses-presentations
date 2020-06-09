@@ -404,34 +404,29 @@
 
 
       <table class="table table-striped">
-        <caption>Getting Role Value with DOM <code>role</code> property</caption>
+        <caption>Getting value with DOM <code>role</code> property</caption>
         <thead>
           <tr>
             <th>Setting Code</th>
-            <th>Role Value</th>
-            <th>Type</th>
+            <th>Return value of <code>.role</code></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="sourcecode">&lt;input type="checkbox"/></td>
             <td id="aom-11-role"></td>
-            <td id="aom-11-type"></td>
           </tr>
           <tr>
             <td class="sourcecode">&lt;div role="checkbox"></td>
             <td id="aom-12-role"></td>
-            <td id="aom-12-type"></td>
           </tr>
           <tr>
             <td class="sourcecode">e.setAttribute('role', 'checkbox');</td>
             <td id="aom-13-role"></td>
-            <td id="aom-13-type"></td>
           </tr>
           <tr>
             <td class="sourcecode">e.role = 'checkbox';</td>
             <td id="aom-14-role"></td>
-            <td id="aom-14-type"></td>
           </tr>
         </tbody>
       </table>
@@ -441,13 +436,13 @@
         <thead>
           <tr>
             <th>Setting Code</th>
-            <th>Role Value</th>
-            <th>Type</th>
+            <th>Return value of <code>.ariaChecked</code></th>
+            <th>typeof<code>.ariaChecked</code></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="sourcecode">&lt;div role="checkbox"  aria-checked="true"></td>
+            <td class="sourcecode">&lt;div role='checkbox'  aria-checked='true'></td>
             <td id="aom-22-checked"></td>
             <td id="aom-22-type"></td>
           </tr>
@@ -474,14 +469,15 @@
 
         <script>
           var role = document.getElementById("aom-11").firstElementChild.role;
-          document.getElementById("aom-11-role").textContent = role ? role : "";           document.getElementById("aom-11-type").textContent = typeof role;
+          document.getElementById("aom-11-role").textContent = role ? '\'' + role + '\'' : "undefined";
+
         </script>
 
         <div id="aom-12"><div role="checkbox"></div></div>
 
         <script>
           role = document.getElementById("aom-12").firstElementChild.role;
-          document.getElementById("aom-12-role").textContent = role ? role : "";           document.getElementById("aom-12-type").textContent = typeof role;
+          document.getElementById("aom-12-role").textContent = role ? '\'' + role + '\'' : "undefined";
         </script>
 
         <div id="aom-13"><div></div></div>
@@ -490,7 +486,7 @@
         <script>
           document.getElementById("aom-13").firstElementChild.setAttribute("role", "checkbox");
           role = document.getElementById("aom-13").firstElementChild.role;
-          document.getElementById("aom-13-role").textContent = role ? role : "";           document.getElementById("aom-13-type").textContent = typeof role;
+          document.getElementById("aom-13-role").textContent = role ? '\'' + role + '\'' : "undefined";
         </script>
 
         <div id="aom-14"><div></div></div>
@@ -499,14 +495,14 @@
         <script>
           document.getElementById("aom-14").firstElementChild.role = "checkbox";
           role = document.getElementById("aom-14").firstElementChild.role;
-          document.getElementById("aom-14-role").textContent = role ? role : "";           document.getElementById("aom-14-type").textContent = typeof role;
+          document.getElementById("aom-14-role").textContent = role ? '\'' + role + '\'' : "undefined";
         </script>
 
         <div id="aom-22"><div role="checkbox" aria-checked="true"></div></div>
 
         <script>
           var checked = document.getElementById("aom-22").firstElementChild.ariachecked;
-          document.getElementById("aom-22-checked").textContent = checked ? checked : "";           document.getElementById("aom-22-type").textContent = typeof checked;
+          document.getElementById("aom-22-checked").textContent = checked ? checked : "undefined";          document.getElementById("aom-22-type").textContent =  typeof checked != "undefined" ? typeof checked : "";
         </script>
 
         <div id="aom-23"><div></div></div>
@@ -515,7 +511,7 @@
         <script>
           document.getElementById("aom-23").firstElementChild.setAttribute("aria-checked", "true");
           checked = document.getElementById("aom-23").firstElementChild.ariaChecked;
-          document.getElementById("aom-23-checked").textContent = checked ? checked : "";           document.getElementById("aom-23-type").textContent = typeof checked;
+          document.getElementById("aom-23-checked").textContent = checked ? checked : "undefined";           document.getElementById("aom-23-type").textContent = typeof checked != "undefined" ? typeof checked : "";
         </script>
 
         <div id="aom-24"><div></div></div>
@@ -524,7 +520,7 @@
         <script>
           document.getElementById("aom-24").firstElementChild.ariaRequired = "true";
           checked = document.getElementById("aom-24").firstElementChild.ariaRequired;
-          document.getElementById("aom-24-checked").textContent = checked ? checked : "";           document.getElementById("aom-24-type").textContent = typeof checked;
+          document.getElementById("aom-24-checked").textContent = checked ? checked : "undefined";           document.getElementById("aom-24-type").textContent = typeof checked != "undefined" ? typeof checked : "";
         </script>
 
         <div id="aom-25"><div></div></div>
@@ -533,9 +529,8 @@
         <script>
           document.getElementById("aom-25").firstElementChild.ariaRequired=true;
           checked = document.getElementById("aom-25").firstElementChild.ariaRequired;
-          document.getElementById("aom-25-checked").textContent = checked ? checked : "";           document.getElementById("aom-25-type").textContent = typeof checked;
+          document.getElementById("aom-25-checked").textContent =  checked ? checked : "undefined";            document.getElementById("aom-25-type").textContent = typeof checked != "undefined" ? typeof checked : "";
         </script>
-
       </div>
 
     </contents>
