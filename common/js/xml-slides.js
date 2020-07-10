@@ -2,20 +2,20 @@ function resizeContent() {
 
     $('#content').css('marginBottom', 4);
 
-    var index_height     = $('#index').height();
-    var content_height   = $('#content').innerHeight();
+    var nav_height         = $('#nav').height();
+    var content_height     = $('#content').innerHeight();
     var transcript_height  = $('aside[aria-label]').innerHeight();
     if (!transcript_height) {
       transcript_height = 0;
     }
-    var copyright_height = $('#copyright').height();
+    var copyright_height = $('footer').height();
     var document_height  = $(document).height();
 
-    var space = document_height - index_height - copyright_height - transcript_height - content_height - 90;
+    var space = document_height - nav_height - (1.5 * copyright_height) - transcript_height - content_height;
 
     // resize HTML Slide to fit window
     if( document_height > space) {
-        $('#content').css('marginBottom', space);
+        $('#content').css('marginBottom', space + 'px');
     }
 
 };

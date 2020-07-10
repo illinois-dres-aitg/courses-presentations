@@ -25,12 +25,12 @@
 
 
   <slide>
-    <title>Overview</title>
+    <title>Goals</title>
     <contents>
       <ul>
         <li>Understanding landmark regions</li>
         <li>HTML markup for landmarks</li>
-        <li>Assistive Technologies support for landmarks</li>
+        <li>Assistive Technology support for landmarks</li>
       </ul>
 
       <script type="text/javascript">
