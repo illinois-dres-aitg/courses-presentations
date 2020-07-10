@@ -10,7 +10,6 @@
     <desc href="http://illinois.edu">University of Illinois at Urbana-Champaign</desc>
     <desc href="mailto:jongund@illinois.edu">E-mail Jon Gunderson</desc>
   </person>
-
   <stylesheet media="screen">../../common/css/bootstrap.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-theme.min.css</stylesheet>
   <stylesheet media="screen">../../common/css/bootstrap-accessibility.css</stylesheet>

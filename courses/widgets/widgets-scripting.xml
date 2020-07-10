@@ -645,7 +645,6 @@
         sourceCode.add('sc2', 'style');
         sourceCode.add('sc3', 'script');
         sourceCode.make();
-        hljs.initHighlightingOnLoad();
       </script>
    </contents>
   </slide>
